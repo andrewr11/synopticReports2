@@ -1,0 +1,156 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+}
+.synoptic-reports {
+  padding: 40px 15px;
+  text-align: center;
+}
+.synoptic-reports table {
+  text-align: left;
+  width: 100%;
+}
+
+.synoptic-reports #instructions {
+  text-align: left;
+}
+.synoptic-reports #instructions button{
+  margin-right: 10px;
+}
+
+.synoptic-reports #no-report {
+  text-align: left;
+}
+
+.synoptic-reports td {
+  vertical-align: top;
+}
+
+.synoptic-reports td, th {
+  padding: 1px;
+}
+
+.row {
+  margin-bottom: 0px;
+}
+.row .row {
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+
+hr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#tumor-form td{
+  padding-bottom: 30px;
+  vertical-align: top;
+}
+
+.form-elements  {
+  width: 75%;
+}
+
+.form-elements {
+  padding-left: 25px !important;
+}
+
+#tumor-form input {
+  margin-right: 5px;
+}
+
+#tumor-type table {
+  margin-top: 50px;
+}
+
+#tumor-type, #tumor-name {
+  text-align: left;
+}
+
+label {
+    display: inline !important;
+}
+
+#generated-report{
+  line-height: 100%;
+  font-size: 14.5px; /*11pt font in Word*/
+  font-family: "Arial";
+  font-weight: bold;
+  width: 600px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+#generated-report td {
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.report-label{
+    white-space: nowrap;
+    padding-right: 5px !important;
+}
+
+.report-indent {
+  width: 50px;
+}
+
+#generated-report-space {
+  line-height: 100%;
+  font-size: 14.5px; /*11pt font in Word*/
+  font-family: monospace;
+  font-weight: bold;
+  text-align: left;
+  white-space:pre;
+  margin-bottom: 30px;
+}
+
+#generated-report p, #generated-report-space p, #generated-report-two-line p {
+  margin: 0;
+}
+
+#generated-report-two-line {
+  white-space:pre;
+  text-align: left;
+  line-height: 100%;
+  font-size: 14.5px; /*11pt font in Word*/
+  font-family: "Arial";
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#header {
+  text-align: left;
+}
+
+.tab-cell {
+  width: 5px;
+}
+
+#tumor-form label {
+  font-weight: bold;
+}
+
+.description {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.skip-label {
+  text-decoration: underline;
+}
+
+
+ul { list-style-type: none; }

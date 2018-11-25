@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue CDN Synoptic Reports</title>
+  <meta name="description" content="Generating Tumor Summaries/Synoptic Reports">
+  <meta name="author" content="Megan Renshaw">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Synoptic Reports/Home</a>
+                  </div>
+                  <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="about.html">About</a></li>
+                    </ul>
+                  </div><!--/.nav-collapse -->
+                </div>
+              </nav>
+            
+              <div class="container">
+                <div class="synoptic-reports">
+                  <h1>Generating Tumor Summaries/Synoptic Reports</h1>
+                  <p>Click on a tumor site/type.</p>
+                  <br/>
+                  <div id="tumor-type-grid"></div>
+            
+                </div>
+              </div>
+
+
+    <div id="app">
+
+      <div v-if="section === 'homeMenu'" class = "container">
+        <div>
+          <h3>Most common</h3>
+            <ul>
+            <li><button v-for="site in tumor_types" v-on:click="displayQuestions(site)"> {{ site.name }}</button></li>
+            </ul>
+        </div>
+      </div>
+      
+
+      <div v-if="section === 'showQuestions'" class = "container"> 
+
+        {{current_tumor}}
+
+        <div class = "container">
+            <button v-on:click="displayhomeMenu"> Back to Main Menu</button>
+        </div>
+
+        <form class="review-form" @submit.prevent="onSubmit">
+            <div  v-for="(q,index) in synresults" :key= "index">
+                {{q.name}}
+                <p>  free text       <input  type = "text" :name="q.name"  v-model="row2.freetextanswers[index]"></p>
+              <div v-for="(a, index2) in q.options" :key= "index2" >
+                  <ul  >
+                      <li v-for="(g) in a.group" ><input type="radio" :value="g.name + index2" :name = "q.name + index2" v-model="row.inputanswers[index+index2]">{{g.name}}</li>
+                  </ul>
+                
+              </div>
+            </div>
+            <p>
+                <input type="submit" value="Update Table">  
+            </p>  
+        </form>  
+
+        <div class = "container">
+          <button v-on:click="displayhomeMenu"> Back to Main Menu</button>
+        </div>
+
+        <div v-if="showtable" class = "container">
+          <h2>Tumor Summary Table</h2>
+          <table style = "width:90%">
+            <tr v-for ="de in row3.finalanswers">
+              <td > | {{de.question}}:</td>
+              <td> {{de.answer}}</td>
+            </tr>
+          </table> 
+        </div>
+
+
+          <p>synresults</p>
+          {{synresults}}
+
+          <p>input answers</p>
+          {{row.inputanswers}}
+     
+      
+          <div>
+                <div v-for="z in row.inputanswers">
+                <ol >
+                  <li  >{{z}}</li>
+                </ol>
+
+                </div> 
+                <div v-for="y in row2.freetextanswers">
+                  <ol >
+                    <li >{{y}}</li>
+                  
+                  </ol>
+
+                </div> 
+          </div>
+    
+      </div> 
+
+    </div>
+    
+    
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+
