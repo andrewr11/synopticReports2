@@ -2182,10 +2182,23 @@ var database = {
         name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name :  "Positive  % of cells, strong/moderate/weak"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Pending"
           }, {
@@ -2202,10 +2215,23 @@ var database = {
         name : "Progesterone Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Pending"
           }, {
@@ -2820,10 +2846,23 @@ var database = {
         name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Pending"
           }, {
@@ -2840,10 +2879,23 @@ var database = {
         name : "Progesterone Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Pending"
           }, {
@@ -3215,10 +3267,23 @@ var database = {
           group : [ {
             name : "Pending"
           }, {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Not applicable"
           }, {
@@ -3235,10 +3300,23 @@ var database = {
           group : [ {
             name : "Pending"
           }, {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Not applicable"
           }, {
@@ -3489,10 +3567,23 @@ var database = {
           group : [ {
             name : "Pending"
           }, {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Not applicable"
           }, {
@@ -3509,10 +3600,23 @@ var database = {
           group : [ {
             name : "Pending"
           }, {
-            inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive, >90% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, strong intensity"
+          },{
+            name :  "Positive  10-50% of cells, strong intensity"
+          },{
+            name :  "Positive  50-90% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, moderateintensity"
+          },{
+            name :  "Positive  10-50% of cells, moderate intensity"
+          },{
+            name :  "Positive  10-50% of cells, weak intensity"
+          },{
+            name :  "Positive  1-10% of cells, weak intensity"
           }, {
-            name : "Negative (0%)"
+            name : "Negative (<1%)"
           }, {
             name : "Not applicable"
           }, {

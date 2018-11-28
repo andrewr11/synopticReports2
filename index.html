@@ -58,9 +58,9 @@
                 <li v-if="site.most_common" class ="row"><button class="link-button"  v-on:click="displayQuestions(site)">{{ site.name }}</button></li>
                 </ul>
             </div>
-          </div>
+         
 
-          <div class = "row">
+          
             <div  class="col-md-3" v-for="item in site_groups" >
                 <h4>{{item.name}}</h4>
                 <ul v-for="site in tumor_types" >
@@ -87,15 +87,15 @@
         <form class="review-form" @submit.prevent="onSubmit">
             <div  v-for="(q,index) in synresults" :key= "index">
               
-                <h4>{{index}}. {{q.name}}</h4>
+                <h4 class= "name"><span class = "name">{{index}}. {{q.name}}</span><span v-if="q.description" class = "description"> [ {{q.description}}]</span></h4>
             
                 
               <div v-for="(a, index2) in q.options" :key= "index2" >
                   <ul  >
-                      <li v-for="(g) in a.group" ><input type="radio" :value="g.name + index2" :name = "q.name + index2" v-model="row.inputanswers[index+index2]"   v-on:click= "dontUseFreeText(index)" >{{g.name}}</li>
+                      <li v-for="(g) in a.group" ><input type="radio" :value="g.name + index2" :name = "q.name + index2" v-model="row.inputanswers[index+index2]"   v-on:click= "dontUseFreeText(index)" class = "description"><span class = "name">{{g.name}}</span><span v-if="g.description" class = "description"> [ {{g.description}}]</span></li>
                   </ul>
                   <ul>
-                  <li><input type="radio" :checked="row5.useFreeText[index]" :name = "q.name + index2" v-on:click="changeUseFreeText(index)" ><span> </span><input  type = "text" :name="q.name"  v-model="row2.freetextanswers[index]"></li>
+                  <li><input type="radio" :checked="row5.useFreeText[index]" :name = "q.name + index2" v-on:click="changeUseFreeText(index)" ><span> </span><input  type = "text" :name="q.name"  v-model="row2.freetextanswers[index]" class = "description"></li>
                 </ul> 
                 </div>
             </div>
