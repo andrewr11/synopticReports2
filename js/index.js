@@ -29,6 +29,34 @@ var database = {
 
       ]
     },
+    row4: {
+      comboanswers: 
+        [
+
+      ]
+    },
+    row5: {
+      useFreeText: 
+        [
+
+      ]
+    },
+    site_groups: [
+      {name : "Breast"},
+      {name : "Central Nervous System"},
+      {name : "Endocrine"},
+      {name : "Gastrointestinal"},
+      {name : "Genitourinary"},
+      {name : "Gynecologic"},
+      {name : "Head and Neck"},
+      {name : "Hematologic"},
+      {name : "Ophthalmic"},
+      {name : "Other"},
+      {name : "Other-Biomarkers"},
+      {name : "Pediatric"},
+      {name : "Skin"},
+      {name : "Thorax"},
+    ],
     current_tumor:"Tango",
     pressed: false,
     section: "homeMenu",
@@ -2155,7 +2183,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             inputs_required : [ "% of cells,", [ "strong", "moderate", "weak" ] ],
-            name : "Positive,"
+            name :  "Positive  % of cells, strong/moderate/weak"
           }, {
             name : "Negative (0%)"
           }, {
@@ -20451,7 +20479,7 @@ var database = {
               this.tableresults.push(this.synresults[i].name)
             };  
             for (var i=0; i<this.synresults.length +4; i++){
-              this.row.inputanswers.push("!!!!YOU FORGOT THIS ONE??")
+              this.row.inputanswers.push("!!!!YOU FORGOT THIS ONE??0")
                 
             };
             for (var i=0; i<this.synresults.length; i++){
@@ -20470,27 +20498,76 @@ var database = {
               var value = {question: this.synresults[i].name, answer: this.row.inputanswers[i]}
               this.row3.finalanswers.push(value)
             };
-            
+            for (var i=0; i<this.synresults.length +4; i++){
+              this.row5.useFreeText.push(true)
+            };
         },
         
         displayhomeMenu(){
           this.section = "homeMenu"
           this.row3.finalanswers = [];
         },
+        changeUseFreeText(i){
+          this.row5.useFreeText[i] = true
+        },
+
+        dontUseFreeText(i){
+          this.row5.useFreeText[i] = false
+        },
 
         onSubmit(){
-          console.log (this.showtable)
           this.showtable = false;
           this.showtable = true;
-          console.log (this.showtable)
+          this.row4.comboanswers = []
+
+
+
+
+
+
+
+          var count = 0
+          for (var i = 0; i<this.row.inputanswers.length; i++){
+            ans = this.row.inputanswers[i].substring(0,this.row.inputanswers[i].length-1)
+            index3 = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-1, this.row.inputanswers[i].length)
+            
+            if (ans ==="p" ||    
+                  ans === "m" ||   
+                  ans === "r" ||   
+                  ans === "y" ||   
+                  ans === "mp" ||   
+                  ans === "rp" ||   
+                  ans === "yp" ||   
+                  ans === "mrp" ||   
+                  ans === "myp" ||   
+                  ans === "rpp" ||   
+                  ans === "ryp" ||   
+                  ans === "myrp"){
+                    count = this.row4.comboanswers.length
+                  }
+
+            if (index3 === "0"){
+              this.row4.comboanswers.push(ans)
+            }
+            else {
+              this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + ans
+            }
+            
+          }
+
+
           this.row3.finalanswers = [];
           firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor}
           this.row3.finalanswers.push(firstrow)
           for (var i=0; i<this.synresults.length; i++){
-            if (this.row2.freetextanswers[i] === " "){
-              ans = this.row.inputanswers[i]
-            } else {
+            if (this.row5.useFreeText[i]){
+              if (this.row2.freetextanswers[i]=== " ") {
+                this.row2.freetextanswers[i] = "!!!!YOU FORGOT THIS ONE??0"
+              }
               ans =this.row2.freetextanswers[i]
+            } else {
+              
+              ans = this.row4.comboanswers[i]
             } 
             var value = {question: this.synresults[i].name, answer: ans}
             this.row3.finalanswers.push(value)

@@ -48,35 +48,56 @@
 
 
     <div id="app">
-
+      
       <div v-if="section === 'homeMenu'" class = "container">
-        <div>
-          <h3>Most common</h3>
-            <ul>
-            <li><button v-for="site in tumor_types" v-on:click="displayQuestions(site)"> {{ site.name }}</button></li>
-            </ul>
+        <div id="tumor-type-grid">
+          <div class = "row">
+            <div class="col-md-3">
+              <h4>Most common</h4>
+                <ul v-for="site in tumor_types">
+                <li v-if="site.most_common" class ="row"><button class="link-button"  v-on:click="displayQuestions(site)">{{ site.name }}</button></li>
+                </ul>
+            </div>
+          </div>
+
+          <div class = "row">
+            <div  class="col-md-3" v-for="item in site_groups" >
+                <h4>{{item.name}}</h4>
+                <ul v-for="site in tumor_types" >
+                <li v-if="site.organ_group === item.name" class = "row"><button class="link-button"  v-on:click="displayQuestions(site)">{{ site.name }}</button></li>
+                </ul>
+            </div>
+          </div>
+          
         </div>
       </div>
       
 
       <div v-if="section === 'showQuestions'" class = "container"> 
 
-        {{current_tumor}}
 
         <div class = "container">
             <button v-on:click="displayhomeMenu"> Back to Main Menu</button>
         </div>
 
+        <div>
+          <h4>Tumor summary: {{current_tumor}}</h4>
+        </div>
+
         <form class="review-form" @submit.prevent="onSubmit">
             <div  v-for="(q,index) in synresults" :key= "index">
-                {{q.name}}
-                <p>  free text       <input  type = "text" :name="q.name"  v-model="row2.freetextanswers[index]"></p>
+              
+                <h4>{{index}}. {{q.name}}</h4>
+            
+                
               <div v-for="(a, index2) in q.options" :key= "index2" >
                   <ul  >
-                      <li v-for="(g) in a.group" ><input type="radio" :value="g.name + index2" :name = "q.name + index2" v-model="row.inputanswers[index+index2]">{{g.name}}</li>
+                      <li v-for="(g) in a.group" ><input type="radio" :value="g.name + index2" :name = "q.name + index2" v-model="row.inputanswers[index+index2]"   v-on:click= "dontUseFreeText(index)" >{{g.name}}</li>
                   </ul>
-                
-              </div>
+                  <ul>
+                  <li><input type="radio" :checked="row5.useFreeText[index]" :name = "q.name + index2" v-on:click="changeUseFreeText(index)" ><span> </span><input  type = "text" :name="q.name"  v-model="row2.freetextanswers[index]"></li>
+                </ul> 
+                </div>
             </div>
             <p>
                 <input type="submit" value="Update Table">  
@@ -96,6 +117,10 @@
             </tr>
           </table> 
         </div>
+
+
+        <p>useFreeText</p>
+          {{row5.useFreeText}}
 
 
           <p>synresults</p>
