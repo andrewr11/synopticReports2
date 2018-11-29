@@ -57,7 +57,9 @@ var database = {
       {name : "Skin"},
       {name : "Thorax"},
     ],
+    offset : 0,
     current_tumor:"Tango",
+    current_tumor_biopsy_type: " ",
     pressed: false,
     section: "homeMenu",
     showtable: true,
@@ -172,7 +174,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -182,7 +184,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -432,7 +434,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -442,7 +444,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -699,7 +701,7 @@ var database = {
         name : "Lymph nodes, external iliac, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -709,7 +711,7 @@ var database = {
         name : "Lymph nodes, ,external iliac, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -719,7 +721,7 @@ var database = {
         name : "Lymph nodes, other, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -729,7 +731,7 @@ var database = {
         name : "Lymph nodes, ,other, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -1024,7 +1026,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -1034,7 +1036,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -1343,7 +1345,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -1353,7 +1355,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -1558,7 +1560,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -1568,7 +1570,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2038,7 +2040,7 @@ var database = {
         name : "Lymph nodes, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2048,7 +2050,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2059,7 +2061,7 @@ var database = {
         name : "Lymph nodes, # w/ macrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2070,7 +2072,7 @@ var database = {
         name : "Lymph nodes, # w/ micrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2081,7 +2083,7 @@ var database = {
         name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2570,7 +2572,7 @@ var database = {
         name : "Lymph nodes, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2580,7 +2582,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2591,7 +2593,7 @@ var database = {
         name : "Lymph nodes, # w/ macrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2602,7 +2604,7 @@ var database = {
         name : "Lymph nodes, # w/ micrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -2613,7 +2615,7 @@ var database = {
         name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -4093,7 +4095,7 @@ var database = {
         name : "Lymph nodes, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -4104,7 +4106,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -4115,7 +4117,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             description : "# positive, specify location",
             inputs_required : [ "" ],
@@ -4129,7 +4131,7 @@ var database = {
         name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             description : "# positive, specify location",
             inputs_required : [ "" ],
@@ -4658,7 +4660,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -4668,7 +4670,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5026,7 +5028,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5036,7 +5038,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5320,7 +5322,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5330,7 +5332,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5703,7 +5705,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5713,7 +5715,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5965,7 +5967,7 @@ var database = {
         name : "Lymph nodes, pelvic, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -5976,7 +5978,7 @@ var database = {
         name : "Lymph nodes, pelvic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6001,7 +6003,7 @@ var database = {
         name : "Lymph nodes, pelvic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6012,7 +6014,7 @@ var database = {
         name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6023,7 +6025,7 @@ var database = {
         name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6034,7 +6036,7 @@ var database = {
         name : "Lymph nodes, paraaortic, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6044,7 +6046,7 @@ var database = {
         name : "Lymph nodes, paraaortic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6069,7 +6071,7 @@ var database = {
         name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6080,7 +6082,7 @@ var database = {
         name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6091,7 +6093,7 @@ var database = {
         name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6495,7 +6497,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6505,7 +6507,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6793,7 +6795,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6803,7 +6805,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6960,7 +6962,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -6970,7 +6972,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -7193,7 +7195,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -7203,7 +7205,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -7621,7 +7623,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -7631,7 +7633,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -7796,7 +7798,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -7806,7 +7808,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8027,7 +8029,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8037,7 +8039,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8311,7 +8313,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8321,7 +8323,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8626,7 +8628,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8636,7 +8638,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8973,7 +8975,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -8983,7 +8985,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -9389,7 +9391,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -9399,7 +9401,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -10281,7 +10283,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -10291,7 +10293,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -10548,7 +10550,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -10558,7 +10560,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -10885,7 +10887,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -10895,7 +10897,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -11207,7 +11209,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -11217,7 +11219,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -11684,7 +11686,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -11695,7 +11697,7 @@ var database = {
         name : "Lymph nodes, # w/ mets > 10mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -11706,7 +11708,7 @@ var database = {
         name : "Lymph nodes, # w/ mets >0.2mm, <= 10mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -11717,7 +11719,7 @@ var database = {
         name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -12075,7 +12077,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -12085,7 +12087,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -12364,7 +12366,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -12374,7 +12376,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -12700,7 +12702,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -12710,7 +12712,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -12721,7 +12723,7 @@ var database = {
         name : "Lymph nodes, # inguinal involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -13042,7 +13044,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -13052,7 +13054,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -13364,7 +13366,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -13374,7 +13376,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -13755,7 +13757,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -13765,7 +13767,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -14149,7 +14151,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -14159,7 +14161,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -14782,7 +14784,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -14792,7 +14794,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15000,7 +15002,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15010,7 +15012,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15255,7 +15257,7 @@ var database = {
         name : "Lymph nodes, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15265,7 +15267,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15275,7 +15277,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15532,7 +15534,7 @@ var database = {
         name : "Lymph nodes, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15542,7 +15544,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15552,7 +15554,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15810,7 +15812,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -15820,7 +15822,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16021,7 +16023,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16031,7 +16033,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16358,7 +16360,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16368,7 +16370,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16730,7 +16732,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16740,7 +16742,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16969,7 +16971,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -16979,7 +16981,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -17314,7 +17316,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -17324,7 +17326,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -17579,7 +17581,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -17589,7 +17591,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -18014,7 +18016,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -18024,7 +18026,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -18337,7 +18339,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -18347,7 +18349,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -18627,7 +18629,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -18637,7 +18639,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19138,7 +19140,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19148,7 +19150,7 @@ var database = {
         name : "Lymph nodes, # involved (no ITC)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19158,7 +19160,7 @@ var database = {
         name : "Lymph nodes, # with isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19514,7 +19516,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19524,7 +19526,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19833,7 +19835,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19843,7 +19845,7 @@ var database = {
         name : "Lymph nodes, # involved (no ITC)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -19853,7 +19855,7 @@ var database = {
         name : "Lymph nodes, # with isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20157,7 +20159,7 @@ var database = {
         name : "Lymph nodes, # sentinel",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20168,7 +20170,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20179,7 +20181,7 @@ var database = {
         name : "Lymph nodes, # w/ mets >= 5mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20190,7 +20192,7 @@ var database = {
         name : "Lymph nodes, # w/ mets >0.2mm, < 5mm",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20201,7 +20203,7 @@ var database = {
         name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20507,7 +20509,7 @@ var database = {
         name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20517,7 +20519,7 @@ var database = {
         name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            name : "0"
+            name : "0" },{ name : "1" },{ name : "2" },{ name : "3"
           }, {
             name : "Not applicable"
           } ],
@@ -20572,11 +20574,13 @@ var database = {
   var app = new Vue({
     el: '#app',
     data: database,
+    
     methods: {
         
         displayQuestions(site){
             this.section = "showQuestions";  
             this.current_tumor = site.name;  
+            this.current_tumor_biopsy_type = site.biopsy_type;
             this.synresults = site.properties;
 
             for (var i=0; i<this.synresults.length; i++){
@@ -20586,7 +20590,7 @@ var database = {
               this.row.inputanswers.push("!!!!YOU FORGOT THIS ONE??0")
                 
             };
-            for (var i=0; i<this.synresults.length; i++){
+            for (var i=0; i<this.synresults.length +4; i++){
               this.row2.freetextanswers.push(" ")
                 
             };
@@ -20625,7 +20629,7 @@ var database = {
           this.row4.comboanswers = []
 
 
-
+        
 
 
 
@@ -20635,6 +20639,7 @@ var database = {
             ans = this.row.inputanswers[i].substring(0,this.row.inputanswers[i].length-1)
             index3 = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-1, this.row.inputanswers[i].length)
             
+
             if (ans ==="p" ||    
                   ans === "m" ||   
                   ans === "r" ||   
@@ -20643,16 +20648,21 @@ var database = {
                   ans === "rp" ||   
                   ans === "yp" ||   
                   ans === "mrp" ||   
-                  ans === "myp" ||   
-                  ans === "rpp" ||   
+                  ans === "myp" ||     
                   ans === "ryp" ||   
-                  ans === "myrp"){
+                  ans === "mryp"){
                     count = this.row4.comboanswers.length
                   }
 
             if (index3 === "0"){
               this.row4.comboanswers.push(ans)
             }
+            else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " ") {
+              this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + "!!!!YOU FORGOT THIS ONE??0"
+              }
+            else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " ") {
+                this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + this.row2.freetextanswers[i]
+              }
             else {
               this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + ans
             }
@@ -20676,6 +20686,8 @@ var database = {
             var value = {question: this.synresults[i].name, answer: ans}
             this.row3.finalanswers.push(value)
           };
+          
+
           return this.row3.finalanswers
       }
 
