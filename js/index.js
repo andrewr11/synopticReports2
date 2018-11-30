@@ -4,13 +4,6 @@
 var database = {
     synresults: [
     ],
-    tableresults: [
-
-    ],
-   
-    tableanswers: [
-
-    ],
     row: {
       inputanswers: 
         [
@@ -57,10 +50,9 @@ var database = {
       {name : "Skin"},
       {name : "Thorax"},
     ],
-    offset : 0,
+   
     current_tumor:"Tango",
     current_tumor_biopsy_type: " ",
-    pressed: false,
     section: "homeMenu",
     showtable: true,
     tumor_types : [ {
@@ -20568,7 +20560,7 @@ var database = {
   
 
 
-
+  
 
         
   var app = new Vue({
@@ -20582,23 +20574,19 @@ var database = {
             this.current_tumor = site.name;  
             this.current_tumor_biopsy_type = site.biopsy_type;
             this.synresults = site.properties;
-
+         
             for (var i=0; i<this.synresults.length; i++){
-              this.tableresults.push(this.synresults[i].name)
-            };  
-            for (var i=0; i<this.synresults.length +4; i++){
               this.row.inputanswers.push("!!!!YOU FORGOT THIS ONE??0")
-                
+            };
+              for (var i=0; i< 4; i++){
+                this.row.inputanswers.push("!!!!YOU FORGOT THIS ONE??1")
+
             };
             for (var i=0; i<this.synresults.length +4; i++){
               this.row2.freetextanswers.push(" ")
                 
             };
-            for (var i=0; i<this.synresults.length; i++){
-              var value = {question: this.synresults[i].name, answer: this.row.inputanswers[i]}
-              this.tableanswers.push(value)
-            };
-
+            
             firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor}
             this.row3.finalanswers.push(firstrow)
 
@@ -20609,11 +20597,18 @@ var database = {
             for (var i=0; i<this.synresults.length +4; i++){
               this.row5.useFreeText.push(true)
             };
+
+            
         },
         
         displayhomeMenu(){
           this.section = "homeMenu"
+          this.synresults = [];
+          this.row.inputanswers = [];
+          this.row2.freetextanswers = [];
           this.row3.finalanswers = [];
+          this.row4.comboanswers = []
+          this.row5.useFreeText = []
         },
         changeUseFreeText(i){
           this.row5.useFreeText[i] = true
@@ -20627,12 +20622,6 @@ var database = {
           this.showtable = false;
           this.showtable = true;
           this.row4.comboanswers = []
-
-
-        
-
-
-
 
           var count = 0
           for (var i = 0; i<this.row.inputanswers.length; i++){
@@ -20687,8 +20676,11 @@ var database = {
             this.row3.finalanswers.push(value)
           };
           
+          
 
           return this.row3.finalanswers
+
+          
       }
 
     },

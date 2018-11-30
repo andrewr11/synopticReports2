@@ -107,25 +107,7 @@ label {
 }
 
 
-#generated-report-word {
-  line-height: 100%;
-  font-size: 14.5px; /*11pt font in Word*/
-  font-family: Arial;
-  font-weight: bold;
-  text-align: left;
-  white-space:pre;
-  margin-bottom: 30px;
-}
 
-#generated-report-space {
-  line-height: 100%;
-  font-size: 14.5px; /*11pt font in Word*/
-  font-family: monospace;
-  font-weight: bold;
-  text-align: left;
-  white-space:pre;
-  margin-bottom: 30px;
-}
 
 #generated-report p, #generated-report-space p, #generated-report-two-line p {
   margin: 0;
