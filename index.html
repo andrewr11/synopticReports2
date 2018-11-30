@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+        <!--navbar-->
         <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
                   <div class="navbar-header">
@@ -46,10 +46,12 @@
                 </div>
               </div>
 
-
+    <!--main Vue app-->
     <div id="app">
-      
+      <!--homepage view-->
       <div v-if="section === 'homeMenu'" class = "container">
+
+        <!--most common column-->
         <div id="tumor-type-grid">
           <div class = "row">
             <div class="col-md-3">
@@ -60,7 +62,7 @@
             </div>
          
 
-          
+            <!--organ group columns-->
             <div  id="tumor-type-grid" class="col-md-3" v-for="item in site_groups" >
                 <h4>{{item.name}}</h4>
                 <div id="tumor-type-grid" v-for="site in tumor_types" >
@@ -75,7 +77,7 @@
         <br>
       </div>
       
-
+      <!--Questions and table view-->
       <div v-if="section === 'showQuestions'" class = "container"> 
 
 
@@ -89,6 +91,7 @@
         </div>
         <br>
 
+        <!--form to submit questions from-->
         <form class="review-form" @submit.prevent="onSubmit">
 
             
@@ -124,7 +127,7 @@
         </form>  
 
        
-
+        <!--table portion-->
         <div v-if="showtable"  class = "container">
           <h2>Tumor Summary Table</h2>
           <table >
