@@ -48,7 +48,7 @@ var database = {
       {name : "Other-Biomarkers"},
       {name : "Pediatric"},
       {name : "Skin"},
-      {name : "Thorax"},
+      {name : "Thorax"}
     ],
    
     current_tumor:"Tango",
@@ -20557,8 +20557,7 @@ var database = {
    
   }
  
-  
-  
+
 
         
   var app = new Vue({
@@ -20576,11 +20575,11 @@ var database = {
             for (var i=0; i<this.synresults.length; i++){
               this.row.inputanswers.push("!!!!YOU FORGOT THIS ONE??0")
             };
-              for (var i=0; i< 4; i++){
+              for (var i=0; i< 3; i++){
                 this.row.inputanswers.push("!!!!YOU FORGOT THIS ONE??1")
 
             };
-            for (var i=0; i<this.synresults.length +4; i++){
+            for (var i=0; i<this.synresults.length +3; i++){
               this.row2.freetextanswers.push(" ")
                 
             };
@@ -20592,7 +20591,7 @@ var database = {
               var value = {question: this.synresults[i].name, answer: this.row.inputanswers[i]}
               this.row3.finalanswers.push(value)
             };
-            for (var i=0; i<this.synresults.length +4; i++){
+            for (var i=0; i<this.synresults.length +3; i++){
               this.row5.useFreeText.push(true)
             };
 
