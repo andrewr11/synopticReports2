@@ -92,7 +92,7 @@ label {
   font-family: "Arial";
   font-weight: bold;
   width: 600px;
-  margin-bottom: 30px;
+ 
   text-align: left;
 }
 
@@ -102,7 +102,7 @@ label {
 }
 
 .report-label{
-    white-space: nowrap;
+    white-space: wrap;
     padding-right: 5px !important;
 }
 
