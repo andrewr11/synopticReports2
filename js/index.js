@@ -20636,7 +20636,19 @@ var database = {
                   ans === "mrp" ||   
                   ans === "myp" ||     
                   ans === "ryp" ||   
-                  ans === "mryp"){
+                  ans === "mryp" ||
+                  ans ==="AJCC p" ||    
+                  ans === "AJCC m" ||   
+                  ans === "AJCC r" ||   
+                  ans === "AJCC y" ||   
+                  ans === "AJCC mp" ||   
+                  ans === "AJCC rp" ||   
+                  ans === "AJCC yp" ||   
+                  ans === "AJCC mrp" ||   
+                  ans === "AJCC myp" ||     
+                  ans === "AJCC ryp" ||   
+                  ans === "AJCC mryp"
+                  ){
                     count = this.row4.comboanswers.length
                   }
 
