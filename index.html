@@ -66,7 +66,7 @@
             <div  id="tumor-type-grid" class="col-md-3" v-for="item in site_groups" >
                 <h4>{{item.name}}</h4>
                 <div id="tumor-type-grid" v-for="site in tumor_types" >
-                <div v-if="site.organ_group === item.name" class = "row"><button class="link-button"  v-on:click="displayQuestions(site)"><span class = "name">{{site.name}}</span><span v-if="site.biopsy_type" > {{site.biopsy_type}}</span></button></div>
+                <div v-if="site.organ_group === item.name" class = "row"><button class="link-button"  v-on:click="displayQuestions(site)"><span class = "name">{{site.name}}</span><span v-if="site.biopsy_type" > {{site.biopsy_type}}</span><span v-if="site.optional" > (optional)</span></button></div>
                 </div>
             </div>
           </div>
@@ -130,12 +130,14 @@
         <!--table portion-->
         <div v-if="showtable"  class = "container">
           <h2>Tumor Summary Table</h2>
-          <table >
-            <tr v-for ="de in row3.finalanswers" id = "generated-report" id = "tumor-form">
-              <td valign="top"> | {{de.question}}:</td>
-              <td style = "width: 400px" > {{de.answer}}</td>
+          <div>
+          <table id = "generated-report">
+            <tr v-for ="de in row3.finalanswers">
+              <td valign="top" class = "report-label"> | {{de.question}}:</td>
+              <td class = "report-label"style = "width: 400px" > {{de.answer}}</td>
             </tr>
           </table> 
+          </div>
         </div>
         <br>
         <br>
