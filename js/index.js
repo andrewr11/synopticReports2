@@ -20566,7 +20566,7 @@ var database = {
     
     methods: {
         
-        displayQuestions(site){
+        displayQuestions: function(site){
             this.section = "showQuestions";  
             this.current_tumor = site.name;  
             this.current_tumor_biopsy_type = site.biopsy_type;
@@ -20593,12 +20593,12 @@ var database = {
             };
             for (var i=0; i<this.synresults.length +3; i++){
               this.row5.useFreeText.push(true)
-            };
+            }
 
             
         },
         
-        displayhomeMenu(){
+        displayhomeMenu: function(){
           this.section = "homeMenu"
           this.synresults = [];
           this.row.inputanswers = [];
@@ -20607,15 +20607,15 @@ var database = {
           this.row4.comboanswers = []
           this.row5.useFreeText = []
         },
-        changeUseFreeText(i){
+        changeUseFreeText: function(i){
           this.row5.useFreeText[i] = true
         },
 
-        dontUseFreeText(i){
+        dontUseFreeText: function(i){
           this.row5.useFreeText[i] = false
         },
 
-        onSubmit(){
+        onSubmit: function(){
           this.showtable = false;
           this.showtable = true;
           this.row4.comboanswers = []
