@@ -20619,17 +20619,19 @@ var database = {
           this.row5.useFreeText[i] = false
           this.row5.useFreeText[i] = true
           this.row6.bgc[i] = "#66ff99"
+          this.updateTable()
           
         },
 
         dontUseFreeText: function(i){
           this.row5.useFreeText[i] = false
           this.row6.bgc[i] = "#66ff99"
-          
+          this.updateTable()
 
         },
         changeColor: function(i){
           this.row6.bgc[i] = "#66ff99"
+          this.updateTable()
           
 
         },
@@ -20716,5 +20718,11 @@ var database = {
 
     },
     
+    watch: {
+      inputanswers: function (){
+        this.updateTable()
+      }
+    }
+
 
 })
