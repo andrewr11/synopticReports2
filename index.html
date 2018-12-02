@@ -106,8 +106,8 @@
                           <li v-if="index2 != 0" ><input type="radio" :value="g.name + index2" :name = "q.name + index2" v-model="row.inputanswers[synresults.length+index2-1]"   v-on:click= "dontUseFreeText(synresults.length+index2-1)" ><span ><strong>{{g.name}}</strong></span><span v-if="g.description" class = "description"> [ {{g.description}}]</span></li>
                         </ul>
                       <ul>
-                        <li v-if="index2 == 0"><input type="radio"  :checked="row5.useFreeText[index]" :name = "q.name + index2" v-on:click="changeUseFreeText(index)" ><span> </span><input  type = "text" :name="q.name"  v-model="row2.freetextanswers[index]"  v-on:change="changeColor(index)"></li> 
-                        <li v-if="index2 != 0"><input type="radio"  :checked="row5.useFreeText[synresults.length+index2-1]" :name = "q.name + index2" v-on:click="changeUseFreeText(synresults.length+index2-1)" ><span> </span><input  type = "text" :name="q.name"  v-model="row2.freetextanswers[synresults.length+index2-1]"v-on:change="changeColor(index)" ></li>
+                        <li v-if="index2 == 0"><input type="radio"  :checked="row5.useFreeText[index]" :name = "q.name + index2" v-on:click="changeUseFreeText(index)" ><span> </span><input  type = "text" :name="q.name"  v-model.lazy="row2.freetextanswers[index]"  v-on:change="changeColor(index)"></li> 
+                        <li v-if="index2 != 0"><input type="radio"  :checked="row5.useFreeText[synresults.length+index2-1]" :name = "q.name + index2" v-on:click="changeUseFreeText(synresults.length+index2-1)" ><span> </span><input  type = "text" :name="q.name"  v-model.lazy="row2.freetextanswers[synresults.length+index2-1]"v-on:change="changeColor(index)" ></li>
                     </ul> 
                     </div>
                  </div>
@@ -125,13 +125,15 @@
              
           
           <br>
-          <br>
+         
               </div>  
 
        
         <!--table portion-->
         <div v-if="showtable"  class = "container">
           <h2>Tumor Summary Table</h2>
+          <br>
+          <br>
           <div>
           <table id = "generated-report">
             <tr v-for ="de in row3.finalanswers">
