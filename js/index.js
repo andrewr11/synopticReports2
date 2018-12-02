@@ -20630,8 +20630,7 @@ var database = {
         },
         changeColor: function(i){
           this.row6.bgc[i] = "#66ff99"
-          dontUseFreeText(i)
-          changeUseFreeText (i)
+          
 
         },
 
