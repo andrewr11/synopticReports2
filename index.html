@@ -97,7 +97,7 @@
             
             <div  v-for="(q,index) in synresults" :key= "index">
                 <div v-bind:style="{backgroundColor: row6.bgc[index]}">
-                  <h4 class= "name"><span class = "name" >{{index}}. {{q.name}}</span><span v-if="q.description" class = "description"> [ {{q.description}}]</span></h4>
+                  <h4 class= "name"><span class = "name" >{{index+1}}. {{q.name}}</span><span v-if="q.description" class = "description"> [ {{q.description}}]</span></h4>
             
                 
                   <div v-for="(a, index2) in q.options" :key= "index2" >
