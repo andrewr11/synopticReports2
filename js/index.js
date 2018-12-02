@@ -34,6 +34,12 @@ var database = {
 
       ]
     },
+    row6: {
+      bgc: 
+        [
+
+      ]
+    },
     site_groups: [
       {name : "Breast"},
       {name : "Central Nervous System"},
@@ -20594,8 +20600,9 @@ var database = {
             for (var i=0; i<this.synresults.length +3; i++){
               this.row5.useFreeText.push(true)
             }
-
-            
+            for (var i=0; i<this.synresults.length; i++){
+              this.row6.bgc.push("#ffcccc")
+            }
         },
         
         displayhomeMenu: function(){
@@ -20606,18 +20613,31 @@ var database = {
           this.row3.finalanswers = [];
           this.row4.comboanswers = []
           this.row5.useFreeText = []
+          this.row6.bgc = []
         },
         changeUseFreeText: function(i){
+          this.row5.useFreeText[i] = false
           this.row5.useFreeText[i] = true
+          this.row6.bgc[i] = "#66ff99"
+          
         },
 
         dontUseFreeText: function(i){
           this.row5.useFreeText[i] = false
+          this.row6.bgc[i] = "#66ff99"
+          
+
+        },
+        changeColor: function(i){
+          this.row6.bgc[i] = "#66ff99"
+          
+
         },
 
-        onSubmit: function(){
+        updateTable: function(){
           this.showtable = false;
           this.showtable = true;
+          
           this.row4.comboanswers = []
 
           var count = 0
@@ -20655,13 +20675,13 @@ var database = {
             if (index3 === "0"){
               this.row4.comboanswers.push(ans)
             }
-            else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " ") {
+            else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " " && count !=0) {
               this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + "!!!!YOU FORGOT THIS ONE??0"
               }
-            else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " ") {
+            else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " " && count !=0) {
                 this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + this.row2.freetextanswers[i]
               }
-            else {
+            else if (count !=0) {
               this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + ans
             }
             
@@ -20674,9 +20694,11 @@ var database = {
           for (var i=0; i<this.synresults.length; i++){
             if (this.row5.useFreeText[i]){
               if (this.row2.freetextanswers[i]=== " ") {
-                this.row2.freetextanswers[i] = "!!!!YOU FORGOT THIS ONE??0"
+                ans = "!!!!YOU FORGOT THIS ONE??0"
               }
-              ans =this.row2.freetextanswers[i]
+              else{
+                ans =this.row2.freetextanswers[i]
+              }
             } else {
               
               ans = this.row4.comboanswers[i]
@@ -20693,5 +20715,6 @@ var database = {
       }
 
     },
+    
 
 })
