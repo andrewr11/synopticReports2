@@ -1085,7 +1085,7 @@ var database = {
             description : "in situ or invasion of lamina propria or muscularis mucosa ",
             name : "Tis"
           }, {
-            description : "low grade appendiceal mucinous neoplasm confied by the muscularis propria. acellular mucin or mucinous epithelium may invade into the muscularis propria. T1 and t2 are not appropriate for LAMN.  Mucin or epithelium into subserosa (T3) or serosa (T4a) are OK for either mucin or cells",
+            description : "low grade appendiceal mucinous neoplasm confined by the muscularis propria. acellular mucin or mucinous epithelium may invade into the muscularis propria. T1 and t2 are not appropriate for LAMN.  Mucin or epithelium into subserosa (T3) or serosa (T4a) are OK for either mucin or cells",
             name : "Tis(LAMN)"
           }, {
             description : "invades submucosa (Do not use for low grade mucinous tumors",
