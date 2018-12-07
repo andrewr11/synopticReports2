@@ -1,5 +1,18 @@
 
+/*
+synresults: holds all data from the selected site 
+inputanswers: holds the radio button data
+freetextanswers: holds the free text answers
+final answers holds the answers that are put in the table
+combo ansers : inorer to combine the 4 elements of AJCC staging into one answer
+BGC: sets the background color for each question
+modifyFreeText: for mixed free text and set text answers: holds free text
+modifyFreeTextHeader: for mixed free tex and set text, holds set text
+resopnses with an ID of 10 are mixed tree text and set text, the set text comes first
+reponses with an ID of 20 are mixed with a drop down (ie ER/PR)
 
+
+*/
 
 var database = {
     synresults: [
@@ -36,6 +49,18 @@ var database = {
     },
     row6: {
       bgc: 
+        [
+
+      ]
+    },
+    row7: {
+      modifyFreeText: 
+        [
+
+      ]
+    },
+    row8: {
+      modifyFreeTextHeader: 
         [
 
       ]
@@ -145,7 +170,7 @@ var database = {
           }, {
              description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor invades into adjacent organs"
+            id : "10", name : "Tumor invades into adjacent organs"
           }  ],
           id : "00", name : ""
         } ]
@@ -158,11 +183,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -386,7 +411,7 @@ var database = {
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "00", name : "Invades other adjacent organs or structures other than pancreas "
+            id : "10", name : "Invades other adjacent organs or structures other than pancreas "
           } ],
           id : "00", name : ""
         } ]
@@ -397,11 +422,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -412,11 +437,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           }  ],
@@ -569,7 +594,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -664,9 +689,9 @@ var database = {
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "00", name : "Invades other structures"
+            id : "10", name : "Invades other structures"
           }, {
-            id : "00", name : "Invades perianal skin"
+            id : "10", name : "Invades perianal skin"
           } ],
           id : "00", name : ""
         } ]
@@ -677,11 +702,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }],
           id : "00", name : ""
         } ]
@@ -692,11 +717,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -986,7 +1011,7 @@ var database = {
           }, {
              description : "specify",
                inputs_required : [ "" ],
-            id : "00", name : "Invades other organs"
+            id : "10", name : "Invades other organs"
           }, {
              description : "Stage TIS for low grade mucinous tumors",
             id : "00", name : "Mucin or cells invade muscularis propria"
@@ -1010,11 +1035,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -1040,7 +1065,7 @@ var database = {
           group : [ {
             description : "Present",
             inputs_required : [ "#" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "None"
           }, {
@@ -1207,7 +1232,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -1235,7 +1260,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ]
@@ -1341,7 +1366,7 @@ var database = {
           }, {
             description : "specify",
              inputs_required : [ "" ],
-            id : "00", name : "Invades other organs"
+            id : "10", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -1352,11 +1377,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -1509,15 +1534,15 @@ var database = {
           group : [ {
             description : "specify",
              inputs_required : [ "" ],
-            id : "00", name : "Appendicular skeleton "
+            id : "10", name : "Appendicular skeleton "
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "00", name : "Spine"
+            id : "10", name : "Spine"
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "00", name : "Pelvis "
+            id : "10", name : "Pelvis "
           } ],
           id : "00", name : ""
         } ]
@@ -1567,7 +1592,7 @@ var database = {
           }, {
             description : "%",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -1592,11 +1617,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -1812,7 +1837,7 @@ var database = {
           group : [ {
             description : "Extended list",
             inputs_required : [ [ "MYELOPROLIFERATIVE NEOPLASMS", "Chronic myelogenous leukemia, BCR-ABL1 positive", "Chronic neutrophilia leukemia", "Polycythemia vera", "Primary myelofibrosis", "Essential thrombocythemia", "Chronic eosinophilic leukemia, not otherwise specified (NOS)", "Mastocytosis", "Myeloproliferative neoplasm, unclassifiable", "", "PDGFRA, PDGFRB and FGFR1 NEOPLASMS", "Myeloid or lymphoid neoplasm with PDGFRA rearrangement", "Myeloid neoplasm with PDGFRB rearrangement", "Myeloid or lymphoid neoplasm with FGFR1 abnormalities", "", "MYELODYSPLASTIC/MYELOPROLIFERATIVE NEOPLASMS", "Chronic myelomonocytic leukemia", "Atypical chronic myeloid leukemia BCR-ABL1 negative", "Juvenile myelomonocytic leukemia", "Myelodysplastic/myeloproliferative neoplasm, unclassifiable", "Refractory anemia with ring sideroblasts associated with marked thrombocytosis", "", "MYELODYSPLASTIC SYNDROMES", "Refractory anemia", "Refractory neutropenia", "Refractory thrombocytopenia", "Refractory anemia with ring sideroblasts", "Refractory cytopenia with multilineage dysplasia", "Refractory anemia with excess blasts", "Myelodysplastic syndrome associated with isolated del(5q)", "Myelodysplastic syndrome, unclassifiable", "Refractory cytopenia of childhood", "", "AML WITH RECURRENT GENETIC ABNORMALITIES", "AML with t(8;21)(q22;q22); RUNX1-RUNX1T1", "AML with inv(16)(p13.1q22) or t(16;16)(p13.1;q22); CBFB-MYH11", "Acute promyelocytic leukemia with t(15;17)(q22;q12); PML-RARA", "AML with t(9;11)(p22;q23); MLLT3-MLL", "AML with t(6;9)(p23;q34); DEK-NUP214", "AML with inv(3)(q21q26.2) or t(3;3)(q21;q26.2); RPN1-EVI1", "AML (megakaryoblastic) with t(1;22)(p13;q13); RBM15-MKL1", "AML with mutated NPM1", "AML with mutated CEBPA", "", "AML WITH MDS", "AML with Multilineage dysplasia", "AML with Prior myelodysplastic syndrome", "AML with Myelodysplasia-related cytogenetic abnormalities", "", "THERAPY RELATED MYELOID NEOPLASMS", "Therapy-related AML", "Therapy-related myelodysplastic syndrome", "Therapy-related myelodysplastic/myeloproliferative neoplasm", "", "AML NOS", "AML with minimal differentiation", "AML without maturation", "AML with maturation", "Acute myelomonocytic leukemia", "Acute monoblastic/monocytic leukemia", "Acute erythroid leukemia", "Acute megakaryocytic leukemia", "Acute basophilic leukemia", "Acute panmyelosis with myelofibrosis", "AML, NOS", "", "MPS IN DOWNS SYNDROME", "Transient abnormal myelopoiesis in Downs syndrome", "Myeloid leukemia associated with Down syndrome", "", "ACUTE LEUKEMIA OF AMBIGUOUS LINEAGE", "Acute undifferentiated leukemia", "Mixed phenotype acute leukemia with t(9;22)(q34;q11.2); BCR-ABL1", "Mixed phenotype acute leukemia with t(v;11q23); MLL rearranged", "Mixed phenotype acute leukemia, B/myeloid, NOS", "Mixed phenotype acute leukemia, T/myeloid, NOS", "Mixed phenotype acute leukemia, NOS, rare types", "Natural killer (NK) cell lymphoblastic leukemia/lymphoma", "", "OTHER MYEOLOID LEUKEMIAS", "Blastic plasmacytoid dendritic cell neoplasm", "PRECURSOR LYMPHOID NEOPLASMS", "B lymphoblastic leukemia/lymphoma, NOS", "B lymphoblastic leukemia/lymphoma with t(9;22)(q34;q11.2); BCR-ABL1", "B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearranged", "B lymphoblastic leukemia/lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUNX1)", "B lymphoblastic leukemia/lymphoma with hyperdiploidy", "B lymphoblastic leukemia/lymphoma with hypodiploidy (hypodiploid ALL)", "B lymphoblastic leukemia/lymphoma with t(5;14)(q31;q32); IL3-IGH", "B lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)", "T lymphoblastic leukemia/lymphoma", "", "MATURE B CELL NEOPLASMS", "Chronic lymphocytic leukemia/small lymphocytic lymphoma", "B-cell prolymphocytic leukemia", "Splenic B-cell marginal zone lymphoma", "Hairy cell leukemia", "Splenic B-cell lymphoma/leukemia, unclassifiable", "Splenic diffuse red pulp small B-cell lymphoma", "Hairy cell leukemia-variant", "Lymphoplasmacytic lymphoma", "Plasma cell myeloma", "Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue (MALT lymphoma", "Follicular lymphoma", "Mantle cell lymphoma", "Diffuse large B-cell lymphoma (DLBCL), NOS", "T cell/histiocyte-rich large B-cell lymphoma", "Primary cutaneous DLBCL, leg type", "Epstein-Barr virus (EBV)-positive DLBCL of the elderly", "DLBCL associated with chronic inflammation", "Lymphomatoid granulomatosis", "Anaplastic lymphoma kinase (ALK)-positive large B-cell lymphoma", "Plasmablastic lymphoma", "Large B-cell lymphoma arising in HHV8-associated multicentric Castleman disease", "Burkitt lymphoma", "B-cell lymphoma, unclassifiable, with features intermediate between diffuse large B-cell lymphoma and Burkitt lymphoma", "B-cell lymphoma, unclassifiable, with features intermediate between diffuse large B-cell lymphoma and classical Hodgkin lymphoma", "B-cell lymphoma, NOS", "", "MATURE T AND NK CELL NEOPLASMS", "T-cell lymphoma,", "T-cell prolymphocytic leukemia", "T-cell large granular lymphocytic leukemia", "Chronic lymphoproliferative disorder of NK cells", "Aggressive NK-cell leukemia ", "Adult T-cell leukemia/lymphoma ", "Extranodal NK/T-cell lymphoma, nasal type", "Enteropathy-associated T-cell lymphoma", "Hepatosplenic T-cell lymphoma", "Mycosis fungoides", "Peripheral T-cell lymphoma, NOS", "Angioimmunoblastic T-cell lymphoma", "Anaplastic large cell lymphoma, ALK-positive", "Anaplastic large cell lymphoma, ALK-negative", "", "HODGKIN LYMPHOMA", "Nodular lymphocyte predominant Hodgkin lymphoma", "Classical Hodgkin lymphoma", "", "HISTIOCYTIC AND DENDRITIC CELL NEOPLASMS", "Histiocytic sarcom", "Langerhans cell histiocytosis", "Langerhans cell sarcoma", "Interdigitating dendritic cell sarcoma", "Follicular dendritic cell sarcoma", "Disseminated juvenile xanthogranuloma", "Histiocytic neoplasm, NOS", "", "POST-TRANSPLASNT LYMPHOPROLIFERATIVE DISORDERS (PTLD)", "Plasmacytic hyperplasia", "Infectious mononucleosis-like PTLD", "Polymorphic PTLD", "Monomorphic PTLD (B- and T/NK-cell types)", "Classical Hodgkin lymphoma type PTLD" ] ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -1824,7 +1849,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -1841,7 +1866,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -1857,7 +1882,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -1871,7 +1896,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -1940,7 +1965,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -1956,7 +1981,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -1972,7 +1997,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -1986,7 +2011,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -2084,7 +2109,7 @@ var database = {
           }, {
             description : "location, only use for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
            
           id : "00", name : ""
@@ -2246,21 +2271,13 @@ var database = {
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -2270,7 +2287,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -2279,21 +2296,13 @@ var database = {
         id : "00", name : "Progesterone Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -2303,7 +2312,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -2606,7 +2615,7 @@ var database = {
           }, {
             description : "location, only use for TUMOR ON INK",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             description : "T0, no residual tumor",
             id : "00", name : "Not applicable"
@@ -2623,7 +2632,7 @@ var database = {
           }, {
             description : "location, only for TUMOR ON INK",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -2919,21 +2928,13 @@ var database = {
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -2943,7 +2944,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -2952,21 +2953,13 @@ var database = {
         id : "00", name : "Progesterone Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -2976,7 +2969,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -2997,7 +2990,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3006,7 +2999,7 @@ var database = {
         id : "00", name : "Her2Neu by FISH",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }, {
             id : "00", name : "Negative"
           }, {
@@ -3018,7 +3011,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3111,11 +3104,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Right"
+            id : "10", name : "Right"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Left"
+            id : "10", name : "Left"
           } ],
           id : "00", name : ""
         } ]
@@ -3185,7 +3178,7 @@ var database = {
           canSelectMultiple : true,
           group : [ {
             inputs_required : [ "" ],
-            id : "00", name : "At least"
+            id : "10", name : "At least"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -3340,21 +3333,13 @@ var database = {
           group : [ {
             id : "00", name : "Pending"
           }, {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -3362,7 +3347,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3373,21 +3358,13 @@ var database = {
           group : [ {
             id : "00", name : "Pending"
           }, {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -3395,7 +3372,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3416,7 +3393,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3425,7 +3402,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           canSelectMultiple : true,
           group : [ {
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }, {
             id : "00", name : "Negative"
           }, {
@@ -3437,7 +3414,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3455,11 +3432,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Right"
+            id : "10", name : "Right"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Left"
+            id : "10", name : "Left"
           } ],
           id : "00", name : ""
         } ]
@@ -3640,21 +3617,13 @@ var database = {
           group : [ {
             id : "00", name : "Pending"
           }, {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -3662,7 +3631,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3673,21 +3642,13 @@ var database = {
           group : [ {
             id : "00", name : "Pending"
           }, {
-            id : "00", name :  "Positive, >90% of cells, strong intensity"
+            id : "20", name :  "Positive, >90% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, strong intensity"
+            id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "00", name :  "Positive  10-50% of cells, strong intensity"
+            id : "20", name :  "Positive  10-50% of cells, "
           },{
-            id : "00", name :  "Positive  50-90% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderateintensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, moderate intensity"
-          },{
-            id : "00", name :  "Positive  10-50% of cells, weak intensity"
-          },{
-            id : "00", name :  "Positive  1-10% of cells, weak intensity"
+            id : "20", name :  "Positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -3695,7 +3656,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -3713,11 +3674,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Right"
+            id : "10", name : "Right"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Left"
+            id : "10", name : "Left"
           } ],
           id : "00", name : ""
         } ]
@@ -3839,11 +3800,11 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Cranial nerve "
+            id : "10", name : "Cranial nerve "
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Ventricle"
+            id : "10", name : "Ventricle"
           }, {
             id : "00", name : "Brain stem "
           }, {
@@ -3853,15 +3814,15 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Spinal nerve root(s) "
+            id : "10", name : "Spinal nerve root(s) "
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Peripheral nerve "
+            id : "10", name : "Peripheral nerve "
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Ganglion"
+            id : "10", name : "Ganglion"
           } ],
           id : "00", name : ""
         } ]
@@ -3934,7 +3895,7 @@ var database = {
           }, {
             description : "Extended list",
             inputs_required : [ [ "ASTROCYTIC TUMORS", "Pilocytic astrocytoma (WHO grade I)", "Pilomyxoid astrocytoma (WHO grade II) ", "Subependymal giant cell astrocytoma (WHO grade I)", "Pleomorphic xanthoastrocytoma (WHO grade II)", "Pleomorphic xanthoastrocytoma with anaplastic features (WHO grade not assigned) ", "Diffuse astrocytoma (WHO grade II)", "Fibrillary astrocytoma (WHO grade II)", "Protoplasmic astrocytoma (WHO grade II)", "Gemistocytic astrocytoma (WHO grade II)", "Anaplastic astrocytoma (WHO grade III)", "Glioblastoma (WHO grade IV)", "Giant cell glioblastoma (WHO grade IV) ", "Gliosarcoma (WHO grade IV)", "Gliomatosis cerebri ", "Astrocytoma, not otherwise characterized ", "", "OLIGODENDROGLIAL TUMORS", "Oligodendroglioma (WHO grade II)", "Anaplastic oligodendroglioma (WHO grade III)", "", "OLIGOASTROCYTIC TUMORS", "Oligoastrocytoma (WHO grade II)", "Anaplastic oligoastrocytoma (WHO grade III)", "", "EPENDYMAL TUMORS", "Subependymoma (WHO grade I)", "Myxopapillary ependymoma (WHO grade I)", "Ependymoma (WHO grade II)", "Cellular ependymoma (WHO grade II)", "Papillary ependymoma (WHO grade II)", "Clear cell ependymoma (WHO grade II)", "Tanycytic ependymoma (WHO grade II)", "Anaplastic ependymoma (WHO grade III)", "", "CHOROID PLEXUS TUMORS", "Choroid plexus papilloma (WHO grade I)", "Atypical choroid plexus papilloma (WHO grade II)", "Choroid plexus carcinoma (WHO grade III)", "", "OTHER NEUROEPITHELIAL TUMORS", "Astroblastoma (WHO grade not assigned)", "Chordoid glioma of the third ventricle (WHO grade II)", "Angiocentric glioma (WHO grade I)", "", "NEURONAL AND MIXED NEURONAL-GLIAL TUMORS", "Dysplastic gangliocytoma of cerebellum (Lhermitte-Duclos) (WHO grade I)", "Desmoplastic infantile astrocytoma/ganglioglioma (WHO grade I)", "Dysembryoplastic neuroepithelial tumor (WHO grade I)", "Gangliocytoma (WHO grade I)", "Ganglioglioma (WHO grade I)", "Anaplastic ganglioglioma (WHO grade III)", "Central neurocytoma (WHO grade II)", "Extraventricular neurocytoma (WHO grade II)", "Cerebellar liponeurocytoma (WHO grade II)", "Papillary glioneuronal tumor (PGNT) (WHO grade I)", "Rosette-forming glioneuronal tumor of the fourth ventricle (RGNT) (WHO grade I)", "Paraganglioma of the spinal cord (WHO grade I)", "", "PINEAL TUMORS", "Pineocytoma (WHO grade I)", "Pineal parenchymal tumor of intermediate differentiation (WHO II III)", "Pineoblastoma (WHO grade IV)", "Papillary tumor of the pineal region (WHO grade II-III)", "", "EMBRYONAL TUMORS", "Medulloblastoma, not otherwise characterized (WHO grade IV)", "Desmoplastic/nodular medulloblastoma (WHO grade IV)", "Medulloblastoma with extensive nodularity (WHO grade IV)", "Anaplastic medulloblastoma (WHO grade IV)", "Large cell medulloblastoma (WHO grade IV)", "Central nervous system (CNS) primitive neuroectodermal tumor (PNET) (WHO grade IV)", "Medulloepithelioma (WHO grade IV)", "Neuroblastoma (WHO grade IV)", "Ganglioneuroblastoma (WHO grade IV)", "Ependymoblastoma (WHO grade IV)", "Atypical teratoid/rhabdoid tumor (WHO grade IV)", "", "TUMORS OF NERVES", "Schwannoma (WHO grade I)", "Cellular schwannoma (WHO grade I)", "Plexiform schwannoma(WHO grade I)", "Melanotic schwannoma (WHO grade I)", "Neurofibroma (WHO grade I", "Plexiform neurofibroma (WHO grade I) ", "Perineurioma (WHO grade I)", "Intraneural perineurioma (WHO grade I)", "Soft tissue perineurioma (WHO grade I)", "Malignant perineurioma (WHO grade III)", "Ganglioneuroma (WHO grade I) ", "Malignant peripheral nerve sheath tumor (MPNST) (WHO grade II-IV) ", "Epithelioid MPNST (WHO grade II-IV)", "MPNST with divergent mesenchymal and/or epithelial differentiation (WHO grade II-IV)", "", "MENINGEAL TUMORS", "Meningioma (WHO grade I)", "Meningothelial meningioma (WHO grade I)", "Fibrous meningioma (fibroblastic) (WHO grade I)", "Transitional meningioma (mixed) (WHO grade I)", "Psammomatous meningioma (WHO grade I)", "Angiomatous meningioma (WHO grade I)", "Microcystic meningioma (WHO grade I)", "Secretory meningioma (WHO grade I)", "Lymphoplasmacyte-rich (lymphoplasmacytic) meningioma (WHO grade I)", "Metaplastic meningioma (WHO grade I)", "Atypical meningioma (WHO grade II)", "Clear cell meningioma (WHO grade II)", "Chordoid meningioma (WHO grade II)", "Anaplastic meningioma (WHO grade III)", "Papillary meningioma (WHO grade III)", "Rhabdoid meningioma (WHO grade III)", "", "MESENCHYMAL TUMORS", "Lipoma", "Angiolipoma", "Hibernoma", "Liposarcoma (intracranial)", "Solitary fibrous tumor", "Fibrosarcoma ", "Malignant fibrous histiocytoma", "Leiomyoma", "Leiomyosarcoma", "Rhabdomyoma ", "Rhabdomyosarcoma", "Chondroma", "Chondrosarcoma", "Osteoma", "Osteosarcoma ", "Osteochondroma ", "Hemangioma ", "Epithelioid hemangioendothelioma ", "Hemangiopericytoma ", "Anaplastic hemangiopericytoma  ", "Angiosarcoma", "Kaposi sarcoma", "Chordoma", "Mesenchymal, nonmeningothelial tumor", "Sarcoma, primary CNS ", "", "MELANOTIC TUMORS", "Diffuse melanocytosis", "Melanocytoma", "Malignant melanoma", "Meningeal melanomatosis", "", "TUMORS OF UNCERTAIN HISTOGENESIS", "Hemangioblastoma (WHO grade I)", "", "LYMPHOMA AND HEMATOPOIETIC TUMORS", "Malignant lymphoma", "Plasmacytoma", "Granulocytic sarcoma", "Hematopoietic neoplasm, other ", "", "GERM CELL TUMORS", "Germinoma", "Embryonal carcinoma", "Yolk sac tumor", "Choriocarcinoma", "Teratoma, mature", "Teratoma, immature", "Teratoma with malignant transformation", "Malignant mixed germ cell tumor ", "", "SELLAR TUMORS", "Craniopharyngioma (WHO grade I)", "Craniopharyngioma, adamantinomatous (WHO grade I)", "Craniopharyngioma, papillary (WHO grade I)", "Granular cell tumor (WHO grade I)", "Pituicytoma (WHO grade I)", "Spindle cell oncocytoma (WHO grade I)", "Pituitary adenoma ", "Pituitary carcinoma", "Pituitary hyperplasia", "", "OTHER", "Malignant neoplasm, type cannot be determined", "Pediatric low grade glioma (pLGG) not otherwise specified (NOS) (Grade I/II)" ] ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -3963,7 +3924,7 @@ var database = {
           group : [ {
             description : "IDH, P53, ATRX",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "None"
           }, {
@@ -3972,7 +3933,7 @@ var database = {
             id : "00", name : "See above"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ]
@@ -3991,7 +3952,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ]
@@ -4111,7 +4072,7 @@ var database = {
           }, {
              description : "specify, incluidng vagina, ovaries, fallopian tubes, pelvic side wall, bladder bowel and omentum",
               inputs_required : [ "" ],
-            id : "00", name : "Other organs"
+            id : "10", name : "Other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -4122,11 +4083,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }],
           id : "00", name : ""
         } ]
@@ -4137,11 +4098,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }],
           id : "00", name : ""
         } ]
@@ -4192,7 +4153,7 @@ var database = {
           }, {
             description : "# positive, specify location",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -4206,7 +4167,7 @@ var database = {
           }, {
             description : "# positive, specify location",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -4483,11 +4444,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }],
           id : "00", name : ""
         } ]
@@ -4652,14 +4613,14 @@ var database = {
           }, {
              description : "T4b",
              inputs_required : [ "" ],
-            id : "00", name : "Adherent to other organs"
+            id : "10", name : "Adherent to other organs"
           }, {
              description : "T4b",
             id : "00", name : "Invades omentum"
           }, {
              description : "T4b, specify",
              inputs_required : [ "" ],
-            id : "00", name : "Invades other organs"
+            id : "10", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -4670,11 +4631,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -4730,7 +4691,7 @@ var database = {
           }, {
             description : "#",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -4897,7 +4858,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -4924,7 +4885,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ]
@@ -5089,11 +5050,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -5340,7 +5301,7 @@ var database = {
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Invades other adjacent structures"
+            id : "10", name : "Invades other adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -5365,11 +5326,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -5380,11 +5341,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -5541,7 +5502,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -5751,7 +5712,7 @@ var database = {
           }, {
             description : "DUODENUM",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades adjacent structures "
+            id : "10", name : "Tumor directly invades adjacent structures "
           }, {
             description : "AMPULLA ",
             id : "00", name : "Tumor limited to ampulla of Vater or sphincter of Oddi "
@@ -5773,7 +5734,7 @@ var database = {
           }, {
             description : "AMPULLA",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades adjacent structures "
+            id : "10", name : "Tumor directly invades adjacent structures "
           } ],
           id : "00", name : ""
         } ]
@@ -5784,11 +5745,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -6382,7 +6343,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -6400,7 +6361,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ] 
@@ -6550,7 +6511,7 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Invades adjacent structures "
+            id : "10", name : "Invades adjacent structures "
           } ],
           id : "00", name : ""
         } ]
@@ -6561,11 +6522,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -6576,11 +6537,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -6779,7 +6740,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -6788,7 +6749,7 @@ var database = {
         description : "Order IHC with reflext FISH for adenocarcinoma",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }, {
             id : "00", name : "Negative"
           }, {
@@ -6802,7 +6763,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -6812,10 +6773,10 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             inputs_required : [ "% of cells", [ "strong", "moderate", "weak" ] ],
-            id : "00", name : "Positive/Expressed"
+            id : "10", name : "Positive/Expressed"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "Positive, Score ="
+            id : "10", name : "Positive, Score ="
           }, {
             id : "00", name : "Negative (0%)"
           }, {
@@ -6825,7 +6786,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         }  ]
@@ -6844,7 +6805,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -6883,11 +6844,11 @@ var database = {
           group : [ {
             description : "distance to closest bone and or soft tissue margin (specify)",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -6953,7 +6914,7 @@ var database = {
           }, {
              description : "site",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -7073,7 +7034,7 @@ var database = {
           }, {
             description : "specify",
              inputs_required : [ "" ],
-            id : "00", name : "Invades other organs"
+            id : "10", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -7084,11 +7045,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -7223,7 +7184,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -7326,11 +7287,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -7360,7 +7321,7 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "M (not applicable)"
           }, {
@@ -7527,11 +7488,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -7639,7 +7600,7 @@ var database = {
         id : "00", name : "KIT(CD117) Immunohistochemistry",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }, {
             id : "00", name : "Negative"
           }, {
@@ -7651,7 +7612,7 @@ var database = {
         id : "00", name : "DOG1 Immunohistochemistry",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }, {
             id : "00", name : "Negative"
           }, {
@@ -7748,11 +7709,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -7763,11 +7724,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -7800,7 +7761,7 @@ var database = {
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -7860,7 +7821,7 @@ var database = {
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "00", name : "Segmental location  "
+            id : "10", name : "Segmental location  "
           } ],
           id : "00", name : ""
         } ]
@@ -7911,7 +7872,7 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades adjacent organs other than the gallbladder  "
+            id : "10", name : "Tumor directly invades adjacent organs other than the gallbladder  "
           } ],
           id : "00", name : ""
         } ]
@@ -7922,11 +7883,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -8151,7 +8112,7 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades adjacent organs other than the gallbladder  "
+            id : "10", name : "Tumor directly invades adjacent organs other than the gallbladder  "
           } ],
           id : "00", name : ""
         } ]
@@ -8162,11 +8123,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -8311,7 +8272,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -8432,7 +8393,7 @@ var database = {
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades adjacent structures "
+            id : "10", name : "Tumor directly invades adjacent structures "
           } ],
           id : "00", name : ""
         } ]
@@ -8443,11 +8404,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -8787,7 +8748,7 @@ var database = {
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "00", name : "Invades other organs"
+            id : "10", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -8795,11 +8756,11 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free, "
           }, {
             description : "location parenchymal, capsular (partial), perinephric fat, renal sinus, Gerota, renal vein, ureter",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -8963,10 +8924,10 @@ var database = {
             id : "00", name : "Supracricoid laryngectomy"
           }, {description : "specify type",
             inputs_required : [ "" ],
-            id : "00", name : "Vertical hemilaryngectomy "
+            id : "10", name : "Vertical hemilaryngectomy "
           }, {description : "specify type",
             inputs_required : [ "" ],
-            id : "00", name : "Partial laryngectomy "
+            id : "10", name : "Partial laryngectomy "
           }, {
             id : "00", name : "Total laryngectomy"
           } ],
@@ -9104,11 +9065,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9121,11 +9082,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9512,11 +9473,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9529,11 +9490,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9546,11 +9507,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9928,7 +9889,7 @@ var database = {
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -9939,11 +9900,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -10143,7 +10104,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ]
@@ -10213,7 +10174,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -10258,7 +10219,7 @@ var database = {
           group : [ {
             description : "Extended list",
             inputs_required : [ [ "PRECURSOR LYMPHOID NEOPLASMS", "B lymphoblastic leukemia/lymphoma", "B lymphoblastic leukemia/lymphoma with t(9;22)(q34;q11.2); BCR-ABL1", "B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearranged", "B lymphoblastic leukemia/lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUNX1", "B lymphoblastic leukemia/lymphoma with hyperdiploidy", "B lymphoblastic leukemia/lymphoma with hypodiploidy (hypodiploid acute lymphoblastic leukemia/lymphoma [ALL])", "B lymphoblastic leukemia/lymphoma with t(5;14)(q31;q32); IL3-IGH", "B lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)", "T lymphoblastic leukemia/lymphoma", "", "MATURE B CELL NEOPLASMS", "B-cell lymphoma", "Chronic lymphocytic leukemia/small lymphocytic lymphoma", "B-cell prolymphocytic leukemia", "Splenic B-cell marginal zone lymphoma", "Hairy cell leukemia", "Splenic B-cell lymphoma/leukemia, unclassifiable", "Splenic diffuse red pulp small B-cell lymphoma", "Hairy cell leukemia-variant", "Lymphoplasmacytic lymphoma", "Gamma heavy chain disease", "Mu heavy chain disease", "Alpha heavy chain disease", "Plasma cell myeloma", "Solitary plasmacytoma of bone", "Extraosseous plasmacytoma", "Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue (MALT lymphoma) ", "Nodal marginal zone lymphoma", "Pediatric nodal marginal zone lymphoma", "Follicular lymphoma", "Pediatric follicular lymphoma", "Primary intestinal follicular lymphoma", "Primary cutaneous follicle center lymphoma", "Mantle cell lymphoma", "Diffuse large B-cell lymphoma (DLBCL)", "T cell/histiocyte-rich large B-cell lymphoma", "Primary DLBCL of the central nervous system (CNS)", "Primary cutaneous DLBCL, leg type", "Epstein-Barr virus (EBV)-positive DLBCL of the elderly", "DLBCL associated with chronic inflammation", "Lymphomatoid granulomatosis", "Primary mediastinal (thymic) large B-cell lymphoma", "Intravascular large B-cell lymphoma", "Anaplastic lymphoma kinase (ALK)-positive large B-cell lymphoma", "Plasmablastic lymphoma", "Large B-cell lymphoma arising in HHV8-associated multicentric Castleman disease", "Primary effusion lymphoma", "Burkitt lymphoma", "B-cell lymphoma, unclassifiable, with features intermediate between diffuse large B-cell lymphoma and Burkitt lymphoma", "B-cell lymphoma, unclassifiable, with features intermediate between diffuse large B-cell lymphoma and classical Hodgkin lymphoma", "", "MATURE T AND NK CELL NEOPLASMS", "T-cell lymphoma", "T-cell prolymphocytic leukemia", "T-cell large granular lymphocytic leukemia", "Chronic lymphoproliferative disorder of NK cells", "Aggressive NK-cell leukemia", "Systemic EBV-positive T-cell lymphoproliferative disease of childhood", "Hydroa vacciniforme-like lymphoma ", "Adult T-cell leukemia/lymphoma ", "Extranodal NK/T-cell lymphoma, nasal type", "Enteropathy-associated T-cell lymphoma", "Hepatosplenic T-cell lymphoma", "Subcutaneous panniculitis-like T-cell lymphoma", "Primary cutaneous anaplastic large cell lymphoma", "Lymphomatoid papulosis", "Primary cutaneous gamma-delta T-cell lymphoma", "Primary cutaneous CD8-positive aggressive epidermotropic cytotoxic T-cell lymphoma", "Primary cutaneous CD4-positive small/medium T-cell lymphoma", "Peripheral T-cell lymphoma, NOS", "Angioimmunoblastic T-cell lymphoma", "Anaplastic large cell lymphoma, ALK-positive", "Anaplastic large cell lymphoma, ALK-negative", "", "HISTIOCYTIC AND DENDRITIC NEOPLASMS", "Histiocytic sarcoma", "Langerhans cell histiocytosis", "Langerhans cell sarcoma", "Interdigitating dendritic cell sarcoma", "Follicular dendritic cell sarcoma", "Fibroblastic reticular cell tumor", "Equivocal dendritic cell tumor", "Disseminated juvenile xanthogranuloma", "", "POST-TRANSPLANT LYMPHOPROLIFERATIVE DISORDERS", "Plasmacytic hyperplasia", "Infectious mononucleosis-like PTLD", "Polymorphic PTLD", "Monomorphic PTLD (B- and T/NK-cell types)", "Classical Hodgkin lymphoma type PTLD" ] ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -10270,7 +10231,7 @@ var database = {
           group : [ {
             description : "Performed",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "See separate report"
           }, {
@@ -10445,7 +10406,7 @@ var database = {
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "00", name : "invades other organs"
+            id : "10", name : "invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -10456,11 +10417,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -10746,11 +10707,11 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -11061,11 +11022,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -11078,11 +11039,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -11476,7 +11437,7 @@ var database = {
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -11898,7 +11859,7 @@ var database = {
           },{
            description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
             }],
           id : "00", name : ""
         } ]
@@ -12282,11 +12243,11 @@ var database = {
           }, {
              description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades adjacent structures "
+            id : "10", name : "Tumor directly invades adjacent structures "
           }, {
              description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades wall of large vessel "
+            id : "10", name : "Tumor directly invades wall of large vessel "
           } ],
           id : "00", name : ""
         } ]
@@ -12297,11 +12258,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -12566,7 +12527,7 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor invades other adjacent organs or structures  "
+            id : "10", name : "Tumor invades other adjacent organs or structures  "
           } ],
           id : "00", name : ""
         } ]
@@ -12577,11 +12538,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -12765,7 +12726,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -12924,11 +12885,11 @@ var database = {
           }, {
             description : "scrotum, prostate, pubic bone",
              inputs_required : [ "" ],
-            id : "00", name : "Tumor invades into adjacent structures "
+            id : "10", name : "Tumor invades into adjacent structures "
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor invades other structures "
+            id : "10", name : "Tumor invades other structures "
           } ],
           id : "00", name : ""
         } ]
@@ -12937,11 +12898,11 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -13276,11 +13237,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }],
           id : "00", name : ""
         } ]
@@ -13291,11 +13252,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -13455,7 +13416,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -13605,11 +13566,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -13620,11 +13581,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -14005,11 +13966,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -14020,11 +13981,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -14391,11 +14352,11 @@ var database = {
           }, {
             description : "less than 1 high-power field in 1 or 2 sections,location",
             inputs_required : [ "" ],
-            id : "00", name : "Present, focal"
+            id : "10", name : "Present, focal"
           }, {
             description : "more than 1 high-power field in 1 or 2 sections,location",
             inputs_required : [ "" ],
-            id : "00", name : "Present, nonfocal"
+            id : "10", name : "Present, nonfocal"
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -14430,19 +14391,19 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "< 3mm, location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive, focal"
+            id : "10", name : "Positive, focal"
           }, {
             description : ">= 3mm, location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive, nonfocal"
+            id : "10", name : "Positive, nonfocal"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -14661,11 +14622,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "right"
+            id : "10", name : "right"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "left"
+            id : "10", name : "left"
           } ],
           id : "00", name : ""
         } ]
@@ -14718,7 +14679,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             inputs_required : [ [" 1 of 1 core ", "1 of 2 cores ", "2 of 2 cores", "1 of 3 cores", "2 of 3 cores", "3 of 3 cores", "Involving multiple cores"], " &nbsp; % of tissue" ],
-            id : "00", name : ""
+            id : "10", name : ""
           } ],
           id : "00", name : ""
         } ]
@@ -14764,11 +14725,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "right"
+            id : "10", name : "right"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "left"
+            id : "10", name : "left"
           } ],
           id : "00", name : ""
         } ]
@@ -15095,11 +15056,11 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
-            id : "00", name : "Free"
+            id : "00", name : "Free, "
           }, {
             description : "location, including optic nerve and extrascleral extension",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -15322,11 +15283,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -15357,7 +15318,7 @@ var database = {
             id : "00", name : "None"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15384,15 +15345,15 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Right"
+            id : "10", name : "Right"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Left"
+            id : "10", name : "Left"
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Midline"
+            id : "10", name : "Midline"
           } ],
           id : "00", name : ""
         } ]
@@ -15488,11 +15449,11 @@ var database = {
           group : [ {
             description : "distance location",
              inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15505,11 +15466,11 @@ var database = {
           group : [ {
             description : "distance",
              inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
            
            
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15529,7 +15490,7 @@ var database = {
           }, {
             description : "# per square millimeter",
             inputs_required : [ "" ],
-            id : "00", name : ""
+            id : "10", name : ""
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15813,11 +15774,11 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
-            id : "00", name : "Free"
+            id : "00", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15829,11 +15790,11 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
-            id : "00", name : "Free"
+            id : "00", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16119,11 +16080,11 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor directly invades adjacent structures "
+            id : "10", name : "Tumor directly invades adjacent structures "
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "00", name : "Tumor penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
+            id : "10", name : "Tumor penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -16134,11 +16095,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -16289,7 +16250,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -16344,7 +16305,7 @@ var database = {
           }, {
             description : "%",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -16370,11 +16331,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -16652,11 +16613,11 @@ var database = {
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Invades adjacent structures "
+            id : "10", name : "Invades adjacent structures "
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
+            id : "10", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -16667,11 +16628,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -16682,11 +16643,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16875,7 +16836,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -16884,7 +16845,7 @@ var database = {
         description : "Order IHC with reflext FISH",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }, {
             id : "00", name : "Negative"
           }, {
@@ -16898,7 +16859,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -16908,10 +16869,10 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             inputs_required : [ "% of cells", [ "strong", "moderate", "weak" ] ],
-            id : "00", name : "Positive/Expressed"
+            id : "10", name : "Positive/Expressed"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "Positive, Score ="
+            id : "10", name : "Positive, Score ="
           }, {
             id : "00", name : "Negative (0%)"
           }, {
@@ -16921,7 +16882,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         }  ]
@@ -16940,7 +16901,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -17066,11 +17027,11 @@ var database = {
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Invades adjacent structures "
+            id : "10", name : "Invades adjacent structures "
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
+            id : "10", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -17081,11 +17042,11 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -17259,7 +17220,7 @@ var database = {
           }, {
             description : "give percentages",
             inputs_required : [ "" ],
-            id : "00", name : "Mixed germ cell tumor"
+            id : "10", name : "Mixed germ cell tumor"
           }, {
             description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+",
             id : "00", name : "Embryonal tumor"
@@ -17328,11 +17289,11 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -17632,12 +17593,12 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             id : "00", name : "Positive, tumor abuts the inked margin"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -17937,11 +17898,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -17957,7 +17918,7 @@ var database = {
           }, {
             description : "% residual viable tumor",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -18152,7 +18113,7 @@ var database = {
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Positive "
+            id : "10", name : "Positive "
           } ],
           id : "00", name : ""
         } ]
@@ -18162,11 +18123,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18247,7 +18208,7 @@ var database = {
           }, {
             description : "all other metastases, specify # and site",
             inputs_required : [ "" ],
-            id : "00", name : "M1b"
+            id : "10", name : "M1b"
           }, {
             id : "00", name : "M (not applicable)"
           }, {
@@ -18323,6 +18284,8 @@ var database = {
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
           }, {
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
+          }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC)"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with squamous differentiation"
@@ -18395,7 +18358,7 @@ var database = {
           }, {
              description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Invades adjacent organs, or through the kidney into the perinephric fat"
+            id : "10", name : "Invades adjacent organs, or through the kidney into the perinephric fat"
           } ],
           id : "00", name : ""
         } ]
@@ -18403,11 +18366,11 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location (proximal/distal ureteral, deep)",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18418,11 +18381,11 @@ var database = {
         id : "00", name : "Margins, non-invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location (ureteral, urethral, deep), type (papillary, CIS)",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18498,6 +18461,9 @@ var database = {
           }, {
             description : "CIS",
             id : "00", name : "Tis"
+          }, {
+            description : "Ta/CIS",
+            id : "00", name : "Ta/Tis"
           }, {
             description : "Invades lamina propria",
             id : "00", name : "T1"
@@ -18584,7 +18550,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -18604,7 +18570,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ]
@@ -18640,6 +18606,8 @@ var database = {
             id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive"
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
+          }, {
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC)"
           }, {
@@ -18731,7 +18699,7 @@ var database = {
             id : "00", name : "Invades rectum"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "Invades adjacent structures"
+            id : "10", name : "Invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -18739,11 +18707,11 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location (proximal, distal ,deep)",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18753,11 +18721,11 @@ var database = {
         id : "00", name : "Margins, dysplasia/CIS",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location (proximal, distal ,deep)",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18830,6 +18798,9 @@ var database = {
           }, {
             description : "CIS",
             id : "00", name : "Tis"
+          }, {
+            description : "Ta/CIS",
+            id : "00", name : "Ta/Tis"
           }, {
             description : "CIS involvement of prostatic urethra  ",
             id : "00", name : "Tis pu"
@@ -18937,6 +18908,8 @@ var database = {
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
           }, {
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
+          }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC)"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with squamous differentiation"
@@ -19013,7 +18986,7 @@ var database = {
           }, {
              description : "includes prostate (consider if urethral protocol is more appropriate), seminal vesicles, uterus, vagina rectum soft tissues",
             inputs_required : [ "" ],
-            id : "00", name : "Invades adjacent structures"
+            id : "10", name : "Invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -19021,11 +18994,11 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location (ureteral (right and left), urethral ,deep/soft tissue)",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19035,11 +19008,11 @@ var database = {
         id : "00", name : "Margins, non-invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location (ureteral, urethral, deep), type (papillary, CIS)",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19131,6 +19104,9 @@ var database = {
             description : "CIS",
             id : "00", name : "Tis"
           }, {
+            description : "Ta/CIS",
+            id : "00", name : "Ta/Tis"
+          }, {
             description : "Invades lamina propria",
             id : "00", name : "T1"
           }, {
@@ -19206,7 +19182,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "00", name : "See case "
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -19226,7 +19202,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "See case"
+            id : "10", name : "See case"
           } ],
           id : "00", name : ""
         } ]
@@ -19253,6 +19229,8 @@ var database = {
             id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive"
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
+          }, {
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
           }, {
             id : "00", name : "Invasive Urothelial carcinoma (TCC)"
           }, {
@@ -19402,6 +19380,12 @@ var database = {
           }, {
             description : "CIS, no muscularis propria",
             id : "00", name : "at least Tis"
+          }, {
+            description : "Ta/CIS",
+            id : "00", name : "Ta/Tis"
+          }, {
+            description : "Ta/CIS no muscluaris propria",
+            id : "00", name : "at least Ta/Tis"
           }, {
             description : "Invades lamina propria",
             id : "00", name : "T1"
@@ -19558,11 +19542,11 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Free"
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19961,7 +19945,7 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "for enucleation specimens",
             id : "00", name : "Positive extrascleral extension"
@@ -20256,11 +20240,11 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20271,11 +20255,11 @@ var database = {
         id : "00", name : "Margins, HSIL",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20589,11 +20573,11 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20604,11 +20588,11 @@ var database = {
         id : "00", name : "Margins, HSIL/Pagets",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "00", name : "Positive"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20949,7 +20933,7 @@ var database = {
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Equivocal "
           } ],
@@ -20982,11 +20966,11 @@ var database = {
           group : [ {
          
            
-            id : "00", name : "Free"
+            id : "00", name : "Free "
           }, {
          
           
-            id : "00", name : "Positive"
+            id : "00", name : "Positive, "
           }],
           id : "00", name : ""
         } ]
@@ -21017,7 +21001,7 @@ var database = {
             id : "00", name : "None"
           }, {
             inputs_required : [ "" ],
-            id : "00", name : "Present"
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -21088,6 +21072,15 @@ var database = {
             for (var i=0; i<this.synresults.length; i++){
               this.row6.bgc.push("#ffcccc")
             }
+            for (var i=0; i<this.synresults.length; i++){
+              this.row7.modifyFreeText.push(" ")
+                
+            };
+            for (var i=0; i<this.synresults.length; i++){
+              this.row8.modifyFreeTextHeader.push(" ")
+                
+            };
+
         },
         
         displayhomeMenu: function(){
@@ -21101,42 +21094,55 @@ var database = {
           this.row6.bgc = []
         },
         changeUseFreeText: function(i){
+          
           this.row5.useFreeText[i] = false
           this.row5.useFreeText[i] = true
           this.row6.bgc[i] = "#66ff99"
-          this.$nextTick(function () {
-            this.updateTable()
-          })
+          
          
         },
 
         dontUseFreeText: function(i){
           this.row5.useFreeText[i] = false
           this.row6.bgc[i] = "#66ff99"
-          this.$nextTick(function () {
-            this.updateTable()
-          })
           
-
         },
+
+
         changeColor: function(i){
           this.row6.bgc[i] = "#66ff99"
-          this.$nextTick(function () {
-            this.updateTable()
-          })
+        },
+        compoundFreeText: function(i, pre){ 
+          this.row5.useFreeText[i] = false
+          this.row5.useFreeText[i] = true
+          this.row6.bgc[i] = "#66ff99"
+          this.row8.modifyFreeTextHeader[i] = pre
           
-          
-
+         
         },
 
+
         updateTable: function(){
+          console.log("modifyFreeText", this.row7.modifyFreeText)
+          console.log("modifyFreeTextHeader", this.row8.modifyFreeTextHeader)
+
+          //update free text answer based on table modifyFreeText
+          for (var i = 0; i<this.row7.modifyFreeText.length; i++){
+            if(this.row7.modifyFreeText[i] != " "){
+              this.row2.freetextanswers[i] = this.row8.modifyFreeTextHeader[i] + this.row7.modifyFreeText[i]
+            }
+          }
+          console.log(this.row2.freetextanswers)
+
+          //qid = 0 regular quesitons, 01 = stage, 02 = T, 03 = N and 04 = M
+
           this.showtable = false;
           this.showtable = true;
           
           this.row4.comboanswers = []
 
-          var count = 0
-          var removeRow = 0
+          var count = 0 // index of AJCC stage question to combine responses
+          var removeRow = 0 // use this to match up length of finalanswer and comboanswer since combo is shorter with TNM combined
           for (var i = 0; i<this.row.inputanswers.length; i++){
             ans = this.row.inputanswers[i].substring(0,this.row.inputanswers[i].length-4)
             qid = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-4, this.row.inputanswers[i].length-2)
@@ -21149,7 +21155,15 @@ var database = {
                   }
 
             if (qid === "00" || qid === "01"){
-              this.row4.comboanswers.push(ans)
+              if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " "){
+                this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X")
+              }
+              else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " "){
+                this.row4.comboanswers.push(this.row2.freetextanswers[i])
+              }
+              else {
+                this.row4.comboanswers.push(ans)
+              }
              
             }
             
@@ -21180,25 +21194,39 @@ var database = {
               removeRow += 1
             }
             
-            if (this.synresults[i].id === "00" || this.synresults[i].id === "01"){
-
-
-            if (this.row5.useFreeText[i]){
-              if (this.row2.freetextanswers[i]=== " ") {
-                ans = "!!!!YOU FORGOT THIS ONE??0"
-              }
-              else{
-                ans =this.row2.freetextanswers[i]
-              }
-            } else {
-              
+            if (this.synresults[i].id === "01"){
               ans = this.row4.comboanswers[i-removeRow]
-            } 
-            var value = {question: this.synresults[i].name, answer: ans}
-       //     console.log (this.synresults[i].name, this.synresults[i].id)
+              var value = {question: this.synresults[i].name, answer: ans}
+      //     console.log (this.synresults[i].name, this.synresults[i].id)
             
               this.row3.finalanswers.push(value)
+
             }
+
+            
+            if (this.synresults[i].id === "00"){
+            
+
+              if (this.row5.useFreeText[i]){
+                if (this.row2.freetextanswers[i]=== " ") {
+                  ans = "!!!!YOU FORGOT THIS ONE??0"
+                }
+                else{
+                  ans =this.row2.freetextanswers[i]
+                }
+              } else {
+                
+                ans = this.row4.comboanswers[i-removeRow]
+              } 
+              var value = {question: this.synresults[i].name, answer: ans}
+      //     console.log (this.synresults[i].name, this.synresults[i].id)
+            
+              this.row3.finalanswers.push(value)
+
+            }
+            
+              
+
           };
           
        //   console.log (this.row4.comboanswers)
