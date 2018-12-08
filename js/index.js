@@ -21074,7 +21074,21 @@ var database = {
           this.updateTable()
         },
         deep: true
-      }
+      },
+      row5: {
+        handler: function() {
+          
+          this.updateTable()
+        },
+        deep: true
+      },
+      row10: {
+        handler: function() {
+          
+          this.updateTable()
+        },
+        deep: true
+      },
 
     },
     
@@ -21140,7 +21154,8 @@ var database = {
           this.row5.useFreeText[i] = false
           this.row5.useFreeText[i] = true
           this.row10.useCombo[i] = false
-          this.row6.bgc[i] = "#66ff99"
+          this.row6.bgc[i] = "#66ff99"         
+          this.updateTable()
           
          
         },
@@ -21156,6 +21171,7 @@ var database = {
           this.row5.useFreeText[i] = false
           this.row10.useCombo[i] = true
           this.row6.bgc[i] = "#66ff99"
+          this.updateTable()
           
          
         },
