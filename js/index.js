@@ -21166,7 +21166,7 @@ var database = {
           this.row6.bgc[i] = "#66ff99"
         },
         compoundFreeText: function(i, hope){ 
-          console.log("i", i, "pre", hope)
+          
           this.row5.useFreeText[i] = false
           this.row10.useCombo[i] = true
           this.row6.bgc[i] = "#66ff99"
