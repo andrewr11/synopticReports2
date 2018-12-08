@@ -65,6 +65,18 @@ var database = {
 
       ]
     },
+    row9: {
+      comboMixed: 
+        [
+
+      ]
+    },
+    row10: {
+      useCombo: 
+        [
+
+      ]
+    },
     site_groups: [
       {id : "00", name : "Breast"},
       {id : "00", name : "Central Nervous System"},
@@ -21040,6 +21052,31 @@ var database = {
   var app = new Vue({
     el: '#app',
     data: database,
+
+    watch: {
+      row: {
+        handler: function() {
+          
+          this.updateTable()
+        },
+        deep: true
+      },
+      row2: {
+        handler: function() {
+          
+          this.updateTable()
+        },
+        deep: true
+      },
+      row7: {
+        handler: function() {
+          
+          this.updateTable()
+        },
+        deep: true
+      }
+
+    },
     
     methods: {
         
@@ -21092,11 +21129,17 @@ var database = {
           this.row4.comboanswers = []
           this.row5.useFreeText = []
           this.row6.bgc = []
+          this.row7.modifyFreeText = []
+          this.row8.modifyFreeTextHeader = []
+          this.row9.comboMixed = []
+          this.row10.useCombo = []
+          scroll(0,0)
         },
         changeUseFreeText: function(i){
           
           this.row5.useFreeText[i] = false
           this.row5.useFreeText[i] = true
+          this.row10.useCombo[i] = false
           this.row6.bgc[i] = "#66ff99"
           
          
@@ -21104,35 +21147,45 @@ var database = {
 
         dontUseFreeText: function(i){
           this.row5.useFreeText[i] = false
+          this.row10.useCombo[i] = false
           this.row6.bgc[i] = "#66ff99"
           
         },
+        changeUseMixed: function(i){
+          
+          this.row5.useFreeText[i] = false
+          this.row10.useCombo[i] = true
+          this.row6.bgc[i] = "#66ff99"
+          
+         
+        },
+
 
 
         changeColor: function(i){
           this.row6.bgc[i] = "#66ff99"
         },
-        compoundFreeText: function(i, pre){ 
+        compoundFreeText: function(i, hope){ 
+          console.log("i", i, "pre", hope)
           this.row5.useFreeText[i] = false
-          this.row5.useFreeText[i] = true
+          this.row10.useCombo[i] = true
           this.row6.bgc[i] = "#66ff99"
-          this.row8.modifyFreeTextHeader[i] = pre
+          this.row8.modifyFreeTextHeader[i] = hope
           
          
         },
 
 
         updateTable: function(){
-          console.log("modifyFreeText", this.row7.modifyFreeText)
-          console.log("modifyFreeTextHeader", this.row8.modifyFreeTextHeader)
+         
 
           //update free text answer based on table modifyFreeText
           for (var i = 0; i<this.row7.modifyFreeText.length; i++){
             if(this.row7.modifyFreeText[i] != " "){
-              this.row2.freetextanswers[i] = this.row8.modifyFreeTextHeader[i] + this.row7.modifyFreeText[i]
+              this.row9.comboMixed[i] = this.row8.modifyFreeTextHeader[i] + this.row7.modifyFreeText[i]
             }
           }
-          console.log(this.row2.freetextanswers)
+         
 
           //qid = 0 regular quesitons, 01 = stage, 02 = T, 03 = N and 04 = M
 
@@ -21161,6 +21214,14 @@ var database = {
               else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " "){
                 this.row4.comboanswers.push(this.row2.freetextanswers[i])
               }
+              else if (this.row10.useCombo[i] && this.row9.comboMixed[i]=== " "){
+                this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X")
+              }
+              else if (this.row10.useCombo[i] && this.row9.comboMixed[i]!= " "){
+                this.row4.comboanswers.push(this.row9.comboMixed[i])
+              }
+
+
               else {
                 this.row4.comboanswers.push(ans)
               }
