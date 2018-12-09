@@ -77,6 +77,12 @@ var database = {
 
       ]
     },
+    row11: {
+      default: 
+        [
+
+      ]
+    },
     site_groups: [
       {id : "00", name : "Breast"},
       {id : "00", name : "Central Nervous System"},
@@ -21089,12 +21095,22 @@ var database = {
         },
         deep: true
       },
+      row11: {
+        handler: function() {
+          
+          this.updateTable()
+        },
+        deep: true
+      },
 
     },
     
     methods: {
         
         displayQuestions: function(site){
+
+         
+
             this.section = "showQuestions";  
             this.current_tumor = site.name;  
             this.current_tumor_biopsy_type = site.biopsy_type;
@@ -21132,6 +21148,8 @@ var database = {
                 
             };
 
+
+
         },
         
         displayhomeMenu: function(){
@@ -21160,10 +21178,14 @@ var database = {
          
         },
 
-        dontUseFreeText: function(i){
+        dontUseFreeText: function(i,index2){
           this.row5.useFreeText[i] = false
           this.row10.useCombo[i] = false
-          this.row6.bgc[i] = "#66ff99"
+          this.row6.bgc[i] = "#66ff99"  
+
+
+          
+          
           
         },
         changeUseMixed: function(i){
@@ -21193,6 +21215,8 @@ var database = {
 
 
         updateTable: function(){
+
+         
          
 
           //update free text answer based on table modifyFreeText
