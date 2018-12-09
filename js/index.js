@@ -150,7 +150,7 @@ var database = {
             id : "00", name : "Low grade"
           }, {
              description : ">20 mitoses/50 hpf",
-            id : "00", name : "High grade"
+            id : "50", name : "High grade"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -21109,7 +21109,7 @@ var database = {
         
         displayQuestions: function(site){
 
-         
+            
 
             this.section = "showQuestions";  
             this.current_tumor = site.name;  
@@ -21184,7 +21184,6 @@ var database = {
           this.row6.bgc[i] = "#66ff99"  
 
 
-          
           
           
         },
