@@ -150,7 +150,7 @@ var database = {
             id : "00", name : "Low grade"
           }, {
              description : ">20 mitoses/50 hpf",
-            id : "50", name : "High grade"
+            id : "00", name : "High grade"
           }, {
             id : "00", name : "Not applicable"
           } ],
