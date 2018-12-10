@@ -21208,7 +21208,7 @@ var database = {
           this.row10.useCombo[i] = true
           this.row6.bgc[i] = "#66ff99"
           this.row8.modifyFreeTextHeader[i] = hope
-          
+          this.updateTable()
          
         },
 
@@ -21220,9 +21220,9 @@ var database = {
 
           //update free text answer based on table modifyFreeText
           for (var i = 0; i<this.row7.modifyFreeText.length; i++){
-            if(this.row7.modifyFreeText[i] != " "){
+            
               this.row9.comboMixed[i] = this.row8.modifyFreeTextHeader[i] + this.row7.modifyFreeText[i]
-            }
+            
           }
          
 

@@ -25,7 +25,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Synoptic Reports/Home</a>
+                    <a class="navbar-brand" href="index.html"><strong>Back to Main Menu</strong></a>
                   </div>
                   <div id="navbar" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -95,14 +95,14 @@
         <!--form to submit questions from-->
         <div class="review-form">
 
-            
+            <!--show question-->
             <div  v-for="(q,index) in synresults" :key= "index">
                 <div v-bind:style="{backgroundColor: row6.bgc[index]}">
                   <h4 class= "name"><span class = "name" >{{index+1}}. {{q.name}}</span><span v-if="q.description" class = "description"> [ {{q.description}}]</span></h4>
             
-                
+                   <!--loop through answers-->
                   <div v-for="(a, index2) in q.options" :key= "index2" >
-    
+                      <!--show ER/PR answers-->
                       <ul v-for="(g) in a.group">
                           <li v-if="g.id === '20'"><input type="radio"  :value= "g.name" :name = "q.name" v-on:click="compoundFreeText(index, g.name)" ><span><strong>{{g.name}}</strong> </span><select  :name="q.name"  v-model.lazy="row7.modifyFreeText[index]"  v-on:change="changeColor(index)">
                             <option value ="strong intensity">strong intensity</option>
@@ -112,11 +112,11 @@
                           
                             <span v-if="g.description" class = "description"> [ {{g.description}}]</span></select></li>    
                          </ul>
-
+                         <!--show regular, radio button answers-->
                         <ul   v-for="(g) in a.group">
                             <li v-if="g.id === '00'"><input type="radio"  :value="g.name + q.id + g.id" :name = "q.name" v-model="row.inputanswers[index]"   v-on:click= "dontUseFreeText(index,index2)" ><span ><strong>{{g.name}}</strong></span><span v-if="g.description" class = "description"> [ {{g.description}}]</span></li>   
                         </ul> 
-                        
+                        <!--show mixed free text/radio answers-->
                         <ul v-for="(g) in a.group">
                           <li v-if="g.id === '10'"><input type="radio"  :value= "g.name" :name = "q.name" v-on:click="compoundFreeText(index, g.name)" ><span><strong>{{g.name}}</strong> </span><input  type = "text" :name="q.name"  v-model.lazy="row7.modifyFreeText[index]"  v-on:change="changeColor(index)"><span v-if="g.description" class = "description"> [ {{g.description}}]</span></li>    
                          </ul>
@@ -124,7 +124,7 @@
                          
                          
 
-
+                        <!--show free text answers--> 
                        <ul >
                         <li><input type="radio"   :checked="row5.useFreeText[index]" :name = "q.name" v-on:click="changeUseFreeText(index)" ><span> </span><input  type = "text" :name="q.name"  v-model.lazy="row2.freetextanswers[index]"  v-on:change="changeColor(index)"></li>    
                        </ul>
