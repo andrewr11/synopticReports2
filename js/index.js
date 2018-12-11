@@ -12,6 +12,28 @@ resopnses with an ID of 10 are mixed tree text and set text, the set text comes 
 reponses with an ID of 20 are mixed with a drop down (ie ER/PR)
 
 
+QIDs
+00  typical radio
+01 AJCC
+02 T
+03 N
+04 M
+
+50 0 total or 0 positive node dependency
+51 not used yet
+52 not used yet
+
+
+GIDs
+00 typical radio
+10 mixed free text and radio
+20 ER/PR drop down
+
+50 no nodes present
+51 no positive nodes present
+
+
+
 */
 
 var database = {
