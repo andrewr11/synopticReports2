@@ -215,17 +215,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -291,7 +291,7 @@ var database = {
           id : "00", name : ""
         }]
         }, {
-           id : "02", name : "N",
+           id : "03", name : "N",
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
@@ -306,7 +306,7 @@ var database = {
           id : "00", name : "Category (M)"
         }]
         }, {
-           id : "03", name : "M",
+           id : "04", name : "M",
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Distant metastases",
@@ -485,17 +485,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -1095,17 +1095,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -1423,17 +1423,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "51", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -1647,17 +1647,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "51", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -2146,7 +2146,7 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -2154,7 +2154,7 @@ var database = {
         } ]
       }, {
         description : "> 2mm",
-        id : "00", name : "Lymph nodes, # w/ macrometastases",
+        id : "50", name : "Lymph nodes, # w/ macrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -2165,7 +2165,7 @@ var database = {
         } ]
       }, {
         description : ">0.2 mm AND <= 2mm OR > 200 cells",
-        id : "00", name : "Lymph nodes, # w/ micrometastases",
+        id : "50", name : "Lymph nodes, # w/ micrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -2176,7 +2176,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm AND <= 200 cells",
-        id : "00", name : "Lymph nodes, # w/ isolated tumor cells",
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -2671,7 +2671,7 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -2679,7 +2679,7 @@ var database = {
         } ]
       }, {
         description : "> 2mm",
-        id : "00", name : "Lymph nodes, # w/ macrometastases",
+        id : "50", name : "Lymph nodes, # w/ macrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -2690,7 +2690,7 @@ var database = {
         } ]
       }, {
         description : ">0.2 mm AND <= 2mm OR > 200 cells",
-        id : "00", name : "Lymph nodes, # w/ micrometastases",
+        id : "50", name : "Lymph nodes, # w/ micrometastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -2701,7 +2701,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm and < 200 cells",
-        id : "00", name : "Lymph nodes, # w/ isolated tumor cells",
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -2711,7 +2711,7 @@ var database = {
           id : "00", name : ""
         } ]
        }, {
-        id : "00", name : "Size of largest metastasis",
+        id : "50", name : "Size of largest metastasis",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -2719,7 +2719,7 @@ var database = {
           id : "00", name : ""
           }]
       }, {
-        id : "00", name : "Extranodal Extension ",
+        id : "50", name : "Extranodal Extension ",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -2733,7 +2733,7 @@ var database = {
           id : "00", name : ""
           }]
         }, {
-        id : "00", name : "Metastasis detection method ",
+        id : "50", name : "Metastasis detection method ",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -4156,7 +4156,7 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -4164,7 +4164,7 @@ var database = {
         } ]
       }, {
          description : "do not include ITCs",
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -4178,7 +4178,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # w/ isolated tumor cells",
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -4719,17 +4719,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -5096,17 +5096,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -5399,17 +5399,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -5791,17 +5791,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -6601,17 +6601,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -6908,17 +6908,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -7075,17 +7075,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -7317,17 +7317,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -7754,17 +7754,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -7929,17 +7929,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -8169,17 +8169,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -8462,17 +8462,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -8786,17 +8786,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9142,24 +9142,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive node laterality",
+        id : "50", name : "Positive node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -9175,7 +9175,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal extension",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -9564,7 +9564,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # total",
+        id : "50", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -9574,10 +9574,10 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -10477,24 +10477,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive node laterality",
+        id : "50", name : "Positive node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -10508,7 +10508,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal extension",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -10753,17 +10753,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -11099,24 +11099,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive node laterality ",
+        id : "50", name : "Positive node laterality ",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -11130,12 +11130,12 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Size of largest metastasis",
+        id : "50", name : "Size of largest metastasis",
        optional_state  : "required", "options" : [ {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal Extension ",
+        id : "50", name : "Extranodal Extension ",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -11430,17 +11430,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -11916,7 +11916,7 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -11924,7 +11924,7 @@ var database = {
         } ]
       }, {
       
-        id : "00", name : "Lymph nodes, # w/ mets > 10mm",
+        id : "50", name : "Lymph nodes, # w/ mets > 10mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -11935,7 +11935,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, # w/ mets >0.2mm, <= 10mm",
+        id : "50", name : "Lymph nodes, # w/ mets >0.2mm, <= 10mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -11946,7 +11946,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, # w/ isolated tumor cells",
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -11956,7 +11956,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Size of largest deposit",
+        id : "50", name : "Size of largest deposit",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -11964,7 +11964,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Location of largest deposit",
+        id : "50", name : "Location of largest deposit",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -12316,17 +12316,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -12614,17 +12614,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -12959,14 +12959,25 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ] 
+  
+  }, {
+        id : "50", name : "Lymph nodes, # inguinal involved",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -12977,18 +12988,7 @@ var database = {
         } ] 
   
   }, {
-        id : "00", name : "Lymph nodes, # inguinal involved",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ] 
-  
-  }, {
-        id : "00", name : "Positive inguinal lymph node laterality",
+        id : "50", name : "Positive inguinal lymph node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -13005,7 +13005,7 @@ var database = {
         } ]
          
       }, {
-        id : "00", name : "Extranodal Extension ",
+        id : "50", name : "Extranodal Extension ",
         optional_state : "required",
         "options" : [ {
           group : [ {
@@ -13310,17 +13310,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -13641,24 +13641,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive node laterality",
+        id : "50", name : "Positive node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -13674,7 +13674,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Size of largest involved lymph node",
+        id : "50", name : "Size of largest involved lymph node",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -13682,7 +13682,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal Extension ",
+        id : "50", name : "Extranodal Extension ",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -14041,24 +14041,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive node laterality",
+        id : "50", name : "Positive node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -14074,7 +14074,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Size of largest involved lymph node",
+        id : "50", name : "Size of largest involved lymph node",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -14082,7 +14082,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal Extension ",
+        id : "50", name : "Extranodal Extension ",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -14444,17 +14444,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15086,17 +15086,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15313,17 +15313,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15578,24 +15578,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Matted nodes",
+        id : "50", name : "Matted nodes",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -15864,17 +15864,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16141,17 +16141,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16361,17 +16361,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16707,17 +16707,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -17088,17 +17088,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -17336,24 +17336,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
    }, {
-        id : "00", name : "Positive lymph node location",
+        id : "50", name : "Positive lymph node location",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -17379,7 +17379,7 @@ var database = {
   
    }, {
      description : "size of lymph node, not met",
-        id : "00", name : "Size of largest involved lymph node",
+        id : "50", name : "Size of largest involved lymph node",
         optional_state : "required",
         "options" : [ {
           group : [ {
@@ -17388,7 +17388,7 @@ var database = {
           id : "00", name : ""
         } ]
    }, {
-        id : "00", name : "Extranodal extension",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -17403,7 +17403,7 @@ var database = {
         } ]
   
       }, {
-        id : "00", name : "Tumor type in lymph node",
+        id : "50", name : "Tumor type in lymph node",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -17690,24 +17690,24 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal extension",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -17721,7 +17721,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Size of largest metastasis",
+        id : "50", name : "Size of largest metastasis",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -17964,17 +17964,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18416,17 +18416,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18753,17 +18753,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19057,17 +19057,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19591,14 +19591,14 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved (no ITC)",
+        id : "50", name : "Lymph nodes, # involved (no ITC)",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -19608,7 +19608,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # with isolated tumor cells",
+        id : "50", name : "Lymph nodes, # with isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -19618,7 +19618,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive lymph node location",
+        id : "50", name : "Positive lymph node location",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -19976,17 +19976,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20304,14 +20304,14 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved (no ITC)",
+        id : "50", name : "Lymph nodes, # involved (no ITC)",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -20321,7 +20321,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # with isolated tumor cells",
+        id : "50", name : "Lymph nodes, # with isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -20331,7 +20331,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive lymph node location",
+        id : "50", name : "Positive lymph node location",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -20648,7 +20648,7 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20656,7 +20656,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, # w/ mets >= 5mm",
+        id : "50", name : "Lymph nodes, # w/ mets >= 5mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -20667,7 +20667,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, # w/ mets >0.2mm, < 5mm",
+        id : "50", name : "Lymph nodes, # w/ mets >0.2mm, < 5mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -20678,7 +20678,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, # w/ isolated tumor cells",
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -20688,7 +20688,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Location of largest deposit",
+        id : "50", name : "Location of largest deposit",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -20696,7 +20696,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph node other findings",
+        id : "50", name : "Lymph node other findings",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -20996,17 +20996,17 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # involved",
+        id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -21240,13 +21240,62 @@ var database = {
             qid = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-4, this.row.inputanswers[i].length-2)
             gid = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-2, this.row.inputanswers[i].length)
 
+             // insert loop to update all dependent questions to defaults
             
+            
+            if (gid == '50') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5000") {
+                  this.row.inputanswers[j] = "Not applicable5000"
+                  this.dontUseFreeText(j)
+                 }
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
+                  this.row.inputanswers[j] = "NX0300"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+            
+            if (gid == '51') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5000") {
+                  this.row.inputanswers[j] = "Not applicable5000"
+                  this.dontUseFreeText(j)
+                 }
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
+                  this.row.inputanswers[j] = "N00300"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            if (gid == '52') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5000") {
+                  this.row.inputanswers[j] = "Not applicable5000"
+                  this.dontUseFreeText(j)
+                 }
+                 
+                      
+              }
+             
+            }
 
             if (qid == "01"){
                     count = this.row4.comboanswers.length
                   }
 
-            if (qid === "00" || qid === "01"){
+            if (qid === "00" || qid === "01" || qid === "50" || qid === "51" || qid === "52" || qid === "53"){
+              
+
+
               if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " "){
                 this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X")
               }
@@ -21262,6 +21311,7 @@ var database = {
 
 
               else {
+                
                 this.row4.comboanswers.push(ans)
               }
              
@@ -21284,6 +21334,8 @@ var database = {
             
           }
 
+          
+
           var removeRow = 0
           this.row3.finalanswers = [];
           firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor}
@@ -21304,7 +21356,7 @@ var database = {
             }
 
             
-            if (this.synresults[i].id === "00"){
+            if (this.synresults[i].id === "00" || this.synresults[i].id === "50" || this.synresults[i].id === "51" || this.synresults[i].id === "52" || this.synresults[i].id === "53"){
             
 
               if (this.row5.useFreeText[i]){
