@@ -112,12 +112,7 @@ var database = {
 
       ]
     },
-    row11: {
-      default: 
-        [
-
-      ]
-    },
+    
     site_groups: [
       {id : "00", name : "Breast"},
       {id : "00", name : "Central Nervous System"},
@@ -21144,7 +21139,7 @@ var database = {
         
         displayQuestions: function(site){
 
-            
+            //set up tumor type and arrasy to correct length and with YOU FORGOT in it
 
             this.section = "showQuestions";  
             this.current_tumor = site.name;  
@@ -21188,6 +21183,8 @@ var database = {
         },
         
         displayhomeMenu: function(){
+
+          //reset all arrays
           this.section = "homeMenu"
           this.synresults = [];
           this.row.inputanswers = [];
@@ -21202,6 +21199,8 @@ var database = {
           this.row10.useCombo = []
           scroll(0,0)
         },
+
+        //switch from input (radio) text to free text
         changeUseFreeText: function(i){
           
           this.row5.useFreeText[i] = false
@@ -21212,7 +21211,7 @@ var database = {
           
          
         },
-
+        //switch from radio text to free text
         dontUseFreeText: function(i,index2){
           this.row5.useFreeText[i] = false
           this.row10.useCombo[i] = false
@@ -21222,6 +21221,7 @@ var database = {
           
           
         },
+        //switch to mixed text
         changeUseMixed: function(i){
           
           this.row5.useFreeText[i] = false
@@ -21233,10 +21233,11 @@ var database = {
         },
 
 
-
+        //change color of question
         changeColor: function(i){
           this.row6.bgc[i] = "#66ff99"
         },
+        // put the radio and free text together for the mixed texts
         compoundFreeText: function(i, hope){ 
           
           this.row5.useFreeText[i] = false
@@ -21265,6 +21266,8 @@ var database = {
 
           this.showtable = false;
           this.showtable = true;
+
+          // go through each question and answer
           
           this.row4.comboanswers = []
 
@@ -21518,21 +21521,24 @@ var database = {
              
             }
             
+            // identify row to combine all AJCC stage with
 
             if (qid == "01"){
                     count = this.row4.comboanswers.length
                   }
+            // all rows other than AJCC T N M responses
 
             if (qid === "00" || qid === "01" || qid === "50" || qid === "51" || qid === "52" || qid === "53"){
               
 
-
+              // if free text selected
               if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " "){
                 this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X")
               }
               else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " "){
                 this.row4.comboanswers.push(this.row2.freetextanswers[i])
               }
+              //if mixed text selected
               else if (this.row10.useCombo[i] && this.row9.comboMixed[i]=== " "){
                 this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X")
               }
@@ -21542,12 +21548,13 @@ var database = {
 
 
               else {
-                
+                //if input/radio selected
                 this.row4.comboanswers.push(ans)
               }
              
             }
             
+            // rows to be combined with qid 01
             if ((qid === "02" || qid === "03" ||qid === "04") && this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " " && count !=0) {
             
              
@@ -21566,7 +21573,7 @@ var database = {
           }
 
           
-
+          // make final table
           var removeRow = 0
           this.row3.finalanswers = [];
           firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor}
