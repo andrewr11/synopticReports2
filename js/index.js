@@ -20,8 +20,8 @@ QIDs
 04 M
 
 50 0 total or 0 positive node dependency
-51 not used yet
-52 not used yet
+51 is no sites sampled then total = 0
+
 
 
 GIDs
@@ -31,6 +31,19 @@ GIDs
 
 50 no nodes present
 51 no positive nodes present
+52 no positive nodes, stage N0a
+53 N1 nodes
+54 N2
+
+60 Tis
+61 T1
+62 T2
+63 T3
+64 T4
+65 T1a
+66 T1b
+67 T4a
+68 T4b
 
 
 
@@ -247,7 +260,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -429,15 +442,15 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
-            id : "00", name : "Limited to ampulla of Vater or sphincter of Oddi"
+            id : "65", name : "Limited to ampulla of Vater or sphincter of Oddi"
           }, {
-            id : "00", name : "Invades beyond sphincter of Oddi (perisphincteric invasion) "
+            id : "66", name : "Invades beyond sphincter of Oddi (perisphincteric invasion) "
           }, {
-            id : "00", name : "Invades into duodenal submucosa "
+            id : "66", name : "Invades into duodenal submucosa "
           }, {
-            id : "00", name : "Invades into muscularis propria of the duodenum"
+            id : "62", name : "Invades into muscularis propria of the duodenum"
           }, {
             id : "00", name : "Directly invades pancreas up to 0.5 cm"
           }, {
@@ -517,7 +530,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -715,7 +728,7 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
             id : "00", name : "Invades lamina propria"
           }, {
@@ -1037,17 +1050,17 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "In situ/No invasion of lamina propria"
+            id : "60", name : "In situ/No invasion of lamina propria"
           }, {
-            id : "00", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
+            id : "60", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
           }, {
-            id : "00", name : "Invades submucosa"
+            id : "61", name : "Invades submucosa"
           }, {
-            id : "00", name : "Invades muscularis propria"
+            id : "62", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Invades subserosa"
+            id : "63", name : "Invades subserosa"
           }, {
-            id : "00", name : "Penetrates serosa"
+            id : "67", name : "Penetrates serosa"
           }, {
              description : "specify",
                inputs_required : [ "" ],
@@ -1392,9 +1405,9 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No invasion of lamina propria"
+            id : "60", name : "No invasion of lamina propria"
           }, {
-            id : "00", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
+            id : "60", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
           }, {
             id : "00", name : "Invades submucosa"
           }, {
@@ -1402,7 +1415,7 @@ var database = {
           }, {
             id : "00", name : "Invades subserosal tissue"
           }, {
-            id : "00", name : "Penetrates serosa"
+            id : "64", name : "Penetrates serosa"
           }, {
             description : "specify",
              inputs_required : [ "" ],
@@ -1455,7 +1468,7 @@ var database = {
         id : "51", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -1679,7 +1692,7 @@ var database = {
         id : "51", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -4189,7 +4202,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "00", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             description : "# positive, specify location",
             inputs_required : [ "" ],
@@ -4634,22 +4647,22 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No invasion of lamina propria"
+            id : "60", name : "No invasion of lamina propria"
           }, {
-            id : "00", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
+            id : "60", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
           }, {
-            id : "00", name : "Invades submucosa"
+            id : "61", name : "Invades submucosa"
           }, {
-            id : "00", name : "Invades muscularis propria"
+            id : "62", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Invades pericolonic/rectal adipose tissue"
+            id : "63", name : "Invades pericolonic/rectal adipose tissue"
           }, {
-            id : "00", name : "Invades pericolonic adipose tissue"
+            id : "63", name : "Invades pericolonic adipose tissue"
           }, {
-            id : "00", name : "Invades perirectal adipose tissue"
+            id : "63", name : "Invades perirectal adipose tissue"
           }, {
              description : "T4a",
-            id : "00", name : "Penetrates serosa"
+            id : "67", name : "Penetrates serosa"
           }, {
              description : "T4b",
              inputs_required : [ "" ],
@@ -5128,7 +5141,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -5327,7 +5340,7 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No invasion (carcinoma in situ) "
+            id : "60", name : "No invasion (carcinoma in situ) "
           }, {
             id : "00", name : "Limited to the bile duct"
           }, {
@@ -5431,7 +5444,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -5742,13 +5755,13 @@ var database = {
             id : "00", name : "Invades muscularis propria"
           }, {
             description : "DUODENUM",
-            id : "00", name : "Invades pancreas"
+            id : "63", name : "Invades pancreas"
           }, {
             description : "DUODENUM",
-            id : "00", name : "Tumor invades peripancreatic tissue"
+            id : "63", name : "Tumor invades peripancreatic tissue"
           }, {
             description : "DUODENUM",
-            id : "00", name : "Tumor penetrates serosa (visceral peritoneum) "
+            id : "64", name : "Tumor penetrates serosa (visceral peritoneum) "
           }, {
             description : "DUODENUM",
             inputs_required : [ "" ],
@@ -5764,13 +5777,13 @@ var database = {
             id : "00", name : "Tumor invades duodenal muscularis propria"
           }, {
             description : "AMPULLA ",
-            id : "00", name : "Tumor invades pancreas "
+            id : "63", name : "Tumor invades pancreas "
           }, {
             description : "AMPULLA ",
-            id : "00", name : "Tumor invades peripancreatic soft tissues  "
+            id : "63", name : "Tumor invades peripancreatic soft tissues  "
           }, {
             description : "AMPULLA ",
-            id : "00", name : "Tumor penetrates serosa"
+            id : "64", name : "Tumor penetrates serosa"
           }, {
             description : "AMPULLA",
             inputs_required : [ "" ],
@@ -5823,7 +5836,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -5880,7 +5893,7 @@ var database = {
             description : "Tumor invades muscularis propria or tumor size >1 cm (small intestinal tumors); tumor size >1 cm or invades sphincter of Oddi (ampullary tumors)",
             id : "00", name : "T2"
           }, {
-            description : "Tumor  invades pancreas or peripacnreatic adipose tissues",
+            description : "Tumor  invades pancreas or peripancreatic adipose tissues",
             id : "00", name : "T3"
           }, {
             description : "Tumor penetrates visceral peritoneum (serosa) or invades other organs ",
@@ -6535,17 +6548,17 @@ var database = {
           group : [ {
             id : "00", name : "No evidence of primary tumor"
           }, {
-            id : "00", name : "High-grade dysplasia (carcinoma in situ) "
+            id : "60", name : "High-grade dysplasia (carcinoma in situ) "
           }, {
-            id : "00", name : "Invades lamina propria"
+            id : "65", name : "Invades lamina propria"
           }, {
-            id : "00", name : "Invades muscularis mucosae"
+            id : "65", name : "Invades muscularis mucosae"
           }, {
-            id : "00", name : "Invades submucosa"
+            id : "66", name : "Invades submucosa"
           }, {
-            id : "00", name : "Invades muscularis propria"
+            id : "62", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Invades periesophageal soft tissue (adventitia)"
+            id : "63", name : "Invades periesophageal soft tissue (adventitia)"
           }, {
             id : "00", name : "Penetrates serosa"
           }, {
@@ -6633,7 +6646,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -7060,9 +7073,9 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Invades lamina propria"
+            id : "65", name : "Invades lamina propria"
           }, {
-            id : "00", name : "Invades muscle"
+            id : "66", name : "Invades muscle"
           }, {
             id : "00", name : "Invades perimuscular connective tissue on the peritoneal side "
           }, {
@@ -7107,7 +7120,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -8201,7 +8214,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -8494,7 +8507,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -8818,7 +8831,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9984,19 +9997,19 @@ var database = {
           group : [ {
             id : "00", name : "Peribronchial"
           }, {
-            id : "00", name : "None"
+            id : "50", name : "None"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, sites involved",
+        id : "50", name : "Lymph nodes, sites involved",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Peribronchial"
           }, {
-            id : "00", name : "None"
+            id : "51", name : "None"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -10004,7 +10017,7 @@ var database = {
         } ]
       }, {
         description : "Mediastinal (N2) nodes only, NOT N1 or peribronchial nodes (ie ipsilateral station 2-9 (upper paratracheal, prevascular retrovascular, lower paratracheal, subaortic, paraaortic,subcarinal, paraesophageal, pulmonary ligament) nodes",
-        id : "00", name : "Extranodal extension",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Present"
@@ -12348,7 +12361,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -12555,7 +12568,7 @@ var database = {
           group : [ {
             id : "00", name : "No evidence of primary tumor"
           }, {
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
             id : "00", name : "Tumor is limited to pancreas"
           }, {
@@ -12646,7 +12659,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -12891,7 +12904,7 @@ var database = {
             id : "00", name : "No evidence of primary tumor"
           }, {
           
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
            
             id : "00", name : "Noninvasive localized squamous cell carcinoma "
@@ -12906,10 +12919,10 @@ var database = {
             id : "00", name : "Tumor involves dartos"
           }, {
            
-            id : "00", name : "Tumor invades corpus spongiosum"
+            id : "620", name : "Tumor invades corpus spongiosum"
           }, {
           
-            id : "00", name : "Tumor invades corpus cavernosum"
+            id : "63", name : "Tumor invades corpus cavernosum"
           }, {
            
             id : "00", name : "Tumor invades tunica albuginea "
@@ -13246,9 +13259,9 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Carcinoma in situ "
+            id : "60", name : "Carcinoma in situ "
           }, {
-            id : "00", name : "Tumor limited to the bile duct histologically"
+            id : "61", name : "Tumor limited to the bile duct histologically"
           }, {
             id : "00", name : "Tumor invades beyond the wall of the bile duct into surrounding connective tissue "
           }, {
@@ -13342,7 +13355,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -14476,7 +14489,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15118,7 +15131,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16108,15 +16121,15 @@ var database = {
           group : [ {
             id : "00", name : "No evidence of primary tumor"
           }, {
-            id : "00", name : "Invades lamina propria"
+            id : "65", name : "Invades lamina propria"
           }, {
-            id : "00", name : "Invades submucosa"
+            id : "66", name : "Invades submucosa"
           }, {
-            id : "00", name : "Invades muscularis propria"
+            id : "62", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Tumor invades through the muscularis propria into the subserosal adipose tissue or the nonperitonealized peri-intestinal soft tissues but does not extend to the serosal surface"
+            id : "63", name : "Tumor invades through the muscularis propria into the subserosal adipose tissue or the nonperitonealized peri-intestinal soft tissues but does not extend to the serosal surface"
           }, {
-            id : "00", name : "Tumor microscopically involves the serosal surface (visceral peritoneum) "
+            id : "64", name : "Tumor microscopically involves the serosal surface (visceral peritoneum) "
           }, {
             description : "which",
             inputs_required : [ "" ],
@@ -16173,7 +16186,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16393,7 +16406,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -16637,19 +16650,19 @@ var database = {
           group : [ {
             id : "00", name : "No evidence of primary tumor"
           }, {
-            id : "00", name : "High-grade dysplasia (carcinoma in situ) "
+            id : "60", name : "High-grade dysplasia (carcinoma in situ) "
           }, {
-            id : "00", name : "Invades lamina propria"
+            id : "65", name : "Invades lamina propria"
           }, {
-            id : "00", name : "Invades into but not through muscularis mucosae"
+            id : "65", name : "Invades into but not through muscularis mucosae"
           }, {
-            id : "00", name : "Invades submucosa"
+            id : "66", name : "Invades submucosa"
           }, {
-            id : "00", name : "Invades muscularis propria"
+            id : "62", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Invades subserosal connective tissue without involvement of visceral peritoneum"
+            id : "63", name : "Invades subserosal connective tissue without involvement of visceral peritoneum"
           }, {
-            id : "00", name : "Penetrates serosa"
+            id : "64", name : "Penetrates serosa"
           }, {
             description : "specify",
             inputs_required : [ "" ],
@@ -16739,7 +16752,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -17120,7 +17133,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -17682,7 +17695,7 @@ var database = {
         id : "00", name : "Lymph nodes, sites sampled",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "50", name : "None"
           }, {
             id : "00", name : "Lymph nodes in thyroidectomy/lobectomy"
           }, {
@@ -17709,7 +17722,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Lymph nodes, # total",
+        id : "51", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -17722,7 +17735,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "52", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -18388,13 +18401,13 @@ var database = {
           group : [ {
             id : "00", name : "Noninvasive papillary carcinoma"
           }, {
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
-            id : "00", name : "Invades subepithelial connective tissue"
+            id : "61", name : "Invades subepithelial connective tissue"
           }, {
-            id : "00", name : "Invades muscularis propria"
+            id : "62", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Invades into peripelvic fat or the renal parenchyma"
+            id : "63", name : "Invades into peripelvic fat or the renal parenchyma"
           }, {
              description : "specify",
             inputs_required : [ "" ],
@@ -18710,33 +18723,33 @@ var database = {
           group : [ {
             id : "00", name : "Noninvasive papillary carcinoma"
           }, {
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
-            id : "00", name : "Invades subepithelial connective tissue"
+            id : "61", name : "Invades subepithelial connective tissue"
           }, {
-            id : "00", name : "Invades corpus spongiosum"
+            id : "62", name : "Invades corpus spongiosum"
           }, {
-            id : "00", name : "Invades periurethral muscle"
+            id : "62", name : "Invades periurethral muscle"
           }, {
-            id : "00", name : "Urothelial CIS involves prostatic urethra"
+            id : "60", name : "Urothelial CIS involves prostatic urethra"
           }, {
-            id : "00", name : "Urothelial CIS involves prostatic ducts"
+            id : "60", name : "Urothelial CIS involves prostatic ducts"
           }, {
-            id : "00", name : "Invades prostatic stroma"
+            id : "62", name : "Invades prostatic stroma"
           }, {
             id : "00", name : "Invades periprostatic fat"
           }, {
-            id : "00", name : "Invades corpus cavernosum"
+            id : "63", name : "Invades corpus cavernosum"
           }, {
-            id : "00", name : "Invades beyond prostatic capsule"
+            id : "63", name : "Invades beyond prostatic capsule"
           }, {
-            id : "00", name : "Invades anterior vagina"
+            id : "63", name : "Invades anterior vagina"
           }, {
-            id : "00", name : "Invades bladder neck"
+            id : "63", name : "Invades bladder neck"
           }, {
-            id : "00", name : "Invades bladder wall"
+            id : "64", name : "Invades bladder wall"
           }, {
-            id : "00", name : "Invades rectum"
+            id : "64", name : "Invades rectum"
           }, {
             inputs_required : [ "" ],
             id : "10", name : "Invades adjacent structures"
@@ -18785,7 +18798,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "54", name : "2" },{ id : "54", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19012,9 +19025,9 @@ var database = {
           group : [ {
             id : "00", name : "Noninvasive papillary carcinoma"
           }, {
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
-            id : "00", name : "Invades lamina propria"
+            id : "61", name : "Invades lamina propria"
           }, {
             id : "00", name : "Invades superficial muscularis propria (inner half)"
           }, {
@@ -19347,13 +19360,13 @@ var database = {
           group : [ {
             id : "00", name : "Noninvasive papillary carcinoma"
           }, {
-            id : "00", name : "Carcinoma in situ"
+            id : "60", name : "Carcinoma in situ"
           }, {
-            id : "00", name : "Invades lamina propria"
+            id : "61", name : "Invades lamina propria"
           }, {
             id : "00", name : "Suspicious for lamina propria invasion"
           }, {
-            id : "00", name : "Invades muscularis propria"
+            id : "62", name : "Invades muscularis propria"
           }, {
             id : "00", name : "Invades muscle, favor muscularis mucosa"
           }, {
@@ -19363,7 +19376,7 @@ var database = {
           }, {
             id : "00", name : "CIS involves prostatic ducts and acini"
           }, {
-            id : "00", name : "Invades prostatic stroma"
+            id : "67", name : "Invades prostatic stroma"
           } ],
           id : "00", name : ""
         } ]
@@ -19433,7 +19446,7 @@ var database = {
             description : "Suspicious for lamina propria invasion",
             id : "00", name : "Ta-1"
           }, {
-            description : "Invades lamina propria, no musclularis propria",
+            description : "Invades lamina propria, no muscularis propria",
             id : "00", name : " at least T1"
           }, {
             description : "Invades superficial muscularis propria (inner half)",
@@ -19623,7 +19636,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved (no ITC)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "00", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20336,7 +20349,7 @@ var database = {
         id : "50", name : "Lymph nodes, # involved (no ITC)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "00", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -21264,14 +21277,177 @@ var database = {
 
              // insert loop to update all dependent questions to defaults
             
+
+             //single answer responses
+             if (this.current_tumor == 'Breast DCIS') {
+              if (this.row.inputanswers[2] ==  "!!!!YOU FORGOT THIS ONE??0000") {
+                this.row.inputanswers[2] = "Ductal carcinoma in situ0000"
+                this.dontUseFreeText(2)                
+               }
+               if (this.row.inputanswers[12] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                this.row.inputanswers[12] = "Tis0200"
+                this.dontUseFreeText(12)                
+               }
+             }
+
+             if (this.current_tumor == 'Prostate, prostatectomy') {
+              if (this.row.inputanswers[1] ==  "!!!!YOU FORGOT THIS ONE??0000") {
+                this.row.inputanswers[1] = "Adenocarcinoma0000"
+                this.dontUseFreeText(1)                
+               }
+               if (this.row.inputanswers[20] ==  "!!!!YOU FORGOT THIS ONE??0000") {
+                this.row.inputanswers[20] = "C610000"
+                this.dontUseFreeText(20)                
+               }
+             }
+
+             if (this.current_tumor == 'Colon') {
+              if (this.row.inputanswers[20] ==  "!!!!YOU FORGOT THIS ONE??0000") {
+                this.row.inputanswers[20] = "C18.90000"
+                this.dontUseFreeText(20)                
+               }
+             }
+
+             if (this.current_tumor == 'Lung') {
+              if (this.row.inputanswers[19] ==  "!!!!YOU FORGOT THIS ONE??0000") {
+                this.row.inputanswers[19] = "C34.900000"
+                this.dontUseFreeText(19)                
+               }
+             }
+
+             if (this.current_tumor == 'Skin Melanoma') {
+              if (this.row.inputanswers[22] ==  "!!!!YOU FORGOT THIS ONE??0000") {
+                this.row.inputanswers[22] = "C43.90000"
+                this.dontUseFreeText(22)                
+               }
+             }
             
+             // T stage
+
+             //Tis
+            if (gid == '60') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "Tis0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T1
+            if (gid == '61') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T10200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T2
+            if (gid == '62') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T20200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T3
+            if (gid == '63') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T30200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T4
+            if (gid == '64') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T40200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T1a
+            if (gid == '65') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T1a0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T1b
+            if (gid == '66') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T1b0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T4a
+            if (gid == '67') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T4a0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T4b
+            if (gid == '68') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T4b0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            
+             // lymph nodes
+             //NX
             if (gid == '50') {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5000") {
                   this.row.inputanswers[j] = "Not applicable5000"
-                  this.dontUseFreeText(j)
+                  this.dontUseFreeText(j)                
                  }
+
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5100") {
+                  this.row.inputanswers[j] = "05150"
+                  this.dontUseFreeText(j)                
+                 }
+
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
                   this.row.inputanswers[j] = "NX0300"
                   this.dontUseFreeText(j)
@@ -21280,7 +21456,8 @@ var database = {
               }
              
             }
-            
+
+            //N0
             if (gid == '51') {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
@@ -21296,7 +21473,7 @@ var database = {
               }
              
             }
-
+            //N0a
             if (gid == '52') {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
@@ -21304,11 +21481,43 @@ var database = {
                   this.row.inputanswers[j] = "Not applicable5000"
                   this.dontUseFreeText(j)
                  }
-                 
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
+                  this.row.inputanswers[j] = "N0a0300"
+                  this.dontUseFreeText(j)
+                 }
                       
               }
              
             }
+
+            //N1
+            if (gid == '53') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
+                  this.row.inputanswers[j] = "N10300"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //N2
+            if (gid == '54') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
+                  this.row.inputanswers[j] = "N20300"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+            
 
             if (qid == "01"){
                     count = this.row4.comboanswers.length
