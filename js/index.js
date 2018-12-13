@@ -479,7 +479,7 @@ var database = {
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "10", name : "Invades other adjacent organs or structures other than pancreas "
+            id : "11", name : "Invades other adjacent organs or structures other than pancreas "
           } ],
           id : "00", name : ""
         } ]
@@ -757,7 +757,7 @@ var database = {
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "10", name : "Invades other structures"
+            id : "11", name : "Invades other structures"
           }, {
             id : "10", name : "Invades perianal skin"
           } ],
@@ -1079,20 +1079,20 @@ var database = {
           }, {
              description : "specify",
                inputs_required : [ "" ],
-            id : "10", name : "Invades other organs"
+            id : "13", name : "Invades other organs"
           }, {
              description : "Stage TIS for low grade mucinous tumors",
-            id : "00", name : "Mucin or cells invade muscularis propria"
+            id : "60", name : "Mucin or cells invade muscularis propria"
           }, {
-            id : "00", name : "Invades subserosal tissue"
+            id : "63", name : "Invades subserosal tissue"
           }, {
              description : "Stage T3 for low grade mucinous tumors",
-            id : "00", name : "Mucin or cells invade subserosal tissue"
+            id : "63", name : "Mucin or cells invade subserosal tissue"
           }, {
-            id : "00", name : "Penetrates serosa"
+            id : "67", name : "Penetrates serosa"
           }, {
              description : "Stage T4a for low grade mucinous tumors",
-            id : "00", name : "Mucin or cells penetrate serosa"
+            id : "67", name : "Mucin or cells penetrate serosa"
           } ],
           id : "00", name : ""
         } ]
@@ -1434,7 +1434,7 @@ var database = {
           }, {
             description : "specify",
              inputs_required : [ "" ],
-            id : "10", name : "Invades other organs"
+            id : "11", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -2637,13 +2637,13 @@ var database = {
             id : "00", name : "Invades into the epidermis without ulceration"
           }, {
             description : "classified as T4b",
-            id : "00", name : "Invades into the dermis with ulceration"
+            id : "68", name : "Invades into the dermis with ulceration"
           }, {
             description : "classified as T4b",
-            id : "00", name : "Invades into the epidermis with ulceration"
+            id : "68", name : "Invades into the epidermis with ulceration"
           }, {
             description : "classified as T4b",
-            id : "00", name : "Satellite skin foci are present"
+            id : "68", name : "Satellite skin foci are present"
           } ],
           id : "00", name : ""
         } ]
@@ -4681,14 +4681,14 @@ var database = {
           }, {
              description : "T4b",
              inputs_required : [ "" ],
-            id : "10", name : "Adherent to other organs"
+            id : "13", name : "Adherent to other organs"
           }, {
              description : "T4b",
-            id : "00", name : "Invades omentum"
+            id : "68", name : "Directly invades omentum, separte nodules are M1c"
           }, {
              description : "T4b, specify",
              inputs_required : [ "" ],
-            id : "10", name : "Invades other organs"
+            id : "13", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -5097,17 +5097,17 @@ var database = {
           }, {
             id : "00", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Invades pericolonic/rectal adipose tissue"
+            id : "63", name : "Invades pericolonic/rectal adipose tissue"
           }, {
-            id : "00", name : "Invades pericolonic adipose tissue"
+            id : "63", name : "Invades pericolonic adipose tissue"
           }, {
-            id : "00", name : "Invades perirectal adipose tissue"
+            id : "63", name : "Invades perirectal adipose tissue"
           }, {
-            id : "00", name : "Penetrates serosa"
+            id : "64", name : "Penetrates serosa"
           }, {
-            id : "00", name : "Adherent to other organs"
+            id : "64", name : "Adherent to other organs"
           }, {
-            id : "00", name : "Invades other organs"
+            id : "64", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -5780,7 +5780,7 @@ var database = {
           }, {
             description : "DUODENUM",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades adjacent structures "
+            id : "11", name : "Tumor directly invades adjacent structures "
           }, {
             description : "AMPULLA ",
             id : "00", name : "Tumor limited to ampulla of Vater or sphincter of Oddi "
@@ -5802,7 +5802,7 @@ var database = {
           }, {
             description : "AMPULLA",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades adjacent structures "
+            id : "11", name : "Tumor directly invades adjacent structures "
           } ],
           id : "00", name : ""
         } ]
@@ -7934,13 +7934,13 @@ var database = {
           }, {
             id : "00", name : "Tumor involves 1 or more hepatic vein(s) "
           }, {
-            id : "00", name : "Tumor involves visceral peritoneum"
+            id : "64", name : "Tumor involves visceral peritoneum"
           }, {
             id : "00", name : "Tumor directly invades gallbladder "
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades adjacent organs other than the gallbladder  "
+            id : "11", name : "Tumor directly invades adjacent organs other than the gallbladder  "
           } ],
           id : "00", name : ""
         } ]
@@ -8180,7 +8180,7 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades adjacent organs other than the gallbladder  "
+            id : "11", name : "Tumor directly invades adjacent organs other than the gallbladder  "
           } ],
           id : "00", name : ""
         } ]
@@ -8457,11 +8457,11 @@ var database = {
             id : "00", name : "Tumor invades subserosal tissue without involvement of visceral peritoneum"
           }, {
             
-            id : "00", name : "Tumor penetrates serosa (visceral peritoneum) "
+            id : "64", name : "Tumor penetrates serosa (visceral peritoneum) "
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades adjacent structures "
+            id : "11", name : "Tumor directly invades adjacent structures "
           } ],
           id : "00", name : ""
         } ]
@@ -8804,19 +8804,19 @@ var database = {
           }, {
             id : "00", name : "Invades renal sinus"
           }, {
-            id : "00", name : "Invades beyond Gerota's fascia"
+            id : "64", name : "Invades beyond Gerota's fascia"
           }, {
             id : "00", name : "Invades major veins"
           }, {
             id : "00", name : "Invades pelvicaliceal system"
           }, {
-            id : "00", name : "Direct extension into adrenal (T4)"
+            id : "64", name : "Direct extension into adrenal (T4)"
           }, {
             id : "00", name : "Metastasis to adrenal (M1)"
           }, {
              description : "specify",
               inputs_required : [ "" ],
-            id : "10", name : "Invades other organs"
+            id : "11", name : "Invades other organs"
           } ],
           id : "00", name : ""
         } ]
@@ -12311,11 +12311,11 @@ var database = {
           }, {
              description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades adjacent structures "
+            id : "11", name : "Tumor directly invades adjacent structures "
           }, {
              description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades wall of large vessel "
+            id : "11", name : "Tumor directly invades wall of large vessel "
           } ],
           id : "00", name : ""
         } ]
@@ -15887,12 +15887,13 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "T4",
         id : "00", name : "Invasion of Bone, Muscle, Fascia, or Cartilage ",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Present"
+            id : "64", name : "Present"
           }, {
             id : "00", name : "Equivocal"
           }, {
@@ -16148,11 +16149,11 @@ var database = {
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor directly invades adjacent structures "
+            id : "11", name : "Tumor directly invades adjacent structures "
           }, {
             description : "which",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
+            id : "11", name : "Tumor penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -16681,11 +16682,11 @@ var database = {
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "10", name : "Invades adjacent structures "
+            id : "13", name : "Invades adjacent structures "
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "10", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
+            id : "11", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -17089,17 +17090,17 @@ var database = {
           }, {
             id : "00", name : "Invades muscularis propria"
           }, {
-            id : "00", name : "Invades subserosal connective tissue without involvement of visceral peritoneum"
+            id : "63", name : "Invades subserosal connective tissue without involvement of visceral peritoneum"
           }, {
-            id : "00", name : "Penetrates serosa"
-          }, {
-            description : "specify",
-            inputs_required : [ "" ],
-            id : "10", name : "Invades adjacent structures "
+            id : "64", name : "Penetrates serosa"
           }, {
             description : "specify",
             inputs_required : [ "" ],
-            id : "10", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
+            id : "11", name : "Invades adjacent structures "
+          }, {
+            description : "specify",
+            inputs_required : [ "" ],
+            id : "11", name : "Penetrates to the surface of the visceral peritoneum (serosa) and directly invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -17349,7 +17350,7 @@ var database = {
               description : "M1a",
             id : "00", name : "Discontinuous spermatic cord involvement"
           }, {
-            id : "00", name : "Invades scrotal wall"
+            id : "64", name : "Invades scrotal wall"
           } ],
           id : "00", name : ""
         } ]
@@ -18426,7 +18427,7 @@ var database = {
           }, {
              description : "specify",
             inputs_required : [ "" ],
-            id : "10", name : "Invades adjacent organs, or through the kidney into the perinephric fat"
+            id : "11", name : "Invades adjacent organs, or through the kidney into the perinephric fat"
           } ],
           id : "00", name : ""
         } ]
@@ -18767,7 +18768,7 @@ var database = {
             id : "64", name : "Invades rectum"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "Invades adjacent structures"
+            id : "11", name : "Invades adjacent structures"
           } ],
           id : "00", name : ""
         } ]
@@ -21261,6 +21262,39 @@ var database = {
         },
         // put the radio and free text together for the mixed texts
         compoundFreeText: function(i, hope, gid){ 
+          //T4
+          if (gid == '11') {
+            for (var j = 0; j<this.row.inputanswers.length; j++){                
+               if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                this.row.inputanswers[j] = "T40200"
+                this.dontUseFreeText(j)
+               }
+                    
+            }
+           
+          }
+          //T4a
+          if (gid == '12') {
+            for (var j = 0; j<this.row.inputanswers.length; j++){                
+               if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                this.row.inputanswers[j] = "T4a0200"
+                this.dontUseFreeText(j)
+               }
+                    
+            }
+           
+          }
+          //T4b
+          if (gid == '13') {
+            for (var j = 0; j<this.row.inputanswers.length; j++){                
+               if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                this.row.inputanswers[j] = "T4b0200"
+                this.dontUseFreeText(j)
+               }
+                    
+            }
+           
+          }
           
           
           this.row5.useFreeText[i] = false
