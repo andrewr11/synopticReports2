@@ -21327,7 +21327,7 @@ var database = {
             this.updateTable()
           }
           if(gid=="16"){
-            console.log("gid", gid)
+            
             this.row11.freeTextGID[i] = gid  
 
             this.row5.useFreeText[i+1] = false
