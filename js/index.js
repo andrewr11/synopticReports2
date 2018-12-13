@@ -39,7 +39,8 @@ GIDs
 12 mixed free text and radio T4a
 13 mixed free text and radio T4b
 20 ER/PR drop down
-15 = See case trip all the following See case questions
+15 = See case trip all the following See case questions DCIS
+16 = See case trip all the following See case questions Inv breast
 
 
 50 no nodes present
