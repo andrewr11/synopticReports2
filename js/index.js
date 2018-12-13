@@ -19,6 +19,14 @@ QIDs
 03 N
 04 M
 
+40 breast dcis
+41 breast stage tis
+42 prostate aca
+43 prostate icd10
+44 colon icd10
+45 melanoma icd10
+46 lung icd10
+
 50 0 total or 0 positive node dependency
 51 is no sites sampled then total = 0
 
@@ -27,7 +35,11 @@ QIDs
 GIDs
 00 typical radio
 10 mixed free text and radio
+11 mixed free text and radio T4
+12 mixed free text and radio T4a
+13 mixed free text and radio T4b
 20 ER/PR drop down
+
 
 50 no nodes present
 51 no positive nodes present
@@ -44,6 +56,14 @@ GIDs
 66 T1b
 67 T4a
 68 T4b
+69 Ta
+70 T2a
+71 T2b
+72 T3a
+73 T3b
+74 Ta/Tis
+
+
 
 
 
@@ -218,7 +238,7 @@ var database = {
           }, {
              description : "specify",
             inputs_required : [ "" ],
-            id : "10", name : "Tumor invades into adjacent organs"
+            id : "11", name : "Tumor invades into adjacent organs"
           }  ],
           id : "00", name : ""
         } ]
@@ -447,15 +467,15 @@ var database = {
           }, {
             id : "62", name : "Invades into muscularis propria of the duodenum"
           }, {
-            id : "00", name : "Directly invades pancreas up to 0.5 cm"
+            id : "72", name : "Directly invades pancreas up to 0.5 cm"
           }, {
-            id : "00", name : "Extends more than 0.5 cm into pancreas "
+            id : "73", name : "Extends more than 0.5 cm into pancreas "
           }, {
-            id : "00", name : "Extends into peripancreatic soft tissues "
+            id : "73", name : "Extends into peripancreatic soft tissues "
           }, {
-            id : "00", name : "Extends into periduodenal tissue"
+            id : "73", name : "Extends into periduodenal tissue"
           }, {
-            id : "00", name : "Extends into duodenal serosa "
+            id : "73", name : "Extends into duodenal serosa "
           }, {
              description : "specify",
               inputs_required : [ "" ],
@@ -2106,7 +2126,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Type",
+        id : "40", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Ductal carcinoma in situ"
@@ -2335,7 +2355,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "11", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -4939,7 +4959,7 @@ var database = {
         } ]
       }, {
         description : "Add billing code G8721",
-        id : "00", name : "ICD10",
+        id : "44", name : "ICD10",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "C18.9"
@@ -7072,9 +7092,9 @@ var database = {
           }, {
             id : "66", name : "Invades muscle"
           }, {
-            id : "00", name : "Invades perimuscular connective tissue on the peritoneal side "
+            id : "70", name : "Invades perimuscular connective tissue on the peritoneal side "
           }, {
-            id : "00", name : "Invades perimuscular connective tissue on the hepatic side "
+            id : "71", name : "Invades perimuscular connective tissue on the hepatic side "
           }, {
             id : "00", name : "Penetrates serosa"
           }, {
@@ -10158,7 +10178,7 @@ var database = {
         } ]
       }, {
         description : "Add billing codes G9422 for NSCC",
-        id : "00", name : "ICD10",
+        id : "46", name : "ICD10",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "C34.90"
@@ -13258,9 +13278,9 @@ var database = {
           }, {
             id : "61", name : "Tumor limited to the bile duct histologically"
           }, {
-            id : "00", name : "Tumor invades beyond the wall of the bile duct into surrounding connective tissue "
+            id : "70", name : "Tumor invades beyond the wall of the bile duct into surrounding connective tissue "
           }, {
-            id : "00", name : "Tumor invades the adjacent liver parenchyma"
+            id : "71", name : "Tumor invades the adjacent liver parenchyma"
           }, {
             id : "00", name : "Invades the gallbladder"
           }, {
@@ -14296,7 +14316,7 @@ var database = {
         } ]
      
       }, {
-        id : "00", name : "Type",
+        id : "42", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Adenocarcinoma"
@@ -14599,7 +14619,7 @@ var database = {
         } ]  
       }, {
         description : "Add billing code 3267F",
-        id : "00", name : "ICD10",
+        id : "43", name : "ICD10",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "C61"
@@ -15773,7 +15793,7 @@ var database = {
         } ]
       }, {
         description : "Add billing code G9428 for residual melanoma and G9429 no melanoma left",
-        id : "00", name : "ICD10",
+        id : "45", name : "ICD10",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "C43.9"
@@ -18394,7 +18414,7 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Noninvasive papillary carcinoma"
+            id : "69", name : "Noninvasive papillary carcinoma"
           }, {
             id : "60", name : "Carcinoma in situ"
           }, {
@@ -18716,7 +18736,7 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Noninvasive papillary carcinoma"
+            id : "69", name : "Noninvasive papillary carcinoma"
           }, {
             id : "60", name : "Carcinoma in situ"
           }, {
@@ -19018,19 +19038,19 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Noninvasive papillary carcinoma"
+            id : "69", name : "Noninvasive papillary carcinoma"
           }, {
             id : "60", name : "Carcinoma in situ"
           }, {
             id : "61", name : "Invades lamina propria"
           }, {
-            id : "00", name : "Invades superficial muscularis propria (inner half)"
+            id : "70", name : "Invades superficial muscularis propria (inner half)"
           }, {
-            id : "00", name : "Invades deep muscularis propria (outer half)"
+            id : "71", name : "Invades deep muscularis propria (outer half)"
           }, {
-            id : "00", name : "Invades perivesical tissue, microscopically"
+            id : "72", name : "Invades perivesical tissue, microscopically"
           }, {
-            id : "00", name : "Invades perivesical tissue, grossly (extravesicular mass)"
+            id : "73", name : "Invades perivesical tissue, grossly (extravesicular mass)"
           }, {
              description : "includes prostate (consider if urethral protocol is more appropriate), seminal vesicles, uterus, vagina rectum soft tissues",
             inputs_required : [ "" ],
@@ -19353,7 +19373,7 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Noninvasive papillary carcinoma"
+            id : "69", name : "Noninvasive papillary carcinoma"
           }, {
             id : "60", name : "Carcinoma in situ"
           }, {
@@ -21227,6 +21247,8 @@ var database = {
           this.row5.useFreeText[i] = false
           this.row10.useCombo[i] = true
           this.row6.bgc[i] = "#66ff99"
+          
+          
           this.updateTable()
           
          
@@ -21238,7 +21260,8 @@ var database = {
           this.row6.bgc[i] = "#66ff99"
         },
         // put the radio and free text together for the mixed texts
-        compoundFreeText: function(i, hope){ 
+        compoundFreeText: function(i, hope, gid){ 
+          
           
           this.row5.useFreeText[i] = false
           this.row10.useCombo[i] = true
@@ -21246,6 +21269,8 @@ var database = {
           this.row8.modifyFreeTextHeader[i] = hope
           this.updateTable()
          
+         
+
         },
 
 
@@ -21283,48 +21308,75 @@ var database = {
 
              //single answer responses
              if (this.current_tumor == 'Breast DCIS') {
-              if (this.row.inputanswers[2] ==  "!!!!YOU FORGOT THIS ONE??0000") {
-                this.row.inputanswers[2] = "Ductal carcinoma in situ0000"
-                this.dontUseFreeText(2)                
-               }
-               if (this.row.inputanswers[12] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                this.row.inputanswers[12] = "Tis0200"
-                this.dontUseFreeText(12)                
-               }
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                              
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4000") {
+                 
+                 this.row.inputanswers[j] = "Ductal carcinoma in situ4000"
+                 this.dontUseFreeText(j)
+                }
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  
+                  this.row.inputanswers[j] = "Tis0200"
+                  this.dontUseFreeText(j)
+                 }
+
+              }                 
+               
              }
 
+
              if (this.current_tumor == 'Prostate, prostatectomy') {
-              if (this.row.inputanswers[1] ==  "!!!!YOU FORGOT THIS ONE??0000") {
-                this.row.inputanswers[1] = "Adenocarcinoma0000"
-                this.dontUseFreeText(1)                
-               }
-               if (this.row.inputanswers[20] ==  "!!!!YOU FORGOT THIS ONE??0000") {
-                this.row.inputanswers[20] = "C610000"
-                this.dontUseFreeText(20)                
-               }
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                              
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4200") {
+                 
+                 this.row.inputanswers[j] = "Adenocarcinoma4200"
+                 this.dontUseFreeText(j)
+                }
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4300") {
+                 
+                  this.row.inputanswers[j] = "C614300"
+                  this.dontUseFreeText(j)
+                 }
+              }                              
              }
 
              if (this.current_tumor == 'Colon') {
-              if (this.row.inputanswers[20] ==  "!!!!YOU FORGOT THIS ONE??0000") {
-                this.row.inputanswers[20] = "C18.90000"
-                this.dontUseFreeText(20)                
-               }
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                              
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4400") {
+                 
+                 this.row.inputanswers[j] = "C18.94400"
+                 this.dontUseFreeText(j)
+                }      
+              }                              
              }
 
              if (this.current_tumor == 'Lung') {
-              if (this.row.inputanswers[19] ==  "!!!!YOU FORGOT THIS ONE??0000") {
-                this.row.inputanswers[19] = "C34.900000"
-                this.dontUseFreeText(19)                
-               }
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                            
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4600") {
+                  
+                 this.row.inputanswers[j] = "C34.904600"
+                 this.dontUseFreeText(j)
+                }      
+              }                              
              }
 
              if (this.current_tumor == 'Skin Melanoma') {
-              if (this.row.inputanswers[22] ==  "!!!!YOU FORGOT THIS ONE??0000") {
-                this.row.inputanswers[22] = "C43.90000"
-                this.dontUseFreeText(22)                
-               }
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                            
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4500") {
+                  
+                 this.row.inputanswers[j] = "C43.94500"
+                 this.dontUseFreeText(j)
+                }      
+              }                              
              }
-            
+             
+          
+             
              // T stage
 
              //Tis
@@ -21332,6 +21384,30 @@ var database = {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
                   this.row.inputanswers[j] = "Tis0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //Ta
+            if (gid == '69') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "Ta0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //Ta/Tis
+            if (gid == '74') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "TaTis0200"
                   this.dontUseFreeText(j)
                  }
                       
@@ -21411,6 +21487,69 @@ var database = {
              
             }
 
+            //T2a
+            if (gid == '70') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T2a0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T2b
+            if (gid == '71') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T2b0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T3a
+            if (gid == '72') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T3a0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T3b
+            if (gid == '73') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T3b0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+
+            //T4
+            if (gid == '11') {
+              
+              
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T40200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
             //T4a
             if (gid == '67') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
@@ -21425,6 +21564,30 @@ var database = {
 
             //T4b
             if (gid == '68') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T4b0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T4a
+            if (gid == '12') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T4a0200"
+                  this.dontUseFreeText(j)
+                 }
+                      
+              }
+             
+            }
+
+            //T4b
+            if (gid == '13') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
                   this.row.inputanswers[j] = "T4b0200"
@@ -21528,7 +21691,19 @@ var database = {
                   }
             // all rows other than AJCC T N M responses
 
-            if (qid === "00" || qid === "01" || qid === "50" || qid === "51" || qid === "52" || qid === "53"){
+            if (qid === "00" || 
+                qid === '40' || 
+                qid === '41' || 
+                qid === '42' || 
+                qid === '43' || 
+                qid === '44' || 
+                qid === '45' || 
+                qid === '46' || 
+                qid === "01" || 
+                qid === "50" || 
+                qid === "51" || 
+                qid === "52" || 
+                qid === "53"){
               
 
               // if free text selected
@@ -21580,7 +21755,9 @@ var database = {
           this.row3.finalanswers.push(firstrow)
           for (var i=0; i<this.synresults.length; i++){
 
-            if (this.synresults[i].id === "02" || this.synresults[i].id === "03" || this.synresults[i].id === "04") {
+            if (this.synresults[i].id === "02" || 
+            this.synresults[i].id === "03" || 
+            this.synresults[i].id === "04") {
               removeRow += 1
             }
             
@@ -21594,7 +21771,17 @@ var database = {
             }
 
             
-            if (this.synresults[i].id === "00" || this.synresults[i].id === "50" || this.synresults[i].id === "51" || this.synresults[i].id === "52" || this.synresults[i].id === "53"){
+            if (this.synresults[i].id === "00" || 
+                this.synresults[i].id === "40" || 
+                this.synresults[i].id === "41" || 
+                this.synresults[i].id === "42" || 
+                this.synresults[i].id === "43" || 
+                this.synresults[i].id === "44" || 
+                this.synresults[i].id === "45" || 
+                this.synresults[i].id === "46" || 
+                this.synresults[i].id === "51" || 
+                this.synresults[i].id === "52" || 
+                this.synresults[i].id === "53"){
             
 
               if (this.row5.useFreeText[i]){
