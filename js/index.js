@@ -21328,6 +21328,52 @@ var database = {
           this.row8.modifyFreeTextHeader[i] = hope
           this.row.inputanswers[i] = "0000"
           
+
+          // logic for repeating see case text
+          if(gid=="15"){
+            this.row5.useFreeText[i+1] = false
+            this.row10.useCombo[i+1] = true
+            this.row6.bgc[i+1] = "#66ff99"
+            this.row8.modifyFreeTextHeader[i+1] = hope            
+            this.row11.freeTextGID[i] = gid           
+            this.updateTable()
+          }
+
+          if(gid=="16"){
+            
+            this.row11.freeTextGID[i] = gid  
+
+            this.row5.useFreeText[i+1] = false
+            this.row10.useCombo[i+1] = true
+            this.row6.bgc[i+1] = "#66ff99"
+            this.row8.modifyFreeTextHeader[i+1] = hope            
+            
+            this.row5.useFreeText[i+2] = false
+            this.row10.useCombo[i+2] = true
+            this.row6.bgc[i+2] = "#66ff99"
+            this.row8.modifyFreeTextHeader[i+2] = hope    
+
+            this.row5.useFreeText[i+3] = false
+            this.row10.useCombo[i+3] = true
+            this.row6.bgc[i+3] = "#66ff99"
+            this.row8.modifyFreeTextHeader[i+3] = hope    
+
+            console.log("3rd", this.row8.modifyFreeTextHeader[i+3])
+
+            this.updateTable()
+          }
+
+          //logic to turn off repeat See case
+          if(gid!="15" && gid!="16"){
+
+                      
+            this.row11.freeTextGID[i] = " "           
+            this.updateTable()
+          }
+
+
+
+
           
 
           this.updateTable()
@@ -21343,6 +21389,20 @@ var database = {
 
         updateTable: function(){
 
+         // update free text based on gid in freeTExtFID
+         for (var i = 0; i<this.row11.freeTextGID.length; i++){
+          if (this.row11.freeTextGID[i] == "15") {
+            this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
+            
+          }   
+        }
+        for (var i = 0; i<this.row11.freeTextGID.length; i++){
+          if (this.row11.freeTextGID[i] == "16") {
+            this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
+            this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i]
+            this.row7.modifyFreeText[i+3] = this.row7.modifyFreeText[i]
+          }   
+        }
          
          
 
