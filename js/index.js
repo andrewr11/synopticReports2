@@ -21324,7 +21324,7 @@ var database = {
           this.row6.bgc[i] = "#66ff99"
           this.row8.modifyFreeTextHeader[i] = hope
           this.row.inputanswers[i] = "0000"
-          console.log ("inputi", this.row.inputanswers[i])
+          
           
 
           this.updateTable()
