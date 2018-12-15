@@ -21335,7 +21335,13 @@ var database = {
             this.row10.useCombo[i+1] = true
             this.row6.bgc[i+1] = "#66ff99"
             this.row8.modifyFreeTextHeader[i+1] = hope            
-            this.row11.freeTextGID[i] = gid           
+            this.row11.freeTextGID[i] = gid     
+            
+            this.row5.useFreeText[i+2] = false
+            this.row6.bgc[i+2] = "#66ff99"
+            this.row.inputanswers[i+2] = "No0000"
+
+
             this.updateTable()
           }
 
@@ -21358,15 +21364,21 @@ var database = {
             this.row6.bgc[i+3] = "#66ff99"
             this.row8.modifyFreeTextHeader[i+3] = hope    
 
-            console.log("3rd", this.row8.modifyFreeTextHeader[i+3])
+            this.row5.useFreeText[i+4] = false
+            this.row6.bgc[i+4] = "#66ff99"
+            this.row.inputanswers[i+4] = "No0000"
+
+            this.row5.useFreeText[i+5] = false
+            this.row6.bgc[i+5] = "#66ff99"
+            this.row.inputanswers[i+5] = "No0000"
+
+            
 
             this.updateTable()
           }
 
           //logic to turn off repeat See case
-          if(gid!="15" && gid!="16"){
-
-                      
+          if(gid!="15" && gid!="16"){           
             this.row11.freeTextGID[i] = " "           
             this.updateTable()
           }
