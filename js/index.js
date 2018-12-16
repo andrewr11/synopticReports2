@@ -44,6 +44,8 @@ GIDs
 17 treatment effect nodes and primary site NA
 
 
+
+
 50 no nodes present
 51 no positive nodes present
 52 no positive nodes, stage N0a
@@ -66,6 +68,15 @@ GIDs
 73 T3b
 74 Ta/Tis
 
+80 breast grades 
+81
+82
+83
+84
+85
+86
+87
+88
 
 
 
@@ -140,6 +151,10 @@ var database = {
         [
 
       ]
+    },
+    row12: {
+      breastGrade: 
+        [ 0,0,0]
     },
     
     site_groups: [
@@ -2546,13 +2561,13 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : ">75%",
-            id : "00", name : "Score 1"
+            id : "80", name : "Score 1"
           }, {
             description : "10% to 75%",
-            id : "00", name : "Score 2"
+            id : "81", name : "Score 2"
           }, {
             description : "<10%",
-            id : "00", name : "Score 3"
+            id : "82", name : "Score 3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -2563,13 +2578,13 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "nuclei small",
-            id : "00", name : "Score 1"
+            id : "83", name : "Score 1"
           }, {
             description : "cells larger than normal",
-            id : "00", name : "Score 2"
+            id : "84", name : "Score 2"
           }, {
             description : "prominent nucleoli, marked variation",
-            id : "00", name : "Score 3"
+            id : "85", name : "Score 3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -2580,13 +2595,13 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "<=3 mitoses per mm2",
-            id : "00", name : "Score 1"
+            id : "86", name : "Score 1"
           }, {
             description : "4-7 mitoses per mm2",
-            id : "00", name : "Score 2"
+            id : "87", name : "Score 2"
           }, {
             description : ">8 mitoses per mm2",
-            id : "00", name : "Score 3"
+            id : "88", name : "Score 3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -21258,16 +21273,181 @@ var database = {
           
           //logic for two treatment effect na qustions
           if(gid=="17"){
-            console.log("here")
+           
             this.row5.useFreeText[i+1] = false
             this.row6.bgc[i+1] = "#66ff99"
             this.row.inputanswers[i+1] = "Not applicable5000"
-            console.log(this.row.inputanswers[i+1])
-
+          }
+          
+          //logic for breast grade
+          //tubules
+          if(gid=="80"){
+            this.row12.breastGrade[0] = 1
+           
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+3] = "#66ff99" 
+              this.row5.useFreeText[i+3] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+3] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+3] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+3] = "Nottingham grade 2/30000"
+              }
+            }
+          }
+          if(gid=="81"){
+            this.row12.breastGrade[0] = 2
+           
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+3] = "#66ff99" 
+              this.row5.useFreeText[i+3] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+3] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+3] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+3] = "Nottingham grade 2/30000"
+              }
+            }
+          }
+          if(gid=="82"){
+            this.row12.breastGrade[0] = 3
+            
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+3] = "#66ff99" 
+              this.row5.useFreeText[i+3] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+3] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+3] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+3] = "Nottingham grade 2/30000"
+              }
+            }
           }
           
 
-          
+          //nuclear pleo
+          if(gid=="83"){
+            this.row12.breastGrade[1] = 1
+            
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+2] = "#66ff99" 
+              this.row5.useFreeText[i+2] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+2] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+2] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+2] = "Nottingham grade 2/30000"
+              }
+            }
+          }
+          if(gid=="84"){
+            this.row12.breastGrade[1] = 2
+           
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+2] = "#66ff99" 
+              this.row5.useFreeText[i+2] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+2] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+2] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+2] = "Nottingham grade 2/30000"
+              }
+            }
+          }
+          if(gid=="85"){
+            this.row12.breastGrade[1] = 3
+           
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+2] = "#66ff99" 
+              this.row5.useFreeText[i+2] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+2] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+2] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+2] = "Nottingham grade 2/30000"
+              }
+            }
+          }
+
+          //mitotic count
+          if(gid=="86"){
+            this.row12.breastGrade[2] = 1
+            
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+1] = "#66ff99" 
+              this.row5.useFreeText[i+1] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+1] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+1] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+1] = "Nottingham grade 2/30000"
+              }
+            }
+          }
+          if(gid=="87"){
+            this.row12.breastGrade[2] = 2
+            
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+1] = "#66ff99" 
+              this.row5.useFreeText[i+1] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+1] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+1] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+1] = "Nottingham grade 2/30000"
+              }
+            }
+          }
+          if(gid=="88"){
+            this.row12.breastGrade[2] = 3
+            
+            if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
+              this.row6.bgc[i+1] = "#66ff99" 
+              this.row5.useFreeText[i+1] = false
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              if (total < 6) {
+                this.row.inputanswers[i+1] = "Nottingham grade 1/30000"
+              }
+              else if (total > 7) {
+                this.row.inputanswers[i+1] = "Nottingham grade 3/30000"
+              }
+              else {
+                this.row.inputanswers[i+1] = "Nottingham grade 2/30000"
+              }
+            }
+          }
 
           
           
