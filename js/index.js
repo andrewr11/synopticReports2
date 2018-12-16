@@ -41,6 +41,7 @@ GIDs
 20 ER/PR drop down
 15 = See case trip all the following See case questions DCIS
 16 = See case trip all the following See case questions Inv breast
+17 treatment effect nodes and primary site NA
 
 
 50 no nodes present
@@ -2835,7 +2836,7 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Not applicable"
+            id : "17", name : "Not applicable"
           }, {
             id : "00", name : "No definite response"
           }, {
@@ -2846,7 +2847,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Treatment effect, lymph nodes",
+        id : "50", name : "Treatment effect, lymph nodes",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -21255,7 +21256,15 @@ var database = {
           this.row6.bgc[i] = "#66ff99"  
           this.row8.modifyFreeTextHeader[i] = " "
           
-          
+          //logic for two treatment effect na qustions
+          if(gid=="17"){
+            console.log("here")
+            this.row5.useFreeText[i+1] = false
+            this.row6.bgc[i+1] = "#66ff99"
+            this.row.inputanswers[i+1] = "Not applicable5000"
+            console.log(this.row.inputanswers[i+1])
+
+          }
           
 
           
@@ -21382,6 +21391,8 @@ var database = {
             this.row11.freeTextGID[i] = " "           
             this.updateTable()
           }
+
+          
 
 
 
