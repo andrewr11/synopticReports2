@@ -4095,7 +4095,7 @@ var database = {
           }, {
             id : "00", name : "Squamous cell carcinoma, squamotransitional"
           }, {
-            description : "cervical HPV ISH +, p16+, CEA+, p53 wild type, ER-/wk, Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER-/+, Vim -/wk",
+            description : "cervical HPV ISH +, p16+, CEA+, p53 wild type, ER-/wk, PR- Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER+, PR+ Vim +/wk",
             id : "00", name : "Endocervical adenocarcinoma"
           }, {
             id : "00", name : "Endocervical adenocarcinoma, usual type"
@@ -4470,7 +4470,7 @@ var database = {
           }, {
             id : "00", name : "Squamous cell carcinoma, squamotransitional"
           }, {
-             description : "cervical HPV ISH+, p16+, CEA+, p53 wild type, ER-/wk, Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER-/+, Vim -/wk",
+             description : "cervical HPV ISH+, p16+, CEA+, p53 wild type, ER-/wk, PR- Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER-/+, PR+, Vim +",
             id : "00", name : "Endocervical adenocarcinoma"
           }, {
             
@@ -6001,7 +6001,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "WT1-, p53 -/focal+, ER +, Pax8+ p16-, HPV ISH- or cervical HPV ISH+, p16+, CEA+, p53 wild type, ER-/wk, Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER-/+, Vim -/wk",
+            description : "WT1-, p53 -/focal+, ER +, Pax8+ p16-, HPV ISH- or cervical HPV ISH+, p16+, CEA+, p53 wild type, ER-/wk, PR- Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER-/+, PR+, Vim +",
             id : "00", name : "Endometrioid adenocarcinoma"
           }, {
             id : "00", name : "Endometrioid adenocarcinoma with squamous differentiation"
