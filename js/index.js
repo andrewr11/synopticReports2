@@ -9787,9 +9787,6 @@ var database = {
             description : "CARCINOMA (>3cm AND extranodal extension) OR (multiple nodes with extranodal extension at least in one) OR (single contralateral node <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
           }, {
-            description : "MELANOMA No regional lymph node metastasis",
-            id : "00", name : "N0"
-          }, {
             description : "MELANOMA regional metastases",
             id : "00", name : "N1"
           } ],
@@ -17652,9 +17649,7 @@ var database = {
           group : [ {
             id : "00", name : "Papillary carcinoma, NOS"
           }, {
-            id : "00", name : "Papillary carcinoma, NOS, encapsulated"
-          }, {
-            id : "00", name : "Papillary carcinoma, NOS, predominantly but not completely encapsulated"
+            id : "00", name : "Papillary carcinoma, NOS, predominantly encapsulated"
           }, {
             id : "00", name : "Papillary carcinoma with tall cell features"
           }, {
