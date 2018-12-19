@@ -22,7 +22,19 @@
 
   gtag('config', 'UA-131107321-1');
 </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131135830-1"></script>
+<<<<<<< HEAD
+=======
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-131135830-1');
+</script>
+
+>>>>>>> 213ef52a48e50e5b1feefd37a1c8045ba9f88019
 
 </head>
 
@@ -198,7 +210,22 @@
                           </li>    
                          </ul>
 
+                          <!--show extended answers-->
+                      <ul v-for="(g) in a.group">
+                        <li v-if="g.id === '30'">
+                        
+                          <input type="radio"  :value= "g.name" :name = "q.name" v-on:click="dontUseFreeText(index,index2, g.id)" >
+                          <span><strong>Use extended list:</strong> </span>
+                       
+                          <select  :name="q.name"  v-model.lazy="row.inputanswers[index]"  v-on:change="dontUseFreeText(index,index2, g.id)">
+                          <option v-for="item in g.inputs_required" v-bind:value ="item.name+q.id+g.id">{{item.name}}</option>
                          
+                        </select>
+                        
+                          <span v-if="g.description" class = "description"> [ {{g.description}}]</span>
+                        </select>
+                      </li>    
+                       </ul>
                          
 
                         <!--show free text answers--> 
