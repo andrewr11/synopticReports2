@@ -16,7 +16,7 @@ NA
 ### Break down into end to end tests
 
 NA
-G
+
 ## Deployment
 
 NA
@@ -44,3 +44,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 Megan Renshaw
+[![Analytics](https://ga-beacon.appspot.com/UA-131249243-1/synopticReports2/readme)](https://github.com/andrewr11/ga-beacon)
