@@ -17686,7 +17686,7 @@ var database = {
           group : [ {
             id : "00", name : "Free "
           }, {
-            id : "00", name : "Positive, tumor abuts the inked margin"
+            id : "00", name : "Tumor abuts the inked margin"
           }, {
             inputs_required : [ "" ],
             id : "10", name : "Positive, "
