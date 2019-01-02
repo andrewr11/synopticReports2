@@ -9376,22 +9376,22 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "single ipsilateral lymph node <= 3cm AND no extranodal extension OR MELANOMA regional metastases",
+            description : "single ipsilateral lymph node metastasis <= 3cm AND no extranodal extension OR MELANOMA regional metastases",
             id : "00", name : "N1"
           }, {
-            description : "(single ipsilateral lymph node > 3cm AND <= 6cm AND no extranodal extension) OR (bilateral or contralateral lymph nodes, <= 6cm  AND no extranodal extension)",
+            description : "(single ipsilateral lymph node metastasis > 3cm AND <= 6cm AND no extranodal extension) OR (bilateral or contralateral lymph nodemetastases, <= 6cm  AND no extranodal extension)",
             id : "00", name : "N2a"
           }, {
-            description : "multiple ipsilateral lymph node AND <= 6cm AND no extranodal extension",
+            description : "multiple ipsilateral lymph node AND metastases <= 6cm AND no extranodal extension",
             id : "00", name : "N2b"
           }, {
-            description : "bilateal or contralateral lymph node AND <= 6cm AND no extranodal extension",
+            description : "bilateal or contralateral lymph node AND metastases <= 6cm AND no extranodal extension",
             id : "00", name : "N2c"
           }, {
-            description : "> 6cm AND no extranodal extension",
+            description : "metastases > 6cm AND no extranodal extension",
             id : "00", name : "N3a"
           }, {
-            description : "(metastases single ipsilateral lymph node >3cm AND extranodal extension) OR ( multiple ipsilateral, contralateral or bilateral nodes AND no extranodal extension) OR (single contralateral node <=3cm AND extranodal extension)",
+            description : "(metastases single ipsilateral lymph node >3cm AND extranodal extension) OR ( multiple ipsilateral, contralateral or bilateral nodes AND no extranodal extension) OR (single contralateral node metastases <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
           } ],
           id : "00", name : "Category (pN)"
@@ -9769,22 +9769,22 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "CARCINOMA single ipsilateral lymph node <= 3cm AND no extranodal extension",
+            description : "CARCINOMA single ipsilateral lymph node metastasis <= 3cm AND no extranodal extension",
             id : "00", name : "N1"
           }, {
-            description : "CARCINOMA single ipsilateral or contralateral lymph node either (<3cm with extranodal extension) OR (> 3cm AND <= 6cm and no extranodal extension)",
+            description : "CARCINOMA single ipsilateral or contralateral lymph node metastasis either (<3cm with extranodal extension) OR (> 3cm AND <= 6cm and no extranodal extension)",
             id : "00", name : "N2a"
           }, {
-            description : "CARCINOMA multiple ipsilateral lymph node AND <= 6cm",
+            description : "CARCINOMA multiple ipsilateral lymph node AND metastases <= 6cm",
             id : "00", name : "N2b"
           }, {
-            description : "CARCINOMA contralateral lymph node AND <= 6cm",
+            description : "CARCINOMA contralateral lymph node AND metastases <= 6cm",
             id : "00", name : "N2c"
           }, {
-            description : "CARCINOMA > 6cm no extranodal extension",
+            description : "CARCINOMA metastases > 6cm no extranodal extension",
             id : "00", name : "N3a"
           }, {
-            description : "CARCINOMA (>3cm AND extranodal extension) OR (multiple nodes with extranodal extension at least in one) OR (single contralateral node <=3cm AND extranodal extension)",
+            description : "CARCINOMA (metastases >3cm AND extranodal extension) OR (multiple nodes with extranodal extension at least in one) OR (single contralateral node metastases <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
           }, {
             description : "MELANOMA regional metastases",
@@ -10667,22 +10667,22 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "CARCINOMA single ipsilateral lymph node <= 3cm AND no extranodal extension",
+            description : "CARCINOMA single ipsilateral lymph node metastasis <= 3cm AND no extranodal extension",
             id : "00", name : "N1"
           }, {
-            description : "CARCINOMA single ipsilateral lymph node either (<3cm with extranodal extension) OR (> 3cm AND <= 6cm and no extranodal extension)",
+            description : "CARCINOMA single ipsilateral lymph node metastasis either (<3cm with extranodal extension) OR (> 3cm AND <= 6cm and no extranodal extension)",
             id : "00", name : "N2a"
           }, {
-            description : "CARCINOMA multiple ipsilateral lymph node AND <= 6cm",
+            description : "CARCINOMA multiple ipsilateral lymph node metastases AND <= 6cm",
             id : "00", name : "N2b"
           }, {
-            description : "CARCINOMA contralateral lymph node AND <= 6cm",
+            description : "CARCINOMA contralateral lymph node metastases AND <= 6cm",
             id : "00", name : "N2c"
           }, {
-            description : "CARCINOMA > 6cm no extranodal extension",
+            description : "CARCINOMA metastases > 6cm no extranodal extension",
             id : "00", name : "N3a"
           }, {
-            description : "CARCINOMA (>3cm AND extranodal extension) OR (multiple nodes with extranodal extension at least in one) OR (single contralateral node <=3cm AND extranodal extension)",
+            description : "CARCINOMA (metastases >3cm AND extranodal extension) OR (multiple node metastases with extranodal extension at least in one) OR (single contralateral node metastases <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
           } ],
           id : "00", name : "Category (pN)"
