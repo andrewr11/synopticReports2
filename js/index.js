@@ -10515,6 +10515,10 @@ var database = {
             inputs_required : [ "" ],
             id : "10", name : "Positive, "
           }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Tumor abuts the inked margin, "
+          }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
