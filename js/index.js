@@ -4375,25 +4375,28 @@ var database = {
         id : "00", name : "Stage FIGO (2015)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "Measured invasion of stroma ≤3 mm in depth and ≤7 mm width",
+            description : "Limited to cervix, Measured invasion of stroma ≤3 mm in depth and ≤7 mm width",
             id : "00", name : "FIGO IA1"
           }, {
-            description : "Measured invasion of stroma >3 mm and <5 mm in depth and ≤7 mm width",
+            description : "Limited to cervix, Measured invasion of stroma >3 mm and <5 mm in depth and ≤7 mm width",
             id : "00", name : "FIGO IA2"
           }, {
-            description : "Clinical lesions confined to the cervix, or preclinical lesions greater than stage IA, Clinical lesions ≤4 cm in size",
+            description : "Limited to cervix, invasion >= 5mm in depth and < 2cm in greatest dimension",
             id : "00", name : "FIGO IB1"
           }, {
-            description : "Clinical lesions confined to the cervix, or preclinical lesions greater than stage IA, Clinical lesions >4cm in size",
+            description : "Limited to cervix, invasive carcinoma >= 2cm and < 4cm",
             id : "00", name : "FIGO IB2"
           }, {
-            description : "Involvement of up to the upper two-thirds of the vagina. No obvious parametrial involvement. Clinically visible lesion ≤4 cm",
+            description : "Limited to cervix,invasive carcinoma >= 4cm",
+            id : "00", name : "FIGO IB3"
+          }, {
+            description : "Involvement of up to the upper two-thirds of the vagina. No parametrial/pelvic involvement.  <4 cm",
             id : "00", name : "FIGO IIA1"
           }, {
-            description : "Involvement of up to the upper two-thirds of the vagina. No obvious parametrial involvement. Clinically visible lesion >4 cm",
+            description : "Involvement of up to the upper two-thirds of the vagina. No parametrial/pelvic involvement.  >=4 cm",
             id : "00", name : "FIGO IIA2"
           }, {
-            description : "Obvious parametrial involvement but not onto the pelvic sidewall",
+            description : "Parametrial involvement but not onto the pelvic sidewall",
             id : "00", name : "FIGO IIB"
           }, {
             description : "Involvement of the lower third of the vagina but no extension onto pelvic sidewall",
@@ -4401,6 +4404,12 @@ var database = {
           }, {
             description : "Extension onto the pelvic sidewall, and/or causing hydronephrosis/nonfunctioning kidney",
             id : "00", name : "FIGO IIIB"
+          }, {
+            description : "Involvement of pelvic lymph nodes, regardless of size or extent",
+            id : "00", name : "FIGO IIIC1"
+          }, {
+            description : "Involvement of para-aortic lymph nodes, regardless of size or extent",
+            id : "00", name : "FIGO IIIC2"
           }, {
             description : "Spread to adjacent pelvic organs, ie, tumor invading the mucosa of the bladder and/or rectum and/or extending beyond the true pelvis (bullous edema is not sufficient)",
             id : "00", name : "FIGO IVA"
