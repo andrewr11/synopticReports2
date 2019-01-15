@@ -1051,7 +1051,7 @@ var database = {
           }, {
             id : "00", name : "Mucinous carcinoma"
           }, {
-            id : "00", name : "Low grade mucinous neoplasm"
+            id : "00", name : "Low grade mucinous neoplasm (LAMN)"
           }, {
             id : "00", name : "High grade mucinous neoplasm"
           }, {
@@ -1245,8 +1245,14 @@ var database = {
             description : "Invades subserosa, including acellular mucin or mucinous epithelium involving the subserosa of the appendix or mesoappendix",
             id : "00", name : "T3"
           }, {
+            description : "Invades subserosa, including acellular mucin or mucinous epithelium involving the subserosa of the appendix or mesoappendix",
+            id : "00", name : "T3 (LAMN)"
+          }, {
             description : "Penetrates serosa, including acellular mucin or mucinous epithelium involving the serosa of the appendix or mesoappendix",
             id : "00", name : "T4a"
+          }, {
+            description : "Penetrates serosa, including acellular mucin or mucinous epithelium involving the serosa of the appendix or mesoappendix",
+            id : "00", name : "T4a (LAMN)"
           }, {
             description : " invades adjacent organs",
             id : "00", name : "T4b"
@@ -1281,6 +1287,9 @@ var database = {
           id : "04", name : "M",
            optional_state  : "required", "options" : [ {
           group : [ {
+            
+              id : "00", name : "M (not applicable)"
+            },{
             description : "intraperitoneal mucin only",
             id : "00", name : "M1a"
           }, {
@@ -1289,9 +1298,7 @@ var database = {
           }, {
             description : "other metastases outside of peritoneum",
             id : "00", name : "M1c"
-          }, {
-            id : "00", name : "M (not applicable)"
-          }, {
+          },  {
             id : "00", name : "distant metastasis not applicable"
           } ],
           id : "00", name : ""
