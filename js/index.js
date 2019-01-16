@@ -11226,6 +11226,9 @@ var database = {
       }, {
         id : "50", name : "Size of largest metastasis",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -13768,7 +13771,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "50", name : "Size of largest involved lymph node",
+        id : "50", name : "Size of largest metastasis",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -14168,7 +14171,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "50", name : "Size of largest involved lymph node",
+        id : "50", name : "Size of largest metastasis",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -17473,8 +17476,8 @@ var database = {
         } ]
   
    }, {
-     description : "size of lymph node, not met",
-        id : "50", name : "Size of largest involved lymph node",
+     description : "size of lymph nod met",
+        id : "50", name : "Size of largest lymph node metastasis",
         optional_state : "required",
         "options" : [ {
           group : [ {
