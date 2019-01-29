@@ -15601,6 +15601,8 @@ var database = {
           }, {
             id : "00", name : "< 1 per square millimeter"
           }, {
+            id : "00", name : "Present but < 1 per square millimeter"
+          }, {
             id : "00", name : "> 1 per square millimeter"
           }, {
             description : "# per square millimeter",
@@ -15836,6 +15838,20 @@ var database = {
           }, {
             id : "00", name : "distant metastasis not applicable"
           } ],
+          id : "00", name : ""
+        } ]
+      }, {
+       
+        id : "00", name : "Ancillary studies ordered",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          },{
+            id : "00", name : "Not applicable"
+          } ,{
+            description : "M1 only",
+            id : "00", name : "BRAF, C-Kit (molecular), and PDL-1"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -17673,6 +17689,8 @@ var database = {
             id : "00", name : "Papillary carcinoma, NOS"
           }, {
             id : "00", name : "Papillary carcinoma, NOS, predominantly encapsulated"
+          }, {
+            id : "00", name : "Papillary carcinoma, cystic, predominantly encapsulated"
           }, {
             id : "00", name : "Papillary carcinoma with tall cell features"
           }, {
