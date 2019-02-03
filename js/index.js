@@ -15849,7 +15849,7 @@ var database = {
           },{
             id : "00", name : "Not applicable"
           } ,{
-            description : "M1 only",
+            description : "N1 or M1 only",
             id : "00", name : "BRAF, C-Kit (molecular), and PDL-1"
           }],
           id : "00", name : ""
