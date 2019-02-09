@@ -190,7 +190,8 @@
                           g.id === '12' ||
                           g.id === '13' ||
                           g.id === '15' ||
-                          g.id === '16'">
+                          g.id === '16' ||
+                          g.id === '18'">
                             <input type="radio"  :value= "g.name" :name = "q.name" v-model="row8.modifyFreeTextHeader[index]"  v-on:click="compoundFreeText(index, g.name, g.id)" >
                             <span><strong>{{g.name}}</strong> </span>
                             <input  type = "text" :name="q.name"  v-model.lazy="row7.modifyFreeText[index]"  v-on:change="changeColor(index)">

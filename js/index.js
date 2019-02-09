@@ -41,6 +41,7 @@ GIDs
 20 ER/PR drop down
 15 = See case trip all the following See case questions DCIS
 16 = See case trip all the following See case questions Inv breast
+18 = See case trip only one more for gastric
 17 treatment effect nodes and primary site NA
 
 30 = extended lists
@@ -16968,7 +16969,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "18", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -21306,7 +21307,7 @@ var database = {
           this.row10.useCombo[i] = false
           this.row6.bgc[i] = "#66ff99"  
           this.row8.modifyFreeTextHeader[i] = " "
-          console.log(this.row.inputanswers[i])
+          //console.log(this.row.inputanswers[i])
           
           //logic for two treatment effect na qustions
           if(gid=="17"){
@@ -21598,13 +21599,31 @@ var database = {
             this.row6.bgc[i+5] = "#66ff99"
             this.row.inputanswers[i+5] = "No0000"
 
+            this.updateTable()
+          }
+
+            // logic for repeating see case text for gastric trip only two fro her2 and pdl1
+          if(gid=="18"){
+
+            this.row11.freeTextGID[i] = gid   
+            console.log(hope)
+            this.row5.useFreeText[i+1] = false
+            this.row10.useCombo[i+1] = true
+            this.row6.bgc[i+1] = "#66ff99"
+            this.row8.modifyFreeTextHeader[i+1] = hope     
             
+            this.row5.useFreeText[i+2] = false
+            this.row10.useCombo[i+2] = true
+            this.row6.bgc[i+2] = "#66ff99"
+            this.row8.modifyFreeTextHeader[i+2] = hope    
+
+              
 
             this.updateTable()
           }
 
           //logic to turn off repeat See case
-          if(gid!="15" && gid!="16"){           
+          if(gid!="15" && gid!="16" && gid!="18"){           
             this.row11.freeTextGID[i] = " "           
             this.updateTable()
           }
@@ -21634,15 +21653,24 @@ var database = {
           if (this.row11.freeTextGID[i] == "15") {
             this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
             
-          }   
+          }  
         }
+          for (var i = 0; i<this.row11.freeTextGID.length; i++){
+            if (this.row11.freeTextGID[i] == "18") {
+              this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
+              this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i]
+            } 
+          }
+        
         for (var i = 0; i<this.row11.freeTextGID.length; i++){
           if (this.row11.freeTextGID[i] == "16") {
             this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
             this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i]
             this.row7.modifyFreeText[i+3] = this.row7.modifyFreeText[i]
           }   
-        }
+        
+      
+    }
          
          
 
