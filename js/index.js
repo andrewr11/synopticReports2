@@ -8868,7 +8868,7 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free, "
+            id : "00", name : "Free"
           }, {
             description : "location parenchymal, capsular (partial), perinephric fat, renal sinus, Gerota, renal vein, ureter",
             inputs_required : [ "" ],
@@ -21602,7 +21602,7 @@ var database = {
             this.updateTable()
           }
 
-            // logic for repeating see case text for gastric trip only two fro her2 and pdl1
+            // logic for repeating see case text for gastric trip only three for her2, pdl1, msi
           if(gid=="18"){
 
             this.row11.freeTextGID[i] = gid   
@@ -21617,6 +21617,10 @@ var database = {
             this.row6.bgc[i+2] = "#66ff99"
             this.row8.modifyFreeTextHeader[i+2] = hope    
 
+            this.row5.useFreeText[i+3] = false
+            this.row10.useCombo[i+3] = true
+            this.row6.bgc[i+3] = "#66ff99"
+            this.row8.modifyFreeTextHeader[i+3] = hope    
               
 
             this.updateTable()
@@ -21659,6 +21663,7 @@ var database = {
             if (this.row11.freeTextGID[i] == "18") {
               this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
               this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i]
+              this.row7.modifyFreeText[i+3] = this.row7.modifyFreeText[i]
             } 
           }
         
