@@ -245,6 +245,8 @@ var database = {
           }, {
             id : "00", name : "Large vessel, vena cava (including when identifed clinically)"
           }, {
+            id : "00", name : "Microscopic angioinvasion"
+          }, {
             id : "00", name : "Small vessel"
           }   ],
           id : "00", name : ""
@@ -2264,6 +2266,20 @@ var database = {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Extranodal extension",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
           } ],
           id : "00", name : ""
         } ]
@@ -17765,7 +17781,13 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Present"
+            id : "00", name : "Present, microscopic strap muscle invasion only"
+          }, {
+            id : "00", name : "Present, clinical/macroscopic and histologic invasion of strap muscles"
+          }, {
+            id : "00", name : "Present, invasion beyond strap muscles"
+          }, {
+            id : "00", name : "Present, invasion of prevertebral fascia or encasing the carotid artery or mediastinal vessels "
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -17777,7 +17799,7 @@ var database = {
           group : [ {
             id : "50", name : "None"
           }, {
-            id : "00", name : "Lymph nodes in thyroidectomy/lobectomy"
+            id : "00", name : "Lymph nodes in thyroidectomy/lobectomy (Level VI)"
           }, {
             id : "00", name : "Focused or single lymph node resection"
           }, {
@@ -17816,6 +17838,28 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "52", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "List all of Right levels I-V, Left levels I-V, Level VI, Level VII",
+        id : "50", name : "Lymph nodes, sites involved",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Right, Levels I-V"
+          },{
+            id : "00", name : "Left, Levels I-V"
+          },{
+            id : "00", name : "Levels I-V"
+          },{
+            id : "51", name : "None"
+          }, {
+            description : "Perithyroidal ",
+            id : "00", name : "Level VI"
+          }, {
+            id : "00", name : "Level VII"
           }, {
             id : "00", name : "Not applicable"
           } ],
