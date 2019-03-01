@@ -1945,6 +1945,98 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      },{
+        id : "00", name : "Clinical",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "New diagnosis, untreated"
+          }, {
+            id : "00", name : "New diagnosis, treatment status unknown"
+          }, {
+            id : "00", name : "Follow up sample"
+          }, {
+            id : "00", name : "Unknown"
+          } ],
+          id : "00", name : ""
+        } ]
+      
+      },{
+        id : "00", name : "Peripheral blood cell count",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
+      },{
+        id : "00", name : "Marrow cellularity",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
+      },{
+        id : "00", name : "Marrow blasts",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
+      },{
+        id : "00", name : "Marrow Lymphocytes",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
+      },{
+        id : "00", name : "Dysplasia",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Absent "
+          }, {
+            id : "00", name : "Present "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      
+      },{
+        id : "00", name : "Iron stain ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No ring sideroblasts detected"
+          }, {
+            id : "00", name : "Positive for ring sideroblasts "
+          }, {
+            id : "00", name : "Stain not evaluable "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      
+      },{
+        id : "00", name : "Reticulin/Trichrome stains (fibrosis grade) ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "MF-0"
+          }, {
+            id : "00", name : "MF-1"
+          }, {
+            id : "00", name : "MF-2"
+          }, {
+            id : "00", name : "MF-3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      
       }, {
         id : "00", name : "Immunohistochemistry",
        optional_state  : "required", "options" : [ {
@@ -6940,7 +7032,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Ewing sarcoma/PNET",
+      id : "00", name : "Ewing sarcoma/PNET, resection",
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
@@ -6980,7 +7072,23 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
+      },{
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          } ],
+          id : "00", name : ""
+        } ]
+      },  {
         id : "00", name : "Preresection Treatment  ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -7048,7 +7156,121 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-    
+      }, {
+        
+          id : "00", name : "Ancillary studies",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+             
+              id : "00", name : "EWSR1 rearrangement"
+            },{
+             
+              id : "00", name : "EWSR1-FLI1 rearrangement"
+            },{
+             
+              id : "00", name : "EWSR1-ERG rearrangement"
+            }, {
+              
+              id : "00", name : "Pending"
+            }, {
+              id : "00", name : "None"
+            }, {
+              id : "00", name : "Not applicable"
+            }, {
+              inputs_required : [ "" ],
+              id : "10", name : "See case"
+            } ],
+            id : "00", name : ""
+          } ]
+        
+      } ]
+    },{
+      most_common : false,
+      id : "00", name : "Ewing sarcoma/PNET, biopsy",
+      optional : true,
+      organ_group : "Pediatric",
+      properties : [ {
+        id : "00", name : "Procedure ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Core biopsy "
+          }, {
+            id : "00", name : "Incisional biopsy"
+          } , {
+            id : "00", name : "Excisional biopsy "
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "Excisional biopsy only",
+        id : "00", name : "Margins",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance to closest bone and or soft tissue margin (specify)",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      },{
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          } ],
+          id : "00", name : ""
+        } ]
+      },  {
+        
+          id : "00", name : "Ancillary studies",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+             
+              id : "00", name : "EWSR1 rearrangement"
+            },{
+             
+              id : "00", name : "EWSR1-FLI1 rearrangement"
+            },{
+             
+              id : "00", name : "EWSR1-ERG rearrangement"
+            }, {
+              
+              id : "00", name : "Pending"
+            }, {
+              id : "00", name : "None"
+            }, {
+              id : "00", name : "Not applicable"
+            }, {
+              inputs_required : [ "" ],
+              id : "10", name : "See case"
+            } ],
+            id : "00", name : ""
+          } ]
+        
       } ]
     }, {
       most_common : false,
@@ -7319,7 +7541,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Germ Cell, extragonadal",
+      id : "00", name : "Germ Cell, extragonadal, biopsy",
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
@@ -7329,8 +7551,86 @@ var database = {
             id : "00", name : "Core needle biopsy"
           }, {
             id : "00", name : "Incisional biopsy"
+          } ],
+          id : "00", name : ""
+        } ]
+      },{
+        id : "00", name : "Patient Age ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Congenital/neonatal (birth - 6 mo)"
           }, {
-            id : "00", name : "Excisional biopsy"
+            id : "00", name : "Childhood/prepubertal (7 mo - 12 y)"
+          }, {
+            id : "00", name : "Postpubertal/adult (≥12 y)"
+          }, {
+            id : "00", name : "Not known"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Intracranial"
+          }, {
+            id : "00", name : "Head and neck region "
+          }, {
+            id : "00", name : "Mediastinum"
+          }, {
+            id : "00", name : "Retroperitoneum/abdomen"
+          }, {
+            id : "00", name : "Sacrococcygeal"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Mature teratoma"
+          }, {
+            id : "00", name : "Immature teratoma"
+          }, {
+            id : "00", name : "Teratoma and other germ cell tumor "
+          }, {
+            id : "00", name : "Teratoma and other non-germ cell epithelial malignancy "
+          }, {
+            id : "00", name : "Teratoma and sarcoma "
+          }, {
+            id : "00", name : "Germinoma"
+          }, {
+            id : "00", name : "Yolk sac tumor"
+          }, {
+            id : "00", name : "Embryonal carcinoma "
+          }, {
+            id : "00", name : "Choriocarcinoma "
+          }, {
+            id : "00", name : "Teratoma and sarcoma "
+          }, {
+            id : "00", name : "Combined nonteratomatous germ cell tumor "
+          } ],
+          id : "00", name : ""
+        } ]
+      }   ]
+    },{
+      most_common : false,
+      id : "00", name : "Germ Cell, extragonadal, resection",
+      optional : true,
+      organ_group : "Pediatric",
+      properties : [ {
+        id : "00", name : "Procedure ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Marginal excison"
+          }, {
+            id : "00", name : "Wide excision"
           } ],
           id : "00", name : ""
         } ]
@@ -7751,7 +8051,71 @@ var database = {
      }]
     }, {
       most_common : false,
-      id : "00", name : "Hepatoblastoma",
+      id : "00", name : "Hepatoblastoma, biopsy",
+      optional : true,
+      organ_group : "Pediatric",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Core biopsy"
+          }, {
+            id : "00", name : "Incisional biopsy"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right lobe"
+          }, {
+            id : "00", name : "Left lobe "
+          }, {
+            id : "00", name : "Right and left lobes "
+          } ],
+          id : "00", name : ""
+        } ]
+      },  {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Hepatoblastoma, epithelial type, fetal pattern (mitotically inactive)"
+          }, {
+            id : "00", name : "Hepatoblastoma, epithelial type, fetal pattern (mitotically active)  "
+          }, {
+            id : "00", name : "Hepatoblastoma, epithelial type, embryonal pattern  "
+          }, {
+            id : "00", name : "Hepatoblastoma, epithelial type, pleomorphic (poorly differentiated)  "
+          }, {
+            id : "00", name : "Hepatoblastoma, epithelial type, macrotrabecular pattern "
+          }, {
+            id : "00", name : "Hepatoblastoma, epithelial type, small cell undifferentiated pattern "
+          }, {
+            id : "00", name : "Hepatoblastoma, mixed epithelial and mesenchymal type without teratoid features  "
+          }, {
+            id : "00", name : "Hepatoblastoma, mixed epithelial and mesenchymal type with teratoid features  "
+          } ],
+          id : "00", name : ""
+        } ]
+     
+    
+      },   {
+        id : "00", name : "Serum Alpha Fetoprotein (αFP) Level ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "<100 ng/mL "
+          }, {
+            id : "00", name : "≥100 ng/mL"
+          }, {
+            id : "00", name : "Not known "
+          } ],
+          id : "00", name : ""
+        } ]
+      } ]
+    }, {
+      most_common : false,
+      id : "00", name : "Hepatoblastoma, resection",
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
@@ -7908,7 +8272,7 @@ var database = {
           id : "00", name : ""
         } ]
       } ]
-    }, {
+    },{
       most_common : false,
       id : "00", name : "Hepatocellular Carcinoma",
       optional : false,
@@ -10239,6 +10603,234 @@ var database = {
           id : "00", name : ""
         } ]
       } ]
+    },{
+      most_common : false,
+      id : "00", name : "Lymphadenectomy (retroperitoneal/ Germ cell)",
+      optional : true,
+      organ_group : "Genitourinary",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Retroperitoneal lymphadenectomy"
+          } ,{
+            id : "00", name : "Lympadenectomy"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Preesection treament",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Chemo/radiation"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Not known"
+          } ],
+          id : "00", name : ""
+        } ]  
+      }, {
+        id : "00", name : "Tumor viability",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Viable teratoma"
+          }, {
+            id : "00", name : "Viable teratoma and non-teratoma"
+          }, {
+            id : "00", name : "No viable tumor"
+          } ],
+          id : "00", name : ""
+        } ]  
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+             description : "SALL4+, OCT3/4+, CD117+, Keratin -/focal+, CD30-, Glypican3-, CDX2-/focal+",
+            id : "00", name : "Seminoma, classical"
+          }, {
+            description : "give percentages",
+            inputs_required : [ "" ],
+            id : "10", name : "Mixed germ cell tumor"
+          }, {
+            description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+",
+            id : "00", name : "Embryonal tumor"
+          }, {
+            description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+",
+            id : "00", name : "Yolk sac tumor"
+          }, {
+             description : "SALL4 +, OCT3/4-, GATA3+",
+            id : "00", name : "Choriocarcinoma"
+          }, {
+              description : "Prepubertal teratoma is benign, genetically distinct, and does not get a tumor summary",
+            id : "00", name : "Teratoma, postpubertal type"
+          }, {
+            id : "00", name : "Teratoma with carcinoma"
+          }, {
+            id : "00", name : "Teratoma with sarcoma"
+          }, {
+             description : "SALL4 +, OCT3/4 -, CD117+ (used to be spermatocytic seminoma)",
+            id : "00", name : "Spermatocytic tumor"
+          }, {
+            id : "00", name : "Spermatocytic tumor with sarcoma"
+          }, {
+            id : "00", name : "Leydig cell tumor"
+          }, {
+            id : "00", name : "Malignant Leydig cell tumor"
+          }, {
+            id : "00", name : "Gonadolblastoma"
+          }, {
+            id : "00", name : "Sertoli cell tumor, classic"
+          }, {
+            id : "00", name : "Sertoli cell tumor, malignant"
+          }, {
+            id : "00", name : "Sertoli cell tumor, large cell calcifying"
+          }, {
+            id : "00", name : "Granulosa cell tumor, adult"
+          }, {
+            id : "00", name : "Granulosa cell tumor, juvenile"
+          }, {
+            id : "00", name : "Fibroma-thecoma"
+          } ],
+          id : "00", name : ""
+        } ]
+      
+      },  {
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Lymph nodes, # involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+   }, {
+        id : "50", name : "Positive lymph node location",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Interaortocaval"
+          }, {
+            id : "00", name : "Paraaortic"
+          }, {
+            id : "00", name : "Paracaval"
+          }, {
+            id : "00", name : "Preaortic"
+          }, {
+            id : "00", name : "Precaval"
+          }, {
+            id : "00", name : "Retroaortic"
+          }, {
+            id : "00", name : "Retrocaval"
+          }, {
+            id : "00", name : "Other"
+          } ],
+          id : "00", name : ""
+        } ]
+  
+   }, {
+     description : "size of lymph nod met",
+        id : "50", name : "Size of largest lymph node metastasis",
+        optional_state : "required",
+        "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+   }, {
+        id : "50", name : "Extranodal extension",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          } ],
+          id : "00", name : ""
+        } ]
+  
+      }, {
+        id : "50", name : "Tumor type in largest lymph node",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+  
+      }, {
+        id : "01", name : "Stage (AJCC 8)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "no prefix",
+            id : "00", name : ""
+          }, {
+            description : "pathologic",
+            id : "00", name : "p"
+          }, {
+            description : "multiple foci of invasive carcinoma",
+            id : "00", name : "m"
+          }, {
+            description : "recurrent",
+            id : "00", name : "r"
+          }, {
+            description : "post-treatment",
+            id : "00", name : "y"
+          }, {
+            id : "00", name : "mp"
+          }, {
+            id : "00", name : "rp"
+          }, {
+            id : "00", name : "yp"
+          }, {
+            id : "00", name : "mrp"
+          }, {
+            id : "00", name : "myp"
+          }, {
+            id : "00", name : "ryp"
+          }, {
+            id : "00", name : "mryp"
+          } ],
+          id : "00", name : ""
+        }]
+        },  {
+          id : "03", name : "N",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Regional lymph nodes cannot be assessed",
+            id : "00", name : "NX"
+          }, {
+            description : "No regional lymph node metastases",
+            id : "00", name : "N0"
+          }, {
+            description : "<= 5 metastasis, all <= 2cm",
+            id : "00", name : "N1"
+          }, {
+            description : "1 metastasis (not ln) >2cm AND <= 5cm OR > 5 metastases AND all <= 5cm AND no extranodal extension",
+            id : "00", name : "N2"
+          }, {
+            description : "metastases (not ln) > 5cm",
+            id : "00", name : "N3"
+          } ],
+          id : "00", name : "Category (pN)"
+        }]
+        } ]
     }, {
       most_common : false,
       id : "00", name : "Lymphoma, Hodgkin",
@@ -11391,7 +11983,136 @@ var database = {
   
    }, {
       most_common : false,
-      id : "00", name : "Neuroblastoma",
+      id : "00", name : "Neuroblastoma, biopsy",
+      optional : true,
+      organ_group : "Pediatric",
+      properties : [ {
+        id : "00", name : "Specimen",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Adrenal/periadrenal"
+          }, {
+            id : "00", name : "Retroperitoneal, nonadrenal"
+          }, {
+            id : "00", name : "Thoracic paraspinal"
+          }, {
+            id : "00", name : "Cervical "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Needle biopsy"
+          }, {
+            id : "00", name : "Incisional biopsy"
+          } ],
+          id : "00", name : ""
+        } ]
+     
+      },  {
+        id : "00", name : "Patient Age ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "<18 months"
+          }, {
+            id : "00", name : "≥18 months and <5 years "
+          }, {
+            id : "00", name : "≥5 years "
+          }, {
+            id : "00", name : "Equivocal "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Neuroblastoma"
+          }, {
+            id : "00", name : "Ganglioneuroblastoma Nodular subtype "
+          }, {
+            id : "00", name : "Ganglioneuroblastoma Intermixed subtype "
+          }, {
+            id : "00", name : "Ganglioneuroma "
+          }, {
+            id : "00", name : "Neuroblastic tumor, unclassifiable"
+          }, {
+            id : "00", name : "Equivocal "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Degree of Differentiation ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Undifferentiated"
+          }, {
+            id : "00", name : "Poorly differentiated "
+          }, {
+            id : "00", name : "Differentiating "
+          }, {
+            id : "00", name : "Not applicable "
+          }, {
+            id : "00", name : "Equivocal "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Mitotic-Karyorrhectic Index (MKI) ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Low (<100 per 5000 cells; <2%)"
+          }, {
+            id : "00", name : "Intermediate (100-200 per 5000 cells; 2%-4%) "
+          }, {
+            id : "00", name : "High (>200 per 5000 cells; >4%) "
+          }, {
+            id : "00", name : "Not applicable "
+          }, {
+            id : "00", name : "Equivocal "
+          } ],
+          id : "00", name : ""
+        } ]
+      },  {
+        id : "00", name : "International Neuroblastoma Pathology Classification (INPC)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Any age; ganglioneuroma (Schwannian stroma-dominant); maturing or mature OR Any age; ganglioneuroblastoma, intermixed (Schwannian stroma-rich) OR Less than 18 months old; neuroblastoma (Schwannian stroma-poor) or nodular ganglioneuroblastoma; poorly differentiated or differentiating subtypes with low or intermediate mitosis-karyorrhexis index (MKI)  OR 18 months up to less than 5 years old; neuroblastoma (Schwannian stroma-poor) or nodular ganglioneuroblastoma; differentiating subtype and low MKI",
+            id : "00", name : "Favorable Histopathology"
+          }, {
+            description : "Any age; neuroblastoma (Schwannian stroma-poor) or nodular ganglioneuroblastoma with undifferentiated histology and any MKI OR Less than 18 months old; neuroblastoma (Schwannian stroma-poor) or nodular ganglioneuroblastoma with poorly differentiated or differentiating subtypes with high MKI OR 18 months up to less than 5 years old; neuroblastoma (Schwannian stroma-poor) or nodular ganglioneuroblastoma; poorly differentiated and any MKI, or differentiating and intermediate or high MKI OR Equal to or greater than 5 years old; neuroblastoma (Schwannian stroma-poor) or nodular ganglioneuroblastoma; any subtype and any MKI",
+            id : "00", name : "Unfavorable Histopathology"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable  "
+          } ],
+          id : "00", name : ""
+        } ]
+   
+      },  {
+         description : "required for all tumors except ganglioneuroma",
+        id : "00", name : "MYCN Amplification Status  ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not amplified"
+          }, {
+            id : "00", name : "Amplified "
+          }, {
+            id : "00", name : "Gain"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Equivocal "
+          } ],
+          id : "00", name : ""
+        } ]
+      } ]
+    },{
+      most_common : false,
+      id : "00", name : "Neuroblastoma, resection",
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
@@ -11520,23 +12241,7 @@ var database = {
           id : "00", name : ""
         } ]
    
-      }, {
-        id : "00", name : "Extent",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Encapsulated"
-          }, {
-            id : "00", name : "Extracapsular extension without adjacent organ involvement "
-          }, {
-            id : "00", name : "Extension into adjacent organs "
-          }, {
-            id : "00", name : "Extension into spinal canal "
-          }, {
-            id : "00", name : "Equivocal "
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+      },  {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -15266,7 +15971,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Rhabdomyosarcom",
+      id : "00", name : "Rhabdomyosarcoma, biopsy",
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
@@ -15275,6 +15980,114 @@ var database = {
           group : [ {
             id : "00", name : "Biopsy"
           }, {
+            id : "00", name : "Incisional biopsy"
+          }, {
+            id : "00", name : "Excisional biopsy"
+          } ],
+          id : "00", name : ""
+        } ]
+     
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Bile duct"
+          },{
+            id : "00", name : "Bladder/prostate"
+          }, {
+            id : "00", name : "Cranial parameningeal"
+          }, {
+            id : "00", name : "Extremity "
+          }, {
+            id : "00", name : "Genitourinary (not bladder/prostate) "
+          }, {
+            id : "00", name : "Head and neck (excluding parameningeal) "
+          }, {
+            id : "00", name : "Orbit"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Embryonal"
+          }, {
+            id : "00", name : "Spindle cell/sclerosing  "
+          }, {
+            id : "00", name : "Alveolar "
+          }, {
+            id : "00", name : "Ectomesenchymoma  "
+          }, {
+            id : "00", name : "Rhabdomyosarcoma, subtype Equivocal "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Anaplasia",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Focal (single or few scattered anaplastic cells)"
+          }, {
+            id : "00", name : "Diffuse (clusters or sheets of anaplastic cells) "
+          }, {
+            id : "00", name : "Equivocal "
+          }, {
+            id : "00", name : "Not applicable "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Fusion Status ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "No FOXO1 rearrangement"
+          }, {
+            id : "00", name : "FOXO1 rearrangement present  "
+          }, {
+            id : "00", name : "Equivocal "
+          }, {
+            id : "00", name : "Not applicable "
+          } ],
+          id : "00", name : ""
+        } ]
+  
+      }, {
+        description : "Excisional biopsy, only include distance",
+        id : "00", name : "Margins",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable "
+          } ],
+          id : "00", name : ""
+        } ]
+      }   ]
+    },{
+      most_common : false,
+      id : "00", name : "Rhabdomyosarcoma, resection",
+      optional : true,
+      organ_group : "Pediatric",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [  {
             id : "00", name : "Marginal resection"
           }, {
             id : "00", name : "Radical resection"
@@ -15323,6 +16136,22 @@ var database = {
           }, {
             id : "00", name : "Rhabdomyosarcoma, subtype Equivocal "
           } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Treatment History ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No known presurgical chemotherapy"
+          }, {
+            id : "00", name : "Presurgical chemotherapy given "
+          }, {
+            id : "00", name : "Presurgical radiation given "
+          }, {
+            id : "00", name : "Presurgical chemo and radiation given "
+          }, {
+            id : "00", name : "Not known"
+          }  ],
           id : "00", name : ""
         } ]
       }, {
@@ -20974,8 +21803,48 @@ var database = {
         } ]
            } ]
       }, {
+        most_common : false,
+        id : "00", name : "Wilms tumor, biopsy",
+        optional : true,
+        organ_group : "Pediatric",
+        properties : [ {
+          id : "00", name : "Procedure",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "Right Core biopsy"
+            }, {
+              id : "00", name : "Right Incisional biopsy"
+            },{
+              id : "00", name : "Left Core biopsy"
+            }, {
+              id : "00", name : "Left Incisional biopsy "
+            } ],
+            id : "00", name : ""
+          } ]
+        }, {
+          id : "00", name : "Type",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "Wilms tumor, favorable histology"
+            }, {
+              id : "00", name : "Wilms tumor, focal anaplasia "
+            }, {
+              id : "00", name : "Wilms tumor, diffuse anaplasia "
+            }, {
+              id : "00", name : "Nephrogenic rest only"
+            }, {
+              id : "00", name : "Congenital mesoblastic nephroma, classical, cellular or mixed"
+            }, {
+              id : "00", name : "Clear cell sarcoma "
+            }, {
+              id : "00", name : "Rhabdoid tumor"
+            } ],
+            id : "00", name : ""
+          } ]
+        }   ]
+      }, {
       most_common : false,
-      id : "00", name : "Wilms tumor",
+      id : "00", name : "Wilms tumor, resection",
       optional : false,
       organ_group : "Pediatric",
       properties : [ {
@@ -21017,6 +21886,26 @@ var database = {
             id : "00", name : "Single focus"
           }, {
             id : "00", name : "Multiple foci "
+          } ],
+          id : "00", name : ""
+        } ]
+      },{
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Wilms tumor, favorable histology"
+          }, {
+            id : "00", name : "Wilms tumor, focal anaplasia "
+          }, {
+            id : "00", name : "Wilms tumor, diffuse anaplasia "
+          }, {
+            id : "00", name : "Nephrogenic rest only"
+          }, {
+            id : "00", name : "Congenital mesoblastic nephroma, classical, cellular or mixed"
+          }, {
+            id : "00", name : "Clear cell sarcoma "
+          }, {
+            id : "00", name : "Rhabdoid tumor"
           } ],
           id : "00", name : ""
         } ]
@@ -21084,27 +21973,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Type",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Wilms tumor, favorable histology"
-          }, {
-            id : "00", name : "Wilms tumor, focal anaplasia "
-          }, {
-            id : "00", name : "Wilms tumor, diffuse anaplasia "
-          }, {
-            id : "00", name : "Nephrogenic rest only"
-          }, {
-            id : "00", name : "Congenital mesoblastic nephroma, classical, cellular or mixed"
-          }, {
-            id : "00", name : "Clear cell sarcoma "
-          }, {
-            id : "00", name : "Rhabdoid tumor"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+      },  {
        
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
