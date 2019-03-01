@@ -2207,7 +2207,7 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm)"
+            id : "00", name : "Free (>2mm), closest margin not determined"
           }, {
             description : "location, only use for TUMOR ON ink",
             inputs_required : [ "" ],
@@ -2727,7 +2727,7 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm)"
+            id : "00", name : "Free (>2mm), closest margin not determined"
           }, {
             description : "location, only use for TUMOR ON INK",
             inputs_required : [ "" ],
@@ -2744,7 +2744,7 @@ var database = {
         id : "00", name : "Margins, DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm)"
+            id : "00", name : "Free (>2mm), closest margin not determined"
           }, {
             description : "location, only for TUMOR ON INK",
             inputs_required : [ "" ],
@@ -8696,17 +8696,13 @@ var database = {
           group : [ {
             id : "00", name : "Right partial nephrectomy"
           }, {
-            id : "00", name : "Right radical nephrectomy"
-          }, {
-            id : "00", name : "Right total nephrectomy"
+            id : "00", name : "Right radical/total nephrectomy"
           } , {
             id : "00", name : "Right nephroureterectomy"
           }, {
             id : "00", name : "Left partial nephrectomy"
           }, {
-            id : "00", name : "Left radical nephrectomy"
-          }, {
-            id : "00", name : "Left total nephrectomy"
+            id : "00", name : "Left radical/total nephrectomy"
           } , {
             id : "00", name : "Left nephroureterectomy"
           }],
@@ -14388,29 +14384,36 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Gleason primary pattern",
+        id : "00", name : "Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Grade 3"
+            id : "00", name : "Gleason 3+3 = 6 (Group 1)"
+          },{
+            id : "00", name : "Gleason 3+4 = 7 (Group 2)"
+          },{
+            id : "00", name : "Gleason 4+3 = 7 (Group 3)"
           }, {
-            id : "00", name : "Grade 4"
+            id : "00", name : "Gleason 4+4 = 8 (Group 4)"
           }, {
-            id : "00", name : "Grade 5"
+            id : "00", name : "Gleason 3+5 = 8 (Group 4)"
+          }, {
+            id : "00", name : "Gleason 5+3 = 8 (Group 4)"
+          }, {
+            id : "00", name : "Gleason 4+5 = 9 (Group 5)"
+          }, {
+            id : "00", name : "Gleason 5+4 = 9 (Group 5)"
+          }, {
+            id : "00", name : "Gleason 5+5 = 10 (Group 5)"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Gleason secondary pattern",
+        description : "3+4 and 4+3 only",
+        id : "00", name : "Percent Pattern 4",
        optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Grade 3"
-          }, {
-            id : "00", name : "Grade 4"
-          }, {
-            id : "00", name : "Grade 5"
-          }, {
+          group : [  {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -14429,48 +14432,6 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Gleason score",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Score 6"
-          }, {
-            id : "00", name : "Score 7"
-          }, {
-            id : "00", name : "Score 8"
-          }, {
-            id : "00", name : "Score 9"
-          }, {
-            id : "00", name : "Score 10"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-       }, {
-        id : "00", name : "Grade group",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-             description : "Gleason 6",
-            id : "00", name : "Group 1"
-          }, {
-             description : "Gleason 3+4",
-            id : "00", name : "Group 2"
-          }, {
-             description : "Gleason 4+3",
-            id : "00", name : "Group 3"
-          }, {
-             description : "Gleason 8",
-            id : "00", name : "Group 4"
-          }, {
-             description : "Gleason 9 & 10",
-            id : "00", name : "Group 5"
-          }, {
-           
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]  
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
@@ -14925,10 +14886,10 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Transurethral prostatic resection"
-          } ],
-          id : "00", name : ""
-        }, {
+          } ,{
           id : "00", name : "Enucleation"
+        } ], 
+          id : "00", name : ""
         } ]
       
       }, {
@@ -14939,30 +14900,37 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Gleason primary pattern",
+      },{
+        id : "00", name : "Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Grade 3"
+            id : "00", name : "Gleason 3+3 = 6 (Group 1)"
+          },{
+            id : "00", name : "Gleason 3+4 = 7 (Group 2)"
+          },{
+            id : "00", name : "Gleason 4+3 = 7 (Group 3)"
           }, {
-            id : "00", name : "Grade 4"
+            id : "00", name : "Gleason 4+4 = 8 (Group 4)"
           }, {
-            id : "00", name : "Grade 5"
+            id : "00", name : "Gleason 3+5 = 8 (Group 4)"
+          }, {
+            id : "00", name : "Gleason 5+3 = 8 (Group 4)"
+          }, {
+            id : "00", name : "Gleason 4+5 = 9 (Group 5)"
+          }, {
+            id : "00", name : "Gleason 5+4 = 9 (Group 5)"
+          }, {
+            id : "00", name : "Gleason 5+5 = 10 (Group 5)"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Gleason secondary pattern",
+        description : "3+4 and 4+3 only",
+        id : "00", name : "Percent Pattern 4",
        optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Grade 3"
-          }, {
-            id : "00", name : "Grade 4"
-          }, {
-            id : "00", name : "Grade 5"
-          }, {
+          group : [  {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -14981,25 +14949,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Gleason score",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Score 6"
-          }, {
-            id : "00", name : "Score 7"
-          }, {
-            id : "00", name : "Score 8"
-          }, {
-            id : "00", name : "Score 9"
-          }, {
-            id : "00", name : "Score 10"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+      },  {
         id : "00", name : "Percent of tissue invovled",
        optional_state  : "required", "options" : [ {
           id : "00", name : ""
@@ -19042,9 +18992,7 @@ var database = {
           group : [ {
             id : "00", name : "Partial cystectomy"
           }, {
-            id : "00", name : "Total cystectomy"
-          }, {
-            id : "00", name : "Radical cystectomy"
+            id : "00", name : "Total/radical cystectomy"
           }, {
             id : "00", name : "Radical cystoprostatectomy"
           }, {
@@ -19400,6 +19348,26 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Tumor Location",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Trigone"
+          }, {
+            id : "00", name : "Right lateral wall"
+          }, {
+            id : "00", name : "Left lateral wall"
+          },{
+            id : "00", name : "Anterior wall"
+          }, {
+            id : "00", name : "Posterior wall"
+          }, {
+            id : "00", name : "Dome"
+          }, {
+            id : "00", name : "Not specified"
+          } ],
+          id : "00", name : ""
+        } ] 
+  }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
