@@ -2299,7 +2299,7 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm), closest margin not determined"
+            id : "00", name : "Free (>2mm), closest margin not specified"
           }, {
             description : "location, only use for TUMOR ON ink",
             inputs_required : [ "" ],
@@ -2819,7 +2819,7 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm), closest margin not determined"
+            id : "00", name : "Free (>2mm), closest margin not specified"
           }, {
             description : "location, only use for TUMOR ON INK",
             inputs_required : [ "" ],
@@ -2836,7 +2836,7 @@ var database = {
         id : "00", name : "Margins, DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm), closest margin not determined"
+            id : "00", name : "Free (>2mm), closest margin not specified"
           }, {
             description : "location, only for TUMOR ON INK",
             inputs_required : [ "" ],
@@ -18246,82 +18246,15 @@ var database = {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
-          }, {
+            id : "50", name : "0" 
+          },{ 
+            id : "00", name : "See separate lymphadenectomy tumor summary" 
+          },{
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "50", name : "Lymph nodes, # involved",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-   }, {
-        id : "50", name : "Positive lymph node location",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          }, {
-            id : "00", name : "Interaortocaval"
-          }, {
-            id : "00", name : "Paraaortic"
-          }, {
-            id : "00", name : "Paracaval"
-          }, {
-            id : "00", name : "Preaortic"
-          }, {
-            id : "00", name : "Precaval"
-          }, {
-            id : "00", name : "Retroaortic"
-          }, {
-            id : "00", name : "Retrocaval"
-          }, {
-            id : "00", name : "Other"
-          } ],
-          id : "00", name : ""
-        } ]
-  
-   }, {
-     description : "size of lymph nod met",
-        id : "50", name : "Size of largest lymph node metastasis",
-        optional_state : "required",
-        "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-   }, {
-        id : "50", name : "Extranodal extension",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          }, {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Present"
-          }, {
-            id : "00", name : "Equivocal"
-          } ],
-          id : "00", name : ""
-        } ]
-  
-      }, {
-        id : "50", name : "Tumor type in lymph node",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-  
-      }, {
+      },  {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
