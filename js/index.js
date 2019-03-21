@@ -2362,7 +2362,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal extension",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
