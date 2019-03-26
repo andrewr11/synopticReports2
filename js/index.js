@@ -10646,20 +10646,20 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-             description : "SALL4+, OCT3/4+, CD117+, Keratin -/focal+, CD30-, Glypican3-, CDX2-/focal+",
+             description : "SALL4+, OCT3/4+, CD117+, Keratin -/focal+, CD30-, Glypican3-, CDX2-/focal+, D2-40+",
             id : "00", name : "Seminoma, classical"
           }, {
             description : "give percentages",
             inputs_required : [ "" ],
             id : "10", name : "Mixed germ cell tumor"
           }, {
-            description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+",
+            description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+. D2-40 - or focal+",
             id : "00", name : "Embryonal tumor"
           }, {
-            description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+",
+            description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
             id : "00", name : "Yolk sac tumor"
           }, {
-             description : "SALL4 +, OCT3/4-, GATA3+",
+             description : "SALL4 +, OCT3/4-, GATA3+, D2-40-",
             id : "00", name : "Choriocarcinoma"
           }, {
               description : "Prepubertal teratoma is benign, genetically distinct, and does not get a tumor summary",
@@ -18143,20 +18143,20 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-             description : "SALL4+, OCT3/4+, CD117+, Keratin -/focal+, CD30-, Glypican3-, CDX2-/focal+",
+             description : "SALL4+, OCT3/4+, CD117+, Keratin -/focal+, CD30-, Glypican3-, CDX2-/focal+, D2-40+",
             id : "00", name : "Seminoma, classical"
           }, {
             description : "give percentages",
             inputs_required : [ "" ],
             id : "10", name : "Mixed germ cell tumor"
           }, {
-            description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+",
+            description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+, D2-40- or focal+",
             id : "00", name : "Embryonal tumor"
           }, {
-            description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+",
+            description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
             id : "00", name : "Yolk sac tumor"
           }, {
-             description : "SALL4 +, OCT3/4-, GATA3+",
+             description : "SALL4 +, OCT3/4-, GATA3+, D2-40-",
             id : "00", name : "Choriocarcinoma"
           }, {
               description : "Prepubertal teratoma is benign, genetically distinct, and does not get a tumor summary",
