@@ -2299,7 +2299,7 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm), closest margin not specified"
+            id : "00", name : "Free (>2mm)"
           }, {
             description : "location, only use for TUMOR ON ink",
             inputs_required : [ "" ],
@@ -2819,7 +2819,7 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm), closest margin not specified"
+            id : "00", name : "Free (>2mm)"
           }, {
             description : "location, only use for TUMOR ON INK",
             inputs_required : [ "" ],
@@ -2836,7 +2836,7 @@ var database = {
         id : "00", name : "Margins, DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Free (>2mm), closest margin not specified"
+            id : "00", name : "Free (>2mm)"
           }, {
             description : "location, only for TUMOR ON INK",
             inputs_required : [ "" ],
@@ -10659,7 +10659,7 @@ var database = {
             description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
             id : "00", name : "Yolk sac tumor"
           }, {
-             description : "SALL4 +, OCT3/4-, GATA3+, D2-40-",
+             description : "SALL4 +, OCT3/4-, GATA3+, D2-40-(CK7+, p63+, inhibin+, other germ cell tumors neg)",
             id : "00", name : "Choriocarcinoma"
           }, {
               description : "Prepubertal teratoma is benign, genetically distinct, and does not get a tumor summary",
@@ -18156,7 +18156,7 @@ var database = {
             description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
             id : "00", name : "Yolk sac tumor"
           }, {
-             description : "SALL4 +, OCT3/4-, GATA3+, D2-40-",
+             description : "SALL4 +, OCT3/4-, GATA3+, D2-40-, (CK7+, p63+, inhibin+, other germ cell tumors neg)",
             id : "00", name : "Choriocarcinoma"
           }, {
               description : "Prepubertal teratoma is benign, genetically distinct, and does not get a tumor summary",
