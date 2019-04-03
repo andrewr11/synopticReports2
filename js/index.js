@@ -12979,6 +12979,8 @@ var database = {
             id : "00", name : "Partial pancreatectomy, pancreatic body "
           }, {
             id : "00", name : "Partial pancreatectomy, pancreatic tail"
+          }, {
+            id : "00", name : "Distal pancreatectomy"
           } ],
           id : "00", name : ""
         } ]
@@ -13257,6 +13259,8 @@ var database = {
             id : "00", name : "Partial pancreatectomy, pancreatic body "
           }, {
             id : "00", name : "Partial pancreatectomy, pancreatic tail"
+          }, {
+            id : "00", name : "Distal pancreatectomy"
           } ],
           id : "00", name : ""
         } ]
