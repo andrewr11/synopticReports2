@@ -19456,7 +19456,7 @@ var database = {
             id : "00", name : "None"
           }, {
              description : "T3-4 or N1",
-            id : "00", name : "PDL1 and FoundationOne"
+            id : "00", name : "PDL1"
           }, {
             id : "00", name : "Pending"
           }, {
@@ -20086,7 +20086,7 @@ var database = {
             id : "00", name : "None"
           }, {
              description : "T3-4 or N1",
-            id : "00", name : "PDL1 and FoundationOne"
+            id : "00", name : "PDL1"
           }, {
             id : "00", name : "Pending"
           }, {
