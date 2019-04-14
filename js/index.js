@@ -21983,7 +21983,7 @@ var database = {
     } ],
   
    
-  }
+  };
  
 
 
@@ -21996,42 +21996,42 @@ var database = {
       row: {
         handler: function() {
           
-          this.updateTable()
+          this.updateTable();
         },
         deep: true
       },
       row2: {
         handler: function() {
           
-          this.updateTable()
+          this.updateTable();
         },
         deep: true
       },
       row7: {
         handler: function() {
           
-          this.updateTable()
+          this.updateTable();
         },
         deep: true
       },
       row5: {
         handler: function() {
           
-          this.updateTable()
+          this.updateTable();
         },
         deep: true
       },
       row10: {
         handler: function() {
           
-          this.updateTable()
+          this.updateTable();
         },
         deep: true
       },
       row11: {
         handler: function() {
           
-          this.updateTable()
+          this.updateTable();
         },
         deep: true
       },
@@ -22050,40 +22050,40 @@ var database = {
             this.synresults = site.properties;
          
             for (var i=0; i<this.synresults.length; i++){
-              var firstans = "!!!!YOU FORGOT THIS ONE??" + this.synresults[i].id +"00"
-              this.row.inputanswers.push(firstans)
-            };
+              var firstans = "!!!!YOU FORGOT THIS ONE??" + this.synresults[i].id +"00";
+              this.row.inputanswers.push(firstans);
+            }
               
-            for (var i=0; i<this.synresults.length; i++){
-              this.row2.freetextanswers.push(" ")
+            for (var j=0; j<this.synresults.length; j++){
+              this.row2.freetextanswers.push(" ");
                 
-            };
+            }
             
-            firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor}
-            this.row3.finalanswers.push(firstrow)
+            firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor};
+            this.row3.finalanswers.push(firstrow);
 
-            for (var i=0; i<this.synresults.length; i++){
-              var value = {question: this.synresults[i].name, answer: this.row.inputanswers[i]}
-              this.row3.finalanswers.push(value)
-            };
-            for (var i=0; i<this.synresults.length; i++){
-              this.row5.useFreeText.push(true)
+            for ( var i=0; i<this.synresults.length; i++){
+              var value = {question: this.synresults[i].name, answer: this.row.inputanswers[i]};
+              this.row3.finalanswers.push(value);
             }
             for (var i=0; i<this.synresults.length; i++){
-              this.row6.bgc.push("#ffcccc")
+              this.row5.useFreeText.push(true);
             }
             for (var i=0; i<this.synresults.length; i++){
-              this.row7.modifyFreeText.push(" ")
-                
-            };
+              this.row6.bgc.push("#ffcccc");
+            }
             for (var i=0; i<this.synresults.length; i++){
-              this.row8.modifyFreeTextHeader.push(" ")
+              this.row7.modifyFreeText.push(" ");
                 
-            };
+            }
             for (var i=0; i<this.synresults.length; i++){
-              this.row11.freeTextGID.push(" ")
+              this.row8.modifyFreeTextHeader.push(" ");
                 
-            };
+            }
+            for (var i=0; i<this.synresults.length; i++){
+              this.row11.freeTextGID.push(" ");
+                
+            }
 
 
 
@@ -22092,102 +22092,102 @@ var database = {
         displayhomeMenu: function(){
 
           //reset all arrays
-          this.section = "homeMenu"
+          this.section = "homeMenu";
           this.synresults = [];
           this.row.inputanswers = [];
           this.row2.freetextanswers = [];
           this.row3.finalanswers = [];
-          this.row4.comboanswers = []
-          this.row5.useFreeText = []
-          this.row6.bgc = []
-          this.row7.modifyFreeText = []
-          this.row8.modifyFreeTextHeader = []
-          this.row9.comboMixed = []
-          this.row10.useCombo = []
-          scroll(0,0)
+          this.row4.comboanswers = [];
+          this.row5.useFreeText = [];
+          this.row6.bgc = [];
+          this.row7.modifyFreeText = [];
+          this.row8.modifyFreeTextHeader = [];
+          this.row9.comboMixed = [];
+          this.row10.useCombo = [];
+          scroll(0,0);
         },
 
         //switch from input (radio) text to free text
         changeUseFreeText: function(i){
           
-          this.row5.useFreeText[i] = false
-          this.row5.useFreeText[i] = true
-          this.row10.useCombo[i] = false
-          this.row6.bgc[i] = "#66ff99"   
-          this.row8.modifyFreeTextHeader[i] = " "
-          this.updateTable()
+          this.row5.useFreeText[i] = false;
+          this.row5.useFreeText[i] = true;
+          this.row10.useCombo[i] = false;
+          this.row6.bgc[i] = "#66ff99"   ;
+          this.row8.modifyFreeTextHeader[i] = " ";
+          this.updateTable();
           
          
         },
         //switch from radio text to free text
         dontUseFreeText: function(i,index2, gid){
-          this.row5.useFreeText[i] = false
-          this.row10.useCombo[i] = false
-          this.row6.bgc[i] = "#66ff99"  
-          this.row8.modifyFreeTextHeader[i] = " "
+          this.row5.useFreeText[i] = false;
+          this.row10.useCombo[i] = false;
+          this.row6.bgc[i] = "#66ff99"  ;
+          this.row8.modifyFreeTextHeader[i] = " ";
           //console.log(this.row.inputanswers[i])
           
           //logic for two treatment effect na qustions
           if(gid=="17"){
            
-            this.row5.useFreeText[i+1] = false
-            this.row6.bgc[i+1] = "#66ff99"
-            this.row.inputanswers[i+1] = "Not applicable5000"
+            this.row5.useFreeText[i+1] = false;
+            this.row6.bgc[i+1] = "#66ff99";
+            this.row.inputanswers[i+1] = "Not applicable5000";
           }
           
           //logic for breast grade
           //tubules
           if(gid=="80"){
-            this.row12.breastGrade[0] = 1
+            this.row12.breastGrade[0] = 1;
            
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+3] = "#66ff99" 
-              this.row5.useFreeText[i+3] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+3] = "#66ff99" ;
+              this.row5.useFreeText[i+3] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+3] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+3] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+3] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 2/30000";
               }
             }
           }
           if(gid=="81"){
-            this.row12.breastGrade[0] = 2
+            this.row12.breastGrade[0] = 2;
            
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+3] = "#66ff99" 
-              this.row5.useFreeText[i+3] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+3] = "#66ff99" ;
+              this.row5.useFreeText[i+3] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+3] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+3] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+3] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 2/30000";
               }
             }
           }
           if(gid=="82"){
-            this.row12.breastGrade[0] = 3
+            this.row12.breastGrade[0] = 3;
             
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+3] = "#66ff99" 
-              this.row5.useFreeText[i+3] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+3] = "#66ff99" ;
+              this.row5.useFreeText[i+3] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+3] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+3] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+3] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+3] = "Nottingham grade 2/30000";
               }
             }
           }
@@ -22195,112 +22195,112 @@ var database = {
 
           //nuclear pleo
           if(gid=="83"){
-            this.row12.breastGrade[1] = 1
+            this.row12.breastGrade[1] = 1;
             
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+2] = "#66ff99" 
-              this.row5.useFreeText[i+2] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+2] = "#66ff99" ;
+              this.row5.useFreeText[i+2] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+2] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+2] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+2] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 2/30000";
               }
             }
           }
           if(gid=="84"){
-            this.row12.breastGrade[1] = 2
+            this.row12.breastGrade[1] = 2;
            
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+2] = "#66ff99" 
-              this.row5.useFreeText[i+2] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+2] = "#66ff99" ;
+              this.row5.useFreeText[i+2] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+2] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+2] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+2] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 2/30000";
               }
             }
           }
           if(gid=="85"){
-            this.row12.breastGrade[1] = 3
+            this.row12.breastGrade[1] = 3;
            
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+2] = "#66ff99" 
-              this.row5.useFreeText[i+2] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+2] = "#66ff99" ;
+              this.row5.useFreeText[i+2] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+2] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+2] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+2] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+2] = "Nottingham grade 2/30000";
               }
             }
           }
 
           //mitotic count
           if(gid=="86"){
-            this.row12.breastGrade[2] = 1
+            this.row12.breastGrade[2] = 1;
             
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+1] = "#66ff99" 
-              this.row5.useFreeText[i+1] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+1] = "#66ff99" ;
+              this.row5.useFreeText[i+1] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+1] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+1] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+1] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 2/30000";
               }
             }
           }
           if(gid=="87"){
-            this.row12.breastGrade[2] = 2
+            this.row12.breastGrade[2] = 2;
             
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+1] = "#66ff99" 
-              this.row5.useFreeText[i+1] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+1] = "#66ff99" ;
+              this.row5.useFreeText[i+1] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+1] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+1] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+1] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 2/30000";
               }
             }
           }
           if(gid=="88"){
-            this.row12.breastGrade[2] = 3
+            this.row12.breastGrade[2] = 3;
             
             if (this.row12.breastGrade[0] != 0 && this.row12.breastGrade[1] != 0 && this.row12.breastGrade[2] != 0 ){
-              this.row6.bgc[i+1] = "#66ff99" 
-              this.row5.useFreeText[i+1] = false
-              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2]
+              this.row6.bgc[i+1] = "#66ff99" ;
+              this.row5.useFreeText[i+1] = false;
+              var total = this.row12.breastGrade[0] + this.row12.breastGrade[1] + this.row12.breastGrade[2];
               if (total < 6) {
-                this.row.inputanswers[i+1] = "Nottingham grade 1/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 1/30000";
               }
               else if (total > 7) {
-                this.row.inputanswers[i+1] = "Nottingham grade 3/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 3/30000";
               }
               else {
-                this.row.inputanswers[i+1] = "Nottingham grade 2/30000"
+                this.row.inputanswers[i+1] = "Nottingham grade 2/30000";
               }
             }
           }
@@ -22311,13 +22311,13 @@ var database = {
         //switch to mixed text
         changeUseMixed: function(i){
           
-          this.row5.useFreeText[i] = false
-          this.row10.useCombo[i] = true
-          this.row6.bgc[i] = "#66ff99"
+          this.row5.useFreeText[i] = false;
+          this.row10.useCombo[i] = true;
+          this.row6.bgc[i] = "#66ff99";
           
           
           
-          this.updateTable()
+          this.updateTable();
           
          
         },
@@ -22325,7 +22325,7 @@ var database = {
 
         //change color of question
         changeColor: function(i){
-          this.row6.bgc[i] = "#66ff99"
+          this.row6.bgc[i] = "#66ff99";
         },
 
 
@@ -22336,8 +22336,8 @@ var database = {
           if (gid == '11') {
             for (var j = 0; j<this.row.inputanswers.length; j++){                
                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                this.row.inputanswers[j] = "T40200"
-                this.dontUseFreeText(j)
+                this.row.inputanswers[j] = "T40200";
+                this.dontUseFreeText(j);
                }
                     
             }
@@ -22347,8 +22347,8 @@ var database = {
           if (gid == '12') {
             for (var j = 0; j<this.row.inputanswers.length; j++){                
                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                this.row.inputanswers[j] = "T4a0200"
-                this.dontUseFreeText(j)
+                this.row.inputanswers[j] = "T4a0200";
+                this.dontUseFreeText(j);
                }
                     
             }
@@ -22358,8 +22358,8 @@ var database = {
           if (gid == '13') {
             for (var j = 0; j<this.row.inputanswers.length; j++){                
                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                this.row.inputanswers[j] = "T4b0200"
-                this.dontUseFreeText(j)
+                this.row.inputanswers[j] = "T4b0200";
+                this.dontUseFreeText(j);
                }
                     
             }
@@ -22367,87 +22367,87 @@ var database = {
           }
           
           
-          this.row5.useFreeText[i] = false
-          this.row10.useCombo[i] = true
-          this.row6.bgc[i] = "#66ff99"
-          this.row8.modifyFreeTextHeader[i] = hope
-          this.row.inputanswers[i] = "0000"
+          this.row5.useFreeText[i] = false;
+          this.row10.useCombo[i] = true;
+          this.row6.bgc[i] = "#66ff99";
+          this.row8.modifyFreeTextHeader[i] = hope;
+          this.row.inputanswers[i] = "0000";
           
 
           // logic for repeating see case text
           if(gid=="15"){
-            this.row5.useFreeText[i+1] = false
-            this.row10.useCombo[i+1] = true
-            this.row6.bgc[i+1] = "#66ff99"
-            this.row8.modifyFreeTextHeader[i+1] = hope            
-            this.row11.freeTextGID[i] = gid     
+            this.row5.useFreeText[i+1] = false;
+            this.row10.useCombo[i+1] = true;
+            this.row6.bgc[i+1] = "#66ff99";
+            this.row8.modifyFreeTextHeader[i+1] = hope  ;          
+            this.row11.freeTextGID[i] = gid    ; 
             
-            this.row5.useFreeText[i+2] = false
-            this.row6.bgc[i+2] = "#66ff99"
-            this.row.inputanswers[i+2] = "No0000"
+            this.row5.useFreeText[i+2] = false;
+            this.row6.bgc[i+2] = "#66ff99";
+            this.row.inputanswers[i+2] = "No0000";
 
 
-            this.updateTable()
+            this.updateTable();
           }
 
           if(gid=="16"){
             
-            this.row11.freeTextGID[i] = gid  
+            this.row11.freeTextGID[i] = gid  ;
 
-            this.row5.useFreeText[i+1] = false
-            this.row10.useCombo[i+1] = true
-            this.row6.bgc[i+1] = "#66ff99"
-            this.row8.modifyFreeTextHeader[i+1] = hope            
+            this.row5.useFreeText[i+1] = false;
+            this.row10.useCombo[i+1] = true;
+            this.row6.bgc[i+1] = "#66ff99";
+            this.row8.modifyFreeTextHeader[i+1] = hope    ;        
             
-            this.row5.useFreeText[i+2] = false
-            this.row10.useCombo[i+2] = true
-            this.row6.bgc[i+2] = "#66ff99"
-            this.row8.modifyFreeTextHeader[i+2] = hope    
+            this.row5.useFreeText[i+2] = false;
+            this.row10.useCombo[i+2] = true;
+            this.row6.bgc[i+2] = "#66ff99";
+            this.row8.modifyFreeTextHeader[i+2] = hope    ;
 
-            this.row5.useFreeText[i+3] = false
-            this.row10.useCombo[i+3] = true
-            this.row6.bgc[i+3] = "#66ff99"
-            this.row8.modifyFreeTextHeader[i+3] = hope    
+            this.row5.useFreeText[i+3] = false;
+            this.row10.useCombo[i+3] = true;
+            this.row6.bgc[i+3] = "#66ff99";
+            this.row8.modifyFreeTextHeader[i+3] = hope  ;  
 
-            this.row5.useFreeText[i+4] = false
-            this.row6.bgc[i+4] = "#66ff99"
-            this.row.inputanswers[i+4] = "No0000"
+            this.row5.useFreeText[i+4] = false;
+            this.row6.bgc[i+4] = "#66ff99";
+            this.row.inputanswers[i+4] = "No0000";
 
-            this.row5.useFreeText[i+5] = false
-            this.row6.bgc[i+5] = "#66ff99"
-            this.row.inputanswers[i+5] = "No0000"
+            this.row5.useFreeText[i+5] = false;
+            this.row6.bgc[i+5] = "#66ff99";
+            this.row.inputanswers[i+5] = "No0000";
 
-            this.updateTable()
+            this.updateTable();
           }
 
             // logic for repeating see case text for gastric trip only three for her2, pdl1, msi
           if(gid=="18"){
 
-            this.row11.freeTextGID[i] = gid   
-            console.log(hope)
-            this.row5.useFreeText[i+1] = false
-            this.row10.useCombo[i+1] = true
-            this.row6.bgc[i+1] = "#66ff99"
-            this.row8.modifyFreeTextHeader[i+1] = hope     
+            this.row11.freeTextGID[i] = gid   ;
+            //console.log(hope);
+            this.row5.useFreeText[i+1] = false;
+            this.row10.useCombo[i+1] = true;
+            this.row6.bgc[i+1] = "#66ff99";
+            this.row8.modifyFreeTextHeader[i+1] = hope   ;  
             
-            this.row5.useFreeText[i+2] = false
-            this.row10.useCombo[i+2] = true
-            this.row6.bgc[i+2] = "#66ff99"
-            this.row8.modifyFreeTextHeader[i+2] = hope    
+            this.row5.useFreeText[i+2] = false;
+            this.row10.useCombo[i+2] = true;
+            this.row6.bgc[i+2] = "#66ff99";
+            this.row8.modifyFreeTextHeader[i+2] = hope  ;  
 
-            this.row5.useFreeText[i+3] = false
-            this.row10.useCombo[i+3] = true
-            this.row6.bgc[i+3] = "#66ff99"
-            this.row8.modifyFreeTextHeader[i+3] = hope    
+            this.row5.useFreeText[i+3] = false;
+            this.row10.useCombo[i+3] = true;
+            this.row6.bgc[i+3] = "#66ff99";
+            this.row8.modifyFreeTextHeader[i+3] = hope  ;  
               
 
-            this.updateTable()
+            this.updateTable();
           }
 
           //logic to turn off repeat See case
           if(gid!="15" && gid!="16" && gid!="18"){           
-            this.row11.freeTextGID[i] = " "           
-            this.updateTable()
+            this.row11.freeTextGID[i] = " "  ;         
+            this.updateTable();
           }
 
           
@@ -22457,7 +22457,7 @@ var database = {
 
           
 
-          this.updateTable()
+          this.updateTable();
           
           
           
@@ -22473,23 +22473,23 @@ var database = {
          // update free text based on gid in freeTExtFID
          for (var i = 0; i<this.row11.freeTextGID.length; i++){
           if (this.row11.freeTextGID[i] == "15") {
-            this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
+            this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i];
             
           }  
         }
           for (var i = 0; i<this.row11.freeTextGID.length; i++){
             if (this.row11.freeTextGID[i] == "18") {
-              this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
-              this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i]
-              this.row7.modifyFreeText[i+3] = this.row7.modifyFreeText[i]
+              this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i];
+              this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i];
+              this.row7.modifyFreeText[i+3] = this.row7.modifyFreeText[i];
             } 
           }
         
         for (var i = 0; i<this.row11.freeTextGID.length; i++){
           if (this.row11.freeTextGID[i] == "16") {
-            this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i]
-            this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i]
-            this.row7.modifyFreeText[i+3] = this.row7.modifyFreeText[i]
+            this.row7.modifyFreeText[i+1] = this.row7.modifyFreeText[i];
+            this.row7.modifyFreeText[i+2] = this.row7.modifyFreeText[i];
+            this.row7.modifyFreeText[i+3] = this.row7.modifyFreeText[i];
           }   
         
       
@@ -22500,7 +22500,7 @@ var database = {
           //update free text answer based on table modifyFreeText
           for (var i = 0; i<this.row7.modifyFreeText.length; i++){
             
-              this.row9.comboMixed[i] = this.row8.modifyFreeTextHeader[i] + this.row7.modifyFreeText[i]
+              this.row9.comboMixed[i] = this.row8.modifyFreeTextHeader[i] + this.row7.modifyFreeText[i];
             
           }
          
@@ -22512,14 +22512,14 @@ var database = {
 
           // go through each question and answer
           
-          this.row4.comboanswers = []
+          this.row4.comboanswers = [];
 
-          var count = 0 // index of AJCC stage question to combine responses
-          var removeRow = 0 // use this to match up length of finalanswer and comboanswer since combo is shorter with TNM combined
+          var count = 0 ;// index of AJCC stage question to combine responses
+          var removeRow = 0; // use this to match up length of finalanswer and comboanswer since combo is shorter with TNM combined
           for (var i = 0; i<this.row.inputanswers.length; i++){
-            ans = this.row.inputanswers[i].substring(0,this.row.inputanswers[i].length-4)
-            qid = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-4, this.row.inputanswers[i].length-2)
-            gid = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-2, this.row.inputanswers[i].length)
+            ans = this.row.inputanswers[i].substring(0,this.row.inputanswers[i].length-4);
+            qid = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-4, this.row.inputanswers[i].length-2);
+            gid = this.row.inputanswers[i].substring(this.row.inputanswers[i].length-2, this.row.inputanswers[i].length);
 
              // insert loop to update all dependent questions to defaults
             
@@ -22530,13 +22530,13 @@ var database = {
                               
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4000") {
                  
-                 this.row.inputanswers[j] = "Ductal carcinoma in situ4000"
-                 this.dontUseFreeText(j)
+                 this.row.inputanswers[j] = "Ductal carcinoma in situ4000";
+                 this.dontUseFreeText(j);
                 }
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
                   
-                  this.row.inputanswers[j] = "Tis0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "Tis0200";
+                  this.dontUseFreeText(j);
                  }
 
               }                 
@@ -22549,13 +22549,13 @@ var database = {
                               
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4200") {
                  
-                 this.row.inputanswers[j] = "Adenocarcinoma4200"
-                 this.dontUseFreeText(j)
+                 this.row.inputanswers[j] = "Adenocarcinoma4200";
+                 this.dontUseFreeText(j);
                 }
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4300") {
                  
-                  this.row.inputanswers[j] = "C614300"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "C614300";
+                  this.dontUseFreeText(j);
                  }
               }                              
              }
@@ -22565,8 +22565,8 @@ var database = {
                               
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4400") {
                  
-                 this.row.inputanswers[j] = "C18.94400"
-                 this.dontUseFreeText(j)
+                 this.row.inputanswers[j] = "C18.94400";
+                 this.dontUseFreeText(j);
                 }      
               }                              
              }
@@ -22576,8 +22576,8 @@ var database = {
                             
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4600") {
                   
-                 this.row.inputanswers[j] = "C34.904600"
-                 this.dontUseFreeText(j)
+                 this.row.inputanswers[j] = "C34.904600";
+                 this.dontUseFreeText(j);
                 }      
               }                              
              }
@@ -22587,8 +22587,8 @@ var database = {
                             
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4500") {
                   
-                 this.row.inputanswers[j] = "C43.94500"
-                 this.dontUseFreeText(j)
+                 this.row.inputanswers[j] = "C43.94500";
+                 this.dontUseFreeText(j);
                 }      
               }                              
              }
@@ -22601,8 +22601,8 @@ var database = {
             if (gid == '60') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "Tis0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "Tis0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22613,8 +22613,8 @@ var database = {
             if (gid == '69') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "Ta0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "Ta0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22625,8 +22625,8 @@ var database = {
             if (gid == '74') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "TaTis0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "TaTis0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22637,8 +22637,8 @@ var database = {
             if (gid == '61') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T10200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T10200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22649,8 +22649,8 @@ var database = {
             if (gid == '62') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T20200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T20200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22661,8 +22661,8 @@ var database = {
             if (gid == '63') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T30200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T30200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22673,8 +22673,8 @@ var database = {
             if (gid == '64') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T40200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T40200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22685,8 +22685,8 @@ var database = {
             if (gid == '65') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T1a0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T1a0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22697,8 +22697,8 @@ var database = {
             if (gid == '66') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T1b0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T1b0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22709,8 +22709,8 @@ var database = {
             if (gid == '70') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T2a0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T2a0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22721,8 +22721,8 @@ var database = {
             if (gid == '71') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T2b0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T2b0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22733,8 +22733,8 @@ var database = {
             if (gid == '72') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T3a0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T3a0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22745,8 +22745,8 @@ var database = {
             if (gid == '73') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T3b0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T3b0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22760,8 +22760,8 @@ var database = {
               
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T40200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T40200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22772,8 +22772,8 @@ var database = {
             if (gid == '67') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T4a0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T4a0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22784,8 +22784,8 @@ var database = {
             if (gid == '68') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T4b0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T4b0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22796,8 +22796,8 @@ var database = {
             if (gid == '12') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T4a0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T4a0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22808,8 +22808,8 @@ var database = {
             if (gid == '13') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
-                  this.row.inputanswers[j] = "T4b0200"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "T4b0200";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22823,18 +22823,18 @@ var database = {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5000") {
-                  this.row.inputanswers[j] = "Not applicable5000"
-                  this.dontUseFreeText(j)                
+                  this.row.inputanswers[j] = "Not applicable5000";
+                  this.dontUseFreeText(j)      ;          
                  }
 
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5100") {
-                  this.row.inputanswers[j] = "05150"
-                  this.dontUseFreeText(j)                
+                  this.row.inputanswers[j] = "05150";
+                  this.dontUseFreeText(j)      ;          
                  }
 
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
-                  this.row.inputanswers[j] = "NX0300"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "NX0300";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22846,12 +22846,12 @@ var database = {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5000") {
-                  this.row.inputanswers[j] = "Not applicable5000"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "Not applicable5000";
+                  this.dontUseFreeText(j);
                  }
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
-                  this.row.inputanswers[j] = "N00300"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "N00300";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22862,12 +22862,12 @@ var database = {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5000") {
-                  this.row.inputanswers[j] = "Not applicable5000"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "Not applicable5000";
+                  this.dontUseFreeText(j);
                  }
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
-                  this.row.inputanswers[j] = "N0a0300"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "N0a0300";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22880,8 +22880,8 @@ var database = {
                 
                  
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
-                  this.row.inputanswers[j] = "N10300"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "N10300";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22894,8 +22894,8 @@ var database = {
                 
                  
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
-                  this.row.inputanswers[j] = "N20300"
-                  this.dontUseFreeText(j)
+                  this.row.inputanswers[j] = "N20300";
+                  this.dontUseFreeText(j);
                  }
                       
               }
@@ -22905,7 +22905,7 @@ var database = {
             // identify row to combine all AJCC stage with
 
             if (qid == "01"){
-                    count = this.row4.comboanswers.length
+                    count = this.row4.comboanswers.length;
                   }
             // all rows other than AJCC T N M responses
 
@@ -22926,23 +22926,23 @@ var database = {
 
               // if free text selected
               if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]=== " "){
-                this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X")
+                this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X");
               }
               else if (this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " "){
-                this.row4.comboanswers.push(this.row2.freetextanswers[i])
+                this.row4.comboanswers.push(this.row2.freetextanswers[i]);
               }
               //if mixed text selected
               else if (this.row10.useCombo[i] && this.row9.comboMixed[i]=== " "){
-                this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X")
+                this.row4.comboanswers.push("!!!!YOU FORGOT THIS ONE??X");
               }
               else if (this.row10.useCombo[i] && this.row9.comboMixed[i]!= " "){
-                this.row4.comboanswers.push(this.row9.comboMixed[i])
+                this.row4.comboanswers.push(this.row9.comboMixed[i]);
               }
 
 
               else {
                 //if input/radio selected
-                this.row4.comboanswers.push(ans)
+                this.row4.comboanswers.push(ans);
               }
              
             }
@@ -22953,38 +22953,38 @@ var database = {
              
             
             
-              this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + "!!!!YOU FORGOT THIS ONE??X"
+              this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + "!!!!YOU FORGOT THIS ONE??X";
               }
             else if ((qid === "02" || qid === "03" ||qid === "04") && this.row5.useFreeText[i] && this.row2.freetextanswers[i]!= " " && count !=0) {
-                this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + this.row2.freetextanswers[i]
+                this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + this.row2.freetextanswers[i];
               }
             else if (qid === "02" || qid === "03" ||qid === "04") {
-              this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + ans
-              removeRow += 1
+              this.row4.comboanswers[count] = this.row4.comboanswers[count] + " " + ans;
+              removeRow += 1;
             }
             
           }
 
           
           // make final table
-          var removeRow = 0
+          var removeRow = 0;
           this.row3.finalanswers = [];
-          firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor}
-          this.row3.finalanswers.push(firstrow)
+          firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor};
+          this.row3.finalanswers.push(firstrow);
           for (var i=0; i<this.synresults.length; i++){
 
             if (this.synresults[i].id === "02" || 
             this.synresults[i].id === "03" || 
             this.synresults[i].id === "04") {
-              removeRow += 1
+              removeRow += 1;
             }
             
             if (this.synresults[i].id === "01"){
-              ans = this.row4.comboanswers[i-removeRow]
-              var value = {question: this.synresults[i].name, answer: ans}
+              ans = this.row4.comboanswers[i-removeRow];
+              var value = {question: this.synresults[i].name, answer: ans};
       //     console.log (this.synresults[i].name, this.synresults[i].id)
             
-              this.row3.finalanswers.push(value)
+              this.row3.finalanswers.push(value);
 
             }
 
@@ -23005,29 +23005,29 @@ var database = {
 
               if (this.row5.useFreeText[i]){
                 if (this.row2.freetextanswers[i]=== " ") {
-                  ans = "!!!!YOU FORGOT THIS ONE??0"
+                  ans = "!!!!YOU FORGOT THIS ONE??0";
                 }
                 else{
-                  ans =this.row2.freetextanswers[i]
+                  ans =this.row2.freetextanswers[i];
                 }
               } else {
                 
-                ans = this.row4.comboanswers[i-removeRow]
+                ans = this.row4.comboanswers[i-removeRow];
               } 
-              var value = {question: this.synresults[i].name, answer: ans}
+              var value1 = {question: this.synresults[i].name, answer: ans};
       //     console.log (this.synresults[i].name, this.synresults[i].id)
             
-              this.row3.finalanswers.push(value)
+              this.row3.finalanswers.push(value1);
 
             }
             
               
 
-          };
+          }
           
        //   console.log (this.row4.comboanswers)
 
-          return this.row3.finalanswers
+          return this.row3.finalanswers;
 
           
       }
@@ -23036,4 +23036,4 @@ var database = {
     
 
 
-})
+});
