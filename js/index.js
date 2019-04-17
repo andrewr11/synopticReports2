@@ -4272,6 +4272,8 @@ var database = {
         id : "00", name : "Other tissue(s) involved",
        optional_state  : "required", "options" : [ {
           group : [ {
+            id : "00", name : "None"
+          },{
             id : "00", name : "Right parametrium"
           }, {
             id : "00", name : "Left parametrium"
@@ -4296,6 +4298,8 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
           }],
           id : "00", name : ""
         } ]
@@ -4311,6 +4315,8 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
           }],
           id : "00", name : ""
         } ]
