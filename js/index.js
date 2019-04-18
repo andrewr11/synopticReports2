@@ -2576,6 +2576,14 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Potential block for ancillary testing",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "Add billing code 3260F for women, 3260F1P for men",
         id : "00", name : "ICD10",
        optional_state  : "required", "options" : [ {
@@ -3286,6 +3294,14 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Potential block for ancillary testing",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      },{
         description : "Add billing code 3260F for women, 3260F1P for men",
         id : "00", name : "ICD10",
        optional_state  : "required", "options" : [ {
@@ -4494,7 +4510,7 @@ var database = {
         } ]
    
     }, {
-        id : "00", name : "Stage FIGO (2015)",
+        id : "00", name : "Stage FIGO (2018)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "Limited to cervix, Measured invasion of stroma ≤3 mm in depth and ≤7 mm width",
