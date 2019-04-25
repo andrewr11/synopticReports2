@@ -2575,15 +2575,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Potential block for ancillary testing",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+      },  {
         description : "Add billing code 3260F for women, 3260F1P for men",
         id : "00", name : "ICD10",
        optional_state  : "required", "options" : [ {
@@ -3294,14 +3286,6 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Potential block for ancillary testing",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      },{
         description : "Add billing code 3260F for women, 3260F1P for men",
         id : "00", name : "ICD10",
        optional_state  : "required", "options" : [ {
@@ -4279,16 +4263,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "depth and width in mm and thickness of cervix",
+        description : "depth and width in mm of tumor",
         id : "00", name : "Cervical stromal invasion",
        optional_state  : "required", "options" : [ {
           id : "00", name : ""
         } ]
       }, {
+        description : "Thickness of cervix",
+        id : "00", name : "Cervical thickness",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      },{
         id : "00", name : "Other tissue(s) involved",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
+          },{
+            id : "00", name : "Not applicable"
           },{
             id : "00", name : "Right parametrium"
           }, {
