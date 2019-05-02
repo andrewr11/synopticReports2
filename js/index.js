@@ -4263,8 +4263,14 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "depth and width in mm of tumor",
-        id : "00", name : "Cervical stromal invasion",
+        description : "width in mm of tumor",
+        id : "00", name : "Size (width) of tumor",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "depth in mm of tumor",
+        id : "00", name : "Depth of cervical stromal invasion",
        optional_state  : "required", "options" : [ {
           id : "00", name : ""
         } ]
