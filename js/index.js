@@ -9806,6 +9806,9 @@ var database = {
           }, {
             description : "(metastases single ipsilateral lymph node >3cm AND extranodal extension) OR ( multiple ipsilateral, contralateral or bilateral nodes AND no extranodal extension) OR (single contralateral node metastases <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
+          }, {
+            description : "MELANOMA regional metastases",
+            id : "00", name : "N1 (melanoma)"
           } ],
           id : "00", name : "Category (pN)"
         }]
@@ -10201,7 +10204,7 @@ var database = {
             id : "00", name : "N3b"
           }, {
             description : "MELANOMA regional metastases",
-            id : "00", name : "N1"
+            id : "00", name : "N1 (melanoma)"
           } ],
           id : "00", name : "Category (pN)"
         }]
