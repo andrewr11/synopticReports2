@@ -9808,7 +9808,7 @@ var database = {
             id : "00", name : "N3b"
           }, {
             description : "MELANOMA regional metastases",
-            id : "00", name : "N1 (melanoma)"
+            id : "00", name : "N1 "
           } ],
           id : "00", name : "Category (pN)"
         }]
@@ -10204,7 +10204,7 @@ var database = {
             id : "00", name : "N3b"
           }, {
             description : "MELANOMA regional metastases",
-            id : "00", name : "N1 (melanoma)"
+            id : "00", name : "N1 "
           } ],
           id : "00", name : "Category (pN)"
         }]
@@ -11985,7 +11985,7 @@ var database = {
             id : "00", name : "N3b"
           }, {
             description : "MELANOMA, regional metastases",
-            id : "00", name : "N1 (melanoma)"
+            id : "00", name : "N1 "
           } ],
           id : "00", name : "Category (pN)"
         }]
@@ -14661,7 +14661,7 @@ var database = {
             id : "00", name : "N3b"
           }, {
             description : " NASOPHARYNX Metastasis in one or more ipsilateral lymph node, 6 cm or less in greatest dimension",
-            id : "00", name : "N1"
+            id : "00", name : "N1 "
           }, {
             description : " NASOPHARYNX Metastasis in contralateral or bilateral lymph node,  6 cm or less in greatest dimension ",
             id : "00", name : "N2"
@@ -14670,7 +14670,7 @@ var database = {
             id : "00", name : "N3"
           }, {
             description : "MELANOMA, regional metastases",
-            id : "00", name : "N1 (melanoma)"
+            id : "00", name : "N1  "
           } ],
           id : "00", name : "Category (pN)"
         }]
