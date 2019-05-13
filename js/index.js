@@ -10989,7 +10989,7 @@ var database = {
           group : [ {
             id : "00", name : "Excision"
           }, {
-            id : "00", name : "Parotidectomy, superficial lobe "
+            id : "00", name : "Parotidectomy "
           }, {
             id : "00", name : "Parotidectomy, superficial lobe "
           }, {
@@ -11131,14 +11131,17 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extent, macroscopic",
+        description : "Need macroscopic/op note to change stage to T3/4",
+        id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Limited to salivary gland"
           }, {
-            id : "00", name : "Invades regional adipose tissue"
+            description : "Does not change stage",
+            id : "00", name : "Invades extraparenchymal tissue, microscopically"
           }, {
-            id : "00", name : "Invades large nerve"
+            description : "Does change stage, either adipose tissue or large nerve",
+            id : "00", name : "Invades extraparenchymal tissue, macroscopically"
           }, {
              description : "specify",
               inputs_required : [ "" ],
