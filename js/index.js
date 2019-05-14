@@ -1406,19 +1406,19 @@ var database = {
         id : "00", name : "Type and Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "< 2mitoses/10 hpf and/or Ki67<3% ", 
+            description : "< 2mitoses/2 mm squared and/or Ki67<3% ", 
             id : "00", name : "Grade 1/3, Well differentiated neuroendocrine tumor, low grade (carcinoid)"
           }, {
-            description : ">= 2 AND < 20 mitoses/10 hpf and/or Ki67 >=3 AND <20% ",  
+            description : ">= 2 AND < 20 mitoses/2 mm squared and/or Ki67 >=3 AND <20% ",  
             id : "00", name : "Grade 2/3, Well differentiated neuroendocrine tumor, intermediate grade (atypical carcinoid)"
           }, {
-             description : "> 20 mitoses/10 hpf and/or Ki67 >20% ",  
+             description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
           } ],
           id : "00", name : ""
         } ]
       }, {
-           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 42 hpf and divide by 5", 
+           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 34 hpf and divide by 5", 
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -2588,6 +2588,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : true,
@@ -3299,6 +3309,16 @@ var database = {
           id : "00", name : ""
         } ]
       
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       biopsy_type : "Invasive",
@@ -5210,19 +5230,19 @@ var database = {
         id : "00", name : "Type and Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-               description : "< 2mitoses/10 hpf and/or Ki67<3% ",	
+               description : "< 2mitoses/2 mm squared and/or Ki67<3% ",	
             id : "00", name : "Grade 1/3, Well-differentiated neuroendocrine tumor"
           }, {
-           description : ">= 2 AND < 20 mitoses/10 hpf and/or Ki67 >=3 AND <20% ",	
+           description : ">= 2 AND < 20 mitoses/2 mm squared and/or Ki67 >=3 AND <20% ",	
             id : "00", name : "Grade 2/3, Well-differentiated neuroendocrine tumor"
           }, {
-               description : "> 20 mitoses/10 hpf and/or Ki67 >20% ",	
+               description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",	
             id : "00", name : "Grade 3/3, Well-differentiated neuroendocrine tumor"
           } ],
           id : "00", name : ""
         } ]
       }, {
-           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 42 hpf and divide by 5", 
+           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 34 hpf and divide by 5", 
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -5879,19 +5899,19 @@ var database = {
         id : "00", name : "Type and Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-             description : "< 2mitoses/10 hpf and/or Ki67<3% ",  
+             description : "< 2mitoses/2 mm squared and/or Ki67<3% ",  
             id : "00", name : "Grade 1/3, Well-differentiated neuroendocrine tumor"
           }, {
-           description : ">= 2 AND < 20 mitoses/10 hpf and/or Ki67 >=3 AND <20% ", 
+           description : ">= 2 AND < 20 mitoses/2 mm squared and/or Ki67 >=3 AND <20% ", 
             id : "00", name : "Grade 2/3, Well-differentiated neuroendocrine tumor"
           }, {
-             description : "> 20 mitoses/10 hpf and/or Ki67 >20% ",  
+             description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well-differentiated neuroendocrine tumor"
           } ],
           id : "00", name : ""
         } ]
       }, {
-           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 42 hpf and divide by 5", 
+           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 34 hpf and divide by 5", 
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -8838,19 +8858,19 @@ var database = {
         id : "00", name : "Type and Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "< 2mitoses/10 hpf and/or Ki67<3% ", 
+            description : "< 2mitoses/2 mm squared and/or Ki67<3% ", 
             id : "00", name : "Grade 1/3, Well differentiated neuroendocrine tumor, low grade (carcinoid)"
           }, {
-            description : ">= 2 AND < 20 mitoses/10 hpf and/or Ki67 >=3 AND <20% ",  
+            description : ">= 2 AND < 20 mitoses/2 mm squared and/or Ki67 >=3 AND <20% ",  
             id : "00", name : "Grade 2/3, Well differentiated neuroendocrine tumor, intermediate grade (atypical carcinoid)"
           }, {
-             description : "> 20 mitoses/10 hpf and/or Ki67 >20% ",  
+             description : "> 20 mitoses/ 2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
           } ],
           id : "00", name : ""
         } ]
       }, {
-           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 42 hpf and divide by 5", 
+           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 34 hpf and divide by 5", 
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13046,19 +13066,19 @@ var database = {
         id : "00", name : "Type and Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "< 2mitoses/10 hpf and/or Ki67<3% ", 
+            description : "< 2mitoses/2 mm squared and/or Ki67<3% ", 
             id : "00", name : "Grade 1/3, Well differentiated neuroendocrine tumor, low grade (carcinoid)"
           }, {
-            description : ">= 2 AND < 20 mitoses/10 hpf and/or Ki67 >=3 AND <20% ",  
+            description : ">= 2 AND < 20 mitoses/2 mm squared and/or Ki67 >=3 AND <20% ",  
             id : "00", name : "Grade 2/3, Well differentiated neuroendocrine tumor, intermediate grade (atypical carcinoid)"
           }, {
-             description : "> 20 mitoses/10 hpf and/or Ki67 >20% ",  
+             description : "> 20 mitoses/2 mm squaredand/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
           } ],
           id : "00", name : ""
         } ]
       }, {
-           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 42 hpf and divide by 5", 
+           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 34 hpf and divide by 5", 
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -17921,19 +17941,19 @@ var database = {
         id : "00", name : "Type and Grade",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "< 2mitoses/10 hpf and/or Ki67<3% ", 
+            description : "< 2mitoses/2 mm squared and/or Ki67<3% ", 
             id : "00", name : "Grade 1/3, Well differentiated neuroendocrine tumor, low grade (carcinoid)"
           }, {
-            description : ">= 2 AND < 20 mitoses/10 hpf and/or Ki67 >=3 AND <20% ",  
+            description : ">= 2 AND < 20 mitoses/2 mm squared and/or Ki67 >=3 AND <20% ",  
             id : "00", name : "Grade 2/3, Well differentiated neuroendocrine tumor, intermediate grade (atypical carcinoid)"
           }, {
-             description : "> 20 mitoses/10 hpf and/or Ki67 >20% ",  
+             description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
           } ],
           id : "00", name : ""
         } ]
       }, {
-           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 42 hpf and divide by 5", 
+           description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 34 hpf and divide by 5", 
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
           group : [ {
