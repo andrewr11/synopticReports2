@@ -9587,6 +9587,25 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Extent",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Limited to one site"
+          },{
+            id : "00", name : "More than one site"
+          }, {
+            id : "00", name : "Invades post cricoid, preepiglotic paraglottic or thyroid cartilage"
+          }, {
+            id : "00", name : "Invades through thyroid cartilage or beyond larynx "
+          }, {
+            
+            id : "00", name : "Invades prevertebral space, carotid artery or mediastinum"
+          }  ],
+          id : "00", name : ""
+        } ]
+   
+   
+      },{
         description : "include distance/location of closest margin",
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
@@ -16297,7 +16316,10 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Excision"
-          } ],
+          } , {
+            description : "Biopsy optional",
+            id : "00", name : "Biopsy"
+          }],
           id : "00", name : ""
         } ]
       }, { id : "00", name : "Location",
