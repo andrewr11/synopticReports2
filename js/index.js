@@ -418,6 +418,8 @@ var database = {
             id : "00", name : "Intra-ampullary"
           }, {
             id : "00", name : "Peri-ampullary"
+          }, {
+            id : "00", name : "Mixed Intra- and peri-ampullary"
           } ],
           id : "00", name : ""
         } ]
@@ -16308,7 +16310,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Skin Melanoma",
+      id : "00", name : "Skin Melanoma, excision",
       optional : false,
       organ_group : "Skin",
       properties : [ {
@@ -16316,10 +16318,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Excision"
-          } , {
-            description : "Biopsy optional",
-            id : "00", name : "Biopsy"
-          }],
+          } ],
           id : "00", name : ""
         } ]
       }, { id : "00", name : "Location",
@@ -16733,6 +16732,172 @@ var database = {
         } ]
       } ]
     }, {
+      most_common : false,
+      id : "00", name : "Skin Melanoma, biopsy",
+      optional : true,
+      organ_group : "Skin",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            description : "Biopsy optional",
+            id : "00", name : "Biopsy"
+          }],
+          id : "00", name : ""
+        } ]
+      }, { id : "00", name : "Location",
+       optional_state  : "required", "options" : [ {
+          canSelectMultiple : true,
+          group : [ {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Right"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Left"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Midline"
+          } ],
+          id : "00", name : ""
+        } ]
+      },   {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Melanoma in situ"
+          }, {
+            id : "00", name : "Superficial spreading melanoma"
+          }, {
+            id : "00", name : "Nodular melanoma"
+          }, {
+            id : "00", name : "Lentigo maligna melanoma"
+          }, {
+            id : "00", name : "Acral lentiginous melanoma"
+          }, {
+            id : "00", name : "Desmoplastic melanoma"
+          }, {
+            id : "00", name : "Invasive melanoma, NOS"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor thickness (mm)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+    
+      }, {
+        id : "00", name : "Ulceration",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Microsatellites",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      },  {
+        id : "00", name : "Mitotic rate",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "< 1 per square millimeter"
+          }, {
+            id : "00", name : "Present but < 1 per square millimeter"
+          }, {
+            id : "00", name : "> 1 per square millimeter"
+          }, {
+            description : "# per square millimeter",
+            inputs_required : [ "" ],
+            id : "10", name : ""
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Perineural invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor regression",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Less than or equal to 75% of lesion"
+          }, {
+            id : "00", name : "Greater than 75% of lesion"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      } ]
+    },{
       most_common : false,
       id : "00", name : "Skin Merkel Cell Carcinoma",
       optional : false,
