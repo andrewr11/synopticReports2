@@ -9594,13 +9594,20 @@ var database = {
           group : [ {
             id : "00", name : "Limited to one site"
           },{
-            id : "00", name : "More than one site"
+            id : "00", name : "Involves more than one site"
           }, {
-            id : "00", name : "Invades post cricoid, preepiglotic paraglottic or thyroid cartilage"
+            id : "00", name : "Invades post cricoid cartilage"
           }, {
-            id : "00", name : "Invades through thyroid cartilage or beyond larynx "
+            id : "00", name : "Invades pre-epiglotic cartilage"
           }, {
-            
+            id : "00", name : "Invades paraglottic cartilage"
+          }, {
+            id : "00", name : "Invades into but not through thyroid cartilage"
+          }, {
+            id : "00", name : "Invades through thyroid cartilage "
+          }, {
+            id : "00", name : "Invades beyond larynx "
+          }, {          
             id : "00", name : "Invades prevertebral space, carotid artery or mediastinum"
           }  ],
           id : "00", name : ""
