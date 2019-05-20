@@ -9592,9 +9592,19 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Limited to one site"
+            id : "00", name : "Limited to supraglottis, mobile vocal cords"
           },{
-            id : "00", name : "Involves more than one site"
+            id : "00", name : "Limited to one vocal cord, mobile vocal cords "
+          }, {
+            id : "00", name : "Limited to subglottis, mobile vocal cords"
+          },{
+            id : "00", name : "Involves supraglottis and glottis, mobile vocal cords"
+          }, {
+            id : "00", name : "Involves both vocal cord, mobile vocal cords "
+          }, {
+            id : "00", name : "Involves subglottis and glottis, mobile vocal cords"
+          }, {
+            id : "00", name : "Impaired/fixed vocal cords"
           }, {
             id : "00", name : "Invades post cricoid cartilage"
           }, {
