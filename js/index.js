@@ -6187,6 +6187,10 @@ var database = {
           }, {
             description : "WT1-, p53 + or completely -, ER variable, Pax8+, p16+, HPV-",
             id : "00", name : "Serous carcinoma"
+          },{
+            description : "list types",
+            inputs_required : [ "" ],
+            id : "10", name : "Mixed cell type"
           }, {
             id : "00", name : "Small cell carcinoma"
           }, {
