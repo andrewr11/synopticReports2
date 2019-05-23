@@ -6613,7 +6613,49 @@ var database = {
           }],
           id : "00", name : ""
         } ]
-         }, {
+         },{
+          description : "Serous carcinoma only ",
+         id : "00", name : "Her2Neu by IHC",
+        optional_state  : "required", "options" : [ {
+           group : [ {
+             id : "00", name : "Positive (3+)"
+           }, {
+             id : "00", name : "Negative (0-1+)"
+           }, {
+             id : "00", name : "Equivocal (2+)"
+           }, {
+             id : "00", name : "Pending"
+           }, {
+             id : "00", name : "Not applicable"
+           }, {
+             description : "case #",
+             inputs_required : [ "" ],
+             id : "10", name : "See case "
+           } ],
+           id : "00", name : ""
+         } ]
+       }, {
+           description : "Serous carcinoma only",
+         id : "00", name : "Her2Neu by FISH",
+        optional_state  : "required", "options" : [ {
+           group : [ {
+             id : "00", name : "Positive, "
+           }, {
+             id : "00", name : "Negative"
+           }, {
+             id : "00", name : "Equivocal"
+           }, {
+             id : "00", name : "Reflex pending if appropriate"
+           }, {
+             id : "00", name : "Not applicable"
+           }, {
+             description : "case #",
+             inputs_required : [ "" ],
+             id : "10", name : "See case "
+           } ],
+           id : "00", name : ""
+         } ]
+       }, {
         id : "00", name : "Ancillary studies ordered",
        optional_state  : "required", "options" : [ {
           group : [ {
