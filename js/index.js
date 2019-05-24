@@ -2477,7 +2477,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "repeat if original negative or s/p neoadjuvant therapy regardless of original",
+         description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -2502,7 +2502,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "repeat if original negative or s/p neoadjuvant therapy regardless of original",
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
         id : "00", name : "Progesterone Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -3144,7 +3144,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "repeat if original negative or s/p neoadjuvant therapy regardless of original",
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -3169,7 +3169,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "repeat if original negative or s/p neoadjuvant therapy regardless of original",
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
         id : "00", name : "Progesterone Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -3194,7 +3194,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "repeat if original triple negative or s/p neoadjuvant therapy regardless of original",
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
         id : "00", name : "Her2Neu by IHC",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -3215,7 +3215,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-          description : "repeat if original triple negative or s/p neoadjuvant therapy regardless of original",
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
         id : "00", name : "Her2Neu by FISH",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -4122,6 +4122,9 @@ var database = {
           }, {
             description : "IMPOX: chromogranin +, synaptophysin +",
             id : "00", name : "Pituitary adenoma"
+          }, {
+            description : "IMPOX: Reticulin +, Inhibin+, EMA -, PAX8 -, s100 -/wk+, GFAP -/wk +",
+            id : "00", name : "Hemangioblastoma"
           }, {
             description : "Extended list",
             inputs_required : [ { name: "ASTROCYTIC TUMORS"} ,{name:  "Pilocytic astrocytoma (WHO grade I)"} ,{name:  "Pilomyxoid astrocytoma (WHO grade II) "} ,{name:  "Subependymal giant cell astrocytoma (WHO grade I)"} ,{name:  "Pleomorphic xanthoastrocytoma (WHO grade II)"} ,{name:  "Pleomorphic xanthoastrocytoma with anaplastic features (WHO grade not assigned) "} ,{name:  "Diffuse astrocytoma (WHO grade II)"} ,{name:  "Fibrillary astrocytoma (WHO grade II)"} ,{name:  "Protoplasmic astrocytoma (WHO grade II)"} ,{name:  "Gemistocytic astrocytoma (WHO grade II)"} ,{name:  "Anaplastic astrocytoma (WHO grade III)"} ,{name:  "Glioblastoma (WHO grade IV)"} ,{name:  "Giant cell glioblastoma (WHO grade IV) "} ,{name:  "Gliosarcoma (WHO grade IV)"} ,{name:  "Gliomatosis cerebri "} ,{name:  "Astrocytoma} ,{name:  not otherwise characterized "} ,{name:  ""} ,{name:  "OLIGODENDROGLIAL TUMORS"} ,{name:  "Oligodendroglioma (WHO grade II)"} ,{name:  "Anaplastic oligodendroglioma (WHO grade III)"} ,{name:  ""} ,{name:  "OLIGOASTROCYTIC TUMORS"} ,{name:  "Oligoastrocytoma (WHO grade II)"} ,{name:  "Anaplastic oligoastrocytoma (WHO grade III)"} ,{name:  ""} ,{name:  "EPENDYMAL TUMORS"} ,{name:  "Subependymoma (WHO grade I)"} ,{name:  "Myxopapillary ependymoma (WHO grade I)"} ,{name:  "Ependymoma (WHO grade II)"} ,{name:  "Cellular ependymoma (WHO grade II)"} ,{name:  "Papillary ependymoma (WHO grade II)"} ,{name:  "Clear cell ependymoma (WHO grade II)"} ,{name:  "Tanycytic ependymoma (WHO grade II)"} ,{name:  "Anaplastic ependymoma (WHO grade III)"} ,{name:  ""} ,{name:  "CHOROID PLEXUS TUMORS"} ,{name:  "Choroid plexus papilloma (WHO grade I)"} ,{name:  "Atypical choroid plexus papilloma (WHO grade II)"} ,{name:  "Choroid plexus carcinoma (WHO grade III)"} ,{name:  ""} ,{name:  "OTHER NEUROEPITHELIAL TUMORS"} ,{name:  "Astroblastoma (WHO grade not assigned)"} ,{name:  "Chordoid glioma of the third ventricle (WHO grade II)"} ,{name:  "Angiocentric glioma (WHO grade I)"} ,{name:  ""} ,{name:  "NEURONAL AND MIXED NEURONAL-GLIAL TUMORS"} ,{name:  "Dysplastic gangliocytoma of cerebellum (Lhermitte-Duclos) (WHO grade I)"} ,{name:  "Desmoplastic infantile astrocytoma/ganglioglioma (WHO grade I)"} ,{name:  "Dysembryoplastic neuroepithelial tumor (WHO grade I)"} ,{name:  "Gangliocytoma (WHO grade I)"} ,{name:  "Ganglioglioma (WHO grade I)"} ,{name:  "Anaplastic ganglioglioma (WHO grade III)"} ,{name:  "Central neurocytoma (WHO grade II)"} ,{name:  "Extraventricular neurocytoma (WHO grade II)"} ,{name:  "Cerebellar liponeurocytoma (WHO grade II)"} ,{name:  "Papillary glioneuronal tumor (PGNT) (WHO grade I)"} ,{name:  "Rosette-forming glioneuronal tumor of the fourth ventricle (RGNT) (WHO grade I)"} ,{name:  "Paraganglioma of the spinal cord (WHO grade I)"} ,{name:  ""} ,{name:  "PINEAL TUMORS"} ,{name:  "Pineocytoma (WHO grade I)"} ,{name:  "Pineal parenchymal tumor of intermediate differentiation (WHO II III)"} ,{name:  "Pineoblastoma (WHO grade IV)"} ,{name:  "Papillary tumor of the pineal region (WHO grade II-III)"} ,{name:  ""} ,{name:  "EMBRYONAL TUMORS"} ,{name:  "Medulloblastoma} ,{name:  not otherwise characterized (WHO grade IV)"} ,{name:  "Desmoplastic/nodular medulloblastoma (WHO grade IV)"} ,{name:  "Medulloblastoma with extensive nodularity (WHO grade IV)"} ,{name:  "Anaplastic medulloblastoma (WHO grade IV)"} ,{name:  "Large cell medulloblastoma (WHO grade IV)"} ,{name:  "Central nervous system (CNS) primitive neuroectodermal tumor (PNET) (WHO grade IV)"} ,{name:  "Medulloepithelioma (WHO grade IV)"} ,{name:  "Neuroblastoma (WHO grade IV)"} ,{name:  "Ganglioneuroblastoma (WHO grade IV)"} ,{name:  "Ependymoblastoma (WHO grade IV)"} ,{name:  "Atypical teratoid/rhabdoid tumor (WHO grade IV)"} ,{name:  ""} ,{name:  "TUMORS OF NERVES"} ,{name:  "Schwannoma (WHO grade I)"} ,{name:  "Cellular schwannoma (WHO grade I)"} ,{name:  "Plexiform schwannoma(WHO grade I)"} ,{name:  "Melanotic schwannoma (WHO grade I)"} ,{name:  "Neurofibroma (WHO grade I"} ,{name:  "Plexiform neurofibroma (WHO grade I) "} ,{name:  "Perineurioma (WHO grade I)"} ,{name:  "Intraneural perineurioma (WHO grade I)"} ,{name:  "Soft tissue perineurioma (WHO grade I)"} ,{name:  "Malignant perineurioma (WHO grade III)"} ,{name:  "Ganglioneuroma (WHO grade I) "} ,{name:  "Malignant peripheral nerve sheath tumor (MPNST) (WHO grade II-IV) "} ,{name:  "Epithelioid MPNST (WHO grade II-IV)"} ,{name:  "MPNST with divergent mesenchymal and/or epithelial differentiation (WHO grade II-IV)"} ,{name:  ""} ,{name:  "MENINGEAL TUMORS"} ,{name:  "Meningioma (WHO grade I)"} ,{name:  "Meningothelial meningioma (WHO grade I)"} ,{name:  "Fibrous meningioma (fibroblastic) (WHO grade I)"} ,{name:  "Transitional meningioma (mixed) (WHO grade I)"} ,{name:  "Psammomatous meningioma (WHO grade I)"} ,{name:  "Angiomatous meningioma (WHO grade I)"} ,{name:  "Microcystic meningioma (WHO grade I)"} ,{name:  "Secretory meningioma (WHO grade I)"} ,{name:  "Lymphoplasmacyte-rich (lymphoplasmacytic) meningioma (WHO grade I)"} ,{name:  "Metaplastic meningioma (WHO grade I)"} ,{name:  "Atypical meningioma (WHO grade II)"} ,{name:  "Clear cell meningioma (WHO grade II)"} ,{name:  "Chordoid meningioma (WHO grade II)"} ,{name:  "Anaplastic meningioma (WHO grade III)"} ,{name:  "Papillary meningioma (WHO grade III)"} ,{name:  "Rhabdoid meningioma (WHO grade III)"} ,{name:  ""} ,{name:  "MESENCHYMAL TUMORS"} ,{name:  "Lipoma"} ,{name:  "Angiolipoma"} ,{name:  "Hibernoma"} ,{name:  "Liposarcoma (intracranial)"} ,{name:  "Solitary fibrous tumor"} ,{name:  "Fibrosarcoma "} ,{name:  "Malignant fibrous histiocytoma"} ,{name:  "Leiomyoma"} ,{name:  "Leiomyosarcoma"} ,{name:  "Rhabdomyoma "} ,{name:  "Rhabdomyosarcoma"} ,{name:  "Chondroma"} ,{name:  "Chondrosarcoma"} ,{name:  "Osteoma"} ,{name:  "Osteosarcoma "} ,{name:  "Osteochondroma "} ,{name:  "Hemangioma "} ,{name:  "Epithelioid hemangioendothelioma "} ,{name:  "Hemangiopericytoma "} ,{name:  "Anaplastic hemangiopericytoma  "} ,{name:  "Angiosarcoma"} ,{name:  "Kaposi sarcoma"} ,{name:  "Chordoma"} ,{name:  "Mesenchymal} ,{name:  nonmeningothelial tumor"} ,{name:  "Sarcoma} ,{name:  primary CNS "} ,{name:  ""} ,{name:  "MELANOTIC TUMORS"} ,{name:  "Diffuse melanocytosis"} ,{name:  "Melanocytoma"} ,{name:  "Malignant melanoma"} ,{name:  "Meningeal melanomatosis"} ,{name:  ""} ,{name:  "TUMORS OF UNCERTAIN HISTOGENESIS"} ,{name:  "Hemangioblastoma (WHO grade I)"} ,{name:  ""} ,{name:  "LYMPHOMA AND HEMATOPOIETIC TUMORS"} ,{name:  "Malignant lymphoma"} ,{name:  "Plasmacytoma"} ,{name:  "Granulocytic sarcoma"} ,{name:  "Hematopoietic neoplasm} ,{name:  other "} ,{name:  ""} ,{name:  "GERM CELL TUMORS"} ,{name:  "Germinoma"} ,{name:  "Embryonal carcinoma"} ,{name:  "Yolk sac tumor"} ,{name:  "Choriocarcinoma"} ,{name:  "Teratoma} ,{name:  mature"} ,{name:  "Teratoma} ,{name:  immature"} ,{name:  "Teratoma with malignant transformation"} ,{name:  "Malignant mixed germ cell tumor "} ,{name:  ""} ,{name:  "SELLAR TUMORS"} ,{name:  "Craniopharyngioma (WHO grade I)"} ,{name:  "Craniopharyngioma} ,{name:  adamantinomatous (WHO grade I)"} ,{name:  "Craniopharyngioma} ,{name:  papillary (WHO grade I)"} ,{name:  "Granular cell tumor (WHO grade I)"} ,{name:  "Pituicytoma (WHO grade I)"} ,{name:  "Spindle cell oncocytoma (WHO grade I)"} ,{name:  "Pituitary adenoma "} ,{name:  "Pituitary carcinoma"} ,{name:  "Pituitary hyperplasia"} ,{name:  ""} ,{name:  "OTHER"} ,{name:  "Malignant neoplasm} ,{name:  type cannot be determined"} ,{name:  "Pediatric low grade glioma (pLGG) not otherwise specified (NOS) (Grade I/II)"} ],
