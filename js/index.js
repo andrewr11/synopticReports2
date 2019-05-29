@@ -4123,7 +4123,7 @@ var database = {
             description : "IMPOX: chromogranin +, synaptophysin +",
             id : "00", name : "Pituitary adenoma"
           }, {
-            description : "IMPOX: Reticulin +, Inhibin+, EMA -, PAX8 -, s100 -/wk+, GFAP -/wk +",
+            description : "IMPOX: Reticulin +, Inhibin+, D2-40 +/-, EMA -, PAX8 -, s100 -/wk+, GFAP -/wk +",
             id : "00", name : "Hemangioblastoma"
           }, {
             description : "Extended list",
@@ -13456,7 +13456,7 @@ var database = {
           }, {
             id : "00", name : "Mixed acinar-neuroendocrine-ductal carcinoma"
           }, {
-            description : "nuclear B-catenin +, cyto E-cad -, PR +, CD10+, Chr -, Syn +/-",
+            description : "nuclear B-catenin +, cyto E-cad -, PR +, CD10+, PAX8 - (islet cell only PAX8 +),Chr -, Syn +/-",
             id : "00", name : "Solid-pseudopapillary neoplasm "
           }, {
             id : "00", name : "Hepatoid carcinoma"
