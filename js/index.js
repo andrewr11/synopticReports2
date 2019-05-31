@@ -18724,6 +18724,8 @@ var database = {
           }, {
             id : "00", name : "Papillary carcinoma, cystic, predominantly encapsulated"
           }, {
+            id : "00", name : "Papillary carcinoma, tall cell variant"
+          }, {
             id : "00", name : "Papillary carcinoma with tall cell features"
           }, {
             id : "00", name : "Papillary carcinoma, follicular variant"
