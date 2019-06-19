@@ -13456,7 +13456,7 @@ var database = {
           }, {
             id : "00", name : "Mixed acinar-neuroendocrine-ductal carcinoma"
           }, {
-            description : "nuclear B-catenin +, cyto E-cad -, PR +, CD10+, PAX8 - (islet cell only PAX8 +),Chr -, Syn +/-",
+            description : "nuclear B-catenin +, cyto E-cad -, PR +, Cyclin D1+, CD10+, PAX8 - (islet cell only PAX8 +),Chr -, Syn +/-",
             id : "00", name : "Solid-pseudopapillary neoplasm "
           }, {
             id : "00", name : "Hepatoid carcinoma"
