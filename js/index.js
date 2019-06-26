@@ -18611,7 +18611,7 @@ var database = {
             description : "PURE SEMINOMA ONLY: > 3cm AND limited to testis and rete testis AND no LVI",
             id : "00", name : "T1b"
           }, {
-            description : "(limited to testis and rete testis AND LVI) OR (invades hilar soft tissue, epididymis, or external surface of tunica albuginea)",
+            description : "(limited to testis and rete testis AND LVI) OR (invades hilar soft tissue, epididymis, or extends to the outer surface of the tunica albuginea and involves tunica vaginalis)",
             id : "00", name : "T2"
           }, {
             description : "Invades spermatic cord",
