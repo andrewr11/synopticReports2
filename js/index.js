@@ -984,7 +984,11 @@ var database = {
             id : "00", name : "Not performed"
           }, {
             id : "00", name : "Pending"
-          } ],
+          } , {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -1003,7 +1007,11 @@ var database = {
             id : "00", name : "Not performed"
           }, {
             id : "00", name : "Pending"
-          } ],
+          } , {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -1024,6 +1032,10 @@ var database = {
             id : "00", name : "Pending"
           } ],
           id : "00", name : ""
+        }, {
+          description : "case #",
+          inputs_required : [ "" ],
+          id : "10", name : "See case "
         } ]
         }]
     }, {
@@ -9202,7 +9214,7 @@ var database = {
              description : "Pax8+, CK7 +, GATA3+",
             id : "00", name : "Oncocytic papillary renal cell carcinoma"
           }, {
-             description : "Hales+, CK7+, CK20+, PAX8+, CD117+, CD10-/focal+, oncocytoma: Hales-, CK7 -/focal+, CK20 -/focal+, PAX8-, CD117+, CD10-/focal+",
+             description : "Hales+, CK7+, CK20+, PAX8+, CD117+, CD10-/focal+, oncocytoma: Hales-, CK7 -/focal+, CK20 -/focal+, PAX8-/+, CD117+, CD10-/focal+",
             id : "00", name : "Chromophobe renal cell carcinoma"
           }, {
              description : "Pax8+, CK7+, INI+, OCT3/4-, FH+, 2SC-",
@@ -14810,6 +14822,10 @@ var database = {
             id : "00", name : "Not performed"
           }, {
             id : "00", name : "Pending"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -14828,7 +14844,11 @@ var database = {
             id : "00", name : "Not performed"
           }, {
             id : "00", name : "Pending"
-          } ],
+          } , {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -14846,6 +14866,10 @@ var database = {
             id : "00", name : "Not performed"
           }, {
             id : "00", name : "Pending"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -15160,6 +15184,20 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Positive "
+          }, {
+            id : "00", name : "Negative "
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable "
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
           }],
           id : "00", name : ""
         } ]
@@ -15178,6 +15216,10 @@ var database = {
             id : "00", name : "Not performed"
           }, {
             id : "00", name : "Pending"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
@@ -15196,6 +15238,10 @@ var database = {
             id : "00", name : "Not performed"
           }, {
             id : "00", name : "Pending"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
           } ],
           id : "00", name : ""
         } ]
