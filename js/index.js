@@ -4507,7 +4507,7 @@ var database = {
             description : "Extends to pelvic wall OR hydronephrosis OR nonfunctioning kidney ",
             id : "00", name : "T3b"
           }, {
-            description : "Invades mucosa of bladder, rectum or beyond true pelvis",
+            description : "Invades mucosa of bladder, rectum or beyond true pelvis, omental metastases are T4",
             id : "00", name : "T4"
           } ],
           id : "00", name : ""
@@ -4587,7 +4587,7 @@ var database = {
             description : "Spread to adjacent pelvic organs, ie, tumor invading the mucosa of the bladder and/or rectum and/or extending beyond the true pelvis (bullous edema is not sufficient)",
             id : "00", name : "FIGO IVA"
           }, {
-            description : "Spread to distant organs",
+            description : "Spread to distant organs, including omental metastases",
             id : "00", name : "FIGO IVB"
           }, {
             description : "",
