@@ -9429,7 +9429,7 @@ var database = {
             description : "> 10cm  limited to kidney",
             id : "00", name : "T2b"
           }, {
-            description : "perinephric invasion OR renal sinus invasion OR renal vein or its segmental [muscle containing] branches invasion",
+            description : "perinephric invasion OR renal sinus invasion OR pelvicalyceal system invasion OR renal vein or its segmental [muscle containing] branches invasion",
             id : "00", name : "T3a"
           }, {
             description : "Invades vena cava below diaphragm",
