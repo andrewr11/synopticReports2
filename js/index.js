@@ -8009,7 +8009,10 @@ var database = {
             id : "00", name : "Insufficient data"
           }, {
             id : "00", name : "Metastatic"
-          } ],
+          }, {
+            description : "other site",
+            id : "00", name : "Not applicable"
+          }  ],
           id : "00", name : ""
         } ]
       }, {
@@ -8131,7 +8134,7 @@ var database = {
         id : "00", name : "KIT(CD117) Immunohistochemistry",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Positive, "
+            id : "00", name : "Positive"
           }, {
             id : "00", name : "Negative"
           }, {
@@ -8143,7 +8146,7 @@ var database = {
         id : "00", name : "DOG1 Immunohistochemistry",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Positive, "
+            id : "00", name : "Positive"
           }, {
             id : "00", name : "Negative"
           }, {
