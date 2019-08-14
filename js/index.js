@@ -10179,10 +10179,10 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "50", name : "Lymph nodes, # total",
+        id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -10199,7 +10199,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Positive node laterality",
+        id : "50", name : "Positive node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -10213,7 +10213,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Extranodal extension",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -19339,8 +19339,10 @@ var database = {
           }, {
             id : "00", name : "Choriocarcinoma "
           }, {
+            description : "GATA3+, hPl+, p63-/focal, inhibin -/focal",
             id : "00", name : "Placental site trophoblastic tumor "
           }, {
+            description : "GATA3+, hPl-/focal, p63+, inhibin +",
             id : "00", name : "Epithelioid trophoblastic tumor "
           } ],
           id : "00", name : ""
