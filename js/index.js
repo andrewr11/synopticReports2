@@ -16666,6 +16666,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "melanoma: p16-, hmb45+/- p53+, nevus p16+, hmb45 -/+, p53-",
         id : "50", name : "Lymph nodes, # involved",
        optional_state  : "required", "options" : [ {
           group : [ {
