@@ -9330,11 +9330,11 @@ var database = {
           }, {
             id : "00", name : "Invades renal sinus"
           }, {
+            id : "00", name : "Invades pelvicaliceal system"
+          }, {
             id : "64", name : "Invades beyond Gerota's fascia"
           }, {
             id : "00", name : "Invades major veins"
-          }, {
-            id : "00", name : "Invades pelvicaliceal system"
           }, {
             id : "64", name : "Direct extension into adrenal (T4)"
           }, {
