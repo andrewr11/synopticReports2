@@ -4300,9 +4300,23 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "width in mm of tumor",
+        description : "width (circumferential) in mm of tumor",
         id : "00", name : "Size (width) of tumor",
-       optional_state  : "required", "options" : [ {
+        optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Can not be determined"
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "length (longitudinal) in mm of tumor",
+        id : "00", name : "Size (length) of tumor",
+        optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Can not be determined"
+          } ],
+           
           id : "00", name : ""
         } ]
       }, {
@@ -4338,8 +4352,8 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest margin, ectocervical and radial",
-        id : "00", name : "Margins, invasive tumor",
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, ectocervical",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -4348,15 +4362,23 @@ var database = {
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
           }, {
             id : "00", name : "Not applicable"
           }],
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest margin, ectocervical",
-        id : "00", name : "Margins, HSIL",
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, endocervical (trachelectomy)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -4365,7 +4387,65 @@ var database = {
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
+          }, {
+            id : "00", name : "Not applicable"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, vaginal cuff",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
+          }, {
+            id : "00", name : "Not applicable"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, radial/deep",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
           }, {
             id : "00", name : "Not applicable"
           }],
@@ -4704,11 +4784,24 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      },{
+        description : "width (circumferential) in mm of tumor",
+        id : "00", name : "Size (width) of tumor",
+        optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Can not be determined"
+          } ],
+           
+          id : "00", name : ""
+        } ]
       }, {
-        description : "depth and width in mm",
-        id : "00", name : "Cervical stromal invasion",
-       optional_state  : "required", "options" : [ {
-          description : "depth and width in mm",
+        description : "length (longitudinal) in mm of tumor",
+        id : "00", name : "Size (length) of tumor",
+        optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Can not be determined"
+          } ],
+           
           id : "00", name : ""
         } ]
       }, {
@@ -8139,6 +8232,8 @@ var database = {
             id : "00", name : "Negative"
           }, {
             id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -8151,6 +8246,36 @@ var database = {
             id : "00", name : "Negative"
           }, {
             id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      } , {
+        id : "00", name : "SDHB Immunohistochemistry",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive"
+          }, {
+            id : "00", name : "Negative"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      } , {
+        id : "00", name : "SDHA Immunohistochemistry",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive"
+          }, {
+            id : "00", name : "Negative"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -10388,6 +10513,23 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "multiple unrelated differnt types of tumors present",
+        id : "00", name : "Synchronous tumors",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "# of tumors",
+            inputs_required : [ "" ],
+            id : "10", name : "Present"
+          }, {
+            id : "00", name : "Absent"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Can not be determined"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Tumor size, total",
        optional_state  : "required", "options" : [ {
           id : "00", name : ""
@@ -10405,7 +10547,13 @@ var database = {
           }, {
             id : "00", name : "Multiple foci, same lobe"
           }, {
-            id : "00", name : "Multiple foci, different lobes"
+            id : "00", name : "Multiple foci, different ipsilateral lobes"
+          }, {
+            id : "00", name : "Multiple foci, different contralateral lobes"
+          }, {
+            id : "00", name : "Multifocal ground glass/lepidic nodules"
+          }, {
+            id : "00", name : "Pneumonic type adenocarcinoma"
           } ],
           id : "00", name : ""
         } ]
@@ -10523,21 +10671,79 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+     
       }, {
-        description : "include distance/location of closest margin bronchial, vascular parenchymal",
-        id : "00", name : "Margins",
+        id : "00", name : "Margins, bronchial",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+      
+            id : "00", name : "Free"
+          }, {     
+            id : "00", name : "Positive"
+          }, {          
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Margins, vascular",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+      
+            id : "00", name : "Free"
+          }, {
+           
+            id : "00", name : "Positive"
+          }, {
+           
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Margins, parenchymal",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+      
+            id : "00", name : "Free"
+          }, {          
+            id : "00", name : "Positive"
+          }, {         
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Margins, other",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+      
+            id : "00", name : "Free"
+          }, {       
+            id : "00", name : "Positive"
+          }, { 
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of closest margin bronchial, vascular parenchymal",
+        id : "00", name : "Closest margin, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of closest margin bronchial, parenchymal",
+        id : "00", name : "Closest margin, in situ tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ] 
       }, {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
@@ -15841,7 +16047,8 @@ var database = {
           id : "00", name : ""
         } ]
       },  {
-        id : "00", name : "Percent of tissue invovled",
+        description : "For TURPs, include % of tissue, # positive chips, and total chips(if possible), for enucleation include largest diameter ",
+        id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           id : "00", name : ""
         } ]
@@ -16517,7 +16724,9 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Present"
+            description : "extent",
+            inputs_required : [ "" ],
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Equivocal"
           }, {
@@ -16540,7 +16749,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest margin",
+        description : "include distance/location of closest margin, both in situ and invasive",
         id : "00", name : "Margins, peripheral",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -16690,6 +16899,22 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "50", name : "Size of largest metastasis in sentinel node",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
+        }, {
+          id : "50", name : "Size of largest metastasis in non-sentinel node",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "Not applicable"
+            } ],
+            id : "00", name : ""
+            }]
       }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
@@ -16918,7 +17143,9 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Present"
+            description : "extent",
+            inputs_required : [ "" ],
+            id : "10", name : "Present"
           }, {
             id : "00", name : "Equivocal"
           }, {
@@ -19518,6 +19745,8 @@ var database = {
           }, {
             id : "00", name : "Ureter and renal pelvis"
           }, {
+            id : "00", name : "Kidney"
+          }, {
             id : "00", name : "Not specified"
           } ],
           id : "00", name : ""
@@ -19660,6 +19889,14 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "50", name : "Size of largest metastasis",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
       }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
@@ -21500,33 +21737,45 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "peripheral, deep",
-        id : "00", name : "Margins, invasive tumor",
+        description : "include distance/location of invasive CA and HSIL",
+        id : "00", name : "Margins, peripheral",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free "
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
           }, {
             id : "00", name : "Not applicable"
-          } ],
+          }],
           id : "00", name : ""
         } ]
       }, {
-        description : "peripheral",
-        id : "00", name : "Margins, HSIL",
+        description : "include distance/location of invasive CA and HSIL",
+        id : "00", name : "Margins, radial/deep",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Free "
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
           }, {
             id : "00", name : "Not applicable"
-          } ],
+          }],
           id : "00", name : ""
         } ]
       }, {
