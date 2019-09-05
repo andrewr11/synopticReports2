@@ -4376,31 +4376,7 @@ var database = {
           }],
           id : "00", name : ""
         } ]
-      }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, endocervical (trachelectomy)",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
-          }, {
-            id : "00", name : "Not applicable"
-          }],
-          id : "00", name : ""
-        } ]
+      
       }, {
         description : "include distance/location of invasive CA, AIS and HSIL",
         id : "00", name : "Margins, vaginal cuff",
@@ -4836,6 +4812,475 @@ var database = {
           id : "00", name : ""
         } ]
       } ]
+    }, {
+      most_common : false,
+      id : "00", name : "Cervix, Trachelectomy",
+      optional : false,
+      organ_group : "Gynecologic",
+      properties : [  {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Cervix, Trachelectomy"
+          }, ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Squamous cell carcinoma"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, keratinizing"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, basaloid"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, verrucous"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, warty"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, papillary"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, lymphoepithelioma-like"
+          }, {
+            id : "00", name : "Squamous cell carcinoma, squamotransitional"
+          }, {
+            description : "cervical HPV ISH +, p16+, CEA+, p53 wild type, ER-/wk, PR- Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER+, PR+ Vim +/wk",
+            id : "00", name : "Endocervical adenocarcinoma"
+          }, {
+            id : "00", name : "Endocervical adenocarcinoma, usual type"
+          }, {
+            id : "00", name : "Mucinous carcinoma, NOS"
+          }, {
+            id : "00", name : "Mucinous carcinoma, intestinal type"
+          }, {
+            id : "00", name : "Mucinous carcinoma, signet-ring cell type"
+          }, {
+            id : "00", name : "Mucinous carcinoma, gastric type"
+          }, {
+            id : "00", name : "Villoglandular carcinoma"
+          }, {
+            id : "00", name : "Endometrioid carcinoma"
+          }, {
+            id : "00", name : "Clear cell carcinoma"
+          }, {
+            id : "00", name : "Serous carcinoma"
+          }, {
+            id : "00", name : "Mesonephric carcinoma"
+          }, {
+            id : "00", name : "Adenocarcinoma admixed with neuroendocrine carcinoma"
+          }, {
+            id : "00", name : "Adenosquamous carcinoma"
+          }, {
+            id : "00", name : "Adenosquamous carcinoma, glassy cell variant"
+          }, {
+            id : "00", name : "Adenoid cystic carcinoma"
+          }, {
+            id : "00", name : "Adenoid basal carcinoma"
+          }, {
+            id : "00", name : "Small cell carcinoma"
+          }, {
+            id : "00", name : "Large cell neuroendocrine carcinoma"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Grade",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Grade 1/3, Well differentiated"
+          }, {
+            id : "00", name : "Grade 2/3, Moderately differentiated"
+          }, {
+            id : "00", name : "Grade 3/3, Poorly differentiated"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "width (circumferential) in mm of tumor",
+        id : "00", name : "Size (width) of tumor",
+        optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Can not be determined"
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "length (longitudinal) in mm of tumor",
+        id : "00", name : "Size (length) of tumor",
+        optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Can not be determined"
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "depth in mm of tumor",
+        id : "00", name : "Depth of cervical stromal invasion",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "Thickness of cervix",
+        id : "00", name : "Cervical thickness",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      },{
+        id : "00", name : "Other tissue(s) involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          },{
+            id : "00", name : "Not applicable"
+          },{
+            id : "00", name : "Right parametrium"
+          }, {
+            id : "00", name : "Left parametrium"
+          }, {
+            id : "00", name : "Bilateral parametrium"
+          }, {
+             description : "specify, incluidng vagina, ovaries, fallopian tubes, pelvic side wall, bladder bowel and omentum",
+              inputs_required : [ "" ],
+            id : "10", name : "Other organs"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, ectocervical",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
+          }, {
+            id : "00", name : "Not applicable"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, endocervical",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
+          }, {
+            id : "00", name : "Not applicable"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, vaginal cuff",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
+          }, {
+            id : "00", name : "Not applicable"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of invasive CA, AIS and HSIL",
+        id : "00", name : "Margins, radial/deep",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, AIS"
+          }, {
+            id : "00", name : "Not applicable"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+       
+        id : "00", name : "Lymph nodes, # sentinel",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "includes pelvic, parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, presacral and para-aortic ",
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+         description : "do not include ITCs",
+        id : "50", name : "Lymph nodes, # involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
+          }, {
+            description : "# positive, specify location",
+            inputs_required : [ "" ],
+            id : "10", name : ""
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            description : "# positive, specify location",
+            inputs_required : [ "" ],
+            id : "10", name : ""
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "01", name : "Stage (AJCC 8)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "no prefix",
+            id : "00", name : ""
+          }, {
+            description : "pathologic",
+            id : "00", name : "AJCC p"
+          }, {
+            description : "multiple foci of invasive carcinoma",
+            id : "00", name : "AJCC m"
+          }, {
+            description : "recurrent",
+            id : "00", name : "AJCC r"
+          }, {
+            description : "post-treatment",
+            id : "00", name : "AJCC y"
+          }, {
+            id : "00", name : "AJCC mp"
+          }, {
+            id : "00", name : "AJCC rp"
+          }, {
+            id : "00", name : "AJCC yp"
+          }, {
+            id : "00", name : "AJCC mrp"
+          }, {
+            id : "00", name : "AJCC myp"
+          }, {
+            id : "00", name : "AJCC ryp"
+          }, {
+            id : "00", name : "AJCC mryp"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "02", name : "T",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "cannot be assessed",
+            id : "00", name : "TX"
+          }, {
+            description : "<= 3 mm deep AND <= 7mm wide",
+            id : "00", name : "T1a1"
+          }, {
+            description : ">3mm AND <=5mm deep, AND <=7mm wide",
+            id : "00", name : "T1a2"
+          }, {
+            description : "Clincially visible lesion <= 4 cm",
+            id : "00", name : "T1b1"
+          }, {
+            description : "Clinically visible lesion > 4cm",
+            id : "00", name : "T1b2"
+          }, {
+            description : "Clinically visible lesion <= 4cm, invades beyond uterus",
+            id : "00", name : "T2a1"
+          }, {
+            description : "Clinically visible lesion > 4cm, invades beyond uterus",
+            id : "00", name : "T2a2"
+          }, {
+            description : "Parametrial invasion",
+            id : "00", name : "T2b"
+          }, {
+            description : "Extends to lower third of vagina ",
+            id : "00", name : "T3a"
+          }, {
+            description : "Extends to pelvic wall OR hydronephrosis OR nonfunctioning kidney ",
+            id : "00", name : "T3b"
+          }, {
+            description : "Invades mucosa of bladder, rectum or beyond true pelvis, omental metastases are T4",
+            id : "00", name : "T4"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "03", name : "N",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Regional lymph nodes cannot be assessed",
+            id : "00", name : "NX"
+          }, {
+            description : "No regional lymph node metastasis",
+            id : "00", name : "N0"
+          }, {
+            description : "Isolated tumor cells, <=0.2mm",
+            id : "00", name : "N0(i+)"
+          }, {
+            description : "positive nodes",
+            id : "00", name : "N1"
+          } ],
+          id : "00", name : "Category (pN)"
+        }]
+        }, {
+          id : "04", name : "M",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "metastases",
+            id : "00", name : "M1"
+          }, {
+            id : "00", name : "M (not applicable)"
+          }, {
+            id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+   
+    }, {
+        id : "00", name : "Stage FIGO (2018)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Limited to cervix, Measured invasion of stroma ≤3 mm in depth and ≤7 mm width",
+            id : "00", name : "FIGO IA1"
+          }, {
+            description : "Limited to cervix, Measured invasion of stroma >3 mm and <5 mm in depth and ≤7 mm width",
+            id : "00", name : "FIGO IA2"
+          }, {
+            description : "Limited to cervix, invasion >= 5mm in depth and < 2cm in greatest dimension",
+            id : "00", name : "FIGO IB1"
+          }, {
+            description : "Limited to cervix, invasive carcinoma >= 2cm and < 4cm",
+            id : "00", name : "FIGO IB2"
+          }, {
+            description : "Limited to cervix,invasive carcinoma >= 4cm",
+            id : "00", name : "FIGO IB3"
+          }, {
+            description : "Involvement of up to the upper two-thirds of the vagina. No parametrial/pelvic involvement.  <4 cm",
+            id : "00", name : "FIGO IIA1"
+          }, {
+            description : "Involvement of up to the upper two-thirds of the vagina. No parametrial/pelvic involvement.  >=4 cm",
+            id : "00", name : "FIGO IIA2"
+          }, {
+            description : "Parametrial involvement but not onto the pelvic sidewall",
+            id : "00", name : "FIGO IIB"
+          }, {
+            description : "Involvement of the lower third of the vagina but no extension onto pelvic sidewall",
+            id : "00", name : "FIGO IIIA"
+          }, {
+            description : "Extension onto the pelvic sidewall, and/or causing hydronephrosis/nonfunctioning kidney",
+            id : "00", name : "FIGO IIIB"
+          }, {
+            description : "Involvement of pelvic lymph nodes, regardless of size or extent",
+            id : "00", name : "FIGO IIIC1"
+          }, {
+            description : "Involvement of para-aortic lymph nodes, regardless of size or extent",
+            id : "00", name : "FIGO IIIC2"
+          }, {
+            description : "Spread to adjacent pelvic organs, ie, tumor invading the mucosa of the bladder and/or rectum and/or extending beyond the true pelvis (bullous edema is not sufficient)",
+            id : "00", name : "FIGO IVA"
+          }, {
+            description : "Spread to distant organs, including omental metastases",
+            id : "00", name : "FIGO IVB"
+          }, {
+            description : "",
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+          } ]
+
     }, {
       most_common : true,
        description : "including small cell carcinoma",
@@ -10671,79 +11116,104 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-     
       }, {
+        description : "include distance/location of closest margin only, invasive CA and in situ ca",
         id : "00", name : "Margins, bronchial",
        optional_state  : "required", "options" : [ {
           group : [ {
       
             id : "00", name : "Free"
-          }, {     
-            id : "00", name : "Positive"
-          }, {          
+          },{
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, closest margin"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, in situ carcinoma"
+         
+          }, {
             id : "00", name : "Not applicable"
-          } ],
+          }],
           id : "00", name : ""
         } ]
       }, {
+        description : "include distance/location of closest margin only, invasive CA",
         id : "00", name : "Margins, vascular",
        optional_state  : "required", "options" : [ {
           group : [ {
       
             id : "00", name : "Free"
+          },{
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, closest margin"
           }, {
-           
-            id : "00", name : "Positive"
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          
+         
           }, {
-           
             id : "00", name : "Not applicable"
-          } ],
+          }],
           id : "00", name : ""
         } ]
       }, {
+        description : "include distance/location of closest margin only, invasive CA and in situ ca",
         id : "00", name : "Margins, parenchymal",
        optional_state  : "required", "options" : [ {
           group : [ {
       
             id : "00", name : "Free"
-          }, {          
-            id : "00", name : "Positive"
-          }, {         
+          },{
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, closest margin"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, in situ carcinoma"
+         
+          }, {
             id : "00", name : "Not applicable"
-          } ],
+          }],
           id : "00", name : ""
         } ]
       }, {
+        description : "include distance/location of closest margin only, invasive CA",
         id : "00", name : "Margins, other",
        optional_state  : "required", "options" : [ {
           group : [ {
       
             id : "00", name : "Free"
-          }, {       
-            id : "00", name : "Positive"
-          }, { 
+          },{
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, closest margin"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, invasive carcinoma "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, in situ carcinoma"
+         
+          }, {
             id : "00", name : "Not applicable"
-          } ],
+          }],
           id : "00", name : ""
         } ]
-      }, {
-        description : "include distance/location of closest margin bronchial, vascular parenchymal",
-        id : "00", name : "Closest margin, invasive tumor",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "include distance/location of closest margin bronchial, parenchymal",
-        id : "00", name : "Closest margin, in situ tumor",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ] 
+     
       }, {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
