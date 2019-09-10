@@ -4300,7 +4300,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "width (circumferential) in mm of tumor",
+        description : "width (circumferential) in mm of tumor, count blocks, each block = 3mm",
         id : "00", name : "Size (width) of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -4761,7 +4761,7 @@ var database = {
           id : "00", name : ""
         } ]
       },{
-        description : "width (circumferential) in mm of tumor",
+        description : "width (circumferential) in mm of tumor, count blocks, each block = 3mm",
         id : "00", name : "Size (width) of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -4904,7 +4904,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "width (circumferential) in mm of tumor",
+        description : "width (circumferential) in mm of tumor, count blocks, each block = 3mm",
         id : "00", name : "Size (width) of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -20927,6 +20927,8 @@ var database = {
           }, {
             id : "61", name : "Invades lamina propria"
           }, {
+            id : "00", name : "Directly invades prostate stroma"
+          }, {
             id : "70", name : "Invades superficial muscularis propria (inner half)"
           }, {
             id : "71", name : "Invades deep muscularis propria (outer half)"
@@ -21055,11 +21057,14 @@ var database = {
             description : "CIS",
             id : "00", name : "Tis"
           }, {
-            description : "Ta/CIS",
+            description : "Ta/CIS, inlcudes intraductal spread in the prostate",
             id : "00", name : "Ta/Tis"
           }, {
             description : "Invades lamina propria",
             id : "00", name : "T1"
+          }, {
+            description : "Invades prostate stroma directly",
+            id : "00", name : "T2"
           }, {
             description : "Invades superficial muscularis propria (inner half)",
             id : "00", name : "T2a"
@@ -21073,7 +21078,7 @@ var database = {
             description : "Invades perivesical tissue, grossly (extravesicular mass)",
             id : "00", name : "T3b"
           }, {
-            description : "Invades prostatic stroma, seminal vesicles, uterus, or vagina",
+            description : "Invades extravesicularly, then invades prostatic stroma, seminal vesicles, uterus, or vagina",
             id : "00", name : "T4a"
           }, {
             description : "Invades pelvic wall or abdominal wall",
