@@ -2589,19 +2589,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      },  {
-        description : "Add billing code 3260F for women, 3260F1P for men",
-        id : "00", name : "ICD10",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-             description : " for women",
-            id : "00", name : "C50.919"
-          },{
-             description : " for men",
-            id : "00", name : "C50.929"
-          } ],
-          id : "00", name : ""
-        } ]
+    
       }, {
         id : "00", name : "Tumor block(s) for possible future studies",
        optional_state  : "required", "options" : [ {
@@ -3309,19 +3297,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        description : "Add billing code 3260F for women, 3260F1P for men",
-        id : "00", name : "ICD10",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-             description : " for women",
-            id : "00", name : "C50.919"
-          },{
-             description : " for men",
-            id : "00", name : "C50.929"
-          } ],
-          id : "00", name : ""
-        } ]
+    
       
       }, {
         id : "00", name : "Tumor block(s) for possible future studies",
@@ -5701,15 +5677,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        description : "Add billing code G8721",
-        id : "44", name : "ICD10",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "C18.9"
-          } ],
-          id : "00", name : ""
-        } ]
+  
       } ]
     }, {
       most_common : false,
@@ -6002,16 +5970,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-         description : "add billing code G8721",
-        id : "00", name : "ICD10",
-       optional_state  : "required", "options" : [ {
-          group : [ {
   
-            id : "00", name : "153.9"
-          } ],
-          id : "00", name : ""
-        } ]
       } ]
     }, {
       most_common : false,
