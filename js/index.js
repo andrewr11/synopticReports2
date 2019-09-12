@@ -4276,7 +4276,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "width (circumferential) in mm of tumor, count blocks, each block = 3mm",
+        description : "width (circumferential) in mm of tumor, use gross, if no gross count blocks, I would not report a size, but CAP says each block = 3mm though they have no data to support this and no data to support its relevance in staging",
         id : "00", name : "Size (width) of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -4737,7 +4737,7 @@ var database = {
           id : "00", name : ""
         } ]
       },{
-        description : "width (circumferential) in mm of tumor, count blocks, each block = 3mm",
+        description : "width (circumferential) in mm of tumor, use gross, if no gross count blocks, I would not report a size, but CAP says each block = 3mm though they have no data to support this and no data to support its relevance in staging",
         id : "00", name : "Size (width) of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -4880,7 +4880,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "width (circumferential) in mm of tumor, count blocks, each block = 3mm",
+        description : "width (circumferential) in mm of tumor, use gross, if no gross count blocks, I would not report a size, but CAP says each block = 3mm though they have no data to support this and no data to support its relevance in staging",
         id : "00", name : "Size (width) of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
