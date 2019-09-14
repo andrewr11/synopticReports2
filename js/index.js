@@ -69,6 +69,7 @@ GIDs
 73 T3b
 74 Ta/Tis
 
+
 80 breast grades 
 81
 82
@@ -23931,6 +23932,19 @@ var database = {
                  
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
                   this.row.inputanswers[j] = "N20300";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
+             
+            }
+            //M (not applicable)
+            if (qid == '04') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0400") {
+                  this.row.inputanswers[j] = "M (not applicable)0400";
                   this.dontUseFreeText(j);
                  }
                       
