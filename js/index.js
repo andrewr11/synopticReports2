@@ -4201,6 +4201,11 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Can not be determined"
+        }, {
+          id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -4277,25 +4282,20 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "width (circumferential) in mm of tumor, use gross, if no gross count blocks, I would not report a size, but CAP says each block = 3mm though they have no data to support this and no data to support its relevance in staging",
-        id : "00", name : "Size (width) of tumor",
+        description : "T1 tumors only,  use gross (if possible) or meaure on slide",
+        id : "00", name : "Horizontal extent of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
+            id : "00", name : "Not applicable"
+          },
+          {
             id : "00", name : "Can not be determined"
-          } ],
+          },
+        ],
            
           id : "00", name : ""
         } ]
-      }, {
-        description : "length (longitudinal) in mm of tumor",
-        id : "00", name : "Size (length) of tumor",
-        optional_state  : "required", "options" : [ {
-          group : [  {
-            id : "00", name : "Can not be determined"
-          } ],
-           
-          id : "00", name : ""
-        } ]
+     
       }, {
         description : "depth in mm of tumor",
         id : "00", name : "Depth of cervical stromal invasion",
@@ -4647,6 +4647,11 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Can not be determined"
+        }, {
+          id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -4737,24 +4742,24 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      },{
-        description : "width (circumferential) in mm of tumor, use gross, if no gross count blocks, I would not report a size, but CAP says each block = 3mm though they have no data to support this and no data to support its relevance in staging",
-        id : "00", name : "Size (width) of tumor",
+     }, {
+        description : "T1 tumors only,  use gross (if possible) or meaure on slide",
+        id : "00", name : "Horizontal extent of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
+            id : "00", name : "Not applicable"
+          },
+          {
             id : "00", name : "Can not be determined"
-          } ],
+          },
+        ],
            
           id : "00", name : ""
         } ]
       }, {
-        description : "length (longitudinal) in mm of tumor",
-        id : "00", name : "Size (length) of tumor",
-        optional_state  : "required", "options" : [ {
-          group : [  {
-            id : "00", name : "Can not be determined"
-          } ],
-           
+        description : "depth in mm of tumor",
+        id : "00", name : "Depth of cervical stromal invasion",
+       optional_state  : "required", "options" : [ {
           id : "00", name : ""
         } ]
       }, {
@@ -4805,6 +4810,11 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Can not be determined"
+        }, {
+          id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -4880,23 +4890,18 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+     
       }, {
-        description : "width (circumferential) in mm of tumor, use gross, if no gross count blocks, I would not report a size, but CAP says each block = 3mm though they have no data to support this and no data to support its relevance in staging",
-        id : "00", name : "Size (width) of tumor",
+        description : "T1 tumors only,  use gross (if possible) or meaure on slide",
+        id : "00", name : "Horizontal extent of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
+            id : "00", name : "Not applicable"
+          },
+          {
             id : "00", name : "Can not be determined"
-          } ],
-           
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "length (longitudinal) in mm of tumor",
-        id : "00", name : "Size (length) of tumor",
-        optional_state  : "required", "options" : [ {
-          group : [  {
-            id : "00", name : "Can not be determined"
-          } ],
+          },
+        ],
            
           id : "00", name : ""
         } ]
@@ -13378,7 +13383,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-                   description : "WT1- p53-/focal+, ER +, Pax8+",
+                   description : "WT1- p53-/focal+, ER +, Pax8+, p16-",
             id : "00", name : "Endometrioid adenocarcinoma"
           }, {
             id : "00", name : "Endometrioid adenocarcinoma with squamous differentiation"
@@ -13394,7 +13399,7 @@ var database = {
                        description : "NapsinA+, HNF-1b +, Pax8+",
             id : "00", name : "Clear cell adenocarcinoma"
           }, {
-               description : "WT1+ p53+ or completely -, ER variable, Pax8+",
+               description : "WT1+ p53+ or completely -, ER variable, Pax8+, p16+",
             id : "00", name : "Serous carcinoma"
           }, {
             id : "00", name : "Serous borderline tumor"
