@@ -13310,9 +13310,9 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "Capsule intact"
+            id : "00", name : "Serosa intact"
           }, {
-            id : "00", name : "Capsule ruptured"
+            id : "00", name : "Serosa ruptured"
           }, {
             id : "00", name : "Fragmented"
           } ],
@@ -13324,9 +13324,9 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "Capsule intact"
+            id : "00", name : "Serosa intact"
           }, {
-            id : "00", name : "Capsule ruptured"
+            id : "00", name : "Serosa ruptured"
           }, {
             id : "00", name : "Fragmented"
           } ],
