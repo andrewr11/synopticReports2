@@ -10378,61 +10378,61 @@ var database = {
             id : "00", name : "TX"
           }, {
             description : "SUPRAGLOTTIS, = 1 site, mobile vocal cords ",
-            id : "00", name : "T1 (supraglottis)"
+            id : "00", name : "T1"
           }, {
             description : "SUPRAGLOTTIS, > 1 site, mobile vocal cords ",
-            id : "00", name : "T2 (supraglottis)"
+            id : "00", name : "T2"
           }, {
             description : "SUPRAGLOTTIS, vocal cords fixed OR invades post cricoid, preepiglotic paraglottic or thyroid cartilage",
-            id : "00", name : "T3 (supraglottis)"
+            id : "00", name : "T3"
           }, {
             description : "SUPRAGLOTTIS, invades through thyroid cartilage or beyond larynx",
-            id : "00", name : "T4a (supraglottis)"
+            id : "00", name : "T4a"
           }, {
             description : "SUPRAGLOTTIS, invades prevertebral space, carotid artery or mediastinum",
-            id : "00", name : "T4b (supraglottis)"
+            id : "00", name : "T4b"
           }, {
             description : "GLOTTIS, = 1  vocal cords ",
-            id : "00", name : "T1a (glottis)"
+            id : "00", name : "T1a"
           }, {
             description : "GLOTTIS, = both  vocal cords ",
-            id : "00", name : "T1b (glottis)"
+            id : "00", name : "T1b"
           }, {
             description : "GLOTTIS, invades supraglottic OR subglotis AND OR impaired vocal cords ",
-            id : "00", name : "T2 (glottis)"
+            id : "00", name : "T2"
           }, {
             description : "GLOTTIS, vocal cords fixed OR invades post cricoid, preepiglotic paraglottic or thyroid cartilage",
-            id : "00", name : "T3 (glottis)"
+            id : "00", name : "T3"
           }, {
             description : "GLOTTIS, invades through thyroid cartilage or beyond larynx",
-            id : "00", name : "T4a (glottis)"
+            id : "00", name : "T4a"
           }, {
             description : "GLOTTIS, invades prevertebral space, carotid artery or mediastinum",
-            id : "00", name : "T4b (glottis)"
+            id : "00", name : "T4b"
           }, {
             description : "SUBGLOTTIS, limited to subglottis ",
-            id : "00", name : "T1a (subglottis)"
+            id : "00", name : "T1a"
           }, {
             description : "SUBGLOTTIS, invades vocal cords ",
-            id : "00", name : "T2 (subglottis)"
+            id : "00", name : "T2"
           }, {
             description : "SUBGLOTTIS, vocal cords fixed ",
-            id : "00", name : "T3 (subglottis)"
+            id : "00", name : "T3"
           }, {
             description : "SUBGLOTTIS, invades through thyroid cartilage or beyond larynx",
-            id : "00", name : "T4a (subglottis)"
+            id : "00", name : "T4a"
           }, {
             description : "SUBGLOTTIS, invades prevertebral space, carotid artery or mediastinum",
-            id : "00", name : "T4b (subglottis)"
+            id : "00", name : "T4b"
           }, {
             description : "MELANOMA, limited to the mucosa and immediately underlying soft tissue ",
-            id : "00", name : "T3) (melanoma)"
+            id : "00", name : "T3"
           }, {
             description : "MELANOMA, Tumor involving deep soft tissue, cartilage, bone, or overlying skin",
-            id : "00", name : "T4a (melanoma)"
+            id : "00", name : "T4a"
           }, {
             description : "MELANOMA, Tumor involving brain, dura, skull base, lower cranial nerves (IX, X, XI, XII), masticator space, carotid artery, prevertebral space, or mediastinal structures",
-            id : "00", name : "T4b (melanoma)"
+            id : "00", name : "T4b"
           } ],
           id : "00", name : ""
         }]
@@ -10822,13 +10822,13 @@ var database = {
             id : "00", name : "T4b"
           }, {
             description : "MELANOMA Mucosal disease",
-            id : "00", name : "T3 (melanoma)"
+            id : "00", name : "T3"
           }, {
             description : "MELANOMA Tumor involving deep soft tissue, cartilage, bone, or overlying skin",
-            id : "00", name : "T4a (melanoma)"
+            id : "00", name : "T4a"
           }, {
             description : "MELANOMA Tumor involving brain, dura, skull base, lower cranial nerves (IX, X, XI, XII), masticator space, carotid artery, prevertebral space, or mediastinal structures",
-            id : "00", name : "T4b (melanoma)"
+            id : "00", name : "T4b"
           } ],
           id : "00", name : ""
         }]
@@ -12682,43 +12682,43 @@ var database = {
             id : "00", name : "TX"
           }, {
             description : "MAXILLARY SINUS, Tumor limited to maxillary sinus mucosa with no erosion or destruction of bone ",
-            id : "00", name : "T1 (maxillary sinus)"
+            id : "00", name : "T1"
           }, {
             description : "MAXILLARY SINUS, Tumor causing bone erosion or destruction including extension into the hard palate and/or middle nasal meatus, except extension to posterior wall of maxillary sinus and pterygoid plates ",
-            id : "00", name : "T2 (maxillary sinus)"
+            id : "00", name : "T2"
           }, {
             description : "MAXILLARY SINUS, Tumor invades any of the following: bone of the posterior wall of maxillary sinus, subcutaneous tissues, floor or medial wall of orbit, pterygoid fossa, ethmoid sinuses",
-            id : "00", name : "T3 (maxillary sinus)"
+            id : "00", name : "T3"
           }, {
             description : "MAXILLARY SINUS, Moderately advanced local disease. Tumor invades anterior orbital contents, skin of cheek, pterygoid plates, infratemporal fossa, cribriform plate, sphenoid or frontal sinuses",
-            id : "00", name : "T4a (maxillary sinus)"
+            id : "00", name : "T4a"
           }, {
             description : "MAXILLARY SINUS, Very advanced local disease. Tumor invades any of the following: orbital apex, dura, brain, middle cranial fossa, cranial nerves other than maxillary division of trigeminal nerve (V2), nasopharynx, or clivus",
-            id : "00", name : "T4b (maxillary sinus)"
+            id : "00", name : "T4b"
           }, {
             description : "NASAL CAVITY AND ETHMOID SINUS, Tumor restricted to any one subsite, with our without bone invasion ",
-            id : "00", name : "T1 (nasal cavity/ethmoid) sinus)"
+            id : "00", name : "T1"
           }, {
             description : "NASAL CAVITY AND ETHMOID SINUS, Tumor invading two subsites in a single region or extending to involve an adjacent region within the nasoethmoidal complex, with our without bone invasion ",
-            id : "00", name : "T2 (nasal cavity/ethmoid) sinus)"
+            id : "00", name : "T2"
           }, {
             description : "NASAL CAVITY AND ETHMOID SINUS, Tumor extends to invade the medial wall or floor of the orbit, maxillary sinus, palate, or cribriform plate",
-            id : "00", name : "T3 (nasal cavity/ethmoid) sinus)"
+            id : "00", name : "T3"
           }, {
             description : "NASAL CAVITY AND ETHMOID SINUS, Moderately advanced local disease Tumor invades any of the following:  anterior orbital contents, skin of nose or cheek, minimal extension to anterior cranial fossa, pterygoid plates, sphenoid or frontal sinuses",
-            id : "00", name : "T4a (nasal cavity/ethmoid) sinus)"
+            id : "00", name : "T4a"
           }, {
             description : "NASAL CAVITY AND ETHMOID SINUS, Very advanced local disease. Tumor invades any of the following:  orbital apex, dura, brain, middle cranial fossa, cranial nerves other than maxillary division of trigeminal nerve (V2), nasopharynx, or clivus",
-            id : "00", name : "T4b (nasal cavity/ethmoid) sinus)"
+            id : "00", name : "T4b"
           }, {
             description : "MELANOMA, Mucosal disease",
-            id : "00", name : "T3 (melanoma)"
+            id : "00", name : "T3"
           }, {
             description : "MELANOMA, Moderately advanced disease. Tumor involving deep soft tissue, cartilage, bone, or overlying skin ",
-            id : "00", name : "T4a (melanoma)"
+            id : "00", name : "T4a"
           }, {
             description : "MELANOMA, Very advanced disease. Tumor involving brain, dura, skull base, lower cranial nerves (IX, X, XI, XII), masticator space, carotid artery, prevertebral space, or mediastinal structures",
-            id : "00", name : "T4b (melanoma)"
+            id : "00", name : "T4b"
           } ],
           id : "00", name : ""
         }]
@@ -15346,55 +15346,55 @@ var database = {
             id : "00", name : "TX"
           }, {
             description : "OROPHARYNX CARCINOMA, Tumor 2 cm or less in greatest dimension ",
-            id : "00", name : "T1 (oropharynx)"
+            id : "00", name : "T1"
           }, {
             description : "OROPHARYNX CARCINOMA, Tumor more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx ",
-            id : "00", name : "T2 (oropharynx)"
+            id : "00", name : "T2"
           }, {
             description : "OROPHARYNX CARCINOMA, Tumor more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to lingual surface of epiglottis",
-            id : "00", name : "T3 (oropharynx)"
+            id : "00", name : "T3"
           }, {
             description : "OROPHARYNX CARCINOMA, Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
-            id : "00", name : "T4a (oropharynx)"
+            id : "00", name : "T4a"
           }, {
             description : "OROPHARYNX CARCINOMA, Very advanced local disease. Tumor invades lateral pterygoid muscle, pterygoid plates, lateral nasopharynx, or skull base, or encases carotid artery",
-            id : "00", name : "T4b (oropharynx)"
+            id : "00", name : "T4b"
           }, {
             description : " NASOPHARYNX Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
-            id : "00", name : "T1 (nasopharynx)"
+            id : "00", name : "T1"
           }, {
             description : "NASOPHARYNX Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
-            id : "00", name : "T2 (nasopharynx)"
+            id : "00", name : "T2"
           }, {
             description : "NASOPHARYNX Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
-            id : "00", name : "T3 (nasopharynx)"
+            id : "00", name : "T3"
           }, {
             description : "NASOPHARYNX Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
-            id : "00", name : "T4 (nasopharynx)"
+            id : "00", name : "T4"
           }, {
             description : "HYPOPHARYNX CARCINOMA, Tumor limited to one subsite of hypopharynx and/or 2 cm or less in greatest dimension ",
-            id : "00", name : "T1 (hypopharynx)"
+            id : "00", name : "T1"
           }, {
             description : "HYPOPHARYNX CARCINOMA, Tumor invades more than one subsite of hypopharynx or an adjacent site, or measures more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx",
-            id : "00", name : "T2 (hypopharynx)"
+            id : "00", name : "T2"
           }, {
             description : "HYPOPHARYNX CARCINOMA, Tumor measures more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to esophagus",
-            id : "00", name : "T3 (hypopharynx)"
+            id : "00", name : "T3"
           }, {
             description : "HYPOPHARYNX CARCINOMA, Moderately advanced local disease. Tumor invades thyroid/cricoid cartilage, hyoid bone, thyroid gland, or central compartment soft tissue",
-            id : "00", name : "T4a (hypopharynx)"
+            id : "00", name : "T4a"
           }, {
             description : "HYPOPHARYNX CARCINOMA, Very advanced local disease. Tumor invades prevertebral fascia, encases carotid artery, or involves mediastinal structures",
-            id : "00", name : "T4b (hypopharynx)"
+            id : "00", name : "T4b"
           }, {
             description : "MELANOMA, Mucosal disease",
-            id : "00", name : "T3 (melanoma)"
+            id : "00", name : "T3"
           }, {
             description : "MELANOMA, Moderately advanced disease. Tumor involving deep soft tissue, cartilage, bone, or overlying skin. ",
-            id : "00", name : "T4a (melanoma)"
+            id : "00", name : "T4a"
           }, {
             description : "MELANOMA, Very advanced disease. Tumor involving brain, dura, skull base, lower  cranial nerves (IX, X, XI, XII), masticator space, carotid artery, prevertebral  space, or mediastinal structures",
-            id : "00", name : "T4b (melanoma)"
+            id : "00", name : "T4b"
           } ],
           id : "00", name : ""
         }]
@@ -15758,28 +15758,28 @@ var database = {
             id : "00", name : "TX"
           }, {
             description : " NASOPHARYNX Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
-            id : "00", name : "T1 (nasophayrnx)"
+            id : "00", name : "T1"
           }, {
             description : "NASOPHARYNX Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
-            id : "00", name : "T2 (nasophayrnx)"
+            id : "00", name : "T2"
           }, {
             description : "NASOPHARYNX Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
-            id : "00", name : "T3 (nasophayrnx)"
+            id : "00", name : "T3"
           }, {
             description : "NASOPHARYNX Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
-            id : "00", name : "T4 (nasophayrnx)"
+            id : "00", name : "T4"
           }, {
             description : " OROPHARYNX Tumor 2 cm or less in greatest dimension ",
-            id : "00", name : "T1 (orophayrnx)"
+            id : "00", name : "T1"
           }, {
             description : "OROPHARYNX Tumor more than 2 cm but not more than 4 cm in greatest dimension ",
-            id : "00", name : "T2 (orophayrnx)"
+            id : "00", name : "T2"
           }, {
             description : "OROPHARYNX Tumor more than 4 cm in greatest dimension or extension to lingual surface of epiglottis",
-            id : "00", name : "T3 (orophayrnx)"
+            id : "00", name : "T3"
           }, {
             description : "OROPHARYNX Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
-            id : "00", name : "T4 (orophayrnx)"
+            id : "00", name : "T4"
           }],
           id : "00", name : ""
         }]
