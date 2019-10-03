@@ -15803,10 +15803,10 @@ var database = {
             id : "00", name : "N3"
           }, {
             description : " OROPHARYNX Metastasis in 4 or fewer lymph nodes",
-            id : "00", name : "N1 (oropharynx)"
+            id : "00", name : "N1"
           }, {
             description : " OROPHARYNX Metastasis in more than 4 lymph nodes ",
-            id : "00", name : "N2 (oropharynx)"
+            id : "00", name : "N2"
           }],
           id : "00", name : "Category (pN)"
         }]
@@ -17229,11 +17229,11 @@ var database = {
           }, {
             id : "00", name : "Present but < 1 per square millimeter"
           }, {
-            id : "00", name : "> 1 per square millimeter"
+            id : "00", name : "1 per square millimeter"
           }, {
-            description : "# per square millimeter",
-            inputs_required : [ "" ],
-            id : "10", name : ""
+            id : "00", name : "2 per square millimeter"
+          }, {
+            id : "00", name : "3 per square millimeter"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -17602,7 +17602,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      },  {
+      }, {
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -17614,11 +17614,11 @@ var database = {
           }, {
             id : "00", name : "Present but < 1 per square millimeter"
           }, {
-            id : "00", name : "> 1 per square millimeter"
+            id : "00", name : "1 per square millimeter"
           }, {
-            description : "# per square millimeter",
-            inputs_required : [ "" ],
-            id : "10", name : ""
+            id : "00", name : "2 per square millimeter"
+          }, {
+            id : "00", name : "3 per square millimeter"
           }, {
             id : "00", name : "Not applicable"
           } ],
