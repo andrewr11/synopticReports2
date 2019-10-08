@@ -26,6 +26,8 @@ QIDs
 44 colon icd10
 45 melanoma icd10
 46 lung icd10
+47 SQC type
+48 SQC excision
 
 50 0 total or 0 positive node dependency
 51 is no sites sampled then total = 0
@@ -17675,6 +17677,7 @@ var database = {
           id : "00", name : ""
         } ]
       } ]
+   
     },{
       most_common : false,
       id : "00", name : "Skin Merkel Cell Carcinoma",
@@ -17911,6 +17914,162 @@ var database = {
           id : "00", name : ""
         } ]
       } ]
+    }, {
+      most_common : false,
+      id : "00", name : "Skin Squamous cell carcinoma, excision",
+      optional : true,
+      organ_group : "Skin",
+      properties : [ {
+        id : "48", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            
+            id : "00", name : "Excision"
+          }],
+          id : "00", name : ""
+        } ]
+      }, { id : "00", name : "Location",
+       optional_state  : "required", "options" : [ {
+          canSelectMultiple : true,
+          group : [ {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Right"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Left"
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Midline"
+          } ],
+          id : "00", name : ""
+        } ]
+      },   {
+        id : "47", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Invasive squamous cell carcinoma"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Grade",
+       optional_state  : "required", "options" : [ {
+          group : [  {      
+            id : "00", name : "Grade 1/3, well differentiated"
+          }, {
+            id : "00", name : "Well to moderately differentiated"
+          }, {
+            id : "00", name : "Grade 2/3 moderately differentiated"
+          }, {
+            id : "00", name : "Moderately to poorly differentiated"
+          } ,{
+            id : "00", name : "Grade 3/3, poorly differentiated"
+          } ],
+          id : "00", name : ""
+        } ] 
+      }, {
+        id : "00", name : "Tumor size (width)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor thickness",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ] 
+
+      }, {
+      
+        id : "00", name : "Margins",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            
+        
+            id : "00", name : "Free "
+          }, {
+          
+           
+            id : "00", name : "Positive "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Desmoplasia",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          },  {
+            id : "00", name : "Present"
+          },  {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Perineural invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Invasion of other structures",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Fascia"
+          }, {
+            id : "00", name : "Muscle"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      } ]
+
      }, {
       most_common : false,
       id : "00", name : "Small Intestine",
@@ -23597,6 +23756,22 @@ var database = {
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4300") {
                  
                   this.row.inputanswers[j] = "C614300";
+                  this.dontUseFreeText(j);
+                 }
+              }                              
+             }
+
+             if (this.current_tumor == 'Skin Squamous cell carcinoma, excision') {
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                              
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4700") {
+                 
+                 this.row.inputanswers[j] = "Invasive squamous cell carcinoma4700";
+                 this.dontUseFreeText(j);
+                }
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4800") {
+                 
+                  this.row.inputanswers[j] = "Excision4800";
                   this.dontUseFreeText(j);
                  }
               }                              
