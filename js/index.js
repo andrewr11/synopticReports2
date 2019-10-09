@@ -18003,6 +18003,10 @@ var database = {
           
            
             id : "00", name : "Positive "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -24147,6 +24151,8 @@ var database = {
                 qid === '44' || 
                 qid === '45' || 
                 qid === '46' || 
+                qid === '47' || 
+                qid === '48' || 
                 qid === "01" || 
                 qid === "50" || 
                 qid === "51" || 
@@ -24227,6 +24233,8 @@ var database = {
                 this.synresults[i].id === "44" || 
                 this.synresults[i].id === "45" || 
                 this.synresults[i].id === "46" || 
+                this.synresults[i].id === "47" || 
+                this.synresults[i].id === "48" || 
                 this.synresults[i].id === "50" || 
                 this.synresults[i].id === "51" || 
                 this.synresults[i].id === "52" || 
