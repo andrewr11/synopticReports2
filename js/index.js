@@ -3316,7 +3316,7 @@ var database = {
     }, {
       biopsy_type : "Invasive",
       most_common : false,
-      id : "00", name : "Breast biopsy",
+      id : "00", name : "Breast core biopsy",
       optional : true,
       organ_group : "Breast",
       properties : [ { id : "00", name : "Location",
@@ -3330,24 +3330,12 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Left"
+          }, {
+            id : "00", name : "See above"
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Procedure",
-       optional_state  : "required", "options" : [ {
-          canSelectMultiple : true,
-          group : [ {
-            id : "00", name : "Core needle biopsy"
-          }, {
-            id : "00", name : "Stereotactic core needle biopsy"
-          }, {
-            id : "00", name : "Ultrasound guided core needle biopsy"
-          }, {
-            id : "00", name : "MRI guided core needle biopsy"
-          } ],
-          id : "00", name : ""
-        } ]
+    
       }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
@@ -3643,7 +3631,7 @@ var database = {
     }, {
       biopsy_type : "DCIS",
       most_common : false,
-      id : "00", name : "Breast biopsy",
+      id : "00", name : "Breast core biopsy",
       optional : true,
       organ_group : "Breast",
       properties : [  {
@@ -3658,24 +3646,12 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Left"
-          } ],
+          } , {
+            id : "00", name : "See above"
+          }],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Procedure",
-       optional_state  : "required", "options" : [ {
-          canSelectMultiple : true,
-          group : [ {
-            id : "00", name : "Core needle biopsy"
-          }, {
-            id : "00", name : "Stereotactic core needle biopsy"
-          }, {
-            id : "00", name : "Ultrasound guided core needle biopsy"
-          }, {
-            id : "00", name : "MRI guided core needle biopsy"
-          } ],
-          id : "00", name : ""
-        } ]
+      
       }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
@@ -3885,7 +3861,7 @@ var database = {
     }, {
       biopsy_type : "Other",
       most_common : false,
-      id : "00", name : "Breast biopsy",
+      id : "00", name : "Breast core biopsy",
       optional : true,
       organ_group : "Breast",
       properties : [ {
@@ -3900,24 +3876,12 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Left"
+          }, {
+            id : "00", name : "See above"
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Procedure",
-       optional_state  : "required", "options" : [ {
-          canSelectMultiple : true,
-          group : [ {
-            id : "00", name : "Core needle biopsy"
-          }, {
-            id : "00", name : "Stereotactic core needle biopsy"
-          }, {
-            id : "00", name : "Ultrasound guided core needle biopsy"
-          }, {
-            id : "00", name : "MRI guided core needle biopsy"
-          } ],
-          id : "00", name : ""
-        } ]
+     
       }, {
         id : "00", name : "Diagnosis/Type",
        optional_state  : "required", "options" : [ {
