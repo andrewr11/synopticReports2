@@ -2709,7 +2709,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -2722,7 +2722,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -2735,7 +2735,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -2748,7 +2748,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -2762,7 +2762,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -2776,7 +2776,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4020,7 +4020,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4033,7 +4033,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4046,7 +4046,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4059,7 +4059,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4073,7 +4073,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4087,7 +4087,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4104,7 +4104,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4119,7 +4119,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4134,7 +4134,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4149,7 +4149,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4165,7 +4165,7 @@ var database = {
           }, {
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
@@ -4181,7 +4181,7 @@ var database = {
           },{
             description : "for TUMOR ON ink",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+            id : "10", name : "Positive "
           } ],
            
           id : "00", name : ""
