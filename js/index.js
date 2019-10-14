@@ -2606,6 +2606,464 @@ var database = {
       } ]
     }, {
       most_common : true,
+      id : "00", name : "Breast DCIS BOCA",
+      optional : false,
+      organ_group : "Breast",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right breast excision"
+          }, {
+            id : "00", name : "Right breast excision with separate margins"
+          }, {
+            id : "00", name : "Right breast re-excision"
+          }, {
+            id : "00", name : "Right mastectomy"
+          }, {
+            id : "00", name : "Right nipple sparing mastectomy"
+          }, {
+            id : "00", name : "Left breast excision"
+          }, {
+            id : "00", name : "Left breast excision with separate margins"
+          }, {
+            id : "00", name : "Left breast re-excision"
+          }, {
+            id : "00", name : "Left mastectomy"
+          }, {
+            id : "00", name : "Left nipple sparing mastectomy"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+          description : "1 block = 4mm",
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          group : [  ],
+          id : "00", name : ""
+        } ] 
+      }, {
+        id : "00", name : "Tumor focality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Single focus of tumor"
+          }, {
+            id : "00", name : "Multiple foci of tumor"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "40", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Ductal carcinoma in situ"
+          }, {
+            
+            id : "00", name : "Paget disease of nipple without DCIS"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Grade",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "low",
+            id : "00", name : "Grade 1/3, low nuclear grade"
+          }, {
+            description : "intermediate",
+            id : "00", name : "Grade 2/3, intermediate nuclear grade"
+          }, {
+            description : "high",
+            id : "00", name : "Grade 3/3, high nuclear grade"
+          }, {
+            description : "intermediate and high",
+            id : "00", name : "Grade 3/3 and 2/3, high and intermediate nuclear grade"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Necrosis",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present, focal"
+          }, {
+            id : "00", name : "Present, central/comedo"
+          } ],
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "00", name : "Margin, anterior",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, posterior",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, superior",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, inferior",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "00", name : "Margin, medial",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "00", name : "Margin, lateral",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {
+        id : "00", name : "Lymph nodes, # sentinel",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "> 2mm",
+        id : "50", name : "Lymph nodes, # w/ macrometastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : ">0.2 mm AND <= 2mm OR > 200 cells",
+        id : "50", name : "Lymph nodes, # w/ micrometastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "<= 0.2mm AND <= 200 cells",
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Extranodal extension",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "01", name : "Stage (AJCC 8)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "no prefix",
+            id : "00", name : ""
+          }, {
+            description : "pathologic",
+            id : "00", name : "p"
+          }, {
+            description : "multiple foci of DCIS",
+            id : "00", name : "m"
+          }, {
+            description : "recurrent",
+            id : "00", name : "r"
+          }, {
+            description : "post-treatment",
+            id : "00", name : "y"
+          }, {
+            id : "00", name : "mp"
+          }, {
+            id : "00", name : "rp"
+          }, {
+            id : "00", name : "yp"
+          }, {
+            id : "00", name : "mrp"
+          }, {
+            id : "00", name : "myp"
+          }, {
+            id : "00", name : "ryp"
+          }, {
+            id : "00", name : "mryp"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "02", name : "T",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "DCIS",
+            id : "00", name : "Tis"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "03", name : "N",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Regional lymph nodes cannot be assessed",
+            id : "00", name : "NX"
+          }, {
+            description : "No metastases",
+            id : "00", name : "N0"
+          }, {
+            description : "No metastases AND <6 sentinel Nodes",
+            id : "00", name : "N0 (sn)"
+          }, {
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC)",
+            id : "00", name : "N0 (i+)"
+          }, {
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel nodes)",
+            id : "00", name : "N0 (i+) (sn)"
+          }, {
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells)",
+            id : "00", name : "N1mi"
+          }, {
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel nodes",
+            id : "00", name : "N1mi (sn)"
+          }, {
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm",
+            id : "00", name : "N1a"
+          }, {
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel nodes",
+            id : "00", name : "N1a (sn)"
+          }, {
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm)",
+            id : "00", name : "N2a"
+          }, {
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
+            id : "00", name : "N2a (sn)"
+          }, {
+            description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm)",
+            id : "00", name : "N3a"
+          } ],
+          id : "00", name : "Category (pN)"
+        }]
+        }, {
+          id : "04", name : "M",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Distant detectable metastases as histologically proven larger than 0.2 mm",
+            id : "00", name : "M1"
+          }, {
+            id : "00", name : "M (not applicable)"
+          }, {
+            id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+         description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        id : "00", name : "Estrogen Receptor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "20", name :  "Positive, >90% of cells, "
+          },{
+            id : "20", name :  "Positive  50-90% of cells, "
+          },{
+            id : "20", name :  "Positive  10-50% of cells, "
+          },{
+            id : "20", name :  "Positive  1-10% of cells, "
+          }, {
+            id : "00", name : "Negative (<1%)"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "15", name : "See case "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        id : "00", name : "Progesterone Receptor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "20", name :  "Positive, >90% of cells, "
+          },{
+            id : "20", name :  "Positive  50-90% of cells, "
+          },{
+            id : "20", name :  "Positive  10-50% of cells, "
+          },{
+            id : "20", name :  "Positive  1-10% of cells, "
+          }, {
+            id : "00", name : "Negative (<1%)"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Known repeat ER/PR testing",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No"
+          }, {
+            id : "00", name : "Yes"
+          } ],
+          id : "00", name : ""
+        } ]
+           }, {
+        id : "00", name : "Additional findings",
+        optional_state : "required",
+        "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Biopsy site"
+          }, {
+            id : "00", name : "Biopsy site x 2"
+          }, {
+            id : "00", name : "Atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Atypical lobular hyperplasia"
+          }, { 
+            id : "00", name : "Lobular carcinoma in situ, classical type"
+          }, { 
+            id : "00", name : "Lobular carcinoma in situ, pleomorphic type"
+          }, {
+            id : "00", name : "Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical lobular hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, lobular carcinoma in situ, classical type and Pagets disease"
+          } ],
+          id : "00", name : ""
+        } ]
+    
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      } ]
+
+    }, {
+      most_common : true,
       id : "00", name : "Breast Invasive",
       optional : false,
       organ_group : "Breast",
@@ -3313,6 +3771,872 @@ var database = {
           id : "00", name : ""
         } ]
       } ]
+    }, {
+      most_common : true,
+      id : "00", name : "Breast Invasive BOCA",
+      optional : false,
+      organ_group : "Breast",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right breast excision"
+          }, {
+            id : "00", name : "Right breast excision with separate margins"
+          }, {
+            id : "00", name : "Right breast re-excision"
+          }, {
+            id : "00", name : "Right mastectomy"
+          }, {
+            id : "00", name : "Right nipple sparing mastectomy"
+          }, {
+            id : "00", name : "Left breast excision"
+          }, {
+            id : "00", name : "Left breast excision with separate margins"
+          }, {
+            id : "00", name : "Left breast re-excision"
+          }, {
+            id : "00", name : "Left mastectomy"
+          }, {
+            id : "00", name : "Left nipple sparing mastectomy"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          group : [  ],
+          id : "00", name : ""
+        } ] 
+      }, {
+        id : "00", name : "Tumor focality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Single focus of tumor"
+          }, {
+            id : "00", name : "Multiple foci of tumor"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Invasive ductal carcinoma"
+          }, {
+            id : "00", name : "Invasive lobular carcinoma, classical type"
+          }, {
+            id : "00", name : "Invasive lobular carcinoma, pleomorphic type"
+          }, {
+            id : "00", name : "Invasive carcinoma with both ductal and lobular features"
+          }, {
+            id : "00", name : "Micro-invasive carcinoma"
+          }, {
+            id : "00", name : "Mucinous carcinoma"
+          }, {
+            id : "00", name : "Invasive ductal carcinoma with mucinous features"
+          }, {
+            id : "00", name : "Invasive ductal carcinoma and mucinous carcinoma"
+          }, {
+            id : "00", name : "Invasive tubular carcinoma"
+          }, {
+            id : "00", name : "Invasive ductal carcinoma with tubular features"
+          }, {
+            id : "00", name : "Invasive tubulo-lobular carcinoma"
+          }, {
+            id : "00", name : "Invasive cribiform carcinoma"
+          }, {
+            id : "00", name : "Invasive carcinoma with micropapillary features"
+          }, {
+            id : "00", name : "Invasive papillary carcinoma"
+          }, {
+            id : "00", name : "Medullary carcinoma"
+          }, {
+            id : "00", name : "Metaplastic carcinoma"
+          }, {
+            id : "00", name : "Adenoid cystic carcinoma"
+          }, {
+            id : "00", name : "Secretory carcinoma"
+          }, {
+            id : "00", name : "Invasive carcinoma with basaloid features"
+          }, {
+            description : "T0, no residual tumor",
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tubule formation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : ">75%",
+            id : "80", name : "Score 1"
+          }, {
+            description : "10% to 75%",
+            id : "81", name : "Score 2"
+          }, {
+            description : "<10%",
+            id : "82", name : "Score 3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Nuclear pleomorphism",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "nuclei small",
+            id : "83", name : "Score 1"
+          }, {
+            description : "cells larger than normal",
+            id : "84", name : "Score 2"
+          }, {
+            description : "prominent nucleoli, marked variation",
+            id : "85", name : "Score 3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Mitotic rate",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "<=3 mitoses per mm2",
+            id : "86", name : "Score 1"
+          }, {
+            description : "4-7 mitoses per mm2",
+            id : "87", name : "Score 2"
+          }, {
+            description : ">8 mitoses per mm2",
+            id : "88", name : "Score 3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+     
+      }, {
+        id : "00", name : "Grade",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "scores of 3, 4, or 5",
+            id : "00", name : "Nottingham grade 1/3"
+          }, {
+            description : "scores of 6 or 7",
+            id : "00", name : "Nottingham grade 2/3"
+          }, {
+            description : "scores of 8 or 9",
+            id : "00", name : "Nottingham grade 3/3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+         description : "Give size if only microinvasive",
+        id : "00", name : "DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+             description : "use for mastectomy; try to use Extensive/nonextensive for excision",
+            id : "00", name : "Present"
+          }, {
+             description : "excision specimen, DCIS >25% of main mass AND extends beyond invasive tumor",
+            id : "00", name : "Extensive intraductal component present"
+          }, {
+              description : "excision specimen, DCIS <25% of main mass OR does not extends beyond invasive tumor",
+            id : "00", name : "Present, but NOT extensive"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      
+      }, {
+        id : "00", name : "Skin involvement",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "this does not change the T stage",
+            id : "00", name : "Invades into the dermis without ulceration"
+          }, {
+            description : "this does not change the T stage",
+            id : "00", name : "Invades into the epidermis without ulceration"
+          }, {
+            description : "classified as T4b",
+            id : "68", name : "Invades into the dermis with ulceration"
+          }, {
+            description : "classified as T4b",
+            id : "68", name : "Invades into the epidermis with ulceration"
+          }, {
+            description : "classified as T4b",
+            id : "68", name : "Satellite skin foci are present"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Nipple involvement",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Paget disease of the nipple"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Muscle involvement",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Carcinoma invades skeletal muscle"
+          }, {
+            description : "classified as T4a",
+            id : "00", name : "Carcinoma invades chest wall"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, anterior, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, posterior, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, superior, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, inferior, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "00", name : "Margin, medial, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "00", name : "Margin, lateral, invsive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+
+        }, {   
+        id : "00", name : "Margin, anterior DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, posterior, DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, superior, DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {   
+        id : "00", name : "Margin, inferior, DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "00", name : "Margin, medial, DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "00", name : "Margin, lateral, DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          },  {
+            id : "00", name : "Not applicable"
+          },{
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes, # sentinel",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "> 2mm",
+        id : "50", name : "Lymph nodes, # w/ macrometastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : ">0.2 mm AND <= 2mm OR > 200 cells",
+        id : "50", name : "Lymph nodes, # w/ micrometastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "<= 0.2mm and < 200 cells",
+        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+       }, {
+        id : "50", name : "Size of largest metastasis",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
+      }, {
+        id : "50", name : "Extranodal Extension ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          } ],
+          id : "00", name : ""
+          }]
+        }, {
+        id : "50", name : "Metastasis detection method ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Frozen section/intra-operative smear"
+          }, {
+            description : "First H&E",
+            id : "00", name : "Routine H&E"
+          }, {
+             description : "2nd or more levels",
+            id : "00", name : "Serial H&E"
+          }, {
+           id : "00", name : "Serial H&E and IHC"
+         }, {
+            id : "00", name : "IHC only"
+          }, {
+            id : "00", name : "Other"
+          } ],
+          id : "00", name : ""
+          }]
+        }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          }, {
+            id : "00", name : "Present, including dermal LVI"
+          } ],
+          id : "00", name : ""
+        } ]
+   
+      }, {
+        id : "00", name : "Treatment effect, primary site",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "17", name : "Not applicable"
+          }, {
+            id : "00", name : "No definite response"
+          }, {
+            id : "00", name : "Probable or definite response"
+          } , {
+            id : "00", name : "Not known"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Treatment effect, lymph nodes",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "No definite response"
+          }, {
+            id : "00", name : "Fibrous scarring with metastases"
+          }, {
+            id : "00", name : "Fibrous scarring without metastases"
+          }, {
+            id : "00", name : "Fibrous scarring (treatment effect) and biopsy site with metastases"
+          }, {
+            id : "00", name : "Fibrous scarring (treatment effect) and biopsy site without metastases"
+          }, {
+            id : "00", name : "No fibrous scarring or metastases"
+          }, {
+            id : "00", name : "Not known"
+          }  ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "01", name : "Stage (AJCC 8)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "no prefix",
+            id : "00", name : ""
+          }, {
+            description : "pathologic",
+            id : "00", name : "p"
+          }, {
+            description : "multiple foci of invasive carcinoma",
+            id : "00", name : "m"
+          }, {
+            description : "recurrent",
+            id : "00", name : "r"
+          }, {
+            description : "post-treatment",
+            id : "00", name : "y"
+          }, {
+            id : "00", name : "mp"
+          }, {
+            id : "00", name : "rp"
+          }, {
+            id : "00", name : "yp"
+          }, {
+            id : "00", name : "mrp"
+          }, {
+            id : "00", name : "myp"
+          }, {
+            id : "00", name : "ryp"
+          }, {
+            id : "00", name : "mryp"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "02", name : "T",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "No residual tumor, s/p neoadjuvant treatment",
+            id : "00", name : "T0"
+          }, {
+            description : "DCIS only, s/p neoadjuvant treament",
+            id : "00", name : "Tis"
+          }, {
+            description : "Tumor <= 1 mm",
+            id : "00", name : "T1mi"
+          }, {
+            description : "Tumor > 1 mm AND <= 5 mm",
+            id : "00", name : "T1a"
+          }, {
+            description : "Tumor > 5 mm AND <= 10 mm",
+            id : "00", name : "T1b"
+          }, {
+            description : "Tumor > 10 mm AND <= 20 mm",
+            id : "00", name : "T1c"
+          }, {
+            description : "Tumor > 20 mm AND <= 50 mm",
+            id : "00", name : "T2"
+          }, {
+            description : "Tumor > 50 mm",
+            id : "00", name : "T3"
+          }, {
+            description : "Extension to chest wall, not including only pectoralis muscle",
+            id : "00", name : "T4a"
+          }, {
+            description : "Ulceration and/or ipsilateral satellite nodules and/or edema (including peau d'orange) of the skin which do not meet the criteria for inflammatory carcinoma",
+            id : "00", name : "T4b"
+          }, {
+            description : "Both T4a and T4b",
+            id : "00", name : "T4c"
+          }, {
+            description : "Inflammatory carcinoma",
+            id : "00", name : "T4d"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "03", name : "N",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Regional lymph nodes cannot be assessed",
+            id : "00", name : "NX"
+          }, {
+            description : "No metastases",
+            id : "00", name : "N0"
+          }, {
+            description : "No metastases AND <6 sentinel Nodes",
+            id : "00", name : "N0 (sn)"
+          }, {
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC)",
+            id : "00", name : "N0 (i+)"
+          }, {
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel nodes)",
+            id : "00", name : "N0 (i+) (sn)"
+          }, {
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells)",
+            id : "00", name : "N1mi"
+          }, {
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel nodes",
+            id : "00", name : "N1mi (sn)"
+          }, {
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm",
+            id : "00", name : "N1a"
+          }, {
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel nodes",
+            id : "00", name : "N1a (sn)"
+          }, {
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm)",
+            id : "00", name : "N2a"
+          }, {
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
+            id : "00", name : "N2a (sn)"
+          }, {
+            description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm)",
+            id : "00", name : "N3a"
+          } ],
+          id : "00", name : "Category (pN)"
+        }]
+        }, {
+          id : "04", name : "M",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Distant detectable metastasis as histologically proven larger than 0.2 mm",
+            id : "00", name : "M1"
+          }, {
+            id : "00", name : "M (not applicable)"
+          }, {
+            id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        id : "00", name : "Estrogen Receptor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "20", name :  "Positive, >90% of cells, "
+          },{
+            id : "20", name :  "Positive  50-90% of cells, "
+          },{
+            id : "20", name :  "Positive  10-50% of cells, "
+          },{
+            id : "20", name :  "Positive  1-10% of cells, "
+          }, {
+            id : "00", name : "Negative (<1%)"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "16", name : "See case "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        id : "00", name : "Progesterone Receptor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "20", name :  "Positive, >90% of cells, "
+          },{
+            id : "20", name :  "Positive  50-90% of cells, "
+          },{
+            id : "20", name :  "Positive  10-50% of cells, "
+          },{
+            id : "20", name :  "Positive  1-10% of cells, "
+          }, {
+            id : "00", name : "Negative (<1%)"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        id : "00", name : "Her2Neu by IHC",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive (3+)"
+          }, {
+            id : "00", name : "Negative (0-1+)"
+          }, {
+            id : "00", name : "Equivocal (2+)"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        id : "00", name : "Her2Neu by FISH",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive, "
+          }, {
+            id : "00", name : "Negative"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Reflex pending if appropriate"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Known repeat ER/PR testing",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No"
+          }, {
+            id : "00", name : "Yes"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Known repeat Her2Neu testing",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No"
+          }, {
+            id : "00", name : "Yes"
+          } ],
+          id : "00", name : ""
+        } ]
+           }, {
+  
+        id : "00", name : "Additional findings",
+        optional_state : "required",
+        "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Biopsy site"
+          }, {
+            id : "00", name : "Biopsy site x 2"
+          }, {
+            id : "00", name : "Atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Lobular carcinoma in situ, pleomorphic type"
+          }, {
+            id : "00", name : "Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical lobular hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, lobular carcinoma in situ, classical type and Pagets disease"
+          } ],
+          id : "00", name : ""
+        } ]
+    
+      
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      } ] 
     }, {
       biopsy_type : "Invasive",
       most_common : false,
