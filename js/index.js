@@ -32,6 +32,8 @@ QIDs
 50 0 total or 0 positive node dependency
 51 is no sites sampled then total = 0
 
+90 DCIS margin na
+
 
 
 GIDs
@@ -82,6 +84,7 @@ GIDs
 87
 88
 
+90 DCIS na
 
 
 
@@ -3944,7 +3947,7 @@ var database = {
         id : "00", name : "DCIS",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "90", name : "None"
           }, {
              description : "use for mastectomy; try to use Extensive/nonextensive for excision",
             id : "00", name : "Present"
@@ -4095,7 +4098,7 @@ var database = {
 
 
         }, {   
-        id : "00", name : "Margin, anterior DCIS",
+        id : "90", name : "Margin, anterior DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
             id : "00", name : "Free (>10mm)"
@@ -4110,7 +4113,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {   
-        id : "00", name : "Margin, posterior, DCIS",
+        id : "90", name : "Margin, posterior, DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
             id : "00", name : "Free (>10mm)"
@@ -4125,7 +4128,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {   
-        id : "00", name : "Margin, superior, DCIS",
+        id : "90", name : "Margin, superior, DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
             id : "00", name : "Free (>10mm)"
@@ -4140,23 +4143,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {   
-        id : "00", name : "Margin, inferior, DCIS",
-       optional_state  : "required", "options" : [ {
-          group : [  {
-            id : "00", name : "Free (>10mm)"
-          }, {
-            id : "00", name : "Not applicable"
-          }, {
-            description : "for TUMOR ON ink",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive "
-          } ],
-           
-          id : "00", name : ""
-        } ]
-
-      }, {   
-        id : "00", name : "Margin, medial, DCIS",
+        id : "90", name : "Margin, inferior, DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
             id : "00", name : "Free (>10mm)"
@@ -4172,7 +4159,23 @@ var database = {
         } ]
 
       }, {   
-        id : "00", name : "Margin, lateral, DCIS",
+        id : "90", name : "Margin, medial, DCIS",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free (>10mm)"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "for TUMOR ON ink",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive "
+          } ],
+           
+          id : "00", name : ""
+        } ]
+
+      }, {   
+        id : "90", name : "Margin, lateral, DCIS",
        optional_state  : "required", "options" : [ {
           group : [  {
             id : "00", name : "Free (>10mm)"
@@ -25423,6 +25426,23 @@ var database = {
               }
              
             }
+
+              // DCIS maring na
+             //
+             if (gid == '90') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??9000") {
+                  this.row.inputanswers[j] = "Not applicable9000";
+                  this.dontUseFreeText(j)      ;          
+                 }
+
+                 
+                      
+              }
+             
+            }
+
             
             // identify row to combine all AJCC stage with
 
@@ -25445,7 +25465,8 @@ var database = {
                 qid === "50" || 
                 qid === "51" || 
                 qid === "52" || 
-                qid === "53"){
+                qid === "53" || 
+                qid === "90"){
               
 
               // if free text selected
@@ -25526,7 +25547,8 @@ var database = {
                 this.synresults[i].id === "50" || 
                 this.synresults[i].id === "51" || 
                 this.synresults[i].id === "52" || 
-                this.synresults[i].id === "53"){
+                this.synresults[i].id === "53" || 
+                this.synresults[i].id === "90"){
             
 
               if (this.row5.useFreeText[i]){
