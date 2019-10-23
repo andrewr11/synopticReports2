@@ -18688,10 +18688,10 @@ var database = {
             description : "in situ",
             id : "00", name : "Tis"
           }, {
-            description : "<= 0.8 mm AND no ulceration",
+            description : "< 0.8 mm AND no ulceration",
             id : "00", name : "T1a"
           }, {
-            description : "<= (0.8 mm AND ulceration) OR (>=0.8 mm AND <=1.0 mm with or without ulceration)",
+            description : "<(0.8 mm AND ulceration) OR (>=0.8 mm AND <=1.0 mm with or without ulceration)",
             id : "00", name : "T1b"
           }, {
             description : "> 1mm AND <= 2mm , no ulceration",
