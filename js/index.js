@@ -13109,7 +13109,7 @@ var database = {
              description : "PAS-d+, DOG1+ (rules out secretory CA)",
             id : "00", name : "Acinic cell carcinoma"
           }, {
-             description : "CD117+, MIB1+ >5% (rules out basal cell aca), p40+, p 63+ (rules out plga) bilaminar with CK7 and p63",
+             description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+, p 63+ (rules out plga) bilaminar with CK7 and p63",
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, (NOS)"
@@ -13126,7 +13126,7 @@ var database = {
           }, {
             id : "00", name : "Carcinosarcoma (true malignant mixed tumor)"
           }, {
-             description : "s100- (only one, but doe genes anyway) p63-, hyalinizing clear cell carcinoma p63+, EWSR1, r/o metastatic RCC",
+             description : "s100- (only one, but do FISH anyway) p63-, hyalinizing clear cell carcinoma p63+, EWSR1, r/o metastatic RCC",
             id : "00", name : "Clear cell adenocarcinoma"
           }, {
             id : "00", name : "Cystadenocarcinoma"
@@ -13156,7 +13156,7 @@ var database = {
           }, {
             id : "00", name : "Oncocytic carcinoma"
           }, {
-             description : "CD117+, GFAP+, PRKD1, P40-, p63 - (Ad cystic p40+ and p63+)",
+             description : "CD117+, GFAP+, PRKD1, MYB- P40-, p63 - (Ad cystic MYB+, p40+, p63+)",
             id : "00", name : "Polymorphous low-grade adenocarcinoma "
           }, {
              description : "Her2Neu+, AR+, ER-, PIK3CA+",
