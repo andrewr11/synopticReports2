@@ -9955,6 +9955,7 @@ var database = {
           id : "00", name : ""
         } ]
       } , {
+        description : "Consider if <20 yo, <40 yo and gastric, multiple, plexiform, or h/o paraganglioma",
         id : "00", name : "SDHB Immunohistochemistry",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -9969,6 +9970,7 @@ var database = {
           id : "00", name : ""
         } ]
       } , {
+        description : "Consider if <20 yo, <40yo and gastric, multiple, plexiform, or h/o paraganglioma",
         id : "00", name : "SDHA Immunohistochemistry",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13104,17 +13106,18 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-             description : "PAS-d+, DOG1+",
+             description : "PAS-d+, DOG1+ (rules out secretory CA)",
             id : "00", name : "Acinic cell carcinoma"
           }, {
-             description : "CD117+, MIB1+, bilaminar with CK7 and p63",
+             description : "CD117+, MIB1+ >5% (rules out basal cell aca), p40+, p 63+ (rules out plga) bilaminar with CK7 and p63",
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, (NOS)"
           }, {
-             description : "beta catenin- (basal cell adenoma beta catenin+)",
+             description : "beta catenin- (basal cell adenoma beta catenin+), MIB1 <5% (rules out ad cystic)",
             id : "00", name : "Basal cell adenocarcinoma"
           }, {
+            description : "most often large duct (AR+, Her2Neu+), usually MIB1>5%",
             id : "00", name : "Carcinoma ex pleomorphic adenoma (malignant mixed tumor)"
           }, {
             id : "00", name : "Carcinoma ex pleomorphic adenoma (malignant mixed tumor), Minimally invasive "
@@ -13123,7 +13126,7 @@ var database = {
           }, {
             id : "00", name : "Carcinosarcoma (true malignant mixed tumor)"
           }, {
-             description : "p63-, hyalinizing clear cell carcinoma p63+, EWSR1",
+             description : "s100- (only one, but doe genes anyway) p63-, hyalinizing clear cell carcinoma p63+, EWSR1, r/o metastatic RCC",
             id : "00", name : "Clear cell adenocarcinoma"
           }, {
             id : "00", name : "Cystadenocarcinoma"
@@ -13139,7 +13142,7 @@ var database = {
           }, {
             id : "00", name : "Lymphoepithelial carcinoma"
           }, {
-             description : "Mammoglobin +, ETV6",
+             description : "Mammoglobin +, ETV6+, DOG1-",
             id : "00", name : "Mammary analogue secretory carcinoma"
           }, {
             id : "00", name : "Metastasizing pleomorphic adenoma"
@@ -13153,7 +13156,7 @@ var database = {
           }, {
             id : "00", name : "Oncocytic carcinoma"
           }, {
-             description : "CD117+, GFAP+, PRKD1",
+             description : "CD117+, GFAP+, PRKD1, P40-, p63 - (Ad cystic p40+ and p63+)",
             id : "00", name : "Polymorphous low-grade adenocarcinoma "
           }, {
              description : "Her2Neu+, AR+, ER-, PIK3CA+",
@@ -20886,24 +20889,28 @@ var database = {
           group : [ {
             id : "00", name : "Papillary carcinoma, NOS"
           }, {
+            
             id : "00", name : "Papillary carcinoma, NOS, predominantly encapsulated"
           }, {
             id : "00", name : "Papillary carcinoma, cystic, predominantly encapsulated"
           }, {
+            description : "nuclei 2-3x taller than wide, >30% of tumor",
             id : "00", name : "Papillary carcinoma, tall cell variant"
           }, {
+            description : "nuclei 2-3x taller than wide, <30% of tumor",
             id : "00", name : "Papillary carcinoma with tall cell features"
           }, {
             id : "00", name : "Papillary carcinoma, follicular variant"
           }, {
             id : "00", name : "Papillary carcinoma, follicular variant, invasive"
           }, {
+            description : "either invasive, psammoma bodies or any papillae  ",
             id : "00", name : "Papillary carcinoma, follicular variant, invasive, predominantly encapsulated"
           }, {
               description : "CDX2 +",
             id : "00", name : "Papillary carcinoma, columnar variant"
           }, {
-              description : "Nuclear beta catenin +",
+              description : "Nuclear beta catenin +, hylainizing trabecular adenoma has membranous MIB1 staining",
             id : "00", name : "Papillary carcinoma, cribriform morular variant"
           }, {
             id : "00", name : "Follicular carcinoma, minimally invasive"
@@ -20914,6 +20921,7 @@ var database = {
           }, {
             id : "00", name : "Hurthle cell carcinoma, widely invasive"
           }, {
+            description : "insular/solid growth, mitoses, necrosis, irregular nuclear outlines but no nuclear clearing (can't be pd if have papillary nuclei)",
             id : "00", name : "Poorly differentiated thyroid carcinoma"
           }, {
              description : "CEA +, Calcitonin+, Chromogranin+, TTF1+, thyroglobulin -",
