@@ -11035,13 +11035,13 @@ var database = {
                description : "Pax8+, CK7+",
             id : "00", name : "Multilocular clear cell renal cell carcinoma"
           }, {
-               description : "Pax8+, CK7+, GATA3-",
+               description : "Pax8+, CK7+, GATA3-, AMACR+",
             id : "00", name : "Papillary renal cell carcinoma"
           }, {
-               description : "Pax8+, CK7+, GATA3-",
+               description : "Pax8+, CK7+, GATA3-, AMACR+",
             id : "00", name : "Papillary renal cell carcinoma, Type 1"
           }, {
-               description : "Pax8+, CK7 variable, GATA3-",
+               description : "Pax8+, CK7 variable, GATA3-, AMACR+",
             id : "00", name : "Papillary renal cell carcinoma, Type 2"
           }, {
              description : "Pax8+, CK7 +, GATA3+",
@@ -13109,12 +13109,12 @@ var database = {
              description : "PAS-d+, DOG1+ (rules out secretory CA)",
             id : "00", name : "Acinic cell carcinoma"
           }, {
-             description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+, p 63+ (rules out plga) bilaminar with CK7 and p63",
+             description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+/p 63+ (rules out plga) bilaminar with CK7 and p63",
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, (NOS)"
           }, {
-             description : "beta catenin- (basal cell adenoma beta catenin+), MIB1 <5% (rules out ad cystic)",
+             description : "nuclear beta catenin+/- (basal cell adenoma also beta catenin+), MIB1 <5% (rules out ad cystic)",
             id : "00", name : "Basal cell adenocarcinoma"
           }, {
             description : "most often large duct (AR+, Her2Neu+), usually MIB1>5%",
@@ -13126,16 +13126,13 @@ var database = {
           }, {
             id : "00", name : "Carcinosarcoma (true malignant mixed tumor)"
           }, {
-             description : "s100- (only one, but do FISH anyway) p63-, hyalinizing clear cell carcinoma p63+, EWSR1, r/o metastatic RCC",
-            id : "00", name : "Clear cell adenocarcinoma"
+             description : "s100-, SMA- MSA-, calponin- p63- (no myoepitheial dif, do FISH anyway), EWSR1, r/o metastatic RCC",
+            id : "00", name : "Clear cell (hyalinizing) adenocarcinoma"
           }, {
             id : "00", name : "Cystadenocarcinoma"
           }, {
              description : "DOG1+/-, CD117+, GFAP +/-",
             id : "00", name : "Epithelial-myoepithelial carcinoma"
-          }, {
-            
-            id : "00", name : "Large cell carcinoma"
           }, {
               description : "PRKD1",
             id : "00", name : "Low-grade cribriform cystadenocarcinoma "
@@ -20894,7 +20891,7 @@ var database = {
           }, {
             id : "00", name : "Papillary carcinoma, cystic, predominantly encapsulated"
           }, {
-            description : "nuclei 2-3x taller than wide, >30% of tumor",
+            description : "nuclei 2-3x taller than wide, >=30% of tumor",
             id : "00", name : "Papillary carcinoma, tall cell variant"
           }, {
             description : "nuclei 2-3x taller than wide, <30% of tumor",
@@ -20910,9 +20907,15 @@ var database = {
               description : "CDX2 +",
             id : "00", name : "Papillary carcinoma, columnar variant"
           }, {
-              description : "Nuclear beta catenin +, hylainizing trabecular adenoma has membranous MIB1 staining",
+              description : "Nuclear beta catenin +, elongate spaces without colloid, hylainizing trabecular adenoma has membranous MIB1 staining",
             id : "00", name : "Papillary carcinoma, cribriform morular variant"
           }, {
+            description : ">=30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
+          id : "00", name : "Papillary carcinoma, hobnail variant"
+        }, {
+          description : "<30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
+        id : "00", name : "Papillary carcinoma, with hobnail features"
+      }, {
             id : "00", name : "Follicular carcinoma, minimally invasive"
           }, {
             id : "00", name : "Follicular carcinoma, widely invasive"
@@ -20923,6 +20926,9 @@ var database = {
           }, {
             description : "insular/solid growth, mitoses, necrosis, irregular nuclear outlines but no nuclear clearing (can't be pd if have papillary nuclei)",
             id : "00", name : "Poorly differentiated thyroid carcinoma"
+          }, {
+            description : "pleomorphic or spindle cell or spindle squamous cell types, PAX8+, TTF- thyroglobulin -, MIB1 >30%, may only be in lymph node",
+            id : "00", name : "Anaplastic thyroid carcinoma"
           }, {
              description : "CEA +, Calcitonin+, Chromogranin+, TTF1+, thyroglobulin -",
             id : "00", name : "Medullary carcinoma"
