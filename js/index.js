@@ -13109,7 +13109,7 @@ var database = {
              description : "PAS-d+, DOG1+ (rules out secretory CA)",
             id : "00", name : "Acinic cell carcinoma"
           }, {
-             description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+/p 63+ (rules out plga) bilaminar with CK7 and p63",
+             description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+(rules out plga) bilaminar with CK7 and p63",
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, (NOS)"
@@ -13126,7 +13126,7 @@ var database = {
           }, {
             id : "00", name : "Carcinosarcoma (true malignant mixed tumor)"
           }, {
-             description : "s100-, SMA- MSA-, calponin- p63- (no myoepitheial dif, do FISH anyway), EWSR1, r/o metastatic RCC",
+             description : "s100-, SMA- MSA-, calponin- (no myoepitheial dif, do FISH anyway), p63 +/-, EWSR1, r/o metastatic RCC",
             id : "00", name : "Clear cell (hyalinizing) adenocarcinoma"
           }, {
             id : "00", name : "Cystadenocarcinoma"
@@ -13134,7 +13134,7 @@ var database = {
              description : "DOG1+/-, CD117+, GFAP +/-",
             id : "00", name : "Epithelial-myoepithelial carcinoma"
           }, {
-              description : "PRKD1",
+              description : "PRKD1, possible variant of PLGA",
             id : "00", name : "Low-grade cribriform cystadenocarcinoma "
           }, {
             id : "00", name : "Lymphoepithelial carcinoma"
@@ -13153,12 +13153,15 @@ var database = {
           }, {
             id : "00", name : "Oncocytic carcinoma"
           }, {
-             description : "CD117+, GFAP+, PRKD1, MYB- P40-, p63 - (Ad cystic MYB+, p40+, p63+)",
+             description : "CD117+, GFAP+, PRKD1, MYB- P40-, (Ad cystic MYB+, p40+)",
             id : "00", name : "Polymorphous low-grade adenocarcinoma "
           }, {
              description : "Her2Neu+, AR+, ER-, PIK3CA+",
             id : "00", name : "Salivary duct carcinoma"
           }, {
+            description : "p63+ basal cells, AR+, Her2Neu-",
+           id : "00", name : "Low grade intraductal adenocarcinoma"
+         }, {
             id : "00", name : "Sebaceous adenocarcinoma"
           }, {
             id : "00", name : "Sebaceous lymphadenocarcinoma"
@@ -20907,7 +20910,7 @@ var database = {
               description : "CDX2 +",
             id : "00", name : "Papillary carcinoma, columnar variant"
           }, {
-              description : "Nuclear beta catenin +, elongate spaces without colloid, hylainizing trabecular adenoma has membranous MIB1 staining",
+              description : "Nuclear beta catenin +, ER+, PR+, cyclin D1+, elongate spaces without colloid, hylainizing trabecular adenoma has membranous MIB1 staining",
             id : "00", name : "Papillary carcinoma, cribriform morular variant"
           }, {
             description : ">=30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
@@ -20924,10 +20927,10 @@ var database = {
           }, {
             id : "00", name : "Hurthle cell carcinoma, widely invasive"
           }, {
-            description : "insular/solid growth, mitoses, necrosis, irregular nuclear outlines but no nuclear clearing (can't be pd if have papillary nuclei)",
+            description : "cyclin D1 +, insular/solid growth, mitoses, necrosis, irregular nuclear outlines but no nuclear clearing (can't be pd if have papillary nuclei)",
             id : "00", name : "Poorly differentiated thyroid carcinoma"
           }, {
-            description : "pleomorphic or spindle cell or spindle squamous cell types, PAX8+, TTF- thyroglobulin -, MIB1 >30%, may only be in lymph node",
+            description : "pleomorphic or spindle cell or spindle squamous cell types, PAX8+, TTF- thyroglobulin -, MIB1 >30%, Cyclin D1+, may only be in lymph node",
             id : "00", name : "Anaplastic thyroid carcinoma"
           }, {
              description : "CEA +, Calcitonin+, Chromogranin+, TTF1+, thyroglobulin -",
