@@ -13749,6 +13749,7 @@ var database = {
           }, {
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
+            description : "check HPV",
             id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
           }, {
             id : "00", name : "Adenosquamous carcinoma"
@@ -13761,10 +13762,16 @@ var database = {
           }, {
             id : "00", name : "Verrucous carcinoma"
           }, {
+            description : "check EBV",
             id : "00", name : "Lymphoepithelial carcinoma (non-nasopharyngeal)"
           }, {
+            description : "check if IDH2 +, NUT-, INI+",
             id : "00", name : "Sinonasal undifferentiated carcinoma (SNUC)"
           }, {
+            description : "INI-, NUT-",
+            id : "00", name : "INI/SMARC deficient carcinoma"
+          }, {
+            description : "NUT +",
             id : "00", name : "NUT carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, Intestinal type"
@@ -13797,6 +13804,7 @@ var database = {
           }, {
             id : "00", name : "Atypical carcinoid tumor (moderately differentiated neuroendocrine carcinoma)"
           }, {
+            description : "rule out neuroblastoma (can be focally ker+, more sustentacular cells",
             id : "00", name : "Small cell carcinoma (poorly differentiated neuroendocrine carcinoma)"
           }, {
             id : "00", name : "Combined (or composite) small cell carcinoma, neuroendocrine type"
