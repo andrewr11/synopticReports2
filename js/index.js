@@ -13745,12 +13745,12 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "check HPV",
+            description : "p40+, check HPV, CD99-, desmin- , Rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Squamous cell carcinoma"
           }, {
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
-            description : "check HPV",
+            description : "p40+, check HPV, CD99-, desmin- Rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
           }, {
             id : "00", name : "Adenosquamous carcinoma"
@@ -13766,26 +13766,17 @@ var database = {
             description : "check EBV",
             id : "00", name : "Lymphoepithelial carcinoma (non-nasopharyngeal)"
           }, {
-            description : "check if IDH2 +, NUT-, INI+",
+            description : "check if IDH2 +, NUT-, INI+, CD99-, desmin-",
             id : "00", name : "Sinonasal undifferentiated carcinoma (SNUC)"
           }, {
-            description : "INI-, NUT-, p40 +focal, syn+focal",
+            description : "INI-, NUT-, p40 +focal, syn+focal, CD99-, desmin-",
             id : "00", name : "INI/SMARC deficient carcinoma"
           }, {
-            description : "NUT +, p40+",
+            description : "NUT +, p40+, INI+, CD99-, desmin-",
             id : "00", name : "NUT carcinoma"
           }, {
             description : "p40+, p16+, HPV+, cilia",
             id : "00", name : "metastatic ciliated HPV+ squamous cell carcinoma"
-          }, {
-            description : " ker+, p40+, syn+, CD99+strong, NKX2.2 +",
-            id : "00", name : "Adamantinoma like Ewing sarcoma"
-          }, {
-            description : "s100+, SMA+, fish PAX3+",
-            id : "00", name : "Biphenotypic sinonasal sarcoma"
-          }, {
-            description : "beta cat nuclear +, SMA+, CD34-, STAT6-",
-            id : "00", name : "Sinonasal glomangiopericytoma"
           }, {
             id : "00", name : "Adenocarcinoma, Intestinal type"
           }, {
@@ -13803,8 +13794,9 @@ var database = {
           }, {
             id : "00", name : "Carcinoma ex pleomorphic adenoma (malignant mixed tumor)"
           }, {
-            id : "00", name : "Clear cell adenocarcinoma"
-          }, {
+            description : "s100-, SMA- MSA-, calponin- (no myoepitheial dif, do FISH anyway), p40 +/-, p63 +/-, EWSR1, r/o metastatic RCC",
+           id : "00", name : "Clear cell (hyalinizing) carcinoma"
+         }, {
             id : "00", name : "Epithelial-myoepithelial carcinoma"
           }, {
             id : "00", name : "Mucoepidermoid carcinoma"
@@ -13821,7 +13813,7 @@ var database = {
           }, {
             id : "00", name : "Atypical carcinoid tumor (moderately differentiated neuroendocrine carcinoma)"
           }, {
-            description : "may be small part of a squamous cell ca, often HPV+, ker +, syn+, TTF1+, s100 focal, rule out neuroblastoma (focally ker+, s100 peripheral palisading, TTF1-, calretinin+), rule out pituitary adenoma (syn+, ker+, s100-, TTF1-, calretinin-)",
+            description : "may be small part of a squamous cell ca, often HPV+, ker +, syn+, TTF1+, s100 focal, CD99- rule out neuroblastoma (focally ker+, s100 peripheral palisading, TTF1-, calretinin+), rule out pituitary adenoma (syn+, ker+, s100-, TTF1-, calretinin-)",
             id : "00", name : "Small cell carcinoma (poorly differentiated neuroendocrine carcinoma)"
           }, {
             id : "00", name : "Combined (or composite) small cell carcinoma, neuroendocrine type"
