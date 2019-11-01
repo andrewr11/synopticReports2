@@ -13126,7 +13126,7 @@ var database = {
           }, {
             id : "00", name : "Carcinosarcoma (true malignant mixed tumor)"
           }, {
-             description : "s100-, SMA- MSA-, calponin- (no myoepitheial dif, do FISH anyway), p63 +/-, EWSR1, r/o metastatic RCC",
+             description : "s100-, SMA- MSA-, calponin- (no myoepitheial dif, do FISH anyway), p40 +/-, p63 +/-, EWSR1, r/o metastatic RCC",
             id : "00", name : "Clear cell (hyalinizing) adenocarcinoma"
           }, {
             id : "00", name : "Cystadenocarcinoma"
@@ -13745,6 +13745,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
+            description : "check HPV",
             id : "00", name : "Squamous cell carcinoma"
           }, {
             id : "00", name : "Squamous cell carcinoma, keratinizing"
@@ -13768,11 +13769,23 @@ var database = {
             description : "check if IDH2 +, NUT-, INI+",
             id : "00", name : "Sinonasal undifferentiated carcinoma (SNUC)"
           }, {
-            description : "INI-, NUT-",
+            description : "INI-, NUT-, p40 +focal, syn+focal",
             id : "00", name : "INI/SMARC deficient carcinoma"
           }, {
-            description : "NUT +",
+            description : "NUT +, p40+",
             id : "00", name : "NUT carcinoma"
+          }, {
+            description : "p40+, p16+, HPV+, cilia",
+            id : "00", name : "metastatic ciliated HPV+ squamous cell carcinoma"
+          }, {
+            description : " ker+, p40+, syn+, CD99+strong, NKX2.2 +",
+            id : "00", name : "Adamantinoma like Ewing sarcoma"
+          }, {
+            description : "s100+, SMA+, fish PAX3+",
+            id : "00", name : "Biphenotypic sinonasal sarcoma"
+          }, {
+            description : "beta cat nuclear +, SMA+, CD34-, STAT6-",
+            id : "00", name : "Sinonasal glomangiopericytoma"
           }, {
             id : "00", name : "Adenocarcinoma, Intestinal type"
           }, {
@@ -13780,6 +13793,10 @@ var database = {
           }, {
             id : "00", name : "Acinic cell carcinoma"
           }, {
+            description : "looks like adenoid cystic, but HPV+, MYB-",
+            id : "00", name : "HPV related mulitphenotypic sinonasal carcinoma"
+          }, {
+            description : "HPV-, MYB+, rule out HPV related sinonasal carcinoma",
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, not otherwise specified (NOS)"
@@ -13804,7 +13821,7 @@ var database = {
           }, {
             id : "00", name : "Atypical carcinoid tumor (moderately differentiated neuroendocrine carcinoma)"
           }, {
-            description : "rule out neuroblastoma (can be focally ker+, more sustentacular cells",
+            description : "may be small part of a squamous cell ca, often HPV+, ker +, syn+, TTF1+, s100 focal, rule out neuroblastoma (focally ker+, s100 peripheral palisading, TTF1-, calretinin+), rule out pituitary adenoma (syn+, ker+, s100-, TTF1-, calretinin-)",
             id : "00", name : "Small cell carcinoma (poorly differentiated neuroendocrine carcinoma)"
           }, {
             id : "00", name : "Combined (or composite) small cell carcinoma, neuroendocrine type"
