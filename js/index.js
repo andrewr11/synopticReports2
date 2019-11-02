@@ -13745,12 +13745,12 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "p40+, check HPV, CD99-, desmin- , Rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
+            description : "p40+, check HPV/p16, CD99-, desmin-, syn-, s100- , if poorly dif, rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Squamous cell carcinoma"
           }, {
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
-            description : "p40+, check HPV, CD99-, desmin- Rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
+            description : "p40+, check HPV, CD99-, desmin- , syn-, s100-, if poorly dif, rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
           }, {
             id : "00", name : "Adenosquamous carcinoma"
@@ -13763,16 +13763,16 @@ var database = {
           }, {
             id : "00", name : "Verrucous carcinoma"
           }, {
-            description : "check EBV",
+            description : "EBV+",
             id : "00", name : "Lymphoepithelial carcinoma (non-nasopharyngeal)"
           }, {
-            description : "check if IDH2 +, NUT-, INI+, CD99-, desmin-",
+            description : "check if IDH2 + (PCR not IHC), p40 +/-, NUT-, INI+, CD99-, desmin-, syn-, s100-",
             id : "00", name : "Sinonasal undifferentiated carcinoma (SNUC)"
           }, {
-            description : "INI-, NUT-, p40 +focal, syn+focal, CD99-, desmin-",
+            description : "INI-, NUT-, p40 +/-, syn+focal, CD99-, desmin-, syn-, s100-",
             id : "00", name : "INI/SMARC deficient carcinoma"
           }, {
-            description : "NUT +, p40+, INI+, CD99-, desmin-",
+            description : "NUT +, p40+/-, INI+, CD99-, desmin-, syn-, s100-",
             id : "00", name : "NUT carcinoma"
           }, {
             description : "p40+, p16+, HPV+, cilia",
@@ -13813,7 +13813,7 @@ var database = {
           }, {
             id : "00", name : "Atypical carcinoid tumor (moderately differentiated neuroendocrine carcinoma)"
           }, {
-            description : "may be small part of a squamous cell ca, often HPV+, ker +, syn+, TTF1+, s100 focal, CD99- rule out neuroblastoma (focally ker+, s100 peripheral palisading, TTF1-, calretinin+), rule out pituitary adenoma (syn+, ker+, s100-, TTF1-, calretinin-)",
+            description : "may be small part of a squamous cell ca, often HPV+, ker +, syn+, TTF1+, s100 focal, CD99- rule out neuroblastoma (focally ker+, s100 peripheral palisading, TTF1-, calretinin+), rule out pituitary adenoma (syn+, ker+, s100-, TTF1-, calretinin-), rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Small cell carcinoma (poorly differentiated neuroendocrine carcinoma)"
           }, {
             id : "00", name : "Combined (or composite) small cell carcinoma, neuroendocrine type"
