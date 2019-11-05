@@ -10026,6 +10026,7 @@ var database = {
           }, {
             id : "00", name : "Hepatoblastoma, epithelial type, macrotrabecular pattern "
           }, {
+            description : "some cases INI1-",
             id : "00", name : "Hepatoblastoma, epithelial type, small cell undifferentiated pattern "
           }, {
             id : "00", name : "Hepatoblastoma, mixed epithelial and mesenchymal type without teratoid features  "
@@ -10120,6 +10121,7 @@ var database = {
           }, {
             id : "00", name : "Hepatoblastoma, epithelial type, macrotrabecular pattern "
           }, {
+            description : "some cases INI1-",
             id : "00", name : "Hepatoblastoma, epithelial type, small cell undifferentiated pattern "
           }, {
             id : "00", name : "Hepatoblastoma, mixed epithelial and mesenchymal type without teratoid features  "
@@ -10264,6 +10266,7 @@ var database = {
           group : [ {
             id : "00", name : "Hepatocellular carcinoma"
           }, {
+            description : "CK7+, CD68+",
             id : "00", name : "Fibrolamellar hepatocellular carcinoma  "
           }, {
             id : "00", name : "Undifferentiated carcinoma  "
@@ -10496,6 +10499,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
+            description : "CK7+, CD56+",
             id : "00", name : "Intrahepatic cholangiocarcinoma"
           }, {
             id : "00", name : "Combined hepatocellular and cholangiocarcinoma "
