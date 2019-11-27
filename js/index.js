@@ -6732,11 +6732,15 @@ var database = {
           group : [ {
             id : "00", name : "No prior treatment"
           }, {
-            id : "00", name : "Present (score 1 or 2)"
+            id : "00", name : "Present, no viable tumor cells (complete response, score 0)"
           }, {
-            id : "00", name : "No response (score 3)"
+            id : "00", name : "Present, single cells or rare small groups of cancer cells (near complete response, score 1)"
           }, {
-            id : "00", name : "indeterminate"
+            id : "00", name : "Present, residual cancer with evident tumor regression (partial response, score 2)"
+          }, {
+            id : "00", name : "None, no response (score 3)"
+          }, {
+            id : "00", name : "Indeterminate"
           }, {
             id : "00", name : "Not known"
           }  ],
