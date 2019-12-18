@@ -22008,6 +22008,10 @@ var database = {
           }, {
             id : "00", name : "Urethrectomy with penectomy"
           }, {
+            id : "00", name : "Urethrectomy with cystectomy, hysterectomy"
+          }, {
+            id : "00", name : "Urethrectomy with cystectomy, hysterectomy and bilateral oopherectomy"
+          }, {
             id : "00", name : "Anterior exenteration"
           } ],
           id : "00", name : ""
@@ -22075,6 +22079,9 @@ var database = {
             id : "00", name : "Grade 2/3, intermediate grade"
           }, {
             id : "00", name : "Grade 3/3, high grade"
+          }, {
+            description : "CIS",
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -22267,7 +22274,47 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      } ]
+      } , {
+        description: "T3+ or N1+ only, otherwise NA",
+       id : "00", name : "MSI IHC and Interpretation",
+      optional_state  : "required", "options" : [ {
+         group : [ {
+           id : "00", name : "Intact nuclear expression of MMR proteins (MLH1, MSH2, MSH6, PMS2): No evidence of deficient mismatch repair (low probability of MSI-H)"
+         },{
+           id : "00", name : "Loss of nuclear expression of one or more MMR proteins (MLH1, MSH2, MSH6, PMS2): deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). The presence of MSI-H/deficient mismatch repair may also be an indication for additional testing for Lynch syndrome and genetic counselling."
+         }, {
+           id : "00", name : "Pending"
+         }, {
+           id : "00", name : "Not applicable"
+         }, {
+           description : "case #",
+           inputs_required : [ "" ],
+           id : "10", name : "See case "
+         }],
+         id : "00", name : ""
+       } ]
+       }, {
+          description : "Ventana PDL1, if squamous differentiation use that block for PDL1",
+       id : "00", name : "Ancillary studies ordered",
+      optional_state  : "required", "options" : [ {
+         group : [ {
+            description : "T1-2N0",
+           id : "00", name : "None"
+         }, {
+            description : "T3-4 or N1",
+           id : "00", name : "PDL1"
+         }, {
+           id : "00", name : "Pending"
+         }, {
+           id : "00", name : "Not applicable"
+         }, {
+           inputs_required : [ "" ],
+           id : "10", name : "See case"
+         } ],
+         id : "00", name : ""
+       } ]
+      }]
+      
     }, {
       most_common : false,
       id : "00", name : "Urinary Bladder, Cystectomy",
@@ -22282,6 +22329,10 @@ var database = {
             id : "00", name : "Total/radical cystectomy"
           }, {
             id : "00", name : "Radical cystoprostatectomy"
+          }, {
+            id : "00", name : "Total/radical cystectomy, hysterectomy and bilateral oophorectomy"
+          }, {
+            id : "00", name : "Total/radical cystectomy, hysterectomy"
           }, {
             id : "00", name : "Anterior exenteration"
           } ],
@@ -22375,6 +22426,9 @@ var database = {
             id : "00", name : "Grade 2/3, intermediate grade"
           }, {
             id : "00", name : "Grade 3/3, high grade"
+          }, {
+            description : "CIS",
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
