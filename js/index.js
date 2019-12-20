@@ -11043,6 +11043,9 @@ var database = {
                description : "Pax8+, CK7+",
             id : "00", name : "Multilocular clear cell renal cell carcinoma"
           }, {
+            description : "Pax8+, CK7+, GATA3-/+",
+             id : "00", name : "Clear cell papillary"
+           }, {
                description : "Pax8+, CK7+, GATA3-, AMACR+",
             id : "00", name : "Papillary renal cell carcinoma"
           }, {
@@ -11082,9 +11085,6 @@ var database = {
             id : "00", name : "Tubulocystic renal cell carcinoma "
           }, {
             id : "00", name : "Acquired cystic disease associated renal cell carcinoma"
-          }, {
-               description : "Pax8+, CK7+, GATA3-/+",
-            id : "00", name : "Clear cell papillary"
           }, {
              description : "Fumarate -, 2-succinocysteine (2SC) + CMV like nucleoli",
             id : "00", name : "Hereditary leiomyomatosis and renal cell carcinoma-associated renal cell carcinoma"
