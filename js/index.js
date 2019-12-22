@@ -6570,6 +6570,8 @@ var database = {
           }, {
             id : "00", name : "Transverse colectomy"
           }, {
+            id : "00", name : "Right and transverse colectomy"
+          }, {
             id : "00", name : "Left hemicolectomy"
           }, {
             id : "00", name : "Sigmoidectomy"
@@ -6577,6 +6579,8 @@ var database = {
             id : "00", name : "Rectosigmoid colectomy"
           }, {
             id : "00", name : "Rectal/rectosigmoid colon (low anterior resection)"
+          }, {
+            id : "00", name : "Sub-total abdominal colectomy"
           }, {
             id : "00", name : "Total abdominal colectomy"
           }, {
@@ -6996,11 +7000,15 @@ var database = {
           }, {
             id : "00", name : "Transverse hemicolectomy"
           }, {
+            id : "00", name : "Right and tansverse hemicolectomy"
+          }, {
             id : "00", name : "Left hemicoloectomy"
           }, {
             id : "00", name : "Sigmoidectomy"
           }, {
             id : "00", name : "Rectal/rectosigmoid colon (low anterior resection)"
+          }, {
+            id : "00", name : "Sub-total abdominal colectomy"
           }, {
             id : "00", name : "Total abdominal colectomy"
           }, {
