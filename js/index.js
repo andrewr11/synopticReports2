@@ -6568,9 +6568,11 @@ var database = {
           group : [ {
             id : "00", name : "Right hemicolectomy"
           }, {
-            id : "00", name : "Transverse colectomy"
+            id : "00", name : "Right and transverse hemicolectomy (extended right hemicolectomy)"
           }, {
-            id : "00", name : "Right and transverse colectomy"
+            id : "00", name : "Transverse hemicolectomy"
+          }, {
+            id : "00", name : "Transverse and left hemicolectomy"
           }, {
             id : "00", name : "Left hemicolectomy"
           }, {
