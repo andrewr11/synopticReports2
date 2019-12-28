@@ -7321,6 +7321,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
+            description : "albumin ISH- (intrahepatic cholangioca albumin ISH+, HCC albumin ISH+",
             id : "00", name : "Adenocarcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, intestinal type"
@@ -10276,6 +10277,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
+            description : "hepPar +, Glypican +, abnl reticulin, abnl CD34, CK7-/focal+, albumin ISH+ (intrahepatic cholangioca albumin ISH+, extrahepatic cholangio albumin ISH-",
             id : "00", name : "Hepatocellular carcinoma"
           }, {
             description : "CK7+, CD68+",
@@ -10511,7 +10513,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "CK7+, CD56+",
+            description : "CK7+, CD56+, albumin ISH+ (extrahepatic cholangioca albumin ISH-, HCC albumin ISH+",
             id : "00", name : "Intrahepatic cholangiocarcinoma"
           }, {
             id : "00", name : "Combined hepatocellular and cholangiocarcinoma "
