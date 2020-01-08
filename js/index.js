@@ -13129,7 +13129,7 @@ var database = {
              description : "PAS-d+, DOG1+ (rules out secretory CA)",
             id : "00", name : "Acinic cell carcinoma"
           }, {
-             description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+(rules out plga) bilaminar with CK7 and p63",
+             description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+(rules out plga) bilaminar with CK7 and p63, t(6,9)(MYB-NFIB)",
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, (NOS)"
@@ -13146,21 +13146,21 @@ var database = {
           }, {
             id : "00", name : "Carcinosarcoma (true malignant mixed tumor)"
           }, {
-             description : "s100-, SMA- MSA-, calponin- (no myoepitheial dif, do FISH anyway), p40 +/-, p63 +/-, EWSR1, r/o metastatic RCC",
+             description : "s100-, SMA- MSA-, calponin- (no myoepitheial dif, do FISH anyway), p40 +/-, p63 +/-, EWSR1, , mucin-,r/o metastatic RCC, SQC, MEC",
             id : "00", name : "Clear cell (hyalinizing) adenocarcinoma"
           }, {
             id : "00", name : "Cystadenocarcinoma"
           }, {
-             description : "DOG1+/-, CD117+, GFAP +/-",
+             description : "DOG1+/-, CD117+, GFAP +/-, MYB-, HRAS mutation",
             id : "00", name : "Epithelial-myoepithelial carcinoma"
           }, {
-              description : "PRKD1, possible variant of PLGA",
+              description : "PRKD1, possible variant of PLGA, but with optically clear nuclei, often near tongue",
             id : "00", name : "Low-grade cribriform cystadenocarcinoma "
           }, {
             id : "00", name : "Lymphoepithelial carcinoma"
           }, {
-             description : "Mammoglobin +, ETV6+, DOG1-",
-            id : "00", name : "Mammary analogue secretory carcinoma"
+             description : "Mammoglobin +, ETV6+, DOG1-, S100+, SOX10+, p63-",
+            id : "00", name : "Mammary analogue secretory carcinoma/Secretory carcinoma"
           }, {
             id : "00", name : "Metastasizing pleomorphic adenoma"
           }, {
@@ -13179,7 +13179,7 @@ var database = {
              description : "Her2Neu+, AR+, ER-, PIK3CA+",
             id : "00", name : "Salivary duct carcinoma"
           }, {
-            description : "p63+ basal cells, AR+, Her2Neu-",
+            description : "p63+ & s100+ basal cells, AR+, Her2Neu-, NCOA4-RET",
            id : "00", name : "Low grade intraductal adenocarcinoma"
          }, {
             id : "00", name : "Sebaceous adenocarcinoma"
@@ -13792,7 +13792,7 @@ var database = {
             description : "INI-, NUT-, p40 +/-, syn+focal, CD99-, desmin-, syn-, s100-",
             id : "00", name : "INI/SMARC deficient carcinoma"
           }, {
-            description : "NUT +, p40+/-, INI+, CD99-, desmin-, syn-, s100-",
+            description : "NUT +, p40+/-, INI+, CD99-, desmin-, syn-, s100-, CD34 +/-",
             id : "00", name : "NUT carcinoma"
           }, {
             description : "p40+, p16+, HPV+, cilia",
