@@ -15484,6 +15484,8 @@ var database = {
           }, {
             id : "00", name : "Tumor invades peripancreatic soft tissues  "
           }, {
+            id : "00", name : "Tumor invades duodenal wall and peripancreatic tissues "
+          }, {
             description : "which",
             inputs_required : [ "" ],
             id : "10", name : "Tumor invades other adjacent organs or structures  "
