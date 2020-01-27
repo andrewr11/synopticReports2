@@ -15117,6 +15117,8 @@ var database = {
             id : "00", name : "Pancreatic body"
           }, {
             id : "00", name : "Pancreatic tail"
+          }, {
+            id : "00", name : "Pancreatic body/tail"
           } ],
           id : "00", name : ""
         } ]
@@ -15397,6 +15399,8 @@ var database = {
             id : "00", name : "Pancreatic body"
           }, {
             id : "00", name : "Pancreatic tail"
+          }, {
+            id : "00", name : "Pancreatic body/tail"
           } ],
           id : "00", name : ""
         } ]
@@ -15484,7 +15488,7 @@ var database = {
           }, {
             id : "00", name : "Tumor invades peripancreatic soft tissues  "
           }, {
-            id : "00", name : "Tumor invades duodenal wall and peripancreatic tissues "
+            id : "00", name : "Tumor invades duodenal wall and peripancreatic soft tissues "
           }, {
             description : "which",
             inputs_required : [ "" ],
@@ -18494,9 +18498,7 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            description : "extent",
-            inputs_required : [ "" ],
-            id : "10", name : "Present"
+            id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
           }, {
@@ -18913,9 +18915,7 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            description : "extent",
-            inputs_required : [ "" ],
-            id : "10", name : "Present"
+            id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
           }, {
