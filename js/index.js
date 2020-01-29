@@ -11186,6 +11186,12 @@ var database = {
           }, {
             id : "00", name : "Invades major veins"
           }, {
+            id : "00", name : "Invades perinephric tissue and renal sinus"
+          }, {
+            id : "00", name : "Invades perinephric tissue and major veins"
+          }, {
+            id : "00", name : "Invades renal sinus and major veins"
+          }, {
             id : "64", name : "Direct extension into adrenal (T4)"
           }, {
             id : "00", name : "Metastasis to adrenal (M1)"
@@ -13765,12 +13771,12 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "p40+, check HPV/p16, CD99-, desmin-, syn-, s100- , if poorly dif, rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
+            description : "p40+, check HPV/p16, CD99-, desmin-, syn-, s100- , NUT-, INI+, if poorly dif, rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Squamous cell carcinoma"
           }, {
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
-            description : "p40+, check HPV, CD99-, desmin- , syn-, s100-, if poorly dif, rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
+            description : "p40+, check HPV, CD99-, desmin- , syn-, s100-, NUT-, INI+, if poorly dif, rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
           }, {
             id : "00", name : "Adenosquamous carcinoma"
