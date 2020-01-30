@@ -13138,7 +13138,11 @@ var database = {
              description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+(rules out plga) bilaminar with CK7 and p63, t(6,9)(MYB-NFIB)",
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
-            id : "00", name : "Adenocarcinoma, (NOS)"
+            id : "00", name : "Adenocarcinoma, (NOS), low grade"
+          }, {
+            id : "00", name : "Adenocarcinoma, (NOS), intermediate grade"
+          }, {
+            id : "00", name : "Adenocarcinoma, (NOS), high grade"
           }, {
              description : "nuclear beta catenin+/- (basal cell adenoma also beta catenin+), MIB1 <5% (rules out ad cystic)",
             id : "00", name : "Basal cell adenocarcinoma"
@@ -13155,14 +13159,18 @@ var database = {
              description : "s100-, SMA- MSA-, calponin- (no myoepitheial dif, do FISH anyway), p40 +/-, p63 +/-, EWSR1, , mucin-,r/o metastatic RCC, SQC, MEC",
             id : "00", name : "Clear cell (hyalinizing) adenocarcinoma"
           }, {
-            id : "00", name : "Cystadenocarcinoma"
-          }, {
-             description : "DOG1+/-, CD117+, GFAP +/-, MYB-, HRAS mutation",
-            id : "00", name : "Epithelial-myoepithelial carcinoma"
-          }, {
               description : "PRKD1, possible variant of PLGA, but with optically clear nuclei, often near tongue",
-            id : "00", name : "Low-grade cribriform cystadenocarcinoma "
+            id : "00", name : "Cribriform adenocarcinoma, low grade "
           }, {
+            description : "PRKD1, possible variant of PLGA, but with optically clear nuclei, often near tongue",
+          id : "00", name : "Cribriform adenocarcinoma, intermediate grade "
+        }, {
+          description : "PRKD1, possible variant of PLGA, but with optically clear nuclei, often near tongue",
+        id : "00", name : "Cribriform adenocarcinoma, high grade "
+        }, {
+          description : "DOG1+/-, CD117+, GFAP +/-, MYB-, HRAS mutation",
+         id : "00", name : "Epithelial-myoepithelial carcinoma"
+        }, {
             id : "00", name : "Lymphoepithelial carcinoma"
           }, {
              description : "Mammoglobin +, ETV6+, DOG1-, S100+, SOX10+, p63-",
@@ -13171,8 +13179,14 @@ var database = {
             id : "00", name : "Metastasizing pleomorphic adenoma"
           }, {
              description : "CRTC1-MAML2 fusion, high grade either Her2Neu+ or EGFR+",
-            id : "00", name : "Mucoepidermoid carcinoma"
+            id : "00", name : "Mucoepidermoid carcinoma, low grade"
           }, {
+            description : "CRTC1-MAML2 fusion, high grade either Her2Neu+ or EGFR+",
+           id : "00", name : "Mucoepidermoid carcinoma, intermediate grade"
+         }, {
+          description : "CRTC1-MAML2 fusion, high grade either Her2Neu+ or EGFR+",
+         id : "00", name : "Mucoepidermoid carcinoma, high grade"
+       }, {
             id : "00", name : "Mucinous adenocarcinoma (colloid carcinoma)"
           }, {
             id : "00", name : "Myoepithelial carcinoma (malignant myoepithelioma)"
@@ -13180,8 +13194,14 @@ var database = {
             id : "00", name : "Oncocytic carcinoma"
           }, {
              description : "CD117+, GFAP+, PRKD1, MYB- P40-, (Ad cystic MYB+, p40+)",
-            id : "00", name : "Polymorphous low-grade adenocarcinoma "
+            id : "00", name : "Polymorphous adenocarcinoma, classic, low grade "
           }, {
+            description : "CD117+, GFAP+, PRKD1, MYB- P40-, (Ad cystic MYB+, p40+)",
+           id : "00", name : "Polymorphous adenocarcinoma, classic, intermediate grade "
+         }, {
+          description : "CD117+, GFAP+, PRKD1, MYB- P40-, (Ad cystic MYB+, p40+)",
+         id : "00", name : "Polymorphous adenocarcinoma, classic, high grade "
+       }, {
              description : "Her2Neu+, AR+, ER-, PIK3CA+",
             id : "00", name : "Salivary duct carcinoma"
           }, {
@@ -13200,18 +13220,6 @@ var database = {
             id : "00", name : "Squamous cell carcinoma, primary "
           }, {
             id : "00", name : "Undifferentiated carcinoma, large cell type "
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Grade",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Grade 1/3, low grade"
-          }, {
-            id : "00", name : "Grade 2/3, intermediate grade"
-          }, {
-            id : "00", name : "Grade 3/3, high grade"
           } ],
           id : "00", name : ""
         } ]
@@ -18479,6 +18487,8 @@ var database = {
           }, {
             id : "00", name : "Acral lentiginous melanoma"
           }, {
+            id : "00", name : "Spindle cell melanoma"
+          }, {
             id : "00", name : "Desmoplastic melanoma"
           }, {
             id : "00", name : "Invasive melanoma, NOS"
@@ -18895,6 +18905,8 @@ var database = {
             id : "00", name : "Lentigo maligna melanoma"
           }, {
             id : "00", name : "Acral lentiginous melanoma"
+          }, {
+            id : "00", name : "Spindle cell melanoma"
           }, {
             id : "00", name : "Desmoplastic melanoma"
           }, {
@@ -21759,13 +21771,18 @@ var database = {
           }, {
             id : "00", name : "High grade"
           }, {
+            id : "00", name : "Focally high grade"
+          }, {
             description : "(squamous carcinoma and adenocarcinoma only",
             id : "00", name : "Grade 1/3, low grade"
           }, {
             id : "00", name : "Grade 2/3, intermediate grade"
           }, {
             id : "00", name : "Grade 3/3, high grade"
-          } ],
+          } , {
+            description : "CIS",
+            id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -22092,6 +22109,8 @@ var database = {
             id : "00", name : "Low grade"
           }, {
             id : "00", name : "High grade"
+          }, {
+            id : "00", name : "Focally high grade"
           }, {
             description : "(squamous carcinoma and adenocarcinoma only",
             id : "00", name : "Grade 1/3, low grade"
@@ -22439,6 +22458,8 @@ var database = {
             id : "00", name : "Low grade"
           }, {
             id : "00", name : "High grade"
+          }, {
+            id : "00", name : "Focally high grade"
           }, {
             description : "(squamous carcinoma and adenocarcinoma only",
             id : "00", name : "Grade 1/3, low grade"
