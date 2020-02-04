@@ -1115,6 +1115,18 @@ var database = {
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
+            description : "Stage TIS (LAMN) for low grade mucinous tumors",
+           id : "75", name : "No extravasated mucin or cells"
+          },{
+          description : "Stage TIS (LAMN) for low grade mucinous tumors (there is no T1 or T2)",
+         id : "75", name : "Extravasated mucin and/or cells but not beyond the muscularis propria"
+           }, {
+            description : "Stage T3 (LAMN) for low grade mucinous tumors",
+           id : "76", name : "Mucin or cells invade subserosal tissue"
+         }, {
+          description : "Stage T4a (LAMN) for low grade mucinous tumors",
+         id : "77", name : "Mucin or cells penetrate serosa"
+       },{
             id : "60", name : "In situ/No invasion of lamina propria"
           }, {
             id : "60", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
@@ -1131,18 +1143,9 @@ var database = {
                inputs_required : [ "" ],
             id : "13", name : "Invades other organs"
           }, {
-            description : "Stage TIS (LAMN) for low grade mucinous tumors",
-           id : "75", name : "No mucin and cells beyond the muscularis propria"
-         }, {
             id : "63", name : "Invades subserosal tissue"
           }, {
-             description : "Stage T3 (LAMN) for low grade mucinous tumors",
-            id : "76", name : "Mucin or cells invade subserosal tissue"
-          }, {
             id : "67", name : "Penetrates serosa"
-          }, {
-             description : "Stage T4a (LAMN) for low grade mucinous tumors",
-            id : "77", name : "Mucin or cells penetrate serosa"
           } ],
           id : "00", name : ""
         } ]
