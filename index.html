@@ -179,7 +179,10 @@
                             g.id === '87' || 
                             g.id === '88' ||
                             g.id === '90' ||
-                            g.id === '74'">
+                            g.id === '74' ||
+                            g.id === '75' ||
+                            g.id === '76' ||
+                            g.id === '77'">
                             <input type="radio"  :value="g.name + q.id + g.id" :name = "q.name" v-model="row.inputanswers[index]"   v-on:click= "dontUseFreeText(index,index2, g.id)" >
                             <span ><strong>{{g.name}}</strong></span>
                             <span v-if="g.description" class = "description"> [ {{g.description}}]</span>

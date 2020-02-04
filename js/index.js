@@ -72,6 +72,9 @@ GIDs
 72 T3a
 73 T3b
 74 Ta/Tis
+75 Tis(LAMN)
+76 T3(LAMN)
+77 T4(LAMN)
 
 
 80 breast grades 
@@ -1128,18 +1131,18 @@ var database = {
                inputs_required : [ "" ],
             id : "13", name : "Invades other organs"
           }, {
-             description : "Stage TIS for low grade mucinous tumors",
-            id : "60", name : "Mucin or cells invade muscularis propria"
-          }, {
+            description : "Stage TIS (LAMN) for low grade mucinous tumors",
+           id : "75", name : "No mucin and cells beyond the muscularis propria"
+         }, {
             id : "63", name : "Invades subserosal tissue"
           }, {
-             description : "Stage T3 for low grade mucinous tumors",
-            id : "63", name : "Mucin or cells invade subserosal tissue"
+             description : "Stage T3 (LAMN) for low grade mucinous tumors",
+            id : "76", name : "Mucin or cells invade subserosal tissue"
           }, {
             id : "67", name : "Penetrates serosa"
           }, {
-             description : "Stage T4a for low grade mucinous tumors",
-            id : "67", name : "Mucin or cells penetrate serosa"
+             description : "Stage T4a (LAMN) for low grade mucinous tumors",
+            id : "77", name : "Mucin or cells penetrate serosa"
           } ],
           id : "00", name : ""
         } ]
@@ -25282,6 +25285,18 @@ var database = {
              
             }
 
+            //Tis(LAMN)
+            if (gid == '75') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "Tis(LAMN)0200";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
+             
+            }
+
             //T1
             if (gid == '61') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
@@ -25311,6 +25326,18 @@ var database = {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
                   this.row.inputanswers[j] = "T30200";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
+             
+            }
+
+            //T3
+            if (gid == '76') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T3 (LAMN)0200";
                   this.dontUseFreeText(j);
                  }
                       
@@ -25405,8 +25432,6 @@ var database = {
 
             //T4
             if (gid == '11') {
-              
-              
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
                   this.row.inputanswers[j] = "T40200";
@@ -25422,6 +25447,18 @@ var database = {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
                   this.row.inputanswers[j] = "T4a0200";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
+             
+            }
+
+            //T4a
+            if (gid == '77') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0200") {
+                  this.row.inputanswers[j] = "T4a (LAMN)0200";
                   this.dontUseFreeText(j);
                  }
                       
