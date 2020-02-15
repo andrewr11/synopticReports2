@@ -257,6 +257,9 @@ var database = {
             id : "00", name : "Microscopic angioinvasion"
           }, {
             id : "00", name : "Small vessel"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           }   ],
           id : "00", name : ""
         } ]
@@ -566,6 +569,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -1177,6 +1183,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -1526,6 +1535,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -3441,6 +3453,9 @@ var database = {
             id : "00", name : "Present, extensive"
           }, {
             id : "00", name : "Present, including dermal LVI"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -4307,6 +4322,9 @@ var database = {
             id : "00", name : "Present, extensive"
           }, {
             id : "00", name : "Present, including dermal LVI"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -4772,6 +4790,9 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -5716,6 +5737,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -6089,6 +6113,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -6349,6 +6376,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -6771,7 +6801,10 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
-          } ],
+          } ,{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -7170,6 +7203,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -7453,6 +7489,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -7857,6 +7896,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -8134,6 +8176,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -8716,6 +8761,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -9005,6 +9053,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -9161,6 +9212,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -10357,6 +10411,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -10598,6 +10655,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -10879,7 +10939,10 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
-          } ],
+          } ,{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -11597,6 +11660,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -12025,6 +12091,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -12533,6 +12602,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -13282,6 +13354,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -13921,6 +13996,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -15258,6 +15336,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -15562,6 +15643,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -15906,6 +15990,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -16258,6 +16345,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -16589,6 +16679,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -17001,6 +17094,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -18612,6 +18708,7 @@ var database = {
           }, {
             id : "00", name : "Present, extensive"
           }, {
+            description : "Positive lymph nodes",
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -18997,6 +19094,7 @@ var database = {
           }, {
             id : "00", name : "Present, extensive"
           }, {
+            description : "Positive lymph nodes",
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -19116,6 +19214,7 @@ var database = {
           }, {
             id : "00", name : "Present, extensive"
           }, {
+            description : "Positive lymph nodes",
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -19395,6 +19494,7 @@ var database = {
           }, {
             id : "00", name : "Present, extensive"
           }, {
+            description : "Positive lymph nodes",
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -19579,6 +19679,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -20145,6 +20248,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -20526,6 +20632,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -20774,6 +20883,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -21035,6 +21147,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
+          }, {
+            description : "Positive lymph nodes",
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -21379,7 +21494,10 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
-          } ],
+          } ,{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -21588,6 +21706,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -22546,7 +22667,10 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
-          } ],
+          } ,{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
         
@@ -22836,6 +22960,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -23103,6 +23230,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -23828,6 +23958,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -24161,6 +24294,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
