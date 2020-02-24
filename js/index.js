@@ -13890,20 +13890,23 @@ var database = {
             description : "NUT +, p40+/-, INI+, CD99-, desmin-, syn-, s100-, CD34 +/-",
             id : "00", name : "NUT carcinoma"
           }, {
+            description : "p40+, p16+/-, HPV+, Rb+",
+            id : "00", name : "HPV associated squamous cell carcinoma"
+          }, {
+            description : "looks like adenoid cystic, but HPV+, MYB-",
+            id : "00", name : "HPV related mulitphenotypic sinonasal carcinoma"
+          }, {
             description : "p40+, p16+, HPV+, cilia",
             id : "00", name : "metastatic ciliated HPV+ squamous cell carcinoma"
+          }, {
+            description : "HPV-, MYB+, rule out HPV related sinonasal carcinoma",
+            id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, Intestinal type"
           }, {
             id : "00", name : "Adenocarcinoma, Non-intestinal type"
           }, {
             id : "00", name : "Acinic cell carcinoma"
-          }, {
-            description : "looks like adenoid cystic, but HPV+, MYB-",
-            id : "00", name : "HPV related mulitphenotypic sinonasal carcinoma"
-          }, {
-            description : "HPV-, MYB+, rule out HPV related sinonasal carcinoma",
-            id : "00", name : "Adenoid cystic carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma, not otherwise specified (NOS)"
           }, {
