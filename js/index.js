@@ -450,6 +450,8 @@ var database = {
           }, {
             id : "00", name : "Adenocarcinoma, intestinal type"
           }, {
+            id : "00", name : "Tubular adenocarcinoma with mixed features"
+          }, {
             id : "00", name : "Medullary carcinoma"
           }, {
             id : "00", name : "Invasive papillary adenocarcinoma"
@@ -713,7 +715,295 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Anus",
+      id : "00", name : "Anus, local excision",
+      optional : false,
+      organ_group : "Gastrointestinal",
+      properties : [  {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Local excision (transanal disk excision)"
+          }, {
+            id : "00", name : "Local exciosn (polypectomy)"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Anal canal"
+          }, {
+            id : "00", name : "Anorectal junction"
+          }, {
+            id : "00", name : "Rectum"
+          }, {
+            id : "00", name : "Perianal skin"
+          }, {
+            id : "00", name : "Anus, not otherwise specified"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Specimen integrity",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Intact"
+          }, {
+            id : "00", name : "Fragmented"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Squamous cell carcinoma"
+          }, {
+            id : "00", name : "Verrucous carcinoma"
+          }, {
+            id : "00", name : "Adenocarcinoma"
+          }, {
+            id : "00", name : "Large cell neuroendocrine carcinoma"
+          }, {
+            id : "00", name : "Small cell carcinoma"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Grade",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Grade 1/4, Well differentiated"
+          }, {
+            id : "00", name : "Grade 2/4, Moderately differentiated"
+          }, {
+            id : "00", name : "Grade 3/4, Poorly differentiated"
+          }, {
+            id : "00", name : "Grade 4/4, Undifferentiated"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Extent",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "60", name : "Carcinoma in situ"
+          }, {
+            id : "00", name : "Invades lamina propria"
+          }, {
+            id : "00", name : "Invades muscularis mucosae"
+          }, {
+            id : "00", name : "Invades submucosa"
+          }, {
+            id : "00", name : "Invades anal sphincter muscle"
+          }, {
+            id : "00", name : "Invades perianal or perirectal soft tissue"
+          }, {
+             description : "specify",
+              inputs_required : [ "" ],
+            id : "11", name : "Invades other structures"
+          }, {
+            id : "10", name : "Invades perianal skin"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of closest margin, proximal distal and radial",
+        id : "00", name : "Margins, invasive tumor, peripheral",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of closest margin",
+        id : "00", name : "Margins, deep",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of closest margin",
+        id : "00", name : "Margins, dysplasia/CIS",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Treatment effect, primary site",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Absent"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Not known"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "01", name : "Stage (AJCC 8)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "no prefix",
+            id : "00", name : ""
+          }, {
+            description : "pathologic",
+            id : "00", name : "p"
+          }, {
+            description : "multiple foci of invasive carcinoma",
+            id : "00", name : "m"
+          }, {
+            description : "recurrent",
+            id : "00", name : "r"
+          }, {
+            description : "post-treatment",
+            id : "00", name : "y"
+          }, {
+            id : "00", name : "mp"
+          }, {
+            id : "00", name : "rp"
+          }, {
+            id : "00", name : "yp"
+          }, {
+            id : "00", name : "mrp"
+          }, {
+            id : "00", name : "myp"
+          }, {
+            id : "00", name : "ryp"
+          }, {
+            id : "00", name : "mryp"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "02", name : "T",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "cannot be assessed",
+            id : "00", name : "TX"
+          }, {
+            description : "Carcinoma in situ",
+            id : "00", name : "Tis"
+          }, {
+            description : "<= 2cm",
+            id : "00", name : "T1"
+          }, {
+            description : ">2cm AND <=5cm",
+            id : "00", name : "T2"
+          }, {
+            description : ">5cm",
+            id : "00", name : "T3"
+          }, {
+            description : "Invades other organs",
+            id : "00", name : "T4"
+          } ],
+          id : "00", name : ""
+        }]
+           },   {
+         description : "for squamous/basaloid carcinoma",
+        id : "00", name : "p16 Immunohistochemistry ",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Negative "
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable "
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
+          } , {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+         description : "for squamous/basaloid carcinoma",
+        id : "00", name : "HPV ISH ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive "
+          }, {
+            id : "00", name : "Negative "
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable "
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
+          } , {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+         description : "for squamous/basaloid carcinoma",
+        id : "00", name : "HPV PCR ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive "
+          }, {
+            id : "00", name : "Negative "
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable "
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
+          } ],
+          id : "00", name : ""
+        }, {
+          description : "case #",
+          inputs_required : [ "" ],
+          id : "10", name : "See case "
+        } ]
+        }]
+    }, {
+      most_common : false,
+      id : "00", name : "Anus, resection",
       optional : false,
       organ_group : "Gastrointestinal",
       properties : [  {
@@ -751,19 +1041,11 @@ var database = {
           }, {
             id : "00", name : "Verrucous carcinoma"
           }, {
-            id : "00", name : "Basal cell carcinoma"
-          }, {
             id : "00", name : "Adenocarcinoma"
-          }, {
-            id : "00", name : "Mucinous adenocarcinoma"
-          }, {
-            id : "00", name : "Squamous cell carcinoma"
           }, {
             id : "00", name : "Large cell neuroendocrine carcinoma"
           }, {
             id : "00", name : "Small cell carcinoma"
-          }, {
-            id : "00", name : "Paget's disease"
           } ],
           id : "00", name : ""
         } ]
@@ -2527,9 +2809,9 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
-            id : "20", name :  "Positive  1-10% of cells, "
+            id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -2552,7 +2834,7 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
             id : "20", name :  "Positive  1-10% of cells, "
           }, {
@@ -2984,9 +3266,9 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
-            id : "20", name :  "Positive  1-10% of cells, "
+            id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -3009,7 +3291,7 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
             id : "20", name :  "Positive  1-10% of cells, "
           }, {
@@ -3643,9 +3925,9 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
-            id : "20", name :  "Positive  1-10% of cells, "
+            id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -3668,7 +3950,7 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
             id : "20", name :  "Positive  1-10% of cells, "
           }, {
@@ -4512,9 +4794,9 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
-            id : "20", name :  "Positive  1-10% of cells, "
+            id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -4537,7 +4819,7 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
             id : "20", name :  "Positive  1-10% of cells, "
           }, {
@@ -4906,9 +5188,9 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
-            id : "20", name :  "Positive  1-10% of cells, "
+            id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -4931,7 +5213,7 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
             id : "20", name :  "Positive  1-10% of cells, "
           }, {
@@ -5178,9 +5460,9 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
-            id : "20", name :  "Positive  1-10% of cells, "
+            id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
           }, {
@@ -5203,7 +5485,7 @@ var database = {
           },{
             id : "20", name :  "Positive  50-90% of cells, "
           },{
-            id : "20", name :  "Positive  10-50% of cells, "
+            id : "20", name :  "Positive  11-50% of cells, "
           },{
             id : "20", name :  "Positive  1-10% of cells, "
           }, {
@@ -5608,7 +5890,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "T1 tumors only,  use gross (if possible) or meaure on slide",
+        description : "T1 tumors only,  use gross (if possible) or meaure on slide and incldue # of blocks",
         id : "00", name : "Horizontal extent of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -6072,7 +6354,7 @@ var database = {
           id : "00", name : ""
         } ]
      }, {
-        description : "T1 tumors only,  use gross (if possible) or meaure on slide",
+        description : "T1 tumors only,  use gross (if possible) or meaure on slide and include # of blocks",
         id : "00", name : "Horizontal extent of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -6224,7 +6506,7 @@ var database = {
         } ]
      
       }, {
-        description : "T1 tumors only,  use gross (if possible) or meaure on slide",
+        description : "T1 tumors only,  use gross (if possible) or meaure on slide and include # of blocks",
         id : "00", name : "Horizontal extent of tumor",
         optional_state  : "required", "options" : [ {
           group : [  {
@@ -6678,6 +6960,21 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Rectal tumors only, macroscopic evaluation",
+        id : "00", name : "Mesorectum",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Complete"
+          }, {
+            id : "00", name : "Near complete"
+          }, {
+            id : "00", name : "Incomplete"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -6760,13 +7057,12 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest proximal/distal/radial margin",
+        description : "include proximal/distal/radial margins",
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
+
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -8638,8 +8934,6 @@ var database = {
           }, {
             id : "00", name : "Mixed adenoneuroendocrine carcinoma "
           }, {
-            id : "00", name : "Undifferentiated carcinoma with glandular component"
-          }, {
             id : "00", name : "Squamous cell carcinoma"
           }, {
             id : "00", name : "Basaloid squamous cell carcinoma"
@@ -8649,8 +8943,6 @@ var database = {
             id : "00", name : "Spindle cell (squamous) carcinoma"
           }, {
             id : "00", name : "Verrucous (squamous) carcinoma"
-          }, {
-            id : "00", name : "Undifferentiated carcinoma with squamous component"
           }, {
             id : "00", name : "Undifferentiated carcinoma"
           }, {
@@ -10349,9 +10641,15 @@ var database = {
             id : "00", name : "Hepatocellular carcinoma"
           }, {
             description : "CK7+, CD68+",
-            id : "00", name : "Fibrolamellar hepatocellular carcinoma  "
+            id : "00", name : "Hepatocellular carcinoma, fibrolamellar type  "
           }, {
-            id : "00", name : "Undifferentiated carcinoma  "
+            id : "00", name : "Hepatocellular carcinoma, scirrhous type  "
+          }, {
+            id : "00", name : "Hepatocellular carcinoma, clear cell type  "
+          }, {
+            id : "00", name : "Hepatoblastoma "
+          }, {
+            id : "00", name : "Carcinoma, NOS  "
           } ],
           id : "00", name : ""
         } ]
@@ -10584,8 +10882,11 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "CK7+, CD56+, albumin ISH+ (extrahepatic cholangioca albumin ISH-, HCC albumin ISH+",
-            id : "00", name : "Intrahepatic cholangiocarcinoma"
+            description : "CK7+, CD56+, albumin ISH+ (extrahepatic cholangioca albumin ISH-, HCC albumin ISH+. Large duct iCCA tend to form hilar masses, present with obstructive cholestasis and share risk factors with extrahepatic bile duct adenocarcinomas",
+            id : "00", name : "Large duct intrahepatic cholangiocarcinoma"
+          },{
+            description : "CK7+, CD56+, albumin ISH+ (extrahepatic cholangioca albumin ISH-, HCC albumin ISH+. Small duct iCCA form peripheral liver masses, present with larger tumors and share risk factors with hepatocellular carcinomas",
+            id : "00", name : "Small duct intrahepatic cholangiocarcinoma"
           }, {
             id : "00", name : "Combined hepatocellular and cholangiocarcinoma "
           }, {
@@ -14952,6 +15253,9 @@ var database = {
             id : "00", name : "Suspicious"
           }, {
             id : "00", name : "Malignant"
+          }, {
+            description : "Borderline tumors ",
+            id : "00", name : "Neoplastic cells present"
           } ],
           id : "00", name : ""
         } ]
@@ -15533,7 +15837,11 @@ var database = {
           }, {
             id : "00", name : "Adenosquamous carcinoma"
           }, {
-            id : "00", name : "Intraductal papillary-mucinous carcinoma with an associated invasive carcinoma "
+            id : "00", name : "Intraductal papillary-mucinous neoplasm with an associated invasive carcinoma "
+          }, {
+            id : "00", name : "Intraductal papillary neoplasm with an associated invasive carcinoma "
+          }, {
+            id : "00", name : "Intraductal oncocytic papillary neoplasm with an associated invasive carcinoma "
           }, {
             id : "00", name : "Mucinous cystic neoplasm with an associated invasive carcinoma"
           }, {
@@ -17415,6 +17723,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "<5% ",
         id : "00", name : "Gleason tertiary pattern",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -19597,8 +19906,8 @@ var database = {
             description : "greater than 50% mucinous",
             id : "00", name : "Mucinous adenocarcinoma "
           }, {
-            description : ">50% signet-ring cells",
-            id : "00", name : "Adenocarcinoma, signet-ring carcinoma "
+         
+            id : "00", name : "Poorly cohesive cell carcinoma with or without signet-ring cells "
           }, {
             id : "00", name : "Medullary carcinoma "
           }, {
@@ -20127,14 +20436,18 @@ var database = {
           group : [ {
             id : "00", name : "Adenocarcinoma"
           }, {
+           
             id : "00", name : "Adenocarcinoma, intestinal type"
           }, {
+            description : "if >50% signet-ring cells",
             id : "00", name : "Adenocarcinoma, diffuse type "
           }, {
-            description : "if >50% signet-ring cells",
-            id : "00", name : "Adenocarcinoma, signet-ring carcinoma "
+            description : "if <50% signet-ring cells",
+            id : "00", name : "Adenocarcinoma, mixed type "
           }, {
-            id : "00", name : "Adenocarcinoma, mixed "
+            id : "00", name : "Adenocarcinoma, micropapillary type "
+          }, {
+            id : "00", name : "Adenocarcinoma of fundic gland type "
           }, {
             id : "00", name : "Adenocarcinoma, hepatoid  "
           }, {
