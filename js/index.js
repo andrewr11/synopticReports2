@@ -6961,16 +6961,28 @@ var database = {
         } ]
       }, {
         description : "Rectal tumors only, macroscopic evaluation",
-        id : "00", name : "Mesorectum",
+        id : "00", name : "Mesorectum integrity",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Complete"
           }, {
             id : "00", name : "Near complete"
           }, {
-            id : "00", name : "Incomplete"
-          }, {
+            id : "00", name : "Indeterminate"
+          } ],
+          id : "00", name : ""
+          
+        } ]
+      }, {
+        description : "Rectal tumors only",
+        id : "00", name : "Mesorectum distance to tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
             id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "0 mm (positive margin)"
+          }, {
+            id : "00", name : "Indeterminate"
           } ],
           id : "00", name : ""
         } ]
