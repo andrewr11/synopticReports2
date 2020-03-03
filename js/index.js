@@ -6964,9 +6964,13 @@ var database = {
         id : "00", name : "Mesorectum integrity",
        optional_state  : "required", "options" : [ {
           group : [ {
+            id : "00", name : "Not applicable"
+          },{
             id : "00", name : "Complete"
           }, {
             id : "00", name : "Near complete"
+          }, {
+            id : "00", name : "Disrupted"
           }, {
             id : "00", name : "Indeterminate"
           } ],
@@ -6975,7 +6979,7 @@ var database = {
         } ]
       }, {
         description : "Rectal tumors only",
-        id : "00", name : "Mesorectum distance to tumor",
+        id : "00", name : "Mesorectum radial distance to tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
