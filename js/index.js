@@ -5800,9 +5800,9 @@ var database = {
           }, {
             id : "00", name : "Radical hysterectomy"
           }, {
-            id : "00", name : "Simple hysterectomy and bilateral salpingo-oopherectomy"
+            id : "00", name : "Simple hysterectomy and bilateral salpingo-oophorectomy"
           }, {
-            id : "00", name : "Radical hysterectomy and bilateral salpingo-oopherectomy"
+            id : "00", name : "Radical hysterectomy and bilateral salpingo-oophorectomy"
           } ],
           id : "00", name : ""
         } ]
@@ -6978,19 +6978,6 @@ var database = {
           
         } ]
       }, {
-        description : "Rectal tumors only",
-        id : "00", name : "Mesorectum radial distance to tumor",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          }, {
-            id : "00", name : "0 mm (positive margin)"
-          }, {
-            id : "00", name : "Indeterminate"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -7083,6 +7070,19 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "Rectal tumors only",
+        id : "00", name : "Mesorectum radial distance to tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "0 mm (positive margin)"
+          }, {
+            id : "00", name : "Indeterminate"
           } ],
           id : "00", name : ""
         } ]
@@ -22512,7 +22512,7 @@ var database = {
           }, {
             id : "00", name : "Urethrectomy with cystectomy, hysterectomy"
           }, {
-            id : "00", name : "Urethrectomy with cystectomy, hysterectomy and bilateral oopherectomy"
+            id : "00", name : "Urethrectomy with cystectomy, hysterectomy and bilateral oophorectomy"
           }, {
             id : "00", name : "Anterior exenteration"
           } ],
