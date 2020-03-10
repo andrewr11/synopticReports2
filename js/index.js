@@ -22195,17 +22195,17 @@ var database = {
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with glandular differentiation"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, nested "
+            id : "00", name : "Invasive urothelial carcinoma, nested variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, microcystic"
+            id : "00", name : "Invasive urothelial carcinoma, microcystic variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, lympho-epithelial"
+            id : "00", name : "Invasive urothelial carcinoma, lympho-epithelial variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, plasmacytoid"
+            id : "00", name : "Invasive urothelial carcinoma, plasmacytoid variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, sarcomatoid"
+            id : "00", name : "Invasive urothelial carcinoma, sarcomatoid variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, giant cell"
+            id : "00", name : "Invasive urothelial carcinoma, giant cell variant"
           }, {
             id : "00", name : "Squamous cell carcinoma"
           }, {
@@ -22535,17 +22535,17 @@ var database = {
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with glandular differentiation"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, nested "
+            id : "00", name : "Invasive urothelial carcinoma, nested variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, microcystic"
+            id : "00", name : "Invasive urothelial carcinoma, microcystic variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, lympho-epithelial"
+            id : "00", name : "Invasive urothelial carcinoma, lympho-epithelial variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, plasmacytoid"
+            id : "00", name : "Invasive urothelial carcinoma, plasmacytoid variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, sarcomatoid"
+            id : "00", name : "Invasive urothelial carcinoma, sarcomatoid variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, giant cell"
+            id : "00", name : "Invasive urothelial carcinoma, giant cell variant"
           }, {
             id : "00", name : "Squamous cell carcinoma"
           }, {
@@ -22883,17 +22883,17 @@ var database = {
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with glandular differentiation"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, nested "
+            id : "00", name : "Invasive urothelial carcinoma, nested variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, microcystic"
+            id : "00", name : "Invasive urothelial carcinoma, microcystic variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, lympho-epithelial"
+            id : "00", name : "Invasive urothelial carcinoma, lympho-epithelial variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, plasmacytoid"
+            id : "00", name : "Invasive urothelial carcinoma, plasmacytoid variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, sarcomatoid"
+            id : "00", name : "Invasive urothelial carcinoma, sarcomatoid variant"
           }, {
-            id : "00", name : "Invasive urothelial carcinoma, giant cell"
+            id : "00", name : "Invasive urothelial carcinoma, giant cell variant"
           }, {
             id : "00", name : "Squamous cell carcinoma"
           }, {
