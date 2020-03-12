@@ -28,6 +28,7 @@ QIDs
 46 lung icd10
 47 SQC type
 48 SQC excision
+49 mesorectum
 
 50 0 total or 0 positive node dependency
 51 is no sites sampled then total = 0
@@ -50,7 +51,7 @@ GIDs
 
 30 = extended lists
 
-
+49 mesorectum
 50 no nodes present
 51 no positive nodes present
 52 no positive nodes, stage N0a
@@ -6917,28 +6918,28 @@ var database = {
       }, {
         id : "00", name : "Tumor location",
        optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Cecum"
+          group : [  {
+            id : "49", name : "Ileocecal valve"
+          },{
+            id : "49", name : "Cecum"
           }, {
-            id : "00", name : "Right (ascending) colon"
+            id : "49", name : "Right (ascending) colon"
           }, {
-            id : "00", name : "Cecum/Right (ascending) colon"
+            id : "49", name : "Cecum/Right (ascending) colon"
           }, {
-            id : "00", name : "Hepatic flexure"
+            id : "49", name : "Hepatic flexure"
           }, {
-            id : "00", name : "Transverse colon"
+            id : "49", name : "Transverse colon"
           }, {
-            id : "00", name : "Splenic flexure"
+            id : "49", name : "Splenic flexure"
           }, {
-            id : "00", name : "Left (descending) colon"
+            id : "49", name : "Left (descending) colon"
           }, {
-            id : "00", name : "Sigmoid colon"
+            id : "49", name : "Sigmoid colon"
           }, {
             id : "00", name : "Rectosigmoid"
           }, {
             id : "00", name : "Rectum"
-          }, {
-            id : "00", name : "Ileocecal valve"
           } ],
           id : "00", name : ""
         } ]
@@ -6961,7 +6962,7 @@ var database = {
         } ]
       }, {
         description : "Rectal tumors only, macroscopic evaluation",
-        id : "00", name : "Mesorectum integrity",
+        id : "49", name : "Mesorectum integrity",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -7075,7 +7076,7 @@ var database = {
         } ]
       }, {
         description : "Rectal tumors only",
-        id : "00", name : "Mesorectum radial distance to tumor",
+        id : "49", name : "Mesorectum radial distance to tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -25722,7 +25723,17 @@ var database = {
               }                              
              }
              
-          
+          //Mesorectum
+          if (gid == '49') {
+            for (var j = i; j<this.row.inputanswers.length; j++){                
+               if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4900") {
+                this.row.inputanswers[j] = "Not applicable4900";
+                this.dontUseFreeText(j);
+               }
+                    
+            }
+           
+          }
              
              // T stage
 
