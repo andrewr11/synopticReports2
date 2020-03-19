@@ -725,7 +725,7 @@ var database = {
           group : [ {
             id : "00", name : "Local excision (transanal disk excision)"
           }, {
-            id : "00", name : "Local exciosn (polypectomy)"
+            id : "00", name : "Local excision (polypectomy)"
           }],
           id : "00", name : ""
         } ]
@@ -15117,7 +15117,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
-          } ],
+          },  {
+            id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -15129,6 +15131,8 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
