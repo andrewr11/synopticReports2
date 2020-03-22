@@ -21437,11 +21437,17 @@ var database = {
           description : "<30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
         id : "00", name : "Papillary carcinoma, with hobnail features"
       }, {
+                 description : "capsular invasion only, used to be <4 foci, now undefined",
             id : "00", name : "Follicular carcinoma, minimally invasive"
+          }, {
+            id : "00", name : "Follicular carcinoma, encapsulated, angioinvasive"
           }, {
             id : "00", name : "Follicular carcinoma, widely invasive"
           }, {
+            description : "capsular invasion only, used to be <4 foci, now undefined",
             id : "00", name : "Hurthle cell carcinoma, minimally invasive"
+          }, {
+            id : "00", name : "Hurthle cell carcinoma, encapsulated, angioinvasive"
           }, {
             id : "00", name : "Hurthle cell carcinoma, widely invasive"
           }, {
@@ -22192,9 +22198,15 @@ var database = {
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
           }, {
-            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and urothelial carcinoma in situ"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC)"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC) and carcinoma in situ"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC) and papillary urothelial carcinoma"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC), papillary urothelial carcinoma, and CIS"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with squamous differentiation"
           }, {
@@ -22532,9 +22544,15 @@ var database = {
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
           }, {
-            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and urothelial carcinoma in situ"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC)"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC) and carcinoma in situ"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC) and papillary urothelial carcinoma"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC), papillary urothelial carcinoma, and CIS"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with squamous differentiation"
           }, {
@@ -22880,9 +22898,15 @@ var database = {
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
           }, {
-            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and urothelial carcinoma in situ"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC)"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC) and carcinoma in situ"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC) and papillary urothelial carcinoma"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC), papillary urothelial carcinoma, and CIS"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with squamous differentiation"
           }, {
@@ -23235,9 +23259,15 @@ var database = {
           }, {
             id : "00", name : "Urothelial carcinoma in situ"
           }, {
-            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and Urothelial carcinoma in situ"
+            id : "00", name : "Urothelial carcinoma (TCC) papillary, non invasive, and urothelial carcinoma in situ"
           }, {
             id : "00", name : "Invasive Urothelial carcinoma (TCC)"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC), and carcinoma in situ"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC) and papillary urothelial carcinoma"
+          }, {
+            id : "00", name : "Invasive urothelial carcinoma (TCC), papillary urothelial carcinoma, and CIS"
           }, {
             id : "00", name : "Invasive urothelial carcinoma (TCC) with squamous differentiation"
           }, {
