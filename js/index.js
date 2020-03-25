@@ -6949,6 +6949,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Do ancillary studies if present",
         id : "00", name : "Tumor perforation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -7327,10 +7328,10 @@ var database = {
              description : "T1-3N0 AND loss of MLH1 and PMS2",
             id : "00", name : "PIK3CA and MLH1 promoter methylation"
           }, {
-             description : "T4 or N1",
+             description : "T4 or N1 or Gross perforation",
             id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, and BRAF"
           }, {
-             description : "T4 or N1 AND loss of MLH1 and PMS2",
+             description : "T4 or N1 or Gross perforation AND loss of MLH1 and PMS2",
             id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
           }, {
             id : "00", name : "Pending results of MMR protein panel"
