@@ -12040,6 +12040,14 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "50", name : "Size of largest metastasis",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Not applicable"
+        } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -12466,6 +12474,14 @@ var database = {
           }, {
             id : "00", name : "Bilateral"
           } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Size of largest metastasis",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -13729,6 +13745,14 @@ var database = {
           }, {
             id : "00", name : "Not applicable"
           } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Size of largest metastasis",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
