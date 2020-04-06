@@ -938,7 +938,9 @@ var database = {
          description : "for squamous/basaloid carcinoma",
         id : "00", name : "p16 Immunohistochemistry ",
        optional_state  : "required", "options" : [ {
-          group : [  {
+          group : [ {
+            id : "00", name : "Positive "
+          }, {
             id : "00", name : "Negative "
           }, {
             id : "00", name : "Equivocal"
@@ -1273,6 +1275,8 @@ var database = {
         id : "00", name : "p16 Immunohistochemistry ",
        optional_state  : "required", "options" : [ {
           group : [  {
+            id : "00", name : "Positive "
+          },{
             id : "00", name : "Negative "
           }, {
             id : "00", name : "Equivocal"
