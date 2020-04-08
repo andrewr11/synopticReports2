@@ -211,6 +211,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -439,6 +443,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -758,6 +766,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -1034,6 +1046,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -1360,6 +1376,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -1727,6 +1747,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -2004,6 +2028,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -2580,6 +2608,10 @@ var database = {
           description : "1 block = 4mm",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -2953,6 +2985,10 @@ var database = {
           description : "1 block = 4mm",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -3410,6 +3446,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -4122,6 +4162,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -6950,6 +6994,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -7412,6 +7460,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -7683,6 +7735,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -8077,6 +8133,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -8425,6 +8485,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -8942,6 +9006,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -9343,6 +9411,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -9500,6 +9572,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -9604,6 +9680,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -9881,6 +9961,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       
@@ -9961,6 +10045,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       
@@ -10099,6 +10187,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -10485,6 +10577,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           description : "each nodule",
           id : "00", name : ""
         } ]
@@ -10653,6 +10749,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -10888,6 +10988,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -11150,6 +11254,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -11430,6 +11538,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -11836,6 +11948,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -12272,6 +12388,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
         }, {
@@ -12683,11 +12803,19 @@ var database = {
       }, {
         id : "00", name : "Tumor size, total",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, { description : "for ACA with lepidic component",
         id : "00", name : "Tumor size, invasive component",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -13549,6 +13677,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -14207,6 +14339,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -14719,6 +14855,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
     
@@ -15168,6 +15308,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -15586,6 +15730,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -15871,6 +16019,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -16222,6 +16374,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       
@@ -16589,6 +16745,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -16927,6 +17087,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -17401,6 +17565,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -17790,6 +17958,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -18308,6 +18480,10 @@ var database = {
         description : "For TURPs, include % of tissue, # positive chips, and total chips(if possible), for enucleation include largest diameter ",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -18375,6 +18551,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size after sectioning",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           group : [ {
             id : "00", name : "Equivocal"
           } ],
@@ -18661,6 +18841,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -18771,6 +18955,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -19933,6 +20121,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -20218,6 +20410,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -20478,6 +20674,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -20887,6 +21087,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -21150,7 +21354,7 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Equivocal"
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -21428,6 +21632,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -21758,6 +21966,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -22022,6 +22234,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -22917,6 +23133,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -23530,6 +23750,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -23912,7 +24136,7 @@ var database = {
         id : "00", name : "Tumor size after sectioning",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Equivocal"
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -24238,6 +24462,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -24567,6 +24795,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -24991,6 +25223,10 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
+        group : [ {
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
