@@ -455,6 +455,8 @@ var database = {
           group : [ {
             id : "00", name : "Adenocarcinoma"
           }, {
+            id : "00", name : "Adenocarcinoma arising in an adenoma"
+          }, {
             id : "00", name : "Adenocarcinoma, pancreaticobiliary type"
           }, {
             id : "00", name : "Adenocarcinoma, intestinal type"
@@ -782,6 +784,8 @@ var database = {
           }, {
             id : "00", name : "Adenocarcinoma"
           }, {
+            id : "00", name : "Adenocarcinoma arising in an adenoma"
+          }, {
             id : "00", name : "Large cell neuroendocrine carcinoma"
           }, {
             id : "00", name : "Small cell carcinoma"
@@ -1061,6 +1065,8 @@ var database = {
             id : "00", name : "Verrucous carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma"
+          }, {
+            id : "00", name : "Adenocarcinoma arising in an adenoma"
           }, {
             id : "00", name : "Large cell neuroendocrine carcinoma"
           }, {
@@ -1389,6 +1395,8 @@ var database = {
             id : "00", name : "Adenocarcinoma"
           }, {
             id : "00", name : "Mucinous carcinoma"
+          }, {
+            id : "00", name : "Adenocarcinoma arising in a mucinous neoplasm (LAMN)"
           }, {
             id : "00", name : "Low grade mucinous neoplasm (LAMN)"
           }, {
@@ -7036,6 +7044,8 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Adenocarcinoma"
+          }, {
+            id : "00", name : "Adenocarcinoma arising in a tubulovillous adenoma"
           }, {
             id : "00", name : "Mucinous carcinoma"
           }, {
@@ -20145,6 +20155,8 @@ var database = {
           group : [ {
             id : "00", name : "Adenocarcinoma"
           }, {
+            id : "00", name : "Adenocarcinoma arising in a tubulovillous adenoma"
+          }, {
             description : "greater than 50% mucinous",
             id : "00", name : "Mucinous adenocarcinoma "
           }, {
@@ -20685,6 +20697,8 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Adenocarcinoma"
+          }, {
+            id : "00", name : "Adenocarcinoma arising in an adenoma"
           }, {
            
             id : "00", name : "Adenocarcinoma, intestinal type"
