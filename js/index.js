@@ -7045,15 +7045,22 @@ var database = {
           group : [ {
             id : "00", name : "Adenocarcinoma"
           }, {
-            id : "00", name : "Adenocarcinoma arising in a tubulovillous adenoma"
+            id : "00", name : "Adenocarcinoma arising in an adenoma"
           }, {
+            description : "> 50% mucin",
             id : "00", name : "Mucinous carcinoma"
           }, {
-            id : "00", name : "Adenocarcinoma with mucinous features"
+            description : "< 50% mucin",
+            id : "00", name : "Adenocarcinoma with a mucinous component"
           }, {
-            id : "00", name : "Adenocarcinoma with mucinous features and signet ring cells"
+            description : "< 50% mucin and signet ring cells",
+            id : "00", name : "Adenocarcinoma with a mucinous and signet ring cell component"
           }, {
-            id : "00", name : "Signet-ring cell carcinoma"
+            description : "> 50% signet ring cells",
+            id : "00", name : "Signetring cell carcinoma"
+          }, {
+            description : "< 50% signet ring cells",
+            id : "00", name : "Adenocarcinoma with a signet ring cell component"
           }, {
             id : "00", name : "Micropapillary carcinoma"
           }, {
