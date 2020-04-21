@@ -7057,7 +7057,7 @@ var database = {
             id : "00", name : "Adenocarcinoma with a mucinous and signet ring cell component"
           }, {
             description : "> 50% signet ring cells",
-            id : "00", name : "Signetring cell carcinoma"
+            id : "00", name : "Signet ring cell carcinoma"
           }, {
             description : "< 50% signet ring cells",
             id : "00", name : "Adenocarcinoma with a signet ring cell component"
