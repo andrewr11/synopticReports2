@@ -7053,13 +7053,13 @@ var database = {
             description : "< 50% mucin",
             id : "00", name : "Adenocarcinoma with a mucinous component"
           }, {
-            description : "< 50% mucin and signet ring cells",
+            description : "< 50% mucin and <50% signet ring cells, consider keratin on negative lymph nodes",
             id : "00", name : "Adenocarcinoma with a mucinous and signet ring cell component"
           }, {
-            description : "> 50% signet ring cells",
+            description : "> 50% signet ring cells, consider keratin on negative lymph nodes",
             id : "00", name : "Signet ring cell carcinoma"
           }, {
-            description : "< 50% signet ring cells",
+            description : "< 50% signet ring cells, consider keratin on negative lymph nodes",
             id : "00", name : "Adenocarcinoma with a signet ring cell component"
           }, {
             id : "00", name : "Micropapillary carcinoma"
@@ -7397,7 +7397,7 @@ var database = {
              description : "T1-3N0 AND loss of MLH1 and PMS2",
             id : "00", name : "PIK3CA and MLH1 promoter methylation"
           }, {
-             description : "T4 or N1 or Gross perforation",
+             description : "T4 or N1 or Gross perforation or 'Young'",
             id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, and BRAF"
           }, {
              description : "T4 or N1 or Gross perforation AND loss of MLH1 and PMS2",
