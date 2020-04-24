@@ -2856,6 +2856,7 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
+            description : "Add CAP disclaimer note",
             id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
@@ -3317,6 +3318,7 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
+            description : "Add CAP disclaimer note",
             id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
@@ -3980,6 +3982,7 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
+            description : "Add CAP disclaimer note",
             id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
@@ -4853,6 +4856,7 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
+            description : "Add CAP disclaimer note",
             id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
@@ -5247,6 +5251,7 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
+            description : "Add CAP disclaimer note",
             id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
@@ -5519,6 +5524,7 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
+            description : "Add CAP disclaimer note",
             id : "20", name :  "Low positive  1-10% of cells, "
           }, {
             id : "00", name : "Negative (<1%)"
