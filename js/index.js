@@ -20386,25 +20386,65 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-        }, {
-          description: "adenocarcinoma only",
-        id : "00", name : "MSI IHC and Interpretation",
+        },  {
+          description : "Perform for adenocarcinoma, NOT small cell carcinoma, per Dr Ucar",
+         id : "00", name : "MSI IHC and Interpretation",
+        optional_state  : "required", "options" : [ {
+           group : [ {
+             id : "00", name : "Pending, addendum to follow"
+           },{
+              description : "tell the secretary to pick this and copy the answer in a separate note",
+             id : "00", name : " see Note."
+           },{
+              description : "A.",
+             id : "00", name : " MLH1+, MSH2+, MSH6+, PMS2+. Intact nuclear expression of MMR protein, low probability of microsatellite instability-high (MSI-H).  There are exceptions to the above IHC interpretations. These results should not be considered in isolation, and clinical correlation with genetic counseling is recommended to assess the need for germline testing."
+           }, {
+              description : "B.",
+             id : "00", name : "MLH1-, MSH2+, MSH6+, PMS2-. Loss of nuclear expression of MLH1 and PMS2: deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). Testing for methylation of the MLH1 promoter is indicated (the presence of MLH1 methylation suggests that the tumor is sporadic and germline evaluation is probably not indicated; absence of MLH1 methylation suggests the possibility of Lynch syndrome, and sequencing and/or large deletion/duplication testing of germline MLH1 is indicated). There are exceptions to the above IHC interpretations. These results should not be considered in isolation, and clinical correlation with genetic counseling is recommended to assess the need for germline testing."
+           }, {
+              description : "C.",
+             id : "00", name : "MLH1+, MSH2-, MSH6-, PMS2+. Loss of nuclear expression of MSH2 and MSH6: deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). High probability of Lynch syndrome (sequencing and or large deletion/duplication testing of germline MSH2 may be indicated, and, if negative, sequencing and or large deletion/duplication testing of germline MSH6 may be indicated). There are exceptions to the above IHC interpretations.   These results should not be considered in isolation, and clinical correlation with genetic counseling is recommended to assess the need for germline testing."
+           }, {
+              description : "D.",
+             id : "00", name : "MLH1+, MSH2+, MSH6-, PMS2+. Loss of nuclear expression of MSH6 only: deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). High probability of Lynch syndrome (sequencing and or large deletion/duplication testing of germline MSH6 may be indicated). There are exceptions to the above IHC interpretations.   These results should not be considered in isolation, and clinical correlation with genetic counseling is recommended to assess the need for germline testing."
+           }, {
+              description : "E.",
+             id : "00", name : "MLH1+, MSH2+, MSH6+, PMS2-. Loss of nuclear expression of PMS2 only: deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). High probability of Lynch syndrome (sequencing and or large deletion/duplication testing of germline PMS2 may be indicated). There are exceptions to the above IHC interpretations.   These results should not be considered in isolation, and clinical correlation with genetic counseling is recommended to assess the need for germline testing."
+           } , {
+             description : "case #",
+             inputs_required : [ "" ],
+             id : "10", name : "See case "
+           }],
+           id : "00", name : ""
+         } ]
+      }, {
+        id : "00", name : "Ancillary studies ordered",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Intact nuclear expression of MMR proteins (MLH1, MSH2, MSH6, PMS2): No evidence of deficient mismatch repair (low probability of MSI-H)"
+             description : "T1-3N0",
+            id : "00", name : "PIK3CA"
           },{
-            id : "00", name : "Loss of nuclear expression of one or more MMR proteins (MLH1, MSH2, MSH6, PMS2): deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). The presence of MSI-H/deficient mismatch repair may also be an indication for additional testing for Lynch syndrome and genetic counselling."
+             description : "T1-3N0 AND loss of MLH1 and PMS2",
+            id : "00", name : "PIK3CA and MLH1 promoter methylation"
           }, {
-            id : "00", name : "Pending"
+             description : "T4 or N1 or Gross perforation or 'Young'",
+            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, and BRAF"
+          }, {
+             description : "T4 or N1 or Gross perforation AND loss of MLH1 and PMS2",
+            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
+          }, {
+            id : "00", name : "Pending results of MMR protein panel"
+          }, {
+            id : "00", name : "None"
           }, {
             id : "00", name : "Not applicable"
           }, {
-            description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
-          }],
+            id : "10", name : "See case"
+          } ],
           id : "00", name : ""
         } ]
+  
       } ]
     }, {
       most_common : false,
