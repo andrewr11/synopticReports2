@@ -2846,7 +2846,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+         description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro), or Low Pos",
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -2856,10 +2856,15 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
-            description : "Add CAP disclaimer note",
-            id : "20", name :  "Low positive  1-10% of cells, "
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls present, "
+          },{
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls absent, "
           }, {
-            id : "00", name : "Negative (<1%)"
+            id : "00", name : "Negative (<1%), internal controls present"
+          }, {
+            id : "00", name : "Negative (<1%), internal controls absent"
           }, {
             id : "00", name : "Pending"
           }, {
@@ -3308,7 +3313,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+         description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro) or Low Pos",
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -3318,10 +3323,15 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
-            description : "Add CAP disclaimer note",
-            id : "20", name :  "Low positive  1-10% of cells, "
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls present, "
+          },{
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls absent, "
           }, {
-            id : "00", name : "Negative (<1%)"
+            id : "00", name : "Negative (<1%), internal controls present"
+          }, {
+            id : "00", name : "Negative (<1%), internal controls absent"
           }, {
             id : "00", name : "Pending"
           }, {
@@ -3972,7 +3982,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro) or Low Pos",
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -3982,10 +3992,15 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
-            description : "Add CAP disclaimer note",
-            id : "20", name :  "Low positive  1-10% of cells, "
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls present, "
+          },{
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls absent, "
           }, {
-            id : "00", name : "Negative (<1%)"
+            id : "00", name : "Negative (<1%), internal controls present"
+          }, {
+            id : "00", name : "Negative (<1%), internal controls absent"
           }, {
             id : "00", name : "Pending"
           }, {
@@ -4846,7 +4861,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro)",
+        description : "repeat if original triple negative or s/p neoadjuvant therapy or done outside (except Vitro) or Low Pos",
         id : "00", name : "Estrogen Receptor",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -4856,10 +4871,15 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
-            description : "Add CAP disclaimer note",
-            id : "20", name :  "Low positive  1-10% of cells, "
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls present, "
+          },{
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls absent, "
           }, {
-            id : "00", name : "Negative (<1%)"
+            id : "00", name : "Negative (<1%), internal controls present"
+          }, {
+            id : "00", name : "Negative (<1%), internal controls absent"
           }, {
             id : "00", name : "Pending"
           }, {
@@ -5251,10 +5271,15 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
-            description : "Add CAP disclaimer note",
-            id : "20", name :  "Low positive  1-10% of cells, "
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls present, "
+          },{
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls absent, "
           }, {
-            id : "00", name : "Negative (<1%)"
+            id : "00", name : "Negative (<1%), internal controls present"
+          }, {
+            id : "00", name : "Negative (<1%), internal controls absent"
           }, {
             id : "00", name : "Not applicable"
           }, {
@@ -5524,10 +5549,15 @@ var database = {
           },{
             id : "20", name :  "Positive  11-50% of cells, "
           },{
-            description : "Add CAP disclaimer note",
-            id : "20", name :  "Low positive  1-10% of cells, "
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls present, "
+          },{
+            description : "Get second pathologist",
+            id : "20", name :  "Low positive  1-10% of cells, internal controls absent, "
           }, {
-            id : "00", name : "Negative (<1%)"
+            id : "00", name : "Negative (<1%), internal controls present"
+          }, {
+            id : "00", name : "Negative (<1%), internal controls absent"
           }, {
             id : "00", name : "Not applicable"
           }, {
