@@ -7881,7 +7881,7 @@ var database = {
         } ]
       }, {
         description : "include distance/location of closest proximal bile duct/distal bile duct /radial soft tissue margin, pancreatic neck, uncinate",
-        id : "00", name : "Margins invasive tumor",
+        id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
