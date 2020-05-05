@@ -212,6 +212,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -444,6 +456,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -769,6 +793,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -1051,6 +1087,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -1383,6 +1431,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -1756,6 +1816,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -2037,6 +2109,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -2617,6 +2701,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -3000,6 +3096,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -3467,6 +3575,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -4189,6 +4309,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -5903,6 +6035,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           id : "00", name : "Can not be determined"
         }, {
           id : "00", name : "Not applicable"
@@ -6352,6 +6496,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           id : "00", name : "Can not be determined"
         }, {
           id : "00", name : "Not applicable"
@@ -6517,7 +6673,19 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
-        group : [ {
+        group : [{
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        }, {
           id : "00", name : "Can not be determined"
         }, {
           id : "00", name : "Not applicable"
@@ -7039,6 +7207,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -7514,6 +7694,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -7789,6 +7981,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -8186,7 +8390,19 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
-        group : [ {
+        group : [{
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        }, {
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -8539,6 +8755,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -9060,6 +9288,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -9465,6 +9705,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -9626,6 +9878,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -9734,6 +9998,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -10015,6 +10291,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -10099,6 +10387,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -10241,6 +10541,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -10631,6 +10943,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -10803,6 +11127,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -11042,6 +11378,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -11308,6 +11656,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -11592,6 +11952,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -12002,6 +12374,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -12442,6 +12826,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -13731,6 +14127,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -14393,6 +14801,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -14909,6 +15329,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -15362,6 +15794,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -15784,6 +16228,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -16073,6 +16529,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -16428,6 +16896,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -16799,6 +17279,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -17141,6 +17633,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -17619,6 +18123,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -18012,6 +18528,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -18605,6 +19133,18 @@ var database = {
         id : "00", name : "Tumor size after sectioning",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -18895,6 +19435,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -19009,6 +19561,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -19164,6 +19728,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           group : [ {
+         
+            inputs_required : [ "" ],
+            id : "10", name : "At least "
+          }, {
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal "
+          },{
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal, largest focus "
+          },{
             id : "00", name : "Equivocal"
           }, {
             id : "00", name : "Not applicable"
@@ -19771,6 +20347,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           group : [ {
+         
+            inputs_required : [ "" ],
+            id : "10", name : "At least "
+          }, {
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal "
+          },{
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal, largest focus "
+          },{
             id : "00", name : "Equivocal"
           }, {
             id : "00", name : "Not applicable"
@@ -20039,6 +20627,18 @@ var database = {
         id : "00", name : "Tumor size (width)",
        optional_state  : "required", "options" : [ {
           group : [ {
+         
+            inputs_required : [ "" ],
+            id : "10", name : "At least "
+          }, {
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal "
+          },{
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal, largest focus "
+          },{
             id : "00", name : "Equivocal"
           }, {
             id : "00", name : "Not applicable"
@@ -20175,6 +20775,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -20506,6 +21118,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -20770,6 +21394,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -21185,6 +21821,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -21451,6 +22099,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           group : [ {
+         
+            inputs_required : [ "" ],
+            id : "10", name : "At least "
+          }, {
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal "
+          },{
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal, largest focus "
+          },{
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -21730,6 +22390,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -22064,6 +22736,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -22331,7 +23015,19 @@ var database = {
       }, {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
-        group : [ {
+        group : [{
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        }, {
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -23231,6 +23927,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -23848,6 +24556,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -24233,6 +24953,18 @@ var database = {
         id : "00", name : "Tumor size after sectioning",
        optional_state  : "required", "options" : [ {
           group : [ {
+         
+            inputs_required : [ "" ],
+            id : "10", name : "At least "
+          }, {
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal "
+          },{
+          
+            inputs_required : [ "" ],
+            id : "10", name : "Multifocal, largest focus "
+          },{
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -24560,6 +25292,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -24893,6 +25637,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -25321,6 +26077,18 @@ var database = {
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        }, {
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
