@@ -48,6 +48,9 @@ GIDs
 16 = See case trip all the following See case questions Inv breast
 18 = See case trip only one more for gastric
 17 treatment effect nodes and primary site NA
+19 treatment to trigger AJCC y
+21 multifocal tumors trigger AJCC m
+
 
 30 = extended lists
 
@@ -907,9 +910,9 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "Absent"
+            id : "19", name : "Absent"
           }, {
-            id : "00", name : "Present"
+            id : "19", name : "Present"
           }, {
             id : "00", name : "Not known"
           } ],
@@ -1182,9 +1185,9 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "Absent"
+            id : "19", name : "Absent"
           }, {
-            id : "00", name : "Present"
+            id : "19", name : "Present"
           }, {
             id : "00", name : "Not known"
           } ],
@@ -2174,9 +2177,9 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            id : "00", name : "Present  "
+            id : "19", name : "Present  "
           }, {
             id : "00", name : "Indeterminate "
           }, {
@@ -3089,7 +3092,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus of tumor"
           }, {
-            id : "00", name : "Multiple foci of tumor"
+            id : "21", name : "Multiple foci of tumor"
           } ],
           id : "00", name : ""
         } ]
@@ -3899,9 +3902,9 @@ var database = {
           group : [ {
             id : "17", name : "Not applicable"
           }, {
-            id : "00", name : "No definite response"
+            id : "19", name : "No definite response"
           }, {
-            id : "00", name : "Probable or definite response"
+            id : "19", name : "Probable or definite response"
           } , {
             id : "00", name : "Not known"
           } ],
@@ -3913,17 +3916,17 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "No definite response"
+            id : "19", name : "No definite response"
           }, {
-            id : "00", name : "Fibrous scarring with metastases"
+            id : "19", name : "Fibrous scarring with metastases"
           }, {
-            id : "00", name : "Fibrous scarring without metastases"
+            id : "19", name : "Fibrous scarring without metastases"
           }, {
-            id : "00", name : "Fibrous scarring (treatment effect) and biopsy site with metastases"
+            id : "19", name : "Fibrous scarring (treatment effect) and biopsy site with metastases"
           }, {
-            id : "00", name : "Fibrous scarring (treatment effect) and biopsy site without metastases"
+            id : "19", name : "Fibrous scarring (treatment effect) and biopsy site without metastases"
           }, {
-            id : "00", name : "No fibrous scarring or metastases"
+            id : "19", name : "No fibrous scarring or metastases"
           }, {
             id : "00", name : "Not known"
           }  ],
@@ -4294,7 +4297,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus of tumor"
           }, {
-            id : "00", name : "Multiple foci of tumor"
+            id : "21", name : "Multiple foci of tumor"
           } ],
           id : "00", name : ""
         } ]
@@ -4786,9 +4789,9 @@ var database = {
           group : [ {
             id : "17", name : "Not applicable"
           }, {
-            id : "00", name : "No definite response"
+            id : "19", name : "No definite response"
           }, {
-            id : "00", name : "Probable or definite response"
+            id : "19", name : "Probable or definite response"
           } , {
             id : "00", name : "Not known"
           } ],
@@ -4800,17 +4803,17 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "No definite response"
+            id : "19", name : "No definite response"
           }, {
-            id : "00", name : "Fibrous scarring with metastases"
+            id : "19", name : "Fibrous scarring with metastases"
           }, {
-            id : "00", name : "Fibrous scarring without metastases"
+            id : "19", name : "Fibrous scarring without metastases"
           }, {
-            id : "00", name : "Fibrous scarring (treatment effect) and biopsy site with metastases"
+            id : "19", name : "Fibrous scarring (treatment effect) and biopsy site with metastases"
           }, {
-            id : "00", name : "Fibrous scarring (treatment effect) and biopsy site without metastases"
+            id : "19", name : "Fibrous scarring (treatment effect) and biopsy site without metastases"
           }, {
-            id : "00", name : "No fibrous scarring or metastases"
+            id : "19", name : "No fibrous scarring or metastases"
           }, {
             id : "00", name : "Not known"
           }  ],
@@ -7313,13 +7316,13 @@ var database = {
           group : [ {
             id : "00", name : "No prior treatment"
           }, {
-            id : "00", name : "Present, no viable tumor cells (complete response, score 0)"
+            id : "19", name : "Present, no viable tumor cells (complete response, score 0)"
           }, {
-            id : "00", name : "Present, single cells or rare small groups of cancer cells (near complete response, score 1)"
+            id : "19", name : "Present, single cells or rare small groups of cancer cells (near complete response, score 1)"
           }, {
-            id : "00", name : "Present, residual cancer with evident tumor regression (partial response, score 2)"
+            id : "19", name : "Present, residual cancer with evident tumor regression (partial response, score 2)"
           }, {
-            id : "00", name : "None, no response (score 3)"
+            id : "19", name : "None, no response (score 3)"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -7647,7 +7650,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus of tumor"
           }, {
-            id : "00", name : "Multiple foci of tumor"
+            id : "21", name : "Multiple foci of tumor"
           } ],
           id : "00", name : ""
         } ]
@@ -8336,7 +8339,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -9333,9 +9336,9 @@ var database = {
           group : [ {
             id : "00", name : "No prior treatment"
           }, {
-            id : "00", name : "Present (score 1 or 2)"
+            id : "19", name : "Present (score 1 or 2)"
           }, {
-            id : "00", name : "No response (score 3)"
+            id : "19", name : "No response (score 3)"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -9672,11 +9675,11 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Chemotherapy"
+            id : "19", name : "Chemotherapy"
           }, {
-            id : "00", name : "Radiation therapy"
+            id : "19", name : "Radiation therapy"
           }, {
-            id : "00", name : "Chemotherapy and radiation therapy"
+            id : "19", name : "Chemotherapy and radiation therapy"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -9690,9 +9693,9 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            id : "00", name : "Present"
+            id : "19", name : "Present"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -10454,7 +10457,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -10574,9 +10577,9 @@ var database = {
           group : [ {
             id : "00", name : "No known therapy"
           }, {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            id : "00", name : "Present"
+            id : "19", name : "Present"
           }, {
             id : "00", name : "Indeterminate"
           }  ],
@@ -10987,7 +10990,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci "
+            id : "21", name : "Multiple foci "
           } ],
           id : "00", name : ""
         } ]
@@ -11140,11 +11143,11 @@ var database = {
           group : [ {
             id : "00", name : "No known therapy"
           }, {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            id : "00", name : "Complete necrosis (no viable tumor)"
+            id : "19", name : "Complete necrosis (no viable tumor)"
           }, {
-            id : "00", name : "Incomplete necrosis (viable tumor present)"
+            id : "19", name : "Incomplete necrosis (viable tumor present)"
           }, {
             id : "00", name : "Indeterminate"
           }  ],
@@ -11279,7 +11282,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci "
+            id : "21", name : "Multiple foci "
           } ],
           id : "00", name : ""
         } ]
@@ -11553,7 +11556,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -11845,7 +11848,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -12236,7 +12239,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -12684,7 +12687,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -13099,9 +13102,8 @@ var database = {
         id : "00", name : "Synchronous tumors",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "# of tumors",
-            inputs_required : [ "" ],
-            id : "10", name : "Present"
+ 
+            id : "21", name : "Present"
           }, {
             id : "00", name : "Absent"
           }, {
@@ -13135,13 +13137,13 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci, same lobe"
+            id : "21", name : "Multiple foci, same lobe"
           }, {
-            id : "00", name : "Multiple foci, different ipsilateral lobes"
+            id : "21", name : "Multiple foci, different ipsilateral lobes"
           }, {
-            id : "00", name : "Multiple foci, different contralateral lobes"
+            id : "21", name : "Multiple foci, different contralateral lobes"
           }, {
-            id : "00", name : "Multifocal ground glass/lepidic nodules"
+            id : "21", name : "Multifocal ground glass/lepidic nodules"
           }, {
             id : "00", name : "Pneumonic type adenocarcinoma"
           } ],
@@ -13365,9 +13367,9 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "Greater than 10% residual tumor"
+            id : "19", name : "Greater than 10% residual tumor"
           }, {
-            id : "00", name : "Less than or equal to 10% residual tumor"
+            id : "19", name : "Less than or equal to 10% residual tumor"
           }, {
             id : "00", name : "Not known"
           }  ],
@@ -13981,7 +13983,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -14375,7 +14377,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci "
+            id : "21", name : "Multiple foci "
           } ],
           id : "00", name : ""
         } ]
@@ -14440,11 +14442,11 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            id : "00", name : "Greater than 50% residual viable tumor"
+            id : "19", name : "Greater than 50% residual viable tumor"
           }, {
-            id : "00", name : "Less than or equal to 50% residual viable tumor"
+            id : "19", name : "Less than or equal to 50% residual viable tumor"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -14651,7 +14653,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -15267,7 +15269,7 @@ var database = {
           group : [ {
             id : "00", name : "No known presurgical chemotherapy"
           }, {
-            id : "00", name : "Presurgical chemotherapy given "
+            id : "19", name : "Presurgical chemotherapy given "
           }, {
             id : "00", name : "Indeterminate "
           }, {
@@ -15863,11 +15865,11 @@ var database = {
           group : [ {
             id : "00", name : "No known therapy"
           }, {
-            id : "00", name : "None or minimal response (CRS1)"
+            id : "19", name : "None or minimal response (CRS1)"
           }, {
-            id : "00", name : "Moderate response (CRS 2)"
+            id : "19", name : "Moderate response (CRS 2)"
           }, {
-            id : "00", name : "Marked response with no or minimal residual cancer (CRS 3)"
+            id : "19", name : "Marked response with no or minimal residual cancer (CRS 3)"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -16093,7 +16095,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -16496,9 +16498,9 @@ var database = {
           group : [ {
             id : "00", name : "No prior treatment"
           }, {
-            id : "00", name : "Present (score 1-2)"
+            id : "19", name : "Present (score 1-2)"
           }, {
-            id : "00", name : "Poor or no response, score 3"
+            id : "19", name : "Poor or no response, score 3"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -17455,7 +17457,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -17941,7 +17943,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -18430,9 +18432,9 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            id : "00", name : "Present"
+            id : "19", name : "Present"
           }, {
             id : "00", name : "Not applicable"
           }, {
@@ -19403,11 +19405,11 @@ var database = {
           group : [ {
             id : "00", name : "No known presurgical chemotherapy"
           }, {
-            id : "00", name : "Presurgical chemotherapy given "
+            id : "19", name : "Presurgical chemotherapy given "
           }, {
-            id : "00", name : "Presurgical radiation given "
+            id : "19", name : "Presurgical radiation given "
           }, {
-            id : "00", name : "Presurgical chemo and radiation given "
+            id : "19", name : "Presurgical chemo and radiation given "
           }, {
             id : "00", name : "Not known"
           }  ],
@@ -20995,9 +20997,9 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            id : "00", name : "Present  "
+            id : "19", name : "Present  "
           }, {
             id : "00", name : "Indeterminate  "
           }, {
@@ -21309,9 +21311,9 @@ var database = {
           group : [ {
             id : "00", name : "No prior treatment"
           }, {
-            id : "00", name : "Present (score 1 or 2)"
+            id : "19", name : "Present (score 1 or 2)"
           }, {
-            id : "00", name : "No response (score 3)"
+            id : "19", name : "No response (score 3)"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -21619,7 +21621,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -21866,7 +21868,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]  
@@ -22153,7 +22155,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           } ],
           id : "00", name : ""
         } ]
@@ -22603,11 +22605,15 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "00", name : "None"
+            id : "19", name : "None"
           }, {
-            description : "% residual viable tumor",
-            inputs_required : [ "" ],
-            id : "10", name : "Present"
+            id : "19", name : "Present, at least 75% viable tumor"
+          }, {
+            id : "19", name : "Present,50-75% viable tumor"
+          }, {
+            id : "19", name : "Present, 25-50% or more viable tumor"
+          }, {
+            id : "19", name : "Present, less than 25% viable tumor"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -25399,7 +25405,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci"
+            id : "21", name : "Multiple foci"
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -25835,7 +25841,7 @@ var database = {
           group : [ {
             id : "00", name : "Single focus"
           }, {
-            id : "00", name : "Multiple foci "
+            id : "21", name : "Multiple foci "
           } ],
           id : "00", name : ""
         } ]
@@ -26633,7 +26639,40 @@ var database = {
             }
            
           }
+
+           // m stage
+
+             //m stage  
+             if (gid == '21') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0100") {
+                  this.row.inputanswers[j] = "mp0100";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
              
+            }
+             
+            // y stage
+
+             //y stage  
+             if (gid == '19') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0100") {
+                  this.row.inputanswers[j] = "yp0100";
+                  this.dontUseFreeText(j);
+                 }
+                 if (this.row.inputanswers[j] ==  "mp0100") {
+                  this.row.inputanswers[j] = "myp0100";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
+             
+            }
+
+
              // T stage
 
              //Tis
