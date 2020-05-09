@@ -215,10 +215,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -459,10 +455,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -796,10 +788,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -1090,10 +1078,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -1434,10 +1418,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -1819,10 +1799,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -2112,10 +2088,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -2704,10 +2676,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -3099,10 +3067,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -3578,10 +3542,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -4312,10 +4272,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -6038,16 +5994,10 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
           id : "10", name : "Multifocal, largest focus "
-        },{
-          id : "00", name : "Can not be determined"
         }, {
           id : "00", name : "Not applicable"
         } ],
@@ -6499,16 +6449,10 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
           id : "10", name : "Multifocal, largest focus "
-        },{
-          id : "00", name : "Can not be determined"
         }, {
           id : "00", name : "Not applicable"
         } ],
@@ -6677,16 +6621,10 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
           id : "10", name : "Multifocal, largest focus "
-        }, {
-          id : "00", name : "Can not be determined"
         }, {
           id : "00", name : "Not applicable"
         } ],
@@ -7210,10 +7148,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -7697,10 +7631,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -7984,10 +7914,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -8394,10 +8320,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -8758,10 +8680,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -9291,10 +9209,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -9708,10 +9622,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -9881,10 +9791,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -10001,10 +9907,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -10294,10 +10196,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -10390,10 +10288,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -10544,10 +10438,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -10946,10 +10836,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -11130,10 +11016,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -11381,10 +11263,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -11659,10 +11537,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -11955,10 +11829,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -12377,10 +12247,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -12829,10 +12695,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -14130,10 +13992,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -14804,10 +14662,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -15332,10 +15186,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -15797,10 +15647,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -16231,10 +16077,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -16532,10 +16374,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -16899,10 +16737,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -17282,10 +17116,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -17636,10 +17466,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -18126,10 +17952,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -18531,10 +18353,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -19136,10 +18954,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -19148,9 +18962,6 @@ var database = {
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
-          group : [ {
-            id : "00", name : "Equivocal"
-          } ],
           id : "00", name : ""
         } ]
       }, {
@@ -19438,10 +19249,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -19564,10 +19371,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -19731,10 +19534,6 @@ var database = {
          
             inputs_required : [ "" ],
             id : "10", name : "At least "
-          }, {
-          
-            inputs_required : [ "" ],
-            id : "10", name : "Multifocal "
           },{
           
             inputs_required : [ "" ],
@@ -20350,10 +20149,6 @@ var database = {
          
             inputs_required : [ "" ],
             id : "10", name : "At least "
-          }, {
-          
-            inputs_required : [ "" ],
-            id : "10", name : "Multifocal "
           },{
           
             inputs_required : [ "" ],
@@ -20630,10 +20425,6 @@ var database = {
          
             inputs_required : [ "" ],
             id : "10", name : "At least "
-          }, {
-          
-            inputs_required : [ "" ],
-            id : "10", name : "Multifocal "
           },{
           
             inputs_required : [ "" ],
@@ -20778,10 +20569,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -21121,10 +20908,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -21397,10 +21180,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -21824,10 +21603,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -22102,10 +21877,6 @@ var database = {
          
             inputs_required : [ "" ],
             id : "10", name : "At least "
-          }, {
-          
-            inputs_required : [ "" ],
-            id : "10", name : "Multifocal "
           },{
           
             inputs_required : [ "" ],
@@ -22393,10 +22164,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -22739,10 +22506,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -23019,10 +22782,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -23930,10 +23689,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -24559,10 +24314,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -24956,10 +24707,6 @@ var database = {
          
             inputs_required : [ "" ],
             id : "10", name : "At least "
-          }, {
-          
-            inputs_required : [ "" ],
-            id : "10", name : "Multifocal "
           },{
           
             inputs_required : [ "" ],
@@ -25295,10 +25042,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -25640,10 +25383,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
@@ -26080,10 +25819,6 @@ var database = {
          
           inputs_required : [ "" ],
           id : "10", name : "At least "
-        }, {
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal "
         },{
         
           inputs_required : [ "" ],
