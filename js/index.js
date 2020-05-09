@@ -26655,7 +26655,7 @@ var database = {
             }
 
              //m stage  for tumor size
-             if (this.row9.comboMixed[i].substring(0,10) == "Multifocal") {
+             if (this.row9.comboMixed[i].substring(0,25) == "Multifocal, largest focus") {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0100") {
                   this.row.inputanswers[j] = "mp0100";
