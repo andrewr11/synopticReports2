@@ -212,6 +212,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -452,6 +453,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -785,6 +787,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -1075,6 +1078,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -1415,6 +1419,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -1796,6 +1801,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -2085,6 +2091,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -2672,7 +2679,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-          description : "1 block = 4mm",
+          description : "1 block = 4mm, Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -3063,7 +3070,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-          description : "1 block = 4mm",
+          description : "1 block = 4mm, Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -3539,6 +3546,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -4269,6 +4277,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -5193,6 +5202,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           canSelectMultiple : true,
@@ -5991,6 +6001,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -6446,6 +6457,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -6618,6 +6630,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [{
@@ -7145,6 +7158,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -7628,6 +7642,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -7911,6 +7926,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -8317,6 +8333,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [{
@@ -8677,6 +8694,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -9206,6 +9224,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -9619,6 +9638,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -9788,6 +9808,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -9904,6 +9925,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -10193,6 +10215,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -10285,6 +10308,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -10435,6 +10459,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -10833,6 +10858,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -11013,6 +11039,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -11260,6 +11287,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -11534,6 +11562,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -11826,6 +11855,7 @@ var database = {
         } ]
     
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -12244,6 +12274,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -12692,6 +12723,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -13114,6 +13146,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size, total",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -13122,7 +13155,7 @@ var database = {
         } ],
           id : "00", name : ""
         } ]
-      }, { description : "for ACA with lepidic component",
+      }, { description : "for ACA with lepidic component, Millimeters preferred",
         id : "00", name : "Tumor size, invasive component",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -13988,6 +14021,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -14658,6 +14692,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -15182,6 +15217,7 @@ var database = {
         } ]
      
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -15643,6 +15679,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -16073,6 +16110,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -16370,6 +16408,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -16733,6 +16772,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -17112,6 +17152,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -17461,7 +17502,8 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
+      }, { 
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -17948,6 +17990,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -18349,6 +18392,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -18950,6 +18994,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size after sectioning",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -19245,6 +19290,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -19367,6 +19413,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -19530,6 +19577,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -20145,6 +20193,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -20421,6 +20470,7 @@ var database = {
           id : "00", name : ""
         } ] 
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size (width)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -20565,6 +20615,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -20904,6 +20955,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -21176,6 +21228,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -21599,6 +21652,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -21873,6 +21927,7 @@ var database = {
           id : "00", name : ""
         } ]  
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -22160,6 +22215,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -22502,6 +22558,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -22782,6 +22839,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [{
@@ -23689,6 +23747,7 @@ var database = {
           id : "00", name : ""
         } ]  
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -24314,6 +24373,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -24707,6 +24767,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size after sectioning",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -25042,6 +25103,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -25383,6 +25445,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -25819,6 +25882,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
