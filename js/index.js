@@ -1477,6 +1477,8 @@ var database = {
           }, {
             description : "high grade mucinous neoplasm",
             id : "00", name : "High grade"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -1831,6 +1833,8 @@ var database = {
           }, {
              description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -6087,6 +6091,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -6558,6 +6564,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -6716,6 +6724,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -7260,6 +7270,8 @@ var database = {
             id : "00", name : "Grade 3/4, Poorly differentiated"
           }, {
             id : "00", name : "Grade 4/4, , Undifferentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -7682,6 +7694,8 @@ var database = {
           }, {
                description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",	
             id : "00", name : "Grade 3/3, Well-differentiated neuroendocrine tumor"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -7989,6 +8003,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -8375,6 +8391,8 @@ var database = {
           }, {
              description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well-differentiated neuroendocrine tumor"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -9288,6 +9306,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated, undifferentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -10516,6 +10536,8 @@ var database = {
           }, {
             description : "greater than 5 mitoses/ 5 mm squared",
             id : "00", name : "High grade"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -11087,6 +11109,8 @@ var database = {
             id : "00", name : "Grade 3/4, poorly differentiated"
           }, {
             id : "00", name : "Grade 4/4, undifferentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -11347,6 +11371,8 @@ var database = {
             id : "00", name : "Grade 2/3, moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -11604,6 +11630,8 @@ var database = {
           }, {
              description : "> 20 mitoses/ 2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -12356,6 +12384,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -12827,6 +12857,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -14802,6 +14834,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated "
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -16152,6 +16186,8 @@ var database = {
           }, {
              description : "> 20 mitoses/2 mm squaredand/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -16841,6 +16877,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -17216,6 +17254,8 @@ var database = {
             id : "00", name : "Grade 2/3, moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -17589,6 +17629,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -19116,6 +19158,8 @@ var database = {
             id : "00", name : "Grade 4/4, undifferentiated"
           }, {
             id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -20466,6 +20510,8 @@ var database = {
             id : "00", name : "Moderately to poorly differentiated"
           } ,{
             id : "00", name : "Grade 3/3, poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ] 
@@ -20689,6 +20735,8 @@ var database = {
             id : "00", name : "Grade 3/4, Poorly differentiated"
           }, {
             id : "00", name : "Grade 4/4, Undifferentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -21007,6 +21055,8 @@ var database = {
             id : "00", name : "Grade 3/3  "
           }, {
             id : "00", name : "Ungraded sarcoma"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -21293,6 +21343,8 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -21692,6 +21744,8 @@ var database = {
           }, {
              description : "> 20 mitoses/2 mm squared and/or Ki67 >20% ",  
             id : "00", name : "Grade 3/3, Well differentiated neuroendocrine tumor"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -24179,6 +24233,8 @@ var database = {
           }, {
             description : "(squamous carcinoma and adenocarcinoma only",
             id : "00", name : "Intermediate grade"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -24432,6 +24488,8 @@ var database = {
             id : "00", name : "High grade"
           }, {
             id : "00", name : "With sarcomatous overgrowth"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -25171,6 +25229,8 @@ var database = {
             id : "00", name : "Grade 3/4, Poorly differentiated"
           }, {
             id : "00", name : "Grade 4/4, Undifferentiated"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -25527,7 +25587,9 @@ var database = {
             id : "00", name : "Grade 3/4, Poorly differentiated"
           }, {
             id : "00", name : "Grade 4/4, Undifferentiated"
-          } ],
+          } , {
+            id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
       }, {
