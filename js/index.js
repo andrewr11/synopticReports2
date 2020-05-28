@@ -2188,7 +2188,9 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "19", name : "None"
+            id : "00", name : "Not applicable"
+          }, {
+            id : "19", name : "No effect seen  "
           }, {
             id : "19", name : "Present  "
           }, {
@@ -10904,7 +10906,7 @@ var database = {
           group : [ {
             id : "00", name : "No known preoperative therapy"
           }, {
-            id : "00", name : "Preoperative therapy given"
+            id : "19", name : "Preoperative therapy given"
           }, {
             id : "00", name : "Not specified"
           }, {
