@@ -913,7 +913,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "Absent"
+            id : "19", name : "No definite response"
           }, {
             id : "19", name : "Present"
           }, {
@@ -1189,7 +1189,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "Absent"
+            id : "19", name : "No definite response"
           }, {
             id : "19", name : "Present"
           }, {
@@ -2190,7 +2190,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "No effect seen  "
+            id : "19", name : "No definite response  "
           }, {
             id : "19", name : "Present  "
           }, {
@@ -7342,15 +7342,17 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No prior treatment"
+            id : "00", name : "Not applicable"
+          }, {
+            id : "19", name : "No prior treatment"
+          }, {
+            id : "19", name : "No definite response (score 3)"
           }, {
             id : "19", name : "Present, no viable tumor cells (complete response, score 0)"
           }, {
             id : "19", name : "Present, single cells or rare small groups of cancer cells (near complete response, score 1)"
           }, {
             id : "19", name : "Present, residual cancer with evident tumor regression (partial response, score 2)"
-          }, {
-            id : "19", name : "None, no response (score 3)"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -9375,7 +9377,9 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No prior treatment"
+            id : "00", name : "Not applicable"
+          }, {
+            id : "19", name : "No prior treatment"
           }, {
             id : "19", name : "Present (score 1 or 2)"
           }, {
@@ -9715,7 +9719,7 @@ var database = {
         id : "00", name : "Preresection Treatment  ",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "00", name : "No prior treatment"
           }, {
             id : "19", name : "Chemotherapy"
           }, {
@@ -9735,7 +9739,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "None"
+            id : "19", name : "No definite response"
           }, {
             id : "19", name : "Present"
           }, {
@@ -10624,9 +10628,11 @@ var database = {
         id : "00", name : "Treatment Effect ",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No known therapy"
+            id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "None"
+            id : "19", name : "No known therapy"
+          }, {
+            id : "19", name : "No definite response"
           }, {
             id : "19", name : "Present"
           }, {
@@ -11194,9 +11200,11 @@ var database = {
         id : "00", name : "Treatment Effect ",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No known therapy"
+            id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "None"
+            id : "19", name : "No known therapy"
+          }, {
+            id : "19", name : "No definite response"
           }, {
             id : "19", name : "Complete necrosis (no viable tumor)"
           }, {
@@ -14510,7 +14518,7 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "19", name : "None"
+            id : "19", name : "Not applicable"
           }, {
             id : "19", name : "Greater than 50% residual viable tumor"
           }, {
@@ -15936,7 +15944,9 @@ var database = {
         id : "00", name : "Treatment Effect ",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No known therapy"
+            id : "00", name : "Not applicable"
+          }, {
+            id : "19", name : "No known therapy"
           }, {
             id : "19", name : "None or minimal response (CRS1)"
           }, {
@@ -15945,8 +15955,6 @@ var database = {
             id : "19", name : "Marked response with no or minimal residual cancer (CRS 3)"
           }, {
             id : "00", name : "Indeterminate"
-          }, {
-            id : "00", name : "Not applicable"
           }  ],
           id : "00", name : ""
         } ] 
@@ -16573,15 +16581,15 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No prior treatment"
+            id : "00", name : "Not applicable"
+          }, {
+            id : "19", name : "No prior treatment"
           }, {
             id : "19", name : "Present (score 1-2)"
           }, {
             id : "19", name : "Poor or no response, score 3"
           }, {
             id : "00", name : "Indeterminate"
-          }, {
-            id : "00", name : "Not applicable"
           }, {
             id : "00", name : "Not known"
           }  ],
@@ -18520,11 +18528,11 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "19", name : "None"
+            id : "19", name : "Not applicable"
+          }, {
+            id : "19", name : "No definite response"
           }, {
             id : "19", name : "Present"
-          }, {
-            id : "00", name : "Not applicable"
           }, {
             id : "00", name : "Not known"
           }  ],
@@ -21101,7 +21109,9 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "19", name : "None"
+            id : "19", name : "Not applicable"
+          }, {
+            id : "19", name : "No definite response  "
           }, {
             id : "19", name : "Present  "
           }, {
@@ -21416,11 +21426,13 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "No prior treatment"
+            id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "Present (score 1 or 2)"
+            id : "19", name : "No prior treatment"
           }, {
             id : "19", name : "No response (score 3)"
+          }, {
+            id : "19", name : "Present (score 1 or 2)"
           }, {
             id : "00", name : "Indeterminate"
           }, {
@@ -22718,7 +22730,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "None"
+            id : "19", name : "No definite response"
           }, {
             id : "19", name : "Present, at least 75% viable tumor"
           }, {
