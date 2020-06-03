@@ -14518,7 +14518,7 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "19", name : "Not applicable"
+            id : "00", name : "Not applicable"
           }, {
             id : "19", name : "Greater than 50% residual viable tumor"
           }, {
@@ -18528,7 +18528,7 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "19", name : "Not applicable"
+            id : "00", name : "Not applicable"
           }, {
             id : "19", name : "No definite response"
           }, {
@@ -21109,7 +21109,7 @@ var database = {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "19", name : "Not applicable"
+            id : "00", name : "Not applicable"
           }, {
             id : "19", name : "No definite response  "
           }, {
