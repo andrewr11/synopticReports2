@@ -23679,22 +23679,19 @@ var database = {
             description : "Ta/CIS",
             id : "00", name : "Ta/Tis"
           }, {
-            description : "CIS involvement of prostatic urethra  ",
-            id : "00", name : "Tis pu"
+            description : "CIS of urethra, including involvement of prostatic urethra and or prostatic ducts  ",
+            id : "00", name : "Tis"
           }, {
-            description : "CIS involvement of prostatic ducts",
-            id : "00", name : "Tis pd"
-          }, {
-            description : "Invades lamina propria",
+            description : "Invades subepithelial connective tissue underlying urothelium",
             id : "00", name : "T1"
           }, {
-            description : "Invades corpus spongiosum, prostate stroma, or periurethral muscle",
+            description : "Invades corpus spongiosum, prostate stroma, or periurethral muscle (NOT bladder neck)",
             id : "00", name : "T2"
           }, {
-            description : "Invades corpus cavernosum, beyond prostatic capsule, anterior vagina, or bladder neck",
+            description : "Invades corpus cavernosum, into peri-prostatic fat, anterior vagina",
             id : "00", name : "T3"
           }, {
-            description : "Invades adjacent organs (invasion of the bladder)",
+            description : "Invades adjacent organs (invasion of the bladder wall including bladder neck or rectal wall)",
             id : "00", name : "T4"
           } ],
           id : "00", name : ""
