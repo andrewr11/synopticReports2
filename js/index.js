@@ -18429,15 +18429,11 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "<5% ",
-        id : "00", name : "Gleason tertiary pattern",
+        description : "<5% of largest nodule, if >5% then pattern 5 is the second pattern (like cores) ",
+        id : "00", name : "Minor tertiary pattern 5",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Grade 3"
-          }, {
-            id : "00", name : "Grade 4"
-          }, {
-            id : "00", name : "Grade 5"
+            id : "00", name : "Present"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19735,9 +19731,10 @@ var database = {
              inputs_required : [ "" ],
             id : "10", name : "Free, "
           }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
+
+            id : "00", name : "Free, >= 1 cm"
+          }, {
+            id : "00", name : "Positive"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -19752,9 +19749,9 @@ var database = {
              inputs_required : [ "" ],
             id : "10", name : "Free, "
           }, {
-           
-           
-            id : "00", name : "Positive, "
+            id : "00", name : "Free, >= 1cm "
+          }, {
+            id : "00", name : "Positive"
           }, {
             id : "00", name : "Not applicable"
           } ],
