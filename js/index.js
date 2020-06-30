@@ -7344,7 +7344,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "No prior treatment"
+            id : "00", name : "No prior treatment"
           }, {
             id : "19", name : "No definite response (score 3)"
           }, {
@@ -9379,7 +9379,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "No prior treatment"
+            id : "00", name : "No prior treatment"
           }, {
             id : "19", name : "Present (score 1 or 2)"
           }, {
@@ -16583,7 +16583,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "No prior treatment"
+            id : "00", name : "No prior treatment"
           }, {
             id : "19", name : "Present (score 1-2)"
           }, {
@@ -21425,7 +21425,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "No prior treatment"
+            id : "00", name : "No prior treatment"
           }, {
             id : "19", name : "No response (score 3)"
           }, {
