@@ -19623,12 +19623,16 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Midline"
+          }, {
+            id : "00", name : "See above"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
         description : "Millimeters preferred",
-        id : "00", name : "Tumor size",
+        id : "00", name : "Tumor size/width",
        optional_state  : "required", "options" : [ {
           group : [ {
          
@@ -19687,6 +19691,10 @@ var database = {
         id : "00", name : "Tumor thickness (mm)",
        optional_state  : "required", "options" : [ {
           group : [ {
+         
+            inputs_required : [ "" ],
+            id : "10", name : "At least "
+          },{
             id : "00", name : "Equivocal"
           }, {
             id : "00", name : "Not applicable"
@@ -20077,7 +20085,11 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Midline"
-          } ],
+          }, {
+            id : "00", name : "See above"
+          } , {
+            id : "00", name : "Not applicable"
+          }],
           id : "00", name : ""
         } ]
       },   {
@@ -20105,16 +20117,20 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Millimeters preferred",
         id : "00", name : "Tumor thickness (mm)",
        optional_state  : "required", "options" : [ {
           group : [ {
+         
+            inputs_required : [ "" ],
+            id : "10", name : "At least "
+          },{
             id : "00", name : "Equivocal"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
-    
       }, {
         id : "00", name : "Ulceration",
        optional_state  : "required", "options" : [ {
