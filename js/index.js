@@ -16501,6 +16501,7 @@ var database = {
           }, {
             id : "00", name : "Undifferentiated carcinoma with osteoclast-like giant cells"
           }, {
+            description : "Chymotrypsin+, trypsin+, BCL10+",
             id : "00", name : "Acinar cell carcinoma "
           }, {
             id : "00", name : "Acinar cell cystadenocarcinoma"
@@ -16515,8 +16516,11 @@ var database = {
           }, {
             id : "00", name : "Mixed acinar-neuroendocrine-ductal carcinoma"
           }, {
-            description : "nuclear B-catenin +, cyto E-cad -, PR +, Cyclin D1+, CD10+, PAX8 - (islet cell only PAX8 +),Chr -, Syn +/-",
+            description : "nuclear B-catenin +, cyto E-cad -, PR +, Cyclin D1+, CD10+, PAX8 - (islet cell only PAX8 +) AMACR+, CD99 paranucealr dot like staining,Chr -, Syn +/-",
             id : "00", name : "Solid-pseudopapillary neoplasm "
+          }, {
+            description : "Chymotrypsin/trypsin and BCL10 in acinar areas, nuclear beta catenin in squamous areas",
+            id : "00", name : "Pancreatoblastoma "
           }, {
             id : "00", name : "Hepatoid carcinoma"
           }, {
