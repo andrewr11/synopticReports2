@@ -13571,10 +13571,10 @@ var database = {
             description : "> 4cm <= 5cm",
             id : "00", name : "T2b"
           }, {
-            description : "> 5cm AND <= 7cm OR invades parietal pleura, chest wall, phrenic nerve parietal pericardium or separate tumor nodule in the same lobe as the primary ",
+            description : "MULTIPLE TUMORS SAME LOBE OR > 5cm AND <= 7cm, OR invades parietal pleura, chest wall, phrenic nerve parietal pericardium ",
             id : "00", name : "T3"
           }, {
-            description : "> 7cm  OR invades diaphragm, mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, or separate tumor nodule in an ipsilateral lobe different from that of the primary",
+            description : "MULTIPLE TUMORS, DIFFERENT IPSILATERAL LOBE OR > 7cm  OR invades diaphragm, mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina",
             id : "00", name : "T4"
           } ],
           id : "00", name : ""
@@ -13604,7 +13604,7 @@ var database = {
           id : "04", name : "M",
            optional_state  : "required", "options" : [ {
           group : [ {
-            description : "metastases contralateral lung OR plerual or pericardial nodules, OR malignant pleural or pericaridal effusions",
+            description : "MULTIPLE TUMORS CONTRALATERAL LUNG OR plerual or pericardial nodules, OR malignant pleural or pericaridal EFFUSIONS",
             id : "00", name : "M1a"
           }, {
             description : "single extrathoracic metastasis in a single organ including involvement of a single nonregional node",
@@ -16007,7 +16007,7 @@ var database = {
             description : "Tumor limited to both ovaries (capsules intact) or fallopian tubes; no tumor on ovarian or fallopian tube surface; no malignant cells in ascites or peritoneal washings",
             id : "00", name : "T1b"
           }, {
-            description : "Tumor limited to one or both ovaries or fallopian tubes with any of the followingpT1c1:  Surgical spill, Capsule ruptured before surgery or tumor on ovarian or fallopian tube surface, Malignant cells in ascites or peritoneal washings",
+            description : "T1a or T1b with any of: Malignant ASCITES/WASHINGS, Capsule RUPTURE/SPILL before during surgery, or tumor on ovarian or fallopian tube SURFACE",
             id : "00", name : "T1c"
           }, {
             description : "Extension and/or implants on uterus and/or fallopian tube(s) and/or ovaries. ",
@@ -16487,11 +16487,19 @@ var database = {
           }, {
             id : "00", name : "Intraductal papillary-mucinous neoplasm with an associated invasive carcinoma "
           }, {
-            id : "00", name : "Intraductal papillary neoplasm with an associated invasive carcinoma "
+            id : "00", name : "Intraductal papillary-mucinous neoplasm "
+          }, {
+            id : "00", name : "Intraductal tubulo-papillary neoplasm with an associated invasive carcinoma "
+          }, {
+            id : "00", name : "Intraductal tubulo-papillary neoplasm "
           }, {
             id : "00", name : "Intraductal oncocytic papillary neoplasm with an associated invasive carcinoma "
           }, {
+            id : "00", name : "Intraductal oncocytic papillary neoplasm"
+          }, {
             id : "00", name : "Mucinous cystic neoplasm with an associated invasive carcinoma"
+          }, {
+            id : "00", name : "Mucinous cystic neoplasm"
           }, {
             id : "00", name : "Large cell neuroendocrine carcinoma"
           }, {
@@ -16588,6 +16596,8 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             id : "00", name : "No prior treatment"
+          }, {
+            id : "19", name : "Present, complete response, no tumor seen (score 0)"
           }, {
             id : "19", name : "Present (score 1-2)"
           }, {
