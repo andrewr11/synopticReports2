@@ -8697,8 +8697,8 @@ var database = {
             description : "GATA3 +, ER-, p53 wild type, p 16 variable",
             id : "00", name : "Mesonephric adenocarcinoma"
           }, {
-            description : "Calretinin+, WT1+, maybe be muscle marker +",
-            id : "00", name : "Uterine tumor with sex cord differentiation"
+            description : "Calretinin+, WT1+, inhibin +, Melan A+, CD99+, may be muscle marker +",
+            id : "00", name : "Uterine tumor resembling ovarian sex cord tumor"
           }],
           id : "00", name : ""
         } ]
