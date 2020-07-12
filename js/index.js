@@ -8668,6 +8668,9 @@ var database = {
           }, {
             id : "00", name : "Endometrioid adenocarcinoma with secretory differentiation"
           }, {
+            description : "20% solid pattern with well diff background, may be neuroendocrine +",
+            id : "00", name : "Dedifferentiated endometrioid adenocarcinoma"
+          }, {
             id : "00", name : "Mucinous adenocarcinoma"
           }, {
             description : "NapsinA+, HNF-1b +, Pax8+",
@@ -8683,15 +8686,20 @@ var database = {
             inputs_required : [ "" ],
             id : "10", name : "Mixed cell type"
           }, {
+            description : "May only be CD56+",
             id : "00", name : "Small cell carcinoma"
           }, {
+            description : "May only be CD56+",
             id : "00", name : "Large cell neuroendocrine carcinoma"
           }, {
             id : "00", name : "Carcinosarcoma (MMMT)"
           }, {
             description : "GATA3 +, ER-, p53 wild type, p 16 variable",
             id : "00", name : "Mesonephric adenocarcinoma"
-          } ],
+          }, {
+            description : "Calretinin+, WT1+, maybe be muscle marker +",
+            id : "00", name : "Uterine tumor with sex cord differentiation"
+          }],
           id : "00", name : ""
         } ]
       }, {
