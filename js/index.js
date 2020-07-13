@@ -15753,16 +15753,21 @@ var database = {
             id : "00", name : "Endometrioid adenocarcinoma"
           }, {
             id : "00", name : "Endometrioid adenocarcinoma with squamous differentiation"
-          }, {
+          },{
+            description : "Ker+, EMA +, Pax8+, inhibin-",
+     id : "00", name : "Endometrioid adenocarcinoma with sex cord stromal differentiation"
+   },  {
             id : "00", name : "Endometrioid borderline tumor"
           }, {
+            description : "rule out metastases CDX2+, SATB2+",
             id : "00", name : "Mucinous adenocarcinoma"
           }, {
+            description : "rule out metastases CDX2+, SATB2+",
             id : "00", name : "Mucinous borderline tumor"
           }, {
             id : "00", name : "Seromucinous borderline tumor"
           }, {
-                       description : "NapsinA+, HNF-1b +, Pax8+",
+                       description : "NapsinA+, HNF-1b +, Pax8+, AMACR+, WT1-",
             id : "00", name : "Clear cell adenocarcinoma"
           }, {
                description : "WT1+ p53+ or completely -, ER variable, Pax8+, p16+",
@@ -15776,6 +15781,10 @@ var database = {
           }, {
             id : "00", name : "Serous tubal intraepithelial carcinoma (STIC)"
           }, {
+            description : "young, WT1+, pax8-, inhibin-, s100-, chromgranin-, synaptophysin -, rule out melanoma, SMARCA4 loss (BRG1, not INI-1)",
+            id : "00", name : "Small cell carcinoma, hypercalcemic type"
+          }, {
+            description : "Chromogranin+, synaptophysin +, ",
             id : "00", name : "Small cell carcinoma"
           }, {
             id : "00", name : "Large cell neuroendocrine carcinoma"
@@ -15790,6 +15799,10 @@ var database = {
           }, {
             id : "00", name : "Granulosa cell tumor"
           }, {
+            description : "Inhibin +, Calretinin+, CK7-, EMA-, Pax8-, Retiform, herterologous elements (mucinous epithelium, carcinoid, DICER-1 mutations",
+            id : "00", name : "Sertoli Leydig cell tumor"
+          }, {
+            description : "Inhibin +, Calretinin+, CK7- Pax8-, EMA-",
             id : "00", name : "Sex cord stromal tumor"
           }, {
             id : "00", name : "Dysgerminoma"
@@ -15801,7 +15814,16 @@ var database = {
             id : "00", name : "Carcinoma arising from a teratoma"
           }, {
             id : "00", name : "Mixed germ cell tumor"
-          }  ],
+          } , {
+            description : "Benign",
+            id : "00", name : "Leutenized thecoma associated with sclerosing peritonitis"
+          } , {
+            description : "Benign",
+            id : "00", name : "Sclerosing stromal tumor"
+          }, {
+            description : "CD10+, nuclear beta catenin, solid areas",
+            id : "00", name : "Microcystic stromal tumor"
+          }   ],
           id : "00", name : ""
         } ]
       }, {
@@ -24501,6 +24523,7 @@ var database = {
               description : "Rule out PECOMA, carcinoma",
               id : "00", name : "Epithelioid leiomyosarcoma"
             }, {
+              description : "low grade JAZF1 translocation, high grade YWHAE translocation",
             id : "00", name : "Low-grade endometrial stromal sarcoma"
           }, {
             id : "00", name : "Low-grade endometrial stromal sarcoma with smooth muscle differentiation "
@@ -24509,6 +24532,7 @@ var database = {
           }, {
             id : "00", name : "Low-grade endometrial stromal sarcoma with glandular elements"
           }, {
+            description : "low grade JAZF1 translocation, high grade YWHAE translocation",
             id : "00", name : "High-grade endometrial stromal sarcoma"
           }, {
             id : "00", name : "Undifferentiated uterine/endometrial sarcoma"
@@ -24529,8 +24553,8 @@ var database = {
             description : "HMB45+, SMA+, tuberous sclerosis",
             id : "00", name : "Lymphangioleiomyoma"
           }, {
-            description : "INI -",
-            id : "00", name : "SMARC deficient sarcoma"
+            description : "BRG1 -, not INI-1 (that is SMARCB1)",
+            id : "00", name : "SMARCA4 deficient sarcoma"
           }, {
             description : "usually cervical, CD34+, s100+",
             id : "00", name : "NTRK associated sarcoma"
@@ -24543,7 +24567,10 @@ var database = {
             }, {
             description : "Calretinin+, WT1+, inhibin +, Melan A+, CD99+, may be muscle marker + but CD10-",
             id : "00", name : "Uterine tumor resembling ovarian sex cord tumor"
-          } ],
+          } , {
+            description : "DICER-1",
+            id : "00", name : "Rhabdomyosarcoma"
+          }],
           id : "00", name : ""
         } ]
       }, {
