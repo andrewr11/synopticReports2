@@ -8668,7 +8668,7 @@ var database = {
           }, {
             id : "00", name : "Endometrioid adenocarcinoma with secretory differentiation"
           }, {
-            description : "20% solid pattern with well diff background, may be neuroendocrine +",
+            description : "Solid pattern with well diff background, may be neuroendocrine +",
             id : "00", name : "Dedifferentiated endometrioid adenocarcinoma"
           }, {
             id : "00", name : "Mucinous adenocarcinoma"
@@ -8696,9 +8696,6 @@ var database = {
           }, {
             description : "GATA3 +, ER-, p53 wild type, p 16 variable",
             id : "00", name : "Mesonephric adenocarcinoma"
-          }, {
-            description : "Calretinin+, WT1+, inhibin +, Melan A+, CD99+, may be muscle marker +",
-            id : "00", name : "Uterine tumor resembling ovarian sex cord tumor"
           }],
           id : "00", name : ""
         } ]
@@ -24498,6 +24495,12 @@ var database = {
           group : [ {
             id : "00", name : "Leiomyosarcoma"
           }, {
+            description : "bland, only 2 mitoses/10hpf",
+            id : "00", name : "Myxoid leiomyosarcoma"
+           } , {
+              description : "Rule out PECOMA, carcinoma",
+              id : "00", name : "Epithelioid leiomyosarcoma"
+            }, {
             id : "00", name : "Low-grade endometrial stromal sarcoma"
           }, {
             id : "00", name : "Low-grade endometrial stromal sarcoma with smooth muscle differentiation "
@@ -24519,6 +24522,27 @@ var database = {
             id : "00", name : "Adenosarcoma with osseous differentiation"
           }, {
             id : "00", name : "Adenosarcoma with sarcomatous overgrowth"
+          }, {
+            description : "FH -, renal cell CA, dermal leiomyomas, granular cytoplasm, large eosinophilic nucleoli",
+            id : "00", name : "FH deficient smooth muscle tumor"
+          }, {
+            description : "HMB45+, SMA+, tuberous sclerosis",
+            id : "00", name : "Lymphangioleiomyoma"
+          }, {
+            description : "INI -",
+            id : "00", name : "SMARC deficient sarcoma"
+          }, {
+            description : "usually cervical, CD34+, s100+",
+            id : "00", name : "NTRK associated sarcoma"
+          }, {
+            description : "HMB45+, SMA+, MelanA+, s100-",
+            id : "00", name : "PECOMA"
+          }, {
+              description : "ALK+, may be desmin +",
+              id : "00", name : "Myofibroblastic tumor"
+            }, {
+            description : "Calretinin+, WT1+, inhibin +, Melan A+, CD99+, may be muscle marker + but CD10-",
+            id : "00", name : "Uterine tumor resembling ovarian sex cord tumor"
           } ],
           id : "00", name : ""
         } ]
