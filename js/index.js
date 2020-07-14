@@ -6029,6 +6029,7 @@ var database = {
           group : [ {
             id : "00", name : "Squamous cell carcinoma"
           }, {
+            description : "if associated with VIN2-3 = p16+, if associated with differentiated VIN = p53 abnormal",
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
             id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
@@ -6056,6 +6057,7 @@ var database = {
           }, {
             id : "00", name : "Mucinous carcinoma, signet-ring cell type"
           }, {
+            description : "includes adenoma malignum, p16-, p53 abnormal, Peutz Jegher",
             id : "00", name : "Mucinous carcinoma, gastric type"
           }, {
             id : "00", name : "Villoglandular carcinoma"
@@ -6066,6 +6068,7 @@ var database = {
           }, {
             id : "00", name : "Serous carcinoma"
           }, {
+            description : "eosinophilic and necrotic lumenal material, p16-, ER-, GATA3 +/-, TTF1 +/-, Calretinin +/-",
             id : "00", name : "Mesonephric carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma admixed with neuroendocrine carcinoma"
@@ -6076,6 +6079,7 @@ var database = {
           }, {
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
+            description : "p16+",
             id : "00", name : "Adenoid basal carcinoma"
           }, {
             id : "00", name : "Small cell carcinoma"
@@ -6501,6 +6505,7 @@ var database = {
           group : [ {
             id : "00", name : "Squamous cell carcinoma"
           }, {
+            description : "if associated with VIN2-3 = p16+, if associated with differentiated VIN = p53 abnormal",
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
             id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
@@ -6517,10 +6522,9 @@ var database = {
           }, {
             id : "00", name : "Squamous cell carcinoma, squamotransitional"
           }, {
-             description : "cervical HPV ISH+, p16+, CEA+, p53 wild type, ER-/wk, PR- Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER-/+, PR+, Vim +",
+            description : "cervical HPV ISH +, p16+, CEA+, p53 wild type, ER-/wk, PR- Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER+, PR+ Vim +/wk",
             id : "00", name : "Endocervical adenocarcinoma"
           }, {
-            
             id : "00", name : "Endocervical adenocarcinoma, usual type"
           }, {
             id : "00", name : "Mucinous carcinoma, NOS"
@@ -6529,6 +6533,7 @@ var database = {
           }, {
             id : "00", name : "Mucinous carcinoma, signet-ring cell type"
           }, {
+            description : "includes adenoma malignum, p16-, p53 abnormal, Peutz Jegher",
             id : "00", name : "Mucinous carcinoma, gastric type"
           }, {
             id : "00", name : "Villoglandular carcinoma"
@@ -6539,6 +6544,7 @@ var database = {
           }, {
             id : "00", name : "Serous carcinoma"
           }, {
+            description : "eosinophilic and necrotic lumenal material, p16-, ER-, GATA3 +/-, TTF1 +/-, Calretinin +/-",
             id : "00", name : "Mesonephric carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma admixed with neuroendocrine carcinoma"
@@ -6549,6 +6555,7 @@ var database = {
           }, {
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
+            description : "p16+",
             id : "00", name : "Adenoid basal carcinoma"
           }, {
             id : "00", name : "Small cell carcinoma"
@@ -6662,6 +6669,7 @@ var database = {
           group : [ {
             id : "00", name : "Squamous cell carcinoma"
           }, {
+            description : "if associated with VIN2-3 = p16+, if associated with differentiated VIN = p53 abnormal",
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
             id : "00", name : "Squamous cell carcinoma, nonkeratinizing"
@@ -6689,6 +6697,7 @@ var database = {
           }, {
             id : "00", name : "Mucinous carcinoma, signet-ring cell type"
           }, {
+            description : "includes adenoma malignum, p16-, p53 abnormal, Peutz Jegher",
             id : "00", name : "Mucinous carcinoma, gastric type"
           }, {
             id : "00", name : "Villoglandular carcinoma"
@@ -6699,6 +6708,7 @@ var database = {
           }, {
             id : "00", name : "Serous carcinoma"
           }, {
+            description : "eosinophilic and necrotic lumenal material, p16-, ER-, GATA3 +/-, TTF1 +/-, Calretinin +/-",
             id : "00", name : "Mesonephric carcinoma"
           }, {
             id : "00", name : "Adenocarcinoma admixed with neuroendocrine carcinoma"
@@ -6709,6 +6719,7 @@ var database = {
           }, {
             id : "00", name : "Adenoid cystic carcinoma"
           }, {
+            description : "p16+",
             id : "00", name : "Adenoid basal carcinoma"
           }, {
             id : "00", name : "Small cell carcinoma"
@@ -15759,13 +15770,21 @@ var database = {
    },  {
             id : "00", name : "Endometrioid borderline tumor"
           }, {
-            description : "rule out metastases CDX2+, SATB2+",
+            description : "rule out metastases, look for mural sarcomatous nodules, CDX2+, SATB2+",
             id : "00", name : "Mucinous adenocarcinoma"
           }, {
-            description : "rule out metastases CDX2+, SATB2+",
+            description : "rule out metastases, look for mural sarcomatous nodules, CDX2+, SATB2+",
             id : "00", name : "Mucinous borderline tumor"
-          }, {
+          } , {
+            description : "rule out metastases, look for mural sarcomatous nodules, CDX2+, SATB2+",
+            id : "00", name : "Mucinous borderline tumor with microinvasion"
+           } , {
+              description : "rule out metastases, look for mural sarcomatous nodules, CDX2+, SATB2+",
+              id : "00", name : "Mucinous borderline tumor with intraepithelial carcinoma"
+           }, {
             id : "00", name : "Seromucinous borderline tumor"
+          }, {
+            id : "00", name : "Seromucinous borderline tumor with microinvasion"
           }, {
                        description : "NapsinA+, HNF-1b +, Pax8+, AMACR+, WT1-",
             id : "00", name : "Clear cell adenocarcinoma"
@@ -15797,7 +15816,9 @@ var database = {
           }, {
             id : "00", name : "Brenner tumor malignant"
           }, {
-            id : "00", name : "Granulosa cell tumor"
+            id : "00", name : "Adult granulosa cell tumor"
+          }, {
+            id : "00", name : "Juvenile granulosa cell tumor"
           }, {
             description : "Inhibin +, Calretinin+, CK7-, EMA-, Pax8-, Retiform, herterologous elements (mucinous epithelium, carcinoid, DICER-1 mutations",
             id : "00", name : "Sertoli Leydig cell tumor"
@@ -15815,12 +15836,6 @@ var database = {
           }, {
             id : "00", name : "Mixed germ cell tumor"
           } , {
-            description : "Benign",
-            id : "00", name : "Leutenized thecoma associated with sclerosing peritonitis"
-          } , {
-            description : "Benign",
-            id : "00", name : "Sclerosing stromal tumor"
-          }, {
             description : "CD10+, nuclear beta catenin, solid areas",
             id : "00", name : "Microcystic stromal tumor"
           }   ],
