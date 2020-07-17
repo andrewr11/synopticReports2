@@ -22400,11 +22400,15 @@ var database = {
             id : "00", name : "Papillary carcinoma, cribriform morular variant"
           }, {
             description : ">=30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
-          id : "00", name : "Papillary carcinoma, hobnail variant"
-        }, {
-          description : "<30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
-        id : "00", name : "Papillary carcinoma, with hobnail features"
-      }, {
+              id : "00", name : "Papillary carcinoma, hobnail variant"
+          }, {
+             description : "<30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
+             id : "00", name : "Papillary carcinoma, with hobnail features"
+          }, {
+            id : "00", name : "Papillary carcinoma, diffuse sclerosing variant"
+          }, {
+            id : "00", name : "Papillary carcinoma, solid/trabecular variant"
+          }, {
                  description : "capsular invasion only, used to be <4 foci, now undefined",
             id : "00", name : "Follicular carcinoma, minimally invasive"
           }, {
@@ -22419,7 +22423,7 @@ var database = {
           }, {
             id : "00", name : "Hurthle cell carcinoma, widely invasive"
           }, {
-            description : "cyclin D1 +, insular/solid growth, mitoses, necrosis, irregular nuclear outlines but no nuclear clearing (can't be pd if have papillary nuclei)",
+            description : "cyclin D1 +, p53+, insular/solid growth, mitoses, necrosis, irregular nuclear outlines but no nuclear clearing (can't be pd if have papillary nuclei)",
             id : "00", name : "Poorly differentiated thyroid carcinoma"
           }, {
             description : "pleomorphic or spindle cell or spindle squamous cell types, PAX8+, TTF- thyroglobulin -, MIB1 >30%, Cyclin D1+, may only be in lymph node",
