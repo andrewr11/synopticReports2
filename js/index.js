@@ -17160,10 +17160,10 @@ var database = {
             description : "Noninvasive verrucous carcinoma ",
             id : "00", name : "Ta"
           }, {
-            description : "Tumor invades subepithelial connective tissue: Glans: Tumor invades lamina propria, Foreskin: Tumor invades dermis, lamina propria, or dartos fascia, Shaft: Tumor invades connective tissue between epidermis and corpora regardless of location, all without lymph vascular invasion, without perineural invasion, and is not poorly differentiated (ie, grade 3-4)",
+            description : "Tumor invades subepithelial connective tissue (NO LVI, PNI, OR POOR DIF): Glans: Tumor invades lamina propria, Foreskin: Tumor invades dermis, lamina propria, or dartos fascia, Shaft: Tumor invades connective tissue between epidermis and corpora regardless of location, all without lymph vascular invasion, without perineural invasion, and is not poorly differentiated (ie, grade 3-4)",
             id : "00", name : "T1a"
           }, {
-            description : "Tumor invades subepithelial connective tissue:  Glans: Tumor invades lamina propria, Foreskin: Tumor invades dermis, lamina propria, or dartos fascia, Shaft: Tumor invades connective tissue between epidermis and corpora regardless of location, with either lymph vascular invasion, or perineural invasion, or is poorly differentiated",
+            description : "Tumor invades subepithelial connective tissue (WITH LVI, PNI, OR POOR DIF):  Glans: Tumor invades lamina propria, Foreskin: Tumor invades dermis, lamina propria, or dartos fascia, Shaft: Tumor invades connective tissue between epidermis and corpora regardless of location, with either lymph vascular invasion, or perineural invasion, or is poorly differentiated",
             id : "00", name : "T1b"
           }, {
             description : "Tumor invades corpus spongiosum",
