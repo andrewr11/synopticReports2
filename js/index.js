@@ -32,6 +32,9 @@ QIDs
 
 50 0 total or 0 positive node dependency
 51 is no sites sampled then total = 0
+52 
+53
+
 
 90 DCIS margin na
 
@@ -50,6 +53,7 @@ GIDs
 17 treatment effect nodes and primary site NA
 19 treatment to trigger AJCC y
 21 multifocal tumors trigger AJCC m
+
 
 
 30 = extended lists
@@ -13188,21 +13192,39 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "multiple unrelated differnt types of tumors present",
-        id : "00", name : "Synchronous tumors",
+        id : "00", name : "Tumor focality/synchronicity",
        optional_state  : "required", "options" : [ {
           group : [ {
- 
-            id : "21", name : "Present"
+            id : "00", name : "Single focus, single tumor type"
           }, {
-            id : "00", name : "Absent"
+            description : "Same tumor type, T3",
+            id : "21", name : "Multiple foci, same lobe, single tumor type"
           }, {
-            id : "00", name : "Not applicable"
+            description : "Same tumor type, T4",
+            id : "21", name : "Multiple foci, different ipsilateral lobes, single tumor type"
           }, {
-            id : "00", name : "Can not be determined"
+            description : "Same tumor type, M1a",
+            id : "21", name : "Multiple foci, different contralateral lobes, single tumor type"
+           } , {
+            description : "Synchronous unrelated tumors, needs 2 tumor summaries",
+              id : "00", name : "Single focus of this type, (synchronous tumors present, see separate tumor summary)"
+            }, {
+              description : "T3, Synchronous unrelated tumors, needs 2 tumor summaries",
+              id : "21", name : "Multiple foci of this type, same lobe, (synchronous tumors present, see separate tumor summary)"
+            }, {
+              description : "T4, Synchronous unrelated tumors, needs 2 tumor summaries",
+              id : "21", name : "Multiple foci of this type, different ipsilateral lobes, (synchronous tumors present, see separate tumor summary)"
+            }, {
+              description : "M1a, Synchronous tumors unrelated, needs 2 tumor summaries",
+              id : "21", name : "Multiple foci of this type, different contralateral lobes, (synchronous tumors present, see separate tumor summary)"
+            }, {
+            id : "21", name : "Multifocal ground glass/lepidic nodules"
+          }, {
+            id : "00", name : "Pneumonic type adenocarcinoma"
           } ],
           id : "00", name : ""
         } ]
+     
       }, {
         description : "Millimeters preferred",
         id : "00", name : "Tumor size, total",
@@ -13220,24 +13242,6 @@ var database = {
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Tumor focality",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Single focus"
-          }, {
-            id : "21", name : "Multiple foci, same lobe"
-          }, {
-            id : "21", name : "Multiple foci, different ipsilateral lobes"
-          }, {
-            id : "21", name : "Multiple foci, different contralateral lobes"
-          }, {
-            id : "21", name : "Multifocal ground glass/lepidic nodules"
-          }, {
-            id : "00", name : "Pneumonic type adenocarcinoma"
-          } ],
           id : "00", name : ""
         } ]
       }, {
@@ -13498,6 +13502,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Levels 2-9 is N2",
         id : "50", name : "Lymph nodes, sites involved",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13608,7 +13613,7 @@ var database = {
             description : "ipsilateral intrapumonary, peribronchial, and/or station 10-14 (hilar, interlobar, lobar, segmental and subsegmental) nodes",
             id : "00", name : "N1"
           }, {
-            description : "ipsilateral station 2-9 (upper paratracheal, prevascular retrovascular, lower paratracheal, subaortic, paraaortic,subcarinal, paraesophageal, pulmonary ligament) nodes",
+            description : "IPSILATERAL STATION 2-9 (upper paratracheal, prevascular retrovascular, lower paratracheal, subaortic, paraaortic,subcarinal, paraesophageal, pulmonary ligament) nodes",
             id : "00", name : "N2"
           }, {
             description : "ipsilateral/contralateral station 1 (supraclavicular, scalene) nodes OR contralateral station 2-14 nodes",
@@ -26882,6 +26887,8 @@ var database = {
            
           }
 
+          
+
            // m stage
 
              //m stage  
@@ -27321,6 +27328,7 @@ var database = {
                 qid === "51" || 
                 qid === "52" || 
                 qid === "53" || 
+               
                 qid === "90"){
               
 
@@ -27404,6 +27412,7 @@ var database = {
                 this.synresults[i].id === "51" || 
                 this.synresults[i].id === "52" || 
                 this.synresults[i].id === "53" || 
+               
                 this.synresults[i].id === "90"){
             
 
