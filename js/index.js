@@ -13195,7 +13195,7 @@ var database = {
         id : "00", name : "Tumor focality/synchronicity",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Single focus, single tumor type"
+            id : "00", name : "Single focus"
           }, {
             description : "Same tumor type, T3",
             id : "21", name : "Multiple foci, same lobe, single tumor type"
