@@ -13229,7 +13229,11 @@ var database = {
         description : "Millimeters preferred",
         id : "00", name : "Tumor size, total",
        optional_state  : "required", "options" : [ {
-        group : [ {
+        group : [{
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
@@ -13239,6 +13243,10 @@ var database = {
         id : "00", name : "Tumor size, invasive component",
        optional_state  : "required", "options" : [ {
         group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
         } ],
