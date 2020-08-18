@@ -21347,12 +21347,14 @@ var database = {
           group : [ {
             id : "00", name : "Endoscopic mucosal resection"
           }, {
+            id : "00", name : "Local excision  "
+          }, {
             id : "00", name : "Partial gastrectomy, proximal "
           }, {
             id : "00", name : "Partial gastrectomy, distal "
           }, {
             id : "00", name : "Partial gastrectomy, other  "
-          }, {
+           } , {
             id : "00", name : "Total gastrectomy"
           } ],
           id : "00", name : ""
@@ -21368,6 +21370,10 @@ var database = {
             id : "00", name : "Antrum"
           }, {
             id : "00", name : "Pylorus"
+          }, {
+            id : "00", name : "Not specified"
+          }, {
+            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
