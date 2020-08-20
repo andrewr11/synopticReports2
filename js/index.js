@@ -9072,7 +9072,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Stage (FIGO 2015)",
+        id : "00", name : "Stage FIGO (2015)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "No or less than half myometrial invasion",
