@@ -13729,9 +13729,9 @@ var database = {
             id : "10", name : "Mixed germ cell tumor"
           }, {
             description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+. D2-40 - or focal+",
-            id : "00", name : "Embryonal tumor"
+            id : "00", name : "Embryonal carcinoma"
           }, {
-            description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
+            description : "SALL4+, OCT3/4-, CD117-/+, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
             id : "00", name : "Yolk sac tumor"
           }, {
              description : "SALL4 +, OCT3/4-, GATA3+, D2-40-(CK7+, p63+, inhibin+, other germ cell tumors neg)",
@@ -22112,9 +22112,9 @@ var database = {
             id : "10", name : "Mixed germ cell tumor"
           }, {
             description : "SALL4+, OCT3/4+, CD117-, Keratin+, CD30+, Glypican3-, CDX2-/focal+, D2-40- or focal+",
-            id : "00", name : "Embryonal tumor"
+            id : "00", name : "Embryonal carcinoma"
           }, {
-            description : "SALL4+, OCT3/4-, CD117-, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
+            description : "SALL4+, OCT3/4-, CD117-/+, Keratin -/focal +, CD30-, Glypican3+, CDX2+, D2-40-",
             id : "00", name : "Yolk sac tumor"
           }, {
              description : "SALL4 +, OCT3/4-, GATA3+, D2-40-, (CK7+, p63+, inhibin+, other germ cell tumors neg)",
