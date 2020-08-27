@@ -11966,7 +11966,7 @@ var database = {
              description : "Pax8+, CK7 +, GATA3+",
             id : "00", name : "Oncocytic papillary renal cell carcinoma"
           }, {
-             description : "Hales+, CK7+, CK20+, PAX8+, CD117+, CD10-/focal+, oncocytoma: Hales-, CK7 -/focal+, CK20 -/focal+, PAX8-/+, CD117+, CD10-/focal+",
+             description : "Hales+, CK7+, CK20+, PAX8+, CD117+, CD10-/focal+, Cyclin D1 -, oncocytoma: Hales-, CK7 -/focal+, CK20 -/focal+, PAX8-/+, CD117+, CD10-/focal+, Cyclin D1 +?",
             id : "00", name : "Chromophobe renal cell carcinoma"
           }, {
              description : "Pax8+, CK7+, INI+, OCT3/4-, FH+, 2SC-",
