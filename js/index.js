@@ -23898,7 +23898,9 @@ var database = {
             id : "00", name : "Posterior wall"
           } , {
             id : "00", name : "Dome"
-          }, {
+           } , {
+              id : "00", name : "Base"
+            }, {
             id : "00", name : "Indeterminate"
           }],
           id : "00", name : ""
@@ -24005,6 +24007,8 @@ var database = {
             id : "69", name : "Noninvasive papillary carcinoma"
           }, {
             id : "60", name : "Carcinoma in situ"
+             }, {
+            id : "60", name : "Carcinoma in situ with extension into prostatic ducts"
           }, {
             id : "61", name : "Invades lamina propria"
           }, {
