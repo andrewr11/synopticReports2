@@ -13654,7 +13654,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "reflex all lung non-small cell carcinomas except squamous cell ca",
-            id : "00", name : "EGFR, ROS1, ALK, BRAF, MET exon 14 deletion, and PDL1"
+            id : "00", name : "EGFR, ROS1, ALK, BRAF, MET exon 14 deletion, RET, and PDL1"
           }, {
             description : "squamous cell carcinomas",
             id : "00", name : "PDL1"
