@@ -6106,20 +6106,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        description : "T1 tumors only,  use gross (if possible) or meaure on slide and incldue # of blocks",
-        id : "00", name : "Horizontal extent of tumor",
-        optional_state  : "required", "options" : [ {
-          group : [  {
-            id : "00", name : "Not applicable"
-          },
-          {
-            id : "00", name : "Can not be determined"
-          },
-        ],
-           
-          id : "00", name : ""
-        } ]
+    
      
       }, {
         description : "depth in mm of tumor",
@@ -6154,81 +6141,47 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, ectocervical",
+        id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "00", name : "Free "
           }, {
-            description : "location",
+            description : "location (ectocervical, endocervical ,vaginal cuff, deep/soft tissue)",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
-          }],
-          id : "00", name : ""
-        } ]
-      
-      }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, vaginal cuff",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
-          }, {
-            id : "00", name : "Not applicable"
-          }],
+          } ],
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, radial/deep",
+        id : "00", name : "Margins, HSIL",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "00", name : "Free "
           }, {
-            description : "location",
+            description : "location (ectocervical, endocervical ,vaginal cuff, deep/soft tissue)",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
-          }],
+          } ],
           id : "00", name : ""
-        } ]
+        } ] 
+      }, {
+        id : "00", name : "Margins, AIS",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Free "
+          }, {
+            description : "location (ectocervical, endocervical ,vaginal cuff, deep/soft tissue)",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ] 
       }, {
         id : "00", name : "Lymphovascular invasion",
        optional_state  : "required", "options" : [ {
@@ -6249,8 +6202,44 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+    
+        id : "00", name : "Lymph nodes, pelvic, # sentinel",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+            description : "includes pelvic, parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, and presacral",
+        id : "00", name : "Lymph nodes, pelvic, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Pelvic lymph node laterality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right"
+          }, {
+            id : "00", name : "Left"
+          }, {
+            id : "00", name : "Bilateral"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
        
-        id : "00", name : "Lymph nodes, # sentinel",
+        id : "00", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6260,47 +6249,121 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "includes pelvic, parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, presacral and para-aortic ",
-        id : "00", name : "Lymph nodes, # total",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-         description : "do not include ITCs",
-        id : "50", name : "Lymph nodes, # involved",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
-          }, {
-            description : "# positive, specify location",
-            inputs_required : [ "" ],
-            id : "10", name : ""
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
+      
+        id : "00", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
-            description : "# positive, specify location",
-            inputs_required : [ "" ],
-            id : "10", name : ""
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "<= 0.2mm",
+        id : "00", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+       
+        id : "00", name : "Lymph nodes, paraaortic, # sentinel",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes, paraaortic, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Paraaortic lymph node laterality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right"
+          }, {
+            id : "00", name : "Left"
+          }, {
+            id : "00", name : "Bilateral"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+      
+        id : "00", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+       
+        id : "00", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "<= 0.2mm",
+        id : "00", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+   }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Uterine serosa"
+          }, {
+            id : "00", name : "Adnexa"
+          }, {
+            id : "00", name : "Inguinal lymph nodes"
+          }, {
+            id : "00", name : "Intraperitoneal disease"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "01", name : "Stage (AJCC 9)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
@@ -6341,22 +6404,25 @@ var database = {
             description : "cannot be assessed",
             id : "00", name : "TX"
           }, {
-            description : "<= 3 mm deep AND <= 7mm wide",
+            description : "<= 3 mm deep, confined to cervix or uterus",
             id : "00", name : "T1a1"
           }, {
-            description : ">3mm AND <=5mm deep, AND <=7mm wide",
+            description : ">3mm AND <=5mm deep, confined to cervix or uterus",
             id : "00", name : "T1a2"
           }, {
-            description : "Clincially visible lesion <= 4 cm",
+            description : "<= 2 cm deep, confined to cervix or uterus",
             id : "00", name : "T1b1"
           }, {
-            description : "Clinically visible lesion > 4cm",
+            description : "> 2cm AND <= 4cm deep, confined to cervix or uterus",
             id : "00", name : "T1b2"
           }, {
-            description : "Clinically visible lesion <= 4cm, invades beyond uterus",
+            description : "> 4cm deep, confined to cervix or uterus",
+            id : "00", name : "T1b3"
+          }, {
+            description : " <= 4cm, invades beyond uterus to upper 2/3 of vagina",
             id : "00", name : "T2a1"
           }, {
-            description : "Clinically visible lesion > 4cm, invades beyond uterus",
+            description : "> 4cm, invades beyond uterus to upper 2/3 of vagina",
             id : "00", name : "T2a2"
           }, {
             description : "Parametrial invasion",
@@ -6383,11 +6449,21 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "Isolated tumor cells, <=0.2mm",
+            description : "Isolated tumor cells, <=0.2mm pelvic OR para-aortic nodes",
             id : "00", name : "N0(i+)"
           }, {
-            description : "positive nodes",
-            id : "00", name : "N1"
+            description : "Microscopic metastases >0.2mm and <= 2mm pelvic nodes, no para-aortic nodes",
+            id : "00", name : "N1mi"
+          }, {
+            description : "positive regional nodes > 2mm pelvic nodes, no para-aortic nodes",
+            id : "00", name : "N1a"
+          
+          }, {
+            description : "Microscopic metastases >0.2mm and <= 2mm para-aortic nodes",
+            id : "00", name : "N2mi"
+          }, {
+            description : "positive regional nodes > 2mm para-aortic nodes",
+            id : "00", name : "N2a"
           } ],
           id : "00", name : "Category (pN)"
         }]
@@ -6409,19 +6485,19 @@ var database = {
         id : "00", name : "Stage FIGO (2018)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "Limited to cervix, Measured invasion of stroma ≤3 mm in depth and ≤7 mm width",
+            description : "invasion of stroma ≤3 mm in depth, confined to cervix or uterus",
             id : "00", name : "FIGO IA1"
           }, {
-            description : "Limited to cervix, Measured invasion of stroma >3 mm and <5 mm in depth and ≤7 mm width",
+            description : "invasion of stroma >3 mm and <5 mm in depth, confined to cervix or uterus",
             id : "00", name : "FIGO IA2"
           }, {
-            description : "Limited to cervix, invasion >= 5mm in depth and < 2cm in greatest dimension",
+            description : " invasion of stroma >= 5mm in depth and < 2cm in greatest dimension, confined to cervix or uterus",
             id : "00", name : "FIGO IB1"
           }, {
-            description : "Limited to cervix, invasive carcinoma >= 2cm and < 4cm",
+            description : ">= 2cm and < 4cm, confined to cervix or uterus",
             id : "00", name : "FIGO IB2"
           }, {
-            description : "Limited to cervix,invasive carcinoma >= 4cm",
+            description : " >= 4cm, confined to cervix or uterus",
             id : "00", name : "FIGO IB3"
           }, {
             description : "Involvement of up to the upper two-thirds of the vagina. No parametrial/pelvic involvement.  <4 cm",
@@ -6439,10 +6515,10 @@ var database = {
             description : "Extension onto the pelvic sidewall, and/or causing hydronephrosis/nonfunctioning kidney",
             id : "00", name : "FIGO IIIB"
           }, {
-            description : "Involvement of pelvic lymph nodes, regardless of size or extent",
+            description : "Involvement of pelvic lymph nodes, regardless of size or extent, inlcudes micrometastases but not ITCs",
             id : "00", name : "FIGO IIIC1"
           }, {
-            description : "Involvement of para-aortic lymph nodes, regardless of size or extent",
+            description : "Involvement of para-aortic lymph nodes, regardless of size or extent, includes micrometastases but not ITCs",
             id : "00", name : "FIGO IIIC2"
           }, {
             description : "Spread to adjacent pelvic organs, ie, tumor invading the mucosa of the bladder and/or rectum and/or extending beyond the true pelvis (bullous edema is not sufficient)",
@@ -6636,6 +6712,48 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Margins, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Free "
+          }, {
+            description : "location (ectocervical, endocervical ,deep/soft tissue)",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Margins, HSIL",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Free "
+          }, {
+            description : "location (ectocervical, endocervical ,deep/soft tissue)",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ] 
+      }, {
+        id : "00", name : "Margins, AIS",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Free "
+          }, {
+            description : "location (ectocervical, endocervical ,deep/soft tissue)",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ] 
       } ]
     }, {
       most_common : false,
@@ -6747,20 +6865,7 @@ var database = {
           id : "00", name : ""
         } ]
      
-      }, {
-        description : "T1 tumors only,  use gross (if possible) or meaure on slide and include # of blocks",
-        id : "00", name : "Horizontal extent of tumor",
-        optional_state  : "required", "options" : [ {
-          group : [  {
-            id : "00", name : "Not applicable"
-          },
-          {
-            id : "00", name : "Can not be determined"
-          },
-        ],
-           
-          id : "00", name : ""
-        } ]
+ 
       }, {
         description : "depth in mm of tumor",
         id : "00", name : "Depth of cervical stromal invasion",
@@ -6794,105 +6899,47 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, ectocervical",
+        id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "00", name : "Free "
           }, {
-            description : "location",
+            description : "location (ectocervical, endocervical ,vaginal cuff, deep/soft tissue)",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
-          }],
+          } ],
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, endocervical",
+        id : "00", name : "Margins, HSIL",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "00", name : "Free "
           }, {
-            description : "location",
+            description : "location (ectocervical, endocervical ,vaginal cuff, deep/soft tissue)",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
-          }],
+          } ],
           id : "00", name : ""
-        } ]
+        } ] 
       }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, vaginal cuff",
+        id : "00", name : "Margins, AIS",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "00", name : "Free "
           }, {
-            description : "location",
+            description : "location (ectocervical, endocervical ,vaginal cuff, deep/soft tissue)",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
+            id : "10", name : "Positive, "
           }, {
             id : "00", name : "Not applicable"
-          }],
+          } ],
           id : "00", name : ""
-        } ]
-      }, {
-        description : "include distance/location of invasive CA, AIS and HSIL",
-        id : "00", name : "Margins, radial/deep",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, AIS"
-          }, {
-            id : "00", name : "Not applicable"
-          }],
-          id : "00", name : ""
-        } ]
+        } ] 
       }, {
         id : "00", name : "Lymphovascular invasion",
        optional_state  : "required", "options" : [ {
@@ -6913,8 +6960,44 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+    
+        id : "00", name : "Lymph nodes, pelvic, # sentinel",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+            description : "includes pelvic, parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, and presacral",
+        id : "00", name : "Lymph nodes, pelvic, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Pelvic lymph node laterality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right"
+          }, {
+            id : "00", name : "Left"
+          }, {
+            id : "00", name : "Bilateral"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
        
-        id : "00", name : "Lymph nodes, # sentinel",
+        id : "00", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6924,47 +7007,122 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "includes pelvic, parametrial, obturator, internal iliac (hypogastric), external iliac, common iliac, sacral, presacral and para-aortic ",
-        id : "00", name : "Lymph nodes, # total",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-         description : "do not include ITCs",
-        id : "50", name : "Lymph nodes, # involved",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
-          }, {
-            description : "# positive, specify location",
-            inputs_required : [ "" ],
-            id : "10", name : ""
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "50", name : "Lymph nodes, # w/ isolated tumor cells",
+      
+        id : "00", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
-            description : "# positive, specify location",
-            inputs_required : [ "" ],
-            id : "10", name : ""
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "<= 0.2mm",
+        id : "00", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+       
+        id : "00", name : "Lymph nodes, paraaortic, # sentinel",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes, paraaortic, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Paraaortic lymph node laterality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right"
+          }, {
+            id : "00", name : "Left"
+          }, {
+            id : "00", name : "Bilateral"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+      
+        id : "00", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+       
+        id : "00", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "<= 0.2mm",
+        id : "00", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+   }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Uterine serosa"
+          }, {
+            id : "00", name : "Adnexa"
+          }, {
+            id : "00", name : "Inguinal lymph nodes"
+          }, {
+            id : "00", name : "Intraperitoneal disease"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+
+      }, {
+        id : "01", name : "Stage (AJCC 9)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
@@ -7005,22 +7163,25 @@ var database = {
             description : "cannot be assessed",
             id : "00", name : "TX"
           }, {
-            description : "<= 3 mm deep AND <= 7mm wide",
+            description : "<= 3 mm deep, confined to cervix or uterus",
             id : "00", name : "T1a1"
           }, {
-            description : ">3mm AND <=5mm deep, AND <=7mm wide",
+            description : ">3mm AND <=5mm deep, confined to cervix or uterus",
             id : "00", name : "T1a2"
           }, {
-            description : "Clincially visible lesion <= 4 cm",
+            description : "<= 2 cm deep, confined to cervix or uterus",
             id : "00", name : "T1b1"
           }, {
-            description : "Clinically visible lesion > 4cm",
+            description : "> 2cm AND <= 4cm deep, confined to cervix or uterus",
             id : "00", name : "T1b2"
           }, {
-            description : "Clinically visible lesion <= 4cm, invades beyond uterus",
+            description : "> 4cm deep, confined to cervix or uterus",
+            id : "00", name : "T1b3"
+          }, {
+            description : " <= 4cm, invades beyond uterus to upper 2/3 of vagina",
             id : "00", name : "T2a1"
           }, {
-            description : "Clinically visible lesion > 4cm, invades beyond uterus",
+            description : "> 4cm, invades beyond uterus to upper 2/3 of vagina",
             id : "00", name : "T2a2"
           }, {
             description : "Parametrial invasion",
@@ -7047,11 +7208,21 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "Isolated tumor cells, <=0.2mm",
+            description : "Isolated tumor cells, <=0.2mm pelvic OR para-aortic nodes",
             id : "00", name : "N0(i+)"
           }, {
-            description : "positive nodes",
-            id : "00", name : "N1"
+            description : "Microscopic metastases >0.2mm and <= 2mm pelvic nodes, no para-aortic nodes",
+            id : "00", name : "N1mi"
+          }, {
+            description : "positive regional nodes > 2mm pelvic nodes, no para-aortic nodes",
+            id : "00", name : "N1a"
+          
+          }, {
+            description : "Microscopic metastases >0.2mm and <= 2mm para-aortic nodes",
+            id : "00", name : "N2mi"
+          }, {
+            description : "positive regional nodes > 2mm para-aortic nodes",
+            id : "00", name : "N2a"
           } ],
           id : "00", name : "Category (pN)"
         }]
@@ -7073,19 +7244,19 @@ var database = {
         id : "00", name : "Stage FIGO (2018)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "Limited to cervix, Measured invasion of stroma ≤3 mm in depth and ≤7 mm width",
+            description : "invasion of stroma ≤3 mm in depth, confined to cervix or uterus",
             id : "00", name : "FIGO IA1"
           }, {
-            description : "Limited to cervix, Measured invasion of stroma >3 mm and <5 mm in depth and ≤7 mm width",
+            description : "invasion of stroma >3 mm and <5 mm in depth, confined to cervix or uterus",
             id : "00", name : "FIGO IA2"
           }, {
-            description : "Limited to cervix, invasion >= 5mm in depth and < 2cm in greatest dimension",
+            description : " invasion of stroma >= 5mm in depth and < 2cm in greatest dimension, confined to cervix or uterus",
             id : "00", name : "FIGO IB1"
           }, {
-            description : "Limited to cervix, invasive carcinoma >= 2cm and < 4cm",
+            description : ">= 2cm and < 4cm, confined to cervix or uterus",
             id : "00", name : "FIGO IB2"
           }, {
-            description : "Limited to cervix,invasive carcinoma >= 4cm",
+            description : " >= 4cm, confined to cervix or uterus",
             id : "00", name : "FIGO IB3"
           }, {
             description : "Involvement of up to the upper two-thirds of the vagina. No parametrial/pelvic involvement.  <4 cm",
@@ -7103,10 +7274,10 @@ var database = {
             description : "Extension onto the pelvic sidewall, and/or causing hydronephrosis/nonfunctioning kidney",
             id : "00", name : "FIGO IIIB"
           }, {
-            description : "Involvement of pelvic lymph nodes, regardless of size or extent",
+            description : "Involvement of pelvic lymph nodes, regardless of size or extent, inlcudes micrometastases but not ITCs",
             id : "00", name : "FIGO IIIC1"
           }, {
-            description : "Involvement of para-aortic lymph nodes, regardless of size or extent",
+            description : "Involvement of para-aortic lymph nodes, regardless of size or extent, includes micrometastases but not ITCs",
             id : "00", name : "FIGO IIIC2"
           }, {
             description : "Spread to adjacent pelvic organs, ie, tumor invading the mucosa of the bladder and/or rectum and/or extending beyond the true pelvis (bullous edema is not sufficient)",
