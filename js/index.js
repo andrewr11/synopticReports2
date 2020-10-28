@@ -6658,58 +6658,11 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-     }, {
-        description : "T1 tumors only,  use gross (if possible) or meaure on slide and include # of blocks",
-        id : "00", name : "Horizontal extent of tumor",
-        optional_state  : "required", "options" : [ {
-          group : [  {
-            id : "00", name : "Not applicable"
-          },
-          {
-            id : "00", name : "Can not be determined"
-          },
-        ],
-           
-          id : "00", name : ""
-        } ]
+   
       }, {
         description : "depth in mm of tumor",
         id : "00", name : "Depth of cervical stromal invasion",
        optional_state  : "required", "options" : [ {
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "include distance/location of closest margin, endocervical, exctocervical and deep",
-        id : "00", name : "Margins",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
-          }],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Lymphovascular invasion",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Indeterminate"
-          }, {
-            id : "00", name : "Suspicious"
-          }, {
-            id : "00", name : "Present"
-          }, {
-            id : "00", name : "Present, extensive"
-          },{
-            description : "Positive lymph nodes",
-           id : "00", name : "Not applicable"
-          } ],
           id : "00", name : ""
         } ]
       }, {
@@ -6754,6 +6707,26 @@ var database = {
           } ],
           id : "00", name : ""
         } ] 
+      }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+    
       } ]
     }, {
       most_common : false,
