@@ -35,6 +35,9 @@ QIDs
 52 
 53
 
+55 0 lymph nodes no staging, pelvic
+56 0 lymph nodes no staging, paraaortic
+
 
 90 DCIS margin na
 
@@ -64,6 +67,8 @@ GIDs
 52 no positive nodes, stage N0a
 53 N1 nodes
 54 N2
+55 0 lymph nodes, no staging, pelvic
+56 0 lymph nodes no staging, paraaortic
 
 60 Tis
 61 T1
@@ -6217,14 +6222,14 @@ var database = {
         id : "00", name : "Lymph nodes, pelvic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "55", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Pelvic lymph node laterality",
+        id : "55", name : "Pelvic lymph node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Right"
@@ -6239,7 +6244,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
+        id : "55", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6250,7 +6255,7 @@ var database = {
         } ]
       }, {
       
-        id : "00", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
+        id : "55", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6261,7 +6266,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
+        id : "55", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6285,14 +6290,14 @@ var database = {
         id : "00", name : "Lymph nodes, paraaortic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "56", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Paraaortic lymph node laterality",
+        id : "56", name : "Paraaortic lymph node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Right"
@@ -6307,7 +6312,7 @@ var database = {
         } ]
       }, {
       
-        id : "00", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6318,7 +6323,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6329,7 +6334,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6948,14 +6953,14 @@ var database = {
         id : "00", name : "Lymph nodes, pelvic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "55", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Pelvic lymph node laterality",
+        id : "55", name : "Pelvic lymph node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Right"
@@ -6970,7 +6975,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
+        id : "55", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6981,7 +6986,7 @@ var database = {
         } ]
       }, {
       
-        id : "00", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
+        id : "55", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -6992,7 +6997,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
+        id : "55", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -7016,14 +7021,14 @@ var database = {
         id : "00", name : "Lymph nodes, paraaortic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "56", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Paraaortic lymph node laterality",
+        id : "56", name : "Paraaortic lymph node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Right"
@@ -7038,7 +7043,7 @@ var database = {
         } ]
       }, {
       
-        id : "00", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -7049,7 +7054,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -7060,7 +7065,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -8992,14 +8997,14 @@ var database = {
         id : "00", name : "Lymph nodes, pelvic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "55", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Pelvic lymph node laterality",
+        id : "55", name : "Pelvic lymph node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Right"
@@ -9014,7 +9019,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
+        id : "55", name : "Lymph nodes, pelvic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -9025,7 +9030,7 @@ var database = {
         } ]
       }, {
       
-        id : "00", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
+        id : "55", name : "Lymph nodes, pelvic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -9036,7 +9041,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
+        id : "55", name : "Lymph nodes, pelvic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -9060,14 +9065,14 @@ var database = {
         id : "00", name : "Lymph nodes, paraaortic, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+            id : "56", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
           }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Paraaortic lymph node laterality",
+        id : "56", name : "Paraaortic lymph node laterality",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Right"
@@ -9082,7 +9087,7 @@ var database = {
         } ]
       }, {
       
-        id : "00", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ mets > 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -9093,7 +9098,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ mets >0.2mm, <= 2mm",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -9104,7 +9109,7 @@ var database = {
         } ]
       }, {
         description : "<= 0.2mm",
-        id : "00", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
+        id : "56", name : "Lymph nodes, paraaortic, # w/ isolated tumor cells",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
@@ -27376,6 +27381,39 @@ var database = {
              
             }
 
+            // lymph nodes no staging 55, pelvic
+             //NX
+             if (gid == '55') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5500") {
+                  this.row.inputanswers[j] = "Not applicable5500";
+                  this.dontUseFreeText(j)      ;          
+                 }
+
+              
+                      
+              }
+             
+            }
+
+            // lymph nodes no staging 56, paraaortic
+             //NX
+             if (gid == '56') {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5600") {
+                  this.row.inputanswers[j] = "Not applicable5600";
+                  this.dontUseFreeText(j)      ;          
+                 }
+
+              
+                      
+              }
+             
+            }
+
+
             //N0
             if (gid == '51') {
               for (var j = i; j<this.row.inputanswers.length; j++){
@@ -27490,6 +27528,8 @@ var database = {
                 qid === "51" || 
                 qid === "52" || 
                 qid === "53" || 
+                qid === "55" || 
+                qid === "56" || 
                
                 qid === "90"){
               
@@ -27574,6 +27614,8 @@ var database = {
                 this.synresults[i].id === "51" || 
                 this.synresults[i].id === "52" || 
                 this.synresults[i].id === "53" || 
+                this.synresults[i].id === "55" || 
+                this.synresults[i].id === "56" || 
                
                 this.synresults[i].id === "90"){
             
