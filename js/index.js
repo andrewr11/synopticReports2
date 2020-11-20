@@ -22552,7 +22552,7 @@ var database = {
             id : "00", name : "Papillary carcinoma, tall cell variant"
           }, {
             description : "nuclei 2-3x taller than wide, <30% of tumor",
-            id : "00", name : "Papillary carcinoma with tall cell features"
+            id : "00", name : "Papillary carcinoma with focal tall cell features"
           }, {
             id : "00", name : "Papillary carcinoma, follicular variant"
           }, {
@@ -22571,7 +22571,7 @@ var database = {
               id : "00", name : "Papillary carcinoma, hobnail variant"
           }, {
              description : "<30% of tumor, includes micropapillary architecture, MIB1>5%, p53+",
-             id : "00", name : "Papillary carcinoma, with hobnail features"
+             id : "00", name : "Papillary carcinoma, with focal hobnail features"
           }, {
             id : "00", name : "Papillary carcinoma, diffuse sclerosing variant"
           }, {
