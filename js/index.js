@@ -8946,9 +8946,7 @@ var database = {
           }, {
             id : "00", name : "Cervical surface involvement only without stromal invasion"
           }, {
-            id : "00", name : "Cervical stromal invasion limited to inner 50% of cervix thickness"
-          }, {
-            id : "00", name : "Cervical stromal invasion of outer 50% of cervix thickness"
+            id : "00", name : "Cervical stromal invasion present"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -9580,6 +9578,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Need at least 15 nodes",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -21697,6 +21696,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Need at least 15 nodes",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
