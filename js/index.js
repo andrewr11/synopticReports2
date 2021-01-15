@@ -8816,6 +8816,10 @@ var database = {
             id : "00", name : "Simple hysterectomy and bilateral salpingo-oophorectomy"
           }, {
             id : "00", name : "Radical hysterectomy and bilateral salpingo-oophorectomy"
+          }, {
+            id : "00", name : "Simple hysterectomy and bilateral salpingectomy"
+          }, {
+            id : "00", name : "Radical hysterectomy and bilateral salpingectomy"
           } ],
           id : "00", name : ""
         } ]
@@ -22633,9 +22637,15 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Present"
+            id : "00", name : "Traditional lymphatic invasion present"
+          }, {
+            id : "00", name : "Psammoma bodies in benign thyroid consistent with lymphatic invasion present"
+          }, {
+            id : "00", name : "Both traditional lymphatic invasion and psammoma bodies in benign thyroid present"
           }, {
             id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Present"
           }, {
             description : "Positive lymph nodes",
             id : "00", name : "Not applicable"
