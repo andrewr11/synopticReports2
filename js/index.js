@@ -221,7 +221,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "Millimeters preferred.",
+        description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -22555,8 +22555,8 @@ var database = {
             description : "nuclei 2-3x taller than wide, >=30% of tumor",
             id : "00", name : "Papillary carcinoma, tall cell variant"
           }, {
-            description : "nuclei 2-3x taller than wide, <30% of tumor",
-            id : "00", name : "Papillary carcinoma with focal tall cell features"
+            description : "nuclei 2-3x taller than wide, <10% of tumor",
+            id : "00", name : "Papillary carcinoma with focal (<10%) tall cell features"
           }, {
             id : "00", name : "Papillary carcinoma, follicular variant"
           }, {
