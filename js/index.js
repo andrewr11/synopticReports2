@@ -221,7 +221,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "Millimeters preferred",
+        description : "Millimeters preferred.",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
