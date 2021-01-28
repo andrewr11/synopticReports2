@@ -22637,15 +22637,15 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Traditional lymphatic invasion present"
+            id : "00", name : "Present"
           }, {
-            id : "00", name : "Psammoma bodies in benign thyroid consistent with lymphatic invasion present"
+            id : "00", name : "Present, extensive"
           }, {
-            id : "00", name : "Both traditional lymphatic invasion and psammoma bodies in benign thyroid present"
+            id : "00", name : "No definite lymphatic invasion present, but psammoma bodies in benign thyroid"
+          }, {
+            id : "00", name : "Lymphatic invasion and psammoma bodies in benign thyroid"
           }, {
             id : "00", name : "Equivocal"
-          }, {
-            id : "00", name : "Present"
           }, {
             description : "Positive lymph nodes",
             id : "00", name : "Not applicable"
