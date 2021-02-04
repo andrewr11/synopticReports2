@@ -7415,8 +7415,6 @@ var database = {
           }, {
             id : "00", name : "Small cell neuroendocrine carcinoma"
           }, {
-            id : "00", name : "Squamous cell carcinoma"
-          }, {
             id : "00", name : "Adenosquamous cell carcinoma"
           }, {
             id : "00", name : "Undifferentiated carcinoma"
