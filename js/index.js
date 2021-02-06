@@ -16714,7 +16714,7 @@ var database = {
           }, {
             id : "00", name : "Undifferentiated carcinoma with osteoclast-like giant cells"
           }, {
-            description : "Chymotrypsin+, trypsin+, BCL10+",
+            description : "Chymotrypsin+, trypsin+, lipase +, BCL10+",
             id : "00", name : "Acinar cell carcinoma "
           }, {
             id : "00", name : "Acinar cell cystadenocarcinoma"
