@@ -16694,8 +16694,10 @@ var database = {
           }, {
             id : "00", name : "Intraductal papillary-mucinous neoplasm "
           }, {
+            description : "MUC-1 +, MUC-5 -, MUC-6 +",
             id : "00", name : "Intraductal tubulo-papillary neoplasm with an associated invasive carcinoma "
           }, {
+            description : "MUC-1 +, MUC-5 -, MUC-6 +",
             id : "00", name : "Intraductal tubulo-papillary neoplasm "
           }, {
             id : "00", name : "Intraductal oncocytic papillary neoplasm with an associated invasive carcinoma "
