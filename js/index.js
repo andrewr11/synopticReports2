@@ -7516,6 +7516,8 @@ var database = {
           }, {
             id : "19", name : "Present, residual cancer with evident tumor regression (partial response, score 2)"
           }, {
+            id : "19", name : "Present, difficult to score (score 2-3)"
+          }, {
             id : "00", name : "Indeterminate"
           }, {
             id : "00", name : "Not known"
