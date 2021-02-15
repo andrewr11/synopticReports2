@@ -16657,7 +16657,9 @@ var database = {
             id : "00", name : "Pancreatic tail"
           }, {
             id : "00", name : "Pancreatic body/tail"
-          } ],
+          } , {
+            id : "00", name : "Pancreatic head/body"
+          }],
           id : "00", name : ""
         } ]
       }, {
