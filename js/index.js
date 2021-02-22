@@ -22520,6 +22520,8 @@ var database = {
             id : "00", name : "Bilateral, largest focus right lobe"
           }, {
             id : "00", name : "Bilateral, largest focus left lobe"
+          }, {
+            id : "00", name : "Bilateral, largest focus isthmus"
           } ],
           id : "00", name : ""
         } ]
@@ -22545,6 +22547,10 @@ var database = {
         
           inputs_required : [ "" ],
           id : "10", name : "Multifocal, largest focus "
+        },{
+          description : "list sizes",
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal "
         },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
