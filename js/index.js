@@ -16701,7 +16701,7 @@ var database = {
             description : "MUC-1 +, MUC-5 -, MUC-6 +",
             id : "00", name : "Intraductal tubulo-papillary neoplasm with an associated invasive carcinoma "
           }, {
-            description : "MUC-1 +, MUC-5 -, MUC-6 +",
+            description : "MUC-1 +, MUC-5 -, MUC-6 +, (r/o acinar cell ca) trypsin -, chymotrypsin-, lipase-, BCL10-",
             id : "00", name : "Intraductal tubulo-papillary neoplasm "
           }, {
             id : "00", name : "Intraductal oncocytic papillary neoplasm with an associated invasive carcinoma "
