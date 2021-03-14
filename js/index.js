@@ -16707,16 +16707,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Extent",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "No evidence of primary tumor"
-          }, {
-            id : "00", name : "Tumor is limited to pancreas"
-          } ],
-          id : "00", name : ""
-        } ]
+     
       }, {
         description : "include distance/location of closest proximal/distal/radial/bile duct/uncinate/pancreatic margin",
         id : "00", name : "Margins",
