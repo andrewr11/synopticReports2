@@ -15951,7 +15951,7 @@ var database = {
           }, {
             id : "00", name : "Seromucinous borderline tumor with microinvasion"
           }, {
-                       description : "NapsinA+, HNF-1b +, Pax8+, AMACR+, WT1-",
+                       description : "NapsinA+, HNF-1b +, Pax8+, AMACR+, WT1-, ER-",
             id : "00", name : "Clear cell adenocarcinoma"
           }, {
                description : "WT1+ p53+ or completely -, ER variable, Pax8+, p16+",
@@ -16625,7 +16625,159 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Pancreas Exocrine tumor",
+      id : "00", name : "Pancreas Exocrine tumor, non-invasive",
+      optional : true,
+      organ_group : "Gastrointestinal",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Pancreaticoduodenectomy (Whipple resection), partial pancreatectomy"
+          }, {
+            id : "00", name : "Pancreaticoduodenectomy (Whipple resection), total pancreatectomy"
+          }, {
+            id : "00", name : "Partial pancreatectomy, pancreatic body "
+          }, {
+            id : "00", name : "Partial pancreatectomy, pancreatic tail"
+          }, {
+            id : "00", name : "Distal pancreatectomy"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor location",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Pancreatic head"
+          }, {
+            id : "00", name : "Uncinate process"
+          }, {
+            id : "00", name : "Pancreatic body"
+          }, {
+            id : "00", name : "Pancreatic tail"
+          }, {
+            id : "00", name : "Pancreatic body/tail"
+          } , {
+            id : "00", name : "Pancreatic head/body"
+          }],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "Millimeters preferred",
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Intraductal papillary-mucinous neoplasm"
+          }, {
+            description : "MUC-1 +, MUC-5 -, MUC-6 +",
+            id : "00", name : "Intraductal tubulo-papillary neoplasm"
+          }, {
+            id : "00", name : "Intraductal oncocytic papillary neoplasm "
+          }, {
+            id : "00", name : "Mucinous cystic neoplasm"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Grade",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Low grade"
+          }, {
+            id : "00", name : "High grade"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Extent",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No evidence of primary tumor"
+          }, {
+            id : "00", name : "Tumor is limited to pancreas"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location of closest proximal/distal/radial/bile duct/uncinate/pancreatic margin",
+        id : "00", name : "Margins",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free, "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+     
+   
+      }, {
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Lymph nodes, # involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+ 
+       }, {
+         description: "adenocarcinoma only",
+        id : "00", name : "MSI IHC and Interpretation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Intact nuclear expression of MMR proteins (MLH1, MSH2, MSH6, PMS2): No evidence of deficient mismatch repair (low probability of MSI-H)"
+          },{
+            id : "00", name : "Loss of nuclear expression of one or more MMR proteins (MLH1, MSH2, MSH6, PMS2): deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). The presence of MSI-H/deficient mismatch repair may also be an indication for additional testing for Lynch syndrome and genetic counselling."
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }],
+          id : "00", name : ""
+        } ]
+      } ]
+    }, {
+      most_common : false,
+      id : "00", name : "Pancreas Exocrine tumor, invasive",
       optional : false,
       organ_group : "Gastrointestinal",
       properties : [ {
@@ -16696,21 +16848,12 @@ var database = {
           }, {
             id : "00", name : "Intraductal papillary-mucinous neoplasm with an associated invasive carcinoma "
           }, {
-            id : "00", name : "Intraductal papillary-mucinous neoplasm "
-          }, {
             description : "MUC-1 +, MUC-5 -, MUC-6 +",
             id : "00", name : "Intraductal tubulo-papillary neoplasm with an associated invasive carcinoma "
           }, {
-            description : "MUC-1 +, MUC-5 -, MUC-6 +, (r/o acinar cell ca) trypsin -, chymotrypsin-, lipase-, BCL10-",
-            id : "00", name : "Intraductal tubulo-papillary neoplasm "
-          }, {
             id : "00", name : "Intraductal oncocytic papillary neoplasm with an associated invasive carcinoma "
           }, {
-            id : "00", name : "Intraductal oncocytic papillary neoplasm"
-          }, {
             id : "00", name : "Mucinous cystic neoplasm with an associated invasive carcinoma"
-          }, {
-            id : "00", name : "Mucinous cystic neoplasm"
           }, {
             id : "00", name : "Large cell neuroendocrine carcinoma"
           }, {
@@ -16756,12 +16899,6 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
-          }, {
-            description : "IPMN",
-            id : "00", name : "Low grade"
-          }, {
-            description : "IPMN",
-            id : "00", name : "High grade"
           }, {
             id : "00", name : "Not applicable"
           } ],
