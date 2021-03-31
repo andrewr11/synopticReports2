@@ -8820,9 +8820,17 @@ var database = {
           }, {
             id : "00", name : "Radical hysterectomy and bilateral salpingo-oophorectomy"
           }, {
+            id : "00", name : "Simple hysterectomy and unilateral salpingo-oophorectomy"
+          }, {
+            id : "00", name : "Radical hysterectomy and unilateral salpingo-oophorectomy"
+          }, {
             id : "00", name : "Simple hysterectomy and bilateral salpingectomy"
           }, {
             id : "00", name : "Radical hysterectomy and bilateral salpingectomy"
+          }, {
+            id : "00", name : "Simple hysterectomy and unilateral salpingectomy"
+          }, {
+            id : "00", name : "Radical hysterectomy and unilateral salpingectomy"
           } ],
           id : "00", name : ""
         } ]
