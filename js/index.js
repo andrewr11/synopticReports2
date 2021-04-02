@@ -20910,7 +20910,7 @@ var database = {
         } ] 
       }, {
         description : "Millimeters preferred",
-        id : "00", name : "Tumor size (width)",
+        id : "00", name : "Tumor size/width",
        optional_state  : "required", "options" : [ {
           group : [ {
          
