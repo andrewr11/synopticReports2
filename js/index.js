@@ -16720,6 +16720,24 @@ var database = {
         } ]
      
       }, {
+        description : "IPMN only",
+        id : "00", name : "Subtype",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Main duct"
+          }, {
+            id : "00", name : "Branch duct"
+          }, {
+            id : "00", name : "Combined"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+     
+      }, {
         description : "include distance/location of closest proximal/distal/radial/bile duct/uncinate/pancreatic margin",
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
