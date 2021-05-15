@@ -22801,7 +22801,9 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
-          } ],
+          }, {
+            id : "00", name : "Lymphovascular invasion present"
+          }  ],
           id : "00", name : ""
         } ]
       }, {
@@ -22819,6 +22821,8 @@ var database = {
             id : "00", name : "Lymphatic invasion and psammoma bodies in benign thyroid"
           }, {
             id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Lymphovascular invasion present"
           }, {
             description : "Positive lymph nodes",
             id : "00", name : "Not applicable"
