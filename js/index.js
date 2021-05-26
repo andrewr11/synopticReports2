@@ -16585,16 +16585,16 @@ var database = {
             description : "No tumor",
             id : "00", name : "T0"
           }, {
-            description : "Tumor limited to the pancreas, 2 cm or less in greatest dimension ",
+            description : " <= 2 cm ",
             id : "00", name : "T1"
           }, {
-            description : "Tumor limited to the pancreas, > 2cm and <= 4cm",
+            description : " > 2cm and <= 4cm",
             id : "00", name : "T2"
           }, {
-            description : "(Tumor limited to pancreas AND > 4cm) OR (Tumor invades duodenum or bile duct",
+            description : "(> 4cm) OR (Tumor invades duodenum or bile duct",
             id : "00", name : "T3"
           }, {
-            description : "Tumor invades adjacent organs or wall of large vessels ",
+            description : "(Tumor invades adjacent organs) OR (tumor involves the celiac axis or the superior mesenteric artery and or common hepatic artery) ",
             id : "00", name : "T4"
           } ],
           id : "00", name : ""
