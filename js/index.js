@@ -12906,6 +12906,8 @@ var database = {
           } , {
             id : "00", name : "Glossectomy"
           }, {
+            id : "00", name : "Partial glossectomy"
+          }, {
             id : "00", name : "Mandibulectomy "
           }, {
             id : "00", name : "Maxillectomy"
