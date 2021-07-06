@@ -7361,7 +7361,7 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            description : "Stage T4a",
+            description : "May be stage T4a if tumor at serosa, but can be lower stage if only pus at serosa",
             id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
