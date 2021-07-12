@@ -11674,6 +11674,11 @@ var database = {
           }, {
             id : "00", name : "Present"
           }, {
+            id : "00", name : "Present, small vessel"
+          }, {
+            description : "portal vein or hepatic vein",
+            id : "00", name : "Present, large vessel"
+          }, {
             id : "00", name : "Present, extensive"
           },{
             description : "Positive lymph nodes",
@@ -11721,6 +11726,24 @@ var database = {
         } ] 
   
      }, {
+      id : "00", name : "Distant metastases",
+     optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "None"
+        }, {
+          id : "00", name : "Lung"
+        }, {
+          id : "00", name : "Liver"
+        }, {
+          id : "00", name : "Bone"
+        }, {
+          id : "00", name : "Nonregional lymph nodes"
+        },{
+         id : "00", name : "Not applicable"
+        } ],
+        id : "00", name : ""
+      } ]
+    }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -12295,6 +12318,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -12630,6 +12671,24 @@ var database = {
             id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -13554,6 +13613,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -14014,6 +14091,10 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Present, extensive"
+          }, {
+            id : "00", name : "Present, venous"
+          }, {
+            id : "00", name : "Present, arterial"
           },{
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
@@ -14057,6 +14138,22 @@ var database = {
             id : "00", name : "None"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -14855,6 +14952,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -15519,6 +15634,24 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -16538,6 +16671,24 @@ var database = {
         } ] 
   
      }, {
+      id : "00", name : "Distant metastases",
+     optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "None"
+        }, {
+          id : "00", name : "Lung"
+        }, {
+          id : "00", name : "Liver"
+        }, {
+          id : "00", name : "Bone"
+        }, {
+          id : "00", name : "Nonregional lymph nodes"
+        },{
+         id : "00", name : "Not applicable"
+        } ],
+        id : "00", name : ""
+      } ]
+    }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -18530,6 +18681,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -18954,6 +19123,24 @@ var database = {
             id : "00", name : "Present"
           }, {
             id : "00", name : "Equivocal"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -26965,10 +27152,15 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
-            inputs_required : [ "" ],
-            id : "10", name : "Present"
+            id : "00", name : "Lung"
           }, {
-            id : "00", name : "Not applicable"
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
