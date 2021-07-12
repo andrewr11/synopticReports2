@@ -349,6 +349,24 @@ var database = {
   
   
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Brain"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -389,7 +407,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "ADRENAL CORTICAL CARCINOMA <=5 cm AND organ limited",
             id : "00", name : "T1"
@@ -410,7 +428,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No metastasis",
             id : "00", name : "N0"
@@ -639,6 +657,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Brain"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -678,7 +714,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Carcinoma in situ",
             id : "00", name : "Tis"
@@ -708,7 +744,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No metastasis",
             id : "00", name : "N0"
@@ -922,9 +958,15 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "No definite response"
+            id : "19", name : "Present, with no viable cancer cells (complete response, score 0) "
+          }, {
+            id : "19", name : "Present, with single cells or rare small groups of cancer cells (near complete response, score 1)   "
+          }, {
+            id : "19", name : "Present, with residual cancer showing evident tumor regression, but more than single cells or rare small groups of cancer cells (partial response, score 2) ) "
           }, {
             id : "19", name : "Present"
+          }, {
+            id : "19", name : "Absent, with extensive residual cancer and no evident tumor regression (poor or no response, score 3) "
           }, {
             id : "00", name : "Not known"
           } ],
@@ -970,7 +1012,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Carcinoma in situ",
             id : "00", name : "Tis"
@@ -1198,9 +1240,15 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            id : "19", name : "No definite response"
+            id : "19", name : "Present, with no viable cancer cells (complete response, score 0) "
+          }, {
+            id : "19", name : "Present, with single cells or rare small groups of cancer cells (near complete response, score 1)   "
+          }, {
+            id : "19", name : "Present, with residual cancer showing evident tumor regression, but more than single cells or rare small groups of cancer cells (partial response, score 2) ) "
           }, {
             id : "19", name : "Present"
+          }, {
+            id : "19", name : "Absent, with extensive residual cancer and no evident tumor regression (poor or no response, score 3) "
           }, {
             id : "00", name : "Not known"
           } ],
@@ -1247,6 +1295,20 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -1286,7 +1348,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Carcinoma in situ",
             id : "00", name : "Tis"
@@ -1310,7 +1372,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastases",
             id : "00", name : "N0"
@@ -1604,6 +1666,22 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -1643,7 +1721,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed OR acceptable for any stage low grade mucinous tumor",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -1682,7 +1760,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -1957,6 +2035,22 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -1996,7 +2090,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -2020,7 +2114,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -2060,6 +2154,24 @@ var database = {
             id : "00", name : "Segmental/wide resection "
           }, {
             id : "00", name : "Radical resection "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Multifocal",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+       
+ 
+            id : "00", name : "Unifocal "
+          }, {
+    
+     
+            id : "00", name : "Multifocal at primary bone site"
+          }, {
+        
+   
+            id : "00", name : "Additional bone sites "
           } ],
           id : "00", name : ""
         } ]
@@ -2163,7 +2275,7 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
+            description : "distance location of all margins < 2cm",
             inputs_required : [ "" ],
             id : "10", name : "Free, "
           }, {
@@ -2190,6 +2302,20 @@ var database = {
             id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -2249,7 +2375,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -2306,7 +2432,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastases",
             id : "00", name : "N0"
@@ -2386,7 +2512,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "Extended list",
-            inputs_required : [{name: "MYELOPROLIFERATIVE NEOPLASMS"} ,{name:  "Chronic myelogenous leukemia} ,{name:  BCR-ABL1 positive"} ,{name:  "Chronic neutrophilia leukemia"} ,{name:  "Polycythemia vera"} ,{name:  "Primary myelofibrosis"} ,{name:  "Essential thrombocythemia"} ,{name:  "Chronic eosinophilic leukemia} ,{name:  not otherwise specified (NOS)"} ,{name:  "Mastocytosis"} ,{name:  "Myeloproliferative neoplasm} ,{name:  unclassifiable"} ,{name:  ""} ,{name:  "PDGFRA} ,{name:  PDGFRB and FGFR1 NEOPLASMS"} ,{name:  "Myeloid or lymphoid neoplasm with PDGFRA rearrangement"} ,{name:  "Myeloid neoplasm with PDGFRB rearrangement"} ,{name:  "Myeloid or lymphoid neoplasm with FGFR1 abnormalities"} ,{name:  ""} ,{name:  "MYELODYSPLASTIC/MYELOPROLIFERATIVE NEOPLASMS"} ,{name:  "Chronic myelomonocytic leukemia"} ,{name:  "Atypical chronic myeloid leukemia BCR-ABL1 negative"} ,{name:  "Juvenile myelomonocytic leukemia"} ,{name:  "Myelodysplastic/myeloproliferative neoplasm} ,{name:  unclassifiable"} ,{name:  "Refractory anemia with ring sideroblasts associated with marked thrombocytosis"} ,{name:  ""} ,{name:  "MYELODYSPLASTIC SYNDROMES"} ,{name:  "Refractory anemia"} ,{name:  "Refractory neutropenia"} ,{name:  "Refractory thrombocytopenia"} ,{name:  "Refractory anemia with ring sideroblasts"} ,{name:  "Refractory cytopenia with multilineage dysplasia"} ,{name:  "Refractory anemia with excess blasts"} ,{name:  "Myelodysplastic syndrome associated with isolated del(5q)"} ,{name:  "Myelodysplastic syndrome} ,{name:  unclassifiable"} ,{name:  "Refractory cytopenia of childhood"} ,{name:  ""} ,{name:  "AML WITH RECURRENT GENETIC ABNORMALITIES"} ,{name:  "AML with t(8;21)(q22;q22); RUNX1-RUNX1T1"} ,{name:  "AML with inv(16)(p13.1q22) or t(16;16)(p13.1;q22); CBFB-MYH11"} ,{name:  "Acute promyelocytic leukemia with t(15;17)(q22;q12); PML-RARA"} ,{name:  "AML with t(9;11)(p22;q23); MLLT3-MLL"} ,{name:  "AML with t(6;9)(p23;q34); DEK-NUP214"} ,{name:  "AML with inv(3)(q21q26.2) or t(3;3)(q21;q26.2); RPN1-EVI1"} ,{name:  "AML (megakaryoblastic) with t(1;22)(p13;q13); RBM15-MKL1"} ,{name:  "AML with mutated NPM1"} ,{name:  "AML with mutated CEBPA"} ,{name:  ""} ,{name:  "AML WITH MDS"} ,{name:  "AML with Multilineage dysplasia"} ,{name:  "AML with Prior myelodysplastic syndrome"} ,{name:  "AML with Myelodysplasia-related cytogenetic abnormalities"} ,{name:  ""} ,{name:  "THERAPY RELATED MYELOID NEOPLASMS"} ,{name:  "Therapy-related AML"} ,{name:  "Therapy-related myelodysplastic syndrome"} ,{name:  "Therapy-related myelodysplastic/myeloproliferative neoplasm"} ,{name:  ""} ,{name:  "AML NOS"} ,{name:  "AML with minimal differentiation"} ,{name:  "AML without maturation"} ,{name:  "AML with maturation"} ,{name:  "Acute myelomonocytic leukemia"} ,{name:  "Acute monoblastic/monocytic leukemia"} ,{name:  "Acute erythroid leukemia"} ,{name:  "Acute megakaryocytic leukemia"} ,{name:  "Acute basophilic leukemia"} ,{name:  "Acute panmyelosis with myelofibrosis"} ,{name:  "AML} ,{name:  NOS"} ,{name:  ""} ,{name:  "MPS IN DOWNS SYNDROME"} ,{name:  "Transient abnormal myelopoiesis in Downs syndrome"} ,{name:  "Myeloid leukemia associated with Down syndrome"} ,{name:  ""} ,{name:  "ACUTE LEUKEMIA OF AMBIGUOUS LINEAGE"} ,{name:  "Acute undifferentiated leukemia"} ,{name:  "Mixed phenotype acute leukemia with t(9;22)(q34;q11.2); BCR-ABL1"} ,{name:  "Mixed phenotype acute leukemia with t(v;11q23); MLL rearranged"} ,{name:  "Mixed phenotype acute leukemia} ,{name:  B/myeloid} ,{name:  NOS"} ,{name:  "Mixed phenotype acute leukemia} ,{name:  T/myeloid} ,{name:  NOS"} ,{name:  "Mixed phenotype acute leukemia} ,{name:  NOS} ,{name:  rare types"} ,{name:  "Natural killer (NK) cell lymphoblastic leukemia/lymphoma"} ,{name:  ""} ,{name:  "OTHER MYEOLOID LEUKEMIAS"} ,{name:  "Blastic plasmacytoid dendritic cell neoplasm"} ,{name:  "PRECURSOR LYMPHOID NEOPLASMS"} ,{name:  "B lymphoblastic leukemia/lymphoma} ,{name:  NOS"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(9;22)(q34;q11.2); BCR-ABL1"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearranged"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUNX1)"} ,{name:  "B lymphoblastic leukemia/lymphoma with hyperdiploidy"} ,{name:  "B lymphoblastic leukemia/lymphoma with hypodiploidy (hypodiploid ALL)"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(5;14)(q31;q32); IL3-IGH"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)"} ,{name:  "T lymphoblastic leukemia/lymphoma"} ,{name:  ""} ,{name:  "MATURE B CELL NEOPLASMS"} ,{name:  "Chronic lymphocytic leukemia/small lymphocytic lymphoma"} ,{name:  "B-cell prolymphocytic leukemia"} ,{name:  "Splenic B-cell marginal zone lymphoma"} ,{name:  "Hairy cell leukemia"} ,{name:  "Splenic B-cell lymphoma/leukemia} ,{name:  unclassifiable"} ,{name:  "Splenic diffuse red pulp small B-cell lymphoma"} ,{name:  "Hairy cell leukemia-variant"} ,{name:  "Lymphoplasmacytic lymphoma"} ,{name:  "Plasma cell myeloma"} ,{name:  "Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue (MALT lymphoma"} ,{name:  "Follicular lymphoma"} ,{name:  "Mantle cell lymphoma"} ,{name:  "Diffuse large B-cell lymphoma (DLBCL)} ,{name:  NOS"} ,{name:  "T cell/histiocyte-rich large B-cell lymphoma"} ,{name:  "Primary cutaneous DLBCL} ,{name:  leg type"} ,{name:  "Epstein-Barr virus (EBV)-positive DLBCL of the elderly"} ,{name:  "DLBCL associated with chronic inflammation"} ,{name:  "Lymphomatoid granulomatosis"} ,{name:  "Anaplastic lymphoma kinase (ALK)-positive large B-cell lymphoma"} ,{name:  "Plasmablastic lymphoma"} ,{name:  "Large B-cell lymphoma arising in HHV8-associated multicentric Castleman disease"} ,{name:  "Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and classical Hodgkin lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  NOS"} ,{name:  ""} ,{name:  "MATURE T AND NK CELL NEOPLASMS"} ,{name:  "T-cell lymphoma} ,{name: "} ,{name:  "T-cell prolymphocytic leukemia"} ,{name:  "T-cell large granular lymphocytic leukemia"} ,{name:  "Chronic lymphoproliferative disorder of NK cells"} ,{name:  "Aggressive NK-cell leukemia "} ,{name:  "Adult T-cell leukemia/lymphoma "} ,{name:  "Extranodal NK/T-cell lymphoma} ,{name:  nasal type"} ,{name:  "Enteropathy-associated T-cell lymphoma"} ,{name:  "Hepatosplenic T-cell lymphoma"} ,{name:  "Mycosis fungoides"} ,{name:  "Peripheral T-cell lymphoma} ,{name:  NOS"} ,{name:  "Angioimmunoblastic T-cell lymphoma"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-positive"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-negative"} ,{name:  ""} ,{name:  "HODGKIN LYMPHOMA"} ,{name:  "Nodular lymphocyte predominant Hodgkin lymphoma"} ,{name:  "Classical Hodgkin lymphoma"} ,{name:  ""} ,{name:  "HISTIOCYTIC AND DENDRITIC CELL NEOPLASMS"} ,{name:  "Histiocytic sarcom"} ,{name:  "Langerhans cell histiocytosis"} ,{name:  "Langerhans cell sarcoma"} ,{name:  "Interdigitating dendritic cell sarcoma"} ,{name:  "Follicular dendritic cell sarcoma"} ,{name:  "Disseminated juvenile xanthogranuloma"} ,{name:  "Histiocytic neoplasm} ,{name:  NOS"} ,{name:  ""} ,{name:  "POST-TRANSPLASNT LYMPHOPROLIFERATIVE DISORDERS (PTLD)"} ,{name:  "Plasmacytic hyperplasia"} ,{name:  "Infectious mononucleosis-like PTLD"} ,{name:  "Polymorphic PTLD"} ,{name:  "Monomorphic PTLD (B- and T/NK-cell types)"} ,{name:  "Classical Hodgkin lymphoma type PTLD" }],
+            inputs_required : [{name: "MYELOPROLIFERATIVE NEOPLASMS"} ,{name:  "Chronic myelogenous leukemia} ,{name:  BCR-ABL1 positive"} ,{name:  "Chronic neutrophilia leukemia"} ,{name:  "Polycythemia vera"} ,{name:  "Primary myelofibrosis"} ,{name:  "Essential thrombocythemia"} ,{name:  "Chronic eosinophilic leukemia} ,{name:  not otherwise specified (NOS)"} ,{name:  "Mastocytosis"} ,{name:  "Myeloproliferative neoplasm} ,{name:  unclassifiable"} ,{name:  ""} ,{name:  "PDGFRA} ,{name:  PDGFRB and FGFR1 NEOPLASMS"} ,{name:  "Myeloid or lymphoid neoplasm with PDGFRA rearrangement"} ,{name:  "Myeloid neoplasm with PDGFRB rearrangement"} ,{name:  "Myeloid or lymphoid neoplasm with FGFR1 abnormalities"} ,{name:  ""} ,{name:  "MYELODYSPLASTIC/MYELOPROLIFERATIVE NEOPLASMS"} ,{name:  "Chronic myelomonocytic leukemia"} ,{name:  "Atypical chronic myeloid leukemia BCR-ABL1 negative"} ,{name:  "Juvenile myelomonocytic leukemia"} ,{name:  "Myelodysplastic/myeloproliferative neoplasm} ,{name:  unclassifiable"} ,{name:  "Refractory anemia with ring sideroblasts associated with marked thrombocytosis"} ,{name:  ""} ,{name:  "MYELODYSPLASTIC SYNDROMES"} ,{name:  "Refractory anemia"} ,{name:  "Refractory neutropenia"} ,{name:  "Refractory thrombocytopenia"} ,{name:  "Refractory anemia with ring sideroblasts"} ,{name:  "Refractory cytopenia with multilineage dysplasia"} ,{name:  "Refractory anemia with excess blasts"} ,{name:  "Myelodysplastic syndrome associated with isolated del(5q)"} ,{name:  "Myelodysplastic syndrome} ,{name:  unclassifiable"} ,{name:  "Refractory cytopenia of childhood"} ,{name:  ""} ,{name:  "AML WITH RECURRENT GENETIC ABNORMALITIES"} ,{name:  "AML with t(8;21)(q22;q22); RUN (not assigned)1-RUN (not assigned)1T1"} ,{name:  "AML with inv(16)(p13.1q22) or t(16;16)(p13.1;q22); CBFB-MYH11"} ,{name:  "Acute promyelocytic leukemia with t(15;17)(q22;q12); PML-RARA"} ,{name:  "AML with t(9;11)(p22;q23); MLLT3-MLL"} ,{name:  "AML with t(6;9)(p23;q34); DEK-NUP214"} ,{name:  "AML with inv(3)(q21q26.2) or t(3;3)(q21;q26.2); RPN1-EVI1"} ,{name:  "AML (megakaryoblastic) with t(1;22)(p13;q13); RBM15-MKL1"} ,{name:  "AML with mutated NPM1"} ,{name:  "AML with mutated CEBPA"} ,{name:  ""} ,{name:  "AML WITH MDS"} ,{name:  "AML with Multilineage dysplasia"} ,{name:  "AML with Prior myelodysplastic syndrome"} ,{name:  "AML with Myelodysplasia-related cytogenetic abnormalities"} ,{name:  ""} ,{name:  "THERAPY RELATED MYELOID NEOPLASMS"} ,{name:  "Therapy-related AML"} ,{name:  "Therapy-related myelodysplastic syndrome"} ,{name:  "Therapy-related myelodysplastic/myeloproliferative neoplasm"} ,{name:  ""} ,{name:  "AML NOS"} ,{name:  "AML with minimal differentiation"} ,{name:  "AML without maturation"} ,{name:  "AML with maturation"} ,{name:  "Acute myelomonocytic leukemia"} ,{name:  "Acute monoblastic/monocytic leukemia"} ,{name:  "Acute erythroid leukemia"} ,{name:  "Acute megakaryocytic leukemia"} ,{name:  "Acute basophilic leukemia"} ,{name:  "Acute panmyelosis with myelofibrosis"} ,{name:  "AML} ,{name:  NOS"} ,{name:  ""} ,{name:  "MPS IN DOWNS SYNDROME"} ,{name:  "Transient abnormal myelopoiesis in Downs syndrome"} ,{name:  "Myeloid leukemia associated with Down syndrome"} ,{name:  ""} ,{name:  "ACUTE LEUKEMIA OF AMBIGUOUS LINEAGE"} ,{name:  "Acute undifferentiated leukemia"} ,{name:  "Mixed phenotype acute leukemia with t(9;22)(q34;q11.2); BCR-ABL1"} ,{name:  "Mixed phenotype acute leukemia with t(v;11q23); MLL rearranged"} ,{name:  "Mixed phenotype acute leukemia} ,{name:  B/myeloid} ,{name:  NOS"} ,{name:  "Mixed phenotype acute leukemia} ,{name:  T/myeloid} ,{name:  NOS"} ,{name:  "Mixed phenotype acute leukemia} ,{name:  NOS} ,{name:  rare types"} ,{name:  "Natural killer (NK) cell lymphoblastic leukemia/lymphoma"} ,{name:  ""} ,{name:  "OTHER MYEOLOID LEUKEMIAS"} ,{name:  "Blastic plasmacytoid dendritic cell neoplasm"} ,{name:  "PRECURSOR LYMPHOID NEOPLASMS"} ,{name:  "B lymphoblastic leukemia/lymphoma} ,{name:  NOS"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(9;22)(q34;q11.2); BCR-ABL1"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearranged"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUN (not assigned)1)"} ,{name:  "B lymphoblastic leukemia/lymphoma with hyperdiploidy"} ,{name:  "B lymphoblastic leukemia/lymphoma with hypodiploidy (hypodiploid ALL)"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(5;14)(q31;q32); IL3-IGH"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)"} ,{name:  "T lymphoblastic leukemia/lymphoma"} ,{name:  ""} ,{name:  "MATURE B CELL NEOPLASMS"} ,{name:  "Chronic lymphocytic leukemia/small lymphocytic lymphoma"} ,{name:  "B-cell prolymphocytic leukemia"} ,{name:  "Splenic B-cell marginal zone lymphoma"} ,{name:  "Hairy cell leukemia"} ,{name:  "Splenic B-cell lymphoma/leukemia} ,{name:  unclassifiable"} ,{name:  "Splenic diffuse red pulp small B-cell lymphoma"} ,{name:  "Hairy cell leukemia-variant"} ,{name:  "Lymphoplasmacytic lymphoma"} ,{name:  "Plasma cell myeloma"} ,{name:  "Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue (MALT lymphoma"} ,{name:  "Follicular lymphoma"} ,{name:  "Mantle cell lymphoma"} ,{name:  "Diffuse large B-cell lymphoma (DLBCL)} ,{name:  NOS"} ,{name:  "T cell/histiocyte-rich large B-cell lymphoma"} ,{name:  "Primary cutaneous DLBCL} ,{name:  leg type"} ,{name:  "Epstein-Barr virus (EBV)-positive DLBCL of the elderly"} ,{name:  "DLBCL associated with chronic inflammation"} ,{name:  "Lymphomatoid granulomatosis"} ,{name:  "Anaplastic lymphoma kinase (ALK)-positive large B-cell lymphoma"} ,{name:  "Plasmablastic lymphoma"} ,{name:  "Large B-cell lymphoma arising in HHV8-associated multicentric Castleman disease"} ,{name:  "Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and classical Hodgkin lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  NOS"} ,{name:  ""} ,{name:  "MATURE T AND NK CELL NEOPLASMS"} ,{name:  "T-cell lymphoma} ,{name: "} ,{name:  "T-cell prolymphocytic leukemia"} ,{name:  "T-cell large granular lymphocytic leukemia"} ,{name:  "Chronic lymphoproliferative disorder of NK cells"} ,{name:  "Aggressive NK-cell leukemia "} ,{name:  "Adult T-cell leukemia/lymphoma "} ,{name:  "Extranodal NK/T-cell lymphoma} ,{name:  nasal type"} ,{name:  "Enteropathy-associated T-cell lymphoma"} ,{name:  "Hepatosplenic T-cell lymphoma"} ,{name:  "Mycosis fungoides"} ,{name:  "Peripheral T-cell lymphoma} ,{name:  NOS"} ,{name:  "Angioimmunoblastic T-cell lymphoma"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-positive"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-negative"} ,{name:  ""} ,{name:  "HODGKIN LYMPHOMA"} ,{name:  "Nodular lymphocyte predominant Hodgkin lymphoma"} ,{name:  "Classical Hodgkin lymphoma"} ,{name:  ""} ,{name:  "HISTIOCYTIC AND DENDRITIC CELL NEOPLASMS"} ,{name:  "Histiocytic sarcom"} ,{name:  "Langerhans cell histiocytosis"} ,{name:  "Langerhans cell sarcoma"} ,{name:  "Interdigitating dendritic cell sarcoma"} ,{name:  "Follicular dendritic cell sarcoma"} ,{name:  "Disseminated juvenile xanthogranuloma"} ,{name:  "Histiocytic neoplasm} ,{name:  NOS"} ,{name:  ""} ,{name:  "POST-TRANSPLASNT LYMPHOPROLIFERATIVE DISORDERS (PTLD)"} ,{name:  "Plasmacytic hyperplasia"} ,{name:  "Infectious mononucleosis-like PTLD"} ,{name:  "Polymorphic PTLD"} ,{name:  "Monomorphic PTLD (B- and T/NK-cell types)"} ,{name:  "Classical Hodgkin lymphoma type PTLD" }],
             id : "30", name : ""
           }, {
             id : "00", name : "Not applicable"
@@ -2836,6 +2962,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Brain"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -2884,7 +3028,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No metastases",
             id : "00", name : "N0"
@@ -3311,6 +3455,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Brain"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -3359,7 +3521,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No metastases",
             id : "00", name : "N0"
@@ -3956,6 +4118,24 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Brain"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -4037,7 +4217,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No metastases",
             id : "00", name : "N0"
@@ -4808,6 +4988,24 @@ var database = {
         } ]
    
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Brain"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -4925,7 +5123,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No metastases",
             id : "00", name : "N0"
@@ -6410,7 +6608,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "<= 3 mm deep, confined to cervix or uterus",
             id : "00", name : "T1a1"
@@ -6452,7 +6650,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -7142,7 +7340,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "<= 3 mm deep, confined to cervix or uterus",
             id : "00", name : "T1a1"
@@ -7184,7 +7382,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -7633,7 +7831,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -7663,7 +7861,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis or <0.2mm",
             id : "00", name : "N0"
@@ -8024,7 +8222,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -8051,7 +8249,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -8084,7 +8282,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Distal Bile Ducts",
+      id : "00", name : "Extrahepatic Distal Bile Ducts",
       optional : false,
       organ_group : "Gastrointestinal",
       properties : [ {
@@ -8298,6 +8496,22 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -8337,7 +8551,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Carcinoma in situ",
             id : "00", name : "Tis"
@@ -8361,7 +8575,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -8747,7 +8961,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -8771,7 +8985,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -9172,7 +9386,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Limited to endometrium or invades <50% of myometrium",
             id : "00", name : "T1a"
@@ -9199,7 +9413,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -9654,7 +9868,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -9693,7 +9907,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -10303,7 +10517,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "in situ",
             id : "00", name : "Tis"
@@ -10333,7 +10547,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No metastasis",
             id : "00", name : "N0"
@@ -10865,7 +11079,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "<= 2cm",
             id : "00", name : "T1"
@@ -10886,7 +11100,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -11439,7 +11653,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Solitary tumor <= 2cm",
             id : "00", name : "T1a"
@@ -11463,7 +11677,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -11541,6 +11755,8 @@ var database = {
           },{
             description : "CK7+, CD56+, albumin ISH+ (extrahepatic cholangioca albumin ISH-, HCC albumin ISH+. Small duct iCCA form peripheral liver masses, present with larger tumors and share risk factors with hepatocellular carcinomas",
             id : "00", name : "Small duct intrahepatic cholangiocarcinoma"
+          },{
+            id : "00", name : "Cholangiocarcinoma, NOS"
           }, {
             id : "00", name : "Combined hepatocellular and cholangiocarcinoma "
           }, {
@@ -11645,6 +11861,22 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11684,7 +11916,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Carcinoma in situ",
             id : "00", name : "Tis"
@@ -11711,7 +11943,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -11995,7 +12227,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -12019,7 +12251,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -12334,7 +12566,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "<= 4cm, limited to kidney",
             id : "00", name : "T1a"
@@ -12367,7 +12599,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -12782,7 +13014,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "SUPRAGLOTTIS, = 1 site, mobile vocal cords ",
             id : "00", name : "T1"
@@ -12848,7 +13080,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -13236,7 +13468,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "CARCINOMA in situ ",
             id : "00", name : "Tis"
@@ -13272,7 +13504,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -13743,7 +13975,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "in situ",
             id : "00", name : "Tis"
@@ -13779,7 +14011,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -14055,7 +14287,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastases",
             id : "00", name : "N0"
@@ -14172,7 +14404,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "Extended list",
-            inputs_required : [ {name: "PRECURSOR LYMPHOID NEOPLASMS"} ,{name:  "B lymphoblastic leukemia/lymphoma"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(9;22)(q34;q11.2); BCR-ABL1"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearranged"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUNX1"} ,{name:  "B lymphoblastic leukemia/lymphoma with hyperdiploidy"} ,{name:  "B lymphoblastic leukemia/lymphoma with hypodiploidy (hypodiploid acute lymphoblastic leukemia/lymphoma [ALL])"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(5;14)(q31;q32); IL3-IGH"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)"} ,{name:  "T lymphoblastic leukemia/lymphoma"} ,{name:  ""} ,{name:  "MATURE B CELL NEOPLASMS"} ,{name:  "B-cell lymphoma"} ,{name:  "Chronic lymphocytic leukemia/small lymphocytic lymphoma"} ,{name:  "B-cell prolymphocytic leukemia"} ,{name:  "Splenic B-cell marginal zone lymphoma"} ,{name:  "Hairy cell leukemia"} ,{name:  "Splenic B-cell lymphoma/leukemia} ,{name:  unclassifiable"} ,{name:  "Splenic diffuse red pulp small B-cell lymphoma"} ,{name:  "Hairy cell leukemia-variant"} ,{name:  "Lymphoplasmacytic lymphoma"} ,{name:  "Gamma heavy chain disease"} ,{name:  "Mu heavy chain disease"} ,{name:  "Alpha heavy chain disease"} ,{name:  "Plasma cell myeloma"} ,{name:  "Solitary plasmacytoma of bone"} ,{name:  "Extraosseous plasmacytoma"} ,{name:  "Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue (MALT lymphoma) "} ,{name:  "Nodal marginal zone lymphoma"} ,{name:  "Pediatric nodal marginal zone lymphoma"} ,{name:  "Follicular lymphoma"} ,{name:  "Pediatric follicular lymphoma"} ,{name:  "Primary intestinal follicular lymphoma"} ,{name:  "Primary cutaneous follicle center lymphoma"} ,{name:  "Mantle cell lymphoma"} ,{name:  "Diffuse large B-cell lymphoma (DLBCL)"} ,{name:  "T cell/histiocyte-rich large B-cell lymphoma"} ,{name:  "Primary DLBCL of the central nervous system (CNS)"} ,{name:  "Primary cutaneous DLBCL} ,{name:  leg type"} ,{name:  "Epstein-Barr virus (EBV)-positive DLBCL of the elderly"} ,{name:  "DLBCL associated with chronic inflammation"} ,{name:  "Lymphomatoid granulomatosis"} ,{name:  "Primary mediastinal (thymic) large B-cell lymphoma"} ,{name:  "Intravascular large B-cell lymphoma"} ,{name:  "Anaplastic lymphoma kinase (ALK)-positive large B-cell lymphoma"} ,{name:  "Plasmablastic lymphoma"} ,{name:  "Large B-cell lymphoma arising in HHV8-associated multicentric Castleman disease"} ,{name:  "Primary effusion lymphoma"} ,{name:  "Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and classical Hodgkin lymphoma"} ,{name:  ""} ,{name:  "MATURE T AND NK CELL NEOPLASMS"} ,{name:  "T-cell lymphoma"} ,{name:  "T-cell prolymphocytic leukemia"} ,{name:  "T-cell large granular lymphocytic leukemia"} ,{name:  "Chronic lymphoproliferative disorder of NK cells"} ,{name:  "Aggressive NK-cell leukemia"} ,{name:  "Systemic EBV-positive T-cell lymphoproliferative disease of childhood"} ,{name:  "Hydroa vacciniforme-like lymphoma "} ,{name:  "Adult T-cell leukemia/lymphoma "} ,{name:  "Extranodal NK/T-cell lymphoma} ,{name:  nasal type"} ,{name:  "Enteropathy-associated T-cell lymphoma"} ,{name:  "Hepatosplenic T-cell lymphoma"} ,{name:  "Subcutaneous panniculitis-like T-cell lymphoma"} ,{name:  "Primary cutaneous anaplastic large cell lymphoma"} ,{name:  "Lymphomatoid papulosis"} ,{name:  "Primary cutaneous gamma-delta T-cell lymphoma"} ,{name:  "Primary cutaneous CD8-positive aggressive epidermotropic cytotoxic T-cell lymphoma"} ,{name:  "Primary cutaneous CD4-positive small/medium T-cell lymphoma"} ,{name:  "Peripheral T-cell lymphoma} ,{name:  NOS"} ,{name:  "Angioimmunoblastic T-cell lymphoma"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-positive"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-negative"} ,{name:  ""} ,{name:  "HISTIOCYTIC AND DENDRITIC NEOPLASMS"} ,{name:  "Histiocytic sarcoma"} ,{name:  "Langerhans cell histiocytosis"} ,{name:  "Langerhans cell sarcoma"} ,{name:  "Interdigitating dendritic cell sarcoma"} ,{name:  "Follicular dendritic cell sarcoma"} ,{name:  "Fibroblastic reticular cell tumor"} ,{name:  "Equivocal dendritic cell tumor"} ,{name:  "Disseminated juvenile xanthogranuloma"} ,{name:  ""} ,{name:  "POST-TRANSPLANT LYMPHOPROLIFERATIVE DISORDERS"} ,{name:  "Plasmacytic hyperplasia"} ,{name:  "Infectious mononucleosis-like PTLD"} ,{name:  "Polymorphic PTLD"} ,{name:  "Monomorphic PTLD (B- and T/NK-cell types)"} ,{name:  "Classical Hodgkin lymphoma type PTLD" } ] ,
+            inputs_required : [ {name: "PRECURSOR LYMPHOID NEOPLASMS"} ,{name:  "B lymphoblastic leukemia/lymphoma"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(9;22)(q34;q11.2); BCR-ABL1"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(v;11q23); MLL rearranged"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(12;21)(p13;q22); TEL-AML1 (ETV6-RUN (not assigned)1"} ,{name:  "B lymphoblastic leukemia/lymphoma with hyperdiploidy"} ,{name:  "B lymphoblastic leukemia/lymphoma with hypodiploidy (hypodiploid acute lymphoblastic leukemia/lymphoma [ALL])"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(5;14)(q31;q32); IL3-IGH"} ,{name:  "B lymphoblastic leukemia/lymphoma with t(1;19)(q23;p13.3); E2A-PBX1 (TCF3-PBX1)"} ,{name:  "T lymphoblastic leukemia/lymphoma"} ,{name:  ""} ,{name:  "MATURE B CELL NEOPLASMS"} ,{name:  "B-cell lymphoma"} ,{name:  "Chronic lymphocytic leukemia/small lymphocytic lymphoma"} ,{name:  "B-cell prolymphocytic leukemia"} ,{name:  "Splenic B-cell marginal zone lymphoma"} ,{name:  "Hairy cell leukemia"} ,{name:  "Splenic B-cell lymphoma/leukemia} ,{name:  unclassifiable"} ,{name:  "Splenic diffuse red pulp small B-cell lymphoma"} ,{name:  "Hairy cell leukemia-variant"} ,{name:  "Lymphoplasmacytic lymphoma"} ,{name:  "Gamma heavy chain disease"} ,{name:  "Mu heavy chain disease"} ,{name:  "Alpha heavy chain disease"} ,{name:  "Plasma cell myeloma"} ,{name:  "Solitary plasmacytoma of bone"} ,{name:  "Extraosseous plasmacytoma"} ,{name:  "Extranodal marginal zone lymphoma of mucosa-associated lymphoid tissue (MALT lymphoma) "} ,{name:  "Nodal marginal zone lymphoma"} ,{name:  "Pediatric nodal marginal zone lymphoma"} ,{name:  "Follicular lymphoma"} ,{name:  "Pediatric follicular lymphoma"} ,{name:  "Primary intestinal follicular lymphoma"} ,{name:  "Primary cutaneous follicle center lymphoma"} ,{name:  "Mantle cell lymphoma"} ,{name:  "Diffuse large B-cell lymphoma (DLBCL)"} ,{name:  "T cell/histiocyte-rich large B-cell lymphoma"} ,{name:  "Primary DLBCL of the central nervous system (CNS)"} ,{name:  "Primary cutaneous DLBCL} ,{name:  leg type"} ,{name:  "Epstein-Barr virus (EBV)-positive DLBCL of the elderly"} ,{name:  "DLBCL associated with chronic inflammation"} ,{name:  "Lymphomatoid granulomatosis"} ,{name:  "Primary mediastinal (thymic) large B-cell lymphoma"} ,{name:  "Intravascular large B-cell lymphoma"} ,{name:  "Anaplastic lymphoma kinase (ALK)-positive large B-cell lymphoma"} ,{name:  "Plasmablastic lymphoma"} ,{name:  "Large B-cell lymphoma arising in HHV8-associated multicentric Castleman disease"} ,{name:  "Primary effusion lymphoma"} ,{name:  "Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and Burkitt lymphoma"} ,{name:  "B-cell lymphoma} ,{name:  unclassifiable} ,{name:  with features intermediate between diffuse large B-cell lymphoma and classical Hodgkin lymphoma"} ,{name:  ""} ,{name:  "MATURE T AND NK CELL NEOPLASMS"} ,{name:  "T-cell lymphoma"} ,{name:  "T-cell prolymphocytic leukemia"} ,{name:  "T-cell large granular lymphocytic leukemia"} ,{name:  "Chronic lymphoproliferative disorder of NK cells"} ,{name:  "Aggressive NK-cell leukemia"} ,{name:  "Systemic EBV-positive T-cell lymphoproliferative disease of childhood"} ,{name:  "Hydroa vacciniforme-like lymphoma "} ,{name:  "Adult T-cell leukemia/lymphoma "} ,{name:  "Extranodal NK/T-cell lymphoma} ,{name:  nasal type"} ,{name:  "Enteropathy-associated T-cell lymphoma"} ,{name:  "Hepatosplenic T-cell lymphoma"} ,{name:  "Subcutaneous panniculitis-like T-cell lymphoma"} ,{name:  "Primary cutaneous anaplastic large cell lymphoma"} ,{name:  "Lymphomatoid papulosis"} ,{name:  "Primary cutaneous gamma-delta T-cell lymphoma"} ,{name:  "Primary cutaneous CD8-positive aggressive epidermotropic cytotoxic T-cell lymphoma"} ,{name:  "Primary cutaneous CD4-positive small/medium T-cell lymphoma"} ,{name:  "Peripheral T-cell lymphoma} ,{name:  NOS"} ,{name:  "Angioimmunoblastic T-cell lymphoma"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-positive"} ,{name:  "Anaplastic large cell lymphoma} ,{name:  ALK-negative"} ,{name:  ""} ,{name:  "HISTIOCYTIC AND DENDRITIC NEOPLASMS"} ,{name:  "Histiocytic sarcoma"} ,{name:  "Langerhans cell histiocytosis"} ,{name:  "Langerhans cell sarcoma"} ,{name:  "Interdigitating dendritic cell sarcoma"} ,{name:  "Follicular dendritic cell sarcoma"} ,{name:  "Fibroblastic reticular cell tumor"} ,{name:  "Equivocal dendritic cell tumor"} ,{name:  "Disseminated juvenile xanthogranuloma"} ,{name:  ""} ,{name:  "POST-TRANSPLANT LYMPHOPROLIFERATIVE DISORDERS"} ,{name:  "Plasmacytic hyperplasia"} ,{name:  "Infectious mononucleosis-like PTLD"} ,{name:  "Polymorphic PTLD"} ,{name:  "Monomorphic PTLD (B- and T/NK-cell types)"} ,{name:  "Classical Hodgkin lymphoma type PTLD" } ] ,
             id : "30", name : ""
           }, {
             id : "00", name : "Not applicable"
@@ -14537,7 +14769,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "in situ ",
             id : "00", name : "Tis"
@@ -14564,7 +14796,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -14785,7 +15017,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Tumor limited to ipsilateral parietal pleura with or without mediastinal or diaphragmatic pleural involvement",
             id : "00", name : "T1"
@@ -14806,7 +15038,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -15205,7 +15437,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "MAXILLARY SINUS, Tumor limited to maxillary sinus mucosa with no erosion or destruction of bone ",
             id : "00", name : "T1"
@@ -15253,7 +15485,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -15728,7 +15960,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Conjunctiva involvement only",
             id : "00", name : "T1"
@@ -15749,7 +15981,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -16220,7 +16452,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Tumor limited to one ovary (capsule intact) or fallopian tube, no tumor on ovarian or fallopian tube surface; no malignant cells in ascites or peritoneal washings. Serous tubal intraepithelial carcinoma (STIC) should be staged as pT1a if it involves one tube only, as pT1b if it involves both tubes, and as pT1c3 if it is accompanied by positive peritoneal washing washings or ascites. Nonmalignant ascites is not classified. The presence of ascites does not affect staging unless malignant cells are present.",
             id : "00", name : "T1a"
@@ -16253,7 +16485,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -16583,7 +16815,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -16607,7 +16839,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastases",
             id : "00", name : "N0"
@@ -17077,7 +17309,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -17110,7 +17342,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -17484,7 +17716,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "noninvasive papillary or verrucous",
             id : "00", name : "Ta"
@@ -17517,7 +17749,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -17770,6 +18002,22 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -17809,7 +18057,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Carcinoma in situ",
             id : "00", name : "Tis"
@@ -17836,7 +18084,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -18196,48 +18444,48 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
-            description : "OROPHARYNX CARCINOMA, Tumor 2 cm or less in greatest dimension ",
+            description : "OROPHARYN (not assigned) CARCINOMA, Tumor 2 cm or less in greatest dimension ",
             id : "00", name : "T1"
           }, {
-            description : "OROPHARYNX CARCINOMA, Tumor more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx ",
+            description : "OROPHARYN (not assigned) CARCINOMA, Tumor more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx ",
             id : "00", name : "T2"
           }, {
-            description : "OROPHARYNX CARCINOMA, Tumor more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to lingual surface of epiglottis",
+            description : "OROPHARYN (not assigned) CARCINOMA, Tumor more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to lingual surface of epiglottis",
             id : "00", name : "T3"
           }, {
-            description : "OROPHARYNX CARCINOMA, Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
+            description : "OROPHARYN (not assigned) CARCINOMA, Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
             id : "00", name : "T4a"
           }, {
-            description : "OROPHARYNX CARCINOMA, Very advanced local disease. Tumor invades lateral pterygoid muscle, pterygoid plates, lateral nasopharynx, or skull base, or encases carotid artery",
+            description : "OROPHARYN (not assigned) CARCINOMA, Very advanced local disease. Tumor invades lateral pterygoid muscle, pterygoid plates, lateral nasopharynx, or skull base, or encases carotid artery",
             id : "00", name : "T4b"
           }, {
-            description : " NASOPHARYNX Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
+            description : " NASOPHARYN (not assigned) Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
             id : "00", name : "T1"
           }, {
-            description : "NASOPHARYNX Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
+            description : "NASOPHARYN (not assigned) Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
             id : "00", name : "T2"
           }, {
-            description : "NASOPHARYNX Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
+            description : "NASOPHARYN (not assigned) Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
             id : "00", name : "T3"
           }, {
-            description : "NASOPHARYNX Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
+            description : "NASOPHARYN (not assigned) Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
             id : "00", name : "T4"
           }, {
-            description : "HYPOPHARYNX CARCINOMA, Tumor limited to one subsite of hypopharynx and/or 2 cm or less in greatest dimension ",
+            description : "HYPOPHARYN (not assigned) CARCINOMA, Tumor limited to one subsite of hypopharynx and/or 2 cm or less in greatest dimension ",
             id : "00", name : "T1"
           }, {
-            description : "HYPOPHARYNX CARCINOMA, Tumor invades more than one subsite of hypopharynx or an adjacent site, or measures more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx",
+            description : "HYPOPHARYN (not assigned) CARCINOMA, Tumor invades more than one subsite of hypopharynx or an adjacent site, or measures more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx",
             id : "00", name : "T2"
           }, {
-            description : "HYPOPHARYNX CARCINOMA, Tumor measures more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to esophagus",
+            description : "HYPOPHARYN (not assigned) CARCINOMA, Tumor measures more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to esophagus",
             id : "00", name : "T3"
           }, {
-            description : "HYPOPHARYNX CARCINOMA, Moderately advanced local disease. Tumor invades thyroid/cricoid cartilage, hyoid bone, thyroid gland, or central compartment soft tissue",
+            description : "HYPOPHARYN (not assigned) CARCINOMA, Moderately advanced local disease. Tumor invades thyroid/cricoid cartilage, hyoid bone, thyroid gland, or central compartment soft tissue",
             id : "00", name : "T4a"
           }, {
-            description : "HYPOPHARYNX CARCINOMA, Very advanced local disease. Tumor invades prevertebral fascia, encases carotid artery, or involves mediastinal structures",
+            description : "HYPOPHARYN (not assigned) CARCINOMA, Very advanced local disease. Tumor invades prevertebral fascia, encases carotid artery, or involves mediastinal structures",
             id : "00", name : "T4b"
           }, {
             description : "MELANOMA, Mucosal disease",
@@ -18256,36 +18504,36 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "ORO- AND HYPOPHARYNX Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimensiona and no extranodal extension",
+            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimensiona and no extranodal extension",
             id : "00", name : "N1"
           }, {
-            description : "ORO- AND HYPOPHARYNX( Metastasis in a single ipsilateral or contralateral  lymph node <= 3 cm AND extranodal extension) OR (single ipsilateral lymph node >3 cm AND not more than 6 cm in greatest dimension AND no extranodal extension) ",
+            description : "ORO- AND HYPOPHARYN (not assigned)( Metastasis in a single ipsilateral or contralateral  lymph node <= 3 cm AND extranodal extension) OR (single ipsilateral lymph node >3 cm AND not more than 6 cm in greatest dimension AND no extranodal extension) ",
             id : "00", name : "N2a"
           }, {
-            description : "ORO- AND HYPOPHARYNX Metastasis in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
+            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
             id : "00", name : "N2b"
           }, {
-            description : "ORO- AND HYPOPHARYNX Metastasis in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
+            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
             id : "00", name : "N2c"
           }, {
-            description : "ORO- AND HYPOPHARYNX Metastasis in a lymph node more than 6 cm in greatest dimension adn no extranodal extension",
+            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension adn no extranodal extension",
             id : "00", name : "N3a"
           }, {
-            description : "ORO- AND HYPOPHARYNX (Metastasis in a lymph noe >3 cm in greatest dimension AND extranodal extension) OR (multiple nodes AND extranodal extension) OR (single contralateral node <=3cm AND extranodal extension)",
+            description : "ORO- AND HYPOPHARYN (not assigned) (Metastasis in a lymph noe >3 cm in greatest dimension AND extranodal extension) OR (multiple nodes AND extranodal extension) OR (single contralateral node <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
           }, {
-            description : " NASOPHARYNX Metastasis in one or more ipsilateral lymph node, 6 cm or less in greatest dimension",
+            description : " NASOPHARYN (not assigned) Metastasis in one or more ipsilateral lymph node, 6 cm or less in greatest dimension",
             id : "00", name : "N1 "
           }, {
-            description : " NASOPHARYNX Metastasis in contralateral or bilateral lymph node,  6 cm or less in greatest dimension ",
+            description : " NASOPHARYN (not assigned) Metastasis in contralateral or bilateral lymph node,  6 cm or less in greatest dimension ",
             id : "00", name : "N2"
           }, {
-            description : " NASOPHARYNX Metastasis in a lymph node more than 6 cm in greatest dimension",
+            description : " NASOPHARYN (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension",
             id : "00", name : "N3"
           }, {
             description : "MELANOMA, regional metastases",
@@ -18624,30 +18872,30 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
-            description : " NASOPHARYNX Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
+            description : " NASOPHARYN (not assigned) Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
             id : "00", name : "T1"
           }, {
-            description : "NASOPHARYNX Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
+            description : "NASOPHARYN (not assigned) Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
             id : "00", name : "T2"
           }, {
-            description : "NASOPHARYNX Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
+            description : "NASOPHARYN (not assigned) Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
             id : "00", name : "T3"
           }, {
-            description : "NASOPHARYNX Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
+            description : "NASOPHARYN (not assigned) Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
             id : "00", name : "T4"
           }, {
-            description : " OROPHARYNX Tumor 2 cm or less in greatest dimension ",
+            description : " OROPHARYN (not assigned) Tumor 2 cm or less in greatest dimension ",
             id : "00", name : "T1"
           }, {
-            description : "OROPHARYNX Tumor more than 2 cm but not more than 4 cm in greatest dimension ",
+            description : "OROPHARYN (not assigned) Tumor more than 2 cm but not more than 4 cm in greatest dimension ",
             id : "00", name : "T2"
           }, {
-            description : "OROPHARYNX Tumor more than 4 cm in greatest dimension or extension to lingual surface of epiglottis",
+            description : "OROPHARYN (not assigned) Tumor more than 4 cm in greatest dimension or extension to lingual surface of epiglottis",
             id : "00", name : "T3"
           }, {
-            description : "OROPHARYNX Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
+            description : "OROPHARYN (not assigned) Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
             id : "00", name : "T4"
           }],
           id : "00", name : ""
@@ -18657,24 +18905,24 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : " NASOPHARYNX Metastasis in one or more ipsilateral lymph node, 6 cm or less in greatest dimension",
+            description : " NASOPHARYN (not assigned) Metastasis in one or more ipsilateral lymph node, 6 cm or less in greatest dimension",
             id : "00", name : "N1"
           }, {
-            description : " NASOPHARYNX Metastasis in contralateral or bilateral lymph node,  6 cm or less in greatest dimension ",
+            description : " NASOPHARYN (not assigned) Metastasis in contralateral or bilateral lymph node,  6 cm or less in greatest dimension ",
             id : "00", name : "N2"
           }, {
-            description : " NASOPHARYNX Metastasis in a lymph node more than 6 cm in greatest dimension",
+            description : " NASOPHARYN (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension",
             id : "00", name : "N3"
           }, {
-            description : " OROPHARYNX Metastasis in 4 or fewer lymph nodes",
+            description : " OROPHARYN (not assigned) Metastasis in 4 or fewer lymph nodes",
             id : "00", name : "N1"
           }, {
-            description : " OROPHARYNX Metastasis in more than 4 lymph nodes ",
+            description : " OROPHARYN (not assigned) Metastasis in more than 4 lymph nodes ",
             id : "00", name : "N2"
           }],
           id : "00", name : "Category (pN)"
@@ -18988,7 +19236,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "organ limited",
             id : "00", name : "T2"
@@ -19009,7 +19257,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -19636,7 +19884,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Intraocular tumor without any local invasion, focal choroidal invasion, or pre- or intralaminar involvement of the optic nerve head",
             id : "00", name : "T1"
@@ -19669,7 +19917,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -20330,7 +20578,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "in situ",
             id : "00", name : "Tis"
@@ -20366,7 +20614,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -20805,7 +21053,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "in situ",
             id : "00", name : "Tis"
@@ -20829,7 +21077,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -21274,7 +21522,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -21304,7 +21552,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -21565,7 +21813,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "ABDOMEN AND THORAX cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "ABDOMEN AND THORAX  No tumor",
             id : "00", name : "T0"
@@ -21625,7 +21873,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastases",
             id : "00", name : "N0"
@@ -21930,7 +22178,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -21969,7 +22217,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -22329,7 +22577,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No tumor",
             id : "00", name : "T0"
@@ -22356,7 +22604,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -22581,7 +22829,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "in situ",
             id : "00", name : "Tis"
@@ -22611,7 +22859,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastases",
             id : "00", name : "N0"
@@ -22984,7 +23232,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "<= 1cm  organ limited",
             id : "00", name : "T1a"
@@ -23014,7 +23262,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis by pathology",
             id : "00", name : "N0a"
@@ -23256,7 +23504,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "No mediastinal pleural involvement)",
             id : "00", name : "T1a"
@@ -23283,7 +23531,7 @@ var database = {
             id : "00", name : "N (not applicable)"
           }, {
             description : "THYMIC CARCINOMA Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "THYMIC CARCINOMA No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -23461,7 +23709,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Tumor limited to uterus",
             id : "00", name : "T1"
@@ -23747,7 +23995,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "noninvasive papillary",
             id : "00", name : "Ta"
@@ -23777,7 +24025,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -24099,7 +24347,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "noninvasive papillary or verrucous",
             id : "00", name : "Ta"
@@ -24132,7 +24380,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -24437,6 +24685,24 @@ var database = {
         } ]
       
       }, {
+        id : "00", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "01", name : "Stage (AJCC 8)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -24476,7 +24742,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "noninvasive papillary",
             id : "00", name : "Ta"
@@ -24518,7 +24784,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -24781,7 +25047,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "noninvasive papillary",
             id : "00", name : "Ta"
@@ -25113,7 +25379,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "SARCOMA Tumor is 5 cm or less (≤5 cm) in greatest dimension ",
             id : "00", name : "T1a"
@@ -25167,7 +25433,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -25487,7 +25753,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "IRIS TUMOR Tumor limited to the iris not more than 3 clock hours in size",
             id : "00", name : "T1a"
@@ -25574,7 +25840,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -25865,7 +26131,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "Carcinoma in situ",
             id : "00", name : "Tis"
@@ -25895,7 +26161,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -26252,7 +26518,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "cannot be assessed",
-            id : "00", name : "TX"
+            id : "00", name : "T (not assigned)"
           }, {
             description : "High-grade squamous intraepithelial lesion (carcinoma in situ, VIN 2-3, preinvasive carcinoma)",
             id : "00", name : "Tis"
@@ -26276,7 +26542,7 @@ var database = {
            optional_state  : "required", "options" : [ {
           group : [ {
             description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "NX"
+            id : "00", name : "N (not assigned)"
           }, {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
@@ -27548,7 +27814,7 @@ var database = {
 
             
              // lymph nodes
-             //NX
+             //N (not assigned)
             if (gid == '50') {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
@@ -27563,7 +27829,7 @@ var database = {
                  }
 
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0300") {
-                  this.row.inputanswers[j] = "NX0300";
+                  this.row.inputanswers[j] = "N (not assigned)0300";
                   this.dontUseFreeText(j);
                  }
                       
@@ -27572,7 +27838,7 @@ var database = {
             }
 
             // lymph nodes no staging 55, pelvic
-             //NX
+             //N (not assigned)
              if (gid == '55') {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
@@ -27588,7 +27854,7 @@ var database = {
             }
 
             // lymph nodes no staging 56, paraaortic
-             //NX
+             //N (not assigned)
              if (gid == '56') {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
