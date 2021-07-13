@@ -7803,6 +7803,8 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
+            id : "00", name : "Omentum"
+          }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -9293,14 +9295,22 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free, "
+
+
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Positive, "
-          } ],
+          }, {
+            id : "00", name : "Positive parametrial/paracervical margin"
+          }, {
+            id : "00", name : "Positive extocervical/vaginal cuff margin"
+          }, {
+            id : "00", name : "Positive parametrial/paracervical and extocervical/vaginal cuff margin"
+          }, {
+            id : "00", name : "Not applicable"
+          }  ],
           id : "00", name : ""
         } ]
       }, {
@@ -9446,11 +9456,17 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
+            id : "00", name : "Omentum"
+          }, {
+            id : "00", name : "Extrapelvic peritoneum"
+          }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Inguinal lymph nodes"
           }, {
             id : "00", name : "Nonregional lymph nodes"
           },{
@@ -16787,6 +16803,10 @@ var database = {
           id : "00", name : "Liver"
         }, {
           id : "00", name : "Bone"
+        }, {
+          id : "00", name : "Malignant pleural effusion"
+        }, {
+          id : "00", name : "Inguinal or retroperitoneal lymph nodes"
         }, {
           id : "00", name : "Nonregional lymph nodes"
         },{
@@ -27360,7 +27380,15 @@ var database = {
           }, {
             id : "00", name : "Bone"
           }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "00", name : "Pelvic lymph nodes"
+          }, {
+            id : "00", name : "Internal iliac lymph nodes"
+          }, {
+            id : "00", name : "External iliac lymph nodes"
+          }, {
+            id : "00", name : "Common iliac lymph nodes"
+          }, {
+            id : "00", name : "Presacral lymph nodes"
           },{
            id : "00", name : "Not applicable"
           } ],
