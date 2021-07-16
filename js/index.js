@@ -13438,7 +13438,19 @@ var database = {
             id : "00", name : "Midline lip"
           }, {
             id : "00", name : "Midline oral"
-          }  ],
+          }, {
+            id : "00", name : "Right tongue"
+          }, {
+            id : "00", name : "Midline tongue"
+          }, {
+            id : "00", name : "Left tongue"
+          }, {
+            id : "00", name : "Tongue"
+          }, {
+            id : "00", name : "Lip"
+          }, {
+            id : "00", name : "Oral"
+          }   ],
           id : "00", name : ""
         } ]
      
