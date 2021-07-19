@@ -24048,23 +24048,28 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
+            description : "Keratin +, TDT+ lymphocytes",
             id : "00", name : "Thymoma"
           }, {
-             description : "spindle/medullary",
+            description : "Keratin +, TDT+ lymphocytes, spindle/medullary cells may be CD20+",
             id : "00", name : "Type A thymoma "
           }, {
-             description : "mixed spindle/medullary and lymphocyte/epithelial",
+             description : "Keratin +, TDT+ lymphocytes, mixed spindle/medullary and lymphocyte/epithelial",
             id : "00", name : "Type AB thymoma"
           }, {
-             description : "lymphocyte predominant",
+             description : "Keratin +, TDT+ lymphocytes, lymphocyte predominant",
             id : "00", name : "Type B1 thymoma "
           }, {
-             description : "mixed lymphocyte and epithelial",
+             description : "Keratin +, TDT+ lymphocytes, mixed lymphocyte and epithelial",
             id : "00", name : "Type B2 thymoma "
           }, {
-             description : "epithelial predominant",
+             description : "Keratin +, TDT+ lymphocytes, epithelial predominant",
             id : "00", name : "Type B3 thymoma "
           }, {
+            description : "Keratin +, CD20+ lymphocytes",
+           id : "00", name : "Micronodular thymoma"
+         }, {
+            description : "CD5+ and CD117+ (60%), Keratin +, TDT+ lymphocytes",
             id : "00", name : "Thymic carcinoma "
           }, {
             id : "00", name : "Squamous cell carcinoma "
@@ -24073,7 +24078,14 @@ var database = {
           }, {
             id : "00", name : "Mucoepidermoid carcinoma"
           }, {
+            description : "Keratin +, EBV+",
             id : "00", name : "Lymphoepithelioma-like carcinoma "
+          }, {
+            description : "NUT+, Keratin+, looks like large cell neuroendocrine ca",
+            id : "00", name : "NUT carcinoma "
+          }, {
+            description : "Keratin+ (focal), CD34+ (focal) rhabdoid features",
+            id : "00", name : "SMARC A4 deficicent tumor"
           }, {
             id : "00", name : "Sarcomatoid carcinoma "
           }, {
@@ -24088,6 +24100,9 @@ var database = {
             id : "00", name : "Poorly differentiated neuroendocrine carcinoma, large cell neuroendocrine carcinoma"
           }, {
             id : "00", name : "Poorly differentiated neuroendocrine carcinoma, small cell carcinoma, neuroendocrine type"
+          }, {
+            description : "depends on type, see testis, SALL4+, OCT3/4+, CD117+ (seminoma and thymic CA",
+            id : "00", name : "Germ cell tumor"
           } ],
           id : "00", name : ""
         } ]
