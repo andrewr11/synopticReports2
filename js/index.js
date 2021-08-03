@@ -637,6 +637,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Asbun wants 20 or say the entire fat submitted",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -7801,7 +7802,11 @@ var database = {
         id : "00", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
+            id : "00", name : "Not applicable"
+          }, {
             id : "00", name : "None"
+          }, {
+            id : "00", name : "Peritoneum"
           }, {
             id : "00", name : "Omentum"
           }, {
@@ -7812,8 +7817,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -8520,6 +8523,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Asbun wants 20 or say the entire fat submitted",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -8946,6 +8950,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Asbun wants 20 or say the entire fat submitted",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -17170,6 +17175,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Asbun wants 20 or say the entire fat submitted",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -17422,6 +17428,7 @@ var database = {
      
    
       }, {
+        description : "Asbun wants 20 or say the entire fat submitted",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -17682,6 +17689,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Asbun wants 20 or say the entire fat submitted",
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
           group : [ {
