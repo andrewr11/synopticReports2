@@ -24668,6 +24668,8 @@ var database = {
           }, {
             id : "62", name : "Invades muscularis propria"
           }, {
+            id : "63", name : "Invades into periureteral soft tissue"
+          }, {
             id : "63", name : "Invades into peripelvic fat or the renal parenchyma"
           }, {
              description : "specify",
