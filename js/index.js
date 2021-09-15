@@ -14840,7 +14840,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-             description : "PAS-d+, DOG1+ (rules out secretory CA)",
+             description : "PAS-d+, DOG1+ (rules out secretory CA) SCPP-NR4A3 fusions",
             id : "00", name : "Acinic cell carcinoma"
           }, {
              description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+(rules out plga) bilaminar with CK7 and p63, t(6,9)(MYB-NFIB)",
@@ -14897,6 +14897,7 @@ var database = {
        }, {
             id : "00", name : "Mucinous adenocarcinoma (colloid carcinoma)"
           }, {
+            description : "EWSR1 rearrangements",
             id : "00", name : "Myoepithelial carcinoma (malignant myoepithelioma)"
           }, {
             id : "00", name : "Oncocytic carcinoma"
