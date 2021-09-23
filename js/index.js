@@ -7660,6 +7660,8 @@ var database = {
           }, {
             id : "63", name : "Invades perirectal adipose tissue"
           }, {
+            id : "00", name : "Invades pericolonic adipose tissue, serosal penetration can not be ruled out"
+          }, {
              description : "T4a",
             id : "67", name : "Penetrates serosa"
           }, {
