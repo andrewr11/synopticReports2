@@ -56,6 +56,7 @@ GIDs
 17 treatment effect nodes and primary site NA
 19 treatment to trigger AJCC y
 21 multifocal tumors trigger AJCC m
+22 treatment to trigger AJCC y with mixed radio and free text
 
 
 
@@ -4091,6 +4092,10 @@ var database = {
             id : "19", name : "No definite response"
           }, {
             id : "19", name : "Probable or definite response"
+          },{
+        
+            inputs_required : [ "" ],
+            id : "22", name : "Residual invasive tumor cellularity "
           } , {
             id : "00", name : "Not known"
           } ],
@@ -4331,7 +4336,9 @@ var database = {
           group : [ {
             id : "00", name : "Positive (3+)"
           }, {
-            id : "00", name : "Negative (0-1+)"
+            id : "00", name : "Negative (0)"
+          }, {
+            id : "00", name : "Negative (1+)"
           }, {
             id : "00", name : "Equivocal (2+)"
           }, {
@@ -4386,7 +4393,23 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-           }, {
+        }, {
+          id : "00", name : "Ki67 (Mib1)",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              
+              id : "00", name : "< 5%"
+            }, {
+            
+              id : "00", name : "5 - 30%"
+            }, {
+              
+              id : "00", name : ">30%"
+            } ],
+            id : "00", name : ""
+          } ]  
+          
+        }, {
   
         id : "00", name : "Additional findings",
         optional_state : "required",
@@ -5015,7 +5038,11 @@ var database = {
             id : "19", name : "No definite response"
           }, {
             id : "19", name : "Probable or definite response"
-          } , {
+          } ,{
+        
+            inputs_required : [ "" ],
+            id : "22", name : "Residual invasive tumor cellularity "
+          }, {
             id : "00", name : "Not known"
           } ],
           id : "00", name : ""
@@ -5237,7 +5264,9 @@ var database = {
           group : [ {
             id : "00", name : "Positive (3+)"
           }, {
-            id : "00", name : "Negative (0-1+)"
+            id : "00", name : "Negative (0)"
+          }, {
+            id : "00", name : "Negative (1+)"
           }, {
             id : "00", name : "Equivocal (2+)"
           }, {
@@ -5292,7 +5321,23 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-           }, {
+       }, {
+        id : "00", name : "Ki67 (Mib1)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            
+            id : "00", name : "< 5%"
+          }, {
+          
+            id : "00", name : "5 - 30%"
+          }, {
+            
+            id : "00", name : ">30%"
+          } ],
+          id : "00", name : ""
+        } ]  
+        
+      }, {
   
         id : "00", name : "Additional findings",
         optional_state : "required",
@@ -5638,7 +5683,9 @@ var database = {
           }, {
             id : "00", name : "Positive (3+)"
           }, {
-            id : "00", name : "Negative (0-1+)"
+            id : "00", name : "Negative (0)"
+          }, {
+            id : "00", name : "Negative (1+)"
           }, {
             id : "00", name : "Equivocal (2+)"
           }, {
@@ -5657,7 +5704,7 @@ var database = {
           group : [ {
             id : "00", name : "Positive, "
           }, {
-            id : "00", name : "Negative"
+            id : "00", name : "Negative (0-1+)"
           }, {
             id : "00", name : "Equivocal"
           }, {
@@ -5671,6 +5718,22 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Ki67 (Mib1)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            
+            id : "00", name : "< 5%"
+          }, {
+          
+            id : "00", name : "5 - 30%"
+          }, {
+            
+            id : "00", name : ">30%"
+          } ],
+          id : "00", name : ""
+        } ]  
+        
       } ]
     }, {
       biopsy_type : "DCIS",
@@ -27886,6 +27949,7 @@ var database = {
         deep: true
       },
 
+
     },
     
     methods: {
@@ -28215,7 +28279,26 @@ var database = {
             }
            
           }
+
+           //Residual cellularity add y
+         
           
+          if (gid == '22') {
+            for (var j = i; j<this.row.inputanswers.length; j++){                
+               if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0100") {
+                this.row.inputanswers[j] = "yp0100";
+                this.dontUseFreeText(j);
+               }
+               if (this.row.inputanswers[j] ==  "mp0100") {
+                this.row.inputanswers[j] = "myp0100";
+                this.dontUseFreeText(j);
+               }
+                    
+            }
+           
+          }
+
+
           
           this.row5.useFreeText[i] = false;
           this.row10.useCombo[i] = true;
@@ -28503,6 +28586,21 @@ var database = {
 
              //y stage  
              if (gid == '19') {
+              for (var j = i; j<this.row.inputanswers.length; j++){                
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0100") {
+                  this.row.inputanswers[j] = "yp0100";
+                  this.dontUseFreeText(j);
+                 }
+                 if (this.row.inputanswers[j] ==  "mp0100") {
+                  this.row.inputanswers[j] = "myp0100";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
+             
+            }
+
+            if (gid == '22') {
               for (var j = i; j<this.row.inputanswers.length; j++){                
                  if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0100") {
                   this.row.inputanswers[j] = "yp0100";
