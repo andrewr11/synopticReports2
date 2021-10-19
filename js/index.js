@@ -4405,6 +4405,8 @@ var database = {
             }, {
               
               id : "00", name : ">30%"
+            } , {
+              id : "00", name : "Not applicable"
             } ],
             id : "00", name : ""
           } ]  
@@ -5333,7 +5335,9 @@ var database = {
           }, {
             
             id : "00", name : ">30%"
-          } ],
+          }, {
+            id : "00", name : "Not applicable"
+          }  ],
           id : "00", name : ""
         } ]  
         
