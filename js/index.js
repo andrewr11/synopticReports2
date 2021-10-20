@@ -4405,9 +4405,15 @@ var database = {
             }, {
               
               id : "00", name : ">30%"
-            } , {
+            }, {
+              id : "00", name : "Pending"
+            }, {
               id : "00", name : "Not applicable"
-            } ],
+            }, {
+              description : "case #",
+              inputs_required : [ "" ],
+              id : "10", name : "See case "
+            }  ],
             id : "00", name : ""
           } ]  
           
@@ -5336,8 +5342,14 @@ var database = {
             
             id : "00", name : ">30%"
           }, {
+            id : "00", name : "Pending"
+          }, {
             id : "00", name : "Not applicable"
-          }  ],
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }   ],
           id : "00", name : ""
         } ]  
         
@@ -5734,7 +5746,15 @@ var database = {
           }, {
             
             id : "00", name : ">30%"
-          } ],
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }  ],
           id : "00", name : ""
         } ]  
         
