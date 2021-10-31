@@ -8253,7 +8253,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
