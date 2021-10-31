@@ -317,7 +317,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -593,7 +593,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -608,7 +608,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -916,7 +916,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -931,7 +931,7 @@ var database = {
           group : [ {
             description : "distance",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -946,7 +946,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -1213,7 +1213,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -1228,7 +1228,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -1606,7 +1606,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -1989,7 +1989,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -2279,7 +2279,7 @@ var database = {
           group : [ {
             description : "distance location of all margins < 2cm",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -8557,7 +8557,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -8572,7 +8572,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -9011,7 +9011,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -9967,7 +9967,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -9982,7 +9982,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -10332,7 +10332,7 @@ var database = {
           group : [ {
             description : "distance to closest bone and or soft tissue margin (specify)",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -10506,7 +10506,7 @@ var database = {
           group : [ {
             description : "distance to closest bone and or soft tissue margin (specify)",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -10699,7 +10699,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -11063,7 +11063,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -11287,7 +11287,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -11641,7 +11641,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -11656,7 +11656,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -11838,7 +11838,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -12127,7 +12127,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -12442,7 +12442,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -13208,7 +13208,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -13225,7 +13225,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -13677,7 +13677,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -13694,7 +13694,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -13711,7 +13711,7 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -14172,7 +14172,7 @@ var database = {
           },{
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, closest margin"
+            id : "10", name : "Free closest margin"
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -14197,7 +14197,7 @@ var database = {
           },{
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, closest margin"
+            id : "10", name : "Free closest margin"
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -14219,7 +14219,7 @@ var database = {
           },{
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, closest margin"
+            id : "10", name : "Free closest margin"
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -14244,7 +14244,7 @@ var database = {
           },{
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, closest margin"
+            id : "10", name : "Free closest margin"
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -15047,7 +15047,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -15752,7 +15752,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -15769,7 +15769,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -17225,7 +17225,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -17507,7 +17507,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -17719,7 +17719,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -18493,7 +18493,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -18508,7 +18508,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -18856,7 +18856,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -18871,7 +18871,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -19302,7 +19302,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -19317,7 +19317,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -20460,7 +20460,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
-            id : "00", name : "Free, "
+            id : "00", name : "Free "
           }, {
             description : "location, including optic nerve and extrascleral extension",
             inputs_required : [ "" ],
@@ -20716,7 +20716,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -20855,7 +20855,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -21040,10 +21040,10 @@ var database = {
           group : [ {
             description : "distance location",
              inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
 
-            id : "00", name : "Free, >= 1 cm"
+            id : "00", name : "Free >= 1 cm"
           }, {
             id : "00", name : "Positive"
           }, {
@@ -21058,9 +21058,9 @@ var database = {
           group : [ {
             description : "distance",
              inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
-            id : "00", name : "Free, >= 1cm "
+            id : "00", name : "Free >= 1cm "
           }, {
             id : "00", name : "Positive"
           }, {
@@ -21605,7 +21605,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
-            id : "00", name : "Free, "
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -21621,7 +21621,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
-            id : "00", name : "Free, "
+            id : "00", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -22135,7 +22135,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -22457,7 +22457,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -22801,7 +22801,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -22816,7 +22816,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -23256,7 +23256,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -24228,7 +24228,7 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -24493,7 +24493,7 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -26212,7 +26212,7 @@ var database = {
           group : [ {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -26995,7 +26995,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
@@ -27016,7 +27016,7 @@ var database = {
           group : [ {
             description : "distance location",
             inputs_required : [ "" ],
-            id : "10", name : "Free, "
+            id : "10", name : "Free "
           }, {
             description : "location",
             inputs_required : [ "" ],
