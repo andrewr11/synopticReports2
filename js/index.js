@@ -38,6 +38,8 @@ QIDs
 55 0 lymph nodes no staging, pelvic
 56 0 lymph nodes no staging, paraaortic
 
+57 Distant metastases default NA
+
 
 90 DCIS margin na
 
@@ -350,7 +352,7 @@ var database = {
   
   
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -659,7 +661,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -1297,7 +1299,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -1668,7 +1670,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -2037,7 +2039,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -2308,7 +2310,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -2964,7 +2966,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -3457,7 +3459,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -4124,7 +4126,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -5020,7 +5022,7 @@ var database = {
         } ]
    
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -6633,7 +6635,7 @@ var database = {
           id : "00", name : ""
         } ]
    }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -7364,7 +7366,7 @@ var database = {
           id : "00", name : ""
         } ]
    }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -7888,7 +7890,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -8301,7 +8303,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -8633,7 +8635,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -9060,7 +9062,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -9545,7 +9547,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -10057,7 +10059,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -10414,7 +10416,7 @@ var database = {
           id : "00", name : ""
         } ]
        }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -10728,7 +10730,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -11092,7 +11094,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -11313,7 +11315,7 @@ var database = {
         } ] 
   
      }, {
-      id : "00", name : "Distant metastases",
+      id : "57", name : "Distant metastases",
      optional_state  : "required", "options" : [ {
         group : [ {
           id : "00", name : "None"
@@ -11910,7 +11912,7 @@ var database = {
         } ] 
   
      }, {
-      id : "00", name : "Distant metastases",
+      id : "57", name : "Distant metastases",
      optional_state  : "required", "options" : [ {
         group : [ {
           id : "00", name : "None"
@@ -12175,7 +12177,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -12502,7 +12504,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -12859,7 +12861,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -13325,7 +13327,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -13809,7 +13811,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -14338,7 +14340,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -15149,7 +15151,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -15429,7 +15431,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -15867,7 +15869,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -16310,7 +16312,7 @@ var database = {
         } ]
       }, {
        
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -16880,7 +16882,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "required only for high-grade serous carcinomas, based on omentum only ?6-10 sections?",
+        description : "required only for high-grade serous carcinomas, based on omentum only ?6 sections?",
         id : "00", name : "Treatment Effect ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -16900,7 +16902,7 @@ var database = {
         } ] 
   
      }, {
-      id : "00", name : "Distant metastases",
+      id : "57", name : "Distant metastases",
      optional_state  : "required", "options" : [ {
         group : [ {
           id : "00", name : "None"
@@ -17286,7 +17288,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -17800,7 +17802,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -18225,7 +18227,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -18568,7 +18570,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -18971,7 +18973,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -19417,7 +19419,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -19825,7 +19827,7 @@ var database = {
     
         
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -20491,7 +20493,7 @@ var database = {
     
         
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -21203,7 +21205,7 @@ var database = {
             id : "00", name : ""
             }]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -21696,7 +21698,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -22183,7 +22185,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -22502,7 +22504,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -22887,7 +22889,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -23304,7 +23306,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -23574,7 +23576,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -23995,7 +23997,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -24300,7 +24302,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -24523,7 +24525,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -24829,7 +24831,7 @@ var database = {
           id : "00", name : ""
           }]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -25219,7 +25221,7 @@ var database = {
         } ]
         
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -25614,7 +25616,7 @@ var database = {
         } ]
       
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -26283,7 +26285,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -26687,7 +26689,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -27091,7 +27093,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -27496,7 +27498,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -27878,7 +27880,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Distant metastases",
+        id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -28565,6 +28567,19 @@ var database = {
                 }      
               }                              
              }
+
+             if (this.current_tumor != 'no tumor' ) {
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                            
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5700") {
+                  
+                 this.row.inputanswers[j] = "Not applicable5700";
+                 this.dontUseFreeText(j);
+                }      
+              }                              
+             }
+
+
              
           //Mesorectum
           if (gid == '49') {
@@ -29069,6 +29084,7 @@ var database = {
                 qid === "53" || 
                 qid === "55" || 
                 qid === "56" || 
+                qid === "57" ||
                
                 qid === "90"){
               
@@ -29155,6 +29171,7 @@ var database = {
                 this.synresults[i].id === "53" || 
                 this.synresults[i].id === "55" || 
                 this.synresults[i].id === "56" || 
+                this.synresults[i].id === "57" || 
                
                 this.synresults[i].id === "90"){
             
