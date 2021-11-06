@@ -16880,7 +16880,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "required only for high-grade serous carcinomas",
+        description : "required only for high-grade serous carcinomas, based on omentum only ?6-10 sections?",
         id : "00", name : "Treatment Effect ",
        optional_state  : "required", "options" : [ {
           group : [ {
