@@ -41,6 +41,7 @@ QIDs
 57 Distant metastases default NA
 
 
+
 90 DCIS margin na
 
 
@@ -72,6 +73,8 @@ GIDs
 54 N2
 55 0 lymph nodes, no staging, pelvic
 56 0 lymph nodes no staging, paraaortic
+
+58 lung size invasive ca default same
 
 60 Tis
 61 T1
@@ -14038,7 +14041,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, { description : "for ACA with lepidic component, Millimeters preferred",
-        id : "00", name : "Tumor size, invasive component",
+        id : "58", name : "Tumor size, invasive component",
        optional_state  : "required", "options" : [ {
         group : [ {
          
@@ -14047,6 +14050,9 @@ var database = {
         },{
           description : "No residual tumor",
          id : "00", name : "Not applicable"
+        },{
+          
+         id : "00", name : "Same as total size"
         } ],
           id : "00", name : ""
         } ]
@@ -28553,7 +28559,13 @@ var database = {
                   
                  this.row.inputanswers[j] = "C34.904600";
                  this.dontUseFreeText(j);
-                }      
+                }   
+                
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5800") {
+                  
+                  this.row.inputanswers[j] = "Same as total size5800";
+                  this.dontUseFreeText(j);
+                 }  
               }                              
              }
 
@@ -29085,6 +29097,7 @@ var database = {
                 qid === "55" || 
                 qid === "56" || 
                 qid === "57" ||
+                qid === "58" ||
                
                 qid === "90"){
               
@@ -29172,6 +29185,7 @@ var database = {
                 this.synresults[i].id === "55" || 
                 this.synresults[i].id === "56" || 
                 this.synresults[i].id === "57" || 
+                this.synresults[i].id === "58" || 
                
                 this.synresults[i].id === "90"){
             
