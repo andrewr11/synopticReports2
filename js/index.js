@@ -23796,6 +23796,8 @@ var database = {
           }, {
             id : "00", name : "Papillary carcinoma, follicular variant, invasive"
           }, {
+            id : "00", name : "Papillary carcinoma, mixed conventional and follicular variant, invasive"
+          }, {
             description : "either invasive, psammoma bodies or any papillae  ",
             id : "00", name : "Papillary carcinoma, follicular variant, invasive, predominantly encapsulated"
           }, {
