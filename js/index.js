@@ -20412,7 +20412,7 @@ var database = {
           }, {
             id : "00", name : "Exophytic"
           }, {
-            id : "00", name : "Combined endophytic/exophytic"
+            id : "00", name : "Combined endophytic/ exophytic"
           }, {
             id : "00", name : "Diffuse"
           }, {
