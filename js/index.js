@@ -1878,9 +1878,9 @@ var database = {
           group : [ {
             id : "00", name : "Appendectomy"
           }, {
-            id : "00", name : "Appendectomy and cecal resecton"
+            id : "00", name : "Appendectomy and cecal resection"
           }, {
-            id : "00", name : "Appendectomy and right colectmy"
+            id : "00", name : "Appendectomy and right colectomy"
           } ],
           id : "00", name : ""
         } ]
