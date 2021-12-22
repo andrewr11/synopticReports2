@@ -14331,7 +14331,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "Mediastinal (N2) nodes only, NOT N1 or peribronchial nodes (ie ipsilateral station 2-9 (upper paratracheal, prevascular retrovascular, lower paratracheal, subaortic, paraaortic,subcarinal, paraesophageal, pulmonary ligament) nodes",
+        description : "Mediastinal (N2) station 2-9 nodes only; not N1 nodes",
         id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
