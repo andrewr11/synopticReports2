@@ -39,6 +39,7 @@ QIDs
 56 0 lymph nodes no staging, paraaortic
 
 57 Distant metastases default NA
+58 colon multiple primary sites
 
 
 
@@ -7731,6 +7732,16 @@ var database = {
             id : "00", name : "Grade 4/4, , Undifferentiated"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -28549,6 +28560,17 @@ var database = {
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??4400") {
                  
                  this.row.inputanswers[j] = "C18.94400";
+                 this.dontUseFreeText(j);
+                }      
+              }                              
+             }
+
+             if (this.current_tumor == 'Colon') {
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                              
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5800") {
+                 
+                 this.row.inputanswers[j] = "Not applicable5800";
                  this.dontUseFreeText(j);
                 }      
               }                              
