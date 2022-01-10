@@ -39,8 +39,9 @@ QIDs
 56 0 lymph nodes no staging, paraaortic
 
 57 Distant metastases default NA
-58 colon multiple primary sites
 
+58 colon,melanoma, GIST multiple primary sites
+59 Lung size of invasive component
 
 
 90 DCIS margin na
@@ -14062,7 +14063,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, { description : "for ACA with lepidic component, Millimeters preferred",
-        id : "58", name : "Tumor size, invasive component",
+        id : "59", name : "Tumor size, invasive component",
        optional_state  : "required", "options" : [ {
         group : [ {
          
@@ -20978,6 +20979,16 @@ var database = {
             id : "00", name : "Equivocal"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -28597,6 +28608,17 @@ var database = {
               }                              
              }
 
+             if (this.current_tumor == 'Skin Melanoma, excision') {
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                              
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5800") {
+                 
+                 this.row.inputanswers[j] = "Not applicable5800";
+                 this.dontUseFreeText(j);
+                }      
+              }                              
+             }
+
              if (this.current_tumor == 'Lung') {
               for (var j = i; j<this.row.inputanswers.length; j++){ 
                             
@@ -28606,9 +28628,9 @@ var database = {
                  this.dontUseFreeText(j);
                 }   
                 
-                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5800") {
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5900") {
                   
-                  this.row.inputanswers[j] = "Same as total size5800";
+                  this.row.inputanswers[j] = "Same as total size5900";
                   this.dontUseFreeText(j);
                  }  
               }                              
@@ -29143,6 +29165,7 @@ var database = {
                 qid === "56" || 
                 qid === "57" ||
                 qid === "58" ||
+                qid === "59" ||
                
                 qid === "90"){
               
@@ -29231,6 +29254,7 @@ var database = {
                 this.synresults[i].id === "56" || 
                 this.synresults[i].id === "57" || 
                 this.synresults[i].id === "58" || 
+                this.synresults[i].id === "59" || 
                
                 this.synresults[i].id === "90"){
             
