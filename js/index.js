@@ -11200,6 +11200,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Subtype",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -28566,6 +28576,17 @@ var database = {
              }
 
              if (this.current_tumor == 'Colon') {
+              for (var j = i; j<this.row.inputanswers.length; j++){ 
+                              
+                if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5800") {
+                 
+                 this.row.inputanswers[j] = "Not applicable5800";
+                 this.dontUseFreeText(j);
+                }      
+              }                              
+             }
+
+             if (this.current_tumor == 'GIST') {
               for (var j = i; j<this.row.inputanswers.length; j++){ 
                               
                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??5800") {
