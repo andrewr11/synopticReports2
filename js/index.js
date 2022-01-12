@@ -17744,10 +17744,25 @@ var database = {
         } ]
       }, {
         description : "include distance/location of closest proximal/distal/radial/bile duct/uncinate/pancreatic margin",
-        id : "00", name : "Margins",
+        id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        
+        id : "00", name : "Margins, dysplasia/intraepithelial neoplasia",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+          
             inputs_required : [ "" ],
             id : "10", name : "Free "
           }, {
