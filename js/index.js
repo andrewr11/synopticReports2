@@ -459,6 +459,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       }]
     }, {
       most_common : false,
@@ -798,6 +808,16 @@ var database = {
           }],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -1109,6 +1129,16 @@ var database = {
           inputs_required : [ "" ],
           id : "10", name : "See case "
         } ]
+        }, {
+          id : "00", name : "Tumor block(s) for possible future studies",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "Not applicable"
+            }, {
+              id : "00", name : "None"
+            } ],
+            id : "00", name : ""
+          } ]
         }]
     }, {
       most_common : false,
@@ -1480,6 +1510,16 @@ var database = {
           inputs_required : [ "" ],
           id : "10", name : "See case "
         } ]
+        }, {
+          id : "00", name : "Tumor block(s) for possible future studies",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "Not applicable"
+            }, {
+              id : "00", name : "None"
+            } ],
+            id : "00", name : ""
+          } ]
         }]
     }, {
       most_common : false,
@@ -1868,6 +1908,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -2143,6 +2193,16 @@ var database = {
             id : "00", name : "M (not applicable)"
           }, {
             id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -2471,6 +2531,16 @@ var database = {
         description : "Immunohistochemistry, Cytogenetics, Molecular Pathology",
         id : "00", name : "Ancillary studies ordered",
        optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
           id : "00", name : ""
         } ]
       } ]
@@ -4033,7 +4103,7 @@ var database = {
           id : "00", name : ""
           }]
       }, {
-        id : "50", name : "Extranodal Extension ",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -4047,7 +4117,7 @@ var database = {
           id : "00", name : ""
           }]
         }, {
-        id : "50", name : "Metastasis detection method ",
+        id : "50", name : "Metastasis detection method",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -4801,7 +4871,7 @@ var database = {
         } ]
 
       }, {   
-        id : "00", name : "Margin, lateral, invsive tumor",
+        id : "00", name : "Margin, lateral, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [  {
             id : "00", name : "Free (>10mm)"
@@ -4969,7 +5039,7 @@ var database = {
           id : "00", name : ""
           }]
       }, {
-        id : "50", name : "Extranodal Extension ",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -4983,7 +5053,7 @@ var database = {
           id : "00", name : ""
           }]
         }, {
-        id : "50", name : "Metastasis detection method ",
+        id : "50", name : "Metastasis detection method",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
@@ -6291,6 +6361,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -6833,7 +6913,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-          } ]
+          } , {
+            id : "00", name : "Tumor block(s) for possible future studies",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+                id : "00", name : "Not applicable"
+              }, {
+                id : "00", name : "None"
+              } ],
+              id : "00", name : ""
+            } ]
+          }]
       }, {
       most_common : false,
       id : "00", name : "Cervix, LEEP",
@@ -7028,6 +7118,16 @@ var database = {
           id : "00", name : ""
         } ]
     
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -7565,7 +7665,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-          } ]
+          } , {
+            id : "00", name : "Tumor block(s) for possible future studies",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+                id : "00", name : "Not applicable"
+              }, {
+                id : "00", name : "None"
+              } ],
+              id : "00", name : ""
+            } ]
+          }]
 
     }, {
       most_common : true,
@@ -8099,6 +8209,16 @@ var database = {
           id : "00", name : ""
         } ]
   
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -8432,6 +8552,16 @@ var database = {
           id : "00", name : ""
         } ]
   
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -8772,6 +8902,16 @@ var database = {
             inputs_required : [ "" ],
             id : "10", name : "See case "
           }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
           id : "00", name : ""
         } ]
       } ]
@@ -9184,6 +9324,16 @@ var database = {
             id : "00", name : "M (not applicable)"
           }, {
             id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -9816,6 +9966,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ] 
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -10301,6 +10461,16 @@ var database = {
           }],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -10475,7 +10645,17 @@ var database = {
             id : "00", name : ""
           } ]
         
-      } ]
+      } , {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      }]
     },{
       most_common : false,
       id : "00", name : "Ewing sarcoma/PNET, biopsy",
@@ -10877,7 +11057,17 @@ var database = {
           }],
           id : "00", name : ""
         } ]
-      } ]
+      } , {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      }]
     }, {
       most_common : false,
       id : "00", name : "Germ Cell, extragonadal, biopsy",
@@ -11128,6 +11318,16 @@ var database = {
         } ]
     
      
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -11500,7 +11700,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-     }]
+     }, {
+      id : "00", name : "Tumor block(s) for possible future studies",
+     optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Not applicable"
+        }, {
+          id : "00", name : "None"
+        } ],
+        id : "00", name : ""
+      } ]
+    }]
     }, {
       most_common : false,
       id : "00", name : "Hepatoblastoma, biopsy",
@@ -11738,7 +11948,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      } ]
+      } , {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      }]
     },{
       most_common : false,
       id : "00", name : "Hepatocellular Carcinoma",
@@ -12041,6 +12261,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -12324,6 +12554,16 @@ var database = {
             inputs_required : [ "" ],
             id : "10", name : "See case "
           }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
           id : "00", name : ""
         } ]
       } ]
@@ -12642,7 +12882,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      } ]  
+      } , {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      }]  
      }, {
       most_common : false,
       id : "00", name : "Kidney",
@@ -13019,6 +13269,16 @@ var database = {
             id : "00", name : "Acute pyelonephritis"
           }, {
             id : "00", name : "End stage kidney disease"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -13516,6 +13776,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -13967,6 +14237,16 @@ var database = {
             id : "00", name : "M (not applicable)"
           }, {
             id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -14523,6 +14803,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     },{
       most_common : false,
@@ -14751,6 +15041,16 @@ var database = {
           } ],
           id : "00", name : "Category (pN)"
         }]
+        }, {
+          id : "00", name : "Tumor block(s) for possible future studies",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "Not applicable"
+            }, {
+              id : "00", name : "None"
+            } ],
+            id : "00", name : ""
+          } ]
         } ]
     }, {
       most_common : false,
@@ -15301,7 +15601,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      } ]
+      } , {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      }]
     }, {
       most_common : false,
       id : "00", name : "Mesothelioma, pleural",
@@ -15560,6 +15870,16 @@ var database = {
             id : "00", name : "M (not applicable)"
           }, {
             id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -16043,6 +16363,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
   
    }, {
@@ -16367,6 +16697,16 @@ var database = {
             id : "00", name : "Pending"
           }, {
             id : "00", name : "Equivocal "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -17105,7 +17445,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-           } ]
+           }, {
+            id : "00", name : "Tumor block(s) for possible future studies",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+                id : "00", name : "Not applicable"
+              }, {
+                id : "00", name : "None"
+              } ],
+              id : "00", name : ""
+            } ]
+          } ]
       }, {
       most_common : false,
       id : "00", name : "Pancreas neuroendocrine tumor",
@@ -17426,6 +17776,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -17586,6 +17946,16 @@ var database = {
             inputs_required : [ "" ],
             id : "10", name : "See case "
           }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
           id : "00", name : ""
         } ]
       } ]
@@ -17978,6 +18348,16 @@ var database = {
             inputs_required : [ "" ],
             id : "10", name : "See case "
           }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
           id : "00", name : ""
         } ]
       } ]
@@ -18395,6 +18775,16 @@ var database = {
        optional_state  : "required", "options" : [ {
           id : "00", name : ""
         } ]  
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -18738,6 +19128,16 @@ var database = {
             inputs_required : [ "" ],
             id : "10", name : "See case "
           }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
           id : "00", name : ""
         } ]
       } ]
@@ -19247,6 +19647,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
   }, {
       most_common : false,
@@ -19653,6 +20063,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
   
     }, {
@@ -20001,6 +20421,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       biopsy_type : "Malignant",
@@ -20333,6 +20763,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -20648,6 +21088,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -20942,6 +21392,16 @@ var database = {
           id : "00", name : ""
         } ]
      
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -21431,6 +21891,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -21873,6 +22343,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -22041,6 +22521,16 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -22410,6 +22900,16 @@ var database = {
           id : "00", name : ""
         } ]
   
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -22701,6 +23201,16 @@ var database = {
         description : "Immunohistochemistry, Cytogenetics, Molecular Pathology",
         id : "00", name : "Ancillary studies ordered",
        optional_state  : "required", "options" : [ {
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
           id : "00", name : ""
         } ]
       } ]    
@@ -23159,7 +23669,17 @@ var database = {
           }],
           id : "00", name : ""
         } ]
-     }]
+     }, {
+      id : "00", name : "Tumor block(s) for possible future studies",
+     optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Not applicable"
+        }, {
+          id : "00", name : "None"
+        } ],
+        id : "00", name : ""
+      } ]
+    }]
     }, {
       most_common : false,
       id : "00", name : "Stomach neuroendocrine tumor",
@@ -23466,6 +23986,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -23745,6 +24275,16 @@ var database = {
             id : "00", name : "M (not applicable)"
           }, {
             id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -24165,6 +24705,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -24470,6 +25020,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -24686,6 +25246,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+          }, {
+            id : "00", name : "Tumor block(s) for possible future studies",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+                id : "00", name : "Not applicable"
+              }, {
+                id : "00", name : "None"
+              } ],
+              id : "00", name : ""
+            } ]
           } ]
       }, {
       most_common : false,
@@ -25063,6 +25633,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -25431,6 +26011,16 @@ var database = {
          } ],
          id : "00", name : ""
        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       }]
       
     }, {
@@ -25841,6 +26431,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -26067,6 +26667,16 @@ var database = {
           }, {
             description : "Invades prostatic stroma",
             id : "00", name : "T4a"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
@@ -26544,6 +27154,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+          }, {
+            id : "00", name : "Tumor block(s) for possible future studies",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+                id : "00", name : "Not applicable"
+              }, {
+                id : "00", name : "None"
+              } ],
+              id : "00", name : ""
+            } ]
           } ]
       }, {
       most_common : false,
@@ -26928,6 +27548,16 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -27286,7 +27916,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-           } ]
+           }, {
+            id : "00", name : "Tumor block(s) for possible future studies",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+                id : "00", name : "Not applicable"
+              }, {
+                id : "00", name : "None"
+              } ],
+              id : "00", name : ""
+            } ]
+          } ]
       }, {
       most_common : false,
       id : "00", name : "Vulva",
@@ -27714,7 +28354,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-           } ]
+           }, {
+            id : "00", name : "Tumor block(s) for possible future studies",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+                id : "00", name : "Not applicable"
+              }, {
+                id : "00", name : "None"
+              } ],
+              id : "00", name : ""
+            } ]
+          } ]
       }, {
         most_common : false,
         id : "00", name : "Wilms tumor, biopsy",
@@ -27970,6 +28620,16 @@ var database = {
           }, {
             description : "Bilateral renal involvement at diagnosis ",
             id : "00", name : "Stage 5 "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           } ],
           id : "00", name : ""
         } ]
