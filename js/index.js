@@ -6914,6 +6914,24 @@ var database = {
           id : "00", name : ""
         } ]
           } , {
+        
+            id : "00", name : "Ancillary studies ordered",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+ 
+                description : "squamous cell carcinomas",
+                id : "00", name : "PDL1"
+              }, {
+                id : "00", name : "None"
+              }, {
+                id : "00", name : "Not applicable"
+              }, {
+                inputs_required : [ "" ],
+                id : "10", name : "See case"
+              } ],
+              id : "00", name : ""
+            } ]
+          }, {
             id : "00", name : "Tumor block(s) for possible future studies",
            optional_state  : "required", "options" : [ {
               group : [ {
@@ -7118,6 +7136,24 @@ var database = {
           id : "00", name : ""
         } ]
     
+      }, {
+        
+        id : "00", name : "Ancillary studies ordered",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+
+            description : "squamous cell carcinomas",
+            id : "00", name : "PDL1"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            inputs_required : [ "" ],
+            id : "10", name : "See case"
+          } ],
+          id : "00", name : ""
+        } ]
       }, {
         id : "00", name : "Tumor block(s) for possible future studies",
        optional_state  : "required", "options" : [ {
@@ -7666,6 +7702,24 @@ var database = {
           id : "00", name : ""
         } ]
           } , {
+        
+            id : "00", name : "Ancillary studies ordered",
+           optional_state  : "required", "options" : [ {
+              group : [ {
+ 
+                description : "squamous cell carcinomas",
+                id : "00", name : "PDL1"
+              }, {
+                id : "00", name : "None"
+              }, {
+                id : "00", name : "Not applicable"
+              }, {
+                inputs_required : [ "" ],
+                id : "10", name : "See case"
+              } ],
+              id : "00", name : ""
+            } ]
+          }, {
             id : "00", name : "Tumor block(s) for possible future studies",
            optional_state  : "required", "options" : [ {
               group : [ {
