@@ -4112,6 +4112,10 @@ var database = {
           }, {
             id : "00", name : "Present"
           }, {
+            id : "00", name : "Present, 2mm or less"
+          }, {
+            id : "00", name : "Present, > 2mm"
+          }, {
             id : "00", name : "Equivocal"
           } ],
           id : "00", name : ""
@@ -5047,6 +5051,10 @@ var database = {
             id : "00", name : "None"
           }, {
             id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, 2mm or less"
+          }, {
+            id : "00", name : "Present, > 2mm"
           }, {
             id : "00", name : "Equivocal"
           } ],
@@ -13843,7 +13851,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Lip Oral Cavity",
+      id : "00", name : "Oral Cavity",
       optional : false,
       organ_group : "Head and Neck",
       properties : [ {
