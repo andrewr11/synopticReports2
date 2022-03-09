@@ -13963,6 +13963,10 @@ var database = {
           }, {
             id : "00", name : "Spindle cell squamous cell carcinoma"
           }, {
+            id : "00", name : "Squamous cell carcinoma with sarcomatoid features"
+          }, {
+            id : "00", name : "Sarcomatoid carcinoma"
+          }, {
             id : "00", name : "Verrucous carcinoma"
           }, {
             id : "00", name : "Lymphoepithelial carcinoma (nonnasopharyngeal)"
