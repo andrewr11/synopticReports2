@@ -13555,9 +13555,12 @@ var database = {
         id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "distance location",
+          
+            id : "00", name : "Free, > 5 mm "
+          },{
+            description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Free "
+            id : "10", name : "Free, <= 5 mm "
           }, {
             description : "location",
             inputs_required : [ "" ],
