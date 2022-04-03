@@ -5493,6 +5493,359 @@ var database = {
           id : "00", name : ""
         } ]
       } ] 
+    },  {
+      most_common : true,
+      id : "00", name : "Breast Phylloides",
+      optional : false,
+      organ_group : "Breast",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right breast excision"
+          }, {
+            id : "00", name : "Right breast excision with separate margins"
+          }, {
+            id : "00", name : "Right breast re-excision"
+          }, {
+            id : "00", name : "Right mastectomy"
+          }, {
+            id : "00", name : "Right nipple sparing mastectomy"
+          }, {
+            id : "00", name : "Left breast excision"
+          }, {
+            id : "00", name : "Left breast excision with separate margins"
+          }, {
+            id : "00", name : "Left breast re-excision"
+          }, {
+            id : "00", name : "Left mastectomy"
+          }, {
+            id : "00", name : "Left nipple sparing mastectomy"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "Millimeters preferred",
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Phyllodes tumor, benign"
+          }, {
+            id : "00", name : "Phyllodes tumor, borderline"
+          }, {
+            id : "00", name : "Phyllodes tumor, malignant"
+          }, {
+            description : "T0, no residual tumor",
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Stromal cellularity",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "stromal nuclei are non-overlapping%",
+            id : "00", name : "Mild"
+          }, {
+            description : "1some overlapping stromal nuclei",
+            id : "00", name : "Moderate"
+          }, {
+            description : "many overlapping stromal nuclei",
+            id : "00", name : "Marked"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Stromal atypia",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "minimal variation in nuclear size, even chromatin, and smooth nuclear contours",
+            id : "00", name : "Mild"
+          }, {
+            description : "more variation in nuclear size and irregular nuclear membranes",
+            id : "00", name : "Moderate"
+          }, {
+            description : "marked nuclear pleomorphism, hyperchromasia, and irregular nuclear contours",
+            id : "00", name : "Marked"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Stromal overgrowth",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            
+            id : "00", name : "Absent"
+          }, {
+ 
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+       
+        id : "00", name : "Mitotic rate",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "Mitoses/mm squared"
+        },{
+        
+         id : "00", name : "None"
+        } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Histologic border",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+         
+            id : "00", name : "Circumscribed"
+          }, {
+           
+            id : "00", name : "Infiltrative"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+   
+        id : "00", name : "Malignant heterologous elements ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+          
+            id : "00", name : "Ostrosarcoma"
+          }, {
+      
+            id : "00", name : "Chondrosarcoma"
+          }, {
+    
+            id : "00", name : "Liposarcoma"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      
+      }, {
+     
+        id : "00", name : "Margins, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free"
+          }, {
+            description : "location, only use for TUMOR ON INK",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            description : "T0, no residual tumor",
+            id : "00", name : "Not applicable"
+          } ],
+          
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+    
+        id : "50", name : "Lymph nodes, # involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      },  {
+        id : "57", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Brain"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "01", name : "Stage (AJCC 8)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "no prefix",
+            id : "00", name : ""
+          }, {
+            description : "pathologic",
+            id : "00", name : "p"
+          }, {
+            description : "multiple foci of invasive carcinoma",
+            id : "00", name : "m"
+          }, {
+            description : "recurrent",
+            id : "00", name : "r"
+          }, {
+            description : "post-treatment",
+            id : "00", name : "y"
+          }, {
+            id : "00", name : "mp"
+          }, {
+            id : "00", name : "rp"
+          }, {
+            id : "00", name : "yp"
+          }, {
+            id : "00", name : "mrp"
+          }, {
+            id : "00", name : "myp"
+          }, {
+            id : "00", name : "ryp"
+          }, {
+            id : "00", name : "mryp"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "02", name : "T",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : " <= 5 cm",
+            id : "00", name : "T1"
+          },  {
+            description : "Tumor > 5 cm AND <= 10 cm",
+            id : "00", name : "T2"
+          }, {
+            description : "Tumor > 10 cm AND <=15 cm",
+            id : "00", name : "T3"
+          }, {
+            description : ">15 cm",
+            id : "00", name : "T4"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "03", name : "N",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Regional lymph nodes cannot be assessed",
+            id : "00", name : "N (not assigned)"
+          }, {
+            description : "No metastases",
+            id : "00", name : "N0"
+          }, {
+            description : "Present",
+            id : "00", name : "N1"
+          } ],
+          id : "00", name : "Category (pN)"
+        }]
+        }, {
+          id : "04", name : "M",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Distant detectable metastasis as histologically proven larger than 0.2 mm",
+            id : "00", name : "M1"
+          }, {
+            id : "00", name : "M (not applicable)"
+          }, {
+            id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+  
+        id : "00", name : "Additional findings",
+        optional_state : "required",
+        "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Biopsy site"
+          }, {
+            id : "00", name : "Biopsy site x 2"
+          }, {
+            id : "00", name : "Atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Lobular carcinoma in situ, pleomorphic type"
+          }, {
+            id : "00", name : "Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical lobular hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, lobular carcinoma in situ, classical type and Pagets disease"
+          } ],
+          id : "00", name : ""
+        } ]
+    
+      
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      } ]
     }, {
       biopsy_type : "Invasive",
       most_common : false,
@@ -10540,6 +10893,21 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Procedure ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -10724,6 +11092,21 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      },{
         id : "00", name : "Procedure ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11136,6 +11519,21 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      },{
         id : "00", name : "Procedure ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11228,7 +11626,22 @@ var database = {
       id : "00", name : "Germ Cell, extragonadal, resection",
       optional : true,
       organ_group : "Pediatric",
-      properties : [ {
+      properties : [{
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Procedure ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11778,7 +12191,22 @@ var database = {
       id : "00", name : "Hepatoblastoma, biopsy",
       optional : true,
       organ_group : "Pediatric",
-      properties : [ {
+      properties : [{
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11843,7 +12271,22 @@ var database = {
       id : "00", name : "Hepatoblastoma, resection",
       optional : true,
       organ_group : "Pediatric",
-      properties : [ {
+      properties : [{
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13565,8 +14008,6 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Positive, "
-          }, {
-            id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -16449,7 +16890,22 @@ var database = {
       id : "00", name : "Neuroblastoma, biopsy",
       optional : true,
       organ_group : "Pediatric",
-      properties : [ {
+      properties : [{
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Specimen",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -16579,6 +17035,21 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      },{
         id : "00", name : "Specimen",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -21173,7 +21644,22 @@ var database = {
       id : "00", name : "Rhabdomyosarcoma, biopsy",
       optional : true,
       organ_group : "Pediatric",
-      properties : [ {
+      properties : [{
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -21296,7 +21782,22 @@ var database = {
       id : "00", name : "Rhabdomyosarcoma, resection",
       optional : true,
       organ_group : "Pediatric",
-      properties : [ {
+      properties : [{
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [  {
@@ -28440,6 +28941,21 @@ var database = {
         optional : true,
         organ_group : "Pediatric",
         properties : [ {
+          id : "00", name : "Expert consultation",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "None"
+            }, {
+              id : "00", name : "Completed"
+            }, {
+              id : "00", name : "Pending"
+            },{
+            
+             id : "00", name : "Not applicable"
+            } ],
+            id : "00", name : ""
+          } ]
+        },{
           id : "00", name : "Procedure",
          optional_state  : "required", "options" : [ {
             group : [ {
@@ -28479,7 +28995,22 @@ var database = {
       id : "00", name : "Wilms tumor, resection",
       optional : false,
       organ_group : "Pediatric",
-      properties : [ {
+      properties : [{
+        id : "00", name : "Expert consultation",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Completed"
+          }, {
+            id : "00", name : "Pending"
+          },{
+          
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
