@@ -1572,7 +1572,7 @@ var database = {
           }, {
             id : "00", name : "Signet ring cell carcinoma"
           }, {
-            id : "00", name : "Goblet cell carcinoid"
+            id : "00", name : "Goblet cell carcinoma"
           }, {
             id : "00", name : "Mixed adenocarcinoma/goblet cell carcinoid"
           }, {
