@@ -6641,7 +6641,7 @@ var database = {
             description : "IMPOX: s100+, EMA -, PR -",
             id : "00", name : "Schwannoma"
           }, {
-            description : " grade 1/3, IMPOX: s100-, EMA +, PR +, D2-40+ and E-cadherin +, NF1/NF2 mutations",
+            description : " grade 1/3, IMPOX: s100-, EMA +, PR +, D2-40+ and E-cadherin +,SSTR2A+ (somatostatin, send out) NF1/NF2 mutations",
             id : "00", name : "Meningioma"
           }, {
             description : " grade 2/3, mitoses >=4/10hpf OR ki67 >4% OR brain invasion OR (3 of increased cellularity, small cell change , nucleoli, sheeting, necrosis) OR clear cell (PAS+ glycogen) OR Chordoid (myxoid matrix, strings of epithelioid cells, DDX chordoma (brachyuria-)),  IMPOX: s100-, EMA +, PR +, NF1/NF2 mutations",
