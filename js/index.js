@@ -15840,7 +15840,7 @@ var database = {
           description : "CD117+, GFAP+, PRKD1, MYB- P40-, (Ad cystic MYB+, p40+)",
          id : "00", name : "Polymorphous adenocarcinoma, classic, high grade "
        }, {
-             description : "Her2Neu+, AR+, ER-, PIK3CA+",
+             description : "Her2Neu+, AR+, ER-, GATA3 +, GCDFP+ (80%), PIK3CA+",
             id : "00", name : "Salivary duct carcinoma"
           }, {
             description : "p63+ & s100+ basal cells, AR+, Her2Neu-, NCOA4-RET",
