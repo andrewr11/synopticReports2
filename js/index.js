@@ -28749,14 +28749,26 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "50", name : "Lymph node other findings",
+        id : "50", name : "Extranodal extension",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
             id : "00", name : "None"
           }, {
-            id : "00", name : "Extranodal extension"
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Lymph node other findings",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
           }, {
             id : "00", name : "Fixed or Ulcerated nodes"
           } ],
