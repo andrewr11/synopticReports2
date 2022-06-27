@@ -1775,31 +1775,31 @@ var database = {
             description : "No tumor",
             id : "00", name : "T0"
           }, {
-            description : "in situ or invasion of lamina propria or muscularis mucosa ",
+            description : "Carcinoma in situ (intramucosal carcinoma; invasion of the lamina propria or extension into but not through the muscularis mucosae ",
             id : "00", name : "Tis"
           }, {
-            description : "low grade appendiceal mucinous neoplasm confined by the muscularis propria. acellular mucin or mucinous epithelium may invade into the muscularis propria. T1 and t2 are not appropriate for LAMN.  Mucin or epithelium into subserosa (T3) or serosa (T4a) are OK for either mucin or cells",
+            description : "Low-grade appendiceal mucinous neoplasm confined to the muscularis propria; Acellular mucin or mucinous epithelium may invade into the muscularis propria. (T1 and T2 are not applicable to LAMN; Acellular mucin or mucinous epithelium that extends into the subserosa or serosa should be classified as T3 or T4a, respectively ",
             id : "00", name : "Tis(LAMN)"
           }, {
-            description : "invades submucosa (Do not use for low grade mucinous tumors",
+            description : "Tumor invades the submucosa (through the muscularis mucosa but not into the muscularis propria, do not use for LAMN",
             id : "00", name : "T1"
           }, {
             description : "Invades muscularis propria (do not use for low grade mucinous tumors)",
             id : "00", name : "T2"
           }, {
-            description : "Invades subserosa, including acellular mucin or mucinous epithelium involving the subserosa of the appendix or mesoappendix",
+            description : "Tumor invades through the muscularis propria into the subserosa or the mesoappendix  ",
             id : "00", name : "T3"
           }, {
             description : "Invades subserosa, including acellular mucin or mucinous epithelium involving the subserosa of the appendix or mesoappendix",
             id : "00", name : "T3 (LAMN)"
           }, {
-            description : "Penetrates serosa, including acellular mucin or mucinous epithelium involving the serosa of the appendix or mesoappendix",
+            description : "Tumor invades through the visceral peritoneum, including the acellular mucin or mucinous epithelium involving the serosa of the appendix or serosa of the mesoappendix  ",
             id : "00", name : "T4a"
           }, {
             description : "Penetrates serosa, including acellular mucin or mucinous epithelium involving the serosa of the appendix or mesoappendix",
             id : "00", name : "T4a (LAMN)"
           }, {
-            description : " invades adjacent organs",
+            description : " invades or adheres to adjacent organs",
             id : "00", name : "T4b"
           } ],
           id : "00", name : ""
@@ -4336,7 +4336,7 @@ var database = {
             description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
             id : "00", name : "N2a (sn)"
           }, {
-            description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm)",
+            description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm OR metastases to the infraclavicular (Level III axillary lymph) nodes  )",
             id : "00", name : "N3a"
           } ],
           id : "00", name : "Category (pN)"
@@ -5276,7 +5276,7 @@ var database = {
             description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
             id : "00", name : "N2a (sn)"
           }, {
-            description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm)",
+            description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm) OR metastases to the infraclavicular (Level III axillary lymph) nodes  ",
             id : "00", name : "N3a"
           } ],
           id : "00", name : "Category (pN)"
@@ -12541,8 +12541,6 @@ var database = {
           }, {
             id : "00", name : "Hepatocellular carcinoma, clear cell type  "
           }, {
-            id : "00", name : "Hepatoblastoma "
-          }, {
             id : "00", name : "Carcinoma, NOS  "
           } ],
           id : "00", name : ""
@@ -14983,104 +14981,67 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest margin only, invasive CA and in situ ca",
-        id : "00", name : "Margins, bronchial",
+        id : "00", name : "Closest margin, invasive carcinoma",
        optional_state  : "required", "options" : [ {
-          group : [ {
-      
-            id : "00", name : "Free"
+          group : [ {      
+            id : "00", name : "Bronchial"
           },{
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free closest margin"
+            id : "00", name : "Vascular"
           }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, in situ carcinoma"
-         
+            id : "00", name : "Parenchymal"
+          }, { 
+            id : "00", name : "Other"         
           }, {
             id : "00", name : "Not applicable"
           }],
           id : "00", name : ""
         } ]
-      }, {
-        description : "include distance/location of closest margin only, invasive CA",
-        id : "00", name : "Margins, vascular",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-      
-            id : "00", name : "Free"
-          },{
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free closest margin"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          
-         
-          }, {
-            id : "00", name : "Not applicable"
-          }],
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "include distance/location of closest margin only, invasive CA and in situ ca",
-        id : "00", name : "Margins, parenchymal",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-      
-            id : "00", name : "Free"
-          },{
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free closest margin"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, in situ carcinoma"
-         
-          }, {
-            id : "00", name : "Not applicable"
-          }],
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "include distance/location of closest margin only, invasive CA",
-        id : "00", name : "Margins, other",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-      
-            id : "00", name : "Free"
-          },{
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free closest margin"
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, in situ carcinoma"
-         
-          }, {
-            id : "00", name : "Not applicable"
-          }],
-          id : "00", name : ""
-        } ]
-     
-      }, {
+      }, { description : " Millimeters preferred",
+      id : "00", name : "Distance from closest margin",
+     optional_state  : "required", "options" : [ {
+      group : [ {
+       
+        inputs_required : [ "" ],
+        id : "10", name : "At least "
+      },{
+        description : "No residual tumor",
+       id : "00", name : "Not applicable"
+      } ],
+        id : "00", name : ""
+      } ]
+    }, {
+      id : "00", name : "Positive margin invasive carcinoma",
+     optional_state  : "required", "options" : [ {
+        group : [ {      
+          id : "00", name : "Bronchial"
+        },{
+          id : "00", name : "Vascular"
+        }, {
+          id : "00", name : "Parenchymal"
+        }, { 
+          id : "00", name : "Other"         
+        }, {
+          id : "00", name : "Not applicable"
+        }],
+        id : "00", name : ""
+      } ]
+    }, {
+      id : "00", name : "Margin status, non-invasive tumor",
+     optional_state  : "required", "options" : [ {
+        group : [ {      
+          id : "00", name : "Free"
+        },{
+          id : "00", name : "Carcinoma in situ present at bronchial margin"
+        }, {
+          id : "00", name : "Carcinoma in situ present at parenchymal margin"
+        }, { 
+          id : "00", name : "Lepidic component at parenchymal margin"         
+        }, {
+          id : "00", name : "Not applicable"
+        }],
+        id : "00", name : ""
+      } ]
+    }, {
         id : "00", name : "Treatment effect, primary site",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -15855,7 +15816,11 @@ var database = {
           }, {
             id : "00", name : "Small cell (neuroendocrine) carcinoma"
           }, {
-            id : "00", name : "Squamous cell carcinoma, primary "
+            id : "00", name : "Squamous cell carcinoma, primary, well differentiated "
+          }, {
+            id : "00", name : "Squamous cell carcinoma, primary, moderately differentiated "
+          }, {
+            id : "00", name : "Squamous cell carcinoma, primary, poorly differentiated "
           }, {
             id : "00", name : "Undifferentiated carcinoma, large cell type "
           } ],
@@ -22926,8 +22891,9 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Skin Squamous cell carcinoma, excision",
-      optional : true,
+  
+      id : "00", name : "Skin Squamous cell carcinoma, excision Head and Neck T3+ or N1+",
+      optional : false,
       organ_group : "Skin",
       properties : [ {
         id : "48", name : "Procedure",
@@ -22935,6 +22901,12 @@ var database = {
           group : [  {
             
             id : "00", name : "Excision"
+          }, {
+            id : "00", name : "Re-excision"
+          },{     
+            id : "00", name : "Excision and lymphadenectomy"
+          }, {
+            id : "00", name : "Re-excision and lymphadenectomy"
           }],
           id : "00", name : ""
         } ]
@@ -22956,6 +22928,26 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Tumor focality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Single focus"
+          }, {
+            id : "21", name : "Multiple foci"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
+          } ],
+          id : "00", name : ""
+        } ]
       },   {
         id : "47", name : "Type",
        optional_state  : "required", "options" : [ {
@@ -22968,15 +22960,13 @@ var database = {
         id : "00", name : "Grade",
        optional_state  : "required", "options" : [ {
           group : [  {      
-            id : "00", name : "Grade 1/3, well differentiated"
+            id : "00", name : "Grade 1/4, well differentiated"
           }, {
-            id : "00", name : "Well to moderately differentiated"
-          }, {
-            id : "00", name : "Grade 2/3 moderately differentiated"
-          }, {
-            id : "00", name : "Moderately to poorly differentiated"
+            id : "00", name : "Grade 2/4 moderately differentiated"
           } ,{
-            id : "00", name : "Grade 3/3, poorly differentiated"
+            id : "00", name : "Grade 3/4, poorly differentiated"
+          },{
+            id : "00", name : "Grade 4/4, Undifferentiated"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -23013,16 +23003,11 @@ var database = {
         } ] 
 
       }, {
-      
-        id : "00", name : "Margins",
+        id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            
-        
             id : "00", name : "Free "
           }, {
-          
-           
             id : "00", name : "Positive "
           }, {
             description : "location",
@@ -23032,16 +23017,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Desmoplasia",
+        id : "00", name : "Margins, in situ tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          },  {
-            id : "00", name : "Present"
-          },  {
-            id : "00", name : "Equivocal"
+            id : "00", name : "Free "
           }, {
-            id : "00", name : "Not applicable"
+            id : "00", name : "Positive "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
           } ],
           id : "00", name : ""
         } ]
@@ -23095,6 +23080,184 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "50", name : "Lymph nodes, # involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "53", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+    
+        
+      }, {
+        id : "50", name : "Laterality of lymph nodes with tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Ipsilateral"
+          }, {
+            id : "00", name : "Contralateral"
+          }, {
+            id : "00", name : "Bilateral"
+          } ],
+          id : "00", name : ""
+          }]
+        }, {
+        id : "50", name : "Size of largest metastasis",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+          }]
+      }, {
+        id : "50", name : "Extranodal extension",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          } ],
+          id : "00", name : ""
+          }]
+        }, {
+        id : "57", name : "Distant metastases",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Lung"
+          }, {
+            id : "00", name : "Liver"
+          }, {
+            id : "00", name : "Bone"
+          }, {
+            id : "00", name : "Nonregional lymph nodes"
+          },{
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "01", name : "Stage (AJCC 8)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "no prefix",
+            id : "00", name : ""
+          }, {
+            description : "pathologic",
+            id : "00", name : "p"
+          }, {
+            description : "multiple foci of invasive carcinoma",
+            id : "00", name : "m"
+          }, {
+            description : "recurrent",
+            id : "00", name : "r"
+          }, {
+            description : "post-treatment",
+            id : "00", name : "y"
+          }, {
+            id : "00", name : "mp"
+          }, {
+            id : "00", name : "rp"
+          }, {
+            id : "00", name : "yp"
+          }, {
+            id : "00", name : "mrp"
+          }, {
+            id : "00", name : "myp"
+          }, {
+            id : "00", name : "ryp"
+          }, {
+            id : "00", name : "mryp"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "02", name : "T",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "cannot be assessed",
+            id : "00", name : "T (not assigned)"
+          }, {
+            description : "<= 2 cm",
+            id : "00", name : "T1"
+          }, {
+            description : ">2 cm AND <=4cm",
+            id : "00", name : "T2"
+          }, {
+            description : "Tumor larger than 4 cm in maximum dimension or minor bone erosion or perineural invasion or deep invasion",
+            id : "00", name : "T3"
+          }, {
+            description : "Tumor with gross cortical bone / marrow invasion  ",
+            id : "00", name : "T4a"
+          }, {
+            description : "Tumor with skull base invasion and / or skull base foramen involvement  ",
+            id : "00", name : "T4b"
+          } ],
+          id : "00", name : ""
+        }]
+        }, {
+          id : "03", name : "N",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "Regional lymph nodes cannot be assessed",
+            id : "00", name : "N (not assigned)"
+          }, {
+            description : "No regional lymph node metastasis",
+            id : "00", name : "N0"
+          }, {
+            description : "CARCINOMA single ipsilateral lymph node metastasis <= 3cm AND no extranodal extension",
+            id : "00", name : "N1"
+          }, {
+            description : "CARCINOMA single ipsilateral lymph node metastasis either (<3cm with extranodal extension) OR (> 3cm AND <= 6cm and no extranodal extension)",
+            id : "00", name : "N2a"
+          }, {
+            description : "CARCINOMA multiple ipsilateral lymph node metastases AND <= 6cm",
+            id : "00", name : "N2b"
+          }, {
+            description : "CARCINOMA contralateral lymph node metastases AND <= 6cm",
+            id : "00", name : "N2c"
+          }, {
+            description : "CARCINOMA metastases > 6cm no extranodal extension",
+            id : "00", name : "N3a"
+          }, {
+            description : "CARCINOMA (metastases >3cm AND extranodal extension) OR (multiple node metastases with extranodal extension at least in one) OR (single contralateral node metastases <=3cm AND extranodal extension)",
+            id : "00", name : "N3b"
+          } ],
+          id : "00", name : "Category (pN)"
+        }]
+        }, {
+          id : "04", name : "M",
+           optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "metastases",
+            id : "00", name : "M1"
+          }, {
+            id : "00", name : "M (not applicable)"
+          }, {
+            id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+        }, {
         id : "00", name : "Tumor block(s) for possible future studies",
        optional_state  : "required", "options" : [ {
           group : [ {
