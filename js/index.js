@@ -1348,7 +1348,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+        id : "01", name : "Stage (AJCC 9)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
@@ -1731,7 +1731,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+        id : "01", name : "Stage (AJCC 9)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
