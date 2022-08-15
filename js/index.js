@@ -26347,7 +26347,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-           description : "Ventana PDL1, if squamous differentiation use that block for PDL1",
+           description : "Keytruda PDL1, if squamous differentiation use that block for PDL1",
         id : "00", name : "Ancillary studies ordered",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -26725,7 +26725,7 @@ var database = {
          id : "00", name : ""
        } ]
        }, {
-          description : "Ventana PDL1, if squamous differentiation use that block for PDL1",
+          description : "Keytruda PDL1, if squamous differentiation use that block for PDL1",
        id : "00", name : "Ancillary studies ordered",
       optional_state  : "required", "options" : [ {
          group : [ {
@@ -27145,7 +27145,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-           description : "Ventana PDL1, if squamous differentiation use that block for PDL1",
+           description : "Keytruda PDL1, if squamous differentiation use that block for PDL1",
         id : "00", name : "Ancillary studies ordered",
        optional_state  : "required", "options" : [ {
           group : [ {
