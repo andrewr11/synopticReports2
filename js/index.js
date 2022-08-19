@@ -15730,7 +15730,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-             description : "PAS-d+, DOG1+ (rules out secretory CA) SCPP-NR4A3 fusions",
+             description : "PAS-d+, DOG1+ (rules out secretory CA), mammoglobin - (rules out secretory CA), p63-, s100-, SCPP-NR4A3 fusions",
             id : "00", name : "Acinic cell carcinoma"
           }, {
              description : "MYB+, CD117+, MIB1+ >5% (rules out basal cell aca), p40+(rules out plga) bilaminar with CK7 and p63, t(6,9)(MYB-NFIB)",
