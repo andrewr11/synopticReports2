@@ -13460,20 +13460,17 @@ var database = {
             id : "00", name : "Multilocular clear cell renal cell carcinoma"
           }, {
             description : "Pax8+, CK7+, GATA3-/+",
-             id : "00", name : "Clear cell papillary"
+             id : "00", name : "Clear cell papillary renal cell tumor"
            }, {
                description : "Pax8+, CK7+, GATA3-, AMACR+",
             id : "00", name : "Papillary renal cell carcinoma"
           }, {
-               description : "Pax8+, CK7+, GATA3-, AMACR+",
-            id : "00", name : "Papillary renal cell carcinoma, Type 1"
-          }, {
-               description : "Pax8+, CK7 variable, GATA3-, AMACR+",
-            id : "00", name : "Papillary renal cell carcinoma, Type 2"
-          }, {
              description : "Pax8+, CK7 +, GATA3+",
             id : "00", name : "Oncocytic papillary renal cell carcinoma"
           }, {
+            description : "Pax8+, CK7 +, GATA3+",
+           id : "00", name : "Papillary renal neoplasm with reverse polarity"
+         }, {
              description : "Hales+, CK7+, CK20+, PAX8+, CD117+, CD10-/focal+, oncocytoma: Hales-, CK7 -/focal+, CK20 -/focal+, PAX8-/+, CD117+, CD10-/focal+",
             id : "00", name : "Chromophobe renal cell carcinoma"
           }, {
