@@ -13465,9 +13465,6 @@ var database = {
                description : "Pax8+, CK7+, GATA3-, AMACR+",
             id : "00", name : "Papillary renal cell carcinoma"
           }, {
-             description : "Pax8+, CK7 +, GATA3+",
-            id : "00", name : "Oncocytic papillary renal cell carcinoma"
-          }, {
             description : "Pax8+, CK7 +, GATA3+",
            id : "00", name : "Papillary renal neoplasm with reverse polarity"
          }, {
