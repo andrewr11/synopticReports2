@@ -13684,7 +13684,7 @@ var database = {
             id : "00", name : "Clear cell renal cell carcinoma"
           }, {
                description : "Pax8+, CK7+",
-            id : "00", name : "Multilocular clear cell renal cell carcinoma"
+            id : "00", name : "Multilocular cystic renal neoplasm of low malignant potential"
           }, {
             description : "Pax8+, CK7+, GATA3-/+",
              id : "00", name : "Clear cell papillary renal cell tumor"
