@@ -5493,9 +5493,242 @@ var database = {
           id : "00", name : ""
         } ]
       } ] 
+    }, {
+      most_common : true,
+      id : "00", name : "Breast Phylloides, benign/borderline",
+      optional : false,
+      organ_group : "Breast",
+      properties : [ {
+        id : "00", name : "Procedure",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Right breast excision"
+          }, {
+            id : "00", name : "Right breast excision with separate margins"
+          }, {
+            id : "00", name : "Right breast re-excision"
+          }, {
+            id : "00", name : "Right mastectomy"
+          }, {
+            id : "00", name : "Right nipple sparing mastectomy"
+          }, {
+            id : "00", name : "Left breast excision"
+          }, {
+            id : "00", name : "Left breast excision with separate margins"
+          }, {
+            id : "00", name : "Left breast re-excision"
+          }, {
+            id : "00", name : "Left mastectomy"
+          }, {
+            id : "00", name : "Left nipple sparing mastectomy"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "Millimeters preferred",
+        id : "00", name : "Tumor size",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multifocal, largest focus "
+        },{
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Type",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Phyllodes tumor, benign"
+          }, {
+            id : "00", name : "Phyllodes tumor, borderline"
+          }, {
+            id : "00", name : "Phyllodes tumor, malignant"
+          }, {
+            description : "T0, no residual tumor",
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Stromal cellularity",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "stromal nuclei are non-overlapping%",
+            id : "00", name : "Mild"
+          }, {
+            description : "1some overlapping stromal nuclei",
+            id : "00", name : "Moderate"
+          }, {
+            description : "many overlapping stromal nuclei",
+            id : "00", name : "Marked"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Stromal atypia",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "minimal variation in nuclear size, even chromatin, and smooth nuclear contours",
+            id : "00", name : "Mild"
+          }, {
+            description : "more variation in nuclear size and irregular nuclear membranes",
+            id : "00", name : "Moderate"
+          }, {
+            description : "marked nuclear pleomorphism, hyperchromasia, and irregular nuclear contours",
+            id : "00", name : "Marked"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Stromal overgrowth",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            
+            id : "00", name : "Absent"
+          }, {
+ 
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+       
+        id : "00", name : "Mitotic rate",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "Mitoses/mm squared"
+        },{
+        
+         id : "00", name : "None"
+        } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Histologic border",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+         
+            id : "00", name : "Circumscribed"
+          }, {
+           
+            id : "00", name : "Infiltrative"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+     
+        id : "00", name : "Margins",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Free"
+          }, {
+            description : "location, only use for TUMOR ON INK",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            description : "T0, no residual tumor",
+            id : "00", name : "Not applicable"
+          } ],
+          
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes, # total",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+    
+        id : "50", name : "Lymph nodes, # involved",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+  
+        id : "00", name : "Additional findings",
+        optional_state : "required",
+        "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Biopsy site"
+          }, {
+            id : "00", name : "Biopsy site x 2"
+          }, {
+            id : "00", name : "Atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Lobular carcinoma in situ, pleomorphic type"
+          }, {
+            id : "00", name : "Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical ductal hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical lobular hyperplasia and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site and lobular carcinoma in situ, classical type and Pagets disease"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and atypical lobular hyperplasia"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, and lobular carcinoma in situ, classical type"
+          }, {
+            id : "00", name : "Biopsy site, atypical ductal hyperplasia, lobular carcinoma in situ, classical type and Pagets disease"
+          } ],
+          id : "00", name : ""
+        } ]
+    
+      
+      }, {
+        id : "00", name : "Tumor block(s) for possible future studies",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+      } ]
     },  {
       most_common : true,
-      id : "00", name : "Breast Phylloides",
+      id : "00", name : "Breast Phylloides, malignant",
       optional : false,
       organ_group : "Breast",
       properties : [ {
@@ -5656,7 +5889,7 @@ var database = {
       
       }, {
      
-        id : "00", name : "Margins, invasive tumor",
+        id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [  {
             id : "00", name : "Free"
