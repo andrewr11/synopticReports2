@@ -5550,8 +5550,6 @@ var database = {
           }, {
             id : "00", name : "Phyllodes tumor, borderline"
           }, {
-            id : "00", name : "Phyllodes tumor, malignant"
-          }, {
             description : "T0, no residual tumor",
             id : "00", name : "Not applicable"
           } ],
@@ -5778,11 +5776,7 @@ var database = {
       }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Phyllodes tumor, benign"
-          }, {
-            id : "00", name : "Phyllodes tumor, borderline"
-          }, {
+          group : [  {
             id : "00", name : "Phyllodes tumor, malignant"
           }, {
             description : "T0, no residual tumor",
