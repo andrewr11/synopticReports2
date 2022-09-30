@@ -6830,7 +6830,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "IMPOX: IDH + (mutant), MGMT +/-, p53 +, ATRX - (mutant), 1p/19q wild type",
-            id : "00", name : "Diffuse astrocytoma, IDH-mutant"
+            id : "00", name : "Astrocytoma, IDH-mutant"
           }, {
             description : "mitoses, IMPOX: IDH + (mutant), MGMT +/-, p53 +, ATRX - (mutant), 1p/19q wild type",
             id : "00", name : "Anaplastic astrocytoma, IDH-mutant"
@@ -6847,11 +6847,47 @@ var database = {
             description : "atypia, cellularity, mitoses, IMPOX: 1p/19q codeleted, IDH + (mutant), p53 -, MGMT +, ATRX + (wild type), TERT +, Ki67 >5%",
             id : "00", name : "Anaplastic oligodendroglioma IDH-mutant, 1p/19q codeleted"
           }, {
-            description : "rare mitoses and necrosis, IMPOX: IDH - (wild type), p53 -, BRAF V600E +",
+            description : "Pediatric diffuse low grade",
+            id : "00", name : "Diffuse astrocytoma, MYB or MYB1 altered"
+          }, {
+            description : "Pediatric diffuse low grade",
+            id : "00", name : "Angiocentric glioma"
+          }, {
+            description : "Pediatric diffuse low grade",
+            id : "00", name : "Polymorphous low grade neuroepithelial tumor of the young"
+          }, {
+            description : "Pediatric diffuse low grade",
+            id : "00", name : "Diffuse low grade glioma, MAPK pathway"
+          }, {
+            description : "Pediatric diffuse high grade",
+            id : "00", name : "Diffuse midline glioma, H3K27 altered"
+          }, {
+            description : "Pediatric diffuse high grade",
+            id : "00", name : "Diffuse hemispheric glioma, H3 G34 mutant"
+          }, {
+            description : "Pediatric diffuse high grade",
+            id : "00", name : "Diffuse pediatric type high grade glioma, H3 and IDH1 wild type"
+          }, {
+            description : "Pediatric diffuse high grade",
+            id : "00", name : "Infant type hemispheric glioma"
+          }, {
+            description : "Circumscribed rare mitoses and necrosis, IMPOX: IDH - (wild type), p53 -, BRAF V600E +",
             id : "00", name : "Pleomorphic xanthoastrocytoma"
           }, {
-            description : "IMPOX: IDH - (wild type), p53 -",
+            description : "Circumscribed IMPOX: IDH - (wild type), p53 -",
             id : "00", name : "Pilocytic astrocytoma"
+          }, {
+            description : "Circumscribed ",
+            id : "00", name : "High grade astrocytoma with piloid features"
+          }, {
+            description : "Circumscribed ",
+            id : "00", name : "Subependymal giant cell astrocytoma"
+          }, {
+            description : "Circumscribed ",
+            id : "00", name : "Chordoid glioma"
+          }, {
+            description : "Circumscribed ",
+            id : "00", name : "Astroblastoma, MN-1 altered"
           }, {
             description : "GFAP+, s100+, EMA +",
             id : "00", name : "Ependymoma"
@@ -11119,22 +11155,7 @@ var database = {
       id : "00", name : "Ewing sarcoma/PNET, resection",
       optional : true,
       organ_group : "Pediatric",
-      properties : [ {
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+      properties : [{
         id : "00", name : "Procedure ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11319,21 +11340,6 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      },{
         id : "00", name : "Procedure ",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -21831,21 +21837,6 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [{
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -21968,22 +21959,7 @@ var database = {
       id : "00", name : "Rhabdomyosarcoma, resection",
       optional : true,
       organ_group : "Pediatric",
-      properties : [{
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+      properties : [ {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [  {
