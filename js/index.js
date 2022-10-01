@@ -6829,23 +6829,20 @@ var database = {
         id : "00", name : "Type (WHO)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "IMPOX: IDH + (mutant), MGMT +/-, p53 +, ATRX - (mutant), 1p/19q wild type",
+            description : "Adult diffuse glioma, IMPOX: IDH + (mutant), MGMT +/-, p53 +, ATRX - (mutant), 1p/19q wild type",
             id : "00", name : "Astrocytoma, IDH-mutant"
           }, {
-            description : "mitoses, IMPOX: IDH + (mutant), MGMT +/-, p53 +, ATRX - (mutant), 1p/19q wild type",
-            id : "00", name : "Anaplastic astrocytoma, IDH-mutant"
-          }, {
-            description : "necrosis or vasc prolif, IMPOX: IDH - (wild type), ATRX + (wild type), MGMT +/-, p53 -, EGFR amplification +, TERT + , 1p/19q wild type",
-            id : "00", name : "Glioblastoma, IDH-wild type"
-          }, {
-            description : "necrosis or vasc prolif, IMPOX: IDH + (mutant), ATRX - (mutant), MGMT +/-, p53 +, EGFR amplification -, TERT - , 1p/19q wild type",
-            id : "00", name : "Glioblastoma, IDH-mutant"
-          }, {
-            description : "IMPOX: 1p/19q codeleted, IDH + (mutant), p53 -/+, MGMT +, ATRX + (wild type) , TERT +, Ki67 <5%",
+            description : "Adult diffuse glioma, IMPOX: 1p/19q codeleted, IDH + (mutant), p53 -/+, MGMT +, ATRX + (wild type) , TERT +, Ki67 <5%",
             id : "00", name : "Oligodendroglioma, IDH-mutant, 1p/19q codeleted"
           }, {
             description : "atypia, cellularity, mitoses, IMPOX: 1p/19q codeleted, IDH + (mutant), p53 -, MGMT +, ATRX + (wild type), TERT +, Ki67 >5%",
             id : "00", name : "Anaplastic oligodendroglioma IDH-mutant, 1p/19q codeleted"
+          }, {
+            description : "Adult diffuse glioma, necrosis or vasc prolif, IMPOX: IDH - (wild type), ATRX + (wild type), MGMT +/-, p53 -, EGFR amplification +, TERT + , 1p/19q wild type",
+            id : "00", name : "Glioblastoma, IDH-wild type"
+          }, {
+            description : "necrosis or vasc prolif, IMPOX: IDH + (mutant), ATRX - (mutant), MGMT +/-, p53 +, EGFR amplification -, TERT - , 1p/19q wild type",
+            id : "00", name : "Glioblastoma, IDH-mutant"
           }, {
             description : "Pediatric diffuse low grade",
             id : "00", name : "Diffuse astrocytoma, MYB or MYB1 altered"
@@ -6889,17 +6886,122 @@ var database = {
             description : "Circumscribed ",
             id : "00", name : "Astroblastoma, MN-1 altered"
           }, {
-            description : "GFAP+, s100+, EMA +",
-            id : "00", name : "Ependymoma"
-          }, {
-            description : "GFAP+, s100+, EMA +",
-            id : "00", name : "Myxopapillary ependymoma"
-          }, {
-            description : "IMPOX: IDH1 - (wild type), synaptophysin +, GFAP -/focal, p53 -",
+            description : "Glioneuronal and neuronal tumor, IMPOX: IDH1 - (wild type), synaptophysin +, GFAP -/focal, p53 -",
             id : "00", name : "Central neurocytoma"
           }, {
-            description : "WNT activatied OR SHH activated OR group 3 OR group 4 IMPOX: synaptophysin +, beta catenin +, p53 +/-, Ki67 +",
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Ganglioglioma "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Gangliocytoma  "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Desmoplastic infantile ganglioglioma   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Desmoplastic infantile astrocytoma   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Dysembryoplastic neuroepithelial tumor   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Diffuse glioneuronal tumor with oligodendroglioma-like features and nuclear clusters   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Papillary glioneuronal tumor   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Rosette-forming glioneuronal tumor   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Myxoid glioneuronal tumor   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Diffuse leptomeningeal glioneuronal tumor   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Multinodular and vacuolating neuronal tumor   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Dysplastic cerebellar gangliocytoma (Lhermitte-Duclos disease)   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Extraventricular neurocytoma   "
+          }, {
+            description : "Glioneuronal and neuronal tumor ",
+            id : "00", name : "Cerebellar liponeurocytoma   "
+          }, {
+            description : "Ependymal tumors, GFAP+, s100+, EMA +",
+            id : "00", name : "Ependymoma"
+          }, {
+            description : "Ependymal tumors, GFAP+, s100+, EMA +",
+            id : "00", name : "Myxopapillary ependymoma"
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Supratentorial ependymoma   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Supratentorial ependymoma, ZFTA fusion-positive   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Supratentorial ependymoma, YAP1 fusion-positive   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Posterior fossa ependymoma   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Posterior fossa group A (PFA) ependymoma   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Posterior fossa group B (PFB) ependymoma   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Spinal ependymoma   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Spinal ependymoma, MYCN-amplified   "
+          }, {
+            description : "Ependymal tumors ",
+            id : "00", name : "Subependymoma   "
+          }, {
+            description : "Choroid plexus tumors ",
+            id : "00", name : "Choroid plexus papilloma   "
+          }, {
+            description : "Choroid plexus tumors ",
+            id : "00", name : "Atypical choroid plexus papilloma   "
+          }, {
+            description : "Choroid plexus tumors ",
+            id : "00", name : "Choroid plexus carcinoma   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : " "
+          }, {
+            description : "Medulloblastomas WNT activatied OR SHH activated OR group 3 OR group 4 IMPOX: synaptophysin +, beta catenin +, p53 +/-, Ki67 +",
             id : "00", name : "Medulloblastoma"
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Medulloblastoma, WNT-activated   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Medulloblastoma, SHH-activated and TP53-wildtype   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Medulloblastoma, SHH-activated and TP53-mutant   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Medulloblastoma, non-WNT / non-SHH   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Classic medulloblastoma   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Desmoplastic / nodular medulloblastoma   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Medulloblastoma with extensive nodularity   "
+          }, {
+            description : "Medulloblastomas ",
+            id : "00", name : "Large cell / anaplastic medulloblastoma   "
           }, {
             description : "IMPOX: s100+, EMA -, PR -",
             id : "00", name : "Schwannoma"
