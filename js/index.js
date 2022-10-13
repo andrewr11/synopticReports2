@@ -8892,7 +8892,7 @@ var database = {
             id : "00", name : "N0"
           }, {
             description : "IHC+(i+) OR lymph node metastasis <0.2mm",
-            id : "00", name : "N0 (see lymph nodes above)"
+            id : "00", name : "N0 (i+, <0.2mm, see lymph nodes above)"
           }, {
             description : "1 positive nodes, >0.2mm",
             id : "00", name : "N1a"
@@ -15595,7 +15595,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "Add billing codes G9422 for NSCC",
+        description : "Add billing codes G9422 & G9418 for NSCC, G9424 & G9420 for small cell",
         id : "46", name : "ICD10",
        optional_state  : "required", "options" : [ {
           group : [ {
