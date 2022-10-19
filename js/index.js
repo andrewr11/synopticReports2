@@ -15595,7 +15595,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "Add billing codes G9422 & G9418 for NSCC, G9424 & G9420 for small cell",
+        description : "Add billing codes G9422 for NSCC that is typed and staged, G9424 for NSCLC-NOS",
         id : "46", name : "ICD10",
        optional_state  : "required", "options" : [ {
           group : [ {
