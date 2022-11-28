@@ -16805,6 +16805,9 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
+            description : "SRBCT: Keratin, p40, Synapto, desmin, s100, sox10, INI1, NUT, CD99, p16, EBV, HPV  Spindle cell tumors: Keratin s100, sox10, desmin, SMA, STAT6, Beta catenin, HMB45, TLE1, ALK, EMA, CD34",
+            id : "00", name : "Immuno Panels"
+          },{
             description : "p40+, check HPV/p16, CD99-, desmin-, syn-, s100- , NUT-, INI+, if poorly dif, rule out Adamantinoma like Ewing sarcoma ker+, p40+, syn+, CD99+strong, NKX2.2 +",
             id : "00", name : "Squamous cell carcinoma"
           }, {
