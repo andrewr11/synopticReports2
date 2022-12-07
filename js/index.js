@@ -10279,7 +10279,9 @@ var database = {
           }, {
             id : "00", name : "Cervical surface involvement only without stromal invasion"
           }, {
-            id : "00", name : "Cervical stromal invasion present"
+            id : "00", name : "Cervical stromal invasion present, <= 50% of cervical thickness"
+          }, {
+            id : "00", name : "Cervical stromal invasion present, > 50% of cervical thickness"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -10563,7 +10565,10 @@ var database = {
             description : ">= 50% myometrial invasion",
             id : "00", name : "T1b"
           }, {
-            description : "Invades stroma of cervix",
+            description : "Invades stroma of cervix, <50% of cervical thickness",
+            id : "00", name : "T2"
+          }, {
+            description : "Invades stroma of cervix, >=50% of cervical thickness",
             id : "00", name : "T2"
           }, {
             description : "Penetrates serosa OR adnexa ",
