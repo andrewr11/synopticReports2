@@ -10565,10 +10565,7 @@ var database = {
             description : ">= 50% myometrial invasion",
             id : "00", name : "T1b"
           }, {
-            description : "Invades stroma of cervix, <50% of cervical thickness",
-            id : "00", name : "T2"
-          }, {
-            description : "Invades stroma of cervix, >=50% of cervical thickness",
+            description : "Invades stroma of cervix, any depth",
             id : "00", name : "T2"
           }, {
             description : "Penetrates serosa OR adnexa ",
