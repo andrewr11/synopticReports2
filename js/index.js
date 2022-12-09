@@ -4154,13 +4154,19 @@ var database = {
           }, {
             id : "00", name : "Present"
           }, {
-            id : "00", name : "Present, extensive"
-          }, {
             id : "00", name : "Present, including dermal LVI"
           },{
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
-          } ],
+          } , {
+            description : "1-4 foci",
+            inputs_required : [ "" ],
+            id : "10", name : "Present, # foci: "
+          } , {
+            description : "5 or more foci",
+            inputs_required : [ "" ],
+            id : "10", name : "Present, extensive, # foci: "
+          }],
           id : "00", name : ""
         } ]
    
@@ -5083,28 +5089,34 @@ var database = {
           id : "00", name : ""
           }]
         }, {
-        id : "00", name : "Lymphovascular invasion",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Indeterminate"
-          }, {
-            id : "00", name : "Suspicious"
-          }, {
-            id : "00", name : "Present"
-          }, {
-            id : "00", name : "Present, extensive"
-          }, {
-            id : "00", name : "Present, including dermal LVI"
-          },{
-            description : "Positive lymph nodes",
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-   
-      }, {
+          id : "00", name : "Lymphovascular invasion",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "None"
+            }, {
+              id : "00", name : "Indeterminate"
+            }, {
+              id : "00", name : "Suspicious"
+            }, {
+              id : "00", name : "Present"
+            }, {
+              id : "00", name : "Present, including dermal LVI"
+            },{
+              description : "Positive lymph nodes",
+             id : "00", name : "Not applicable"
+            } , {
+              description : "1-4 foci",
+              inputs_required : [ "" ],
+              id : "10", name : "Present, # foci: "
+            } , {
+              description : "5 or more foci",
+              inputs_required : [ "" ],
+              id : "10", name : "Present, extensive, # foci: "
+            }],
+            id : "00", name : ""
+          } ]
+     
+        }, {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
