@@ -1849,6 +1849,7 @@ var database = {
           id : "00", name : ""
         } ]
         },  {
+          description : "NA for LAMN",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -1872,6 +1873,7 @@ var database = {
              description : "E.",
             id : "00", name : "MLH1+, MSH2+, MSH6+, PMS2-. Loss of nuclear expression of PMS2 only: deficient mismatch repair/ high probability of microsatellite instability-high (MSI-H). High probability of Lynch syndrome (sequencing and or large deletion/duplication testing of germline PMS2 may be indicated). There are exceptions to the above IHC interpretations.   These results should not be considered in isolation, and clinical correlation with genetic counseling is recommended to assess the need for germline testing."
           } , {
+            description : "NA for LAMN",
             id : "00", name : "Not applicable"
           }, {
             description : "case #",
@@ -1886,16 +1888,16 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
              description : "T1-3N0",
-            id : "00", name : "PIK3CA"
+            id : "00", name : "None"
           },{
              description : "T1-3N0 AND loss of MLH1 and PMS2",
-            id : "00", name : "PIK3CA and MLH1 promoter methylation"
+            id : "00", name : "MLH1 promoter methylation"
           }, {
              description : "T4 or N1",
-            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, and BRAF"
+            id : "00", name : "K-RAS extended panel, N-RAS, and BRAF"
           }, {
              description : "T4 or N1 AND loss of MLH1 and PMS2",
-            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
+            id : "00", name : "K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
           }, {
             id : "00", name : "Pending results of MMR protein panel"
           }, {
@@ -8978,16 +8980,16 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
              description : "T1-3N0",
-            id : "00", name : "PIK3CA"
+            id : "00", name : "None"
           },{
              description : "T1-3N0 AND loss of MLH1 and PMS2",
-            id : "00", name : "PIK3CA and MLH1 promoter methylation"
+            id : "00", name : "MLH1 promoter methylation"
           }, {
              description : "T4 or N1 or Gross perforation or 'Young'",
-            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, and BRAF"
+            id : "00", name : "K-RAS extended panel, N-RAS, and BRAF"
           }, {
              description : "T4 or N1 or Gross perforation AND loss of MLH1 and PMS2",
-            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
+            id : "00", name : "K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
           }, {
             id : "00", name : "Pending results of MMR protein panel"
           }, {
@@ -23926,16 +23928,16 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
              description : "T1-3N0",
-            id : "00", name : "PIK3CA"
+            id : "00", name : "None"
           },{
              description : "T1-3N0 AND loss of MLH1 and PMS2",
-            id : "00", name : "PIK3CA and MLH1 promoter methylation"
+            id : "00", name : "MLH1 promoter methylation"
           }, {
              description : "T4 or N1 or Gross perforation or 'Young'",
-            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, and BRAF"
+            id : "00", name : "K-RAS extended panel, N-RAS, and BRAF"
           }, {
              description : "T4 or N1 or Gross perforation AND loss of MLH1 and PMS2",
-            id : "00", name : "PIK3CA, K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
+            id : "00", name : "K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
           }, {
             id : "00", name : "Pending results of MMR protein panel"
           }, {
