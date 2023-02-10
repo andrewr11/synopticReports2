@@ -256,8 +256,14 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Adrenal cortical carcinoma"
-          } ],
+            id : "00", name : "Conventional adrenal cortical carcinoma"
+          },{
+            id : "00", name : "Oncocytic adrenal cortical carcinoma"
+          },{
+            id : "00", name : "Myxoid adrenal cortical carcinoma"
+          },{
+            id : "00", name : "Sarcomatoid adrenal cortical carcinoma"
+          }    ],
           id : "00", name : ""
         } ]
    }, {
@@ -288,9 +294,11 @@ var database = {
           }, {
             id : "00", name : "Large vessel, vena cava (including when identifed clinically)"
           }, {
+            id : "00", name : "Large vessel, NOS"
+          }, {
             id : "00", name : "Microscopic angioinvasion"
           }, {
-            id : "00", name : "Small vessel"
+            id : "00", name : "Lymphatic invasion"
           },{
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
@@ -305,13 +313,12 @@ var database = {
           group : [ {
             id : "00", name : "Limited to adrenal"
           }, {
+            description : "does not inlcude invasion of periadrenal fat so really just into capsule",
             id : "00", name : "Tumor invades into or through the adrenal capsule"
           }, {
-            id : "00", name : "Tumor invades into extra-adrenal structures "
-          }, {
-             description : "specify",
+             description : "specify, Includes periadrenal fat",
             inputs_required : [ "" ],
-            id : "11", name : "Tumor invades into adjacent organs"
+            id : "11", name : "Tumor invades into adjacent tissues/organs"
           }  ],
           id : "00", name : ""
         } ]
@@ -426,7 +433,7 @@ var database = {
             description : "ADRENAL CORTICAL CARCINOMA local invasion, no organs",
             id : "00", name : "T3"
           }, {
-            description : "ADRENAL CORTICAL CARCINOMA Invades other organs",
+            description : "ADRENAL CORTICAL CARCINOMA Invades other organs or large blood vessel invasion of renal vein or vena cava",
             id : "00", name : "T4"
           } ],
           id : "00", name : ""
@@ -456,6 +463,43 @@ var database = {
             id : "00", name : "M (not applicable)"
           }, {
             id : "00", name : "distant metastasis not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Ki67 (Mib1)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "Percentage",
+            inputs_required : [ "" ],
+            id : "10", name : "Percentage "
+          } , {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          }  ],
+          id : "00", name : ""
+        } ]  
+        
+      }, {
+        id : "00", name : "Biomarkers confirming adrenal cortical origin",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Inhibin"
+          }, {
+            id : "00", name : "Melan A"
+          }, {
+            id : "00", name : "Calretinin"
+          }, {
+            id : "00", name : "SF1"
+          }, {
+            id : "00", name : "Synpatophysin"
+          },{
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -3804,6 +3848,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Tumor focality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Single focus of tumor"
+          }, {
+            id : "21", name : "Multiple foci of tumor"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
@@ -4161,13 +4215,13 @@ var database = {
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
           } , {
-            description : "1-4 foci",
-            inputs_required : [ "" ],
-            id : "10", name : "Present, # foci: "
+            description : "1 block foci, CAP defined",
+         
+            id : "00", name : "Present, 1 block: "
           } , {
-            description : "5 or more foci",
+            description : "2 or more blocks not foci, CAP defined",
             inputs_required : [ "" ],
-            id : "10", name : "Present, extensive, # foci: "
+            id : "10", name : "Present, extensive, # blocks: "
           }],
           id : "00", name : ""
         } ]
@@ -4593,6 +4647,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Tumor focality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Single focus of tumor"
+          }, {
+            id : "21", name : "Multiple foci of tumor"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "Millimeters preferred",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
@@ -4616,16 +4680,6 @@ var database = {
           group : [  ],
           id : "00", name : ""
         } ] 
-      }, {
-        id : "00", name : "Tumor focality",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Single focus of tumor"
-          }, {
-            id : "21", name : "Multiple foci of tumor"
-          } ],
-          id : "00", name : ""
-        } ]
       }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
@@ -5107,13 +5161,13 @@ var database = {
               description : "Positive lymph nodes",
              id : "00", name : "Not applicable"
             } , {
-              description : "1-4 foci",
-              inputs_required : [ "" ],
-              id : "10", name : "Present, # foci: "
+              description : "1 block not focus, CAP defined",
+           
+              id : "00", name : "Present, 1 block: "
             } , {
-              description : "5 or more foci",
+              description : "2 or more blocks not foci, CAP defined",
               inputs_required : [ "" ],
-              id : "10", name : "Present, extensive, # foci: "
+              id : "10", name : "Present, extensive, # blocks: "
             }],
             id : "00", name : ""
           } ]
@@ -10173,11 +10227,11 @@ var database = {
             description : "WT1-, p53 -/focal+, ER +, Pax8+ p16-, HPV ISH- or cervical HPV ISH+, p16+, CEA+, p53 wild type, ER-/wk, PR- Vim -/wk vs endometrial HPV ISH-, p16-/wk, CEA -/wk, p53 abnormal/-, ER-/+, PR+, Vim +",
             id : "00", name : "Endometrioid adenocarcinoma"
           }, {
-            id : "00", name : "Endometrioid adenocarcinoma with squamous differentiation"
+            id : "00", name : "POLE-ultramutated endometrioid carcinoma  "
           }, {
-            id : "00", name : "Endometrioid adenocarcinoma, villoglandular variant"
+            id : "00", name : "Mismatch repair–deficient endometrioid carcinoma  "
           }, {
-            id : "00", name : "Endometrioid adenocarcinoma with secretory differentiation"
+            id : "00", name : "p53-mutant endometrioid carcinoma  "
           }, {
             description : "Solid pattern with well diff background, may be neuroendocrine +",
             id : "00", name : "Dedifferentiated endometrioid adenocarcinoma"
@@ -10207,6 +10261,9 @@ var database = {
           }, {
             description : "GATA3 +, ER-, p53 wild type, p 16 variable",
             id : "00", name : "Mesonephric adenocarcinoma"
+          }, {
+            description : "GATA3 +, ER-, p53 wild type, p 16 variable",
+            id : "00", name : "Mesonephric-like adenocarcinoma"
           }],
           id : "00", name : ""
         } ]
@@ -10340,7 +10397,9 @@ var database = {
           }, {
             id : "00", name : "Present"
           }, {
-            id : "00", name : "Present, extensive"
+            id : "00", name : "Present, low (<3 vessels)"
+          }, {
+            id : "00", name : "Present, extensive (>= 3 vessels)"
           },{
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
@@ -12176,6 +12235,8 @@ var database = {
           group : [ {
             id : "00", name : "Esophagus"
           }, {
+            id : "00", name : "Gastroesophageal junction"
+          }, {
             id : "00", name : "Stomach"
           }, {
             id : "00", name : "Duodenum"
@@ -12186,6 +12247,10 @@ var database = {
           }, {
             id : "00", name : "Small intestine"
           }, {
+            id : "00", name : "Ileocecal valve"
+          }, {
+            id : "00", name : "Appendix"
+          }, {
             id : "00", name : "Right colon"
           }, {
             id : "00", name : "Transverse colon"
@@ -12195,6 +12260,8 @@ var database = {
             id : "00", name : "Colon"
           }, {
             id : "00", name : "Rectum"
+          }, {
+            id : "00", name : "Retroperitoneal"
           } ],
           id : "00", name : ""
         } ]
@@ -12526,7 +12593,21 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-     }, {
+     } , {
+      id : "00", name : "BRAF",
+     optional_state  : "required", "options" : [ {
+        group : [ {
+          id : "00", name : "Positive"
+        }, {
+          id : "00", name : "Negative"
+        }, {
+          id : "00", name : "Equivocal"
+        }, {
+          id : "00", name : "Not applicable"
+        } ],
+        id : "00", name : ""
+      } ]
+    }, {
       id : "00", name : "Tumor block(s) for possible future studies",
      optional_state  : "required", "options" : [ {
         group : [ {
@@ -12543,21 +12624,6 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [{
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -12576,6 +12642,16 @@ var database = {
             id : "00", name : "Left lobe "
           }, {
             id : "00", name : "Right and left lobes "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Focality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Single focus"
+          }, {
+            id : "21", name : "Multiple foci "
           } ],
           id : "00", name : ""
         } ]
@@ -12616,6 +12692,38 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Beta catenin ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive "
+          }, {
+            id : "00", name : "Negative"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
+          } ],
+          id : "00", name : ""
+        } ]
+      } , {
+        id : "00", name : "INI-1 ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Retained "
+          }, {
+            id : "00", name : "Absent"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
+          } ],
+          id : "00", name : ""
+        } ]
       } ]
     }, {
       most_common : false,
@@ -12623,21 +12731,6 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [{
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -12666,6 +12759,16 @@ var database = {
             id : "00", name : "Left lobe "
           }, {
             id : "00", name : "Right and left lobes "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Focality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Single focus"
+          }, {
+            id : "21", name : "Multiple foci "
           } ],
           id : "00", name : ""
         } ]
@@ -12801,6 +12904,38 @@ var database = {
             id : "00", name : "≥100 ng/mL"
           }, {
             id : "00", name : "Not known "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Beta catenin ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Positive "
+          }, {
+            id : "00", name : "Negative"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
+          } ],
+          id : "00", name : ""
+        } ]
+      } , {
+        id : "00", name : "INI-1 ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Retained "
+          }, {
+            id : "00", name : "Absent"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Not performed"
+          }, {
+            id : "00", name : "Pending"
           } ],
           id : "00", name : ""
         } ]
@@ -17203,22 +17338,7 @@ var database = {
       id : "00", name : "Neuroblastoma, biopsy",
       optional : true,
       organ_group : "Pediatric",
-      properties : [{
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+      properties : [ {
         id : "00", name : "Specimen",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -17348,21 +17468,6 @@ var database = {
       optional : true,
       organ_group : "Pediatric",
       properties : [ {
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      },{
         id : "00", name : "Specimen",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -29433,22 +29538,7 @@ var database = {
         id : "00", name : "Wilms tumor, biopsy",
         optional : true,
         organ_group : "Pediatric",
-        properties : [ {
-          id : "00", name : "Expert consultation",
-         optional_state  : "required", "options" : [ {
-            group : [ {
-              id : "00", name : "None"
-            }, {
-              id : "00", name : "Completed"
-            }, {
-              id : "00", name : "Pending"
-            },{
-            
-             id : "00", name : "Not applicable"
-            } ],
-            id : "00", name : ""
-          } ]
-        },{
+        properties : [{
           id : "00", name : "Procedure",
          optional_state  : "required", "options" : [ {
             group : [ {
@@ -29468,11 +29558,7 @@ var database = {
             group : [ {
               id : "00", name : "Wilms tumor, favorable histology"
             }, {
-              id : "00", name : "Wilms tumor, focal anaplasia "
-            }, {
               id : "00", name : "Wilms tumor, diffuse anaplasia "
-            }, {
-              id : "00", name : "Nephrogenic rest only"
             }, {
               id : "00", name : "Congenital mesoblastic nephroma, classical, cellular or mixed"
             }, {
@@ -29489,21 +29575,6 @@ var database = {
       optional : false,
       organ_group : "Pediatric",
       properties : [{
-        id : "00", name : "Expert consultation",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Completed"
-          }, {
-            id : "00", name : "Pending"
-          },{
-          
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         id : "00", name : "Procedure",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -29564,11 +29635,7 @@ var database = {
           group : [ {
             id : "00", name : "Wilms tumor, favorable histology"
           }, {
-            id : "00", name : "Wilms tumor, focal anaplasia "
-          }, {
             id : "00", name : "Wilms tumor, diffuse anaplasia "
-          }, {
-            id : "00", name : "Nephrogenic rest only"
           }, {
             id : "00", name : "Congenital mesoblastic nephroma, classical, cellular or mixed"
           }, {
