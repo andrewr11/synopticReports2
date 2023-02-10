@@ -4215,7 +4215,7 @@ var database = {
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
           } , {
-            description : "1 block foci, CAP defined",
+            description : "1 block not focus, CAP defined",
          
             id : "00", name : "Present, 1 block: "
           } , {
