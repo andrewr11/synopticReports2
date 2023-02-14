@@ -9040,10 +9040,10 @@ var database = {
             id : "00", name : "MLH1 promoter methylation"
           }, {
              description : "T4 or N1 or Gross perforation or 'Young'",
-            id : "00", name : "K-RAS extended panel, N-RAS, and BRAF"
+            id : "00", name : "Her2Neu, K-RAS extended panel, N-RAS, and BRAF"
           }, {
              description : "T4 or N1 or Gross perforation AND loss of MLH1 and PMS2",
-            id : "00", name : "K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
+            id : "00", name : "Her2Neu, K-RAS extended panel, N-RAS, BRAF, and MLH1 promoter methylation"
           }, {
             id : "00", name : "Pending results of MMR protein panel"
           }, {
@@ -12594,20 +12594,6 @@ var database = {
           id : "00", name : ""
         } ]
      } , {
-      id : "00", name : "BRAF",
-     optional_state  : "required", "options" : [ {
-        group : [ {
-          id : "00", name : "Positive"
-        }, {
-          id : "00", name : "Negative"
-        }, {
-          id : "00", name : "Equivocal"
-        }, {
-          id : "00", name : "Not applicable"
-        } ],
-        id : "00", name : ""
-      } ]
-    }, {
       id : "00", name : "Tumor block(s) for possible future studies",
      optional_state  : "required", "options" : [ {
         group : [ {
