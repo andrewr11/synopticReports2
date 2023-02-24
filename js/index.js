@@ -14713,19 +14713,19 @@ var database = {
             description : "single ipsilateral lymph node metastasis <= 3cm AND no extranodal extension OR MELANOMA regional metastases",
             id : "00", name : "N1"
           }, {
-            description : "(single ipsilateral lymph node metastasis > 3cm AND <= 6cm AND no extranodal extension) OR (bilateral or contralateral lymph nodemetastases, <= 6cm  AND no extranodal extension)",
+            description : "(single ipsilateral lymph node metastasis < 3cm AND + extranodal extension OR single ipsilateral lymph node metastasis > 3cm AND <= 6cm AND no extranodal extension)",
             id : "00", name : "N2a"
           }, {
             description : "multiple ipsilateral lymph node AND metastases <= 6cm AND no extranodal extension",
             id : "00", name : "N2b"
           }, {
-            description : "bilateal or contralateral lymph node AND metastases <= 6cm AND no extranodal extension",
+            description : "bilateral or contralateral lymph node AND metastases <= 6cm AND no extranodal extension",
             id : "00", name : "N2c"
           }, {
             description : "metastases > 6cm AND no extranodal extension",
             id : "00", name : "N3a"
           }, {
-            description : "(metastases single ipsilateral lymph node >3cm AND extranodal extension) OR ( multiple ipsilateral, contralateral or bilateral nodes AND no extranodal extension) OR (single contralateral node metastases <=3cm AND extranodal extension)",
+            description : "(metastases single ipsilateral lymph node >3cm AND + extranodal extension) OR ( multiple ipsilateral, contralateral or bilateral nodes AND + extranodal extension) OR (single contralateral node metastases any size AND + extranodal extension)",
             id : "00", name : "N3b"
           }, {
             description : "MELANOMA regional metastases",
