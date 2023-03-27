@@ -24427,17 +24427,19 @@ var database = {
             id : "00", name : "Adenocarcinoma arising in an adenoma"
           }, {
            
-            id : "00", name : "Adenocarcinoma, intestinal type"
+            id : "00", name : "Adenocarcinoma, tubular"
           }, {
-            description : "if >50% signet-ring cells",
-            id : "00", name : "Adenocarcinoma, diffuse type "
+            description : "Signet-ring cells",
+            id : "00", name : "Poorly cohesive carcinoma "
           }, {
-            description : "if <50% signet-ring cells",
+            description : "if >50% mucinous",
+            id : "00", name : "Mucinous adenocarcinoma "
+          }, {
+            id : "00", name : "Adenocarcinoma, Papillary type "
+          }, {
             id : "00", name : "Adenocarcinoma, mixed type "
           }, {
             id : "00", name : "Adenocarcinoma, micropapillary type "
-          }, {
-            id : "00", name : "Adenocarcinoma of fundic gland type "
           }, {
             id : "00", name : "Adenocarcinoma, hepatoid  "
           }, {
