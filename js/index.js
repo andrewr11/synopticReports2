@@ -1663,11 +1663,17 @@ var database = {
          id : "77", name : "Mucin penetrates serosa"
        }, {
         description : "Stage T3 (LAMN) for low grade mucinous tumors",
-       id : "76", name : "Mucin and or cells invade subserosal tissue"
+       id : "76", name : "Tumor cells invade subserosal tissue"
      }, {
       description : "Stage T4a (LAMN) for low grade mucinous tumors",
-     id : "77", name : "Mucin and or cells penetrate serosa"
-   },{
+     id : "77", name : "Tumor cells penetrate serosa"
+   }, {
+    description : "Stage T3 (LAMN) for low grade mucinous tumors",
+   id : "76", name : "Tumor cells and mucin invade subserosal tissue"
+ }, {
+  description : "Stage T4a (LAMN) for low grade mucinous tumors",
+ id : "77", name : "Tumor cells and mucin penetrate serosa"
+},{
             id : "60", name : "In situ/No invasion of lamina propria"
           }, {
             id : "60", name : "Intramucosal (invades lamina propria/muscularis mucosa)"
