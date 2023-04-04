@@ -8815,7 +8815,7 @@ var database = {
           }, {
             id : "00", name : "Present, large vessel, intramural"
           }, {
-            id : "00", name : "Present, large vesssel, extramural"
+            id : "00", name : "Present, large vessel, extramural"
           } ,{
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
