@@ -16262,6 +16262,7 @@ var database = {
             description : "EWSR1 rearrangements",
             id : "00", name : "Myoepithelial carcinoma (malignant myoepithelioma)"
           }, {
+            description : "SDHB +",
             id : "00", name : "Oncocytic carcinoma"
           }, {
              description : "CD117+, GFAP+, PRKD1, MYB- P40-, (Ad cystic MYB+, p40+)",
