@@ -15723,7 +15723,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "reflex all lung non-small cell carcinomas except squamous cell ca",
-            id : "00", name : "Availble upon request"
+            id : "00", name : "Available upon request"
           }, {
             description : "squamous cell carcinomas",
             id : "00", name : "PDL1"
