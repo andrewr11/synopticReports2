@@ -10768,7 +10768,7 @@ var database = {
           id : "00", name : ""
         } ]
          },{
-          description : "Serous carcinoma only ",
+          description : "Serous carcinoma and MMMT/Carcinosarcoma ",
          id : "00", name : "Her2Neu by IHC",
         optional_state  : "required", "options" : [ {
            group : [ {
@@ -10789,7 +10789,7 @@ var database = {
            id : "00", name : ""
          } ]
        }, {
-           description : "Serous carcinoma only",
+           description : "Serous carcinoma and MMMT/Carcinosarcoma",
          id : "00", name : "Her2Neu by FISH",
         optional_state  : "required", "options" : [ {
            group : [ {
