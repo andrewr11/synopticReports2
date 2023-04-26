@@ -27583,6 +27583,15 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "",
+       id : "00", name : "Additional findings",
+      optional_state  : "required", "options" : [ {
+         group : [ {
+           id : "00", name : "None"
+         } ],
+         id : "00", name : ""
+       } ]  
+     },{
         id : "00", name : "Tumor block(s) for possible future studies",
        optional_state  : "required", "options" : [ {
           group : [ {
