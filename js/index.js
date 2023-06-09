@@ -14231,6 +14231,8 @@ var database = {
           group : [ {
             id : "00", name : "None"
           }, {
+            id : "00", name : "Lymphovascular invasion"         
+          }, {
             id : "00", name : "Nonspecific changes"         
           }, {
             id : "00", name : "Focal nonspecific chronic inflammation"         
