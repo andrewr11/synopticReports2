@@ -834,7 +834,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-         description: "adenocarcinoma only",
+         description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -1899,7 +1899,7 @@ var database = {
           id : "00", name : ""
         } ]
         },  {
-          description : "NA for LAMN",
+          description : "NA for LAMN, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -9005,7 +9005,7 @@ var database = {
           id : "00", name : ""
         } ]
       },  {
-         description : "Perform for adenocarcinoma, NOT small cell carcinoma, per Dr Ucar",
+         description : "Perform for adenocarcinoma, NOT small cell carcinoma, per Dr Ucar, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -9740,7 +9740,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-          description: "adenocarcinoma only",
+          description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -9839,6 +9839,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description: "add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -10735,7 +10736,7 @@ var database = {
           id : "00", name : ""
         } ]
       },  {
-        description : "ALL women",
+        description : "ALL women, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11304,7 +11305,7 @@ var database = {
           id : "00", name : ""
         }  ]
        }, {
-          description: "adenocarcinoma only",
+          description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -11900,7 +11901,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-          description: "adenocarcinoma only",
+          description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13519,7 +13520,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-          description: "adenocarcinoma only",
+          description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -18883,7 +18884,7 @@ var database = {
         } ]
  
        }, {
-         description: "adenocarcinoma only",
+         description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -19285,7 +19286,7 @@ var database = {
           id : "00", name : ""
         } ]
        }, {
-         description: "adenocarcinoma only",
+         description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -20065,7 +20066,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-          description: "adenocarcinoma only",
+          description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -23993,7 +23994,7 @@ var database = {
           id : "00", name : ""
         } ]
         },  {
-          description : "Perform for adenocarcinoma, NOT small cell carcinoma, per Dr Ucar",
+          description : "Perform for adenocarcinoma, NOT small cell carcinoma, per Dr Ucar, add M1193 code",
          id : "00", name : "MSI IHC and Interpretation",
         optional_state  : "required", "options" : [ {
            group : [ {
@@ -24804,7 +24805,7 @@ var database = {
           id : "00", name : ""
         }  ]
         }, {
-           description: "adenocarcinoma only",
+           description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -26748,7 +26749,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-         description: "T3+ or N1+ only, otherwise NA",
+         description: "T3+ or N1+ only, otherwise NA, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -27126,7 +27127,7 @@ var database = {
           id : "00", name : ""
         } ]
       } , {
-        description: "T3+ or N1+ only, otherwise NA",
+        description: "T3+ or N1+ only, otherwise NA, add M1193 code",
        id : "00", name : "MSI IHC and Interpretation",
       optional_state  : "required", "options" : [ {
          group : [ {
@@ -27546,7 +27547,7 @@ var database = {
           id : "00", name : ""
         } ]
         }, {
-         description: "T3+ or N1+ only, otherwise NA",
+         description: "T3+ or N1+ only, otherwise NA, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
           group : [ {
