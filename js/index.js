@@ -110,6 +110,10 @@ GIDs
 
 90 DCIS na
 
+Metastases default
+91 - no mets
+92 - mets
+
 
 
 */
@@ -367,17 +371,19 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Brain"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Brain"
+          } , {
+            id : "92", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -723,17 +729,19 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Brain"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Brain"
+          } , {
+            id : "92", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -1381,13 +1389,19 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Bone"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Brain"
+          } , {
+            id : "92", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -1768,15 +1782,15 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Bone"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -2149,15 +2163,19 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Brain"
+          } , {
+            id : "92", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -2430,13 +2448,13 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Bone"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -3096,8 +3114,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Bone"
@@ -3105,8 +3125,6 @@ var database = {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Brain"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -3589,8 +3607,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Bone"
@@ -3598,8 +3618,6 @@ var database = {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Brain"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -4276,8 +4294,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Bone"
@@ -4285,8 +4305,6 @@ var database = {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Brain"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -5182,8 +5200,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Bone"
@@ -5191,8 +5211,6 @@ var database = {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Brain"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -5942,7 +5960,7 @@ var database = {
             id : "00", name : "None"
           }, {
           
-            id : "00", name : "Ostrosarcoma"
+            id : "00", name : "Osteosarcoma"
           }, {
       
             id : "00", name : "Chondrosarcoma"
@@ -5997,8 +6015,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Bone"
@@ -6006,8 +6026,6 @@ var database = {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Brain"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -7523,23 +7541,23 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Uterine serosa"
-          }, {
-            id : "00", name : "Adnexa"
-          }, {
-            id : "00", name : "Inguinal lymph nodes"
-          }, {
-            id : "00", name : "Intraperitoneal disease"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           } , {
+            id : "92", name : "Uterine serosa"
+          }, {
+            id : "92", name : "Adnexa"
+          }, {
+            id : "92", name : "Inguinal lymph nodes"
+          }, {
+            id : "92", name : "Intraperitoneal disease"
+          }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
           } ],
           id : "00", name : ""
         } ]
@@ -8310,23 +8328,23 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Uterine serosa"
-          }, {
-            id : "00", name : "Adnexa"
-          }, {
-            id : "00", name : "Inguinal lymph nodes"
-          }, {
-            id : "00", name : "Intraperitoneal disease"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Uterine serosa"
+          }, {
+            id : "92", name : "Adnexa"
+          }, {
+            id : "92", name : "Inguinal lymph nodes"
+          }, {
+            id : "92", name : "Intraperitoneal disease"
+          }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
           } ],
           id : "00", name : ""
         } ]
@@ -8872,9 +8890,9 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Not applicable"
+            id : "91", name : "Not applicable"
           }, {
-            id : "00", name : "None"
+            id : "91", name : "None"
           }, {
             id : "00", name : "Peritoneum"
           }, {
@@ -9295,8 +9313,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -9304,8 +9324,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -9637,15 +9655,19 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Brain"
+          } , {
+            id : "92", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -10075,8 +10097,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -10084,8 +10108,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -10577,23 +10599,23 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Omentum"
-          }, {
-            id : "00", name : "Extrapelvic peritoneum"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Inguinal lymph nodes"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Omentum"
+          }, {
+            id : "92", name : "Extrapelvic peritoneum"
+          }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Inguinal lymph nodes"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -11099,17 +11121,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -11466,8 +11488,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -11475,8 +11499,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -11790,17 +11812,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -12194,8 +12216,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -12203,8 +12227,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -12443,17 +12465,17 @@ var database = {
       id : "57", name : "Distant metastases",
      optional_state  : "required", "options" : [ {
         group : [ {
-          id : "00", name : "None"
-        }, {
-          id : "00", name : "Lung"
-        }, {
-          id : "00", name : "Liver"
-        }, {
-          id : "00", name : "Bone"
-        }, {
-          id : "00", name : "Nonregional lymph nodes"
+          id : "91", name : "Not applicable"
         },{
-         id : "00", name : "Not applicable"
+          id : "91", name : "None"
+         }, {
+          id : "92", name : "Lung"
+        }, {
+          id : "92", name : "Liver"
+        }, {
+          id : "92", name : "Bone"
+        }, {
+          id : "92", name : "Nonregional lymph nodes"
         } ],
         id : "00", name : ""
       } ]
@@ -13142,17 +13164,17 @@ var database = {
       id : "57", name : "Distant metastases",
      optional_state  : "required", "options" : [ {
         group : [ {
-          id : "00", name : "None"
-        }, {
-          id : "00", name : "Lung"
-        }, {
-          id : "00", name : "Liver"
-        }, {
-          id : "00", name : "Bone"
-        }, {
-          id : "00", name : "Nonregional lymph nodes"
+          id : "91", name : "Not applicable"
         },{
-         id : "00", name : "Not applicable"
+          id : "91", name : "None"
+         }, {
+          id : "92", name : "Lung"
+        }, {
+          id : "92", name : "Liver"
+        }, {
+          id : "92", name : "Bone"
+        }, {
+          id : "92", name : "Nonregional lymph nodes"
         } ],
         id : "00", name : ""
       } ]
@@ -13417,15 +13439,15 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Bone"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -13754,8 +13776,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -13763,8 +13787,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -14115,17 +14137,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -14594,17 +14616,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -15092,17 +15114,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -15597,16 +15619,18 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           } , {
             id : "00", name : "Liver"
           }, {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
-          } ],
+          } , {
+            id : "00", name : "Present"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -16433,17 +16457,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -16723,17 +16747,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -17174,17 +17198,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -17627,13 +17651,13 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "91", name : "None"
           }, {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Present"
           }, {
-            id : "00", name : "Not applicable"
+            id : "91", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -18227,8 +18251,10 @@ var database = {
       id : "57", name : "Distant metastases",
      optional_state  : "required", "options" : [ {
         group : [ {
-          id : "00", name : "None"
-        }, {
+          id : "91", name : "Not applicable"
+        },{
+          id : "91", name : "None"
+         }, {
           id : "00", name : "Lung"
         }, {
           id : "00", name : "Liver"
@@ -18240,8 +18266,6 @@ var database = {
           id : "00", name : "Inguinal or retroperitoneal lymph nodes"
         }, {
           id : "00", name : "Nonregional lymph nodes"
-        },{
-         id : "00", name : "Not applicable"
         } ],
         id : "00", name : ""
       } ]
@@ -18623,8 +18647,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -18632,8 +18658,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -19172,17 +19196,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applciable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -19607,17 +19631,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -19960,15 +19984,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Brain"
           } ],
           id : "00", name : ""
         } ]
@@ -20373,17 +20399,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "91", name : "Not applicable"
           }, {
-            id : "00", name : "Lung"
+            id : "91", name : "None"
           }, {
-            id : "00", name : "Liver"
+            id : "92", name : "Lung"
           }, {
-            id : "00", name : "Bone"
+            id : "92", name : "Liver"
           }, {
-            id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -20829,17 +20855,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -21247,8 +21273,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -21256,8 +21284,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -21933,8 +21959,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -21942,8 +21970,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -22675,8 +22701,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -22684,8 +22712,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -23178,8 +23204,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -23187,8 +23215,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -23560,17 +23586,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -23883,17 +23909,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -24212,17 +24238,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -24609,17 +24635,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -25036,17 +25062,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -25316,8 +25342,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -25325,8 +25353,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -25749,17 +25775,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -26064,8 +26090,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -26073,8 +26101,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -26297,8 +26323,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -26306,8 +26334,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -26613,17 +26639,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -27013,17 +27039,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -27418,8 +27444,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -27427,8 +27455,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -28116,17 +28142,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -28530,8 +28556,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -28539,8 +28567,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -28944,17 +28970,17 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Nonregional lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Nonregional lymph nodes"
           } ],
           id : "00", name : ""
         } ]
@@ -29371,26 +29397,26 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Lung"
-          }, {
-            id : "00", name : "Liver"
-          }, {
-            id : "00", name : "Bone"
-          }, {
-            id : "00", name : "Pelvic lymph nodes"
-          }, {
-            id : "00", name : "Internal iliac lymph nodes"
-          }, {
-            id : "00", name : "External iliac lymph nodes"
-          }, {
-            id : "00", name : "Common iliac lymph nodes"
-          }, {
-            id : "00", name : "Presacral lymph nodes"
+            id : "91", name : "Not applicable"
           },{
-           id : "00", name : "Not applicable"
-          } ],
+            id : "91", name : "None"
+           }, {
+            id : "92", name : "Lung"
+          }, {
+            id : "92", name : "Liver"
+          }, {
+            id : "92", name : "Bone"
+          }, {
+            id : "92", name : "Pelvic lymph nodes"
+          }, {
+            id : "92", name : "Internal iliac lymph nodes"
+          }, {
+            id : "92", name : "External iliac lymph nodes"
+          }, {
+            id : "92", name : "Common iliac lymph nodes"
+          }, {
+            id : "92", name : "Presacral lymph nodes"
+          }],
           id : "00", name : ""
         } ]
       }, {
@@ -29755,8 +29781,10 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
-          }, {
+            id : "91", name : "Not applicable"
+          },{
+            id : "91", name : "None"
+           }, {
             id : "00", name : "Lung"
           }, {
             id : "00", name : "Liver"
@@ -29764,8 +29792,6 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
-          },{
-           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -30489,6 +30515,7 @@ var database = {
               }                              
              }
 
+            /*
              if (this.current_tumor != 'no tumor' ) {
               for (var j = i; j<this.row.inputanswers.length; j++){ 
                             
@@ -30499,7 +30526,7 @@ var database = {
                 }      
               }                              
              }
-
+             */
 
              
           //Mesorectum
@@ -30516,7 +30543,7 @@ var database = {
 
           
 
-           // m stage
+           // m stage (for multiple tumors not metastases)
 
              //m stage  
              if (gid == '21') {
@@ -30950,7 +30977,7 @@ var database = {
              
             }
             //M (not applicable)
-            if (qid == '04') {
+            if (gid == "91") {
               for (var j = i; j<this.row.inputanswers.length; j++){
                 
                  
@@ -30963,7 +30990,20 @@ var database = {
              
             }
 
-              // DCIS maring na
+            if (gid == "92") {
+              for (var j = i; j<this.row.inputanswers.length; j++){
+                
+                 
+                 if (this.row.inputanswers[j] ==  "!!!!YOU FORGOT THIS ONE??0400") {
+                  this.row.inputanswers[j] = "M10400";
+                  this.dontUseFreeText(j);
+                 }
+                      
+              }
+             
+            }
+
+              // DCIS margin na
              //
              if (gid == '90') {
               for (var j = i; j<this.row.inputanswers.length; j++){
