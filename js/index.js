@@ -19196,7 +19196,7 @@ var database = {
         id : "57", name : "Distant metastases",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "91", name : "Not applciable"
+            id : "91", name : "Not applicable"
           },{
             id : "91", name : "None"
            }, {
