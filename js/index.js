@@ -29272,7 +29272,7 @@ var database = {
         } ]
       }, {
          description : "peripheral",
-        id : "00", name : "Margins, HSIL/Pagets",
+        id : "00", name : "Margins, HSIL (VIN2-3/dVIN/Pagets)",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Free "
