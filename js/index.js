@@ -15795,12 +15795,12 @@ var database = {
           group : [ {
             id : "00", name : "Retroperitoneal lymphadenectomy"
           } ,{
-            id : "00", name : "Lympadenectomy"
+            id : "00", name : "Lymphadenectomy"
           }],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Preesection treament",
+        id : "00", name : "Preresection treatment",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Chemo/radiation"
