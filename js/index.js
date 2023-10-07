@@ -3030,6 +3030,18 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Nipple involvement",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Paget disease of the nipple"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "Free text distance, location, for all tumors 0-2mm from ink, do NOT use terms FREE or POSITIVE",
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
@@ -3455,6 +3467,18 @@ var database = {
           id : "00", name : ""
         } ]
 
+      }, {
+        id : "00", name : "Nipple involvement",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Paget disease of the nipple"
+          } ],
+          id : "00", name : ""
+        } ]
       }, {   
         id : "00", name : "Margin, anterior",
        optional_state  : "required", "options" : [ {
