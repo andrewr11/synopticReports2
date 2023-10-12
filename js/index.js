@@ -8790,7 +8790,21 @@ var database = {
         } ]
       }, {
         description : "include proximal/distal/radial margins",
-        id : "00", name : "Margins",
+        id : "00", name : "Margins, invasive carcinoma",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+
+            id : "00", name : "Free "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include proximal/distal/radial margins",
+        id : "00", name : "Margins, high grade dysplasia/intramucosal carcinoma/adenoma",
        optional_state  : "required", "options" : [ {
           group : [ {
 
@@ -21271,6 +21285,28 @@ var database = {
           id : "00", name : ""
         } ]
      
+      }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          canSelectMultiple : true,
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
       }, {
         id : "00", name : "Lymph nodes, # total",
        optional_state  : "required", "options" : [ {
