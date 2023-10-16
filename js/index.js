@@ -24228,7 +24228,7 @@ var database = {
         } ]
       }, {
         description : "French Federation of Cancer Centers Sarcoma Group [FNCLCC]",
-        id : "00", name : "Grade",
+        id : "00", name : "Grade (FNCLCC)",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Grade 1/3"
