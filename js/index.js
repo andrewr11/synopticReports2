@@ -8789,6 +8789,34 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Depth of submucosal invasion, T1 tumors",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "< 1 mm"
+          }, {
+            id : "00", name : ">1mm and < 2mm"
+          }, {
+            id : "00", name : ">2mm"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Extent of submucosal invasion, T1 tumors",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "upper 1/3"
+          }, {
+            id : "00", name : "mid 1/3"
+          }, {
+            id : "00", name : "lower 1/3"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "include proximal/distal/radial margins",
         id : "00", name : "Margins, invasive carcinoma",
        optional_state  : "required", "options" : [ {
@@ -10760,22 +10788,31 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Stage FIGO (2015)",
+        id : "00", name : "Stage FIGO (2023)",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "No or less than half myometrial invasion",
+            description : "Disease limited to the endometrium OR non-aggressive histological type, i.e., low-grade endometrioid, with invasion of less than half of the myometrium with no or focal lymphovascular space involvement (LVSI) OR good prognosis disease",
             id : "00", name : "FIGO IA"
           }, {
-            description : "Invasion equal to or more than half of the myometrium",
+            description : "Non-aggressive histological types with invasion of half or more of the myometrium, and with no or focal LVSI",
             id : "00", name : "FIGO IB"
           }, {
-            description : "Tumor invades cervical stroma, but does not extend beyond the uterus",
-            id : "00", name : "FIGO II"
+            description : "Aggressive histological types limited to a polyp or confined to the endometrium",
+            id : "00", name : "FIGO IC"
+          }, {
+            description : "Invasion of the cervical stroma of non-aggressive histological types  ",
+            id : "00", name : "FIGO IIA"
+          }, {
+            description : "Substantial LVSI of non-aggressive histological types ",
+            id : "00", name : "FIGO IIB"
+          }, {
+            description : "Aggressive histological types with any myometrial involvement  ",
+            id : "00", name : "FIGO IIC"
           }, {
             description : "Tumor invades the serosa of the corpus uteri and/or adnexae",
             id : "00", name : "FIGO IIIA"
           }, {
-            description : "Vaginal involvement and/ or parametrial involvement",
+            description : "Vaginal involvement and/ or parametrial and or pelvic peritoneal involvement",
             id : "00", name : "FIGO IIIB"
           }, {
             description : "Positive pelvic nodes",
@@ -22976,6 +23013,16 @@ var database = {
           } , {
             id : "00", name : "Not applicable"
           }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
+          } ],
           id : "00", name : ""
         } ]
       },   {
