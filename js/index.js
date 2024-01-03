@@ -19083,14 +19083,14 @@ var database = {
           }, {
             id : "00", name : "Adenosquamous carcinoma"
           }, {
-            id : "00", name : "Intraductal papillary-mucinous neoplasm with an associated invasive carcinoma "
+            id : "00", name : "Invasive adenocarcinoma, associated with an intraductal papillary-mucinous neoplasm "
           }, {
             description : "MUC-1 +, MUC-5 -, MUC-6 +",
-            id : "00", name : "Intraductal tubulo-papillary neoplasm with an associated invasive carcinoma "
+            id : "00", name : "Invasive adenocarcinoma, associated with an intraductal tubulo-papillary neoplasm "
           }, {
-            id : "00", name : "Intraductal oncocytic papillary neoplasm with an associated invasive carcinoma "
+            id : "00", name : "Invasive adenocarcinoma, associated with an intraductal oncocytic papillary neoplasm "
           }, {
-            id : "00", name : "Mucinous cystic neoplasm with an associated invasive carcinoma"
+            id : "00", name : "Invasive adenocarcinoma, associated with an mucinous cystic neoplasm"
           }, {
             id : "00", name : "Large cell neuroendocrine carcinoma"
           }, {
