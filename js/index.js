@@ -14029,7 +14029,7 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-                   description : "Pax8+, CK7-, CD117-, CD10+, GATA3-",
+                   description : "Pax8+, CK7-, CD117-, GATA3-",
             id : "00", name : "Clear cell renal cell carcinoma"
           }, {
                description : "Pax8+, CK7+",
@@ -14044,7 +14044,7 @@ var database = {
             description : "Pax8+, CK7 +, GATA3+",
            id : "00", name : "Papillary renal neoplasm with reverse polarity"
          }, {
-             description : "Hales+, CK7+, CK20+, PAX8+, CD117+, CD10-/focal+, oncocytoma: Hales-, CK7 -/focal+, CK20 -/focal+, PAX8-/+, CD117+, CD10-/focal+",
+             description : "Hales+, CK7+, CK20+/-, PAX8+, CD117+, CD10-/focal+, oncocytoma: Hales-, CK7 -/focal+, CK20 -/focal+, PAX8-/+, CD117+, CD10-/focal+",
             id : "00", name : "Chromophobe renal cell carcinoma"
           }, {
              description : "Pax8+, CK7+, INI+, OCT3/4-, FH+, 2SC-",
