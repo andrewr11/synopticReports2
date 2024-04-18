@@ -2297,7 +2297,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Multifocal",
+        id : "00", name : "Tumor focality",
        optional_state  : "required", "options" : [ {
           group : [ {
        
@@ -18529,6 +18529,8 @@ var database = {
             id : "00", name : "Partial pancreatectomy, pancreatic tail"
           }, {
             id : "00", name : "Distal pancreatectomy"
+          }, {
+            id : "00", name : "Subtotal pancreatectomy"
           } ],
           id : "00", name : ""
         } ]
@@ -18537,6 +18539,8 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Pancreatic head"
+          }, {
+            id : "00", name : "Pancreatic neck"
           }, {
             id : "00", name : "Uncinate process"
           }, {
@@ -18858,6 +18862,8 @@ var database = {
             id : "00", name : "Partial pancreatectomy, pancreatic tail"
           }, {
             id : "00", name : "Distal pancreatectomy"
+          }, {
+            id : "00", name : "Subtotal pancreatectomy"
           } ],
           id : "00", name : ""
         } ]
@@ -18866,6 +18872,8 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Pancreatic head"
+          }, {
+            id : "00", name : "Pancreatic neck"
           }, {
             id : "00", name : "Uncinate process"
           }, {
@@ -19030,6 +19038,8 @@ var database = {
             id : "00", name : "Partial pancreatectomy, pancreatic tail"
           }, {
             id : "00", name : "Distal pancreatectomy"
+          }, {
+            id : "00", name : "Subtotal pancreatectomy"
           } ],
           id : "00", name : ""
         } ]
@@ -19042,6 +19052,8 @@ var database = {
             id : "00", name : "Uncinate process"
           }, {
             id : "00", name : "Pancreatic body"
+          }, {
+            id : "00", name : "Pancreatic neck"
           }, {
             id : "00", name : "Pancreatic tail"
           }, {
