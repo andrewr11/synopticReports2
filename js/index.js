@@ -3194,31 +3194,31 @@ var database = {
             description : "No metastases",
             id : "00", name : "N0"
           }, {
-            description : "No metastases AND <6 sentinel Nodes",
+            description : "No metastases AND <6 sentinel + nonsentinel Nodes",
             id : "00", name : "N0 (sn)"
           }, {
             description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC)",
             id : "00", name : "N0 (i+)"
           }, {
-            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel nodes)",
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel and non sentinel nodes)",
             id : "00", name : "N0 (i+) (sn)"
           }, {
             description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells)",
             id : "00", name : "N1mi"
           }, {
-            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel nodes",
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1mi (sn)"
           }, {
             description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm",
             id : "00", name : "N1a"
           }, {
-            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel nodes",
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1a (sn)"
           }, {
             description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm)",
             id : "00", name : "N2a"
           }, {
-            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N2a (sn)"
           }, {
             description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm)",
@@ -3699,31 +3699,31 @@ var database = {
             description : "No metastases",
             id : "00", name : "N0"
           }, {
-            description : "No metastases AND <6 sentinel Nodes",
+            description : "No metastases AND <6 sentinel and non sentinel Nodes",
             id : "00", name : "N0 (sn)"
           }, {
             description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC)",
             id : "00", name : "N0 (i+)"
           }, {
-            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel nodes)",
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel and non sentinel nodes)",
             id : "00", name : "N0 (i+) (sn)"
           }, {
             description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells)",
             id : "00", name : "N1mi"
           }, {
-            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel nodes",
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1mi (sn)"
           }, {
             description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm",
             id : "00", name : "N1a"
           }, {
-            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel nodes",
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1a (sn)"
           }, {
             description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm)",
             id : "00", name : "N2a"
           }, {
-            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N2a (sn)"
           }, {
             description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm)",
@@ -4419,31 +4419,31 @@ var database = {
             description : "No metastases",
             id : "00", name : "N0"
           }, {
-            description : "No metastases AND <6 sentinel Nodes",
+            description : "No metastases AND <6 sentinel and nonsentinel Nodes",
             id : "00", name : "N0 (sn)"
           }, {
             description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC)",
             id : "00", name : "N0 (i+)"
           }, {
-            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel nodes)",
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel and non sentinel nodes)",
             id : "00", name : "N0 (i+) (sn)"
           }, {
             description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells)",
             id : "00", name : "N1mi"
           }, {
-            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel nodes",
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1mi (sn)"
           }, {
             description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm",
             id : "00", name : "N1a"
           }, {
-            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel nodes",
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1a (sn)"
           }, {
             description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm)",
             id : "00", name : "N2a"
           }, {
-            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N2a (sn)"
           }, {
             description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm OR metastases to the infraclavicular (Level III axillary lymph) nodes  )",
@@ -5365,31 +5365,31 @@ var database = {
             description : "No metastases",
             id : "00", name : "N0"
           }, {
-            description : "No metastases AND <6 sentinel Nodes",
+            description : "No metastases AND <6 sentinel and nonsentinel Nodes",
             id : "00", name : "N0 (sn)"
           }, {
             description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC)",
             id : "00", name : "N0 (i+)"
           }, {
-            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel nodes)",
+            description : "ITC's <= 0.2 mm AND <= 200 cells (detected by H&E or IHC AND < 6 sentinel and non sentinel nodes)",
             id : "00", name : "N0 (i+) (sn)"
           }, {
             description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells)",
             id : "00", name : "N1mi"
           }, {
-            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel nodes",
+            description : "Metastases > 0.2 mm AND <= 2.0 mm OR > 200 cells) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1mi (sn)"
           }, {
             description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm",
             id : "00", name : "N1a"
           }, {
-            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel nodes",
+            description : "Metastases in 1 to 3 axillary lymph nodes, at least 1 > 2.0 mm AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N1a (sn)"
           }, {
             description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm)",
             id : "00", name : "N2a"
           }, {
-            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel nodes",
+            description : "Metastases in 4 to 9 axillary lymph nodes (at least 1 > 2.0 mm) AND < 6 sentinel and non sentinel nodes",
             id : "00", name : "N2a (sn)"
           }, {
             description : "Metastases in 10 or more axillary lymph nodes (at least 1 > 2.0 mm) OR metastases to the infraclavicular (Level III axillary lymph) nodes  ",
