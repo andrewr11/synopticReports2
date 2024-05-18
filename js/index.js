@@ -10492,9 +10492,9 @@ var database = {
           }, {
             id : "00", name : "Present"
           }, {
-            id : "00", name : "Present, low (<3 vessels)"
+            id : "00", name : "Present, low (<5 vessels)"
           }, {
-            id : "00", name : "Present, extensive (>= 3 vessels)"
+            id : "00", name : "Present, extensive (>= 5 vessels)"
           },{
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
@@ -15825,7 +15825,7 @@ var database = {
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "reflex all lung non-small cell carcinomas except squamous cell ca",
-            id : "00", name : "Available upon request"
+            id : "00", name : "CARIS"
           }, {
             description : "squamous cell carcinomas",
             id : "00", name : "PDL1"
