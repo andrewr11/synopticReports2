@@ -2333,6 +2333,26 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "50", name : "Tumor laterality",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Right"
+          }, {
+            id : "00", name : "Left"
+          }, {
+            id : "00", name : "Central"
+          }, {
+            id : "00", name : "Polyostotic, ipsilateral"
+          }, {
+            id : "00", name : "Polyostotic, bilateral"
+          }, {
+            id : "00", name : "Indeterminate"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Tumor location",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -2384,10 +2404,28 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Necrosis",
+        id : "00", name : "Treatment effect, primary site",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "17", name : "Not applicable"
+          }, {
+            id : "19", name : "No definite response"
+          } ,{
+            description : "Report % necrosis",
+            inputs_required : [ "" ],
+            id : "22", name : " Present"
+          }, {
+            id : "00", name : "Not known"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Necrosis in absence of neoadjuvant therapy",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
+          },{
+            id : "17", name : "Not applicable"
           }, {
             description : "%",
             inputs_required : [ "" ],
@@ -2406,6 +2444,25 @@ var database = {
             id : "00", name : "Grade 3/3, Poorly differentiated"
           }, {
             id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -4284,6 +4341,7 @@ var database = {
           }, {
             id : "19", name : "Probable or definite response"
           },{
+
         
             inputs_required : [ "" ],
             id : "22", name : "Residual invasive tumor cellularity "
@@ -14083,26 +14141,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Sarcomatoid features",
+        id : "00", name : "Histologic features",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "00", name : "No rhabdoid or sarcomatoid features"
           }, {
-            id : "00", name : "Present"
+            id : "00", name : "Rhabdoid features present"
           }, {  
-            id : "00", name : "Equivocal"
-          } ],
-          id : "00", name : ""
-        } ]
-        }, {
-        id : "00", name : "Rhabdoid features",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Present"
+            id : "00", name : "Sarcomatoid features present"
           }, {  
-            id : "00", name : "Equivocal"
+            id : "00", name : "Rhabdoid and sarcomatoid features present"
           } ],
           id : "00", name : ""
         } ] 
@@ -14173,6 +14221,25 @@ var database = {
              description : "specify",
               inputs_required : [ "" ],
             id : "11", name : "Invades other organs"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -15980,6 +16047,8 @@ var database = {
             id : "00", name : "Interaortocaval"
           }, {
             id : "00", name : "Paraaortic"
+          }, {
+            id : "00", name : "Precaval"
           }, {
             id : "00", name : "Paracaval"
           }, {
@@ -18451,7 +18520,7 @@ var database = {
         } ]
   
     }, {
-        id : "00", name : "Stage FIGO (2015)",
+        id : "00", name : "Stage FIGO (2021)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "Tumor limited to 1 ovary (capsule intact) or fallopian tube; no tumor on ovarian or fallopian tube surface; no malignant cells in the ascites or peritoneal washings",
@@ -22557,20 +22626,6 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Macroscopic satellite nodules",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Present"
-          }, {
-            id : "00", name : "Equivocal"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -22714,7 +22769,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Perineural invasion",
+        id : "00", name : "Perineural invasion/neurotropism",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -23146,7 +23201,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Perineural invasion",
+        id : "00", name : "Perineural invasion/neurotropism",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "None"
@@ -24303,6 +24358,25 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Lymphovascular invasion",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "None"
+          }, {
+            id : "00", name : "Indeterminate"
+          }, {
+            id : "00", name : "Suspicious"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Present, extensive"
+          },{
+            description : "Positive lymph nodes",
+           id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "include distance",
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
@@ -24333,6 +24407,14 @@ var database = {
           group : [ {
             id : "51", name : "0" },{ id : "53", name : "1" },{ id : "53", name : "2" },{ id : "00", name : "3"
           }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Nodal sites with tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
@@ -29390,21 +29472,36 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-         description : "peripheral",
-        id : "00", name : "Margins, HSIL (VIN2-3/dVIN/Pagets)",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Free "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
+        description : "peripheral",
+       id : "00", name : "Margins, HSIL (VIN2-3/dVIN)",
+      optional_state  : "required", "options" : [ {
+         group : [ {
+           id : "00", name : "Free "
+         }, {
+           description : "location",
+           inputs_required : [ "" ],
+           id : "10", name : "Positive, "
+         }, {
+           id : "00", name : "Not applicable"
+         } ],
+         id : "00", name : ""
+       } ]
+     }, {
+      description : "peripheral",
+     id : "00", name : "Margins, Paget's",
+    optional_state  : "required", "options" : [ {
+       group : [ {
+         id : "00", name : "Free "
+       }, {
+         description : "location",
+         inputs_required : [ "" ],
+         id : "10", name : "Positive, "
+       }, {
+         id : "00", name : "Not applicable"
+       } ],
+       id : "00", name : ""
+     } ]
+   }, {
         id : "00", name : "Lymphovascular invasion",
        optional_state  : "required", "options" : [ {
           group : [ {
