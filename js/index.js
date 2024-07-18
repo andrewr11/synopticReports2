@@ -10890,6 +10890,42 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Stage FIGO (2018)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "No or less than half myometrial invasion",
+            id : "00", name : "FIGO IA"
+          }, {
+            description : "Invasion equal to or more than half of the myometrium",
+            id : "00", name : "FIGO IB"
+          }, {
+            description : "Tumor invades cervical stroma, but does not extend beyond the uterus  ",
+            id : "00", name : "FIGO II"
+          }, {
+            description : "Tumor invades the serosa of the corpus uteri and/or adnexae",
+            id : "00", name : "FIGO IIIA"
+          }, {
+            description : "Vaginal involvement and/ or parametrial and or pelvic peritoneal involvement",
+            id : "00", name : "FIGO IIIB"
+          }, {
+            description : "Positive pelvic nodes",
+            id : "00", name : "FIGO IIIC1"
+          }, {
+            description : "Positive para-aortic nodes with or without positive pelvic lymph nodes",
+            id : "00", name : "FIGO IIIC2"
+          }, {
+            description : "Tumor invasion of bladder and/or bowel mucosa",
+            id : "00", name : "FIGO IVA"
+          }, {
+            description : "Distant metastasis, including intraabdominal metastases and/or inguinal nodes",
+            id : "00", name : "FIGO IVB"
+          }, {
+            description : "",
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
       },  {
         description : "ALL women, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
