@@ -541,7 +541,7 @@ var database = {
           group : [ {
             id : "00", name : "Intra-ampullary"
           }, {
-            id : "00", name : "Peri-ampullary"
+            id : "00", name : "Peri-ampullary/duodenal"
           }, {
             id : "00", name : "Mixed Intra- and peri-ampullary"
           } ],
@@ -9146,7 +9146,20 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      },  {
+      }, {
+        id : "00", name : "Additional findings ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Extensive budding invasion"
+          }, {
+            description : "elastic stain",
+            id : "00", name : "Venous invasion"
+          }, {
+            id : "00", name : "None"
+          } ],
+          id : "00", name : ""
+        } ]
+         },  {
          description : "Perform for adenocarcinoma, NOT small cell carcinoma, per Dr Ucar, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
