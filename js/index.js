@@ -8965,6 +8965,22 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Tumor budding score ",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Low (0-4) "
+          }, {
+            id : "00", name : "Intermediate (5-9) "
+          }, {
+            id : "00", name : "High (10 or more)  "
+          }, {
+            id : "00", name : "Can not be determined"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+         }, {
         id : "00", name : "Perineural invasion",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -9146,20 +9162,7 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
-      }, {
-        id : "00", name : "Additional findings ",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Extensive budding invasion"
-          }, {
-            description : "elastic stain",
-            id : "00", name : "Venous invasion"
-          }, {
-            id : "00", name : "None"
-          } ],
-          id : "00", name : ""
-        } ]
-         },  {
+      },  {
          description : "Perform for adenocarcinoma, NOT small cell carcinoma, per Dr Ucar, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
