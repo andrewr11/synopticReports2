@@ -8965,6 +8965,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "The total number of buds should be reported in an area measuring 0.785 mm2, which corresponds to 20x field in some microscopes ",
         id : "00", name : "Tumor budding score ",
        optional_state  : "required", "options" : [ {
           group : [ {
