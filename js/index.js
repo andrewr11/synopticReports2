@@ -569,13 +569,21 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Adenocarcinoma"
-          }, {
-            id : "00", name : "Adenocarcinoma arising in an adenoma"
-          }, {
-            id : "00", name : "Adenocarcinoma, pancreaticobiliary type"
-          }, {
             id : "00", name : "Adenocarcinoma, intestinal type"
+          },{
+            id : "00", name : "Adenocarcinoma, gastric type"
+          },{
+            id : "00", name : "Adenocarcinoma, pancreaticobiliary type"
+          },{
+            id : "00", name : "Adenocarcinoma, mixed type"
+          }, {
+            id : "00", name : "Adenocarcinoma, intestinal type, arising in an adenoma"
+          }, {
+            id : "00", name : "Adenocarcinoma, gastric type, arising in an adenoma"
+          }, {
+            id : "00", name : "Adenocarcinoma, pancreaticobiliary type, arising in an adenoma"
+          }, {
+            id : "00", name : "Adenocarcinoma, mixed type, arising in an adenoma"
           }, {
             id : "00", name : "Tubular adenocarcinoma with mixed features"
           }, {
@@ -19031,7 +19039,13 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [  {
-            id : "00", name : "Intraductal papillary-mucinous neoplasm"
+            id : "00", name : "Intraductal papillary-mucinous neoplasm, intestinal type"
+          }, {
+            id : "00", name : "Intraductal papillary-mucinous neoplasm, gastric type"
+          }, {
+            id : "00", name : "Intraductal papillary-mucinous neoplasm, pancreaticobiliary type"
+          }, {
+            id : "00", name : "Intraductal papillary-mucinous neoplasm, mixed type"
           }, {
             description : "MUC-1 +, MUC-5 -, MUC-6 +",
             id : "00", name : "Intraductal tubulo-papillary neoplasm"
