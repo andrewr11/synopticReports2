@@ -25824,6 +25824,9 @@ var database = {
             description : "nuclei 2-3x taller than wide, >=30% of tumor",
             id : "00", name : "Papillary carcinoma, tall cell variant"
           }, {
+            description : "nuclei 2-3x taller than wide, 10-29% of tumor",
+            id : "00", name : "Papillary carcinoma, with 10-29% tall cell features"
+          }, {
             description : "nuclei 2-3x taller than wide, <10% of tumor",
             id : "00", name : "Papillary carcinoma with focal (<10%) tall cell features"
           }, {
