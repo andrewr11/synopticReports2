@@ -30193,7 +30193,7 @@ var database = {
                 
             }
             
-            firstrow = {question: "SYNOPTIC REPORT", answer: this.current_tumor};
+            firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor};
             this.row3.finalanswers.push(firstrow);
 
             for ( var i=0; i<this.synresults.length; i++){
@@ -31383,7 +31383,7 @@ var database = {
           // make final table
           var removeRow = 0;
           this.row3.finalanswers = [];
-          firstrow = {question: "SYNOPTIC REPORT", answer: this.current_tumor};
+          firstrow = {question: "TUMOR SUMMARY", answer: this.current_tumor};
           this.row3.finalanswers.push(firstrow);
           for (var i=0; i<this.synresults.length; i++){
 
