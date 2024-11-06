@@ -11521,6 +11521,26 @@ var database = {
           id : "00", name : ""
         }  ]
        }, {
+      
+        id : "00", name : "Claudin 18.2",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            inputs_required : [ "" ],
+            id : "10", name : "Positive"
+          }, {
+            id : "00", name : "Negative (0%)"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          } ],
+          id : "00", name : ""
+        }  ]
+        }, {
           description: "adenocarcinoma only, add M1193 code",
         id : "00", name : "MSI IHC and Interpretation",
        optional_state  : "required", "options" : [ {
@@ -25085,6 +25105,26 @@ var database = {
           }, {
             inputs_required : [ "" ],
             id : "10", name : "Positive, Score ="
+          }, {
+            id : "00", name : "Negative (0%)"
+          }, {
+            id : "00", name : "Pending"
+          }, {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "case #",
+            inputs_required : [ "" ],
+            id : "10", name : "See case "
+          } ],
+          id : "00", name : ""
+        }  ]
+        }, {
+      
+        id : "00", name : "Claudin 18.2",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            inputs_required : [ "" ],
+            id : "10", name : "Positive"
           }, {
             id : "00", name : "Negative (0%)"
           }, {
