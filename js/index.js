@@ -10420,9 +10420,6 @@ var database = {
             id : "00", name : "Clear cell adenocarcinoma"
           }, {
             description : "WT1-, p53 + or completely -, ER variable, Pax8+, p16+, HPV-",
-            id : "00", name : "Serous endometrial intraepithelial carcinoma"
-          }, {
-            description : "WT1-, p53 + or completely -, ER variable, Pax8+, p16+, HPV-",
             id : "00", name : "Serous carcinoma"
           },{
             description : "list types",
