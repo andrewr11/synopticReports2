@@ -1850,25 +1850,25 @@ var database = {
             description : "Carcinoma in situ (intramucosal carcinoma; invasion of the lamina propria or extension into but not through the muscularis mucosae ",
             id : "00", name : "Tis"
           }, {
-            description : "Low-grade appendiceal mucinous neoplasm confined to the muscularis propria; Acellular mucin or mucinous epithelium may invade into the muscularis propria. (T1 and T2 are not applicable to LAMN; Acellular mucin or mucinous epithelium that extends into the subserosa or serosa should be classified as T3 or T4a, respectively ",
+            description : "Low-grade appendiceal mucinous neoplasm confined to the muscularis propria; Acellular mucin or mucinous epithelium may invade into the muscularis propria. (T1 and T2 are not applicable to LAMN; Acellular mucin or mucinous epithelium that extends into the subserosa or serosa should be classified as T3 or T4a, respectively, HGMN should be staged the same as adenocarcinoma ",
             id : "00", name : "Tis(LAMN)"
           }, {
-            description : "Tumor invades the submucosa (through the muscularis mucosa but not into the muscularis propria, do not use for LAMN",
+            description : "Tumor invades the submucosa (through the muscularis mucosa but not into the muscularis propria, do not use for LAMN, HGMN should be staged the same as adenocarcinoma",
             id : "00", name : "T1"
           }, {
-            description : "Invades muscularis propria (do not use for low grade mucinous tumors)",
+            description : "Invades muscularis propria (do not use for low grade mucinous tumors, HGMN should be staged the same as adenocarcinoma)",
             id : "00", name : "T2"
           }, {
             description : "Tumor invades through the muscularis propria into the subserosa or the mesoappendix  ",
             id : "00", name : "T3"
           }, {
-            description : "Invades subserosa, including acellular mucin or mucinous epithelium involving the subserosa of the appendix or mesoappendix",
+            description : "Invades subserosa, including acellular mucin or mucinous epithelium involving the subserosa of the appendix or mesoappendix, HGMN should be staged the same as adenocarcinoma",
             id : "00", name : "T3 (LAMN)"
           }, {
             description : "Tumor invades through the visceral peritoneum, including the acellular mucin or mucinous epithelium involving the serosa of the appendix or serosa of the mesoappendix  ",
             id : "00", name : "T4a"
           }, {
-            description : "Penetrates serosa, including acellular mucin or mucinous epithelium involving the serosa of the appendix or mesoappendix",
+            description : "Penetrates serosa, including acellular mucin or mucinous epithelium involving the serosa of the appendix or mesoappendix, HGMN should be staged the same as adenocarcinoma",
             id : "00", name : "T4a (LAMN)"
           }, {
             description : " invades or adheres to adjacent organs",
