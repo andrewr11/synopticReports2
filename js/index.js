@@ -10482,16 +10482,6 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Myometrial invasion (depth)",
-       optional_state  : "required", "options" : [ {
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Myometrial thickness",
-       optional_state  : "required", "options" : [ {
-          id : "00", name : ""
-        } ]
-      }, {
         id : "00", name : "Myometrial invasion (%)",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -10524,10 +10514,10 @@ var database = {
             id : "00", name : "None"
           }, {
             id : "00", name : "Cervical surface involvement only without stromal invasion"
-          }, {
-            id : "00", name : "Cervical stromal invasion present, <= 50% of cervical thickness"
-          }, {
-            id : "00", name : "Cervical stromal invasion present, > 50% of cervical thickness"
+          },{
+         
+            inputs_required : [ "" ],
+            id : "10", name : "Cervical stromal invasion present (% of cervical wall) "
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20422,6 +20412,17 @@ var database = {
           } ],
           id : "00", name : ""
         } ]
+      }, {
+        id : "00", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "Seprate checklist for each site",
+            id : "21", name : "Present"
+          } ],
+          id : "00", name : ""
+        } ]
       }, { 
         description : "Millimeters preferred (WHO)",
         id : "00", name : "Tumor size",
@@ -20654,7 +20655,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+        id : "01", name : "Stage (AJCC 8 (except nasopharynx AJCC 9))",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
@@ -20695,46 +20696,46 @@ var database = {
             description : "cannot be assessed",
             id : "00", name : "T (not assigned)"
           }, {
-            description : "OROPHARYN (not assigned) CARCINOMA, Tumor 2 cm or less in greatest dimension ",
+            description : "OROPHARYNX (not assigned) CARCINOMA, Tumor 2 cm or less in greatest dimension ",
             id : "00", name : "T1"
           }, {
-            description : "OROPHARYN (not assigned) CARCINOMA, Tumor more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx ",
+            description : "OROPHARYNX (not assigned) CARCINOMA, Tumor more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx ",
             id : "00", name : "T2"
           }, {
-            description : "OROPHARYN (not assigned) CARCINOMA, Tumor more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to lingual surface of epiglottis",
+            description : "OROPHARYNX (not assigned) CARCINOMA, Tumor more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to lingual surface of epiglottis",
             id : "00", name : "T3"
           }, {
-            description : "OROPHARYN (not assigned) CARCINOMA, Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
+            description : "OROPHARYNX (not assigned) CARCINOMA, Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
             id : "00", name : "T4a"
           }, {
-            description : "OROPHARYN (not assigned) CARCINOMA, Very advanced local disease. Tumor invades lateral pterygoid muscle, pterygoid plates, lateral nasopharynx, or skull base, or encases carotid artery",
+            description : "OROPHARYNX (not assigned) CARCINOMA, Very advanced local disease. Tumor invades lateral pterygoid muscle, pterygoid plates, lateral nasopharynx, or skull base, or encases carotid artery",
             id : "00", name : "T4b"
           }, {
-            description : " NASOPHARYN (not assigned) Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
+            description : " NASOPHARYNX (Tumor confined to nasopharynx; OR tumor with extension to any of the following without parapharyngeal involvement: oropharynx or nasal cavity) ",
             id : "00", name : "T1"
           }, {
-            description : "NASOPHARYN (not assigned) Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
+            description : "NASOPHARYNX (Tumor with extension to any of the following: Parapharyngeal space; or Adjacent soft tissue involvement of medial pterygoid, lateral pterygoid, prevertebral muscles) ",
             id : "00", name : "T2"
           }, {
-            description : "NASOPHARYN (not assigned) Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
+            description : "NASOPHARYNX (Tumor with unequivocal infiltration into any of the following bony structures: Skull base (including pterygoid structures); or Paranasal sinuses; or Cervical vertebrae) ",
             id : "00", name : "T3"
           }, {
-            description : "NASOPHARYN (not assigned) Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
+            description : "NASOPHARYNX (Tumor with any of the following: intracranial extension; or Unequivocal radiological and / or clinical involvement of cranial nerves; or Involvement of hypopharynx; or Involvement of orbit (including inferior orbital fissure); or Involvement of parotid gland; or Extensive soft tissue infiltration beyond the anterolateral surface of the lateral pterygoid muscle)",
             id : "00", name : "T4"
           }, {
-            description : "HYPOPHARYN (not assigned) CARCINOMA, Tumor limited to one subsite of hypopharynx and/or 2 cm or less in greatest dimension ",
+            description : "HYPOPHARYNX (not assigned) CARCINOMA, Tumor limited to one subsite of hypopharynx and/or 2 cm or less in greatest dimension ",
             id : "00", name : "T1"
           }, {
-            description : "HYPOPHARYN (not assigned) CARCINOMA, Tumor invades more than one subsite of hypopharynx or an adjacent site, or measures more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx",
+            description : "HYPOPHARYNX (not assigned) CARCINOMA, Tumor invades more than one subsite of hypopharynx or an adjacent site, or measures more than 2 cm but not more than 4 cm in greatest dimension without fixation of hemilarynx",
             id : "00", name : "T2"
           }, {
-            description : "HYPOPHARYN (not assigned) CARCINOMA, Tumor measures more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to esophagus",
+            description : "HYPOPHARYNX (not assigned) CARCINOMA, Tumor measures more than 4 cm in greatest dimension or with fixation of hemilarynx or extension to esophagus",
             id : "00", name : "T3"
           }, {
-            description : "HYPOPHARYN (not assigned) CARCINOMA, Moderately advanced local disease. Tumor invades thyroid/cricoid cartilage, hyoid bone, thyroid gland, or central compartment soft tissue",
+            description : "HYPOPHARYNX (not assigned) CARCINOMA, Moderately advanced local disease. Tumor invades thyroid/cricoid cartilage, hyoid bone, thyroid gland, or central compartment soft tissue",
             id : "00", name : "T4a"
           }, {
-            description : "HYPOPHARYN (not assigned) CARCINOMA, Very advanced local disease. Tumor invades prevertebral fascia, encases carotid artery, or involves mediastinal structures",
+            description : "HYPOPHARYNX (not assigned) CARCINOMA, Very advanced local disease. Tumor invades prevertebral fascia, encases carotid artery, or involves mediastinal structures",
             id : "00", name : "T4b"
           }, {
             description : "MELANOMA, Mucosal disease",
@@ -20758,31 +20759,31 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimensiona and no extranodal extension",
+            description : "ORO- AND HYPOPHARYNC (not assigned) Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimensiona and no extranodal extension",
             id : "00", name : "N1"
           }, {
-            description : "ORO- AND HYPOPHARYN (not assigned)( Metastasis in a single ipsilateral or contralateral  lymph node <= 3 cm AND extranodal extension) OR (single ipsilateral lymph node >3 cm AND not more than 6 cm in greatest dimension AND no extranodal extension) ",
+            description : "ORO- AND HYPOPHARYNx (not assigned)( Metastasis in a single ipsilateral or contralateral  lymph node <= 3 cm AND extranodal extension) OR (single ipsilateral lymph node >3 cm AND not more than 6 cm in greatest dimension AND no extranodal extension) ",
             id : "00", name : "N2a"
           }, {
-            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
+            description : "ORO- AND HYPOPHARYNX (not assigned) Metastasis in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
             id : "00", name : "N2b"
           }, {
-            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
+            description : "ORO- AND HYPOPHARYNX (not assigned) Metastasis in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
             id : "00", name : "N2c"
           }, {
-            description : "ORO- AND HYPOPHARYN (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension adn no extranodal extension",
+            description : "ORO- AND HYPOPHARYNX (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension adn no extranodal extension",
             id : "00", name : "N3a"
           }, {
-            description : "ORO- AND HYPOPHARYN (not assigned) (Metastasis in a lymph noe >3 cm in greatest dimension AND extranodal extension) OR (multiple nodes AND extranodal extension) OR (single contralateral node <=3cm AND extranodal extension)",
+            description : "ORO- AND HYPOPHARYNX (not assigned) (Metastasis in a lymph noe >3 cm in greatest dimension AND extranodal extension) OR (multiple nodes AND extranodal extension) OR (single contralateral node <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
           }, {
-            description : " NASOPHARYN (not assigned) Metastasis in one or more ipsilateral lymph node, 6 cm or less in greatest dimension",
+            description : " NASOPHARYNX Tumor involvement of any of the following: Unilateral cervical lymph node(s) or Unilateral / bilateral retropharyngeal lymph node(s); AND all of the following: Less than or equal to 6 cm in greatest dimension; and above the caudal border of cricoid cartilage; and without advanced extranodal extension",
             id : "00", name : "N1 "
           }, {
-            description : " NASOPHARYN (not assigned) Metastasis in contralateral or bilateral lymph node,  6 cm or less in greatest dimension ",
+            description : " NASOPHARYNX  Tumor involvement of bilateral cervical lymph nodes AND all of the following: Less than or equal to 6 cm in greatest dimension; and above the caudal border of cricoid cartilage; and without advanced extranodal extension ",
             id : "00", name : "N2"
           }, {
-            description : " NASOPHARYN (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension",
+            description : " NASOPHARYNX Tumor involvement of unilateral or bilateral cervical lymph node(s); AND any of the following: Greater than 6 cm in greatest dimension; or Extension below the caudal border of cricoid cartilage; or Advanced radiologic or clinical extranodal extension with involvement of adjacent muscles, skin, and / or neurovascular bundle",
             id : "00", name : "N3"
           }, {
             description : "MELANOMA, regional metastases",
@@ -20936,6 +20937,17 @@ var database = {
             id : "00", name : "Single focus"
           }, {
             id : "21", name : "Multiple foci"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            description : "Seprate checklist for each site",
+            id : "21", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -27250,6 +27262,14 @@ var database = {
           }, {
             id : "62", name : "Invades periurethral muscle"
           }, {
+            id : "62", name : "Invades tunica albuginea"
+          }, {
+            id : "62", name : "Invades corpus cavernosum"
+          }, {
+            id : "62", name : "Invades scrotum"
+          }, {
+            id : "62", name : "Invades urinary bladder"
+          }, {
             id : "60", name : "Urothelial CIS involves prostatic urethra"
           }, {
             id : "60", name : "Urothelial CIS involves prostatic ducts"
@@ -27258,17 +27278,19 @@ var database = {
           }, {
             id : "00", name : "Invades periprostatic fat"
           }, {
-            id : "63", name : "Invades corpus cavernosum"
-          }, {
             id : "63", name : "Invades beyond prostatic capsule"
           }, {
             id : "63", name : "Invades anterior vagina"
           }, {
             id : "63", name : "Invades bladder neck"
           }, {
-            id : "64", name : "Invades bladder wall"
+            id : "64", name : "Invades extraprostatic bladder wall"
+          }, {
+            id : "62", name : "Invades extraprostatic seminal vesicle"
           }, {
             id : "64", name : "Invades rectum"
+          }, {
+            id : "62", name : "Invades vagina"
           }, {
             inputs_required : [ "" ],
             id : "11", name : "Invades adjacent structures"
