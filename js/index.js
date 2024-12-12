@@ -15510,6 +15510,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Total # of primary tumors",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+             id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Tumor focality/synchronicity",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -15651,6 +15661,44 @@ var database = {
           }, {
             id : "00", name : "Non-small cell carcinoma"
           }],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Histologic patterns",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Acinar"
+          }, {
+            id : "00", name : "Papillary"
+          }, {
+            id : "00", name : "Lepidic"
+          }, {
+            id : "00", name : "Solid"
+          }, {
+            id : "00", name : "Micropapillary"
+          }, {
+            id : "00", name : "Complex glands"
+          }, {
+            description : "list types",
+            inputs_required : [ "" ],
+            id : "10", name : "Mixed"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Spread through airspace (STAS)",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Not identified"
+          }, {
+            id : "00", name : "Present"
+          }, {
+            id : "00", name : "Equivocal"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
           id : "00", name : ""
         } ]
       }, {
@@ -15844,7 +15892,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+        id : "01", name : "Stage (AJCC 9)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
@@ -15891,25 +15939,25 @@ var database = {
             description : "minimally invasive, <= 3cm, predominantly lepidic pattern and <= 5mm invasion",
             id : "00", name : "T1mi"
           }, {
-            description : "<=1cm AND (no involvement of main bronchus, no visceral pleural invasion, no atelectasis or obstructuve pneumonitis extending to hilum) ",
+            description : "Tumor less than or equal to 1 cm in greatest dimension OR Tumor of any size whose invasive component is limited to the bronchial wall and may extend proximal to the main bronchus (this is an uncommon superficial, spreading tumor)  ",
             id : "00", name : "T1a"
           }, {
-            description : "> 1cm AND <= 2cm  AND (no involvement of main bronchus, no visceral pleural invasion, no atelectasis or obstructuve pneumonitis extending to hilum)",
+            description : "Tumor greater than 1 cm but less than or equal to 2 cm in greatest dimension",
             id : "00", name : "T1b"
           }, {
-            description : ">2 cm AND <=3cm AND (no involvement of main bronchus, no visceral pleural invasion, no atelectasis or obstructuve pneumonitis extending to hilum)",
+            description : "Tumor greater than 2 cm but less than or equal to 3 cm in greatest dimension  ",
             id : "00", name : "T1c"
           }, {
-            description : ">3cm AND <= 4 cm  OR (< 3cm AND (involvement of main bronchus, or visceral pleural invasion, or atelectasis or obstructuve pneumonitis extending to hilum))",
+            description : "Tumor greater than 3 cm but less than or equal to 4 cm in greatest dimension OR Tumor less than or equal to 4 cm in greatest dimension with one or more of the following features: Invades visceral pleura; or Invades an adjacent lobe; or Involves main bronchus (up to but not including the carina) or associated with atelectasis or obstructive pneumonitis, extending to the hilar regions, involving either part of or the entire lung ",
             id : "00", name : "T2a"
           }, {
-            description : "> 4cm <= 5cm",
+            description : "Tumor greater than 4 cm but less than or equal to 5 cm in greatest dimension with or without any of the following features: Invades visceral pleura; or Invades an adjacent lobe; or Involves main bronchus (up to but not including the carina) or associated with atelectasis or obstructive pneumonitis extending to the hilar regions, involving either part of or the entire lung ",
             id : "00", name : "T2b"
           }, {
-            description : "MULTIPLE TUMORS SAME LOBE OR > 5cm AND <= 7cm, OR invades parietal pleura, chest wall, phrenic nerve parietal pericardium ",
+            description : "Tumor greater than 5 cm but less than or equal to 7 cm in greatest dimension OR Tumor less than or equal to 7 cm with one or more of the following features: Invades parietal pleura or chest wall; or Invades pericardium, phrenic nerve or azygos vein (although these structures lie within the mediastinum, the degree of mediastinal penetration by the tumor needed to invade these structures is not counted as T4); or Invades thoracic nerve roots (i.e., T1, T2) or stellate ganglion; or Separate tumor nodule(s) in the same lobe as the primary ",
             id : "00", name : "T3"
           }, {
-            description : "MULTIPLE TUMORS, DIFFERENT IPSILATERAL LOBE OR > 7cm  OR invades diaphragm, mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina",
+            description : "Tumor greater than 7 cm in greatest dimension OR Tumor of any size with one or more of the following features: Invades mediastinum (except structures listed in T3), thymus, trachea, carina, recurrent laryngeal nerve, vagus nerve, esophagus or diaphragm; or Invades heart, great vessels (aorta, superior / inferior vena cava, intrapericardial pulmonary arteries / veins), supra-aortic arteries or brachiocephalic veins; or Invades subclavian vessels, vertebral body, lamina, spinal canal, cervical nerve roots or brachial plexus (i.e., trunks, divisions, cords or terminal nerves); or Separate tumornodule(s) in a different ipsilateral lobe than that of the primary ",
             id : "00", name : "T4"
           } ],
           id : "00", name : ""
@@ -15945,8 +15993,11 @@ var database = {
             description : "single extrathoracic metastasis in a single organ including involvement of a single nonregional node",
             id : "00", name : "M1b"
           }, {
-            description : "multiple extrathoracic metastases in a single or multiple organs",
-            id : "00", name : "M1c"
+            description : "multiple extrathoracic metastases in a single organ system",
+            id : "00", name : "M1c1"
+          }, {
+            description : "multiple extrathoracic metastases in multiple organ systems",
+            id : "00", name : "M1c2"
           }, {
             id : "00", name : "M (not applicable)"
           }, {
@@ -16842,9 +16893,9 @@ var database = {
         id : "00", name : "Focality",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "Single focus"
+            id : "00", name : "Single focus/localized"
           }, {
-            id : "21", name : "Multiple foci "
+            id : "21", name : "Multiple foci/diffuse "
           } ],
           id : "00", name : ""
         } ]
@@ -16974,7 +17025,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+        id : "01", name : "Stage (AJCC 9)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
@@ -17015,16 +17066,16 @@ var database = {
             description : "cannot be assessed",
             id : "00", name : "T (not assigned)"
           }, {
-            description : "Tumor limited to ipsilateral parietal pleura with or without mediastinal or diaphragmatic pleural involvement",
+            description : "Tumor limited to the ipsilateral pleura with no involvement of the fissure",
             id : "00", name : "T1"
           }, {
-            description : "Tumor involves each of the ipsilateral pleural surfaces (parietal, mediastinal, diaphragmatic, and visceral pleura) with at least 1 of the following features: involvement of diaphragmatic muscle, extension of tumor from visceral pleura into the underlying pulmonary parenchyma ",
+            description : "Tumor involving the ipsilateral pleura and with any of the following: Involvement of the fissure; or Ipsilateral lung parenchyma invasion; or Diaphragm (non-transmural) invasion",
             id : "00", name : "T2"
           }, {
-            description : "Locally advanced but potentially resectable tumor that involves all of the ipsilateral pleural surfaces (parietal, mediastinal, diaphragmatic, and visceral pleura), with at least 1 of the following features: involvement of the endothoracic fascia, extension into mediastinal fat, solitary completely resectable focus of tumor extending into the soft tissues of the chest wall, nontransmural involvement of the pericardium ",
+            description : "Tumor limited to the ipsilateral pleura (with or without fissure involvement) and with invasion of any of the following: Mediastinal fat; or Surface of pericardium; or Endothoracic fascia; or Solitary area of chest wall soft tissue ",
             id : "00", name : "T3"
           }, {
-            description : "Locally advanced technically unresectable tumor involving all of the ipsilateral pleural surfaces (parietal, mediastinal, diaphragmatic, and visceral pleura), with at least 1 of the following features: diffuse extension or multifocal masses of tumor in the chest wall with or without associated rib destruction, direct transdiaphragmatic extension to the peritoneum, direct extension to the contralateral pleura, direct extension to mediastinal organs, direct extension into the spine, extension through the internal surface of the pericardium with or without a pericardial effusion, tumor involving the myocardium",
+            description : "Tumor with invasion of any of the following: Chest wall bony invasion (rib); or Mediastinal organs (heart, spine, esophagus, trachea, great vessels); or Diffuse chest wall invasion; or Transmural invasion of the diaphragm or pericardium; or Direct extension to the contralateral pleura; or Presence of malignant pericardial effusio",
             id : "00", name : "T4"
           } ],
           id : "00", name : ""
@@ -17039,11 +17090,11 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "Metastases in the ipsilateral bronchopulmonary or hilar or mediastinal or peridiaphragmatic or pericardial fat pad or intercostal  lymph nodes",
+            description : "Tumor involvement of ipsilateral bronchopulmonary, hilar, or mediastinal (including the internal mammary, peridiaphragmatic, pericardial fat pad, or intercostal lymph nodes) regional lymph nodes ",
             id : "00", name : "N1"
           }, {
-            description : "Metastases in the contralateral mediastinal, ipsilateral or contralateral supraclavicular lymph nodes ",
-            id : "00", name : "N3"
+            description : "Tumor involvement of contralateral mediastinal, ipsilateral or contralateral supraclavicular lymph nodes ",
+            id : "00", name : "N2"
           } ],
           id : "00", name : "Category (pN)"
         }]
@@ -20418,7 +20469,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            description : "Seprate checklist for each site",
+            description : "Separate checklist for each site",
             id : "21", name : "Present"
           } ],
           id : "00", name : ""
@@ -20498,11 +20549,15 @@ var database = {
             id : "00", name : "Combined (or composite) small cell carcinoma, neuroendocrine type"
           }, {
             id : "00", name : "Mucosal malignant melanoma"
+          }, {
+            description : "include architecture (mimimally invasive, invasive, intracapsular (noninvasive) or NOS, AND Malignant component (intraductal, salivary duct carcinoma, epithelia-myoepithelia carcinoma, myoepithelial carcinoma, carcinosarcoma, mucoepidermoid carcinoma, adenoid cystic carcinoma tubular/cribriform pattern, adenoid cystic carcinoma solid pattern) ",
+            inputs_required : [ "" ],
+            id : "10", name : "Carcinoma ex pleomorphic adenoma "
           } ],
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Grade",
+        id : "00", name : "Histologic grade",
        optional_state  : "required", "options" : [ {
           group : [ {
             id : "00", name : "Grade 1/3, Well differentiated"
@@ -20510,6 +20565,20 @@ var database = {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Grade/intrinsic biologic potential",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Low"
+          }, {
+            id : "00", name : "Intermediate"
+          }, {
+            id : "00", name : "High/ high grade transformation"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -20689,6 +20758,16 @@ var database = {
           } ],
           id : "00", name : ""
         }]
+        }, {
+          id : "00", name : "Prior procedures/specimens included in staging",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "No"
+            }, {
+              id : "21", name : "Yes"
+            } ],
+            id : "00", name : ""
+          } ]
         }, {
           id : "02", name : "T",
            optional_state  : "required", "options" : [ {
@@ -20946,7 +21025,7 @@ var database = {
           group : [ {
             id : "00", name : "Not applicable"
           }, {
-            description : "Seprate checklist for each site",
+            description : "Separate checklist for each site",
             id : "21", name : "Present"
           } ],
           id : "00", name : ""
@@ -21156,6 +21235,16 @@ var database = {
           } ],
           id : "00", name : ""
         }]
+        }, {
+          id : "00", name : "Prior procedures/specimens included in staging",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "No"
+            }, {
+              id : "21", name : "Yes"
+            } ],
+            id : "00", name : ""
+          } ]
         }, {
           id : "02", name : "T",
            optional_state  : "required", "options" : [ {
@@ -23906,6 +23995,16 @@ var database = {
           id : "00", name : ""
         }]
         }, {
+          id : "00", name : "Prior procedures/specimens included in staging",
+         optional_state  : "required", "options" : [ {
+            group : [ {
+              id : "00", name : "No"
+            }, {
+              id : "21", name : "Yes"
+            } ],
+            id : "00", name : ""
+          } ]
+        }, {
           id : "02", name : "T",
            optional_state  : "required", "options" : [ {
           group : [ {
@@ -26232,6 +26331,14 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Tumor site",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Thymus"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "Millimeters preferred (WHO)",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
@@ -26333,7 +26440,7 @@ var database = {
         id : "00", name : "Margins",
        optional_state  : "required", "options" : [ {
           group : [ {
-            description : "location",
+            description : "location and distance",
             inputs_required : [ "" ],
             id : "10", name : "Free "
           }, {
@@ -26425,7 +26532,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "01", name : "Stage (AJCC 8)",
+        id : "01", name : "Stage (AJCC 9)",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "no prefix",
@@ -26466,19 +26573,19 @@ var database = {
             description : "cannot be assessed",
             id : "00", name : "T (not assigned)"
           }, {
-            description : "No mediastinal pleural involvement)",
+            description : "Tumor less than or equal to 5 cm in greatest dimension limited to the thymus with or without encapsulation; or Tumor less than or equal to 5 cm in greatest dimension that directly invades intothe mediastinal fat only; or Tumor less than or equal to 5 cm in greatest dimension that directly invades the mediastinal pleura but does not involve any other mediastinal structure ",
             id : "00", name : "T1a"
           }, {
-            description : "direct invasion of mediastinal pleura",
+            description : "Tumor greater than 5 cm in greatest dimension limited to the thymus with or without encapsulation; or Tumor greater than 5 cm in greatest dimension that directly invades into the mediastinal fat only; or Tumor greater than 5 cm in greatest dimension that directly invades the mediastinal pleura but does not involve any other mediastinal structure ",
             id : "00", name : "T1b"
           }, {
-            description : "invasion of pericardium",
+            description : "Tumor with direct invasion of the pericardium (either partial or full thickness), or the lung, or the phrenic nerve ",
             id : "00", name : "T2"
           }, {
-            description : "invasion of lung brachiocephalic vein superior vena cava phrenic nerve chest wall pulmonary artery or vein",
+            description : "Tumor with direct invasion into any of the following: brachiocephalic vein, superior vena cava, chest wall, or extrapericardial pulmonary arteries or veins ",
             id : "00", name : "T3"
           }, {
-            description : "Invasion of aorta, arch vessels pulmonary artery myocardium, trachea or esophagus",
+            description : "Tumor with direct invasion into any of the following: aorta (ascending, arch, or descending), arch vessels, intrapericardial pulmonary artery or veins, myocardium, trachea, esophagus ",
             id : "00", name : "T4"
           }],
           id : "00", name : ""
@@ -26496,10 +26603,10 @@ var database = {
             description : "THYMIC CARCINOMA No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "THYMIC CARCINOMA Metastasis in anterior mediastinal lymph nodes",
+            description : "THYMIC CARCINOMA Tumor involvement of anterior (perithymic) lymph nodes",
             id : "00", name : "N1"
           }, {
-            description : "THYMIC CARCINOMA Metastasis in other intrathoracic lymph nodes, excluding anterior mediastinal lymph nodes ",
+            description : "THYMIC CARCINOMA Tumor involvement of deep intrathoracic or cervical lymph nodes (e.g., paratracheal, subcarinal, aortopulmonary window, hilar, jugular and / or supraclavicular nodes)",
             id : "00", name : "N2"
           } ],
           id : "00", name : "Category (pN)"
