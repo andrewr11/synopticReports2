@@ -55,9 +55,9 @@ GIDs
 12 mixed free text and radio T4a
 13 mixed free text and radio T4b
 20 ER/PR drop down
-15 = See case trip all the following See case questions DCIS
-16 = See case trip all the following See case questions Inv breast
-18 = See case trip only one more for gastric
+15 = See prior case trip all the following See prior case questions DCIS
+16 = See prior case trip all the following See prior case questions Inv breast
+18 = See prior case trip only one more for gastric
 17 treatment effect nodes and primary site NA
 19 treatment to trigger AJCC y
 21 multifocal tumors trigger AJCC m
@@ -486,7 +486,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }  ],
           id : "00", name : ""
         } ]  
@@ -864,7 +864,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -1139,7 +1139,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -1162,7 +1162,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -1187,7 +1187,7 @@ var database = {
         }, {
           description : "case #",
           inputs_required : [ "" ],
-          id : "10", name : "See case "
+          id : "10", name : "See prior case "
         } ]
         }, {
           id : "00", name : "Tumor block(s) for possible future studies",
@@ -1526,7 +1526,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -1549,7 +1549,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -1574,7 +1574,7 @@ var database = {
         }, {
           description : "case #",
           inputs_required : [ "" ],
-          id : "10", name : "See case "
+          id : "10", name : "See prior case "
         } ]
         }, {
           id : "00", name : "Tumor block(s) for possible future studies",
@@ -1950,7 +1950,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -1978,7 +1978,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -3331,7 +3331,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "15", name : "See case "
+            id : "15", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -3356,7 +3356,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -3836,7 +3836,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "15", name : "See case "
+            id : "15", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -3861,7 +3861,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -4557,7 +4557,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "16", name : "See case "
+            id : "16", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -4582,7 +4582,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -4605,7 +4605,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -4626,7 +4626,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -4669,7 +4669,7 @@ var database = {
             }, {
               description : "case #",
               inputs_required : [ "" ],
-              id : "10", name : "See case "
+              id : "10", name : "See prior case "
             }  ],
             id : "00", name : ""
           } ]  
@@ -5503,7 +5503,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "16", name : "See case "
+            id : "16", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -5528,7 +5528,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -5551,7 +5551,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -5572,7 +5572,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -5615,7 +5615,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }   ],
           id : "00", name : ""
         } ]  
@@ -6508,7 +6508,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -6533,7 +6533,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -6556,7 +6556,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -6577,7 +6577,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -6600,7 +6600,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }  ],
           id : "00", name : ""
         } ]  
@@ -6812,7 +6812,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -6837,7 +6837,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -7246,7 +7246,7 @@ var database = {
             id : "00", name : "See above"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -7265,7 +7265,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -7835,7 +7835,7 @@ var database = {
                 id : "00", name : "Not applicable"
               }, {
                 inputs_required : [ "" ],
-                id : "10", name : "See case"
+                id : "10", name : "See prior case"
               } ],
               id : "00", name : ""
             } ]
@@ -8058,7 +8058,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -8623,7 +8623,7 @@ var database = {
                 id : "00", name : "Not applicable"
               }, {
                 inputs_required : [ "" ],
-                id : "10", name : "See case"
+                id : "10", name : "See prior case"
               } ],
               id : "00", name : ""
             } ]
@@ -9198,7 +9198,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -9225,7 +9225,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -9925,7 +9925,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -10967,7 +10967,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -10988,7 +10988,7 @@ var database = {
            }, {
              description : "case #",
              inputs_required : [ "" ],
-             id : "10", name : "See case "
+             id : "10", name : "See prior case "
            } ],
            id : "00", name : ""
          } ]
@@ -11009,7 +11009,7 @@ var database = {
            }, {
              description : "case #",
              inputs_required : [ "" ],
-             id : "10", name : "See case "
+             id : "10", name : "See prior case "
            } ],
            id : "00", name : ""
          } ]
@@ -11027,7 +11027,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ] 
@@ -11457,7 +11457,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -11480,7 +11480,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -11503,7 +11503,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         }  ]
@@ -11523,7 +11523,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         }  ]
@@ -11542,7 +11542,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -11725,7 +11725,7 @@ var database = {
               id : "00", name : "Not applicable"
             }, {
               inputs_required : [ "" ],
-              id : "10", name : "See case"
+              id : "10", name : "See prior case"
             } ],
             id : "00", name : ""
           } ]
@@ -11839,7 +11839,7 @@ var database = {
               id : "00", name : "Not applicable"
             }, {
               inputs_required : [ "" ],
-              id : "10", name : "See case"
+              id : "10", name : "See prior case"
             } ],
             id : "00", name : ""
           } ]
@@ -12138,7 +12138,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -13757,7 +13757,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -16021,7 +16021,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -19199,7 +19199,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -19605,7 +19605,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -20387,7 +20387,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -20404,7 +20404,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Oropharynx, Nasopharynx, and Hypopharynx, (p16-)",
+      id : "00", name : "Oropharynx, Nasopharynx, and Hypopharynx",
       optional : false,
       organ_group : "Head and Neck",
       properties : [  {
@@ -20496,6 +20496,8 @@ var database = {
         id : "00", name : "Type",
        optional_state  : "required", "options" : [ {
           group : [ {
+            id : "00", name : "Squamous cell carcinoma HPV associated"
+          },{
             id : "00", name : "Squamous cell carcinoma, keratinizing"
           }, {
             id : "00", name : "Squamous cell carcinoma, non-keratinizing"
@@ -20557,6 +20559,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "Nonsalivary gland and non neuroendocrine tumors",
         id : "00", name : "Histologic grade",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -20571,6 +20574,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "For salivary gland tumors",
         id : "00", name : "Grade/intrinsic biologic potential",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -20899,7 +20903,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -20921,7 +20925,7 @@ var database = {
           } , {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -20943,7 +20947,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -20958,445 +20962,7 @@ var database = {
           id : "00", name : ""
         } ]
       } ]
-  }, {
-      most_common : false,
-      id : "00", name : "Oropharynx and Nasopharynx, p16+ (HPV mediated)",
-      optional : false,
-      organ_group : "Head and Neck",
-      properties : [  {
-        id : "00", name : "Procedure",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Excisional biopsy"
-          }, {
-            id : "00", name : "Tonsillectomy "
-          }, {
-            id : "00", name : "Laryngopharyngectomy"
-          }, {
-            id : "00", name : "Tonsillectomy and neck (lymph node) dissection "
-          }, {
-            id : "00", name : "Laryngopharyngectomy and neck (lymph node) dissection "
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Tumor location",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Right oropharynx"
-          }, {
-            id : "00", name : "Right nasopharynx"
-          }, {
-            id : "00", name : "Right hypopharynx"
-          }, {
-            id : "00", name : "Left oropharynx"
-          }, {
-            id : "00", name : "Left nasopharynx"
-          }, {
-            id : "00", name : "Left hypopharynx"
-          }, {
-            id : "00", name : "Bilateral oropharynx"
-          }, {
-            id : "00", name : "Bilateral nasopharynx"
-          }, {
-            id : "00", name : "Bilateral hypopharynx"
-          }, {
-            id : "00", name : "Midline oropharynx"
-          }, {
-            id : "00", name : "Midline nasopharynx"
-          }, {
-            id : "00", name : "Midline hypopharynx"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Tumor focality",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Single focus"
-          }, {
-            id : "21", name : "Multiple foci"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Multiple primary sites",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          }, {
-            description : "Separate checklist for each site",
-            id : "21", name : "Present"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "Millimeters preferred (WHO)",
-        id : "00", name : "Tumor size",
-       optional_state  : "required", "options" : [ {
-        group : [ {
-         
-          inputs_required : [ "" ],
-          id : "10", name : "At least "
-        },{
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal, largest focus "
-        },{
-          description : "No residual tumor",
-         id : "00", name : "Not applicable"
-        } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Type",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Squamous cell carcinoma"
-          }, {
-            id : "00", name : "Small cell neuroendocrine carcinoma"
-          }, {
-            id : "00", name : "Large cell neuroendocrine carcinoma"
-          } ],
-          id : "00", name : ""
-        } ]
-    
-      }, {
-        description : "include distance/location of closest margin",
-        id : "00", name : "Margins, invasive tumor",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "include distance/location of closest margin",
-        id : "00", name : "Margins, dysplasia/CIS",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "distance location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Lymphovascular invasion",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Indeterminate"
-          }, {
-            id : "00", name : "Suspicious"
-          }, {
-            id : "00", name : "Present"
-          }, {
-            id : "00", name : "Present, extensive"
-          },{
-            description : "Positive lymph nodes",
-           id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Perineural invasion",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Present"
-          }, {
-            id : "00", name : "Equivocal"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Lymph nodes, # total",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "50", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "50", name : "Lymph nodes, # involved",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "51", name : "0" },{ id : "00", name : "1" },{ id : "00", name : "2" },{ id : "00", name : "3"
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "50", name : "Positive node laterality",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          }, {
-            id : "00", name : "Ipsilateral, including midline"
-          }, {
-            id : "00", name : "Contralateral"
-          }, {
-            id : "00", name : "Bilateral"
-          }, {
-            id : "00", name : "Indeterminate"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "50", name : "Size of largest metastasis",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "50", name : "Extranodal Extension ",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          }, {
-            id : "00", name : "None"
-          }, {
-            id : "00", name : "Present"
-          }, {
-            id : "00", name : "Equivocal"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "57", name : "Distant metastases",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "91", name : "Not applicable"
-          },{
-            id : "91", name : "None"
-           }, {
-            id : "92", name : "Lung"
-          }, {
-            id : "92", name : "Liver"
-          }, {
-            id : "92", name : "Bone"
-          }, {
-            id : "92", name : "Nonregional lymph nodes"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "01", name : "Stage (AJCC 8)",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "no prefix",
-            id : "00", name : ""
-          }, {
-            description : "pathologic",
-            id : "00", name : "p"
-          }, {
-            description : "multiple foci of invasive carcinoma",
-            id : "00", name : "m"
-          }, {
-            description : "recurrent",
-            id : "00", name : "r"
-          }, {
-            description : "post-treatment",
-            id : "00", name : "y"
-          }, {
-            id : "00", name : "mp"
-          }, {
-            id : "00", name : "rp"
-          }, {
-            id : "00", name : "yp"
-          }, {
-            id : "00", name : "mrp"
-          }, {
-            id : "00", name : "myp"
-          }, {
-            id : "00", name : "ryp"
-          }, {
-            id : "00", name : "mryp"
-          } ],
-          id : "00", name : ""
-        }]
-        }, {
-          id : "00", name : "Prior procedures/specimens included in staging",
-         optional_state  : "required", "options" : [ {
-            group : [ {
-              id : "00", name : "No"
-            }, {
-              id : "21", name : "Yes"
-            } ],
-            id : "00", name : ""
-          } ]
-        }, {
-          id : "02", name : "T",
-           optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "cannot be assessed",
-            id : "00", name : "T (not assigned)"
-          }, {
-            description : " NASOPHARYN (not assigned) Tumor confined to nasopharynx, or extension to oropharynx and/or nasal cavity without parapharyngeal involvement ",
-            id : "00", name : "T1"
-          }, {
-            description : "NASOPHARYN (not assigned) Tumor with extension to parapharyngeal space, and/or adjacent soft tissue involvement (medial pterygoid, lateral pterygoid, prevertebral muscles) ",
-            id : "00", name : "T2"
-          }, {
-            description : "NASOPHARYN (not assigned) Tumor with infiltration of bony structures at skull base, cervical vertebra, pterygoid structures, and/or paranasal sinuses ",
-            id : "00", name : "T3"
-          }, {
-            description : "NASOPHARYN (not assigned) Tumor with intracranial extension, involvement of cranial nerves, hypopharynx, orbit, parotid gland, and/or extensive soft tissue infiltration beyond the lateral surface of the lateral pterygoid muscle",
-            id : "00", name : "T4"
-          }, {
-            description : " OROPHARYN (not assigned) Tumor 2 cm or less in greatest dimension ",
-            id : "00", name : "T1"
-          }, {
-            description : "OROPHARYN (not assigned) Tumor more than 2 cm but not more than 4 cm in greatest dimension ",
-            id : "00", name : "T2"
-          }, {
-            description : "OROPHARYN (not assigned) Tumor more than 4 cm in greatest dimension or extension to lingual surface of epiglottis",
-            id : "00", name : "T3"
-          }, {
-            description : "OROPHARYN (not assigned) Moderately advanced local disease. Tumor invades larynx, deep/extrinsic muscle of tongue, medial pterygoid muscles, hard palate, or mandible",
-            id : "00", name : "T4"
-          }],
-          id : "00", name : ""
-        }]
-        }, {
-          id : "03", name : "N",
-           optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "Regional lymph nodes cannot be assessed",
-            id : "00", name : "N (not assigned)"
-          }, {
-            description : "No regional lymph node metastasis",
-            id : "00", name : "N0"
-          }, {
-            description : " NASOPHARYN (not assigned) Metastasis in one or more ipsilateral lymph node, 6 cm or less in greatest dimension",
-            id : "00", name : "N1"
-          }, {
-            description : " NASOPHARYN (not assigned) Metastasis in contralateral or bilateral lymph node,  6 cm or less in greatest dimension ",
-            id : "00", name : "N2"
-          }, {
-            description : " NASOPHARYN (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension",
-            id : "00", name : "N3"
-          }, {
-            description : " OROPHARYN (not assigned) Metastasis in 4 or fewer lymph nodes",
-            id : "00", name : "N1"
-          }, {
-            description : " OROPHARYN (not assigned) Metastasis in more than 4 lymph nodes ",
-            id : "00", name : "N2"
-          }],
-          id : "00", name : "Category (pN)"
-        }]
-        }, {
-          id : "04", name : "M",
-           optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "metastases",
-            id : "00", name : "M1"
-          }, {
-            id : "00", name : "M (not applicable)"
-          }, {
-            id : "00", name : "distant metastasis not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "p16 Immunohistochemistry ",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Positive "
-          }, {
-            id : "00", name : "Negative "
-          }, {
-            id : "00", name : "Equivocal"
-          }, {
-            id : "00", name : "Not applicable "
-          }, {
-            id : "00", name : "Not performed"
-          }, {
-            id : "00", name : "Pending"
-          }, {
-            description : "case #",
-            inputs_required : [ "" ],
-            id : "10", name : "See case "
-          }],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "HPV ISH ",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Positive "
-          }, {
-            id : "00", name : "Negative "
-          }, {
-            id : "00", name : "Equivocal"
-          }, {
-            id : "00", name : "Not applicable "
-          }, {
-            id : "00", name : "Not performed"
-          }, {
-            id : "00", name : "Pending"
-          }, {
-            description : "case #",
-            inputs_required : [ "" ],
-            id : "10", name : "See case "
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "HPV PCR ",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Positive "
-          }, {
-            id : "00", name : "Negative "
-          }, {
-            id : "00", name : "Equivocal"
-          }, {
-            id : "00", name : "Not applicable "
-          }, {
-            id : "00", name : "Not performed"
-          }, {
-            id : "00", name : "Pending"
-          }, {
-            description : "case #",
-            inputs_required : [ "" ],
-            id : "10", name : "See case "
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Tumor block(s) for possible future studies",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Not applicable"
-          }, {
-            id : "00", name : "None"
-          } ],
-          id : "00", name : ""
-        } ]
-      } ]
-  
-    }, {
+  },  {
       most_common : true,
       id : "00", name : "Prostate, prostatectomy",
       optional : false,
@@ -24415,7 +23981,7 @@ var database = {
            } , {
              description : "case #",
              inputs_required : [ "" ],
-             id : "10", name : "See case "
+             id : "10", name : "See prior case "
            }],
            id : "00", name : ""
          } ]
@@ -24442,7 +24008,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -25176,7 +24742,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "18", name : "See case "
+            id : "18", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -25199,7 +24765,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         } ]
@@ -25222,7 +24788,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         }  ]
@@ -25242,7 +24808,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           } ],
           id : "00", name : ""
         }  ]
@@ -25261,7 +24827,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -27216,7 +26782,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -27236,7 +26802,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -27604,7 +27170,7 @@ var database = {
          }, {
            description : "case #",
            inputs_required : [ "" ],
-           id : "10", name : "See case "
+           id : "10", name : "See prior case "
          }],
          id : "00", name : ""
        } ]
@@ -27624,7 +27190,7 @@ var database = {
            id : "00", name : "Not applicable"
          }, {
            inputs_required : [ "" ],
-           id : "10", name : "See case"
+           id : "10", name : "See prior case"
          } ],
          id : "00", name : ""
        } ]
@@ -28024,7 +27590,7 @@ var database = {
           }, {
             description : "case #",
             inputs_required : [ "" ],
-            id : "10", name : "See case "
+            id : "10", name : "See prior case "
           }],
           id : "00", name : ""
         } ]
@@ -28044,7 +27610,7 @@ var database = {
             id : "00", name : "Not applicable"
           }, {
             inputs_required : [ "" ],
-            id : "10", name : "See case"
+            id : "10", name : "See prior case"
           } ],
           id : "00", name : ""
         } ]
@@ -30693,7 +30259,7 @@ var database = {
           this.row.inputanswers[i] = "0000";
           
 
-          // logic for repeating see case text
+          // logic for repeating See prior case text
           if(gid=="15"){
             this.row5.useFreeText[i+1] = false;
             this.row10.useCombo[i+1] = true;
@@ -30739,7 +30305,7 @@ var database = {
             this.updateTable();
           }
 
-            // logic for repeating see case text for gastric trip only three for her2, pdl1, msi
+            // logic for repeating See prior case text for gastric trip only three for her2, pdl1, msi
           if(gid=="18"){
 
             this.row11.freeTextGID[i] = gid   ;
@@ -30763,7 +30329,7 @@ var database = {
             this.updateTable();
           }
 
-          //logic to turn off repeat See case
+          //logic to turn off repeat See prior case
           if(gid!="15" && gid!="16" && gid!="18"){           
             this.row11.freeTextGID[i] = " "  ;         
             this.updateTable();
