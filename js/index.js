@@ -10455,7 +10455,7 @@ var database = {
             description : "endometrioid and mucinous, >50% solid, small nuclei OR 5-50% solid, big nuclei",
             id : "00", name : "FIGO grade 3/3"
           }, {
-            description : "for serous, clear cell carcinoma",
+            description : "all non endometrioid tumors except MMMT",
             id : "00", name : "High grade"
           }, {
             description : "MMMT",
