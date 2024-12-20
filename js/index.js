@@ -25538,9 +25538,6 @@ var database = {
             description : "nuclei 2-3x taller than wide, >=30% of tumor",
             id : "00", name : "Papillary carcinoma, tall cell variant"
           }, {
-            description : "nuclei 2-3x taller than wide, 10-29% of tumor",
-            id : "00", name : "Papillary carcinoma, with 10-29% tall cell features"
-          }, {
             description : "nuclei 2-3x taller than wide, <10% of tumor",
             id : "00", name : "Papillary carcinoma with focal (<10%) tall cell features"
           }, {
@@ -25608,6 +25605,64 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "mitoses/ 2 mm squared NOT 10 hpf, approximately count 34 hpf and divide by 5", 
+     id : "00", name : "Mitotic rate",
+    optional_state  : "required", "options" : [ {
+       group : [ {
+         
+         id : "00", name : "Less than 3/2mm squared"
+       }, {
+       
+         id : "00", name : "at least 3 and less than 5 /2 mm squared"
+       }, {
+         
+         id : "00", name : "Greater than or equal to 5 per 2 mm squared"
+       } ],
+       id : "00", name : ""
+     } ]  
+     
+   }, {
+     id : "00", name : "Ki67 (Mib1)",
+    optional_state  : "required", "options" : [ {
+       group : [ {
+         
+         id : "00", name : "Less than 3%"
+       }, {
+       
+         id : "00", name : "at least 3-10%"
+       }, {
+         
+         id : "00", name : "More than 10%"
+       } ],
+       id : "00", name : ""
+     } ]  
+     
+   }, {
+    id : "00", name : "Ki67 (MIB1) Methodology",
+   optional_state  : "required", "options" : [ {
+      group : [ {
+        
+        id : "00", name : "Manual"
+      }, {
+      
+        id : "00", name : "Automated image analysis"
+      } ],
+      id : "00", name : ""
+    } ]  
+    
+  }, {
+    id : "00", name : "Necrosis",
+   optional_state  : "required", "options" : [ {
+      group : [ {
+        id : "00", name : "None"
+      }, {
+        id : "00", name : "Present"
+      }, {
+        id : "00", name : "Equivocal"
+      } ],
+      id : "00", name : ""
+    } ]
+  }, {
         id : "00", name : "Angioinvasion",
        optional_state  : "required", "options" : [ {
           group : [ {
