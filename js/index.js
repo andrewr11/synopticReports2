@@ -16590,6 +16590,21 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+       
+        id : "00", name : "Grade/intrinsic biologic potential",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "Low"
+          }, {
+            id : "00", name : "Intermediate"
+          }, {
+            id : "00", name : "High/ high grade transformation"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         description : "Need macroscopic/op note to change stage to T3/4",
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
@@ -20559,25 +20574,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "Nonsalivary gland and non neuroendocrine tumors",
-        id : "00", name : "Histologic grade",
+        description : "1-2-3 for nonsalivary gland and non neuroendocrine tumors; low, intermed, high For salivary gland tumors",
+        id : "00", name : "Grade/intrinsic biologic potential",
        optional_state  : "required", "options" : [ {
-          group : [ {
+          group : [  {
             id : "00", name : "Grade 1/3, Well differentiated"
           }, {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
           }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "For salivary gland tumors",
-        id : "00", name : "Grade/intrinsic biologic potential",
-       optional_state  : "required", "options" : [ {
-          group : [ {
             id : "00", name : "Low"
           }, {
             id : "00", name : "Intermediate"
@@ -22627,6 +22633,16 @@ var database = {
             id : "00", name : "Bone"
           }, {
             id : "00", name : "Nonregional lymph nodes"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Prior procedures/specimens included in staging",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No"
+          }, {
+            id : "21", name : "Yes"
           } ],
           id : "00", name : ""
         } ]
