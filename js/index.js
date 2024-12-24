@@ -1719,8 +1719,23 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest margin, proximal, radial(if applicable)",
-        id : "00", name : "Margins",
+        description : "include distance/location ",
+        id : "00", name : "Margins, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location ",
+        id : "00", name : "Margins in situ/high grade dysplasia",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -3961,16 +3976,6 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Tumor focality",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Single focus of tumor"
-          }, {
-            id : "21", name : "Multiple foci of tumor"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         description : "Millimeters preferred (WHO)",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
@@ -4757,16 +4762,6 @@ var database = {
             id : "00", name : "Left mastectomy"
           }, {
             id : "00", name : "Left nipple sparing mastectomy"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        id : "00", name : "Tumor focality",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Single focus of tumor"
-          }, {
-            id : "21", name : "Multiple foci of tumor"
           } ],
           id : "00", name : ""
         } ]
@@ -6015,6 +6010,26 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "00", name : "Malignant heterologous elements",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+           
+            id : "00", name : "Not identified"
+          }, {
+          
+            id : "00", name : "Liposarcoma, excluding well differentiated liposarcoma"
+          }, {
+           
+            id : "00", name : "Osteosarcoma"
+          }, {
+           
+            id : "00", name : "Chondrosarcoma"
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
        
         id : "00", name : "Mitotic rate",
        optional_state  : "required", "options" : [ {
@@ -7005,6 +7020,24 @@ var database = {
           }, {
             id : "00", name : "Resection"
           } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "Millimeters preferred (WHO)",
+        id : "00", name : "Specimen size",
+       optional_state  : "required", "options" : [ {
+        group : [ {
+         
+          inputs_required : [ "" ],
+          id : "10", name : "At least "
+        },{
+        
+          inputs_required : [ "" ],
+          id : "10", name : "Multiple specimens, largest specimen "
+        },{
+          description : "No residual tumor",
+         id : "00", name : "Not applicable"
+        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -9272,6 +9305,16 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
         id : "00", name : "Tumor location",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -10461,24 +10504,6 @@ var database = {
             description : "MMMT",
             id : "00", name : "Not applicable"
           } ],
-          id : "00", name : ""
-        } ]
-      }, {
-        description : "Millimeters preferred (WHO)",
-        id : "00", name : "Tumor size",
-       optional_state  : "required", "options" : [ {
-        group : [ {
-         
-          inputs_required : [ "" ],
-          id : "10", name : "At least "
-        },{
-        
-          inputs_required : [ "" ],
-          id : "10", name : "Multifocal, largest focus "
-        },{
-          description : "No residual tumor",
-         id : "00", name : "Not applicable"
-        } ],
           id : "00", name : ""
         } ]
       }, {
@@ -11975,8 +12000,23 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest margin, cystic duct, liver parenchyma",
-        id : "00", name : "Margins",
+        description : "include distance/location",
+        id : "00", name : "Margins, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location",
+        id : "00", name : "Margins in situ/high grade dysplasia",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -13184,6 +13224,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "list focality, location, size, extent, vascular invasion and rx effect for up to 5 tumors",
         id : "00", name : "Tumor focality",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13194,6 +13235,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "list focality, location, size, extent, vascular invasion and rx effect for up to 5 tumors",
         id : "00", name : "Location",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13212,7 +13254,8 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "Millimeters preferred (WHO)",
+       
+        description : "Millimeters preferred (WHO), list focality, location, size, extent, vascular invasion and rx effect for up to 5 tumors",
         id : "00", name : "Tumor size",
        optional_state  : "required", "options" : [ {
         group : [ {
@@ -13264,6 +13307,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "list focality, location, size, extent, vascular invasion and rx effect for up to 5 tumors",
         id : "00", name : "Extent",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13299,6 +13343,7 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "list focality, location, size, extent, vascular invasion and rx effect for up to 5 tumors",
         id : "00", name : "Lymphovascular invasion",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -13583,8 +13628,23 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest bile duct/hepatic margin",
+        description : "include distance/location ",
         id : "00", name : "Margins, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location ",
+        id : "00", name : "Margins in situ/high grade dysplasia",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -14649,14 +14709,21 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Grade",
+        description : "1-2-3 for nonsalivary gland and non neuroendocrine tumors; low, intermed, high For salivary gland tumors",
+        id : "00", name : "Grade/intrinsic biologic potential",
        optional_state  : "required", "options" : [ {
-          group : [ {
+          group : [  {
             id : "00", name : "Grade 1/3, Well differentiated"
           }, {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
+          }, {
+            id : "00", name : "Low"
+          }, {
+            id : "00", name : "Intermediate"
+          }, {
+            id : "00", name : "High/ high grade transformation"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -15025,6 +15092,16 @@ var database = {
           }],
           id : "00", name : ""
         } ]
+      }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
+          } ],
+          id : "00", name : ""
+        } ]
       },{
         id : "00", name : "Tumor location",
        optional_state  : "required", "options" : [ {
@@ -15169,20 +15246,27 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        id : "00", name : "Grade",
+        description : "1-2-3 for nonsalivary gland and non neuroendocrine tumors; low, intermed, high For salivary gland tumors",
+        id : "00", name : "Grade/intrinsic biologic potential",
        optional_state  : "required", "options" : [ {
-          group : [ {
+          group : [  {
             id : "00", name : "Grade 1/3, Well differentiated"
           }, {
             id : "00", name : "Grade 2/3, Moderately differentiated"
           }, {
             id : "00", name : "Grade 3/3, Poorly differentiated"
           }, {
+            id : "00", name : "Low"
+          }, {
+            id : "00", name : "Intermediate"
+          }, {
+            id : "00", name : "High/ high grade transformation"
+          }, {
             id : "00", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
-       }, {
+      }, {
         description : "include distance/location of closest margin",
         id : "00", name : "Margins, main part, invasive tumor",
        optional_state  : "required", "options" : [ {
@@ -15234,6 +15318,40 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
+        description : "include distance/location of closest margin",
+        id : "00", name : "Margins, tumor bed, separately submitted, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          }, {
+            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+   }, {
+    description : "include distance/location of closest margin",
+    id : "00", name : "Margins, tumor bed, separately submitted, in situ tumor",
+   optional_state  : "required", "options" : [ {
+      group : [ {
+        description : "distance location",
+        inputs_required : [ "" ],
+        id : "10", name : "Free "
+      }, {
+        description : "location",
+        inputs_required : [ "" ],
+        id : "10", name : "Positive, "
+      }, {
+        id : "00", name : "Not applicable"
+      } ],
+      id : "00", name : ""
+    } ]
+}, {
         id : "00", name : "Lymphovascular invasion",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -15830,6 +15948,20 @@ var database = {
           },{
             description : "Positive lymph nodes",
            id : "00", name : "Not applicable"
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "00", name : "Lymph nodes from prior procedures",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            id : "00", name : "No known prior lymph node sampling"
+          }, {
+            id : "21", name : "Not included in staging"
+          }, {
+            id : "21", name : "Included in staging"
+          }, {
+            id : "21", name : "Not applicable"
           } ],
           id : "00", name : ""
         } ]
@@ -17159,6 +17291,16 @@ var database = {
             id : "00", name : "Partial maxillectomy, and neck (lymph node) dissection  "
           }, {
             id : "00", name : "Radical maxillectomy, and neck (lymph node) dissection "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        id : "58", name : "Multiple primary sites",
+       optional_state  : "required", "options" : [ {
+          group : [  {
+            id : "00", name : "Not applicable"
+          }, {
+            id : "00", name : "Present"
           } ],
           id : "00", name : ""
         } ]
@@ -19813,21 +19955,36 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "urethral, periurethral tissues, corpus cavernosum, Bucks fascia, skin, coronal sulcus",
-        id : "00", name : "Margins",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            id : "00", name : "Free "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-   }, {
+    description : "include distance/location urethral, periurethral tissues, corpus cavernosum, Bucks fascia, skin, coronal sulcus",
+    id : "00", name : "Margins, invasive tumor",
+   optional_state  : "required", "options" : [ {
+      group : [ {
+        description : "distance location",
+        inputs_required : [ "" ],
+        id : "10", name : "Free "
+      }, {
+        description : "location",
+        inputs_required : [ "" ],
+        id : "10", name : "Positive, "
+      } ],
+      id : "00", name : ""
+    } ]
+  }, {
+    description : "include distance/location urethral, periurethral tissues, corpus cavernosum, Bucks fascia, skin, coronal sulcus",
+    id : "00", name : "Margins in situ/high grade dysplasia",
+   optional_state  : "required", "options" : [ {
+      group : [ {
+        description : "distance location",
+        inputs_required : [ "" ],
+        id : "10", name : "Free "
+      }, {
+        description : "location",
+        inputs_required : [ "" ],
+        id : "10", name : "Positive, "
+      } ],
+      id : "00", name : ""
+    } ]
+  }, {
         id : "00", name : "Lymphovascular invasion",
        optional_state  : "required", "options" : [ {
           group : [ {
@@ -23097,15 +23254,21 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "T4",
-        id : "00", name : "Invasion of Bone, Muscle, Fascia, or Cartilage ",
+        
+        id : "00", name : "Extent ",
        optional_state  : "required", "options" : [ {
           group : [ {
-            id : "00", name : "None"
+            id : "00", name : "No tumor present"
           }, {
-            id : "64", name : "Present"
+            id : "64", name : "Invades skin/subcutaneaous tissue"
           }, {
-            id : "00", name : "Equivocal"
+            id : "00", name : "Invades muscle"
+          }, {
+            id : "00", name : "Invades fascia"
+          }, {
+            id : "00", name : "Invades bone"
+          }, {
+            id : "00", name : "Invades cartilage"
           }, {
             id : "00", name : "Not applicable"
           } ],
@@ -23803,8 +23966,23 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of closest proximal/distal/radial/bile duct/pancreatic margin",
-        id : "00", name : "Margins",
+        description : "include distance/location ",
+        id : "00", name : "Margins, invasive tumor",
+       optional_state  : "required", "options" : [ {
+          group : [ {
+            description : "distance location",
+            inputs_required : [ "" ],
+            id : "10", name : "Free "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, "
+          } ],
+          id : "00", name : ""
+        } ]
+      }, {
+        description : "include distance/location ",
+        id : "00", name : "Margins in situ/high grade dysplasia",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -28939,8 +29117,8 @@ var database = {
           id : "00", name : ""
         } ]
       }, {
-        description : "include distance/location of invasive CA and HSIL",
-        id : "00", name : "Margins, peripheral",
+        description : "include distance/location of invasive CA",
+        id : "00", name : "Margins, invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -28950,10 +29128,6 @@ var database = {
             description : "location",
             inputs_required : [ "" ],
             id : "10", name : "Positive, invasive carcinoma "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
           }, {
             id : "00", name : "Not applicable"
           }],
@@ -28961,7 +29135,7 @@ var database = {
         } ]
       }, {
         description : "include distance/location of invasive CA and HSIL",
-        id : "00", name : "Margins, radial/deep",
+        id : "00", name : "Margins, non invasive tumor",
        optional_state  : "required", "options" : [ {
           group : [ {
             description : "distance location",
@@ -28970,11 +29144,15 @@ var database = {
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, invasive carcinoma "
+            id : "10", name : "Positive, HSIL "
           }, {
             description : "location",
             inputs_required : [ "" ],
-            id : "10", name : "Positive, HSIL"
+            id : "10", name : "Positive, AIS "
+          }, {
+            description : "location",
+            inputs_required : [ "" ],
+            id : "10", name : "Positive, HSIL and AIS "
           }, {
             id : "00", name : "Not applicable"
           }],
