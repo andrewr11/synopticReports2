@@ -17271,7 +17271,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Nasal Cavity and Paranasal Sinus",
+      id : "00", name : "Nasal",
       optional : false,
       organ_group : "Head and Neck",
       properties : [   {
@@ -20576,7 +20576,7 @@ var database = {
       } ]
     }, {
       most_common : false,
-      id : "00", name : "Oropharynx, Nasopharynx, and Hypopharynx",
+      id : "00", name : "Pharynx",
       optional : false,
       organ_group : "Head and Neck",
       properties : [  {
