@@ -15301,23 +15301,6 @@ var database = {
           id : "00", name : ""
         } ]
    }, {
-        description : " only if submitted separately,  include location of closest margin",
-        id : "00", name : "Margins, separate part(s)",
-       optional_state  : "required", "options" : [ {
-          group : [ {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Free "
-          }, {
-            description : "location",
-            inputs_required : [ "" ],
-            id : "10", name : "Positive, "
-          }, {
-            id : "00", name : "Not applicable"
-          } ],
-          id : "00", name : ""
-        } ]
-      }, {
         description : "include distance/location of closest margin",
         id : "00", name : "Margins, tumor bed, separately submitted, invasive tumor",
        optional_state  : "required", "options" : [ {
@@ -23260,7 +23243,7 @@ var database = {
           group : [ {
             id : "00", name : "No tumor present"
           }, {
-            id : "64", name : "Invades skin/subcutaneaous tissue"
+            id : "00", name : "Invades skin/subcutaneaous tissue"
           }, {
             id : "00", name : "Invades muscle"
           }, {
@@ -25816,6 +25799,7 @@ var database = {
      } ]  
      
    }, {
+    description : "Required only for Medullary CA",
      id : "00", name : "Ki67 (Mib1)",
     optional_state  : "required", "options" : [ {
        group : [ {
@@ -25827,7 +25811,10 @@ var database = {
        }, {
          
          id : "00", name : "More than 10%"
-       } ],
+       }, {
+         
+        id : "00", name : "Not applicable"
+      } ],
        id : "00", name : ""
      } ]  
      
@@ -25840,6 +25827,9 @@ var database = {
       }, {
       
         id : "00", name : "Automated image analysis"
+      }, {
+         
+        id : "00", name : "Not applicable"
       } ],
       id : "00", name : ""
     } ]  
