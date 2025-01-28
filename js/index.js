@@ -11534,7 +11534,7 @@ var database = {
         }  ]
        }, {
       
-        id : "00", name : "Claudin 18.2",
+        id : "00", name : "Claudin",
        optional_state  : "required", "options" : [ {
           group : [  {
             inputs_required : [ "" ],
@@ -24971,7 +24971,7 @@ var database = {
         }  ]
         }, {
       
-        id : "00", name : "Claudin 18.2",
+        id : "00", name : "Claudin",
        optional_state  : "required", "options" : [ {
           group : [  {
             inputs_required : [ "" ],
