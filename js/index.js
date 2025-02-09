@@ -20988,22 +20988,28 @@ var database = {
             description : "No regional lymph node metastasis",
             id : "00", name : "N0"
           }, {
-            description : "ORO- AND HYPOPHARYNC (not assigned) Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimensiona and no extranodal extension",
+            description : "ORO- AND HYPOPHARYNX HPV+ Metastasis in 4 or fewer lymph nodes",
             id : "00", name : "N1"
           }, {
-            description : "ORO- AND HYPOPHARYNx (not assigned)( Metastasis in a single ipsilateral or contralateral  lymph node <= 3 cm AND extranodal extension) OR (single ipsilateral lymph node >3 cm AND not more than 6 cm in greatest dimension AND no extranodal extension) ",
+            description : "ORO- AND HYPOPHARYNX HPV+  Metastasis in more than 4 lymph nodes  ",
             id : "00", name : "N2a"
           }, {
-            description : "ORO- AND HYPOPHARYNX (not assigned) Metastasis in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
+            description : "ORO- AND HYPOPHARYNX HPV- (not assigned) Metastasis in a single ipsilateral lymph node, 3 cm or less in greatest dimensiona and no extranodal extension",
+            id : "00", name : "N1"
+          }, {
+            description : "ORO- AND HYPOPHARYNX HPV- (not assigned)( Metastasis in a single ipsilateral or contralateral  lymph node <= 3 cm AND extranodal extension) OR (single ipsilateral lymph node >3 cm AND not more than 6 cm in greatest dimension AND no extranodal extension) ",
+            id : "00", name : "N2a"
+          }, {
+            description : "ORO- AND HYPOPHARYNX HPV - (not assigned) Metastasis in multiple ipsilateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
             id : "00", name : "N2b"
           }, {
-            description : "ORO- AND HYPOPHARYNX (not assigned) Metastasis in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
+            description : "ORO- AND HYPOPHARYNX HPV-(not assigned) Metastasis in bilateral or contralateral lymph nodes, none more than 6 cm in greatest dimension AND no extranodal extension",
             id : "00", name : "N2c"
           }, {
-            description : "ORO- AND HYPOPHARYNX (not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension adn no extranodal extension",
+            description : "ORO- AND HYPOPHARYNX HPV -(not assigned) Metastasis in a lymph node more than 6 cm in greatest dimension adn no extranodal extension",
             id : "00", name : "N3a"
           }, {
-            description : "ORO- AND HYPOPHARYNX (not assigned) (Metastasis in a lymph noe >3 cm in greatest dimension AND extranodal extension) OR (multiple nodes AND extranodal extension) OR (single contralateral node <=3cm AND extranodal extension)",
+            description : "ORO- AND HYPOPHARYNX HPV- (not assigned) (Metastasis in a lymph noe >3 cm in greatest dimension AND extranodal extension) OR (multiple nodes AND extranodal extension) OR (single contralateral node <=3cm AND extranodal extension)",
             id : "00", name : "N3b"
           }, {
             description : " NASOPHARYNX Tumor involvement of any of the following: Unilateral cervical lymph node(s) or Unilateral / bilateral retropharyngeal lymph node(s); AND all of the following: Less than or equal to 6 cm in greatest dimension; and above the caudal border of cricoid cartilage; and without advanced extranodal extension",
